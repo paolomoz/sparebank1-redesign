@@ -19,6 +19,11 @@ export function assemble(slug, mod, { archetype = slug, provenanceHeader } = {})
   const data = { header: headerData(doc), router: routerData(doc), footer, doc, pj, slug, archetype };
   if (mod.patchData) mod.patchData(data);
   const page = mod.render(data); // { main, css, provenance, template, title, description, lang, router?, footer? }
+  // Authoring debris at block edges: captured `&nbsp;` / whitespace runs at the START or END of a paragraph, list item, heading or cell render as an
+  // extra wrapped line at narrow widths (a non-collapsible trailing space) and the delivery pipeline trims them anyway (#112) — whitespace-only, content-neutral.
+  const NB = '(?:&nbsp;|&#160;|\u00a0|\\s)';
+  page.main = page.main.replace(new RegExp(`${NB}+</(p|li|h[1-6]|td|th|dd|dt|figcaption|summary)>`, 'g'), '</$1>').replace(new RegExp(`<(p|li|h[1-6]|td|th|dd|dt|figcaption)([^>]*)>${NB}+(?=\\S)`, 'g'), '<$1$2>')
+    .replace(/<img\b[^>]*\bsrc=""[^>]*>/g, ''); // an image without a source is not content
   const now = new Date().toISOString();
   const prov = page.provenance || {};
   const provenance = provenanceHeader ? provenanceHeader({ slug, pj, now, prov, archetype }) : `<!-- stardust:provenance

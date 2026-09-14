@@ -4,7 +4,7 @@ import fs from 'node:fs';
 const esc=s=>String(s??'').replace(/&(?!(amp|lt|gt|quot|#\d+|[a-z]+);)/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 export { esc };
 export const ORIGIN='https://www.sparebank1.no';
-export const asset=p=>!p?'':(/^https?:/.test(p)?p:ORIGIN+p);
+export const asset=p=>(!p||p==='null'||p==='undefined')?'':(/^https?:/.test(p)?p:ORIGIN+p); // a stringified null never becomes an origin-relative URL
 export function favicon(){ const b=fs.readFileSync('stardust/current/assets/favicon.png').toString('base64'); return `<link rel="icon" href="data:image/png;base64,${b}">`; }
 export function logoSvg(alt){ let s=fs.readFileSync('stardust/current/assets/logo.svg','utf8'); s=s.replace(/<\?xml[^>]*>|<!--[\s\S]*?-->|<!DOCTYPE[^>]*>/g,'').trim(); s=s.replace(/<svg([^>]*)>/,(m,a)=>`<svg${a.replace(/\s(width|height|x|y|enable-background|xml:space)="[^"]*"/g,'')} class="logo-svg" role="img" aria-label="${esc(alt)}" focusable="false">`); return s; }
 export const icons={
