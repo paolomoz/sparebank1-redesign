@@ -1,0 +1,4545 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/plan",
+    "writtenAt": "2026-09-14T22:17:44.482Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-14T22:17:44.482Z",
+  "fragments": [],
+  "deliveryOrder": [
+    "nb-bank-bedrift-bedriftskort-kredittkort-html",
+    "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+    "nb-bank-bedrift-konto-bedriftskonto-html",
+    "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+    "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+    "nb-bank-bedrift-lan-finansiering-leasing-html",
+    "nb-bank-bedrift-open-api-html",
+    "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+    "nb-bank-om-oss-vare-eksperter-html",
+    "nb-bank-privat-daglig-bruk-bankid-html",
+    "nb-bank-privat-daglig-bruk-bankkonto-html",
+    "nb-bank-privat-daglig-bruk-bankkort-html",
+    "nb-bank-privat-daglig-bruk-kredittkort-html",
+    "nb-bank-privat-daglig-bruk-mobilbank-html",
+    "nb-bank-privat-forsikring-barneforsikring-html",
+    "nb-bank-privat-forsikring-bilforsikring-html",
+    "nb-bank-privat-forsikring-innboforsikring-html",
+    "nb-bank-privat-forsikring-kundehistorier-html",
+    "nb-bank-privat-forsikring-reiseforsikring-html",
+    "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+    "nb-bank-privat-lan-billan-html",
+    "nb-bank-privat-lan-boliglan-html",
+    "nb-bank-privat-lan-forbrukslan-html",
+    "nb-bank-privat-lan-gronne-lan-html",
+    "nb-bank-privat-lan-lanekalkulator-html",
+    "nb-bank-privat-lan-refinansiering-html",
+    "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+    "nb-bank-privat-sparing-spare-i-fond-html",
+    "nb-bank-privat-sparing-spare-pa-konto-html",
+    "nb-bank-privat-sparing-spare-til-barn-html",
+    "nb-bank-bedrift-bedriftskort-html",
+    "nb-bank-bedrift-betaling-html",
+    "nb-bank-bedrift-daglig-drift-html",
+    "nb-bank-bedrift-konto-html",
+    "nb-bank-bedrift-lan-finansiering-html",
+    "nb-bank-bedrift-pensjon-html",
+    "nb-bank-bedrift-regnskap-html",
+    "nb-bank-bedrift-sparing-investering-html",
+    "nb-bank-bedrift-starte-bedrift-html",
+    "nb-bank-bedrift-tips-og-rad-html",
+    "nb-bank-privat-daglig-bruk-html",
+    "nb-bank-privat-eiendom-html",
+    "nb-bank-privat-forsikring-html",
+    "nb-bank-privat-lan-html",
+    "nb-bank-privat-lofavor-html",
+    "nb-bank-privat-pensjon-html",
+    "nb-bank-privat-private-banking-html",
+    "nb-bank-privat-sparing-html",
+    "nb-bank-privat-svindel-html",
+    "nb-bank-privat-tips-og-rad-html",
+    "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+    "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+    "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+    "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+    "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+    "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+    "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+    "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+    "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+    "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+    "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+    "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html",
+    "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+    "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+    "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+    "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+    "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+    "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+    "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+    "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+    "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+    "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html",
+    "nb-bank-om-oss-investor-html",
+    "nb-bank-om-oss-jobb-og-karriere-html",
+    "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+    "nb-bank-om-oss-personvern-generelle-vilkar-html",
+    "nb-bank-om-oss-personvern-html",
+    "nb-bank-om-oss-presse-html",
+    "nb-bank-om-oss-samfunnsansvar-html",
+    "nb-bank-om-oss-selskaper-html",
+    "nb-bank-privat-forsikring-meld-skade-html",
+    "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+    "nb-bank-privat-kundeservice-verktoy-klager-html",
+    "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
+    "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+    "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html",
+    "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+    "nb-bank-bedrift-bedriftsforsikring-html",
+    "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+    "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html",
+    "nb-bank-bedrift-html",
+    "nb-bank-om-oss-html",
+    "nb-bank-privat-html",
+    "nb-bank-bedrift-kundeservice-html",
+    "nb-bank-privat-kundeservice-html",
+    "nb-bank-privat-kundeservice-bestill-prisliste-html",
+    "nb-bank-privat-kundeservice-kontakt-html",
+    "nb-bank-om-oss-hjemme-html",
+    "nb-bank-privat-sparing-markedsnytt-html",
+    "nb-bank-om-oss-nyheter-html",
+    "home"
+  ],
+  "steps": [
+    {
+      "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+      "path": "/nb/bank/bedrift/bedriftskort/kredittkort",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero"
+        },
+        {
+          "id": "usp",
+          "edsBlockName": "usp"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail"
+        },
+        {
+          "id": "price-terms",
+          "edsBlockName": "price-terms"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media"
+        },
+        {
+          "id": "callout",
+          "edsBlockName": "callout"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row"
+        }
+      ],
+      "reuse": []
+    },
+    {
+      "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+      "path": "/nb/bank/bedrift/betaling/utenlandsbetaling",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "steps",
+          "edsBlockName": "steps"
+        },
+        {
+          "id": "accordion",
+          "edsBlockName": "accordion"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "callout",
+          "edsBlockName": "callout",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-konto-bedriftskonto-html",
+      "path": "/nb/bank/bedrift/konto/bedriftskonto",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "usp",
+          "edsBlockName": "usp",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "price-terms",
+          "edsBlockName": "price-terms",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "callout",
+          "edsBlockName": "callout",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+      "path": "/nb/bank/bedrift/lan-finansiering/bedriftslan",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "usp",
+          "edsBlockName": "usp",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "price-terms",
+          "edsBlockName": "price-terms",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "callout",
+          "edsBlockName": "callout",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+      "path": "/nb/bank/bedrift/lan-finansiering/kassekreditt",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "usp",
+          "edsBlockName": "usp",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "price-terms",
+          "edsBlockName": "price-terms",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-lan-finansiering-leasing-html",
+      "path": "/nb/bank/bedrift/lan-finansiering/leasing",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "usp",
+          "edsBlockName": "usp",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "price-terms",
+          "edsBlockName": "price-terms",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-open-api-html",
+      "path": "/nb/bank/bedrift/open-api",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+      "path": "/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-vare-eksperter-html",
+      "path": "/nb/bank/om-oss/vare-eksperter",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title"
+        },
+        {
+          "id": "people-cards",
+          "edsBlockName": "people-cards"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-bankid-html",
+      "path": "/nb/bank/privat/daglig-bruk/bankid",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "promo-band",
+          "edsBlockName": "promo-band"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-bankkonto-html",
+      "path": "/nb/bank/privat/daglig-bruk/bankkonto",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "shortcuts",
+          "edsBlockName": "shortcuts"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-bankkort-html",
+      "path": "/nb/bank/privat/daglig-bruk/bankkort",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "cobranding",
+          "edsBlockName": "cobranding"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "usp",
+          "edsBlockName": "usp",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "shortcuts",
+          "edsBlockName": "shortcuts",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankkonto-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-kredittkort-html",
+      "path": "/nb/bank/privat/daglig-bruk/kredittkort",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "usp",
+          "edsBlockName": "usp",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+      "path": "/nb/bank/privat/daglig-bruk/mobilbank",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "guide-list",
+          "edsBlockName": "guide-list"
+        },
+        {
+          "id": "topic-list",
+          "edsBlockName": "topic-list"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "promo-band",
+          "edsBlockName": "promo-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-barneforsikring-html",
+      "path": "/nb/bank/privat/forsikring/barneforsikring",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "table",
+          "edsBlockName": "table"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "usp",
+          "edsBlockName": "usp",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cobranding",
+          "edsBlockName": "cobranding",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "topic-list",
+          "edsBlockName": "topic-list",
+          "convertedBy": "nb-bank-privat-daglig-bruk-mobilbank-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "callout",
+          "edsBlockName": "callout",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-bilforsikring-html",
+      "path": "/nb/bank/privat/forsikring/bilforsikring",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "usp",
+          "edsBlockName": "usp",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cobranding",
+          "edsBlockName": "cobranding",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "table",
+          "edsBlockName": "table",
+          "convertedBy": "nb-bank-privat-forsikring-barneforsikring-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-innboforsikring-html",
+      "path": "/nb/bank/privat/forsikring/innboforsikring",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "usp",
+          "edsBlockName": "usp",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cobranding",
+          "edsBlockName": "cobranding",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "table",
+          "edsBlockName": "table",
+          "convertedBy": "nb-bank-privat-forsikring-barneforsikring-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-kundehistorier-html",
+      "path": "/nb/bank/privat/forsikring/kundehistorier",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-reiseforsikring-html",
+      "path": "/nb/bank/privat/forsikring/reiseforsikring",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "usp",
+          "edsBlockName": "usp",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cobranding",
+          "edsBlockName": "cobranding",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankkort-html"
+        },
+        {
+          "id": "callout",
+          "edsBlockName": "callout",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "table",
+          "edsBlockName": "table",
+          "convertedBy": "nb-bank-privat-forsikring-barneforsikring-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+      "path": "/nb/bank/privat/kundeservice/bestill/bli-kunde",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "usp",
+          "edsBlockName": "usp",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "promo-band",
+          "edsBlockName": "promo-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-lan-billan-html",
+      "path": "/nb/bank/privat/lan/billan",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "usp",
+          "edsBlockName": "usp",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "price-terms",
+          "edsBlockName": "price-terms",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cobranding",
+          "edsBlockName": "cobranding",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "shortcuts",
+          "edsBlockName": "shortcuts",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankkonto-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-lan-boliglan-html",
+      "path": "/nb/bank/privat/lan/boliglan",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "price-cards",
+          "edsBlockName": "price-cards"
+        },
+        {
+          "id": "calculator",
+          "edsBlockName": "calculator"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "promo-band",
+          "edsBlockName": "promo-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-lan-forbrukslan-html",
+      "path": "/nb/bank/privat/lan/forbrukslan",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "price-terms",
+          "edsBlockName": "price-terms",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "callout",
+          "edsBlockName": "callout",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "topic-list",
+          "edsBlockName": "topic-list",
+          "convertedBy": "nb-bank-privat-daglig-bruk-mobilbank-html"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-lan-gronne-lan-html",
+      "path": "/nb/bank/privat/lan/gronne-lan",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "promo-band",
+          "edsBlockName": "promo-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-lan-lanekalkulator-html",
+      "path": "/nb/bank/privat/lan/lanekalkulator",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "calculator",
+          "edsBlockName": "calculator",
+          "convertedBy": "nb-bank-privat-lan-boliglan-html"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-lan-refinansiering-html",
+      "path": "/nb/bank/privat/lan/refinansiering",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "promo-band",
+          "edsBlockName": "promo-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+      "path": "/nb/bank/privat/pensjon/egen-pensjonskonto",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "usp",
+          "edsBlockName": "usp",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "price-terms",
+          "edsBlockName": "price-terms",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-sparing-spare-i-fond-html",
+      "path": "/nb/bank/privat/sparing/spare-i-fond",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-sparing-spare-pa-konto-html",
+      "path": "/nb/bank/privat/sparing/spare-pa-konto",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cobranding",
+          "edsBlockName": "cobranding",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-sparing-spare-til-barn-html",
+      "path": "/nb/bank/privat/sparing/spare-til-barn",
+      "templateId": "product",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-bedriftskort-html",
+      "path": "/nb/bank/bedrift/bedriftskort",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "card-grid",
+          "edsBlockName": "card-grid"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "callout",
+          "edsBlockName": "callout",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-betaling-html",
+      "path": "/nb/bank/bedrift/betaling",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "visual-nav",
+          "edsBlockName": "visual-nav"
+        },
+        {
+          "id": "shortcut-row",
+          "edsBlockName": "shortcut-row"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-daglig-drift-html",
+      "path": "/nb/bank/bedrift/daglig-drift",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "card-grid",
+          "edsBlockName": "card-grid",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-html"
+        },
+        {
+          "id": "visual-nav",
+          "edsBlockName": "visual-nav",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "shortcut-row",
+          "edsBlockName": "shortcut-row",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-konto-html",
+      "path": "/nb/bank/bedrift/konto",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "visual-nav",
+          "edsBlockName": "visual-nav",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-lan-finansiering-html",
+      "path": "/nb/bank/bedrift/lan-finansiering",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "visual-nav",
+          "edsBlockName": "visual-nav",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-pensjon-html",
+      "path": "/nb/bank/bedrift/pensjon",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "visual-nav",
+          "edsBlockName": "visual-nav",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-regnskap-html",
+      "path": "/nb/bank/bedrift/regnskap",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "card-grid",
+          "edsBlockName": "card-grid",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-html"
+        },
+        {
+          "id": "visual-nav",
+          "edsBlockName": "visual-nav",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "callout",
+          "edsBlockName": "callout",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-sparing-investering-html",
+      "path": "/nb/bank/bedrift/sparing-investering",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "visual-nav",
+          "edsBlockName": "visual-nav",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "shortcut-row",
+          "edsBlockName": "shortcut-row",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-starte-bedrift-html",
+      "path": "/nb/bank/bedrift/starte-bedrift",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "card-grid",
+          "edsBlockName": "card-grid",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-tips-og-rad-html",
+      "path": "/nb/bank/bedrift/tips-og-rad",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "card-grid",
+          "edsBlockName": "card-grid",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-html",
+      "path": "/nb/bank/privat/daglig-bruk",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "related-topics",
+          "edsBlockName": "related-topics"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "visual-nav",
+          "edsBlockName": "visual-nav",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "shortcut-row",
+          "edsBlockName": "shortcut-row",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-eiendom-html",
+      "path": "/nb/bank/privat/eiendom",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "visual-nav",
+          "edsBlockName": "visual-nav",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "shortcut-row",
+          "edsBlockName": "shortcut-row",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "related-topics",
+          "edsBlockName": "related-topics",
+          "convertedBy": "nb-bank-privat-daglig-bruk-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-html",
+      "path": "/nb/bank/privat/forsikring",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "disclosure",
+          "edsBlockName": "disclosure"
+        },
+        {
+          "id": "static-cards",
+          "edsBlockName": "static-cards"
+        },
+        {
+          "id": "image",
+          "edsBlockName": "image"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "promo-band",
+          "edsBlockName": "promo-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "shortcut-row",
+          "edsBlockName": "shortcut-row",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-lan-html",
+      "path": "/nb/bank/privat/lan",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "related-products",
+          "edsBlockName": "related-products"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "visual-nav",
+          "edsBlockName": "visual-nav",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "shortcut-row",
+          "edsBlockName": "shortcut-row",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "cobranding",
+          "edsBlockName": "cobranding",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "promo-band",
+          "edsBlockName": "promo-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "callout",
+          "edsBlockName": "callout",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-lofavor-html",
+      "path": "/nb/bank/privat/lofavor",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs"
+        },
+        {
+          "id": "cta-row",
+          "edsBlockName": "cta-row"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-grid",
+          "edsBlockName": "card-grid",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-pensjon-html",
+      "path": "/nb/bank/privat/pensjon",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "card-grid",
+          "edsBlockName": "card-grid",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-html"
+        },
+        {
+          "id": "cobranding",
+          "edsBlockName": "cobranding",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankkort-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "calculator",
+          "edsBlockName": "calculator",
+          "convertedBy": "nb-bank-privat-lan-boliglan-html"
+        },
+        {
+          "id": "shortcut-row",
+          "edsBlockName": "shortcut-row",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "related-products",
+          "edsBlockName": "related-products",
+          "convertedBy": "nb-bank-privat-lan-html"
+        },
+        {
+          "id": "related-topics",
+          "edsBlockName": "related-topics",
+          "convertedBy": "nb-bank-privat-daglig-bruk-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-private-banking-html",
+      "path": "/nb/bank/privat/private-banking",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "usp",
+          "edsBlockName": "usp",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-grid",
+          "edsBlockName": "card-grid",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-html"
+        },
+        {
+          "id": "cta-row",
+          "edsBlockName": "cta-row",
+          "convertedBy": "nb-bank-privat-lofavor-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "static-cards",
+          "edsBlockName": "static-cards",
+          "convertedBy": "nb-bank-privat-forsikring-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-sparing-html",
+      "path": "/nb/bank/privat/sparing",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "visual-nav",
+          "edsBlockName": "visual-nav",
+          "convertedBy": "nb-bank-bedrift-betaling-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "calculator",
+          "edsBlockName": "calculator",
+          "convertedBy": "nb-bank-privat-lan-boliglan-html"
+        },
+        {
+          "id": "related-topics",
+          "edsBlockName": "related-topics",
+          "convertedBy": "nb-bank-privat-daglig-bruk-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-svindel-html",
+      "path": "/nb/bank/privat/svindel",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "card-grid",
+          "edsBlockName": "card-grid",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-html"
+        },
+        {
+          "id": "callout",
+          "edsBlockName": "callout",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "related-topics",
+          "edsBlockName": "related-topics",
+          "convertedBy": "nb-bank-privat-daglig-bruk-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-tips-og-rad-html",
+      "path": "/nb/bank/privat/tips-og-rad",
+      "templateId": "category-hub",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "text-and-image",
+          "edsBlockName": "text-and-image"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "disclosure",
+          "edsBlockName": "disclosure",
+          "convertedBy": "nb-bank-privat-forsikring-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+      "path": "/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler",
+      "templateId": "faq",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "faq-question",
+          "edsBlockName": "faq-question"
+        },
+        {
+          "id": "background-container",
+          "edsBlockName": "background-container-block"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+      "path": "/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf",
+      "templateId": "faq",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq-question",
+          "edsBlockName": "faq-question",
+          "convertedBy": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html"
+        },
+        {
+          "id": "background-container",
+          "edsBlockName": "background-container-block",
+          "convertedBy": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+      "path": "/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse",
+      "templateId": "faq",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "faq-question",
+          "edsBlockName": "faq-question",
+          "convertedBy": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+      "path": "/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg",
+      "templateId": "faq",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "faq-question",
+          "edsBlockName": "faq-question",
+          "convertedBy": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+      "path": "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-blir-jeg-bedriftskunde",
+      "templateId": "faq",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq-question",
+          "edsBlockName": "faq-question",
+          "convertedBy": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+      "path": "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf",
+      "templateId": "faq",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq-question",
+          "edsBlockName": "faq-question",
+          "convertedBy": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+      "path": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankaxept",
+      "templateId": "faq",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq-question",
+          "edsBlockName": "faq-question",
+          "convertedBy": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+      "path": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode",
+      "templateId": "faq",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq-question",
+          "edsBlockName": "faq-question",
+          "convertedBy": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+      "path": "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan",
+      "templateId": "faq",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq-question",
+          "edsBlockName": "faq-question",
+          "convertedBy": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+      "path": "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd",
+      "templateId": "faq",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq-question",
+          "edsBlockName": "faq-question",
+          "convertedBy": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+      "path": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift",
+      "templateId": "faq",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq-question",
+          "edsBlockName": "faq-question",
+          "convertedBy": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html",
+      "path": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura",
+      "templateId": "faq",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq-question",
+          "edsBlockName": "faq-question",
+          "convertedBy": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+      "path": "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-",
+      "templateId": "news-article",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "article-header",
+          "edsBlockName": "article-header"
+        },
+        {
+          "id": "article-body",
+          "edsBlockName": "article-body"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+      "path": "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-",
+      "templateId": "news-article",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "quote",
+          "edsBlockName": "quote"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "article-header",
+          "edsBlockName": "article-header",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "article-body",
+          "edsBlockName": "article-body",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+      "path": "/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken",
+      "templateId": "news-article",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "article-header",
+          "edsBlockName": "article-header",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "article-body",
+          "edsBlockName": "article-body",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+      "path": "/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket",
+      "templateId": "news-article",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "story-block",
+          "edsBlockName": "story-block"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "article-header",
+          "edsBlockName": "article-header",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "article-body",
+          "edsBlockName": "article-body",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "quote",
+          "edsBlockName": "quote",
+          "convertedBy": "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+      "path": "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast",
+      "templateId": "news-article",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "article-header",
+          "edsBlockName": "article-header",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "article-body",
+          "edsBlockName": "article-body",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+      "path": "/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien",
+      "templateId": "news-article",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "article-header",
+          "edsBlockName": "article-header",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "article-body",
+          "edsBlockName": "article-body",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "quote",
+          "edsBlockName": "quote",
+          "convertedBy": "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+      "path": "/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade",
+      "templateId": "news-article",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "article-header",
+          "edsBlockName": "article-header",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "article-body",
+          "edsBlockName": "article-body",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "story-block",
+          "edsBlockName": "story-block",
+          "convertedBy": "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+      "path": "/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon",
+      "templateId": "news-article",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "article-header",
+          "edsBlockName": "article-header",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "article-body",
+          "edsBlockName": "article-body",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "quote",
+          "edsBlockName": "quote",
+          "convertedBy": "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html"
+        },
+        {
+          "id": "text-and-image",
+          "edsBlockName": "text-and-image",
+          "convertedBy": "nb-bank-privat-tips-og-rad-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+      "path": "/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon",
+      "templateId": "news-article",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "article-header",
+          "edsBlockName": "article-header",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "article-body",
+          "edsBlockName": "article-body",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html",
+      "path": "/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo",
+      "templateId": "news-article",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "article-header",
+          "edsBlockName": "article-header",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "article-body",
+          "edsBlockName": "article-body",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "quote",
+          "edsBlockName": "quote",
+          "convertedBy": "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-investor-html",
+      "path": "/nb/bank/om-oss/investor",
+      "templateId": "om-oss",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "campaign",
+          "edsBlockName": "campaign"
+        },
+        {
+          "id": "columns-grid",
+          "edsBlockName": "columns-grid"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "background-container",
+          "edsBlockName": "background-container-block",
+          "convertedBy": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "nb-bank-privat-lofavor-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-jobb-og-karriere-html",
+      "path": "/nb/bank/om-oss/jobb-og-karriere",
+      "templateId": "om-oss",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "campaign",
+          "edsBlockName": "campaign",
+          "convertedBy": "nb-bank-om-oss-investor-html"
+        },
+        {
+          "id": "columns-grid",
+          "edsBlockName": "columns-grid",
+          "convertedBy": "nb-bank-om-oss-investor-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+      "path": "/nb/bank/om-oss/om-banken/selskapsinformasjon",
+      "templateId": "om-oss",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "text",
+          "edsBlockName": "text"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "table",
+          "edsBlockName": "table",
+          "convertedBy": "nb-bank-privat-forsikring-barneforsikring-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-personvern-generelle-vilkar-html",
+      "path": "/nb/bank/om-oss/personvern/generelle-vilkar",
+      "templateId": "om-oss",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "text",
+          "edsBlockName": "text",
+          "convertedBy": "nb-bank-om-oss-om-banken-selskapsinformasjon-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-personvern-html",
+      "path": "/nb/bank/om-oss/personvern",
+      "templateId": "om-oss",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "section",
+          "edsBlockName": "blk-section"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "columns-grid",
+          "edsBlockName": "columns-grid",
+          "convertedBy": "nb-bank-om-oss-investor-html"
+        },
+        {
+          "id": "background-container",
+          "edsBlockName": "background-container-block",
+          "convertedBy": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "nb-bank-om-oss-investor-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "table",
+          "edsBlockName": "table",
+          "convertedBy": "nb-bank-privat-forsikring-barneforsikring-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-presse-html",
+      "path": "/nb/bank/om-oss/presse",
+      "templateId": "om-oss",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "adviser-list",
+          "edsBlockName": "adviser-list"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "campaign",
+          "edsBlockName": "campaign",
+          "convertedBy": "nb-bank-om-oss-investor-html"
+        },
+        {
+          "id": "promo-band",
+          "edsBlockName": "promo-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-samfunnsansvar-html",
+      "path": "/nb/bank/om-oss/samfunnsansvar",
+      "templateId": "om-oss",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "campaign",
+          "edsBlockName": "campaign",
+          "convertedBy": "nb-bank-om-oss-investor-html"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "nb-bank-om-oss-investor-html"
+        },
+        {
+          "id": "columns-grid",
+          "edsBlockName": "columns-grid",
+          "convertedBy": "nb-bank-om-oss-investor-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-selskaper-html",
+      "path": "/nb/bank/om-oss/selskaper",
+      "templateId": "om-oss",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "text",
+          "edsBlockName": "text",
+          "convertedBy": "nb-bank-om-oss-om-banken-selskapsinformasjon-html"
+        },
+        {
+          "id": "background-container",
+          "edsBlockName": "background-container-block",
+          "convertedBy": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html"
+        },
+        {
+          "id": "columns-grid",
+          "edsBlockName": "columns-grid",
+          "convertedBy": "nb-bank-om-oss-investor-html"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "nb-bank-om-oss-investor-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-meld-skade-html",
+      "path": "/nb/bank/privat/forsikring/meld-skade",
+      "templateId": "tool",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "card-grid",
+          "edsBlockName": "card-grid",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+      "path": "/nb/bank/privat/kundeservice/verktoy/iban-og-swift",
+      "templateId": "tool",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "disclosure",
+          "edsBlockName": "disclosure",
+          "convertedBy": "nb-bank-privat-forsikring-html"
+        },
+        {
+          "id": "table",
+          "edsBlockName": "table",
+          "convertedBy": "nb-bank-privat-forsikring-barneforsikring-html"
+        },
+        {
+          "id": "related-products",
+          "edsBlockName": "related-products",
+          "convertedBy": "nb-bank-privat-lan-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-verktoy-klager-html",
+      "path": "/nb/bank/privat/kundeservice/verktoy/klager",
+      "templateId": "tool",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "accordion-list",
+          "edsBlockName": "accordion-list"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "steps",
+          "edsBlockName": "steps",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
+      "path": "/nb/bank/privat/kundeservice/verktoy/sparekalkulator",
+      "templateId": "tool",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "calculator",
+          "edsBlockName": "calculator",
+          "convertedBy": "nb-bank-privat-lan-boliglan-html"
+        },
+        {
+          "id": "related-products",
+          "edsBlockName": "related-products",
+          "convertedBy": "nb-bank-privat-lan-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+      "path": "/nb/bank/privat/kundeservice/verktoy/sperre-kort",
+      "templateId": "tool",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "steps",
+          "edsBlockName": "steps",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "callout",
+          "edsBlockName": "callout",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html",
+      "path": "/nb/bank/privat/kundeservice/verktoy/valutakalkulator",
+      "templateId": "tool",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "currency-converter",
+          "edsBlockName": "currency-converter"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+      "path": "/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie",
+      "templateId": "theme",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "callout",
+          "edsBlockName": "callout",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-row",
+          "edsBlockName": "cta-row",
+          "convertedBy": "nb-bank-privat-lofavor-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-bedriftsforsikring-html",
+      "path": "/nb/bank/bedrift/bedriftsforsikring",
+      "templateId": "theme",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "promo-band",
+          "edsBlockName": "promo-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+      "path": "/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort",
+      "templateId": "theme",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html",
+      "path": "/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man",
+      "templateId": "theme",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "product-hero",
+          "edsBlockName": "product-hero",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-html",
+      "path": "/nb/bank/bedrift",
+      "templateId": "market-landing",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "quick-links",
+          "edsBlockName": "quick-links"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "campaign",
+          "edsBlockName": "campaign",
+          "convertedBy": "nb-bank-om-oss-investor-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "promo-band",
+          "edsBlockName": "promo-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-html",
+      "path": "/nb/bank/om-oss",
+      "templateId": "market-landing",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "campaign",
+          "edsBlockName": "campaign",
+          "convertedBy": "nb-bank-om-oss-investor-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "rich-text",
+          "edsBlockName": "rich-text",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-html",
+      "path": "/nb/bank/privat",
+      "templateId": "market-landing",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "campaign-carousel",
+          "edsBlockName": "campaign-carousel"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "promo-band",
+          "edsBlockName": "promo-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "cta-band",
+          "edsBlockName": "cta-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-html",
+      "path": "/nb/bank/bedrift/kundeservice",
+      "templateId": "kundeservice-hub",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "hero-ask",
+          "edsBlockName": "hero-ask"
+        },
+        {
+          "id": "chat-field",
+          "edsBlockName": "chat-field"
+        },
+        {
+          "id": "topic-tiles",
+          "edsBlockName": "topic-tiles"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "image",
+          "edsBlockName": "image",
+          "convertedBy": "nb-bank-privat-forsikring-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "callout",
+          "edsBlockName": "callout",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "promo-band",
+          "edsBlockName": "promo-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-html",
+      "path": "/nb/bank/privat/kundeservice",
+      "templateId": "kundeservice-hub",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "hero-ask",
+          "edsBlockName": "hero-ask",
+          "convertedBy": "nb-bank-bedrift-kundeservice-html"
+        },
+        {
+          "id": "chat-field",
+          "edsBlockName": "chat-field",
+          "convertedBy": "nb-bank-bedrift-kundeservice-html"
+        },
+        {
+          "id": "faq",
+          "edsBlockName": "faq",
+          "convertedBy": "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        },
+        {
+          "id": "topic-tiles",
+          "edsBlockName": "topic-tiles",
+          "convertedBy": "nb-bank-bedrift-kundeservice-html"
+        },
+        {
+          "id": "promo-band",
+          "edsBlockName": "promo-band",
+          "convertedBy": "nb-bank-privat-daglig-bruk-bankid-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
+      "path": "/nb/bank/privat/kundeservice/bestill/prisliste",
+      "templateId": "utility",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "page-title",
+          "edsBlockName": "page-title",
+          "convertedBy": "nb-bank-om-oss-vare-eksperter-html"
+        },
+        {
+          "id": "image",
+          "edsBlockName": "image",
+          "convertedBy": "nb-bank-privat-forsikring-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-kontakt-html",
+      "path": "/nb/bank/privat/kundeservice/kontakt",
+      "templateId": "utility",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "hero-portrait",
+          "edsBlockName": "hero-portrait"
+        },
+        {
+          "id": "bank-table",
+          "edsBlockName": "bank-table"
+        },
+        {
+          "id": "address-block",
+          "edsBlockName": "address-block"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "callout",
+          "edsBlockName": "callout",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-hjemme-html",
+      "path": "/nb/bank/om-oss/hjemme",
+      "templateId": "campaign-landing",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "video-hero",
+          "edsBlockName": "video-hero"
+        },
+        {
+          "id": "story-text",
+          "edsBlockName": "story-text"
+        },
+        {
+          "id": "video",
+          "edsBlockName": "video"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "split-media",
+          "edsBlockName": "split-media",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-privat-sparing-markedsnytt-html",
+      "path": "/nb/bank/privat/sparing/markedsnytt",
+      "templateId": "markedsnytt-listing",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "bank-router",
+          "edsBlockName": "bank-router",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "campaign",
+          "edsBlockName": "campaign",
+          "convertedBy": "nb-bank-om-oss-investor-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "content-columns",
+          "edsBlockName": "content-columns",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "feedback",
+          "edsBlockName": "feedback",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        },
+        {
+          "id": "contact-row",
+          "edsBlockName": "contact-row",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-html",
+      "path": "/nb/bank/om-oss/nyheter",
+      "templateId": "news-listing",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "button-row",
+          "edsBlockName": "button-row"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "article-header",
+          "edsBlockName": "article-header",
+          "convertedBy": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        },
+        {
+          "id": "card-rail",
+          "edsBlockName": "card-rail",
+          "convertedBy": "nb-bank-bedrift-bedriftskort-kredittkort-html"
+        }
+      ]
+    },
+    {
+      "slug": "home",
+      "path": "/",
+      "templateId": null,
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    }
+  ]
+}

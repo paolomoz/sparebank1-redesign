@@ -1,13 +1,13 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-09-14T21:48:59.499Z",
+    "writtenAt": "2026-09-14T22:17:44.404Z",
     "readArtifacts": [
       "stardust/migrated"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-09-14T21:48:59.499Z",
+  "generatedAt": "2026-09-14T22:17:44.404Z",
   "templates": [
     {
       "id": "campaign-landing",
@@ -31,30 +31,61 @@
     },
     {
       "id": "category-hub",
-      "representativeSlug": "nb-bank-privat-lan-html",
+      "representativeSlug": "nb-bank-bedrift-bedriftskort-html",
       "pages": [
-        "nb-bank-privat-lan-html"
+        "nb-bank-bedrift-bedriftskort-html",
+        "nb-bank-bedrift-betaling-html",
+        "nb-bank-bedrift-daglig-drift-html",
+        "nb-bank-bedrift-konto-html",
+        "nb-bank-bedrift-lan-finansiering-html",
+        "nb-bank-bedrift-pensjon-html",
+        "nb-bank-bedrift-regnskap-html",
+        "nb-bank-bedrift-sparing-investering-html",
+        "nb-bank-bedrift-starte-bedrift-html",
+        "nb-bank-bedrift-tips-og-rad-html",
+        "nb-bank-privat-daglig-bruk-html",
+        "nb-bank-privat-eiendom-html",
+        "nb-bank-privat-forsikring-html",
+        "nb-bank-privat-lan-html",
+        "nb-bank-privat-lofavor-html",
+        "nb-bank-privat-pensjon-html",
+        "nb-bank-privat-private-banking-html",
+        "nb-bank-privat-sparing-html",
+        "nb-bank-privat-svindel-html",
+        "nb-bank-privat-tips-og-rad-html"
       ],
-      "pageCount": 1,
+      "pageCount": 20,
       "blocks": [
         "bank-router",
+        "calculator",
         "callout",
+        "card-grid",
         "cobranding",
         "contact-row",
         "cta-band",
+        "cta-row",
+        "disclosure",
+        "faq",
         "feedback",
+        "image",
         "page-title",
         "promo-band",
         "related-products",
+        "related-topics",
+        "rich-text",
         "shortcut-row",
         "split-media",
+        "static-cards",
+        "tabs",
+        "text-and-image",
+        "usp",
         "visual-nav"
       ],
       "delivery": {
         "verified": 0,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 1
+        "pending": 20
       }
     },
     {
@@ -91,17 +122,20 @@
     },
     {
       "id": "kundeservice-hub",
-      "representativeSlug": "nb-bank-privat-kundeservice-html",
+      "representativeSlug": "nb-bank-bedrift-kundeservice-html",
       "pages": [
+        "nb-bank-bedrift-kundeservice-html",
         "nb-bank-privat-kundeservice-html"
       ],
-      "pageCount": 1,
+      "pageCount": 2,
       "blocks": [
         "bank-router",
+        "callout",
         "chat-field",
         "contact-row",
         "faq",
         "hero-ask",
+        "image",
         "promo-band",
         "topic-tiles"
       ],
@@ -109,7 +143,7 @@
         "verified": 0,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 1
+        "pending": 2
       }
     },
     {
@@ -136,25 +170,32 @@
     },
     {
       "id": "market-landing",
-      "representativeSlug": "nb-bank-privat-html",
+      "representativeSlug": "nb-bank-bedrift-html",
       "pages": [
+        "nb-bank-bedrift-html",
+        "nb-bank-om-oss-html",
         "nb-bank-privat-html"
       ],
-      "pageCount": 1,
+      "pageCount": 3,
       "blocks": [
         "bank-router",
+        "campaign",
         "campaign-carousel",
         "card-rail",
         "contact-row",
         "content-columns",
         "cta-band",
-        "promo-band"
+        "feedback",
+        "promo-band",
+        "quick-links",
+        "rich-text",
+        "split-media"
       ],
       "delivery": {
         "verified": 0,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 1
+        "pending": 3
       }
     },
     {
@@ -318,42 +359,80 @@
       "id": "theme",
       "representativeSlug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
       "pages": [
-        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html"
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "nb-bank-bedrift-bedriftsforsikring-html",
+        "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+        "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html"
       ],
-      "pageCount": 1,
+      "pageCount": 4,
       "blocks": [
+        "bank-router",
         "callout",
         "card-rail",
         "contact-row",
         "content-columns",
         "cta-row",
+        "faq",
         "feedback",
         "page-title",
+        "product-hero",
+        "promo-band",
+        "rich-text",
         "split-media"
       ],
       "delivery": {
         "verified": 0,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 1
+        "pending": 4
       }
     },
     {
       "id": "tool",
-      "representativeSlug": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+      "representativeSlug": "nb-bank-privat-forsikring-meld-skade-html",
       "pages": [
-        "nb-bank-privat-kundeservice-verktoy-sperre-kort-html"
+        "nb-bank-privat-forsikring-meld-skade-html",
+        "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+        "nb-bank-privat-kundeservice-verktoy-klager-html",
+        "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
+        "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+        "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html"
       ],
-      "pageCount": 1,
+      "pageCount": 6,
       "blocks": [
+        "accordion-list",
         "bank-router",
+        "calculator",
         "callout",
+        "card-grid",
         "contact-row",
+        "cta-band",
+        "currency-converter",
+        "disclosure",
+        "faq",
         "feedback",
         "page-title",
+        "related-products",
+        "rich-text",
         "split-media",
-        "steps"
+        "steps",
+        "table"
       ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 6
+      }
+    },
+    {
+      "id": "untyped",
+      "representativeSlug": "home",
+      "pages": [
+        "home"
+      ],
+      "pageCount": 1,
+      "blocks": [],
       "delivery": {
         "verified": 0,
         "deployed": 0,
@@ -363,23 +442,26 @@
     },
     {
       "id": "utility",
-      "representativeSlug": "nb-bank-privat-kundeservice-kontakt-html",
+      "representativeSlug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
       "pages": [
+        "nb-bank-privat-kundeservice-bestill-prisliste-html",
         "nb-bank-privat-kundeservice-kontakt-html"
       ],
-      "pageCount": 1,
+      "pageCount": 2,
       "blocks": [
         "address-block",
         "bank-table",
         "callout",
         "contact-row",
-        "hero-portrait"
+        "hero-portrait",
+        "image",
+        "page-title"
       ],
       "delivery": {
         "verified": 0,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 1
+        "pending": 2
       }
     }
   ]

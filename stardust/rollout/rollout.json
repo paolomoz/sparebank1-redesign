@@ -1,0 +1,35 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-14T22:17:44.404Z",
+    "stardustVersion": "0.0.0"
+  },
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://www.sparebank1.no",
+    "da": {
+      "org": "",
+      "site": "",
+      "ref": "main"
+    },
+    "liveHost": null
+  },
+  "lastRun": {
+    "at": "2026-09-14T22:17:44.404Z",
+    "pages": {
+      "total": 101,
+      "verified": 0,
+      "deployed": 0,
+      "pending": 101,
+      "contentPending": 0,
+      "stale": 0,
+      "failed": 0
+    },
+    "blocks": {
+      "total": 62,
+      "converted": 0,
+      "pending": 62
+    },
+    "verifyFailures": 0
+  }
+}
