@@ -31,3 +31,26 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Next:** `direct` — intent reasoning on the modernise phrase, one canonical direction, then `direct --prep`.
 
 ---
+## 2026-09-14T21:20:00Z — direct (+ --prep): one canonical direction, target PRODUCT/DESIGN/DESIGN.json
+
+**Prompt:** Resolve the "Modernise the SpareBank 1 site — it looks old …" phrase into one canonical direction, hands-off, then run the direct --prep overlays.
+
+**Decisions:**
+- Mode A brand-faithful (signal-strong); palette + faces pinned; no A+ refinement (no captured face/colour named as a weakness). Expressive restrained → committed (1.25 scale on the pinned title face); tone calm-confident; distinctiveness → distinctive; density balanced with the multi-audience floor accepted (A3: 64/48/32); ia-fidelity verbatim (A2) — verbatim spine, re-composed surface, surprise capped low.
+- Research-first (refero, 3 searches / 4 retrievals): Fruitful (mood/density), MANNA (photography as content, register Museum didactic), Open Collective + Munro (hairline/flat discipline). Seed roll 1960s × Photogram × Real-estate listing × cream → research overrides decade/register; craft Photogram kept as a constraint; ground cream overridden brand-faithful (Mode C) → white, Sand-30 as alt paper.
+- Improvements list (7): compact alliance router; one-row header; 1.25 scale; one card language; no type over photos + Koksgrå on tints; photography at content scale; 11 bands → 5 movements.
+- Anti-toolbox: 1 hit (sticky nav, mobile-only, captured behaviour). Six brand-faithful inversions auto-emitted. Bær on white measured 4.07:1 → Bær is border/icon only, error text Svart.
+- Prep overlays: 7-type catalog confirmed (13 archetype families as the per-site refinement); 45 module candidates → 34 confirmed (brand-native ids, typed slots, `bank-router` added) + 4 pruned; Skog/Bær/Sol reserved; metadata (themeColor Fjell, Organization JSON-LD, keyFacts = rate examples); wider re-evaluation surfaced the text-over-photo article hero → banned by direction, no re-direct.
+- Canon author = `nb-bank-privat-html` (market landing).
+
+**Artifacts touched:** stardust/direction.md — created · PRODUCT.md, DESIGN.md, DESIGN.json — created · stardust/prototypes/nb-bank-privat-html-improvements.md — created · stardust/scripts/validate-provenance.mjs — created · stardust/state.json — 100 pages directed · stardust/status.jsonl — appended.
+
+**Findings worth flagging:**
+- impeccable 4.3.1's launcher (`scripts/impeccable context|detect`) works from the project root; `load-context.mjs` no longer exists — master SKILL.md § Setup step 2 should point at the launcher.
+- `_modules.json` scans `main > div.*` only, so `complementary` landmarks (the bank-choice router on 70 pages) never become module candidates — the most important brand module had to be added by hand.
+
+**Open questions:** none blocking (fonts A5; owner decision batch unchanged).
+
+**Next:** `prototype --prep --canon-from nb-bank-privat-html` — 13 archetypes, full validation loop, hands-off approval, canon.
+
+---

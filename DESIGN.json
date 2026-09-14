@@ -1,0 +1,1819 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:direct (Phase 4 sidecar + --prep overlays: modules, colorReservations, metadata, iaPriorities)",
+  "writtenAt": "2026-09-14T21:18:00Z",
+  "againstDirection": "stardust/direction.md (Active 2026-09-14T21:10:00Z)",
+  "readArtifacts": [
+   "stardust/current/DESIGN.json",
+   "stardust/current/_modules.json",
+   "stardust/current/_ffe-tokens.json",
+   "stardust/current/_brand-extraction.json",
+   "stardust/direction.md",
+   "DESIGN.md"
+  ],
+  "synthesizedInputs": [],
+  "stardustVersion": "0.20.0"
+ },
+ "schemaVersion": 2,
+ "generatedAt": "2026-09-14T21:18:00Z",
+ "title": "Design System: SpareBank 1 — Rolig og tydelig",
+ "narrative": {
+  "northStar": "The Quiet Reading Room of a Local Bank",
+  "overview": "White paper, the bank's own title face on a 1.25 scale, Fjell words, Vann links, one Skog action per module, Sand/Frost paper fields instead of cards and dividers, photography at content scale, the alliance router as a compact first-viewport signature.",
+  "keyCharacteristics": [
+   "white ground with tinted paper fields",
+   "1.25 modular scale on three single-weight brand faces",
+   "photography as content, one-corner-pair mask",
+   "one action per module, Skog reserved",
+   "flat at rest, no dividers",
+   "compact alliance router in every first viewport"
+  ],
+  "rules": [
+   "The One Action Rule",
+   "The Paper Rule",
+   "The No-Overlay Rule",
+   "The 1.25 Rule",
+   "The Sentence-Case Rule",
+   "The Single-Weight Rule",
+   "The Flat-At-Rest Rule",
+   "House 7.1: no marketing adjectives in direction-authorised chrome copy",
+   "House 7.2: no exclamation points added (captured copy stays verbatim)"
+  ],
+  "dos": [
+   "Set headings in SpareBank1-title-medium at 1.25 steps",
+   "Change paper to mark a movement",
+   "One action per module; Skog only for log-in / become-customer / apply",
+   "Photographs at content scale with the one-corner-pair mask",
+   "Keep the alliance router in the first viewport, compact, with its landscape",
+   "Keep every captured word, link, image, FAQ verbatim",
+   "Theme browser surfaces (selection, focus, tabular numerals)"
+  ],
+  "donts": [
+   "No shadows at rest, no <hr>, no card chrome, no nested cards",
+   "No eyebrow/kicker above headings",
+   "No type over photographs, gradients, glass, dark ground",
+   "No font-weight other than 400, no uppercase beyond captured acronyms",
+   "No colours outside the FFE palette; Skog/Bær/Sol only in reserved roles",
+   "No centered two-button hero"
+  ]
+ },
+ "extensions": {
+  "colorMeta": {
+   "fjell": {
+    "role": "primary",
+    "displayName": "Fjell — mountain blue",
+    "canonical": "#002776",
+    "use": "display/headline text, footer ground, link hover"
+   },
+   "fjell-70": {
+    "role": "primary",
+    "displayName": "Fjell-70",
+    "canonical": "#4d689f",
+    "use": "illustration"
+   },
+   "fjell-30": {
+    "role": "primary",
+    "displayName": "Fjell-30",
+    "canonical": "#b3bed6",
+    "use": "illustration"
+   },
+   "vann": {
+    "role": "primary",
+    "displayName": "Vann — water blue",
+    "canonical": "#005aa4",
+    "use": "links, primary button, router band"
+   },
+   "vann-30": {
+    "role": "primary",
+    "displayName": "Vann-30",
+    "canonical": "#b3cee4",
+    "use": "illustration / hover tint"
+   },
+   "natt": {
+    "role": "primary",
+    "displayName": "Natt — night",
+    "canonical": "#001032",
+    "use": "footer legal row"
+   },
+   "skog": {
+    "role": "secondary",
+    "displayName": "Skog — forest green",
+    "canonical": "#00754e",
+    "use": "reserved: action button + success"
+   },
+   "skog-hover": {
+    "role": "secondary",
+    "displayName": "Skog hover",
+    "canonical": "#095139",
+    "use": "action hover"
+   },
+   "frost": {
+    "role": "secondary",
+    "displayName": "Frost",
+    "canonical": "#7eb5d2",
+    "use": "cool paper accent / illustration sky"
+   },
+   "frost-30": {
+    "role": "secondary",
+    "displayName": "Frost-30",
+    "canonical": "#d8e9f2",
+    "use": "cool paper field"
+   },
+   "sand": {
+    "role": "secondary",
+    "displayName": "Sand",
+    "canonical": "#f8e9dd",
+    "use": "warm paper accent"
+   },
+   "sand-70": {
+    "role": "secondary",
+    "displayName": "Sand-70",
+    "canonical": "#faf0e7",
+    "use": "warm paper"
+   },
+   "sand-30": {
+    "role": "secondary",
+    "displayName": "Sand-30",
+    "canonical": "#fdf8f5",
+    "use": "default warm paper field / card ground"
+   },
+   "syrin-30": {
+    "role": "secondary",
+    "displayName": "Syrin-30",
+    "canonical": "#f2f2f9",
+    "use": "campaign carousel paper"
+   },
+   "multe": {
+    "role": "tertiary",
+    "displayName": "Multe — cloudberry",
+    "canonical": "#f8b181",
+    "use": "illustration"
+   },
+   "lyng": {
+    "role": "tertiary",
+    "displayName": "Lyng — heather",
+    "canonical": "#873953",
+    "use": "visited links"
+   },
+   "baer": {
+    "role": "tertiary",
+    "displayName": "Bær — berry",
+    "canonical": "#e44244",
+    "use": "error border + icon only; never body text on Hvit (4.07:1)"
+   },
+   "nordlys": {
+    "role": "tertiary",
+    "displayName": "Nordlys — aurora",
+    "canonical": "#33af85",
+    "use": "success icon"
+   },
+   "sol": {
+    "role": "tertiary",
+    "displayName": "Sol — sun",
+    "canonical": "#dc8000",
+    "use": "focus ring, tips icon"
+   },
+   "svart": {
+    "role": "neutral",
+    "displayName": "Svart",
+    "canonical": "#020a0a",
+    "use": "body text"
+   },
+   "koksgraa": {
+    "role": "neutral",
+    "displayName": "Koksgrå",
+    "canonical": "#323232",
+    "use": "secondary text on tinted paper"
+   },
+   "moerkgraa": {
+    "role": "neutral",
+    "displayName": "Mørkgrå",
+    "canonical": "#676767",
+    "use": "secondary text on white"
+   },
+   "graa": {
+    "role": "neutral",
+    "displayName": "Grå",
+    "canonical": "#adadad",
+    "use": "disabled"
+   },
+   "lysgraa": {
+    "role": "neutral",
+    "displayName": "Lysgrå",
+    "canonical": "#d8d8d8",
+    "use": "hairlines, borders"
+   },
+   "hvit": {
+    "role": "neutral",
+    "displayName": "Hvit",
+    "canonical": "#ffffff",
+    "use": "page ground"
+   }
+  },
+  "wcagPairs": [
+   {
+    "fg": "fjell",
+    "bg": "hvit",
+    "ratio": 13.53,
+    "aa-body": true
+   },
+   {
+    "fg": "vann",
+    "bg": "hvit",
+    "ratio": 7.0,
+    "aa-body": true
+   },
+   {
+    "fg": "hvit",
+    "bg": "skog",
+    "ratio": 5.75,
+    "aa-body": true
+   },
+   {
+    "fg": "hvit",
+    "bg": "vann",
+    "ratio": 7.0,
+    "aa-body": true
+   },
+   {
+    "fg": "hvit",
+    "bg": "fjell",
+    "ratio": 13.53,
+    "aa-body": true
+   },
+   {
+    "fg": "fjell",
+    "bg": "frost-30",
+    "ratio": 10.86,
+    "aa-body": true
+   },
+   {
+    "fg": "fjell",
+    "bg": "sand-30",
+    "ratio": 12.84,
+    "aa-body": true
+   },
+   {
+    "fg": "vann",
+    "bg": "sand-30",
+    "ratio": 6.64,
+    "aa-body": true
+   },
+   {
+    "fg": "vann",
+    "bg": "frost-30",
+    "ratio": 5.62,
+    "aa-body": true
+   },
+   {
+    "fg": "svart",
+    "bg": "sand-30",
+    "ratio": 18.97,
+    "aa-body": true
+   },
+   {
+    "fg": "svart",
+    "bg": "frost-30",
+    "ratio": 16.05,
+    "aa-body": true
+   },
+   {
+    "fg": "koksgraa",
+    "bg": "frost-30",
+    "ratio": 10.29,
+    "aa-body": true
+   },
+   {
+    "fg": "koksgraa",
+    "bg": "sand-30",
+    "ratio": 12.16,
+    "aa-body": true
+   },
+   {
+    "fg": "moerkgraa",
+    "bg": "hvit",
+    "ratio": 5.66,
+    "aa-body": true
+   },
+   {
+    "fg": "moerkgraa",
+    "bg": "frost-30",
+    "ratio": 4.54,
+    "aa-body": true
+   },
+   {
+    "fg": "fjell",
+    "bg": "syrin-30",
+    "ratio": 12.14,
+    "aa-body": true
+   },
+   {
+    "fg": "hvit",
+    "bg": "natt",
+    "ratio": 18.75,
+    "aa-body": true
+   },
+   {
+    "fg": "lyng",
+    "bg": "hvit",
+    "ratio": 7.66,
+    "aa-body": true
+   },
+   {
+    "fg": "baer",
+    "bg": "hvit",
+    "ratio": 4.07,
+    "aa-body": false
+   }
+  ],
+  "typographyMeta": {
+   "display": {
+    "family": "SpareBank1-title-medium",
+    "file": "stardust/current/assets/fonts/SpareBank1-Title-Medium-Web.woff2",
+    "static": true
+   },
+   "title": {
+    "family": "SpareBank1-medium",
+    "file": "stardust/current/assets/fonts/SpareBank1-Medium-Web.woff2",
+    "static": true
+   },
+   "body": {
+    "family": "SpareBank1-regular",
+    "file": "stardust/current/assets/fonts/SpareBank1-Regular-Web.woff2",
+    "static": true
+   },
+   "scale": {
+    "ratio": 1.25,
+    "base": 16,
+    "steps": [
+     13,
+     16,
+     20,
+     25,
+     31,
+     39,
+     49,
+     61
+    ]
+   },
+   "measure": {
+    "prose": "68ch",
+    "lead": "60ch"
+   },
+   "numerals": "tabular-nums on prices, rates, tables, phone numbers",
+   "fontDisplay": "swap"
+  },
+  "shadows": {
+   "lift": "0 8px 24px -12px rgba(0, 39, 118, 0.25)",
+   "dialog": "0 24px 48px -16px rgba(0, 16, 50, 0.35)",
+   "rest": "none"
+  },
+  "motion": {
+   "register": "arrival",
+   "registerRationale": "PRODUCT.md Brand Personality: institutional + place-led ('Vi er flere banker i hele Norge', an alliance of local savings banks) → arrival per motion-registers.md § Selection heuristic; direct selects only — prototypes render static unless --cinematic",
+   "easings": {
+    "entrance": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    "transition": "cubic-bezier(0.2, 0, 0, 1)",
+    "expo": "cubic-bezier(0.16, 1, 0.3, 1)"
+   },
+   "durations": {
+    "enter": 700,
+    "stagger": 90,
+    "state": 160
+   },
+   "parallax": {
+    "translate": 20,
+    "fade": 0.55,
+    "rangeStart": 0,
+    "range": 100
+   },
+   "reducedMotion": "all transitions and entrances disabled; end states shown"
+  },
+  "breakpoints": {
+   "values": [
+    480,
+    640,
+    768,
+    1024,
+    1280
+   ],
+   "containerMaxWidth": "1280px",
+   "sideMargins": {
+    "1440": "80px",
+    "1024": "48px",
+    "768": "24px",
+    "390": "20px"
+   },
+   "navCollapse": 640
+  },
+  "divergence": {
+   "toolkit_version": "v1.0 (stardust v2)",
+   "seed": {
+    "input": "SpareBank 1|2026-09-14",
+    "md5": "21334f24d1387c6579ca902b6745c96d",
+    "rolled": {
+     "decade": "1960s",
+     "craft": "Photogram",
+     "register": "Real-estate listing",
+     "ground_family": "cream"
+    },
+    "decade": "2025-now",
+    "craft": "Photogram",
+    "register": "Museum didactic",
+    "ground_family": "stark-white",
+    "picked_by": {
+     "decade": "reasoned: Fruitful, Open Collective, MANNA (current editorial fintech / gallery presentation)",
+     "craft": "deterministic (research implied no craft) — used as constraint: imagery and flat illustrations sit directly on tinted paper, no chrome, no shadow",
+     "register": "reasoned: MANNA — photography as captioned content blocks",
+     "ground_family": "brand-faithful override (Mode C) of rolled cream; captured ground #ffffff"
+    },
+    "ground_family_override": {
+     "reason": "brand-faithful",
+     "rolledInformsAltSurface": "Sand-30 #fdf8f5 (brand-native warm paper)"
+    },
+    "overrides": [],
+    "anchors": [
+     {
+      "ref": "MANNA",
+      "implies": [
+       "register: Museum didactic",
+       "imagery: uncropped content blocks"
+      ]
+     },
+     {
+      "ref": "Fruitful",
+      "implies": [
+       "decade: 2025-now",
+       "ground: stark-white + tinted alt surfaces",
+       "density: comfortable"
+      ]
+     },
+     {
+      "ref": "Open Collective",
+      "implies": [
+       "border/shadow discipline: hairlines, single vivid action"
+      ]
+     }
+    ]
+   },
+   "mode": "A (brand-faithful); A+ not activated",
+   "font_deck": {
+    "name": "brand-inherited",
+    "picked_by": "user-constraint",
+    "families": [
+     "SpareBank1-title-medium",
+     "SpareBank1-medium",
+     "SpareBank1-regular"
+    ],
+    "notes": "All three families are static single-weight (400) cuts (woff2 without fvar) — Discipline 7 static-only-family exemption: no variable axis to engage; hierarchy is size + cut. Reflex-reject pre-flight bypassed (Mode A pinned families)."
+   },
+   "palette": {
+    "source": "inherited from _brand-extraction.json + _ffe-tokens.json",
+    "picked_by": "user-constraint",
+    "roleNaming": "brand-native FFE nature names (Fjell, Vann, Skog, Sand, Frost…) — toolkit § 4 satisfied"
+   },
+   "anti_toolbox_count": 1,
+   "anti_toolbox_hits": [
+    {
+     "move": "Sticky top navigation",
+     "justification": "scoped to mobile only; the captured header morphs to fixed on scroll (.header__wrap.scroll/.show, clientlib module 2741) — a brand behaviour reproduced, not an agent reflex; desktop header static as captured"
+    }
+   ],
+   "off_toolbox_moves": [
+    {
+     "move": "compact alliance router with reduced-scale landscape",
+     "why": "the 12-bank alliance is the brand's literal structure; the router is the signature of this brand alone"
+    },
+    {
+     "move": "one-corner-pair large-radius photo mask",
+     "why": "derived from the captured 96px all-round mask (785 occurrences); a shape only this brand has earned"
+    }
+   ],
+   "audit_adjustments": [
+    {
+     "from": "anti_toolbox_hits",
+     "to": "removed",
+     "move": "Kicker/eyebrow above headings (captured 'TIPS OG RÅD')",
+     "reason": "craft-floor ban — moved to a meta line under the title"
+    }
+   ],
+   "references_used": [
+    {
+     "source": "refero",
+     "title": "Fruitful",
+     "url": "https://fruitful.com",
+     "styleId": "d8a01033-6c9d-46ef-87c2-1a67780a9a8d",
+     "previewUrl": "https://images.refero.design/styles/fruitful.com/d8a01033-6c9d-46ef-87c2-1a67780a9a8d/preview_0.jpg",
+     "grounds": "calm consumer finance: white canvas, one green action, human portraits in tinted containers, alternating tinted papers → mood + density anchor",
+     "tag": "off-toolbox"
+    },
+    {
+     "source": "refero",
+     "title": "Open Collective — Raise",
+     "url": "https://opencollective.com",
+     "styleId": "f72e18d0-98f4-4e88-9754-5426589564ea",
+     "previewUrl": "https://images.refero.design/styles/opencollective.com/f72e18d0-98f4-4e88-9754-5426589564ea/preview_0.jpg",
+     "grounds": "navy type + single blue action, hairlines over shadows → border/shadow discipline only",
+     "tag": "in-toolbox"
+    },
+    {
+     "source": "refero",
+     "title": "MANNA",
+     "url": "https://www.mannaarchitects.com",
+     "styleId": "3e14bbe4-e207-4f6b-bf64-993fad7319b8",
+     "previewUrl": "https://images.refero.design/styles/www.mannaarchitects.com/3e14bbe4-e207-4f6b-bf64-993fad7319b8/preview_0.jpg",
+     "grounds": "photography as uncropped captioned content blocks, sections by ground-colour shift, zero shadows → photo treatment anchor (out-of-category)",
+     "tag": "off-toolbox"
+    },
+    {
+     "source": "refero",
+     "title": "Munro Partners",
+     "url": "https://www.munropartners.com.au",
+     "styleId": "530fc441-402b-4446-9da3-1a974b9ee48f",
+     "previewUrl": "https://images.refero.design/styles/www.munropartners.com.au/530fc441-402b-4446-9da3-1a974b9ee48f/preview_0.jpg",
+     "grounds": "restrained financial institution: hairline dividers, flat cards, one accent CTA → band discipline (oat ground NOT ported)",
+     "tag": "off-toolbox"
+    }
+   ],
+   "palette_source": {
+    "library_version": null,
+    "candidates": [],
+    "recommended_index": null,
+    "picked_index": null,
+    "note": "palette inherited (Mode A); palette-picker not invoked"
+   },
+   "brand_faithful_inversions": [
+    {
+     "inversion": "pure-white retention",
+     "line": "#ffffff retained as page ground (6,418 captured white backgrounds; --ffe-farge-hvit is canonical for SpareBank 1). The 'no pure white' rule is inverted per brand-faithful direction."
+    },
+    {
+     "inversion": "hex format retention",
+     "line": "Colour tokens retained in hex (matches _ffe-tokens.json and the Stitch frontmatter convention). OKLCH applies to new authoring; this is inheritance."
+    },
+    {
+     "inversion": "saturated color retention",
+     "line": "Saturated Vann #005aa4 retained as link/primary colour and Fjell #002776 as heading colour (the brand's canonical voice). The tinted-neutral reflex is inverted."
+    },
+    {
+     "inversion": "reserved color",
+     "line": "Skog #00754e reserved to action CTAs and success states (392 captured ffe-button--action occurrences); the 'spread the accent' reflex is inverted."
+    },
+    {
+     "inversion": "photo treatment retention",
+     "line": "Natural warm real-people photography kept untreated; scale and crop change, treatment does not."
+    },
+    {
+     "inversion": "pill button retention",
+     "line": "6em pill buttons retained (--ffe-v-buttons-border-radius); the 8–12px radius reflex is inverted for buttons only."
+    }
+   ],
+   "brand_adjacent_refinements": []
+  },
+  "componentStyle": {
+   "buttons": {
+    "shape": "pill 6em, min-height 44px",
+    "primary": "Vann fill / Hvit text; hover Fjell",
+    "action": "Skog fill / Hvit text; hover #095139; reserved, one per module",
+    "secondary": "Hvit fill / Vann text / 2px Vann border; hover Frost-30 + Fjell",
+    "inline": "transparent / Vann; hover underline",
+    "focus": "2px Sol ring, 2px offset"
+   },
+   "cards": {
+    "ground": "Sand-30 default, Frost-30 help/tools, Hvit + 1px Lysgrå on tinted movements",
+    "radius": "16px",
+    "shadow": "none at rest; lift on hover/focus-within",
+    "content": "image or illustration → title (title-sm) → one line → meta label under title → whole card is the link"
+   },
+   "inputs": {
+    "ground": "Hvit",
+    "border": "1px Lysgrå, 8px radius",
+    "focus": "2px Vann border + 2px Sol ring",
+    "error": "Bær border + Bær icon; helper text Svart"
+   },
+   "dualCTAPattern": "forbidden as a centered pair; when a module carries two CTAs they sit left-aligned in one row: one action/primary + one inline text pill",
+   "links": "Vann underlined (2px offset), hover Fjell, visited Lyng",
+   "photo": "native 3:2, object-fit cover centred, one-corner-pair mask (96px hero / 48px card), alt verbatim"
+  },
+  "systemComponentRoles": {
+   "header": {
+    "purpose": "site navigation + audience switch + one action",
+    "positionClass": "top, one 72px row, sticky on mobile only, hamburger ≤640",
+    "constraint": "9 market links + 3 audience links + Søk + Bli kunde + Logg inn verbatim; Logg inn is the only Skog action"
+   },
+   "bank-router": {
+    "purpose": "route the visitor to a regional bank (IA priority: audience routing / search-led)",
+    "positionClass": "first viewport, directly under header, ≤96px desktop",
+    "constraint": "heading, lede, postcode field, Bruk min posisjon, Se alle banker, 12 banks verbatim; landscape illustration carried at reduced scale ≥1024, hidden <768"
+   },
+   "back-link": {
+    "purpose": "return to parent",
+    "positionClass": "above H1"
+   },
+   "faq": {
+    "purpose": "answers first-class content",
+    "positionClass": "after content movements, before feedback"
+   },
+   "feedback": {
+    "purpose": "page feedback",
+    "positionClass": "after FAQ"
+   },
+   "contact-row": {
+    "purpose": "five contact channels",
+    "positionClass": "above footer, Hvit paper"
+   },
+   "footer": {
+    "purpose": "site footer",
+    "positionClass": "bottom, Fjell paper + Natt legal row"
+   },
+   "cta-band": {
+    "purpose": "one closing action per movement",
+    "positionClass": "end of a movement"
+   }
+  },
+  "voice": {
+   "register": "second-person bokmål, sentence case, short imperatives",
+   "dos": [
+    "Se hva du kan spare",
+    "Bli kunde",
+    "Bruk min posisjon",
+    "Vi er flere banker i hele Norge"
+   ],
+   "donts": [
+    "no reworded CTAs",
+    "no added exclamation points",
+    "no marketing adjectives in chrome copy",
+    "no translation of Norwegian terms"
+   ],
+   "contentPolicy": "every literal captured-verbatim; direction authorises no rewrites"
+  },
+  "iaPriorities": [
+   {
+    "signal": "audience-routing",
+    "evidence": "header top nav PRIVAT/BEDRIFT/OM OSS + 9 market sections on 100/100 pages (_brand-extraction.json#systemComponents header variants)",
+    "preserveAs": "first-viewport",
+    "scope": "site-wide",
+    "mutability": "locked"
+   },
+   {
+    "signal": "commercial-conversion",
+    "evidence": "Logg inn (100/100) + Bli kunde (66/100) / Bli bedriftskunde (35) action buttons in the header; product CTAs (Søk boliglån…) above the fold",
+    "preserveAs": "first-viewport",
+    "scope": "site-wide",
+    "mutability": "locked"
+   },
+   {
+    "signal": "search-led-ia",
+    "evidence": "bank-choice router with postcode input on 70/100 pages directly under the header (pages/*.json landmarks[complementary.bank-choice])",
+    "preserveAs": "first-viewport (compact treatment — § 8 rule 1 allows treatment change)",
+    "scope": "site-wide (pages that carried it)",
+    "mutability": "locked"
+   }
+  ],
+  "signatureElements": [
+   {
+    "kind": "site-wide-motif",
+    "name": "alliance landscape illustration",
+    "capturedSource": "/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/bankchoice_bg.svg (70 pages)",
+    "mechanism": "carried in the compact router band at reduced scale ≥1024; hidden <768 as captured"
+   },
+   {
+    "kind": "site-wide-motif",
+    "name": "large-radius photo mask",
+    "capturedSource": "motifs.borderRadius.primary 96px (785 occurrences)",
+    "mechanism": "one-corner-pair mask 96px hero / 48px card"
+   },
+   {
+    "kind": "site-wide-motif",
+    "name": "flat spot illustrations",
+    "capturedSource": "/content/dam/SB1/illustrasjoner/elementer/2024/*.svg",
+    "mechanism": "kept flat on paper, aria-hidden"
+   }
+  ],
+  "modules": [
+   {
+    "id": "bank-router",
+    "status": "confirmed",
+    "kind": "system-component",
+    "from": [],
+    "instancePages": null,
+    "slots": [
+     {
+      "name": "heading",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "lede",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "postcode-label",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "cta-location",
+      "type": "cta",
+      "required": true
+     },
+     {
+      "name": "cta-all-banks",
+      "type": "cta",
+      "required": true
+     },
+     {
+      "name": "banks",
+      "type": "list<link>",
+      "required": true,
+      "count": 12
+     },
+     {
+      "name": "illustration",
+      "type": "image",
+      "required": false
+     }
+    ],
+    "canonicalRendering": null,
+    "note": "complementary landmark on 70/100 pages (missed by the main-child scan); signature § 8b; dynamics #1"
+   },
+   {
+    "id": "hero-band",
+    "status": "confirmed",
+    "kind": "hero",
+    "from": [
+     "background-band"
+    ],
+    "instancePages": 6,
+    "slots": [
+     {
+      "name": "heading",
+      "type": "heading",
+      "required": true
+     },
+     {
+      "name": "lead",
+      "type": "text",
+      "required": false
+     },
+     {
+      "name": "body",
+      "type": "richtext",
+      "required": false
+     },
+     {
+      "name": "image",
+      "type": "image",
+      "required": false
+     },
+     {
+      "name": "ctas",
+      "type": "list<cta>",
+      "required": false
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "campaign-carousel",
+    "status": "confirmed",
+    "kind": "hero",
+    "from": [
+     "campaign-carousel"
+    ],
+    "instancePages": 2,
+    "slots": [
+     {
+      "name": "slides",
+      "type": "list<campaign>",
+      "required": true
+     },
+     {
+      "name": "heading",
+      "type": "heading",
+      "required": true
+     },
+     {
+      "name": "text",
+      "type": "richtext",
+      "required": true
+     },
+     {
+      "name": "image",
+      "type": "image",
+      "required": true
+     },
+     {
+      "name": "cta",
+      "type": "cta",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null,
+    "note": "market landings; one campaign visible, rotation as dynamics interim"
+   },
+   {
+    "id": "campaign-hero",
+    "status": "confirmed",
+    "kind": "hero",
+    "from": [
+     "campaign"
+    ],
+    "instancePages": 5,
+    "slots": [
+     {
+      "name": "heading",
+      "type": "heading",
+      "required": true
+     },
+     {
+      "name": "text",
+      "type": "richtext",
+      "required": false
+     },
+     {
+      "name": "image",
+      "type": "image",
+      "required": false
+     },
+     {
+      "name": "cta",
+      "type": "cta",
+      "required": false
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "content-columns",
+    "status": "confirmed",
+    "kind": "columns",
+    "from": [
+     "columns-grid"
+    ],
+    "instancePages": 6,
+    "slots": [
+     {
+      "name": "columns",
+      "type": "list<column>",
+      "required": true
+     },
+     {
+      "name": "icon",
+      "type": "image",
+      "required": false
+     },
+     {
+      "name": "heading",
+      "type": "heading",
+      "required": true
+     },
+     {
+      "name": "links",
+      "type": "list<link>",
+      "required": false
+     },
+     {
+      "name": "text",
+      "type": "richtext",
+      "required": false
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "card-grid",
+    "status": "confirmed",
+    "kind": "card-grid",
+    "from": [
+     "visual-nav",
+     "static-cards"
+    ],
+    "instancePages": 12,
+    "slots": [
+     {
+      "name": "heading",
+      "type": "heading",
+      "required": false
+     },
+     {
+      "name": "cards",
+      "type": "list<card>",
+      "required": true
+     },
+     {
+      "name": "image",
+      "type": "image",
+      "required": false
+     },
+     {
+      "name": "title",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "text",
+      "type": "text",
+      "required": false
+     },
+     {
+      "name": "href",
+      "type": "url",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "card-rail",
+    "status": "confirmed",
+    "kind": "card-grid",
+    "from": [
+     "related-products",
+     "related-topics"
+    ],
+    "instancePages": 12,
+    "slots": [
+     {
+      "name": "heading",
+      "type": "heading",
+      "required": true
+     },
+     {
+      "name": "cards",
+      "type": "list<card>",
+      "required": true
+     },
+     {
+      "name": "image",
+      "type": "image",
+      "required": false
+     },
+     {
+      "name": "category",
+      "type": "label",
+      "required": false
+     },
+     {
+      "name": "title",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "text",
+      "type": "text",
+      "required": false
+     },
+     {
+      "name": "href",
+      "type": "url",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "faq-accordion",
+    "status": "confirmed",
+    "kind": "faq",
+    "from": [
+     "faq-accordion"
+    ],
+    "instancePages": 6,
+    "slots": [
+     {
+      "name": "heading",
+      "type": "heading",
+      "required": true
+     },
+     {
+      "name": "items",
+      "type": "list<qa>",
+      "required": true
+     },
+     {
+      "name": "question",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "answer",
+      "type": "richtext",
+      "required": true
+     },
+     {
+      "name": "more-link",
+      "type": "cta",
+      "required": false
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "accordion",
+    "status": "confirmed",
+    "kind": "accordion",
+    "from": [
+     "progressive-disclosure",
+     "accordion",
+     "accordion-list-container"
+    ],
+    "instancePages": 9,
+    "slots": [
+     {
+      "name": "items",
+      "type": "list<qa>",
+      "required": true
+     },
+     {
+      "name": "summary",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "body",
+      "type": "richtext",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "feedback",
+    "status": "confirmed",
+    "kind": "utility",
+    "from": [
+     "feedback"
+    ],
+    "instancePages": 6,
+    "slots": [
+     {
+      "name": "heading",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "options",
+      "type": "list<cta>",
+      "required": true,
+      "default": [
+       "Ja",
+       "Nei"
+      ]
+     }
+    ],
+    "canonicalRendering": null,
+    "note": "dynamics #5 interim"
+   },
+   {
+    "id": "contact-row",
+    "status": "confirmed",
+    "kind": "system-component",
+    "from": [],
+    "instancePages": null,
+    "slots": [
+     {
+      "name": "heading",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "channels",
+      "type": "list<channel>",
+      "required": true,
+      "count": 5
+     },
+     {
+      "name": "icon",
+      "type": "image",
+      "required": true
+     },
+     {
+      "name": "label",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "detail",
+      "type": "text",
+      "required": false
+     },
+     {
+      "name": "href",
+      "type": "url",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null,
+    "note": "footer-top contact-section on 84/100 pages; dynamics #6"
+   },
+   {
+    "id": "callout",
+    "status": "confirmed",
+    "kind": "callout",
+    "from": [
+     "tip"
+    ],
+    "instancePages": 6,
+    "slots": [
+     {
+      "name": "icon",
+      "type": "image",
+      "required": false
+     },
+     {
+      "name": "text",
+      "type": "richtext",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "promo-band",
+    "status": "confirmed",
+    "kind": "cta-band",
+    "from": [
+     "banner-small"
+    ],
+    "instancePages": 6,
+    "slots": [
+     {
+      "name": "image",
+      "type": "image",
+      "required": false
+     },
+     {
+      "name": "heading",
+      "type": "heading",
+      "required": true
+     },
+     {
+      "name": "text",
+      "type": "text",
+      "required": false
+     },
+     {
+      "name": "cta",
+      "type": "cta",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "cta-band",
+    "status": "confirmed",
+    "kind": "cta-band",
+    "from": [
+     "reference-cta"
+    ],
+    "instancePages": 6,
+    "slots": [
+     {
+      "name": "heading",
+      "type": "heading",
+      "required": true
+     },
+     {
+      "name": "text",
+      "type": "richtext",
+      "required": false
+     },
+     {
+      "name": "cta",
+      "type": "cta",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "feature-list",
+    "status": "confirmed",
+    "kind": "feature-list",
+    "from": [
+     "usp-row"
+    ],
+    "instancePages": 6,
+    "slots": [
+     {
+      "name": "items",
+      "type": "list<feature>",
+      "required": true
+     },
+     {
+      "name": "icon",
+      "type": "image",
+      "required": false
+     },
+     {
+      "name": "title",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "text",
+      "type": "text",
+      "required": false
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "price-cards",
+    "status": "confirmed",
+    "kind": "price-cards",
+    "from": [
+     "prices",
+     "price-and-terms"
+    ],
+    "instancePages": 6,
+    "slots": [
+     {
+      "name": "heading",
+      "type": "heading",
+      "required": false
+     },
+     {
+      "name": "cards",
+      "type": "list<price>",
+      "required": true
+     },
+     {
+      "name": "title",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "text",
+      "type": "text",
+      "required": false
+     },
+     {
+      "name": "terms",
+      "type": "richtext",
+      "required": false
+     },
+     {
+      "name": "cta",
+      "type": "cta",
+      "required": false
+     }
+    ],
+    "canonicalRendering": null,
+    "note": "rate copy verbatim; dynamics #10"
+   },
+   {
+    "id": "calculator",
+    "status": "confirmed",
+    "kind": "widget",
+    "from": [
+     "calculator-loan",
+     "currency-converter"
+    ],
+    "instancePages": 3,
+    "slots": [
+     {
+      "name": "heading",
+      "type": "heading",
+      "required": false
+     },
+     {
+      "name": "shell",
+      "type": "static-snapshot",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null,
+    "note": "dynamics #7 / #9 interim static shell"
+   },
+   {
+    "id": "link-list",
+    "status": "confirmed",
+    "kind": "link-list",
+    "from": [
+     "shortcuts",
+     "button-list"
+    ],
+    "instancePages": 11,
+    "slots": [
+     {
+      "name": "heading",
+      "type": "heading",
+      "required": false
+     },
+     {
+      "name": "links",
+      "type": "list<link>",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "button-row",
+    "status": "confirmed",
+    "kind": "buttons",
+    "from": [
+     "button"
+    ],
+    "instancePages": 6,
+    "slots": [
+     {
+      "name": "buttons",
+      "type": "list<cta>",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null,
+    "note": "variant action|primary|secondary|inline per captured class"
+   },
+   {
+    "id": "back-link",
+    "status": "confirmed",
+    "kind": "navigation",
+    "from": [
+     "breadcrumb-row"
+    ],
+    "instancePages": 6,
+    "slots": [
+     {
+      "name": "label",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "href",
+      "type": "url",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "rich-text",
+    "status": "confirmed",
+    "kind": "rich-text",
+    "from": [
+     "text"
+    ],
+    "instancePages": 6,
+    "slots": [
+     {
+      "name": "body",
+      "type": "richtext",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "heading",
+    "status": "confirmed",
+    "kind": "heading",
+    "from": [
+     "title"
+    ],
+    "instancePages": 6,
+    "slots": [
+     {
+      "name": "heading",
+      "type": "heading",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "figure",
+    "status": "confirmed",
+    "kind": "media",
+    "from": [
+     "image"
+    ],
+    "instancePages": 6,
+    "slots": [
+     {
+      "name": "image",
+      "type": "image",
+      "required": true
+     },
+     {
+      "name": "caption",
+      "type": "text",
+      "required": false
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "media-text",
+    "status": "confirmed",
+    "kind": "split",
+    "from": [
+     "text-and-image"
+    ],
+    "instancePages": 1,
+    "slots": [
+     {
+      "name": "image",
+      "type": "image",
+      "required": true
+     },
+     {
+      "name": "heading",
+      "type": "heading",
+      "required": false
+     },
+     {
+      "name": "body",
+      "type": "richtext",
+      "required": true
+     },
+     {
+      "name": "cta",
+      "type": "cta",
+      "required": false
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "article-header",
+    "status": "confirmed",
+    "kind": "article",
+    "from": [
+     "header",
+     "header--disable-bottom-links"
+    ],
+    "instancePages": 10,
+    "slots": [
+     {
+      "name": "category",
+      "type": "label",
+      "required": false
+     },
+     {
+      "name": "heading",
+      "type": "heading",
+      "required": true
+     },
+     {
+      "name": "lead",
+      "type": "text",
+      "required": false
+     },
+     {
+      "name": "byline",
+      "type": "text",
+      "required": false
+     },
+     {
+      "name": "published",
+      "type": "date",
+      "required": false
+     },
+     {
+      "name": "image",
+      "type": "image",
+      "required": false
+     }
+    ],
+    "canonicalRendering": null,
+    "note": "news / story pages (nettsider-frontend clientlib); photo beside/below headline, never behind"
+   },
+   {
+    "id": "article-body",
+    "status": "confirmed",
+    "kind": "article",
+    "from": [
+     "sb1-article",
+     "sb1-story__body"
+    ],
+    "instancePages": 10,
+    "slots": [
+     {
+      "name": "body",
+      "type": "richtext",
+      "required": true
+     },
+     {
+      "name": "share",
+      "type": "list<link>",
+      "required": false
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "article-listing",
+    "status": "confirmed",
+    "kind": "listing",
+    "from": [
+     "sb1-articles__content"
+    ],
+    "instancePages": 1,
+    "slots": [
+     {
+      "name": "cards",
+      "type": "list<card>",
+      "required": true
+     },
+     {
+      "name": "image",
+      "type": "image",
+      "required": false
+     },
+     {
+      "name": "category",
+      "type": "label",
+      "required": false
+     },
+     {
+      "name": "title",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "published",
+      "type": "date",
+      "required": false
+     },
+     {
+      "name": "href",
+      "type": "url",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null,
+    "note": "dynamics #11 index-backed"
+   },
+   {
+    "id": "faq-question",
+    "status": "confirmed",
+    "kind": "article",
+    "from": [
+     "question-page__question-container"
+    ],
+    "instancePages": 6,
+    "slots": [
+     {
+      "name": "question",
+      "type": "heading",
+      "required": true
+     },
+     {
+      "name": "answer",
+      "type": "richtext",
+      "required": true
+     },
+     {
+      "name": "related",
+      "type": "list<link>",
+      "required": false
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "cobranding-strip",
+    "status": "confirmed",
+    "kind": "utility",
+    "from": [
+     "cobranding"
+    ],
+    "instancePages": 6,
+    "slots": [
+     {
+      "name": "logos",
+      "type": "list<image>",
+      "required": true
+     },
+     {
+      "name": "text",
+      "type": "text",
+      "required": false
+     }
+    ],
+    "canonicalRendering": null,
+    "note": "Fremtind / LOfavør partner marks"
+   },
+   {
+    "id": "step-by-step",
+    "status": "confirmed",
+    "kind": "steps",
+    "from": [
+     "step-by-step"
+    ],
+    "instancePages": 1,
+    "slots": [
+     {
+      "name": "steps",
+      "type": "list<step>",
+      "required": true
+     },
+     {
+      "name": "title",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "body",
+      "type": "richtext",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "tabs",
+    "status": "confirmed",
+    "kind": "tabs",
+    "from": [
+     "tabs-component"
+    ],
+    "instancePages": 1,
+    "slots": [
+     {
+      "name": "tabs",
+      "type": "list<tab>",
+      "required": true
+     },
+     {
+      "name": "label",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "panel",
+      "type": "richtext",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "table",
+    "status": "confirmed",
+    "kind": "table",
+    "from": [
+     "table"
+    ],
+    "instancePages": 1,
+    "slots": [
+     {
+      "name": "caption",
+      "type": "text",
+      "required": false
+     },
+     {
+      "name": "rows",
+      "type": "table",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "expert-list",
+    "status": "confirmed",
+    "kind": "list",
+    "from": [
+     "contentfragmentlist"
+    ],
+    "instancePages": 1,
+    "slots": [
+     {
+      "name": "people",
+      "type": "list<person>",
+      "required": true
+     },
+     {
+      "name": "portrait",
+      "type": "image",
+      "required": false
+     },
+     {
+      "name": "name",
+      "type": "text",
+      "required": true
+     },
+     {
+      "name": "role",
+      "type": "text",
+      "required": false
+     },
+     {
+      "name": "contact",
+      "type": "text",
+      "required": false
+     }
+    ],
+    "canonicalRendering": null
+   },
+   {
+    "id": "guide-carousel",
+    "status": "confirmed",
+    "kind": "carousel",
+    "from": [
+     "guide-carousel"
+    ],
+    "instancePages": 1,
+    "slots": [
+     {
+      "name": "slides",
+      "type": "list<slide>",
+      "required": true
+     },
+     {
+      "name": "image",
+      "type": "image",
+      "required": true
+     },
+     {
+      "name": "text",
+      "type": "richtext",
+      "required": true
+     }
+    ],
+    "canonicalRendering": null
+   }
+  ],
+  "prunedModuleCandidates": [
+   {
+    "id": "color-fillable",
+    "reason": "CSS utility, not a module"
+   },
+   {
+    "id": "visually-hidden",
+    "reason": "a11y utility (hidden H1 wrapper)"
+   },
+   {
+    "id": "hr",
+    "reason": "divider — direction removes dividers; paper change replaces it"
+   },
+   {
+    "id": "footer",
+    "reason": "frontend-clientlib footer rendered inside <main>; chrome, covered by the footer system role"
+   }
+  ],
+  "colorReservations": [
+   {
+    "color": "#00754e",
+    "name": "skog",
+    "reservedFor": [
+     "module:button-row[variant=action]",
+     "role:header action (Logg inn)",
+     "state:success"
+    ]
+   },
+   {
+    "color": "#e44244",
+    "name": "baer",
+    "reservedFor": [
+     "state:error"
+    ]
+   },
+   {
+    "color": "#dc8000",
+    "name": "sol",
+    "reservedFor": [
+     "state:focus-ring",
+     "module:callout[icon]"
+    ]
+   }
+  ],
+  "metadata": {
+   "siteName": "SpareBank 1",
+   "defaultOgImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg",
+   "themeColor": "#002776",
+   "locale": "nb-NO",
+   "organization": {
+    "@type": "Organization",
+    "name": "SpareBank 1",
+    "url": "https://www.sparebank1.no/",
+    "logo": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg"
+   },
+   "keyFacts": [
+    "Priseksempel: Nominell rente … Effektiv rente … (rate examples, verbatim, server-rendered)",
+    "Vi er flere banker i hele Norge"
+   ]
+  },
+  "pageTypes": {
+   "catalog": [
+    "landing",
+    "article",
+    "listing",
+    "program",
+    "form",
+    "static",
+    "unique"
+   ],
+   "archetypeFamilies": 13,
+   "source": "stardust/current/_page-types.json"
+  },
+  "canon": null
+ }
+}
