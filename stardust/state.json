@@ -1,7 +1,7 @@
 {
  "_provenance": {
   "writtenBy": "stardust:prototype (--prep)",
-  "writtenAt": "2026-09-14T19:56:39.790Z",
+  "writtenAt": "2026-09-14T20:36:43.324Z",
   "stardustVersion": "0.20.0",
   "readArtifacts": [
    "../sparebank1/stardust/state.json",
@@ -61,7 +61,7 @@
    "archetypeFamily": "theme",
    "aemPageType": "Tema",
    "clientlib": "base",
-   "status": "directed",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
@@ -70,16 +70,40 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T20:36:43.109Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T20:36:43.109Z",
+     "approvedBy": "hands-off"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html-proposed.html",
    "migratedPath": null,
    "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "shapeBriefPath": "stardust/prototypes/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html-shape.md",
+   "gatesPassed": [
+    "validation-loop 1440/768/390 (console, network, overflow, landmarks, a11y quick-pass, contrast, LCP, interaction smoke)",
+    "mobile-nav-audit 360",
+    "content-verbatim",
+    "token-contract",
+    "data-attributes",
+    "impeccable detect (cramped-padding on var() padding dismissed)",
+    "finish-review: fix-then-ship (5·4·4·4·5) → 5 fixes → ship 5·4·4·5·5"
+   ],
+   "fidelityTier": "archetype",
+   "archetypeSource": null,
+   "canonDeviations": [
+    ".callout.callout-frost: Frost tint because a Sand callout would sit same-tint under the Sand compare band (now canon .callout.info)"
+   ]
   },
   {
    "slug": "nb-bank-bedrift-bedriftsforsikring-html",
@@ -565,7 +589,7 @@
    "archetypeFamily": "faq",
    "aemPageType": "Spørsmål",
    "clientlib": "base",
-   "status": "directed",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
@@ -574,16 +598,38 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T20:36:43.215Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T20:36:43.215Z",
+     "approvedBy": "hands-off"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html-proposed.html",
    "migratedPath": null,
    "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "shapeBriefPath": "stardust/prototypes/nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html-shape.md",
+   "gatesPassed": [
+    "validation-loop 1440/768/390 (console, network, overflow, landmarks, a11y quick-pass, contrast, LCP, interaction smoke)",
+    "mobile-nav-audit 360",
+    "content-verbatim",
+    "token-contract",
+    "data-attributes",
+    "impeccable detect (cramped-padding on var() padding dismissed)",
+    "finish-review: fix (4) → ship; router-in-main workaround reverted after canon made the router art eager"
+   ],
+   "fidelityTier": "archetype",
+   "archetypeSource": null,
+   "canonDeviations": []
   },
   {
    "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
@@ -1013,7 +1059,7 @@
    "archetypeFamily": "campaign-landing",
    "aemPageType": "",
    "clientlib": "frontend",
-   "status": "directed",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
@@ -1022,16 +1068,40 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T20:36:43.079Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T20:36:43.079Z",
+     "approvedBy": "hands-off"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-om-oss-hjemme-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-hjemme-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-om-oss-hjemme-html-proposed.html",
    "migratedPath": null,
    "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-hjemme-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "shapeBriefPath": "stardust/prototypes/nb-bank-om-oss-hjemme-html-shape.md",
+   "gatesPassed": [
+    "validation-loop 1440/768/390 (console, network, overflow, landmarks, a11y quick-pass, contrast, LCP, interaction smoke)",
+    "mobile-nav-audit 360",
+    "content-verbatim",
+    "token-contract",
+    "data-attributes",
+    "impeccable detect (cramped-padding on var() padding dismissed)",
+    "finish-review: fix-then-ship (4·3·3·3·4) → 7/8 fixes (declined #6: third tinted movement vs cap; reviewer accepted) → fix on 2 CSS lines → applied and measured; scores 4·4·4·4·4; two-round cap"
+   ],
+   "fidelityTier": "archetype",
+   "archetypeSource": null,
+   "canonDeviations": [
+    "img.photo-portrait ×4: portrait source 1280×2276 — 4:5 frame instead of canon 3:2"
+   ]
   },
   {
    "slug": "nb-bank-om-oss-html",
@@ -1237,7 +1307,7 @@
    "archetypeFamily": "news-article",
    "aemPageType": "",
    "clientlib": "frontend",
-   "status": "directed",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
@@ -1246,16 +1316,41 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T20:36:43.241Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T20:36:43.241Z",
+     "approvedBy": "hands-off"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html-proposed.html",
    "migratedPath": null,
    "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "shapeBriefPath": "stardust/prototypes/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html-shape.md",
+   "gatesPassed": [
+    "validation-loop 1440/768/390 (console, network, overflow, landmarks, a11y quick-pass, contrast, LCP, interaction smoke)",
+    "mobile-nav-audit 360",
+    "content-verbatim",
+    "token-contract",
+    "data-attributes",
+    "impeccable detect (cramped-padding on var() padding dismissed)",
+    "finish-review: fix-then-ship (4·4·4·4·3) → 7 fixes → ship 5·4·4·4·5"
+   ],
+   "fidelityTier": "archetype",
+   "archetypeSource": null,
+   "canonDeviations": [
+    "a.badge ×2 (now canon .badge)",
+    "ul.rail-list 24px mask on 120px thumbs"
+   ]
   },
   {
    "slug": "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
@@ -1293,7 +1388,7 @@
    "archetypeFamily": "news-listing",
    "aemPageType": "",
    "clientlib": "frontend",
-   "status": "directed",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
@@ -1302,16 +1397,38 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T20:36:43.269Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T20:36:43.269Z",
+     "approvedBy": "hands-off"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-om-oss-nyheter-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-nyheter-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-om-oss-nyheter-html-proposed.html",
    "migratedPath": null,
    "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-nyheter-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "shapeBriefPath": "stardust/prototypes/nb-bank-om-oss-nyheter-html-shape.md",
+   "gatesPassed": [
+    "validation-loop 1440/768/390 (console, network, overflow, landmarks, a11y quick-pass, contrast, LCP, interaction smoke)",
+    "mobile-nav-audit 360",
+    "content-verbatim",
+    "token-contract",
+    "data-attributes",
+    "impeccable detect (cramped-padding on var() padding dismissed)",
+    "finish-review: fix-then-ship (4·3·3·4·4) → 6 fixes → ship 4·4·4·4·5"
+   ],
+   "fidelityTier": "archetype",
+   "archetypeSource": null,
+   "canonDeviations": []
   },
   {
    "slug": "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
@@ -1405,7 +1522,7 @@
    "archetypeFamily": "om-oss",
    "aemPageType": "Om oss",
    "clientlib": "base",
-   "status": "directed",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
@@ -1414,16 +1531,38 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T20:36:43.296Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T20:36:43.296Z",
+     "approvedBy": "hands-off"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-om-oss-presse-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-presse-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-om-oss-presse-html-proposed.html",
    "migratedPath": null,
    "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-presse-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "shapeBriefPath": "stardust/prototypes/nb-bank-om-oss-presse-html-shape.md",
+   "gatesPassed": [
+    "validation-loop 1440/768/390 (console, network, overflow, landmarks, a11y quick-pass, contrast, LCP, interaction smoke)",
+    "mobile-nav-audit 360",
+    "content-verbatim",
+    "token-contract",
+    "data-attributes",
+    "impeccable detect (cramped-padding on var() padding dismissed)",
+    "finish-review: fix-then-ship (4·3·4·4·4) → 7 fixes + 2 regressions closed → ship 4·4·4·4·5"
+   ],
+   "fidelityTier": "archetype",
+   "archetypeSource": null,
+   "canonDeviations": []
   },
   {
    "slug": "nb-bank-om-oss-samfunnsansvar-html",
@@ -2099,7 +2238,7 @@
    "archetypeFamily": "kundeservice-hub",
    "aemPageType": "Kundeservice",
    "clientlib": "base",
-   "status": "directed",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
@@ -2108,16 +2247,38 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T20:36:43.136Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T20:36:43.136Z",
+     "approvedBy": "hands-off"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-privat-kundeservice-html-proposed.html",
    "migratedPath": null,
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "shapeBriefPath": "stardust/prototypes/nb-bank-privat-kundeservice-html-shape.md",
+   "gatesPassed": [
+    "validation-loop 1440/768/390 (console, network, overflow, landmarks, a11y quick-pass, contrast, LCP, interaction smoke)",
+    "mobile-nav-audit 360",
+    "content-verbatim",
+    "token-contract",
+    "data-attributes",
+    "impeccable detect (cramped-padding on var() padding dismissed)",
+    "finish-review: fix (8) → verdict 7 resolved / 1 partial → redo → ship"
+   ],
+   "fidelityTier": "archetype",
+   "archetypeSource": null,
+   "canonDeviations": []
   },
   {
    "slug": "nb-bank-privat-kundeservice-kontakt-html",
@@ -2127,7 +2288,7 @@
    "archetypeFamily": "utility",
    "aemPageType": "Basepage",
    "clientlib": "base",
-   "status": "directed",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
@@ -2136,16 +2297,38 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T20:36:43.188Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T20:36:43.188Z",
+     "approvedBy": "hands-off"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-kontakt-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-kontakt-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-privat-kundeservice-kontakt-html-proposed.html",
    "migratedPath": null,
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-kontakt-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "shapeBriefPath": "stardust/prototypes/nb-bank-privat-kundeservice-kontakt-html-shape.md",
+   "gatesPassed": [
+    "validation-loop 1440/768/390 (console, network, overflow, landmarks, a11y quick-pass, contrast, LCP, interaction smoke)",
+    "mobile-nav-audit 360",
+    "content-verbatim",
+    "token-contract",
+    "data-attributes",
+    "impeccable detect (cramped-padding on var() padding dismissed)",
+    "finish-review: fix (7) → ship 7/7; lead accepted 12 added tel: hrefs on captured phone text (usability enhancement, text verbatim)"
+   ],
+   "fidelityTier": "archetype",
+   "archetypeSource": null,
+   "canonDeviations": []
   },
   {
    "slug": "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
@@ -2239,7 +2422,7 @@
    "archetypeFamily": "tool",
    "aemPageType": "Verktoy",
    "clientlib": "base",
-   "status": "directed",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
@@ -2248,16 +2431,38 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T20:36:43.162Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T20:36:43.162Z",
+     "approvedBy": "hands-off"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-sperre-kort-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-sperre-kort-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-privat-kundeservice-verktoy-sperre-kort-html-proposed.html",
    "migratedPath": null,
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-verktoy-sperre-kort-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "shapeBriefPath": "stardust/prototypes/nb-bank-privat-kundeservice-verktoy-sperre-kort-html-shape.md",
+   "gatesPassed": [
+    "validation-loop 1440/768/390 (console, network, overflow, landmarks, a11y quick-pass, contrast, LCP, interaction smoke)",
+    "mobile-nav-audit 360",
+    "content-verbatim",
+    "token-contract",
+    "data-attributes",
+    "impeccable detect (cramped-padding on var() padding dismissed)",
+    "finish-review: fix (4 + 2 canon notes) → ship"
+   ],
+   "fidelityTier": "archetype",
+   "archetypeSource": null,
+   "canonDeviations": []
   },
   {
    "slug": "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html",
@@ -2323,7 +2528,7 @@
    "archetypeFamily": "product",
    "aemPageType": "Produkt",
    "clientlib": "base",
-   "status": "directed",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
@@ -2332,16 +2537,38 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T20:36:43.022Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T20:36:43.022Z",
+     "approvedBy": "hands-off"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-privat-lan-boliglan-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-lan-boliglan-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-privat-lan-boliglan-html-proposed.html",
    "migratedPath": null,
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-lan-boliglan-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "shapeBriefPath": "stardust/prototypes/nb-bank-privat-lan-boliglan-html-shape.md",
+   "gatesPassed": [
+    "validation-loop 1440/768/390 (console, network, overflow, landmarks, a11y quick-pass, contrast, LCP, interaction smoke)",
+    "mobile-nav-audit 360",
+    "content-verbatim",
+    "token-contract",
+    "data-attributes",
+    "impeccable detect (cramped-padding on var() padding dismissed)",
+    "finish-review: fix-then-ship (5·4·4·3·4) → 5 fixes → ship 5·5·4·5·5; lead: choice doors aligned to canon (photo-led items flat on paper)"
+   ],
+   "fidelityTier": "archetype",
+   "archetypeSource": null,
+   "canonDeviations": []
   },
   {
    "slug": "nb-bank-privat-lan-forbrukslan-html",
@@ -2407,7 +2634,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Kategori",
    "clientlib": "base",
-   "status": "directed",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
@@ -2416,16 +2643,38 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T20:36:43.049Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T20:36:43.049Z",
+     "approvedBy": "hands-off"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-privat-lan-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-lan-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-privat-lan-html-proposed.html",
    "migratedPath": null,
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-lan-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "shapeBriefPath": "stardust/prototypes/nb-bank-privat-lan-html-shape.md",
+   "gatesPassed": [
+    "validation-loop 1440/768/390 (console, network, overflow, landmarks, a11y quick-pass, contrast, LCP, interaction smoke)",
+    "mobile-nav-audit 360",
+    "content-verbatim",
+    "token-contract",
+    "data-attributes",
+    "impeccable detect (cramped-padding on var() padding dismissed)",
+    "finish-review: fix-then-ship (4·3·3·4·4) → 6 fixes → ship 4·4·4·4·4"
+   ],
+   "fidelityTier": "archetype",
+   "archetypeSource": null,
+   "canonDeviations": []
   },
   {
    "slug": "nb-bank-privat-lan-lanekalkulator-html",
@@ -2715,7 +2964,7 @@
    "archetypeFamily": "markedsnytt-listing",
    "aemPageType": "Produkt",
    "clientlib": "base",
-   "status": "directed",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
@@ -2724,16 +2973,40 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T20:36:43.324Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T20:36:43.324Z",
+     "approvedBy": "hands-off"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-privat-sparing-markedsnytt-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-sparing-markedsnytt-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-privat-sparing-markedsnytt-html-proposed.html",
    "migratedPath": null,
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-sparing-markedsnytt-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "shapeBriefPath": "stardust/prototypes/nb-bank-privat-sparing-markedsnytt-html-shape.md",
+   "gatesPassed": [
+    "validation-loop 1440/768/390 (console, network, overflow, landmarks, a11y quick-pass, contrast, LCP, interaction smoke)",
+    "mobile-nav-audit 360",
+    "content-verbatim",
+    "token-contract",
+    "data-attributes",
+    "impeccable detect (cramped-padding on var() padding dismissed)",
+    "finish-review: fix-then-ship (4·3·4·3·3) → 12 fixes + 1 regression → ship 4·4·4·4·4"
+   ],
+   "fidelityTier": "archetype",
+   "archetypeSource": null,
+   "canonDeviations": [
+    "a.video-frame.video-link ×3: YouTube embeds as linked static frames (2 of 3 have runtime-injected src)"
+   ]
   },
   {
    "slug": "nb-bank-privat-sparing-spare-i-fond-html",

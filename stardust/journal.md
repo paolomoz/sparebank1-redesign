@@ -82,3 +82,29 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Next:** merge workers A/B/C (approve each after gates, extend canon in diff mode), then the final prep summary; hand off to `migrate`.
 
 ---
+## 2026-09-15T00:40:00Z — prototype --prep complete: 13/13 archetypes approved, canon extended; prepare-migration complete
+
+**Prompt:** (continuation, hands-off) — merge the three workers' archetypes, resolve canon requests, approve, extend canon, close prepare-migration.
+
+**Decisions:**
+- All 12 worker archetypes re-gated by the lead against the updated canon before approval (validation loop, content-check, detect); every one `approved` with `approvedBy: "hands-off"` and its reviewer disposition in `gatesPassed`.
+- Canon requests resolved in `chrome.mjs`/`data.mjs`/`build.mjs` (lead-owned): router art `loading="eager" fetchpriority="high"` (LCP on hero-less pages; the FAQ page's router-in-main workaround reverted); `.title`; disabled-control vocabulary; `.callout.info` + `icons.info`; `.badge`; `.video-frame` + `icons.play`; `id="kontakt"` on the contact section; router open-state spans the band at ≤1023; footer top-block `tel:` links kept; duplicate "Melde skade" panel heading fixed; frontend-clientlib footer builder + `Bli kunde` href fallback (sourced from the same page's footer link); lazy footer icons + `title` fallback. Harness: YouTube embeds fulfilled offline; details smoke scoped to `section/article`. Checker: any `logo*.svg` excluded; authenticated-state header UI excluded (A9).
+- One door language (A's open question): photo-led items are never boxed (boliglån choices aligned to the hub/news treatment); text-only items may sit on a Hvit hairline paper on tinted movements. Recorded in DESIGN.md § Cards and `extensions.componentStyle.cards`.
+- Accepted: kontakt directory `tel:` hrefs (A10); boliglån calculator strings from the captured screenshot (A11 — migrate must re-capture the settled widget); two-tint cap kept on story pages (A12); markedsnytt YouTube embeds as linked frames (2 of 3 have runtime-injected src).
+- DESIGN.md spacing frontmatter reconciled with the `:root` contract; video mask rule, Disabled Rule, badge/callout/video/feedback component entries added (direction refinement, no axis moved).
+- Canon extended in diff mode per approval: 15 module renderings (bank-router, campaign-carousel, content-columns, card-rail, feedback, contact-row, callout, promo-band, cta-band, price-cards, calculator, button-row, article-header, article-body, faq-question); no conflicts logged as deviations at canon level — page-level `data-deviation` markers are recorded in `state.json.pages[].canonDeviations` (hjemme 4:5 portraits, article badge/rail mask, borettslag Frost callout, markedsnytt video frames).
+- Phase 4 assets and 4.5 dynamics were closed earlier this session; prepare-migration is complete.
+
+**Artifacts touched:** stardust/scripts/proto/{chrome,data,build,extract-canon}.mjs — updated · stardust/scripts/{content-check,validate-prototype}.mjs — updated · 12 × stardust/scripts/proto/pages/<slug>.mjs, stardust/prototypes/<slug>-{shape.md,proposed.html}, stardust/validation/<slug>/** — created by workers (boliglån doors patched by the lead) · stardust/prototypes/canon-requests.md — created by workers · stardust/canon/** — rewritten (canon-update) + modules/ extended · DESIGN.md, DESIGN.json — updated · stardust/direction.md — refinement appended · stardust/state.json — 13 approved / 87 directed · stardust/status.jsonl, journal — appended.
+
+**Findings worth flagging:**
+- `_modules.json`-style candidate scans and `footerData()` both miss `data-lazy-src`-only images; the live site's lazy loader leaves `<img>` without `src` — every extractor must read `src || data-lazy-src`.
+- The `nettsider-frontend` clientlib renders header/footer inside `<main>`; chrome extractors need that second shape.
+- Screenshot-transcribed strings are a real provenance class the sourcing hierarchy does not name (captured artifact, not the DOM) — marked with `data-source="captured-screenshot"`; worth adding to proposed-file-shell.md.
+- Reviewers tripped twice on a DESIGN.md/`:root` spacing mismatch — keep the frontmatter and the token contract literally identical.
+
+**Open questions:** fonts A5; favicon vector source; live-CDN image rehosting; calculator settled re-capture (A11); owner decision batch (dynamics) unchanged.
+
+**Next:** `$stardust migrate` (the orchestrator continues: fork the 13 approved archetypes onto the 87 directed siblings using stardust/canon + DESIGN.json.extensions.canon).
+
+---

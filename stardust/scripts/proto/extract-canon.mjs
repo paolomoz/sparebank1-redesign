@@ -21,7 +21,7 @@ const compositionalMoves=[
   "Contact channels and long verbatim lists (bank numbers, bank links) live behind native details disclosures inside the Hvit contact section above the Fjell footer."
 ];
 const pinned={"sectionPadding.desktop":"64px","sectionPadding.tablet":"48px","sectionPadding.mobile":"32px","densityTier":"balanced","typeScale":1.25,"lineHeights.display":1.1,"lineHeights.headline":1.12,"lineHeights.body":1.55,"containerMaxWidth":"1280px","gutters":"80/48/24/20","radius.card":"16px","radius.photo":"96px / 48px one-corner-pair","radius.button":"6em","navCollapse":"640px hamburger"};
-if(isAuthor||!design.extensions.canon){
+const prior=design.extensions.canon; if(isAuthor||!design.extensions.canon){
   const header=document.querySelector('header'); const footer=document.querySelector('footer'); const router=document.querySelector('aside.router'); const skip=document.querySelector('nav.skip');
   const files={};
   files.header=write('stardust/canon/header.html',prov('header')+header.outerHTML+'\n');
@@ -30,7 +30,7 @@ if(isAuthor||!design.extensions.canon){
   if(skip) files.skip=write('stardust/canon/skip-links.html',prov('skip-links')+skip.outerHTML+'\n');
   const script=(html.match(/<script>[\s\S]*?<\/script>/)||[''])[0]; files.navScript=write('stardust/canon/nav-a11y.html',prov('nav-a11y script')+script+'\n');
   files.css=write('stardust/canon/canon.css',`/* stardust:canon\n  writtenBy: stardust:prototype --prep\n  writtenAt: ${now}\n  sourceSlug: ${slug}\n  region: css (:root token contract + compound visual language: buttons, cards, papers, chrome, faq, feedback, callout)\n*/\n`+rootTokens()+cssBase());
-  design.extensions.canon={sourceSlug:slug,approvedAt:now,files,pinned,compositionalMoves,history:[{at:now,from:slug,kind:'first-approval'}],notes:"Canon source of truth is stardust/scripts/proto/chrome.mjs; the files here are lifted verbatim from the approved canon-author render. Header/footer link SETS vary per audience (privat/bedrift/om-oss) and are injected from each page's captured data — structure and style are canon, link sets are content."};
+  design.extensions.canon={sourceSlug:slug,approvedAt:prior?prior.approvedAt:now,files,pinned,compositionalMoves,history:[...(prior?prior.history:[]),{at:now,from:slug,kind:prior?'canon-update':'first-approval',reason:prior?(process.argv.find(a=>a.startsWith('--reason='))||'').slice(9)||'chrome update':undefined}],notes:"Canon source of truth is stardust/scripts/proto/chrome.mjs; the files here are lifted verbatim from the approved canon-author render. Header/footer link SETS vary per audience (privat/bedrift/om-oss) and are injected from each page's captured data — structure and style are canon, link sets are content."};
 } else { design.extensions.canon.history.push({at:now,from:slug,kind:'extension',added:[]}); }
 // module canonical renderings present in this prototype
 const added=[];

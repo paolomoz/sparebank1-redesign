@@ -583,7 +583,9 @@
     "ground": "Sand-30 default, Frost-30 help/tools, Hvit + 1px Lysgrå on tinted movements",
     "radius": "16px",
     "shadow": "none at rest; lift on hover/focus-within",
-    "content": "image or illustration → title (title-sm) → one line → meta label under title → whole card is the link"
+    "content": "image or illustration → title (title-sm) → one line → meta label under title → whole card is the link",
+    "photoLed": "never boxed: photo + title + meta flat on the movement paper; whole item is the link",
+    "textOnly": "Hvit + 1px Lysgrå hairline paper on tinted movements; Sand-30 / Frost-30 paper on Hvit"
    },
    "inputs": {
     "ground": "Hvit",
@@ -593,7 +595,11 @@
    },
    "dualCTAPattern": "forbidden as a centered pair; when a module carries two CTAs they sit left-aligned in one row: one action/primary + one inline text pill",
    "links": "Vann underlined (2px offset), hover Fjell, visited Lyng",
-   "photo": "native 3:2, object-fit cover centred, one-corner-pair mask (96px hero / 48px card), alt verbatim"
+   "photo": "native 3:2, object-fit cover centred, one-corner-pair mask (96px hero / 48px card), alt verbatim",
+   "video": "16:9 .video-frame Frost-30 + Vann play glyph; <video controls> masks top-left corner only; 4:5 portrait sources keep 4:5 (deviation logged)",
+   "disabled": "Lysgrå ground, Koksgrå text, not-allowed cursor",
+   "badge": "pill Frost-30 / Fjell, label 13 medium, min-height 32; linked badge hover Vann / Hvit",
+   "feedback": "title-sm question + two .btn-secondary with thumb glyphs and captured labels, type=button (dynamics #5)"
   },
   "systemComponentRoles": {
    "header": {
@@ -1075,7 +1081,10 @@
       ]
      }
     ],
-    "canonicalRendering": null,
+    "canonicalRendering": {
+     "path": "stardust/canon/modules/feedback.html",
+     "sha": "e055c4fe465f009c"
+    },
     "note": "dynamics #5 interim"
    },
    {
@@ -1143,7 +1152,10 @@
       "required": true
      }
     ],
-    "canonicalRendering": null
+    "canonicalRendering": {
+     "path": "stardust/canon/modules/callout.html",
+     "sha": "37058871c13992c9"
+    }
    },
    {
     "id": "promo-band",
@@ -1283,7 +1295,10 @@
       "required": false
      }
     ],
-    "canonicalRendering": null,
+    "canonicalRendering": {
+     "path": "stardust/canon/modules/price-cards.html",
+     "sha": "d41af17f81d5b462"
+    },
     "note": "rate copy verbatim; dynamics #10"
    },
    {
@@ -1307,7 +1322,10 @@
       "required": true
      }
     ],
-    "canonicalRendering": null,
+    "canonicalRendering": {
+     "path": "stardust/canon/modules/calculator.html",
+     "sha": "1c44f083c46d38cd"
+    },
     "note": "dynamics #7 / #9 interim static shell"
    },
    {
@@ -1348,7 +1366,10 @@
       "required": true
      }
     ],
-    "canonicalRendering": null,
+    "canonicalRendering": {
+     "path": "stardust/canon/modules/button-row.html",
+     "sha": "35402f230be37aff"
+    },
     "note": "variant action|primary|secondary|inline per captured class"
    },
    {
@@ -1502,7 +1523,10 @@
       "required": false
      }
     ],
-    "canonicalRendering": null,
+    "canonicalRendering": {
+     "path": "stardust/canon/modules/article-header.html",
+     "sha": "75d8c2160b311984"
+    },
     "note": "news / story pages (nettsider-frontend clientlib); photo beside/below headline, never behind"
    },
    {
@@ -1526,7 +1550,10 @@
       "required": false
      }
     ],
-    "canonicalRendering": null
+    "canonicalRendering": {
+     "path": "stardust/canon/modules/article-body.html",
+     "sha": "16060901f5d3b2cc"
+    }
    },
    {
     "id": "article-listing",
@@ -1596,7 +1623,10 @@
       "required": false
      }
     ],
-    "canonicalRendering": null
+    "canonicalRendering": {
+     "path": "stardust/canon/modules/faq-question.html",
+     "sha": "c7b204e5bf207aa2"
+    }
    },
    {
     "id": "cobranding-strip",
@@ -1841,27 +1871,27 @@
    "files": {
     "header": {
      "path": "stardust/canon/header.html",
-     "sha": "48ecec8533632945"
+     "sha": "7b575d4a8a06908b"
     },
     "footer": {
      "path": "stardust/canon/footer.html",
-     "sha": "14e18cdd460c871e"
+     "sha": "a71bffa1aee4b031"
     },
     "router": {
      "path": "stardust/canon/bank-router.html",
-     "sha": "686ff2004e04a54a"
+     "sha": "8f62133723d404e0"
     },
     "skip": {
      "path": "stardust/canon/skip-links.html",
-     "sha": "bf5b74e5f28802ed"
+     "sha": "ac8169c14dd38d8f"
     },
     "navScript": {
      "path": "stardust/canon/nav-a11y.html",
-     "sha": "c32893a6f6d5e9a5"
+     "sha": "b21d429c7538e7db"
     },
     "css": {
      "path": "stardust/canon/canon.css",
-     "sha": "c34ffd4ec5833dd9"
+     "sha": "b128d5c2de6ce444"
     }
    },
    "pinned": {
@@ -1894,9 +1924,101 @@
      "at": "2026-09-14T19:56:39.865Z",
      "from": "nb-bank-privat-html",
      "kind": "first-approval"
+    },
+    {
+     "at": "2026-09-14T20:36:43.390Z",
+     "from": "nb-bank-privat-lan-boliglan-html",
+     "kind": "extension",
+     "added": [
+      "module:feedback",
+      "module:price-cards",
+      "module:calculator"
+     ]
+    },
+    {
+     "at": "2026-09-14T20:36:43.484Z",
+     "from": "nb-bank-privat-lan-html",
+     "kind": "extension",
+     "added": [
+      "module:callout"
+     ]
+    },
+    {
+     "at": "2026-09-14T20:36:43.568Z",
+     "from": "nb-bank-om-oss-hjemme-html",
+     "kind": "extension",
+     "added": []
+    },
+    {
+     "at": "2026-09-14T20:36:43.649Z",
+     "from": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+     "kind": "extension",
+     "added": []
+    },
+    {
+     "at": "2026-09-14T20:36:43.738Z",
+     "from": "nb-bank-privat-kundeservice-html",
+     "kind": "extension",
+     "added": []
+    },
+    {
+     "at": "2026-09-14T20:36:43.821Z",
+     "from": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+     "kind": "extension",
+     "added": []
+    },
+    {
+     "at": "2026-09-14T20:36:43.901Z",
+     "from": "nb-bank-privat-kundeservice-kontakt-html",
+     "kind": "extension",
+     "added": []
+    },
+    {
+     "at": "2026-09-14T20:36:43.978Z",
+     "from": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+     "kind": "extension",
+     "added": [
+      "module:faq-question"
+     ]
+    },
+    {
+     "at": "2026-09-14T20:36:44.057Z",
+     "from": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+     "kind": "extension",
+     "added": [
+      "module:article-header",
+      "module:article-body"
+     ]
+    },
+    {
+     "at": "2026-09-14T20:36:44.133Z",
+     "from": "nb-bank-om-oss-nyheter-html",
+     "kind": "extension",
+     "added": [
+      "module:button-row"
+     ]
+    },
+    {
+     "at": "2026-09-14T20:36:44.210Z",
+     "from": "nb-bank-om-oss-presse-html",
+     "kind": "extension",
+     "added": []
+    },
+    {
+     "at": "2026-09-14T20:36:44.285Z",
+     "from": "nb-bank-privat-sparing-markedsnytt-html",
+     "kind": "extension",
+     "added": []
+    },
+    {
+     "at": "2026-09-14T20:36:44.364Z",
+     "from": "nb-bank-privat-html",
+     "kind": "canon-update",
+     "reason": "canon update after the 12-archetype fan-out: router art eager/high, .title, disabled vocabulary, .callout.info, .badge, .video-frame, #kontakt, router open-state at ≤1023, footer top tel links, duplicate panel-heading guard, Bli kunde fallback on frontend-clientlib headers"
     }
    ],
    "notes": "Canon source of truth is stardust/scripts/proto/chrome.mjs; the files here are lifted verbatim from the approved canon-author render. Header/footer link SETS vary per audience (privat/bedrift/om-oss) and are injected from each page's captured data — structure and style are canon, link sets are content."
-  }
+  },
+  "spacingNote": "DESIGN.md spacing reconciled 2026-09-15 to the :root contract: xs 4 · sm 8 · md 16 · lg 24 · gutter 32 · xl 48 · 2xl 64 · 3xl 96 (reviewers tripped on lg=32 vs --spacing-lg 24 twice)"
  }
 }

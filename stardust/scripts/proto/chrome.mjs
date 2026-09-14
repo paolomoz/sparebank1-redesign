@@ -22,6 +22,8 @@ export const icons={
   up:'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 15 6-6 6 6"/></svg>',
   thumbUp:'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 11v9H4v-9h3zm0 0 4-7.5a2 2 0 0 1 2 2V10h5.5a1.5 1.5 0 0 1 1.5 1.7l-1.2 6.6A2 2 0 0 1 16.8 20H7"/></svg>',
   thumbDown:'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17 13V4h3v9h-3zm0 0-4 7.5a2 2 0 0 1-2-2V14H5.5A1.5 1.5 0 0 1 4 12.3l1.2-6.6A2 2 0 0 1 7.2 4H17"/></svg>',
+  info:'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8v.5"/></svg>',
+  play:'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></svg>',
   external:'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>'
 };
 const channelIcon={'Ring oss':'phone','Avtal møte':'calendar','Skriv til oss':'mail','Finn kontor':'office','Chat':'chat'};
@@ -82,7 +84,7 @@ export function routerHtml(r){
       <summary class="btn-inline btn-on-vann" data-slot="cta-all-banks">${esc(r.all)}${icons.down}</summary>
       <ol class="bank-list" data-slot="banks">${banks}</ol>
     </details>
-    <img class="router-art" src="${asset(r.illustration)}" alt="" aria-hidden="true" width="1250" height="368" loading="lazy" decoding="async">
+    <img class="router-art" src="${asset(r.illustration)}" alt="" aria-hidden="true" width="1250" height="368" loading="eager" fetchpriority="high" decoding="async">
   </div>
 </aside>`;
 }
@@ -90,16 +92,16 @@ export function routerHtml(r){
 export function footerHtml(f){
   if(!f) return '';
   const chan=f.tabs.map((t,i)=>{ const p=t.panel; let body='';
-    if(p.top) body+=`<div class="panel-top"><h3 class="panel-title">${esc(p.top.heading)} <a href="${esc(p.top.tel)}" class="num">${esc(p.top.number)}</a></h3><p class="small">${p.top.info.map(esc).join('<br>')}</p></div>`;
+    if(p.top) body+=`<div class="panel-top"><h3 class="panel-title">${esc(p.top.heading)} <a href="${esc(p.top.tel)}" class="num">${esc(p.top.number)}</a></h3><p class="small">${p.top.info.map(esc).join('<br>')}${(p.top.links||[]).map(l=>`<br>${esc(l.label)} <a href="${esc(l.tel)}" class="num">${esc(l.t)}</a>`).join('')}</p></div>`;
     if(p.banks.length && p.banks[0].markets.length) body+=`<ul class="bank-numbers">${p.banks.map(b=>`<li><a class="bank-name" href="${esc(b.href)}">${esc(b.name)}</a><dl>${b.markets.map(m=>`<div><dt>${esc(m.market)}</dt> <dd><a href="${esc(m.tel)}" class="num">${esc(m.number)}</a> <span class="small">Fra utland: <a href="${esc(m.abroadTel)}">${esc(m.abroad)}</a> · ${esc(m.hours)}</span></dd></div>`).join('')}</dl></li>`).join('')}</ul>`;
     else if(p.banks.length) body+=`<ul class="bank-links">${p.banks.map(b=>`<li><a href="${esc(b.href)}">${esc(b.name)}</a></li>`).join('')}</ul>`;
     else if(p.links.length) body+=`<ul class="bank-links">${p.links.map(l=>`<li><a href="${esc(l.href)}">${esc(l.t)}</a></li>`).join('')}</ul>`;
     else if(t.name==='Finn kontor') body+=`<form class="office-search" action="${esc(f.searchHref||'?search=')}" method="get"><label for="office-q">Søk etter et kontor</label><div class="router-controls"><input id="office-q" name="search" type="search" class="router-input"><button class="btn btn-primary" type="submit">Søk</button></div></form>`;
-    const ic=icons[channelIcon[t.name]||'chat']; if(p.heading && p.heading!==t.name && !body.includes(esc(p.heading))) body=`<h3 class="panel-title">${esc(p.heading)}</h3>`+body;
+    const ic=icons[channelIcon[t.name]||'chat']; if(!p.top && p.heading && p.heading!==t.name && !body.includes(esc(p.heading))) body=`<h3 class="panel-title">${esc(p.heading)}</h3>`+body;
     return `<li class="channel"><details><summary><span class="icon-circle">${ic}</span><span class="ch-text"><span class="ch-name">${esc(t.name)}</span>${icons.down}${t.sub?` <span class="ch-sub">${esc(t.sub)}</span>`:''}</span></summary><div class="panel">${body}</div></details></li>`; }).join('');
   const cols=f.columns.map(c=>`<div class="footer-col"><h2>${esc(c.heading)}</h2><ul>${c.links.map(l=>`<li><a href="${esc(l.href)}"${l.icon?' class="with-icon"':''}>${l.icon?`<img src="${asset(l.icon)}" alt="" aria-hidden="true" width="20" height="20" loading="lazy">`:''}${esc(l.t)}</a></li>`).join('')}</ul></div>`).join('');
   const small=f.small.map(l=>`<li><a href="${esc(l.href)}">${esc(l.t)}</a></li>`).join('');
-  const contact=f.tabs.length?`<section class="contact" data-section="contact-row" data-intent="five contact channels" data-layout="contained" data-module="contact-row" data-items="${f.tabs.length}">
+  const contact=f.tabs.length?`<section class="contact" id="kontakt" data-section="contact-row" data-intent="five contact channels" data-layout="contained" data-module="contact-row" data-items="${f.tabs.length}">
     <div class="container">
       <div class="contact-head"><h2 data-slot="heading">${esc(f.contactHeading)}</h2>${f.contactLink?`<p><a href="${esc(f.contactLink.href)}">${esc(f.contactLink.t)}</a></p>`:''}</div>
       <ul class="channels" data-slot="channels">${chan}</ul>
@@ -140,6 +142,7 @@ a:hover{color:var(--fjell)}a:visited{color:var(--lyng)}
 h1,h2,h3,h4{margin:0;font-family:var(--heading-font-family);font-weight:400;color:var(--fjell);text-wrap:balance;letter-spacing:-.005em}
 h1{font-size:var(--t-headline);line-height:var(--line-height-heading)}h2{font-size:var(--t-headline-sm);line-height:1.15}h3{font-size:var(--t-title);line-height:1.2}h4{font-family:var(--title-font-family);font-size:var(--title);line-height:1.25}
 .display{font-size:var(--t-display);line-height:1.1;letter-spacing:-.01em}
+.title{font-family:var(--heading-font-family);font-size:var(--t-title);line-height:1.2;color:var(--fjell)}
 .title-sm{font-family:var(--title-font-family);font-size:var(--title);line-height:1.25}
 p{margin:0}p+p{margin-top:var(--spacing-md)}
 .lead{font-size:var(--lead);line-height:1.5;max-width:60ch}.small{font-size:var(--body-sm);line-height:1.45}.label{font-family:var(--title-font-family);font-size:var(--label);line-height:1.4;letter-spacing:.01em}
@@ -164,6 +167,10 @@ ul,ol{margin:0;padding:0;list-style:none}
 .btn-inline.btn-on-vann{color:#fff}.btn-inline.btn-on-vann:hover{color:#fff}
 .btn-inline svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
 .btn-sm{min-height:40px;padding:8px 18px;font-size:var(--body-sm)}
+.btn:disabled,.btn[aria-disabled="true"],button:disabled,input:disabled,select:disabled,textarea:disabled,.is-disabled{background:var(--lysgraa);color:var(--koksgraa);border-color:var(--lysgraa);cursor:not-allowed;opacity:1}
+input:disabled::placeholder{color:var(--koksgraa)}
+.badge,a.badge{display:inline-flex;align-items:center;min-height:32px;padding:4px 12px;border-radius:var(--radius-pill);background:var(--frost-30);color:var(--fjell);font-family:var(--title-font-family);font-size:var(--label);letter-spacing:.01em;text-decoration:none;transition:background-color var(--dur) var(--ease),color var(--dur) var(--ease)}a.badge:hover{background:var(--vann);color:#fff}
+.video-frame{position:relative;display:grid;place-items:center;aspect-ratio:16/9;background:var(--frost-30);border-radius:var(--radius);overflow:hidden;color:var(--fjell);text-decoration:none}.video-frame svg{width:64px;height:64px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .btn-icon{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:6px 10px;color:var(--fjell);text-decoration:none;border-radius:var(--radius-sm);font-size:var(--body-sm)}.btn-icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}.btn-icon:hover{background:var(--frost-30);color:var(--fjell)}
 .link-more{display:inline-flex;align-items:center;gap:4px}.link-more svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform var(--dur) var(--ease)}.link-more:hover svg{transform:translateX(3px)}
 /* header */
@@ -195,7 +202,7 @@ header[data-canon]{background:#fff;border-bottom:1px solid var(--lysgraa);positi
 .router-input:focus-visible{outline:2px solid var(--sol);outline-offset:2px;border-color:var(--vann)}
 .router-all{grid-area:all}.router-all summary{list-style:none;justify-self:start}.router-all summary::-webkit-details-marker{display:none}.router-all[open] summary svg{transform:rotate(180deg)}
 .bank-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px 24px;padding:8px 0 20px}
-.bank-list li{padding:10px 0;border-top:1px solid rgba(255,255,255,.35)}.bank-list a{color:#fff;text-decoration:none;font-family:var(--title-font-family)}.bank-list a:hover{text-decoration:underline}.bank-list strong{display:block;font-size:var(--lead)}.bank-tagline{display:block;font-size:var(--body-sm);opacity:.9}
+.bank-list li{padding:10px 0;border-top:1px solid rgba(255,255,255,.35);min-width:0;overflow-wrap:anywhere}.bank-list a{color:#fff;text-decoration:none;font-family:var(--title-font-family)}.bank-list a:hover{text-decoration:underline}.bank-list strong{display:block;font-size:var(--lead)}.bank-tagline{display:block;font-size:var(--body-sm);opacity:.9}
 .router-art{grid-area:art;align-self:center;justify-self:end;width:100%;max-width:520px;height:auto;aspect-ratio:1250/368;max-height:150px;object-fit:contain;object-position:right center}
 /* back link */
 .backlink{display:inline-flex;align-items:center;gap:4px;font-size:var(--body-sm);text-decoration:none;min-height:44px}.backlink svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
@@ -242,12 +249,12 @@ footer[data-canon]{margin-top:0}
 .faq .answer{padding:0 0 24px;max-width:68ch}
 .feedback{border-top:1px solid var(--lysgraa);padding-block:var(--spacing-xl)}.feedback-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px}.feedback h2{font-family:var(--title-font-family);font-size:var(--title)}
 .feedback .btn svg{width:22px;height:22px}
-.callout{display:flex;gap:16px;padding:20px 24px;background:var(--sand-30);border-radius:var(--radius);max-width:68ch}.callout svg{flex:0 0 auto;width:28px;height:28px;fill:none;stroke:var(--sol);stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.callout{display:flex;gap:16px;padding:20px 24px;background:var(--sand-30);border-radius:var(--radius);max-width:68ch}.callout svg{flex:0 0 auto;width:28px;height:28px;fill:none;stroke:var(--sol);stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}.callout.info{background:var(--frost-30)}.callout.info svg{stroke:var(--vann)}
 .cta-band{display:grid;gap:12px;max-width:68ch}
 @media (max-width:1279px){.router-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 32%}}
 @media (max-width:1023px){
   .ds-nav-burger{margin-left:auto}
-  .router-grid{grid-template-columns:1fr 1fr;grid-template-areas:"text all" "form form" "art art";row-gap:8px;padding-block:16px 0;min-height:0}.router-all{justify-self:end;align-self:center}.router-art{max-width:none;max-height:none;aspect-ratio:auto;justify-self:stretch;height:56px;width:100%;object-fit:cover;object-position:50% 60%;margin-top:8px}
+  .router-grid{grid-template-columns:1fr 1fr;grid-template-areas:"text all" "form form" "art art";row-gap:8px;padding-block:16px 0;min-height:0}.router-all{justify-self:end;align-self:center}.router-all[open]{grid-column:1/-1;justify-self:stretch}.router-all[open] summary{width:max-content;margin-left:auto}.router-art{max-width:none;max-height:none;aspect-ratio:auto;justify-self:stretch;height:56px;width:100%;object-fit:cover;object-position:50% 60%;margin-top:8px}
   .channels{grid-template-columns:repeat(3,minmax(0,1fr))}.footer-cols{grid-template-columns:1fr 1fr}
 }
 @media (max-width:1023px){

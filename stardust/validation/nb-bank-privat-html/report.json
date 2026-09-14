@@ -1,7 +1,7 @@
 {
  "slug": "nb-bank-privat-html",
  "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/prototypes/nb-bank-privat-html-proposed.html",
- "at": "2026-09-14T19:54:52.535Z",
+ "at": "2026-09-14T20:37:59.601Z",
  "contract": {
   "rootFirst": true,
   "tokensMissing": [],
@@ -25,7 +25,7 @@
    "imgsNoAlt": 0,
    "inputsNoLabel": 0,
    "headingSkips": 0,
-   "headings": 25,
+   "headings": 24,
    "sectionsNoAttr": [],
    "btnSmall": 4,
    "btnSmallList": [
@@ -75,7 +75,7 @@
    "imgsNoAlt": 0,
    "inputsNoLabel": 0,
    "headingSkips": 0,
-   "headings": 25,
+   "headings": 24,
    "sectionsNoAttr": [],
    "btnSmall": 6,
    "btnSmallList": [
@@ -118,7 +118,7 @@
    "imgsNoAlt": 0,
    "inputsNoLabel": 0,
    "headingSkips": 0,
-   "headings": 25,
+   "headings": 24,
    "sectionsNoAttr": [],
    "btnSmall": 6,
    "btnSmallList": [

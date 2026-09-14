@@ -2,12 +2,13 @@
 // Assemble stardust/prototypes/<slug>-proposed.html from the shared chrome (canon) + the page module.
 // Usage: node stardust/scripts/proto/build.mjs <slug>
 import fs from 'node:fs'; import path from 'node:path';
-import { loadDoc, pageJson, headerData, routerData, footerData } from './data.mjs';
+import { loadDoc, pageJson, headerData, routerData, footerData, frontendFooter } from './data.mjs';
 import { favicon, skipLinks, headerHtml, routerHtml, footerHtml, navScript, cssBase, rootTokens, esc } from './chrome.mjs';
 const slug=process.argv[2]; if(!slug){ console.error('slug required'); process.exit(1); }
 const mod=await import(path.resolve(`stardust/scripts/proto/pages/${slug}.mjs`));
 const doc=loadDoc(slug); const pj=pageJson(slug);
-const data={header:headerData(doc),router:routerData(doc),footer:footerData(doc),doc,pj,slug};
+let footer=footerData(doc); if(!footer||!footer.columns.length){ footer=frontendFooter(doc)||footer; }
+const data={header:headerData(doc),router:routerData(doc),footer,doc,pj,slug};
 if(mod.patchData) mod.patchData(data);
 const page=mod.render(data);           // { main, css, provenance, template, title, description, lang }
 const now=new Date().toISOString();

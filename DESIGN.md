@@ -285,10 +285,11 @@ Flat. Depth is tonal — paper changes (Hvit / Sand-30 / Frost-30 / Syrin-30) an
 
 ### Named Rules
 **The Flat-At-Rest Rule.** Nothing casts a shadow until it is hovered or focused. Cards, bands, inputs and buttons are flat.
+**The Disabled Rule.** A disabled control is Lysgrå ground with Koksgrå text (≥ 8:1), never Grå text on Hvit (2.3:1); `cursor: not-allowed`, opacity untouched.
 
 ## Shapes
 
-- **Photography** carries the brand's large radius on **one corner pair** (top-left + bottom-right at 96 px on heroes, 48 px on cards) — derived from the captured 96 px all-round mask (785 occurrences) and made deliberate. Portraits are circles.
+- **Photography** carries the brand's large radius on **one corner pair** (top-left + bottom-right at 96 px on heroes, 48 px on cards) — derived from the captured 96 px all-round mask (785 occurrences) and made deliberate. Portraits are circles. **Video** (`<video controls>`) takes the top-left corner only, so the control bar stays clear; a 4:5 portrait source keeps its 4:5 frame (logged as a deviation) rather than being cropped to 3:2.
 - **Illustrations** (flat four-colour spot illustrations, the alliance landscape) sit directly on paper, unmasked, `aria-hidden`.
 - **Buttons** are pills (6em). **Cards / papers** 16 px. **Inputs** 8 px. **Badges** pill. **Dialogs** 24 px.
 - **Icons** thin-line FFE icons (captured SVG), 1.5 px stroke, Vann; the contact row keeps its Vann circles (56 px).
@@ -309,7 +310,8 @@ Vann, underlined (2 px offset, 1 px thickness), hover Fjell, visited Lyng. Card 
 
 ### Cards / Papers
 - **Corner Style:** 16 px.
-- **Background:** Sand-30 (default, warm), Frost-30 (help / tools), Hvit + Lysgrå hairline (on tinted movements).
+- **Background:** Sand-30 (default, warm), Frost-30 (help / tools), Hvit + Lysgrå hairline (on tinted movements — **text-only items only**).
+- **Photo-led items are never boxed:** a door, news item or story with a photograph sits flat on the movement's paper (photo + title + meta, whole item is the link, no paper of its own) — one door language across hubs, product pages and rails.
 - **Shadow Strategy:** none at rest; Lift on hover/focus-within.
 - **Content:** photo (3:2, 48 px one-corner-pair mask) or spot illustration → title (Title-sm) → one line (Body) → meta line (Label, e.g. the captured "Tips og råd" category, sentence case) → the card is the link; a chevron is not added.
 - **Internal Padding:** 24 px (20 px at ≤ 640).
@@ -320,13 +322,22 @@ Vann, underlined (2 px offset, 1 px thickness), hover Fjell, visited Lyng. Card 
 - **Error:** Bær border + Bær icon; helper text in Svart (Bær text fails AA at body size); **Disabled:** Grå text on Hvit.
 
 ### Badges
-Pill, Frost-30 fill, Fjell text, Label 13 px. Used for categories in listings, "Nyhet", tema filters.
+Pill, Frost-30 fill, Fjell text, Label 13 px medium, min-height 32 px; linked badges turn Vann / Hvit on hover. Used for categories in listings, "Nyhet", tema filters, "Relaterte tema".
+
+### Callouts
+Sand-30 paper with the Sol bulb glyph for tips (`.callout`); Frost-30 with the Vann info glyph for information / warning boxes (`.callout.info`). 16 px radius, 68ch max.
+
+### Video frame
+16:9 Frost-30 frame (`.video-frame`) with the Vann play glyph; carries a captured-src `<iframe loading="lazy">` when one exists, otherwise links to the video page.
 
 ### Navigation
 - **Header (system role):** one 72 px row on Hvit with a 1 px Lysgrå hairline: logo (180 × 50 captured SVG) · market nav (9 links, Body 16, Fjell, current page marked by a 2 px Vann underline) · right cluster: audience switch (Privat · Bedrift · Om oss as a quiet segmented control, Label 13 medium) · search icon-button · Bli kunde (secondary text pill) · Logg inn (action). Sticky on mobile only (captured behaviour). Collapses to the stock hamburger at ≤ 640 px (`data-nav-collapse="hamburger"`).
 - **Alliance router (system role `bank-router`):** Vann paper band, ≤ 96 px on desktop: heading "Vi er flere banker i hele Norge" (Title-sm, Hvit) · lede (Small, Hvit) · postcode input + "Bruk min posisjon" (secondary, Hvit on Vann) + "Se alle banker" (inline, Hvit) · the captured landscape illustration at the right edge on ≥ 1024, hidden < 768 (as captured). Expands to the 12-bank list (CSS-only `<details>` in prototypes; dynamics #1 interim).
 - **Back-link:** "‹ Låne" in Vann, Small, 24 px above the H1.
 - **Footer (system role):** Fjell paper, Hvit text: "Kontakt oss" channel row (5 Vann-on-Hvit circles) sits above the footer on Hvit; footer columns (Privat / Bedrift · Logg inn · Sosiale medier) in Body 16 Hvit with underline on hover; Natt legal row in Small.
+
+### Feedback strip
+"Hva synes du om denne siden?" (title-sm) + two secondary pill buttons with the thumb glyphs and the captured labels (Ja / Nei), `type="button"` until the logging endpoint exists (dynamics #5).
 
 ### FAQ accordion (signature module)
 `<details>`/`<summary>` per question, question in Title-sm Fjell, chevron 20 px Vann rotating, answer Body 68ch, 1 px Lysgrå hairline between items, "Se flere spørsmål og svar" as inline pill. Open state keeps the question visible; `aria-expanded` via the native element.

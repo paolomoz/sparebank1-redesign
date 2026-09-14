@@ -1,0 +1,160 @@
+{
+ "slug": "nb-bank-privat-kundeservice-kontakt-html",
+ "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/prototypes/nb-bank-privat-kundeservice-kontakt-html-proposed.html",
+ "at": "2026-09-14T20:38:14.496Z",
+ "contract": {
+  "rootFirst": true,
+  "tokensMissing": [],
+  "inlineScripts": 1
+ },
+ "viewports": {
+  "390": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 1,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 11,
+   "sectionsNoAttr": [],
+   "btnSmall": 13,
+   "btnSmallList": [
+    "a.@30px \"bankpost@s1g.no\"",
+    "a.@30px \"post@sb1.no\"",
+    "a.@30px \"Kontakt oss\"",
+    "a.@30px \"bankpost@fjellbanken\"",
+    "a.@30px \"privat@snn.no\"",
+    "a.@30px \"nordvest@snv.no\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "radgiver-sirkel-3.png",
+    "area": 17689
+   },
+   "focusRing": true,
+   "docHeight": 4758,
+   "smoke": {
+    "navOpen": true,
+    "ariaExpanded": "true",
+    "navClosedByEsc": true,
+    "ctaReachableByKeyboard": "no-primary-cta",
+    "hovered": true
+   }
+  },
+  "768": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 3,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [
+    "li@771",
+    "li@771",
+    "li@771",
+    "li@771",
+    "li@771"
+   ],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 11,
+   "sectionsNoAttr": [],
+   "btnSmall": 4,
+   "btnSmallList": [
+    "a.is-active@36px \"Privat\"",
+    "a.@36px \"Bedrift\"",
+    "a.@36px \"Om oss\"",
+    "label.@25px \"Søk etter et kontor\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "radgiver-sirkel-3.png",
+    "area": 57600
+   },
+   "focusRing": true,
+   "docHeight": 3179,
+   "smoke": {
+    "ctaReachableByKeyboard": "no-primary-cta",
+    "hovered": true
+   }
+  },
+  "1440": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 3,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 11,
+   "sectionsNoAttr": [],
+   "btnSmall": 4,
+   "btnSmallList": [
+    "a.is-active@36px \"Privat\"",
+    "a.@36px \"Bedrift\"",
+    "a.@36px \"Om oss\"",
+    "label.@25px \"Søk etter et kontor\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "radgiver-sirkel-3.png",
+    "area": 115600
+   },
+   "focusRing": true,
+   "docHeight": 2910,
+   "smoke": {
+    "ctaReachableByKeyboard": "no-primary-cta",
+    "hovered": true
+   }
+  }
+ },
+ "mobileNav": {
+  "over": 0,
+  "minFont": 14,
+  "minGap": 0,
+  "collapse": "hamburger"
+ },
+ "pass": true,
+ "issues": [
+  {
+   "sev": "P2",
+   "where": "390",
+   "msg": "13 interactive elements < 40px tall: a.@30px \"bankpost@s1g.no\", a.@30px \"post@sb1.no\", a.@30px \"Kontakt oss\", a.@30px \"bankpost@fjellbanken\", a.@30px \"privat@snn.no\", a.@30px \"nordvest@snv.no\""
+  }
+ ]
+}

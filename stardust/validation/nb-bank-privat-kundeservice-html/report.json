@@ -1,0 +1,167 @@
+{
+ "slug": "nb-bank-privat-kundeservice-html",
+ "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/prototypes/nb-bank-privat-kundeservice-html-proposed.html",
+ "at": "2026-09-14T20:38:04.624Z",
+ "contract": {
+  "rootFirst": true,
+  "tokensMissing": [],
+  "inlineScripts": 1
+ },
+ "viewports": {
+  "390": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 15,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 32,
+   "sectionsNoAttr": [],
+   "btnSmall": 6,
+   "btnSmallList": [
+    "label.router-label@1px \"Ditt postnummer\"",
+    "summary.btn-inline@38px \"Se alle banker\"",
+    "label.label@18px \"Skriv det du lurer p\"",
+    "a.link-more@25px \"Hvorfor fungerer ikk\"",
+    "a.link-more@25px \"Jeg kommer ikke inn \"",
+    "label.@25px \"Søk etter et kontor\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "surfeidyll-mann-skriver-pa-pc-dame-ser-pa.jpg.thumb.1280.1280.jpg",
+    "area": 15809
+   },
+   "focusRing": false,
+   "docHeight": 4932,
+   "smoke": {
+    "detailsOpen": true,
+    "navOpen": true,
+    "ariaExpanded": "true",
+    "navClosedByEsc": true,
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  },
+  "768": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 15,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [
+    "li@823",
+    "a@823",
+    "strong@823",
+    "span.bank-tagline@823",
+    "li@823"
+   ],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 32,
+   "sectionsNoAttr": [],
+   "btnSmall": 9,
+   "btnSmallList": [
+    "a.is-active@36px \"Privat\"",
+    "a.@36px \"Bedrift\"",
+    "a.@36px \"Om oss\"",
+    "label.router-label@20px \"Ditt postnummer\"",
+    "label.label@18px \"Skriv det du lurer p\"",
+    "a.link-more@25px \"Min BankID er sperre\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "surfeidyll-mann-skriver-pa-pc-dame-ser-pa.jpg.thumb.1280.1280.jpg",
+    "area": 56065
+   },
+   "focusRing": false,
+   "docHeight": 3688,
+   "smoke": {
+    "detailsOpen": true,
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  },
+  "1440": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 15,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 32,
+   "sectionsNoAttr": [],
+   "btnSmall": 9,
+   "btnSmallList": [
+    "a.is-active@36px \"Privat\"",
+    "a.@36px \"Bedrift\"",
+    "a.@36px \"Om oss\"",
+    "label.router-label@20px \"Ditt postnummer\"",
+    "label.label@18px \"Skriv det du lurer p\"",
+    "a.link-more@25px \"Min BankID er sperre\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "surfeidyll-mann-skriver-pa-pc-dame-ser-pa.jpg.thumb.1280.1280.jpg",
+    "area": 344304
+   },
+   "focusRing": false,
+   "docHeight": 3013,
+   "smoke": {
+    "detailsOpen": true,
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  }
+ },
+ "mobileNav": {
+  "over": 0,
+  "minFont": 14,
+  "minGap": 0,
+  "collapse": "hamburger"
+ },
+ "pass": true,
+ "issues": [
+  {
+   "sev": "P2",
+   "where": "390",
+   "msg": "6 interactive elements < 40px tall: label.router-label@1px \"Ditt postnummer\", summary.btn-inline@38px \"Se alle banker\", label.label@18px \"Skriv det du lurer p\", a.link-more@25px \"Hvorfor fungerer ikk\", a.link-more@25px \"Jeg kommer ikke inn \", label.@25px \"Søk etter et kontor\""
+  }
+ ]
+}

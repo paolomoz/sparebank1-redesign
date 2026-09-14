@@ -1,0 +1,139 @@
+{
+ "slug": "nb-bank-om-oss-presse-html",
+ "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/prototypes/nb-bank-om-oss-presse-html-proposed.html",
+ "at": "2026-09-14T20:37:49.850Z",
+ "contract": {
+  "rootFirst": true,
+  "tokensMissing": [],
+  "inlineScripts": 1
+ },
+ "viewports": {
+  "390": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 10,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 13,
+   "sectionsNoAttr": [],
+   "btnSmall": 0,
+   "btnSmallList": [],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "kolleger-i-mote-2-jobb-kollegaer.jpg.thumb.1280.1280.jpg",
+    "area": 81665
+   },
+   "focusRing": true,
+   "docHeight": 3898,
+   "smoke": {
+    "navOpen": true,
+    "ariaExpanded": "true",
+    "navClosedByEsc": true,
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  },
+  "768": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 10,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 13,
+   "sectionsNoAttr": [],
+   "btnSmall": 3,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.@36px \"Bedrift\"",
+    "a.is-active@36px \"Om oss\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "kolleger-i-mote-2-jobb-kollegaer.jpg.thumb.1280.1280.jpg",
+    "area": 240000
+   },
+   "focusRing": true,
+   "docHeight": 3924,
+   "smoke": {
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  },
+  "1440": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 10,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 13,
+   "sectionsNoAttr": [],
+   "btnSmall": 3,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.@36px \"Bedrift\"",
+    "a.is-active@36px \"Om oss\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "kolleger-i-mote-2-jobb-kollegaer.jpg.thumb.1280.1280.jpg",
+    "area": 344304
+   },
+   "focusRing": true,
+   "docHeight": 3270,
+   "smoke": {
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  }
+ },
+ "mobileNav": {
+  "over": 0,
+  "minFont": 14,
+  "minGap": 0,
+  "collapse": "hamburger"
+ },
+ "pass": true,
+ "issues": []
+}

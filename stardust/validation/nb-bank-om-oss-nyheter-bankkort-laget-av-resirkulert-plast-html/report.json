@@ -1,0 +1,152 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/prototypes/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html-proposed.html",
+ "at": "2026-09-14T20:37:42.675Z",
+ "contract": {
+  "rootFirst": true,
+  "tokensMissing": [],
+  "inlineScripts": 1
+ },
+ "viewports": {
+  "390": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 9,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 14,
+   "sectionsNoAttr": [],
+   "btnSmall": 2,
+   "btnSmallList": [
+    "a.badge@32px \"#Bærekraft\"",
+    "a.badge@32px \"#Bærekraft\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "Betaling_med_bankkort.jpg.thumb.1280.2276.jpg",
+    "area": 81665
+   },
+   "focusRing": true,
+   "docHeight": 5514,
+   "smoke": {
+    "navOpen": true,
+    "ariaExpanded": "true",
+    "navClosedByEsc": true,
+    "ctaReachableByKeyboard": "no-primary-cta",
+    "hovered": true
+   }
+  },
+  "768": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 9,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 14,
+   "sectionsNoAttr": [],
+   "btnSmall": 5,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.@36px \"Bedrift\"",
+    "a.is-active@36px \"Om oss\"",
+    "a.badge@32px \"#Bærekraft\"",
+    "a.badge@32px \"#Bærekraft\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "Betaling_med_bankkort.jpg.thumb.1280.2276.jpg",
+    "area": 240000
+   },
+   "focusRing": true,
+   "docHeight": 4364,
+   "smoke": {
+    "ctaReachableByKeyboard": "no-primary-cta",
+    "hovered": true
+   }
+  },
+  "1440": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 9,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 14,
+   "sectionsNoAttr": [],
+   "btnSmall": 5,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.@36px \"Bedrift\"",
+    "a.is-active@36px \"Om oss\"",
+    "a.badge@32px \"#Bærekraft\"",
+    "a.badge@32px \"#Bærekraft\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "Betaling_med_bankkort.jpg.thumb.1280.2276.jpg",
+    "area": 252964
+   },
+   "focusRing": true,
+   "docHeight": 3402,
+   "smoke": {
+    "ctaReachableByKeyboard": "no-primary-cta",
+    "hovered": true
+   }
+  }
+ },
+ "mobileNav": {
+  "over": 0,
+  "minFont": 14,
+  "minGap": 0,
+  "collapse": "hamburger"
+ },
+ "pass": true,
+ "issues": [
+  {
+   "sev": "P2",
+   "where": "390",
+   "msg": "2 interactive elements < 40px tall: a.badge@32px \"#Bærekraft\", a.badge@32px \"#Bærekraft\""
+  }
+ ]
+}

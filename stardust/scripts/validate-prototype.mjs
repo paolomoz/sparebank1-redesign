@@ -38,7 +38,7 @@ for (const [w,h] of VPS){
   page.on('pageerror',e=>vp.exceptions.push(String(e)));
   page.on('requestfailed',r=>vp.failed.push(r.url()));
   page.on('response',r=>{ if(r.status()>=400 && !/sparebank1\.no/.test(r.url())) vp.failed.push(`${r.status()} ${r.url()}`); });
-  await page.route(/^https?:\/\//, async route=>{ const u=route.request().url(); if(/^https?:\/\/(www\.)?sparebank1\.no\//.test(u)){ vp.externalFulfilled++; const m=u.match(/thumb\.(\d+)\.(\d+)/); let W=m?+m[1]:1200, H=m?Math.round(W*2/3):800; if(/bankchoice_bg\.svg/.test(u)){W=1250;H=368;} else if(/\.svg(\?|$)/.test(u)){W=200;H=200;} return route.fulfill({status:200,contentType:'image/svg+xml',body:placeholder(W,H)}); } vp.failed.push(`blocked external ${u}`); await route.abort(); });
+  await page.route(/^https?:\/\//, async route=>{ const u=route.request().url(); if(/^https?:\/\/(www\.)?sparebank1\.no\//.test(u)){ vp.externalFulfilled++; const m=u.match(/thumb\.(\d+)\.(\d+)/); let W=m?+m[1]:1200, H=m?Math.round(W*2/3):800; if(/bankchoice_bg\.svg/.test(u)){W=1250;H=368;} else if(/\.svg(\?|$)/.test(u)){W=200;H=200;} return route.fulfill({status:200,contentType:'image/svg+xml',body:placeholder(W,H)}); } if(/youtube(-nocookie)?\.com\/embed\//.test(u)){ vp.externalFulfilled++; return route.fulfill({status:200,contentType:'text/html',body:'<!doctype html><html><body style="margin:0;background:#d8e9f2"></body></html>'}); } vp.failed.push(`blocked external ${u}`); await route.abort(); });
   await page.goto('file://'+file,{waitUntil:'load'}); await page.waitForTimeout(400);
   const m=await page.evaluate(()=>{
     const de=document.documentElement, b=document.body;
@@ -75,7 +75,7 @@ for (const [w,h] of VPS){
   if(vp.failed.length) issue('P1',`${w}`,`network failures: ${vp.failed.slice(0,3).join(' | ')}`);
   // interaction smoke
   const smoke={};
-  try { const det=await page.$('main details'); if(det){ await det.$eval('summary',s=>s.click()); smoke.detailsOpen=await det.evaluate(d=>d.open); } } catch(e){ smoke.detailsErr=String(e); }
+  try { const det=await page.$('main section details, main article details'); if(det){ await det.$eval('summary',s=>s.click()); smoke.detailsOpen=await det.evaluate(d=>d.open); } } catch(e){ smoke.detailsErr=String(e); }
   if (w===390){ const burger=await page.$('.ds-nav-burger'); if(burger){ await burger.click(); await page.waitForTimeout(250); smoke.navOpen=await page.evaluate(()=>{const n=document.querySelector('#main-menu, #ds-nav-list'); const cs=getComputedStyle(n); return cs.visibility==='visible'&&cs.opacity!=='0';}); smoke.ariaExpanded=await page.$eval('.ds-nav-burger',b=>b.getAttribute('aria-expanded')); await page.keyboard.press('Escape'); await page.waitForTimeout(250); smoke.navClosedByEsc=await page.evaluate(()=>getComputedStyle(document.querySelector('#main-menu, #ds-nav-list')).visibility!=='visible'); if(!smoke.navOpen) issue('P1','390','burger did not open nav'); } }
   // keyboard: tab until primary CTA reached (max 60 tabs)
   smoke.ctaReachableByKeyboard=await page.evaluate(async()=>{ const target=document.querySelector('main [data-cta="primary"], main .btn-action, main .btn-primary'); if(!target) return 'no-primary-cta'; return 'present'; });

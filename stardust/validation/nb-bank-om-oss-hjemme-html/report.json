@@ -1,0 +1,124 @@
+{
+ "slug": "nb-bank-om-oss-hjemme-html",
+ "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/prototypes/nb-bank-om-oss-hjemme-html-proposed.html",
+ "at": "2026-09-14T20:37:35.104Z",
+ "contract": {
+  "rootFirst": true,
+  "tokensMissing": [],
+  "inlineScripts": 1
+ },
+ "viewports": {
+  "390": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 7,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 10,
+   "sectionsNoAttr": [],
+   "btnSmall": 0,
+   "btnSmallList": [],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": null,
+   "focusRing": true,
+   "docHeight": 5879,
+   "smoke": {
+    "navOpen": true,
+    "ariaExpanded": "true",
+    "navClosedByEsc": true,
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  },
+  "768": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 7,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 10,
+   "sectionsNoAttr": [],
+   "btnSmall": 3,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.@36px \"Bedrift\"",
+    "a.is-active@36px \"Om oss\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": null,
+   "focusRing": true,
+   "docHeight": 4767,
+   "smoke": {
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  },
+  "1440": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 7,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 10,
+   "sectionsNoAttr": [],
+   "btnSmall": 3,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.@36px \"Bedrift\"",
+    "a.is-active@36px \"Om oss\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": null,
+   "focusRing": true,
+   "docHeight": 5097,
+   "smoke": {
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  }
+ },
+ "mobileNav": {
+  "over": 0,
+  "minFont": 14,
+  "minGap": 0,
+  "collapse": "hamburger"
+ },
+ "pass": true,
+ "issues": []
+}
