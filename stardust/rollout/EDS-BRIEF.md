@@ -32,11 +32,12 @@ PROTOTYPE. The product archetype (boliglån) is the gated reference: read `stard
 - Blocks: prefer REUSING `hero · cards · columns · accordion · feedback · callout · calculator · breadcrumbs` with a NEW VARIANT (a class token on
   the block + rules in YOUR GROUP'S CSS FILE `blocks/<block>/<block>-<group>.css` — already created and @imported by the block CSS; groups:
   `theme` = theme + market-landing · `hub` = category-hub + kundeservice-hub + tool + utility · `story` = faq + news-article + news-listing +
-  campaign-landing · `omoss` = om-oss + markedsnytt-listing; section-style tokens likewise in `styles/styles-<group>.css`. NEVER edit another
-  group's file or the main block CSS/styles.css; JS changes to a shared block must be small, additive and re-verified with grep after the edit); a new block (`blocks/<name>/{<name>.js,<name>.css}`) only for a
-  genuinely new repeating unit or widget (e.g. `table`, `cobranding`, `video`, `embed`). Shared blocks/styles are ADDITIVE ONLY: never change an
-  existing rule or the decorate flow for existing variants — the product page must keep passing (`node stardust/scripts/eds/gate.mjs
-  nb-bank-privat-lan-boliglan-html --widths 1440` ≤ 1 % / |Δh| ≤ 2 after your changes; if it moved, your change is not additive).
+  campaign-landing · `omoss` = om-oss + markedsnytt-listing; section-style tokens likewise in `styles/styles-<group>.css`). A NEW block
+  (`blocks/<name>/{<name>.js,<name>.css}`) only for a genuinely new repeating unit or widget (e.g. `table`, `cobranding`, `video`, `embed`).
+  NEVER edit another group's file, the main block CSS or styles.css; JS changes to a shared block (cards.js variant maps, columns.js …) must be
+  small, additive, and re-verified with grep right after the edit (other workers edit the same files). The product page must keep passing
+  (`node stardust/scripts/eds/gate.mjs nb-bank-privat-lan-boliglan-html --widths 1440` ≤ 1 % / |Δh| ≤ 2 after your changes; if it moved, your
+  change is not additive).
 - Editability (EW1–EW10, deploy SKILL.md § 8): blocks MOVE authored nodes (`h*`/`p`/`ul`/`picture`) into wrappers that carry the classes; never
   `textContent =`/`innerHTML =` from authored text, never classes on authored elements (style them as wrapper descendants: `.card-title :is(h2,h3)`),
   CTAs move as their `<p>` (decorateButtons already classed the anchor), presentational clones `strip` instrumentation, `<button>/<summary>` never

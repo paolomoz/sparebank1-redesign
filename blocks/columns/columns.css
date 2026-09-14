@@ -1,7 +1,8 @@
 @import url("columns-theme.css");
 @import url("columns-hub.css");
 @import url("columns-story.css");
-@import url("columns-omoss.css");/* columns — canon split media (photo + text) and promo bands (illustration + text + one pill). */
+@import url("columns-omoss.css");
+/* columns — canon split media (photo + text) and promo bands (illustration + text + one pill). */
 .columns .container { width: 100%; display: grid; gap: var(--spacing-2xl); }
 .columns .split-row { display: grid; gap: var(--spacing-xl); align-items: center; }
 .columns .col-media { margin: 0; }

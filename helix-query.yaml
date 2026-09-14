@@ -1,0 +1,59 @@
+version: 1
+indices:
+  news:
+    include:
+      - /nb/bank/om-oss/nyheter/**
+      - /nb/bank/privat/forsikring/kundehistorier/**
+      - /nb/bank/privat/pensjon/**
+    exclude:
+      - /nb/bank/om-oss/nyheter
+      - /nb/bank/privat/pensjon
+      - /nb/bank/privat/pensjon/egen-pensjonskonto
+    target: /nb/bank/om-oss/nyheter/query-index.json
+    properties:
+      title:
+        select: head > meta[property="og:title"]
+        value: attribute(el, "content")
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, "content")
+      image:
+        select: head > meta[property="og:image"]
+        value: match(attribute(el, "content"), "https:\/\/[^/]+(\/.*)")
+      published-time:
+        select: head > meta[name="published-time"]
+        value: attribute(el, "content")
+      category:
+        select: head > meta[name="category"]
+        value: attribute(el, "content")
+      template:
+        select: head > meta[name="template"]
+        value: attribute(el, "content")
+      lastModified:
+        select: none
+        value: parseTimestamp(headers["last-modified"], "ddd, DD MMM YYYY hh:mm:ss GMT")
+  markedsnytt:
+    include:
+      - /nb/bank/privat/sparing/markedsnytt/**
+    exclude:
+      - /nb/bank/privat/sparing/markedsnytt
+    target: /nb/bank/privat/sparing/markedsnytt/query-index.json
+    properties:
+      title:
+        select: head > meta[property="og:title"]
+        value: attribute(el, "content")
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, "content")
+      image:
+        select: head > meta[property="og:image"]
+        value: match(attribute(el, "content"), "https:\/\/[^/]+(\/.*)")
+      published-time:
+        select: head > meta[name="published-time"]
+        value: attribute(el, "content")
+      tema:
+        select: head > meta[name="tema"]
+        value: attribute(el, "content")
+      template:
+        select: head > meta[name="template"]
+        value: attribute(el, "content")

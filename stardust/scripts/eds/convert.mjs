@@ -36,6 +36,10 @@ function metadataBlock(pg, document, chrome, map) {
   const title = document.querySelector('title')?.textContent.trim() || pg.title || '';
   const rows = [['title', title], ['description', meta('description')], ['image', meta('og:image')], ['template', pg.archetypeFamily], ['market', chrome.market], ['source', pg.url]];
   if (meta('og:type')) rows.push(['og:type', meta('og:type')]);
+  // listings contract (dynamics #11): news articles carry category + published-time so the query index is rich at import time
+  const byline = document.querySelector('.byline, .art-title .meta'); const cat = byline?.querySelector('span'); const time = byline?.querySelector('time');
+  if (cat && cat.textContent.trim()) rows.push(['category', cat.textContent.trim()]);
+  if (time && time.textContent.trim()) rows.push(['published-time', time.getAttribute('datetime') || time.textContent.trim()]);
   if (chrome.nav && chrome.nav !== '/nav') rows.push(['nav', chrome.nav]);
   if (chrome.footer && chrome.footer !== '/footer') rows.push(['footer', chrome.footer]);
   return L.block('metadata', [], rows.filter(([, v]) => v).map(([k, v]) => [k, L.esc(v)]));

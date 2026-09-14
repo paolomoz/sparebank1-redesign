@@ -1,7 +1,8 @@
 @import url("hero-theme.css");
 @import url("hero-hub.css");
 @import url("hero-story.css");
-@import url("hero-omoss.css");/* hero — canon split hero. Product: photo LEFT as content (7/5), text right; campaign (market landing): photo left, display h2. */
+@import url("hero-omoss.css");
+/* hero — canon split hero. Product: photo LEFT as content (7/5), text right; campaign (market landing): photo left, display h2. */
 .hero .container { width: 100%; }
 .hero .hero-grid { display: grid; grid-template-columns: 7fr 5fr; gap: var(--spacing-xl); align-items: center; }
 .hero .hero-media { margin: 0; grid-column: 1; grid-row: 1; }

@@ -1,7 +1,8 @@
 @import url("styles-theme.css");
 @import url("styles-hub.css");
 @import url("styles-story.css");
-@import url("styles-omoss.css");/*
+@import url("styles-omoss.css");
+/*
  * sparebank1-redesign — EDS foundation (stardust:deploy Step 3, Flow B redesign).
  * Every token and compound rule is lifted from the approved canon (stardust/canon/canon.css = DESIGN.json.extensions.canon,
  * authored in stardust/scripts/proto/chrome.mjs); the runtime's structural layer (body gate, header reservation, section
