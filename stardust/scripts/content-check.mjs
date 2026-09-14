@@ -26,7 +26,7 @@ for(const r of regions){ const root=cap.querySelector(sel[r]); if(!root) continu
       const alt=t.length<24 && proText.toLowerCase().includes(t.toLowerCase()); if(!alt) miss.text.push({r,t:t.slice(0,90)}); }
   }
   for(const a of root.querySelectorAll('a[href]')){ const h=a.getAttribute('href'); if(!h||h==='#/'||h==='#'||h.startsWith('javascript')) continue; if(authUi(a)) continue; if(hidden(a)&&r!=='footer'&&r!=='bank-choice') continue; checked.href++; const rh=rel(h); if(!proHrefs.has(rh)&&!proHrefs.has(rh.toLowerCase())&&!proHrefs.has(rh.split(/[?#]/)[0])) miss.href.push({r,h,t:norm(a.textContent).slice(0,40)}); }
-  for(const i of root.querySelectorAll('img')){ const s=i.getAttribute('data-lazy-src')||i.getAttribute('src'); if(!s||/logo[a-z0-9-]*\.svg|chevron\.svg|material-icons/.test(s)) continue; if(hidden(i)) continue; checked.img++; if(!proSrcs.has(s)) miss.img.push({r,s:s.split('/').pop()}); }
+  for(const i of root.querySelectorAll('img')){ const s=i.getAttribute('data-lazy-src')||i.getAttribute('src'); if(!s||s==='null'||s==='undefined'||/logo[a-z0-9-]*\.svg|chevron\.svg|material-icons/.test(s)) continue; /* a captured <img src="null"> is a source-site defect, not content */ if(hidden(i)) continue; checked.img++; if(!proSrcs.has(s)) miss.img.push({r,s:s.split('/').pop()}); }
 }
 const n=miss.text.length+miss.href.length+miss.img.length;
 console.log(`${slug}: content-check ${n?'FAIL':'PASS'} — checked text ${checked.text}, hrefs ${checked.href}, imgs ${checked.img}; missing text ${miss.text.length}, hrefs ${miss.href.length}, imgs ${miss.img.length}`);
