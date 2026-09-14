@@ -55,3 +55,29 @@ Everything below ships in an **interim tier** now and is upgraded when the decis
 | Nettbank / mobilbank / forsikring log-in and application flows (`/bank/nettbank-privat/*`, `kundeforsikring.sparebank1.no`) | authenticated first-party apps, session-bound | Links preserved verbatim to the current host; not part of the public-site migration. |
 | Adobe Analytics / Target / consent dialog (pilot) | tag property and CMP are owner-configured; a pilot host must not fire production tags | No tracking on the pilot origin. Re-add via Launch/Web SDK at go-live (owner decision). |
 | Regional-bank and nynorsk trees | out of iteration-1 scope (A1) | Alternates link to the live regional pages until those properties migrate. |
+
+---
+
+## Flow B re-record (redesign, prepare-migration Phase 4.5) — 2026-09-14T23:20:00Z
+
+<!-- _provenance: writtenBy stardust:dynamics (Phase 4.5 gate, Flow B hands-off); reuse of the Flow A triage above — same site, same 100-page roster, same 13 archetypes, same 29 detector findings → 20 features; no re-detection (A7 in stardust/direction.md) -->
+
+Gate result: **20/20 rows carry a disposition** (13 `self`, 1 owner decision batch, 3 decided-out) — PASS. Decided-out items stay out (authenticated apps, pilot tags/CMP, regional + nynorsk trees). Listings contract unchanged (`helix-query.yaml` written at rollout; two indexes).
+
+Redesign-specific deltas in how the interim tiers render inside the Flow B prototypes (behaviour unchanged, markup re-composed):
+
+| # | feature | Flow B prototype rendering |
+|---|---|---|
+| 1 | bank-choice router | compact Vann band under the header; postcode `<form action="#alle-banker">` (4-digit pattern), "Bruk min posisjon" submit; the 12-bank list (name, tagline, href) is a native `<details>` — no JS; geolocation/lookup still owner-bound |
+| 2 | overlay-btn CTAs (`href="#"`) | kept as `#` action buttons (Skog) — dialog at rollout D2 |
+| 3 | login | "Logg inn" links to the captured `data-login-url` (https://login.sparebank1.no/); login-choice dialog at rollout D2 |
+| 4 | FAQ accordion | native `<details>/<summary>` (`.faq`), all items rendered incl. the "Se flere" overflow — no JS |
+| 5 | page feedback | static thumbs (`type="button"`), no network |
+| 6 | contact tabs | five `<details>` disclosures in the footer contact row carrying the captured panels verbatim (12 banks × Privat/Bedrift numbers, hours, abroad numbers; bank link lists for møte/melding/chat); office search posts to the captured site-search URL (interim) — the postcode bank-picker inside each panel is not rendered (host-bound lookup; the full list replaces it) |
+| 7/8/9 | calculators | static shells of the captured widget text with controls `disabled`; no invented copy |
+| 11 | listings | captured cards rendered; index-backed at rollout |
+| 16 | YouTube | captured iframe src with `loading="lazy"` + `title`, or a link when the src is runtime-injected |
+| 17 | glossary modal | term kept as text; dialog at rollout D2 |
+| 20 | search | header "Søk" links to the captured `?search=` URL |
+
+The only JavaScript in any prototype is the ≤10-line mobile-nav a11y script (proposed-file-shell § Hard requirements #1).
