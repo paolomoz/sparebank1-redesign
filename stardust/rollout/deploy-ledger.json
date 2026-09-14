@@ -1,1046 +1,1046 @@
 {
-  "/footer-bedrift": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:09:38.513Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/footer-frontend-2": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:09:38.514Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/footer-frontend-om-oss-2": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:09:38.514Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/footer-frontend-om-oss": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:09:43.708Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/footer-frontend": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:09:43.920Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/footer-kundeservice": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:09:44.578Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/footer-om-oss": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:09:48.670Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/footer": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:09:48.721Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/fragments/bank-router-bedrift": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:09:49.359Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/fragments/bank-router-om-oss": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:09:54.245Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/fragments/bank-router": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:09:54.313Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nav-bedrift": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:09:54.560Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nav-minimal-om-oss": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:09:58.973Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nav-minimal": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:09:59.077Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nav-om-oss": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:09:59.161Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nav": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:04.129Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:04.426Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/bedriftsforsikring": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:04.551Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/bedriftskort/kredittkort": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:08.868Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/bedriftskort": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:10.506Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/betaling/utenlandsbetaling": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:10.555Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/betaling": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:13.493Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/daglig-drift": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:15.246Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/konto/bedriftskonto": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:15.489Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/konto": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:18.073Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:19.720Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:20.786Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:22.519Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:23.949Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-blir-jeg-bedriftskunde": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:26.183Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:27.444Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankaxept": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:28.400Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:31.296Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:32.227Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:32.741Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/endre-kasserer-i-nettbank-bedrift": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:35.666Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:36.787Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/kundeservice": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:37.121Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/lan-finansiering/bedriftslan": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:39.847Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/lan-finansiering/kassekreditt": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:41.457Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/lan-finansiering/leasing": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:41.729Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/lan-finansiering": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:44.627Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/open-api": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:46.345Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/pensjon": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:46.636Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/regnskap": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:49.422Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/sparing-investering": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:50.969Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:51.184Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/starte-bedrift": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:54.190Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/tips-og-rad": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:55.329Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:55.667Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/hjemme": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:59.451Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/investor": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:10:59.748Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/jobb-og-karriere": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:00.927Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:04.446Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:04.974Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:05.851Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:09.610Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:10.064Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/nyheter/bruk-mobilbanken-fa-kontroll-pa-okonomien": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:10.530Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/nyheter": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:14.461Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/om-banken/selskapsinformasjon": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:14.797Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/personvern/generelle-vilkar": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:15.237Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/personvern": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:18.864Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/presse": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:19.627Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/samfunnsansvar": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:19.903Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/selskaper": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:24.597Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/vare-eksperter": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:24.750Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:25.572Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/daglig-bruk/bankid": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:29.208Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/daglig-bruk/bankkonto": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:29.231Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/daglig-bruk/bankkort": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:30.074Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:34.480Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/daglig-bruk/kredittkort": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:34.530Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/daglig-bruk/mobilbank": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:35.096Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/daglig-bruk": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:39.963Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/eiendom": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:40.128Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/forsikring/barneforsikring": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:40.543Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/forsikring/bilforsikring": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:44.416Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:44.830Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/forsikring/innboforsikring": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:46.111Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:49.608Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/forsikring/kundehistorier": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:51.100Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/forsikring/meld-skade": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:52.144Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/forsikring/reiseforsikring": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:54.316Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/forsikring": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:55.486Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/kundeservice/bestill/bli-kunde": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:11:56.929Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/kundeservice/bestill/prisliste": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:01.118Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/kundeservice/kontakt": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:01.519Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/kundeservice/verktoy/iban-og-swift": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:01.571Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/kundeservice/verktoy/klager": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:06.475Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/kundeservice/verktoy/sparekalkulator": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:06.558Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/kundeservice/verktoy/sperre-kort": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:07.247Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/kundeservice/verktoy/valutakalkulator": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:10.808Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/kundeservice": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:11.662Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/lan/billan": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:12.287Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/lan/boliglan": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:15.653Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/lan/forbrukslan": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:16.597Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/lan/gronne-lan": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:17.365Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/lan/lanekalkulator": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:21.480Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/lan/refinansiering": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:21.634Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/lan": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:22.003Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/lofavor": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:26.862Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/pensjon/egen-pensjonskonto": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:27.035Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:27.667Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/pensjon": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:31.904Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/private-banking": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:32.606Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:32.904Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:37.632Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/sparing/markedsnytt": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:37.801Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/sparing/spare-i-fond": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:39.721Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/sparing/spare-pa-konto": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:43.178Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/sparing/spare-til-barn": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:44.035Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/sparing": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:44.998Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/svindel": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:48.288Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/tips-og-rad": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:49.116Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T23:12:49.424Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  }
+ "/footer-bedrift": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:09:38.513Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/footer-frontend-2": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:09:38.514Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/footer-frontend-om-oss-2": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:09:38.514Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/footer-frontend-om-oss": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:09:43.708Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/footer-frontend": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:09:43.920Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/footer-kundeservice": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:09:44.578Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/footer-om-oss": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:09:48.670Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/footer": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:09:48.721Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/fragments/bank-router-bedrift": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:09:49.359Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/fragments/bank-router-om-oss": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:09:54.245Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/fragments/bank-router": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:09:54.313Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nav-bedrift": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:40:51.514Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nav-minimal-om-oss": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:40:51.514Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nav-minimal": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:40:51.514Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nav-om-oss": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:40:57.485Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nav": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:40:57.487Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:40:57.628Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/bedriftsforsikring": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:02.469Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/bedriftskort/kredittkort": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:02.885Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/bedriftskort": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:03.288Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/betaling/utenlandsbetaling": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:08.589Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/betaling": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:09.119Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/daglig-drift": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:09.249Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/konto/bedriftskonto": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:14.225Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/konto": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:14.366Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:14.609Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:19.181Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:20.289Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:20.473Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-blir-jeg-bedriftskunde": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:10:26.183Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:25.230Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankaxept": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:25.332Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:25.424Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:29.947Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:30.509Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/endre-kasserer-i-nettbank-bedrift": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:30.570Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:34.508Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/kundeservice": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:35.259Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/lan-finansiering/bedriftslan": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:35.602Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/lan-finansiering/kassekreditt": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:38.786Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/lan-finansiering/leasing": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:41.252Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/lan-finansiering": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:41.556Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/open-api": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:10:46.345Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/pensjon": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:44.496Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/regnskap": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:46.592Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/sparing-investering": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:46.814Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:49.144Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/starte-bedrift": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:51.507Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift/tips-og-rad": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:51.967Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/bedrift": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:54.561Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/hjemme": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:56.024Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/investor": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:41:57.395Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/jobb-og-karriere": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:00.204Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:02.003Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:03.542Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:05.752Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:07.403Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:08.941Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/nyheter/bruk-mobilbanken-fa-kontroll-pa-okonomien": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:11.861Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/nyheter": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:12.405Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/om-banken/selskapsinformasjon": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:13.899Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/personvern/generelle-vilkar": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:17.408Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/personvern": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:18.799Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/presse": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:19.140Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/samfunnsansvar": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:22.259Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/selskaper": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:11:24.597Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss/vare-eksperter": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:24.083Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/om-oss": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:24.872Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/daglig-bruk/bankid": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:27.288Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/daglig-bruk/bankkonto": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:29.063Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/daglig-bruk/bankkort": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:30.547Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:33.531Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/daglig-bruk/kredittkort": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:34.724Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/daglig-bruk/mobilbank": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:36.608Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/daglig-bruk": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:38.579Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/eiendom": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:40.566Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/forsikring/barneforsikring": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:42.672Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/forsikring/bilforsikring": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:44.375Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:45.497Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/forsikring/innboforsikring": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:48.973Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:51.208Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/forsikring/kundehistorier": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:51.742Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/forsikring/meld-skade": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:56.011Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/forsikring/reiseforsikring": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:56.389Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/forsikring": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:42:56.769Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/kundeservice/bestill/bli-kunde": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:00.639Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/kundeservice/bestill/prisliste": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:03.511Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/kundeservice/kontakt": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:03.813Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/kundeservice/verktoy/iban-og-swift": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:05.397Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/kundeservice/verktoy/klager": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:08.669Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/kundeservice/verktoy/sparekalkulator": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:08.780Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/kundeservice/verktoy/sperre-kort": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:11.307Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/kundeservice/verktoy/valutakalkulator": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:13.406Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/kundeservice": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:14.226Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/lan/billan": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:15.887Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/lan/boliglan": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:18.022Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/lan/forbrukslan": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:19.281Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/lan/gronne-lan": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:22.301Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/lan/lanekalkulator": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:24.174Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/lan/refinansiering": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:25.057Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/lan": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:27.510Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/lofavor": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:29.832Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/pensjon/egen-pensjonskonto": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:30.809Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:33.546Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/pensjon": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:35.486Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/private-banking": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:37.156Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:39.578Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:41.392Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/sparing/markedsnytt": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:42.437Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/sparing/spare-i-fond": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:45.353Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/sparing/spare-pa-konto": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:47.053Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/sparing/spare-til-barn": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:47.273Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/sparing": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:51.472Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/svindel": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:52.802Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat/tips-og-rad": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:53.025Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ },
+ "/nb/bank/privat": {
+  "status": "live",
+  "attempts": 1,
+  "ts": "2026-09-14T23:43:56.624Z",
+  "put": 200,
+  "preview": 200,
+  "live": 200,
+  "verify": "ok"
+ }
 }

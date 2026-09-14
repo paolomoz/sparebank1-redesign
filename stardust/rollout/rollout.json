@@ -8,19 +8,19 @@
   "site": {
     "sourceUrl": "https://www.sparebank1.no",
     "da": {
-      "org": "",
-      "site": "",
+      "org": "paolomoz",
+      "site": "sparebank1-redesign",
       "ref": "main"
     },
-    "liveHost": null
+    "liveHost": "main--sparebank1-redesign--paolomoz.aem.live"
   },
   "lastRun": {
-    "at": "2026-09-14T22:17:44.404Z",
+    "at": "2026-09-14T23:44:55.996Z",
     "pages": {
-      "total": 101,
-      "verified": 0,
+      "total": 116,
+      "verified": 116,
       "deployed": 0,
-      "pending": 101,
+      "pending": 0,
       "contentPending": 0,
       "stale": 0,
       "failed": 0

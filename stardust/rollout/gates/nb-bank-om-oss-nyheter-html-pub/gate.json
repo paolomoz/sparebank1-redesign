@@ -2,29 +2,20 @@
   "slug": "nb-bank-om-oss-nyheter-html",
   "edsUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter",
   "protoUrl": "http://localhost:8820/nb-bank-om-oss-nyheter-html-proposed.html",
-  "at": "2026-09-14T22:46:24.929Z",
+  "at": "2026-09-14T23:27:02.906Z",
   "pixel": {
     "360": {
-      "pct": 21.37,
-      "heightDelta": 72,
+      "pct": 1.63,
+      "heightDelta": 0,
       "compared": {
         "width": 360,
-        "height": 5347
+        "height": 5419
       },
-      "pass": false,
-      "hot": [
-        "1000-1500:24%",
-        "1500-2000:27.5%",
-        "2000-2500:33%",
-        "2500-3000:19%",
-        "3000-3500:33.2%",
-        "3500-4000:35.9%",
-        "4000-4500:36.1%",
-        "5000-5347:23.1%"
-      ]
+      "pass": true,
+      "hot": []
     },
     "1440": {
-      "pct": 0.61,
+      "pct": 0.56,
       "heightDelta": 0,
       "compared": {
         "width": 1440,
@@ -37,7 +28,7 @@
   "chrome": {
     "360": {
       "header": 99.66,
-      "footer": 99.29,
+      "footer": 99.8,
       "headerH": {
         "proto": 61,
         "eds": 61
@@ -48,11 +39,11 @@
       },
       "footerY": {
         "proto": 4450,
-        "eds": 4377
+        "eds": 4450
       },
       "doc": {
         "proto": 5419,
-        "eds": 5347
+        "eds": 5419
       }
     },
     "1440": {
@@ -79,12 +70,12 @@
   "content": {
     "red": 0,
     "justified": 0,
-    "amber": 93,
+    "amber": 0,
     "orange": 0,
     "summary": [
-      "  EDS: 64 text nodes — 1 headings, 0 eyebrows, 32 CTAs, 31 body; 28 img",
+      "  EDS: 95 text nodes — 1 headings, 0 eyebrows, 32 CTAs, 62 body; 28 img",
       "  editable texts (outermost h*/p/ul/ol): proto 4 / EDS 4"
     ]
   },
-  "pass": false
+  "pass": true
 }

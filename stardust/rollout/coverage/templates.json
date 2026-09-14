@@ -7,7 +7,7 @@
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-09-14T22:17:44.404Z",
+  "generatedAt": "2026-09-14T23:44:55.996Z",
   "templates": [
     {
       "id": "campaign-landing",
@@ -23,10 +23,10 @@
         "video-hero"
       ],
       "delivery": {
-        "verified": 0,
+        "verified": 1,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 1
+        "pending": 0
       }
     },
     {
@@ -82,10 +82,10 @@
         "visual-nav"
       ],
       "delivery": {
-        "verified": 0,
+        "verified": 20,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 20
+        "pending": 0
       }
     },
     {
@@ -114,10 +114,10 @@
         "feedback"
       ],
       "delivery": {
-        "verified": 0,
+        "verified": 12,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 12
+        "pending": 0
       }
     },
     {
@@ -140,10 +140,10 @@
         "topic-tiles"
       ],
       "delivery": {
-        "verified": 0,
+        "verified": 2,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 2
+        "pending": 0
       }
     },
     {
@@ -162,10 +162,10 @@
         "feedback"
       ],
       "delivery": {
-        "verified": 0,
+        "verified": 1,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 1
+        "pending": 0
       }
     },
     {
@@ -192,10 +192,10 @@
         "split-media"
       ],
       "delivery": {
-        "verified": 0,
+        "verified": 3,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 3
+        "pending": 0
       }
     },
     {
@@ -223,10 +223,10 @@
         "text-and-image"
       ],
       "delivery": {
-        "verified": 0,
+        "verified": 10,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 10
+        "pending": 0
       }
     },
     {
@@ -242,10 +242,10 @@
         "card-rail"
       ],
       "delivery": {
-        "verified": 0,
+        "verified": 1,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 1
+        "pending": 0
       }
     },
     {
@@ -279,10 +279,10 @@
         "text"
       ],
       "delivery": {
-        "verified": 0,
+        "verified": 8,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 8
+        "pending": 0
       }
     },
     {
@@ -349,10 +349,10 @@
         "usp"
       ],
       "delivery": {
-        "verified": 0,
+        "verified": 30,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 30
+        "pending": 0
       }
     },
     {
@@ -381,10 +381,10 @@
         "split-media"
       ],
       "delivery": {
-        "verified": 0,
+        "verified": 4,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 4
+        "pending": 0
       }
     },
     {
@@ -419,10 +419,10 @@
         "table"
       ],
       "delivery": {
-        "verified": 0,
+        "verified": 6,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 6
+        "pending": 0
       }
     },
     {
@@ -437,7 +437,7 @@
         "verified": 0,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 1
+        "pending": 0
       }
     },
     {
@@ -458,10 +458,10 @@
         "page-title"
       ],
       "delivery": {
-        "verified": 0,
+        "verified": 2,
         "deployed": 0,
         "contentPending": 0,
-        "pending": 2
+        "pending": 0
       }
     }
   ]

@@ -1,0 +1,5 @@
+import { chromium } from 'playwright';
+const [url, sel] = process.argv.slice(2); const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 360, height: 844 } });
+await p.goto(url, { waitUntil: 'networkidle', timeout: 60000 }); await p.evaluate(async () => { for (let y = 0; y < document.documentElement.scrollHeight; y += 600) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 40)); } window.scrollTo(0, 0); }); await p.waitForTimeout(500);
+const rows = await p.evaluate((sel) => [...document.querySelectorAll(sel)].map((c) => { const r = c.getBoundingClientRect(); const parts = [...c.querySelectorAll('img,picture,h2,h3,h4,p,time,span,a')].filter(e=>e.children.length===0||e.tagName==='PICTURE'||e.tagName==='IMG').map((e) => `${e.tagName.toLowerCase()}:${Math.round(e.getBoundingClientRect().height)}`).join(' '); return `${Math.round(r.top + scrollY)} ${Math.round(r.height)} ${(c.textContent.trim().slice(0, 28)).replace(/\s+/g,' ')} | ${parts}`; }), sel);
+console.log(rows.join('\n')); await b.close();

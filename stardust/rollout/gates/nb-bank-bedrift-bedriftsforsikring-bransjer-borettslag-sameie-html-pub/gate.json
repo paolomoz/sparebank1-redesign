@@ -2,27 +2,20 @@
   "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
   "edsUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie",
   "protoUrl": "http://localhost:8820/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html-proposed.html",
-  "at": "2026-09-14T22:56:41.491Z",
+  "at": "2026-09-14T23:14:19.941Z",
   "pixel": {
     "360": {
-      "pct": 12.11,
-      "heightDelta": 25,
+      "pct": 0.36,
+      "heightDelta": 0,
       "compared": {
         "width": 360,
         "height": 8061
       },
-      "pass": false,
-      "hot": [
-        "2500-3000:17.7%",
-        "3500-4000:21%",
-        "4000-4500:31.2%",
-        "4500-5000:29.9%",
-        "5000-5500:21.7%",
-        "5500-6000:22.4%"
-      ]
+      "pass": true,
+      "hot": []
     },
     "1440": {
-      "pct": 0.05,
+      "pct": 0.04,
       "heightDelta": 0,
       "compared": {
         "width": 1440,
@@ -35,7 +28,7 @@
   "chrome": {
     "360": {
       "header": 99.66,
-      "footer": 99.35,
+      "footer": 100,
       "headerH": {
         "proto": 61,
         "eds": 61
@@ -45,11 +38,11 @@
         "eds": 1861
       },
       "footerY": {
-        "proto": 6225,
+        "proto": 6200,
         "eds": 6200
       },
       "doc": {
-        "proto": 8086,
+        "proto": 8061,
         "eds": 8061
       }
     },
@@ -84,5 +77,5 @@
       "  editable texts (outermost h*/p/ul/ol): proto 27 / EDS 30"
     ]
   },
-  "pass": false
+  "pass": true
 }

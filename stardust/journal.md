@@ -138,3 +138,15 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Next:** finish the 12 remaining archetype conversions + siblings (workers), publish in waves, published-origin gate per archetype, verify, report.
 
 ---
+
+## 2026-09-15 — rollout (Flow B): 100 pages live, 13/13 published-origin gates PASS
+
+**Live:** https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat (home) · repo https://github.com/paolomoz/sparebank1-redesign · DA https://da.live/#/paolomoz/sparebank1-redesign · verify 116/116 (100 pages + 16 chrome fragments) · redirects sheet 108 rows.
+
+**Published-origin gate (approved prototype ↔ aem.live, bar pixel ≤ 10 % · |Δh| ≤ 8 · chrome ≥ 98 % · content-diff 0 🔴):** all 13 archetypes PASS at 1440 and 360 — pixel 0.04–2.28 % (1440), 0–2.14 % (360); Δh 0 everywhere except product −1 and tool +1; header 99.96/99.66, footer ≥ 99.03; content-diff 0 unexplained 🔴 on every archetype. Numbers per archetype in `stardust/rollout/progress.json` → `archetypes.<family>.published`. Sampled sibling per family (10 families have siblings): content-diff published ↔ migrated 0 structural 🔴 on 10/10 (`siblingGates`).
+
+**Fixed while gating.** (1) news meta: `<em>tag</em><em>date</em>` without whitespace was merged by the pipeline into one emphasis run (merged words, one non-wrapping flex item) — news-listing 360 Δh 72 and 93 amber came from this, not from the edge-NBSP debris; a space between runs fixed both (8 docs republished). (2) A step list whose items carry a heading + paragraphs (klager, utenlandsbetaling) was flattened to an inline run by `list()` — `prose()` now expands such lists to default content (D2) and the steps column numbers the headings by CSS. (3) The link localiser rewrote the header search link to the local kundeservice hub — reverted; search stays on the live site (dynamics #20) and the 5 remaining "localizable" links are residual R1. (4) A gate run showed the prototype 24 px short once (transient render on :8820); re-run identical — always re-run before touching CSS.
+
+**Blocks:** 17 (11 Block Collection names reused: header, footer, fragment, hero, cards, columns, accordion, table, breadcrumbs, video, embed; 6 bespoke: bank-router, feedback, callout, calculator, cobranding, converter). David's-Model lint 0 🔴 on 100/100 documents.
+
+**Open (owner batch, dynamics/parity.json):** bank lookup API (#1), calculator/converter APIs (#7–#9), feedback endpoint (#5), boost.ai chat, Launch/CMP, site search (#20), currency rates, regional/nynorsk trees. **Customer configuration:** tools.aem.live site config (auto-created from fstab, review before production), font licence (A5) for the self-hosted SpareBank1 woff2, favicon vector source, calculator API CORS, image rehosting decision (public DAM URLs today), the four nettsider-frontend pages' minimal nav (E2).

@@ -1,0 +1,5 @@
+import { chromium } from 'playwright';
+const [url, sel, needle, w='360'] = process.argv.slice(2); const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: +w, height: 844 } });
+await p.goto(url, { waitUntil: 'networkidle', timeout: 60000 }); await p.waitForTimeout(500);
+console.log(await p.evaluate(([sel, needle]) => { const el = [...document.querySelectorAll(sel)].find((e) => e.textContent.includes(needle)); if (!el) return 'not found'; const dump = (n, d = 0) => { if (n.nodeType === 3) return n.textContent.trim() ? `${' '.repeat(d)}"${n.textContent.trim().slice(0, 60)}"\n` : ''; const r = n.getBoundingClientRect(); const cs = getComputedStyle(n); return `${' '.repeat(d)}<${n.tagName.toLowerCase()}${n.className ? ' .' + [...n.classList].join('.') : ''}> ${Math.round(r.width)}x${Math.round(r.height)} fs:${cs.fontSize} lh:${cs.lineHeight} m:${cs.marginTop}/${cs.marginBottom} d:${cs.display} flex:${cs.flexWrap} gap:${cs.gap}\n` + [...n.childNodes].map((c) => dump(c, d + 1)).join(''); }; return dump(el); }, [sel, needle]));
+await b.close();

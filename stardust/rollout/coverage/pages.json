@@ -7,27 +7,8 @@
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-09-14T22:17:44.404Z",
+  "generatedAt": "2026-09-14T23:44:55.996Z",
   "pages": [
-    {
-      "slug": "home",
-      "path": "/",
-      "title": "home",
-      "templateId": null,
-      "source": {
-        "migratedHtml": "stardust/migrated/index.html",
-        "metaJson": null,
-        "sourceHash": "sha256:453a588f81fdfdc8562540a1cdff430cb6144ac9f8e17f166824bc465fa0ce8b"
-      },
-      "blocks": [],
-      "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
-        "error": null
-      }
-    },
     {
       "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
       "path": "/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie",
@@ -49,12 +30,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie",
+        "deployedAt": "2026-09-14T23:10:04.426Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "archetype"
     },
     {
       "slug": "nb-bank-bedrift-bedriftsforsikring-html",
@@ -78,12 +60,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/bedriftsforsikring",
+        "deployedAt": "2026-09-14T23:10:04.551Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-bedriftskort-html",
@@ -104,12 +87,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/bedriftskort",
+        "deployedAt": "2026-09-14T23:10:10.506Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
@@ -135,12 +119,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/bedriftskort/kredittkort",
+        "deployedAt": "2026-09-14T23:10:08.868Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-betaling-html",
@@ -162,12 +147,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/betaling",
+        "deployedAt": "2026-09-14T23:10:13.493Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
@@ -193,12 +179,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/betaling/utenlandsbetaling",
+        "deployedAt": "2026-09-14T23:10:10.555Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-daglig-drift-html",
@@ -221,12 +208,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/daglig-drift",
+        "deployedAt": "2026-09-14T23:10:15.246Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-html",
@@ -250,12 +238,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift",
+        "deployedAt": "2026-09-14T23:10:55.667Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-konto-bedriftskonto-html",
@@ -279,12 +268,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/konto/bedriftskonto",
+        "deployedAt": "2026-09-14T23:10:15.489Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-konto-html",
@@ -304,12 +294,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/konto",
+        "deployedAt": "2026-09-14T23:10:18.073Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
@@ -329,12 +320,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler",
+        "deployedAt": "2026-09-14T23:10:19.720Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
@@ -354,12 +346,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf",
+        "deployedAt": "2026-09-14T23:10:20.786Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
@@ -377,12 +370,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse",
+        "deployedAt": "2026-09-14T23:10:22.519Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
@@ -400,12 +394,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg",
+        "deployedAt": "2026-09-14T23:10:23.949Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
@@ -424,12 +419,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-blir-jeg-bedriftskunde",
+        "deployedAt": "2026-09-14T23:10:26.183Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
@@ -448,12 +444,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf",
+        "deployedAt": "2026-09-14T23:10:27.444Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
@@ -472,12 +469,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankaxept",
+        "deployedAt": "2026-09-14T23:10:28.400Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
@@ -496,12 +494,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode",
+        "deployedAt": "2026-09-14T23:10:31.296Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
@@ -520,12 +519,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan",
+        "deployedAt": "2026-09-14T23:10:32.227Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "archetype"
     },
     {
       "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
@@ -544,16 +544,17 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd",
+        "deployedAt": "2026-09-14T23:10:32.741Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
-      "path": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift",
+      "path": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/endre-kasserer-i-nettbank-bedrift",
       "title": "Hvordan endrer jeg kasserer i Nettbank bedrift? | SpareBank 1",
       "templateId": "faq",
       "source": {
@@ -568,12 +569,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/endre-kasserer-i-nettbank-bedrift",
+        "deployedAt": "2026-09-14T23:10:35.666Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html",
@@ -592,12 +594,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura",
+        "deployedAt": "2026-09-14T23:10:36.787Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-kundeservice-html",
@@ -621,12 +624,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice",
+        "deployedAt": "2026-09-14T23:10:37.121Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
@@ -652,12 +656,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/lan-finansiering/bedriftslan",
+        "deployedAt": "2026-09-14T23:10:39.847Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-lan-finansiering-html",
@@ -678,12 +683,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/lan-finansiering",
+        "deployedAt": "2026-09-14T23:10:44.627Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
@@ -707,12 +713,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/lan-finansiering/kassekreditt",
+        "deployedAt": "2026-09-14T23:10:41.457Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-lan-finansiering-leasing-html",
@@ -736,12 +743,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/lan-finansiering/leasing",
+        "deployedAt": "2026-09-14T23:10:41.729Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-open-api-html",
@@ -761,12 +769,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/open-api",
+        "deployedAt": "2026-09-14T23:10:46.345Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-pensjon-html",
@@ -788,12 +797,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/pensjon",
+        "deployedAt": "2026-09-14T23:10:46.636Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-regnskap-html",
@@ -816,12 +826,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/regnskap",
+        "deployedAt": "2026-09-14T23:10:49.422Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-sparing-investering-html",
@@ -842,12 +853,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/sparing-investering",
+        "deployedAt": "2026-09-14T23:10:50.969Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-starte-bedrift-html",
@@ -868,12 +880,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/starte-bedrift",
+        "deployedAt": "2026-09-14T23:10:54.190Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
@@ -896,12 +909,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk",
+        "deployedAt": "2026-09-14T23:10:51.184Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-bedrift-tips-og-rad-html",
@@ -920,12 +934,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/tips-og-rad",
+        "deployedAt": "2026-09-14T23:10:55.329Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-om-oss-hjemme-html",
@@ -944,12 +959,13 @@
         "video"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/hjemme",
+        "deployedAt": "2026-09-14T23:10:59.451Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "archetype"
     },
     {
       "slug": "nb-bank-om-oss-html",
@@ -971,12 +987,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss",
+        "deployedAt": "2026-09-14T23:11:25.572Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-om-oss-investor-html",
@@ -998,12 +1015,13 @@
         "feedback"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/investor",
+        "deployedAt": "2026-09-14T23:10:59.748Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-om-oss-jobb-og-karriere-html",
@@ -1022,16 +1040,17 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/jobb-og-karriere",
+        "deployedAt": "2026-09-14T23:11:00.927Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
-      "path": "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-",
+      "path": "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen",
       "title": "Kredittkort - 5 smarte tips til julehandel med kredittkort | SpareBank 1",
       "templateId": "news-article",
       "source": {
@@ -1045,16 +1064,17 @@
         "card-rail"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen",
+        "deployedAt": "2026-09-14T23:11:04.446Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
-      "path": "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-",
+      "path": "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig",
       "title": "Advarer mot ny svindelbølge: – Eldre og enslige kvinner særlig utsatt | SpareBank 1",
       "templateId": "news-article",
       "source": {
@@ -1069,12 +1089,13 @@
         "card-rail"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig",
+        "deployedAt": "2026-09-14T23:11:04.974Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
@@ -1092,12 +1113,13 @@
         "card-rail"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken",
+        "deployedAt": "2026-09-14T23:11:05.851Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
@@ -1116,12 +1138,13 @@
         "story-block"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket",
+        "deployedAt": "2026-09-14T23:11:09.610Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
@@ -1139,16 +1162,17 @@
         "card-rail"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast",
+        "deployedAt": "2026-09-14T23:11:10.064Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "archetype"
     },
     {
       "slug": "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
-      "path": "/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien",
+      "path": "/nb/bank/om-oss/nyheter/bruk-mobilbanken-fa-kontroll-pa-okonomien",
       "title": "Bruk mobilbanken for å få kontroll på økonomien | SpareBank 1",
       "templateId": "news-article",
       "source": {
@@ -1163,12 +1187,13 @@
         "card-rail"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter/bruk-mobilbanken-fa-kontroll-pa-okonomien",
+        "deployedAt": "2026-09-14T23:11:10.530Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-om-oss-nyheter-html",
@@ -1186,12 +1211,13 @@
         "button-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter",
+        "deployedAt": "2026-09-14T23:11:14.461Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "archetype"
     },
     {
       "slug": "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
@@ -1210,12 +1236,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/om-banken/selskapsinformasjon",
+        "deployedAt": "2026-09-14T23:11:14.797Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-om-oss-personvern-generelle-vilkar-html",
@@ -1233,12 +1260,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/personvern/generelle-vilkar",
+        "deployedAt": "2026-09-14T23:11:15.237Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-om-oss-personvern-html",
@@ -1261,12 +1289,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/personvern",
+        "deployedAt": "2026-09-14T23:11:18.864Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-om-oss-presse-html",
@@ -1285,12 +1314,13 @@
         "feedback"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/presse",
+        "deployedAt": "2026-09-14T23:11:19.627Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "archetype"
     },
     {
       "slug": "nb-bank-om-oss-samfunnsansvar-html",
@@ -1310,12 +1340,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/samfunnsansvar",
+        "deployedAt": "2026-09-14T23:11:19.903Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-om-oss-selskaper-html",
@@ -1336,12 +1367,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/selskaper",
+        "deployedAt": "2026-09-14T23:11:24.597Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-om-oss-vare-eksperter-html",
@@ -1360,12 +1392,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/vare-eksperter",
+        "deployedAt": "2026-09-14T23:11:24.750Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-daglig-bruk-bankid-html",
@@ -1391,12 +1424,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/daglig-bruk/bankid",
+        "deployedAt": "2026-09-14T23:11:29.208Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-daglig-bruk-bankkonto-html",
@@ -1418,12 +1452,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/daglig-bruk/bankkonto",
+        "deployedAt": "2026-09-14T23:11:29.231Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-daglig-bruk-bankkort-html",
@@ -1451,12 +1486,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/daglig-bruk/bankkort",
+        "deployedAt": "2026-09-14T23:11:30.074Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-daglig-bruk-html",
@@ -1478,12 +1514,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/daglig-bruk",
+        "deployedAt": "2026-09-14T23:11:39.963Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-daglig-bruk-kredittkort-html",
@@ -1508,12 +1545,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/daglig-bruk/kredittkort",
+        "deployedAt": "2026-09-14T23:11:34.530Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
@@ -1534,12 +1572,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort",
+        "deployedAt": "2026-09-14T23:11:34.480Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
@@ -1565,12 +1604,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/daglig-bruk/mobilbank",
+        "deployedAt": "2026-09-14T23:11:35.096Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-eiendom-html",
@@ -1591,12 +1631,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/eiendom",
+        "deployedAt": "2026-09-14T23:11:40.128Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-forsikring-barneforsikring-html",
@@ -1623,12 +1664,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/barneforsikring",
+        "deployedAt": "2026-09-14T23:11:40.543Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-forsikring-bilforsikring-html",
@@ -1654,12 +1696,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/bilforsikring",
+        "deployedAt": "2026-09-14T23:11:44.416Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-forsikring-html",
@@ -1686,12 +1729,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring",
+        "deployedAt": "2026-09-14T23:11:55.486Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html",
@@ -1711,12 +1755,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man",
+        "deployedAt": "2026-09-14T23:11:44.830Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-forsikring-innboforsikring-html",
@@ -1743,12 +1788,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/innboforsikring",
+        "deployedAt": "2026-09-14T23:11:46.111Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-forsikring-kundehistorier-html",
@@ -1767,12 +1813,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/kundehistorier",
+        "deployedAt": "2026-09-14T23:11:51.100Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
@@ -1790,12 +1837,13 @@
         "story-block"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade",
+        "deployedAt": "2026-09-14T23:11:49.608Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-forsikring-meld-skade-html",
@@ -1815,12 +1863,13 @@
         "feedback"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/meld-skade",
+        "deployedAt": "2026-09-14T23:11:52.144Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-forsikring-reiseforsikring-html",
@@ -1847,12 +1896,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/reiseforsikring",
+        "deployedAt": "2026-09-14T23:11:54.316Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-html",
@@ -1874,12 +1924,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat",
+        "deployedAt": "2026-09-14T23:12:49.424Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "archetype"
     },
     {
       "slug": "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
@@ -1902,12 +1953,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/bestill/bli-kunde",
+        "deployedAt": "2026-09-14T23:11:56.929Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
@@ -1924,12 +1976,13 @@
         "image"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/bestill/prisliste",
+        "deployedAt": "2026-09-14T23:12:01.118Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-kundeservice-html",
@@ -1951,12 +2004,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice",
+        "deployedAt": "2026-09-14T23:12:11.662Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "archetype"
     },
     {
       "slug": "nb-bank-privat-kundeservice-kontakt-html",
@@ -1976,12 +2030,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/kontakt",
+        "deployedAt": "2026-09-14T23:12:01.519Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "archetype"
     },
     {
       "slug": "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
@@ -2004,12 +2059,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/verktoy/iban-og-swift",
+        "deployedAt": "2026-09-14T23:12:01.571Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-kundeservice-verktoy-klager-html",
@@ -2030,12 +2086,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/verktoy/klager",
+        "deployedAt": "2026-09-14T23:12:06.475Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
@@ -2057,12 +2114,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/verktoy/sparekalkulator",
+        "deployedAt": "2026-09-14T23:12:06.558Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
@@ -2084,12 +2142,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/verktoy/sperre-kort",
+        "deployedAt": "2026-09-14T23:12:07.247Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "archetype"
     },
     {
       "slug": "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html",
@@ -2111,12 +2170,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/verktoy/valutakalkulator",
+        "deployedAt": "2026-09-14T23:12:10.808Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-lan-billan-html",
@@ -2143,12 +2203,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan/billan",
+        "deployedAt": "2026-09-14T23:12:12.287Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-lan-boliglan-html",
@@ -2174,12 +2235,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan/boliglan",
+        "deployedAt": "2026-09-14T23:12:15.653Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "archetype"
     },
     {
       "slug": "nb-bank-privat-lan-forbrukslan-html",
@@ -2207,12 +2269,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan/forbrukslan",
+        "deployedAt": "2026-09-14T23:12:16.597Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-lan-gronne-lan-html",
@@ -2232,12 +2295,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan/gronne-lan",
+        "deployedAt": "2026-09-14T23:12:17.365Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-lan-html",
@@ -2264,12 +2328,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan",
+        "deployedAt": "2026-09-14T23:12:22.003Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "archetype"
     },
     {
       "slug": "nb-bank-privat-lan-lanekalkulator-html",
@@ -2292,12 +2357,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan/lanekalkulator",
+        "deployedAt": "2026-09-14T23:12:21.480Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-lan-refinansiering-html",
@@ -2321,12 +2387,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan/refinansiering",
+        "deployedAt": "2026-09-14T23:12:21.634Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-lofavor-html",
@@ -2351,12 +2418,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lofavor",
+        "deployedAt": "2026-09-14T23:12:26.862Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-pensjon-egen-pensjonskonto-html",
@@ -2382,12 +2450,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/pensjon/egen-pensjonskonto",
+        "deployedAt": "2026-09-14T23:12:27.035Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-pensjon-html",
@@ -2416,12 +2485,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/pensjon",
+        "deployedAt": "2026-09-14T23:12:31.904Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
@@ -2441,12 +2511,13 @@
         "card-rail"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon",
+        "deployedAt": "2026-09-14T23:12:27.667Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-private-banking-html",
@@ -2470,12 +2541,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/private-banking",
+        "deployedAt": "2026-09-14T23:12:32.606Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-sparing-html",
@@ -2499,12 +2571,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/sparing",
+        "deployedAt": "2026-09-14T23:12:44.998Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
@@ -2522,12 +2595,13 @@
         "card-rail"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon",
+        "deployedAt": "2026-09-14T23:12:32.904Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html",
@@ -2545,12 +2619,13 @@
         "quote"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo",
+        "deployedAt": "2026-09-14T23:12:37.632Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-sparing-markedsnytt-html",
@@ -2571,12 +2646,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/sparing/markedsnytt",
+        "deployedAt": "2026-09-14T23:12:37.801Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "archetype"
     },
     {
       "slug": "nb-bank-privat-sparing-spare-i-fond-html",
@@ -2601,12 +2677,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/sparing/spare-i-fond",
+        "deployedAt": "2026-09-14T23:12:39.721Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-sparing-spare-pa-konto-html",
@@ -2630,12 +2707,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/sparing/spare-pa-konto",
+        "deployedAt": "2026-09-14T23:12:43.178Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-sparing-spare-til-barn-html",
@@ -2656,12 +2734,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/sparing/spare-til-barn",
+        "deployedAt": "2026-09-14T23:12:44.035Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-svindel-html",
@@ -2683,12 +2762,13 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/svindel",
+        "deployedAt": "2026-09-14T23:12:48.288Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
-      }
+      },
+      "fidelityTier": "sibling"
     },
     {
       "slug": "nb-bank-privat-tips-og-rad-html",
@@ -2711,10 +2791,347 @@
         "contact-row"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
-        "verifiedAt": null,
+        "status": "verified",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/tips-og-rad",
+        "deployedAt": "2026-09-14T23:12:49.116Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "error": null
+      },
+      "fidelityTier": "sibling"
+    },
+    {
+      "slug": "footer-bedrift",
+      "path": "/footer-bedrift",
+      "title": "/footer-bedrift",
+      "templateId": "chrome",
+      "type": "fragment",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "chrome"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "type": "fragment",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/footer-bedrift",
+        "deployedAt": "2026-09-14T23:09:38.513Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "footer-frontend-2",
+      "path": "/footer-frontend-2",
+      "title": "/footer-frontend-2",
+      "templateId": "chrome",
+      "type": "fragment",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "chrome"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "type": "fragment",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/footer-frontend-2",
+        "deployedAt": "2026-09-14T23:09:38.514Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "footer-frontend-om-oss-2",
+      "path": "/footer-frontend-om-oss-2",
+      "title": "/footer-frontend-om-oss-2",
+      "templateId": "chrome",
+      "type": "fragment",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "chrome"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "type": "fragment",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/footer-frontend-om-oss-2",
+        "deployedAt": "2026-09-14T23:09:38.514Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "footer-frontend-om-oss",
+      "path": "/footer-frontend-om-oss",
+      "title": "/footer-frontend-om-oss",
+      "templateId": "chrome",
+      "type": "fragment",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "chrome"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "type": "fragment",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/footer-frontend-om-oss",
+        "deployedAt": "2026-09-14T23:09:43.708Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "footer-frontend",
+      "path": "/footer-frontend",
+      "title": "/footer-frontend",
+      "templateId": "chrome",
+      "type": "fragment",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "chrome"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "type": "fragment",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/footer-frontend",
+        "deployedAt": "2026-09-14T23:09:43.920Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "footer-kundeservice",
+      "path": "/footer-kundeservice",
+      "title": "/footer-kundeservice",
+      "templateId": "chrome",
+      "type": "fragment",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "chrome"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "type": "fragment",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/footer-kundeservice",
+        "deployedAt": "2026-09-14T23:09:44.578Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "footer-om-oss",
+      "path": "/footer-om-oss",
+      "title": "/footer-om-oss",
+      "templateId": "chrome",
+      "type": "fragment",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "chrome"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "type": "fragment",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/footer-om-oss",
+        "deployedAt": "2026-09-14T23:09:48.670Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "footer",
+      "path": "/footer",
+      "title": "/footer",
+      "templateId": "chrome",
+      "type": "fragment",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "chrome"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "type": "fragment",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/footer",
+        "deployedAt": "2026-09-14T23:09:48.721Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "fragments-bank-router-bedrift",
+      "path": "/fragments/bank-router-bedrift",
+      "title": "/fragments/bank-router-bedrift",
+      "templateId": "chrome",
+      "type": "fragment",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "chrome"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "type": "fragment",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/fragments/bank-router-bedrift",
+        "deployedAt": "2026-09-14T23:09:49.359Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "fragments-bank-router-om-oss",
+      "path": "/fragments/bank-router-om-oss",
+      "title": "/fragments/bank-router-om-oss",
+      "templateId": "chrome",
+      "type": "fragment",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "chrome"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "type": "fragment",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/fragments/bank-router-om-oss",
+        "deployedAt": "2026-09-14T23:09:54.245Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "fragments-bank-router",
+      "path": "/fragments/bank-router",
+      "title": "/fragments/bank-router",
+      "templateId": "chrome",
+      "type": "fragment",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "chrome"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "type": "fragment",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/fragments/bank-router",
+        "deployedAt": "2026-09-14T23:09:54.313Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "nav-bedrift",
+      "path": "/nav-bedrift",
+      "title": "/nav-bedrift",
+      "templateId": "chrome",
+      "type": "fragment",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "chrome"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "type": "fragment",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nav-bedrift",
+        "deployedAt": "2026-09-14T23:09:54.560Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "nav-minimal-om-oss",
+      "path": "/nav-minimal-om-oss",
+      "title": "/nav-minimal-om-oss",
+      "templateId": "chrome",
+      "type": "fragment",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "chrome"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "type": "fragment",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nav-minimal-om-oss",
+        "deployedAt": "2026-09-14T23:09:58.973Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "nav-minimal",
+      "path": "/nav-minimal",
+      "title": "/nav-minimal",
+      "templateId": "chrome",
+      "type": "fragment",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "chrome"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "type": "fragment",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nav-minimal",
+        "deployedAt": "2026-09-14T23:09:59.077Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "nav-om-oss",
+      "path": "/nav-om-oss",
+      "title": "/nav-om-oss",
+      "templateId": "chrome",
+      "type": "fragment",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "chrome"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "type": "fragment",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nav-om-oss",
+        "deployedAt": "2026-09-14T23:09:59.161Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "nav",
+      "path": "/nav",
+      "title": "/nav",
+      "templateId": "chrome",
+      "type": "fragment",
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "chrome"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "type": "fragment",
+        "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nav",
+        "deployedAt": "2026-09-14T23:10:04.129Z",
+        "verifiedAt": "2026-09-14T23:44:55.996Z",
         "error": null
       }
     }

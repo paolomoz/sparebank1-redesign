@@ -6,7 +6,7 @@
 import * as L from '../lib.mjs';
 
 const { q, qa, inline, pic, block, section, esc } = L;
-const metaP = (el, ctx) => { if (!el) return ''; const items = [...el.children].map((c) => inline(c, ctx).trim()).filter(Boolean); return items.length ? `<p>${items.map((t) => `<em>${t}</em>`).join('')}</p>` : ''; };
+const metaP = (el, ctx) => { if (!el) return ''; const items = [...el.children].map((c) => inline(c, ctx).trim()).filter(Boolean); return items.length ? `<p>${items.map((t) => `<em>${t}</em>`).join(' ')}</p>` : ''; };
 const storyRow = (li, ctx, level) => { const img = q(li, 'img'); const a = q(li, '.feat-title a, .news-title a, h2 a, h3 a'); return [img ? pic(img, ctx) : '', `<${level}><a href="${esc(L.href(a.getAttribute('href') || '', ctx))}">${inline(a, ctx).trim()}</a></${level}>${metaP(q(li, '.meta'), ctx)}`]; };
 
 export default {

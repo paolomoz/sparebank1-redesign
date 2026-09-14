@@ -1,0 +1,4 @@
+import { chromium } from 'playwright';
+const [url, sel, w = '1440'] = process.argv.slice(2); const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: +w, height: 900 } });
+await p.goto(url, { waitUntil: 'networkidle', timeout: 60000 }); await p.evaluate(async () => { for (let y = 0; y < document.documentElement.scrollHeight; y += 600) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 40)); } window.scrollTo(0, 0); }); await p.waitForTimeout(400);
+console.log((await p.evaluate((sel) => [...document.querySelectorAll(sel)].map((e) => { const r = e.getBoundingClientRect(); return `${String(Math.round(r.top + scrollY)).padStart(5)} ${String(Math.round(r.height)).padStart(4)} ${e.tagName.toLowerCase()} ${e.textContent.trim().replace(/\s+/g, ' ').slice(0, 40)}`; }), sel)).join('\n')); await b.close();

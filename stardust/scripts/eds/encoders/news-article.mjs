@@ -15,7 +15,7 @@ const { q, qa, cls, txt, inline, prose, ctas, pic, block, section, esc, styleOf 
 const NB = '\uE000';
 function keepNbsp(root) { const w = root.ownerDocument.createTreeWalker(root, 4); let t; while ((t = w.nextNode())) { if (t.textContent.includes('\u00a0')) t.textContent = t.textContent.replace(/\u00a0/g, NB); } return root; }
 const nb = (html) => html.replace(/\uE000/g, '&#160;');
-const metaP = (el, ctx) => { if (!el) return ''; const items = [...el.children].map((c) => inline(c, ctx).trim()).filter(Boolean); return items.length ? `<p>${items.map((t) => `<em>${t}</em>`).join('')}</p>` : ''; };
+const metaP = (el, ctx) => { if (!el) return ''; const items = [...el.children].map((c) => inline(c, ctx).trim()).filter(Boolean); return items.length ? `<p>${items.map((t) => `<em>${t}</em>`).join(' ')}</p>` : ''; };
 
 export default {
   'article-header': (root, ctx) => {

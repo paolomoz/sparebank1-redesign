@@ -1,0 +1,36 @@
+
+Content diff @ 1440px (profile "eds", root "main")
+  proto: 29 text nodes — 5 headings, 0 eyebrows, 12 CTAs, 12 body; 11 img
+  EDS: 58 text nodes — 5 headings, 0 eyebrows, 24 CTAs, 29 body; 12 img
+  editable texts (outermost h*/p/ul/ol): proto 12 / EDS 17
+
+Findings: 29 (0 structural 🔴)
+  🟠 EXTRA: EDS cta "SpareBank 1 Gudbrandsdal" has no proto source — Unexpected node with no proto source.
+  🟠 EXTRA: EDS cta "SpareBank 1 Hallingdal Valdres" has no proto source — Unexpected node with no proto source.
+  🟠 EXTRA: EDS cta "SpareBank 1 Helgeland" has no proto source — Unexpected node with no proto source.
+  🟠 EXTRA: EDS cta "SpareBank 1 Lom og Skjåk" has no proto source — Unexpected node with no proto source.
+  🟠 EXTRA: EDS cta "SpareBank 1 Nord-Norge" has no proto source — Unexpected node with no proto source.
+  🟠 EXTRA: EDS cta "SpareBank 1 Nordmøre" has no proto source — Unexpected node with no proto source.
+  🟠 EXTRA: EDS cta "SpareBank 1 Ringerike Hadeland" has no proto source — Unexpected node with no proto source.
+  🟠 EXTRA: EDS cta "SpareBank 1 SMN" has no proto source — Unexpected node with no proto source.
+  🟠 EXTRA: EDS cta "SpareBank 1 Sogn og Fjordane" has no proto source — Unexpected node with no proto source.
+  🟠 EXTRA: EDS cta "SpareBank 1 Sør-Norge" has no proto source — Unexpected node with no proto source.
+  🟠 EXTRA: EDS cta "SpareBank 1 Østfold Akershus" has no proto source — Unexpected node with no proto source.
+  🟠 EXTRA: EDS cta "SpareBank 1 Østlandet" has no proto source — Unexpected node with no proto source.
+  🟡 EXTRA: EDS body "Vi er flere banker med rådgivere i hele Norge" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "For å se betingelser – velg en bank." has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Ditt postnummer" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Bruk min posisjon" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Se alle banker" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Skaper verdier for kunder og lokalsamfunn." has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Fjellstøtt gjennom livet." has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "En drivkraft for vekst på Helgeland." has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Lokalbanken din – der du er." has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "For Nord-Norge." has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Tett på kundenes behov." has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Stolt støttespiller til lokalsamfunnet." has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Sammen får vi ting til å skje." has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Vi er med heile vegen." has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Hjelper driftige folk og bedrifter dit de vil." has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Sammen får vi ting til å skje." has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Banken med kundeutbytte." has no proto source — Invented / placeholder-filled copy; confirm it is intended.

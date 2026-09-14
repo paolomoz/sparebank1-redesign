@@ -1,0 +1,16 @@
+
+Content diff @ 1440px (profile "eds", root "main")
+  proto: 402 text nodes — 32 headings, 0 eyebrows, 124 CTAs, 246 body; 50 img
+  EDS: 398 text nodes — 32 headings, 0 eyebrows, 124 CTAs, 242 body; 50 img
+  editable texts (outermost h*/p/ul/ol): proto 181 / EDS 242
+
+Findings: 9 (0 structural 🔴)
+  🟠 FONT FORK: 4 matched line(s) render a DIFFERENT face: heading "Hvem kan kjøpe barneforsikri": proto SpareBank1-title-medium vs EDS SpareBank1-medium (12%); heading "Slik fungerer forsikringen": proto SpareBank1-title-medium vs EDS SpareBank1-medium (13%); heading "Hvorfor barneforsikring?": proto SpareBank1-title-medium vs EDS SpareBank1-medium (14%); heading "Vilkår": proto SpareBank1-title-medium vs EDS SpareBank1-medium (16%). A "→sys" on the proto side means it named a font it never loaded and fell back — EDS self-hosting the intended fallback is then CORRECT (#77); confirm the fork is intended, else ship the missing @font-face.
+  🟡 MISSING BODY: proto body "«Barnet» trenger ikke å fylle ut nytt ."… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikringssummene blir regnet ut ifra på 26-års"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Ja, mange premature barn kan få barneforsikring."… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Ved svært lav fødselsvekt kan det imidlertid vær"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Grunnbeløp tabell"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Antall G"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 EXTRA: EDS body "«Barnet» trenger ikke å fylle ut nytt . Forsikri" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Ja, mange premature barn kan få barneforsikring." has no proto source — Invented / placeholder-filled copy; confirm it is intended.

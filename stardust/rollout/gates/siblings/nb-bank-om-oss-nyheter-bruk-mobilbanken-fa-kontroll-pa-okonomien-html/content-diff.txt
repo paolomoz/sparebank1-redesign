@@ -1,0 +1,9 @@
+
+Content diff @ 1440px (profile "eds", root "main")
+  proto: 36 text nodes — 5 headings, 0 eyebrows, 8 CTAs, 23 body; 9 img
+  EDS: 34 text nodes — 5 headings, 0 eyebrows, 8 CTAs, 21 body; 9 img
+  editable texts (outermost h*/p/ul/ol): proto 25 / EDS 25
+
+Findings: 2 (0 structural 🔴)
+  🟡 MISSING BODY: proto body "Jeg tror ikke bare det er for å sjekke saldoen p"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Thomas Allan Nygaard"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.

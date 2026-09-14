@@ -21,7 +21,7 @@
 
 /* ===== tool: steps (h2 + numbered ledger + pill + note, illustration beside) · reopen (body copy, 96px photo radius) ===== */
 .columns.split.steps .split-row { grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); gap: var(--spacing-md) var(--spacing-xl); align-items: start; }
-.columns.split.steps .col-text { max-width: none; gap: 0; }
+.columns.split.steps .col-text { max-width: none; gap: 0; counter-reset: step; }
 .columns.split.steps .col-text h2 { margin-bottom: var(--spacing-md); }
 .columns.split.steps .col-text ol { list-style: none; counter-reset: step; padding: 0; margin-top: var(--spacing-sm); display: grid; gap: 0; }
 .columns.split.steps .col-text ol li { counter-increment: step; position: relative; display: block; min-height: 61px; padding: 18px 0 12px 52px; border-top: 1px solid var(--frost); margin: 0; }
@@ -33,6 +33,13 @@
 .columns.split.steps .col-text p + p,
 .columns.split.steps .col-text .lead-wrap + p { margin-top: var(--spacing-md); }
 .columns.split.steps .col-text .cta-row { margin-top: var(--spacing-md); }
+/* steps whose bodies are rich (heading + paragraphs per step, e.g. klager, utenlandsbetaling) arrive as default content (D2): the h3 carries the numbered badge, the body sits in the ledger column */
+.columns.split.steps .col-text h3 { counter-increment: step; position: relative; min-height: 36px; padding: 18px 0 0 52px; margin: var(--spacing-md) 0 0; border-top: 1px solid var(--frost); }
+.columns.split.steps .col-text h3::before { content: counter(step); position: absolute; left: 0; top: 12px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--vann); color: #fff; font-size: var(--body-sm); font-weight: 700; }
+.columns.split.steps .col-text h3 a { color: inherit; text-decoration: none; }
+.columns.split.steps .col-text h3 ~ :is(p, ul, ol, .cta-row, .lead-wrap) { padding-left: 52px; }
+.columns.split.steps .col-text h3 ~ ol li { padding-left: 52px; }
+.columns.split.steps .col-text h3 + p { margin-top: var(--spacing-sm); }
 .columns.split.steps .col-text .cta-row + p { margin-top: var(--spacing-md); font-size: var(--body-sm); line-height: 1.45; color: var(--koksgraa); max-width: 48ch; }
 .columns.split.steps .col-media { align-self: start; display: flex; justify-content: center; }
 .columns.split.steps .col-media img.photo { width: 320px; max-width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; border-radius: 0; background: transparent; }

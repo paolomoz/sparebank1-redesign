@@ -115,7 +115,7 @@ export function prose(el, ctx, { demote = 0 } = {}) {
     if (/^(h[1-6]|p)$/.test(t) && !n.textContent.replace(/ /g, ' ').trim() && !n.querySelector('img, picture, a')) continue;
     if (/^h[1-6]$/.test(t)) { out += `<${hTag(t)}>${inline(n, ctx)}</${hTag(t)}>`; continue; }
     if (t === 'p') { const s = inline(n, ctx).trim(); if (s) out += /^<a [^>]*class="btn/.test(n.innerHTML.trim()) ? ctas(n, ctx) : `<p>${s}</p>`; continue; }
-    if (t === 'ul' || t === 'ol') { out += list(n, ctx); continue; }
+    if (t === 'ul' || t === 'ol') { out += isRichList(n) ? richList(n, ctx, demote) : list(n, ctx); continue; }
     if (t === 'img') { out += `<p>${imgHtml(n, ctx)}</p>`; continue; }
     if (t === 'picture') { const i = n.querySelector('img'); if (i) out += `<p>${imgHtml(i, ctx)}</p>`; continue; }
     if (t === 'figure') { const i = n.querySelector('img'); const cap = n.querySelector('figcaption'); if (i) out += `<p>${imgHtml(i, ctx)}</p>`; if (cap && txt(cap)) out += `<p><em>${inline(cap, ctx)}</em></p>`; continue; }
@@ -127,6 +127,20 @@ export function prose(el, ctx, { demote = 0 } = {}) {
     if (['span', 'strong', 'em', 'b', 'i', 'small', 'label', 'time'].includes(t)) { const s = inline(n, ctx).trim(); if (s) out += `<p>${s}</p>`; continue; }
     if (t === 'dl') { for (const c of n.children) { if (c.tagName === 'DT') out += `<p><strong>${inline(c, ctx)}</strong></p>`; else if (c.tagName === 'DD') out += `<p>${inline(c, ctx)}</p>`; else out += prose(c, ctx); } continue; }
     out += prose(n, ctx, { demote }); // div/section/aside/article wrappers
+  }
+  return out;
+}
+
+/** A list whose items hold block content (a heading, several paragraphs, a nested rich-text body) cannot nest in a David's-Model list (D2). */
+export function isRichList(ul) { return [...ul.children].some((li) => li.tagName === 'LI' && (li.querySelector('h1,h2,h3,h4,h5,h6') || li.querySelectorAll('p').length > 1)); }
+/** Rich list → default content: each item's heading stays a heading (the step ledger is CSS, see columns.steps), its body is prose. Text verbatim, no numbering added. */
+export function richList(ul, ctx, demote = 0) {
+  let out = '';
+  for (const li of ul.children) {
+    if (li.tagName !== 'LI') continue;
+    const h = li.querySelector(':scope > h1, :scope > h2, :scope > h3, :scope > h4, :scope > h5, :scope > h6');
+    if (h) { const lvl = Math.min(6, +h.tagName[1] + demote); out += `<h${lvl}>${inline(h, ctx)}</h${lvl}>`; }
+    for (const c of li.childNodes) { if (c === h) continue; if (c.nodeType === 3) { if (c.textContent.trim()) out += `<p>${esc(c.textContent.trim())}</p>`; continue; } if (c.nodeType !== 1) continue; out += prose({ childNodes: [c] }, ctx, { demote }); }
   }
   return out;
 }

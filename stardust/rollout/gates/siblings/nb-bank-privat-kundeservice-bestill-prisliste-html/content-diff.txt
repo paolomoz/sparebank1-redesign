@@ -1,0 +1,7 @@
+
+Content diff @ 1440px (profile "eds", root "main")
+  proto: 3 text nodes — 1 headings, 0 eyebrows, 1 CTAs, 1 body; 1 img
+  EDS: 3 text nodes — 1 headings, 0 eyebrows, 1 CTAs, 1 body; 1 img
+  editable texts (outermost h*/p/ul/ol): proto 3 / EDS 3
+
+Findings: none — content + roles match

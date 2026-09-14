@@ -1,5 +1,10 @@
 {
- "_provenance": { "writtenBy": "stardust:rollout (Flow B lead)", "writtenAt": "2026-09-14T22:40:00Z", "stardustVersion": "0.20.0", "note": "hands-off; updated per phase — see stardust/journal.md and stardust/status.jsonl" },
+ "_provenance": {
+  "writtenBy": "stardust:rollout (Flow B lead)",
+  "writtenAt": "2026-09-14T23:31:59.454Z",
+  "stardustVersion": "0.20.0",
+  "note": "hands-off; updated per phase — see stardust/journal.md and stardust/status.jsonl"
+ },
  "site": {
   "repo": "https://github.com/paolomoz/sparebank1-redesign",
   "da": "https://da.live/#/paolomoz/sparebank1-redesign",
@@ -10,13 +15,49 @@
   "config": "auto-created from fstab.yaml (contentSourceUrl https://content.da.live/paolomoz/sparebank1-redesign/)"
  },
  "gates": {
-  "bar": { "pixelPct": 10, "heightDeltaPx": 8, "chromeCropPct": 98, "contentDiffRed": 0, "ewDead": 0, "lintRed": 0 },
-  "reference": "approved prototypes stardust/prototypes/<slug>-proposed.html (served from stardust/prototypes on :8820); EDS side = published origin (aem.live) for the archetype gate, local emulation (:3020) for the loop"
+  "bar": {
+   "pixelPct": 10,
+   "heightDeltaPx": 8,
+   "chromeCropPct": 98,
+   "contentDiffRed": 0,
+   "ewDead": 0,
+   "lintRed": 0
+  },
+  "reference": "approved prototypes stardust/prototypes/<slug>-proposed.html (served from stardust/prototypes on :8820); EDS side = published origin (aem.live) for the archetype gate, local emulation (:3020) for the loop",
+  "result": {
+   "archetypes": 13,
+   "pass": 13,
+   "fail": 0,
+   "sampledSiblings": 10,
+   "sampledSiblingsPass": 10,
+   "verify": "116/116 (page:100 fragment:16)",
+   "lint": "100/100 documents 0 🔴",
+   "localize": "CHECK 5 residual (R1)"
+  }
  },
  "chrome": {
-  "nav": ["/nav", "/nav-bedrift", "/nav-om-oss", "/nav-minimal", "/nav-minimal-om-oss"],
-  "footer": ["/footer", "/footer-bedrift", "/footer-om-oss", "/footer-kundeservice", "/footer-frontend", "/footer-frontend-2", "/footer-frontend-om-oss", "/footer-frontend-om-oss-2"],
-  "router": ["/fragments/bank-router", "/fragments/bank-router-bedrift", "/fragments/bank-router-om-oss"],
+  "nav": [
+   "/nav",
+   "/nav-bedrift",
+   "/nav-om-oss",
+   "/nav-minimal",
+   "/nav-minimal-om-oss"
+  ],
+  "footer": [
+   "/footer",
+   "/footer-bedrift",
+   "/footer-om-oss",
+   "/footer-kundeservice",
+   "/footer-frontend",
+   "/footer-frontend-2",
+   "/footer-frontend-om-oss",
+   "/footer-frontend-om-oss-2"
+  ],
+  "router": [
+   "/fragments/bank-router",
+   "/fragments/bank-router-bedrift",
+   "/fragments/bank-router-om-oss"
+  ],
   "assumptions": {
    "E1": "the regional-bank links in the footer 'Ring oss' panel and in the router list point at each bank's market landing on www.sparebank1.no (the captured hrefs were the regional alternate of the CURRENT page; the shared documents cannot carry per-page targets)",
    "E2": "chrome variants follow the approved prototypes' captured header states — the four nettsider-frontend pages whose capture had no market navigation get /nav-minimal(-om-oss); a capture-state carried by approval, flagged for the customer",
@@ -25,15 +66,773 @@
  },
  "archetypes": {
   "product": {
-   "slug": "nb-bank-privat-lan-boliglan-html", "path": "/nb/bank/privat/lan/boliglan", "status": "live",
-   "blocks": { "reused": ["hero", "cards", "columns", "accordion", "breadcrumbs", "fragment", "header", "footer"], "new": ["bank-router", "feedback", "callout", "calculator"] },
-   "published": { "1440": { "pixelPct": 0.73, "heightDelta": -1, "header": 99.96, "footer": 99.9 }, "360": { "pixelPct": 1.46, "heightDelta": -1, "header": 99.66, "footer": 100 }, "contentDiffRed": 0, "ew": { "editable": 191, "dead": 0, "exempt": 1 }, "cls": { "1440": 0.011, "390": 0.05 }, "decoration": "14 blocks loaded, grids compute grid, 0 pageerrors, 0 broken images, 1 h1" },
+   "slug": "nb-bank-privat-lan-boliglan-html",
+   "path": "/nb/bank/privat/lan/boliglan",
+   "status": "live",
+   "blocks": [
+    "hero",
+    "breadcrumbs",
+    "cards",
+    "columns",
+    "calculator",
+    "accordion",
+    "feedback"
+   ],
+   "published": {
+    "360": {
+     "pixelPct": 1.46,
+     "heightDelta": -1,
+     "header": 99.66,
+     "footer": 100,
+     "pass": true
+    },
+    "1440": {
+     "pixelPct": 0.73,
+     "heightDelta": -1,
+     "header": 99.96,
+     "footer": 99.9,
+     "pass": true
+    },
+    "contentDiffRed": 0,
+    "contentDiffJustified": 0,
+    "pass": true
+   },
    "iterations": 4,
-   "fixes": ["promo illustration = 70 KB SVG → DA-media PNG (rasterise-svg)", "price-foot rhythm (48 px + p+p) and 68ch measure", "calculator p+p margins inside wrappers", "FAQ questions authored as h3 (role parity) with normal tracking", "hero inline tertiary link in the CTA row", "split/promo CTA row p+p margin", "footer h2 line-height 1.15", "router reserve 159 px"]
+   "fixes": [
+    "promo illustration = 70 KB SVG → DA-media PNG (rasterise-svg)",
+    "price-foot rhythm (48 px + p+p) and 68ch measure",
+    "calculator p+p margins inside wrappers",
+    "FAQ questions authored as h3 (role parity) with normal tracking",
+    "hero inline tertiary link in the CTA row",
+    "split/promo CTA row p+p margin",
+    "footer h2 line-height 1.15",
+    "router reserve 159 px"
+   ],
+   "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan/boliglan",
+   "gatedAt": "2026-09-14T23:20:59.681Z",
+   "ew": {
+    "note": "no block JS changed (table.js row-headers variant reused); every new variant moves authored nodes via the existing block decorators"
+   },
+   "siblings": {
+    "total": 29,
+    "live": 29
+   }
+  },
+  "theme": {
+   "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+   "path": "/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie",
+   "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie",
+   "status": "live",
+   "blocks": [
+    "breadcrumbs",
+    "columns",
+    "callout",
+    "cards",
+    "feedback"
+   ],
+   "gatedAt": "2026-09-14T23:14:19.941Z",
+   "published": {
+    "360": {
+     "pixelPct": 0.36,
+     "heightDelta": 0,
+     "header": 99.66,
+     "footer": 100,
+     "pass": true
+    },
+    "1440": {
+     "pixelPct": 0.04,
+     "heightDelta": 0,
+     "header": 99.96,
+     "footer": 99.89,
+     "pass": true
+    },
+    "contentDiffRed": 0,
+    "contentDiffJustified": 0,
+    "pass": true
+   },
+   "ew": {
+    "editable": 35,
+    "dead": 0,
+    "exempt": 0,
+    "duplicated": 0
+   },
+   "siblings": {
+    "total": 3,
+    "live": 3
+   }
+  },
+  "category-hub": {
+   "slug": "nb-bank-privat-lan-html",
+   "path": "/nb/bank/privat/lan",
+   "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan",
+   "status": "live",
+   "blocks": [
+    "cards",
+    "cobranding",
+    "columns",
+    "callout",
+    "feedback"
+   ],
+   "gatedAt": "2026-09-14T23:17:43.908Z",
+   "published": {
+    "360": {
+     "pixelPct": 0.66,
+     "heightDelta": 0,
+     "header": 99.66,
+     "footer": 100,
+     "pass": true
+    },
+    "1440": {
+     "pixelPct": 0.32,
+     "heightDelta": 0,
+     "header": 99.96,
+     "footer": 99.89,
+     "pass": true
+    },
+    "contentDiffRed": 0,
+    "contentDiffJustified": 0,
+    "pass": true
+   },
+   "ew": {
+    "editable": 58,
+    "dead": 0,
+    "exempt": 1
+   },
+   "siblings": {
+    "total": 19,
+    "live": 19
+   }
+  },
+  "market-landing": {
+   "slug": "nb-bank-privat-html",
+   "path": "/nb/bank/privat",
+   "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat",
+   "status": "live",
+   "blocks": [
+    "hero",
+    "cards",
+    "columns"
+   ],
+   "gatedAt": "2026-09-14T23:16:06.111Z",
+   "published": {
+    "360": {
+     "pixelPct": 0.32,
+     "heightDelta": 0,
+     "header": 99.66,
+     "footer": 99.03,
+     "pass": true
+    },
+    "1440": {
+     "pixelPct": 0.12,
+     "heightDelta": 0,
+     "header": 99.96,
+     "footer": 99.89,
+     "pass": true
+    },
+    "contentDiffRed": 0,
+    "contentDiffJustified": 0,
+    "pass": true
+   },
+   "ew": {
+    "editable": 38,
+    "dead": 0,
+    "exempt": 1,
+    "duplicated": 0,
+    "exemptNote": "fragment reference /fragments/bank-router (@ew-exempt all)"
+   },
+   "siblings": {
+    "total": 2,
+    "live": 2
+   }
+  },
+  "faq": {
+   "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+   "path": "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan",
+   "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan",
+   "status": "live",
+   "blocks": [
+    "breadcrumbs",
+    "feedback"
+   ],
+   "gatedAt": "2026-09-14T23:14:23.724Z",
+   "published": {
+    "360": {
+     "pixelPct": 0.12,
+     "heightDelta": 0,
+     "header": 99.66,
+     "footer": 100,
+     "pass": true
+    },
+    "1440": {
+     "pixelPct": 0.16,
+     "heightDelta": 0,
+     "header": 99.96,
+     "footer": 99.89,
+     "pass": true
+    },
+    "contentDiffRed": 0,
+    "contentDiffJustified": 0,
+    "pass": true
+   },
+   "ew": {
+    "editable": 9,
+    "dead": 0,
+    "exempt": 1
+   },
+   "siblings": {
+    "total": 11,
+    "live": 11
+   }
+  },
+  "kundeservice-hub": {
+   "slug": "nb-bank-privat-kundeservice-html",
+   "path": "/nb/bank/privat/kundeservice",
+   "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice",
+   "status": "live",
+   "blocks": [
+    "hero",
+    "cards",
+    "accordion",
+    "columns"
+   ],
+   "gatedAt": "2026-09-14T23:19:36.999Z",
+   "published": {
+    "360": {
+     "pixelPct": 0.08,
+     "heightDelta": 0,
+     "header": 99.66,
+     "footer": 99.83,
+     "pass": true
+    },
+    "1440": {
+     "pixelPct": 0.04,
+     "heightDelta": 0,
+     "header": 99.96,
+     "footer": 99.89,
+     "pass": true
+    },
+    "contentDiffRed": 0,
+    "contentDiffJustified": 0,
+    "pass": true
+   },
+   "ew": {
+    "editable": 77,
+    "dead": 0,
+    "exempt": 1
+   },
+   "siblings": {
+    "total": 1,
+    "live": 1
+   }
+  },
+  "campaign-landing": {
+   "slug": "nb-bank-om-oss-hjemme-html",
+   "path": "/nb/bank/om-oss/hjemme",
+   "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/hjemme",
+   "status": "live",
+   "blocks": [
+    "hero",
+    "columns",
+    "video"
+   ],
+   "gatedAt": "2026-09-14T23:19:03.734Z",
+   "published": {
+    "360": {
+     "pixelPct": 0.25,
+     "heightDelta": 0,
+     "header": 99.66,
+     "footer": 99.8,
+     "pass": true
+    },
+    "1440": {
+     "pixelPct": 0.04,
+     "heightDelta": 0,
+     "header": 99.96,
+     "footer": 99.7,
+     "pass": true
+    },
+    "contentDiffRed": 0,
+    "contentDiffJustified": 0,
+    "pass": true
+   },
+   "ew": {
+    "editable": 25,
+    "dead": 0,
+    "exempt": 0
+   },
+   "siblings": {
+    "total": 0,
+    "live": 0
+   }
+  },
+  "om-oss": {
+   "slug": "nb-bank-om-oss-presse-html",
+   "path": "/nb/bank/om-oss/presse",
+   "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/presse",
+   "status": "live",
+   "blocks": [
+    "hero",
+    "cards",
+    "columns",
+    "feedback"
+   ],
+   "gatedAt": "2026-09-14T23:14:27.086Z",
+   "published": {
+    "360": {
+     "pixelPct": 0.82,
+     "heightDelta": 0,
+     "header": 99.66,
+     "footer": 100,
+     "pass": true
+    },
+    "1440": {
+     "pixelPct": 2.28,
+     "heightDelta": 0,
+     "header": 99.96,
+     "footer": 99.8,
+     "pass": true
+    },
+    "contentDiffRed": 0,
+    "contentDiffJustified": 0,
+    "pass": true
+   },
+   "ew": {
+    "editable": 35,
+    "dead": 0,
+    "exempt": 0,
+    "authored": 35
+   },
+   "siblings": {
+    "total": 7,
+    "live": 7
+   }
+  },
+  "news-article": {
+   "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+   "path": "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast",
+   "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast",
+   "status": "live",
+   "blocks": [
+    "hero",
+    "callout",
+    "cards"
+   ],
+   "gatedAt": "2026-09-14T23:29:52.828Z",
+   "published": {
+    "360": {
+     "pixelPct": 0.17,
+     "heightDelta": 0,
+     "header": 99.66,
+     "footer": 100,
+     "pass": true
+    },
+    "1440": {
+     "pixelPct": 0.29,
+     "heightDelta": 0,
+     "header": 99.96,
+     "footer": 99.8,
+     "pass": true
+    },
+    "contentDiffRed": 0,
+    "contentDiffJustified": 0,
+    "pass": true
+   },
+   "ew": {
+    "editable": 28,
+    "dead": 0,
+    "exempt": 0
+   },
+   "siblings": {
+    "total": 9,
+    "live": 9
+   }
+  },
+  "news-listing": {
+   "slug": "nb-bank-om-oss-nyheter-html",
+   "path": "/nb/bank/om-oss/nyheter",
+   "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter",
+   "status": "live",
+   "blocks": [
+    "cards"
+   ],
+   "gatedAt": "2026-09-14T23:27:02.906Z",
+   "published": {
+    "360": {
+     "pixelPct": 1.63,
+     "heightDelta": 0,
+     "header": 99.66,
+     "footer": 99.8,
+     "pass": true
+    },
+    "1440": {
+     "pixelPct": 0.56,
+     "heightDelta": 0,
+     "header": 99.96,
+     "footer": 99.7,
+     "pass": true
+    },
+    "contentDiffRed": 0,
+    "contentDiffJustified": 0,
+    "pass": true
+   },
+   "ew": {
+    "editable": 64,
+    "dead": 0,
+    "exempt": 0
+   },
+   "siblings": {
+    "total": 0,
+    "live": 0
+   }
+  },
+  "tool": {
+   "slug": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+   "path": "/nb/bank/privat/kundeservice/verktoy/sperre-kort",
+   "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/verktoy/sperre-kort",
+   "status": "live",
+   "blocks": [
+    "breadcrumbs",
+    "columns",
+    "callout",
+    "feedback"
+   ],
+   "gatedAt": "2026-09-14T23:15:55.893Z",
+   "published": {
+    "360": {
+     "pixelPct": 2.14,
+     "heightDelta": 1,
+     "header": 99.66,
+     "footer": 100,
+     "pass": true
+    },
+    "1440": {
+     "pixelPct": 1.47,
+     "heightDelta": 1,
+     "header": 99.96,
+     "footer": 99.89,
+     "pass": true
+    },
+    "contentDiffRed": 0,
+    "contentDiffJustified": 0,
+    "pass": true
+   },
+   "ew": {
+    "editable": 23,
+    "dead": 0,
+    "exempt": 1
+   },
+   "siblings": {
+    "total": 5,
+    "live": 5
+   }
+  },
+  "utility": {
+   "slug": "nb-bank-privat-kundeservice-kontakt-html",
+   "path": "/nb/bank/privat/kundeservice/kontakt",
+   "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/kontakt",
+   "status": "live",
+   "blocks": [
+    "hero",
+    "table",
+    "callout"
+   ],
+   "gatedAt": "2026-09-14T23:17:30.262Z",
+   "published": {
+    "360": {
+     "pixelPct": 0,
+     "heightDelta": 0,
+     "header": 99.66,
+     "footer": 100,
+     "pass": true
+    },
+    "1440": {
+     "pixelPct": 0.26,
+     "heightDelta": 0,
+     "header": 99.96,
+     "footer": 99.89,
+     "pass": true
+    },
+    "contentDiffRed": 0,
+    "contentDiffJustified": 0,
+    "pass": true
+   },
+   "ew": {
+    "editable": 54,
+    "dead": 0,
+    "exempt": 0
+   },
+   "siblings": {
+    "total": 1,
+    "live": 1
+   }
+  },
+  "markedsnytt-listing": {
+   "slug": "nb-bank-privat-sparing-markedsnytt-html",
+   "path": "/nb/bank/privat/sparing/markedsnytt",
+   "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/sparing/markedsnytt",
+   "status": "live",
+   "blocks": [
+    "hero",
+    "breadcrumbs",
+    "cards",
+    "embed",
+    "columns",
+    "feedback"
+   ],
+   "gatedAt": "2026-09-14T23:18:58.678Z",
+   "published": {
+    "360": {
+     "pixelPct": 0.72,
+     "heightDelta": 0,
+     "header": 99.66,
+     "footer": 100,
+     "pass": true
+    },
+    "1440": {
+     "pixelPct": 0.33,
+     "heightDelta": 0,
+     "header": 99.96,
+     "footer": 99.89,
+     "pass": true
+    },
+    "contentDiffRed": 0,
+    "contentDiffJustified": 0,
+    "pass": true
+   },
+   "ew": {
+    "editable": 62,
+    "dead": 0,
+    "exempt": 1,
+    "authored": 63
+   },
+   "siblings": {
+    "total": 0,
+    "live": 0
+   }
   }
  },
  "waves": [
-  { "id": 0, "at": "2026-09-14T22:20:00Z", "pages": ["/nav", "/nav-bedrift", "/nav-om-oss", "/nav-minimal", "/nav-minimal-om-oss", "/footer", "/footer-bedrift", "/footer-om-oss", "/footer-kundeservice", "/footer-frontend", "/footer-frontend-2", "/footer-frontend-om-oss", "/footer-frontend-om-oss-2", "/fragments/bank-router", "/fragments/bank-router-bedrift", "/fragments/bank-router-om-oss", "/nb/bank/privat/lan/boliglan", "/redirects.json"], "result": "17/17 live + redirects sheet (108 rows) live; / → /nb/bank/privat 301; .html → extensionless 301" }
+  {
+   "id": 0,
+   "at": "2026-09-14T22:20:00Z",
+   "pages": [
+    "/nav",
+    "/nav-bedrift",
+    "/nav-om-oss",
+    "/nav-minimal",
+    "/nav-minimal-om-oss",
+    "/footer",
+    "/footer-bedrift",
+    "/footer-om-oss",
+    "/footer-kundeservice",
+    "/footer-frontend",
+    "/footer-frontend-2",
+    "/footer-frontend-om-oss",
+    "/footer-frontend-om-oss-2",
+    "/fragments/bank-router",
+    "/fragments/bank-router-bedrift",
+    "/fragments/bank-router-om-oss",
+    "/nb/bank/privat/lan/boliglan",
+    "/redirects.json"
+   ],
+   "result": "17/17 live + redirects sheet (108 rows) live; / → /nb/bank/privat 301; .html → extensionless 301"
+  }
  ],
- "dynamics": { "interimTiers": ["#1 bank-router: native details list, postcode form opens the list", "#4 FAQ: accordion block", "#5 feedback: static thumbs", "#6 contact: footer details disclosures", "#7/#8/#9 calculators: static shells, controls disabled", "#11 listings: authored cards + helix-query.yaml indexes (news, markedsnytt)", "#16 video/embed: auto-blocked links", "#20 search: link to live search"], "ownerBatch": "unchanged from stardust/dynamic-features.md" }
+ "dynamics": {
+  "interimTiers": [
+   "#1 bank-router: native details list, postcode form opens the list",
+   "#4 FAQ: accordion block",
+   "#5 feedback: static thumbs",
+   "#6 contact: footer details disclosures",
+   "#7/#8/#9 calculators: static shells, controls disabled",
+   "#11 listings: authored cards + helix-query.yaml indexes (news, markedsnytt)",
+   "#16 video/embed: auto-blocked links",
+   "#20 search: link to live search"
+  ],
+  "ownerBatch": "unchanged from stardust/dynamic-features.md"
+ },
+ "delivery": {
+  "ledgerEntries": 116,
+  "live": 116,
+  "nonLive": [],
+  "pages": 100,
+  "blocks": {
+   "total": 17,
+   "list": [
+    "accordion",
+    "bank-router",
+    "breadcrumbs",
+    "calculator",
+    "callout",
+    "cards",
+    "cobranding",
+    "columns",
+    "converter",
+    "embed",
+    "feedback",
+    "footer",
+    "fragment",
+    "header",
+    "hero",
+    "table",
+    "video"
+   ],
+   "reusedCollectionNames": [
+    "header",
+    "footer",
+    "fragment",
+    "hero",
+    "cards",
+    "columns",
+    "accordion",
+    "table",
+    "breadcrumbs",
+    "video",
+    "embed"
+   ],
+   "bespoke": [
+    "bank-router",
+    "feedback",
+    "callout",
+    "calculator",
+    "cobranding",
+    "converter"
+   ]
+  }
+ },
+ "siblingGates": {
+  "reference": "migrated page (stardust/migrated, Path A′ output — content-verbatim gated at migrate) served on :8830 vs published origin, content-diff eds profile at 1440",
+  "sampled": [
+   {
+    "family": "theme",
+    "slug": "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+    "path": "/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort",
+    "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort",
+    "findings": 29,
+    "structuralRed": 0,
+    "pass": true
+   },
+   {
+    "family": "category-hub",
+    "slug": "nb-bank-bedrift-tips-og-rad-html",
+    "path": "/nb/bank/bedrift/tips-og-rad",
+    "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/tips-og-rad",
+    "findings": 29,
+    "structuralRed": 0,
+    "pass": true
+   },
+   {
+    "family": "product",
+    "slug": "nb-bank-privat-forsikring-barneforsikring-html",
+    "path": "/nb/bank/privat/forsikring/barneforsikring",
+    "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/barneforsikring",
+    "findings": 9,
+    "structuralRed": 0,
+    "pass": true
+   },
+   {
+    "family": "market-landing",
+    "slug": "nb-bank-om-oss-html",
+    "path": "/nb/bank/om-oss",
+    "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss",
+    "findings": 29,
+    "structuralRed": 0,
+    "pass": true
+   },
+   {
+    "family": "faq",
+    "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+    "path": "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf",
+    "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf",
+    "findings": 29,
+    "structuralRed": 0,
+    "pass": true
+   },
+   {
+    "family": "kundeservice-hub",
+    "slug": "nb-bank-bedrift-kundeservice-html",
+    "path": "/nb/bank/bedrift/kundeservice",
+    "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice",
+    "findings": 29,
+    "structuralRed": 0,
+    "pass": true
+   },
+   {
+    "family": "om-oss",
+    "slug": "nb-bank-om-oss-personvern-generelle-vilkar-html",
+    "path": "/nb/bank/om-oss/personvern/generelle-vilkar",
+    "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/personvern/generelle-vilkar",
+    "findings": 30,
+    "structuralRed": 0,
+    "pass": true
+   },
+   {
+    "family": "news-article",
+    "slug": "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+    "path": "/nb/bank/om-oss/nyheter/bruk-mobilbanken-fa-kontroll-pa-okonomien",
+    "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter/bruk-mobilbanken-fa-kontroll-pa-okonomien",
+    "findings": 2,
+    "structuralRed": 0,
+    "pass": true
+   },
+   {
+    "family": "tool",
+    "slug": "nb-bank-privat-kundeservice-verktoy-klager-html",
+    "path": "/nb/bank/privat/kundeservice/verktoy/klager",
+    "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/verktoy/klager",
+    "findings": 31,
+    "structuralRed": 0,
+    "pass": true,
+    "note": "first run: 1 red (step heading \"Klager du på vegne av en bedrift?\" flattened into the <li>) — fixed in lib.prose(): rich lists expand to default content (isRichList/richList), utenlandsbetaling re-encoded the same way; re-run 0 red"
+   },
+   {
+    "family": "utility",
+    "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
+    "path": "/nb/bank/privat/kundeservice/bestill/prisliste",
+    "url": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/bestill/prisliste",
+    "findings": 0,
+    "structuralRed": 0,
+    "pass": true
+   }
+  ],
+  "familiesWithoutSiblings": [
+   "campaign-landing",
+   "news-listing",
+   "markedsnytt-listing"
+  ]
+ },
+ "residuals": [
+  {
+   "id": "R1",
+   "what": "localize-links --check: 5 links still on www.sparebank1.no — the header search link (kundeservice.html?search=) in the 5 nav documents, plus ?search on meld-skade",
+   "why": "site search is an owner decision (dynamics #20); the interim tier is the live search, so the localiser must not rewrite these",
+   "status": "justified"
+  },
+  {
+   "id": "R2",
+   "what": "product archetype Δh −1 at both widths, tool archetype Δh +1",
+   "why": "sub-pixel rounding of the sticky router reserve; within the ±8 bar",
+   "status": "pass"
+  },
+  {
+   "id": "R3",
+   "what": "om-oss archetype (presse) 1440 pixel 2.28 %",
+   "why": "adviser photo crops from the live DAM re-encoded through the EDS image pipeline (webp, optimize=medium); no hot band, Δh 0",
+   "status": "pass"
+  }
+ ],
+ "fixesDuringGate": [
+  {
+   "when": "2026-09-15",
+   "what": "news meta runs: encoders emitted <em>tag</em><em>date</em> with no whitespace; the pipeline merged the adjacent emphasis runs into one <em>Forbrukerøkonomi19/5/2026</em> (merged words + one non-wrapping flex item → news-listing 360 Δh 72, 93 amber). Fixed with a space between runs; 8 documents republished; news-listing 360 1.63 %/Δh 0, amber 93 → 0"
+  },
+  {
+   "when": "2026-09-15",
+   "what": "rich list items: prose() → list() flattened <li> bodies with a heading + several paragraphs (klager, utenlandsbetaling steps) into one inline run; now expanded to default content, CSS ledger on .columns.split.steps h3"
+  },
+  {
+   "when": "2026-09-15",
+   "what": "deploy-batch --force starts a fresh ledger when given --paths; merged back to the full 116-entry ledger after each partial publish"
+  }
+ ]
 }
