@@ -1,0 +1,19 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+ "file": "stardust/migrated/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.html",
+ "checked": {
+  "text": 80,
+  "href": 58,
+  "img": 11
+ },
+ "miss": {
+  "text": [],
+  "href": [],
+  "img": [
+   {
+    "r": "main",
+    "s": "AnnaRoennning.jpg.thumb.768.768.jpg"
+   }
+  ]
+ }
+}

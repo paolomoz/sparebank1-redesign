@@ -1,0 +1,94 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "type": "article",
+ "template": "news-article",
+ "archetype": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "renderBranch": "A",
+ "fidelityTier": "archetype",
+ "archetypeSource": null,
+ "outputPath": "nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+ "deliveredPath": "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+ "modules": [
+  "article-header",
+  "article-body",
+  "card-rail"
+ ],
+ "chrome": {
+  "router": false,
+  "market": "om-oss",
+  "clientlib": "frontend"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "713a71886ff8ef65",
+  "sourceProposedSha": "290d355837913e3a",
+  "archetypeSha": null,
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [
+  "a.badge ×2 (now canon .badge)",
+  "ul.rail-list 24px mask on 120px thumbs"
+ ],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 8,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/om-oss/om-banken.html",
+  "/nb/bank/om-oss/nyheter/sparebank-1-troner-pa-bransjetoppen-.html",
+  "/nb/bank/om-oss/nyheter/dette-vil-vi-gjore-for-a-leve-mer-barekraftig.html",
+  "/nb/bank/om-oss/nyheter/fem-tips-til-en-gronnere-skolestart.html",
+  "/nb/bank/om-oss/nyheter/nar-vi-reparerer-tar-vi-bedre-vare-pa-miljoet.html",
+  "/nb/bank/om-oss/nyheter/best-i-bransjen-pa-baerekraft.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 26,
+ "metadata": {
+  "title": "Ditt neste bankkort er laget av resirkulert plast | SpareBank 1",
+  "description": "Det produseres om lag 10 millioner debet- og kredittkort i Norge hvert år, og alle kortene bruker nyprodusert plast. Ny teknologi åpner nå for bruk av resirkulert plast. SpareBank 1 har allerede sendt ut de første, resirkulerte kortene til våre kunder.&nbsp;\n",
+  "canonical": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Betaling_med_bankkort.jpg.thumb.1280.2276.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T20:59:50.374Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "713a71886ff8ef65",
+ "sourceProposedSha": "290d355837913e3a",
+ "archetypeSha": null,
+ "assetsBundled": 3
+}

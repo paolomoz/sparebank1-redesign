@@ -1,0 +1,62 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+ "file": "stardust/migrated/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+ "checked": {
+  "text": 54,
+  "href": 180,
+  "img": 5
+ },
+ "miss": {
+  "text": [
+   {
+    "r": "main",
+    "t": "Du kan fritt endre på eksisterende prisavtaler. Du kan fjerne, endre eller legge til produ"
+   },
+   {
+    "r": "main",
+    "t": "1. Gå til Salg og Prisavtaler i menyen. Her finner du en oversikt over alle prisavtalene d"
+   },
+   {
+    "r": "main",
+    "t": "2. Øverst i oversikten finner du faner der du kan sortere prisavtalene på Alle, Aktive ell"
+   },
+   {
+    "r": "main",
+    "t": "3. For å redigere en prisavtale trykker du på linjen til avtalen."
+   },
+   {
+    "r": "main",
+    "t": "4. I selve avtalen kan du endre på informasjon under fanene Detaljer, Produkter og Kunder."
+   },
+   {
+    "r": "main",
+    "t": "5. Du avslutter eller sletter en prisavtale ved å trykke på de tre prikkene oppe til høyre"
+   },
+   {
+    "r": "main",
+    "t": "Se også"
+   },
+   {
+    "r": "main",
+    "t": "Opprette ny prisavtale"
+   }
+  ],
+  "href": [
+   {
+    "r": "main",
+    "h": "/nb/bank/bedrift/kundeservice/bank-regnskap/opprette-ny-prisavtale.html",
+    "t": "Opprette ny prisavtale"
+   }
+  ],
+  "img": [
+   {
+    "r": "main",
+    "s": "regnskapsprogram-administrer-prisavtaler-1.png"
+   },
+   {
+    "r": "main",
+    "s": "regnskapsprogram-administrer-prisavtaler-2.png"
+   }
+  ]
+ }
+}

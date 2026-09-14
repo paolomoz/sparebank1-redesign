@@ -1,0 +1,109 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+ "type": "article",
+ "template": "faq",
+ "archetype": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+ "outputPath": "nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+ "deliveredPath": "/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+ "modules": [
+  "faq-question",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": false,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "5bac44c76449cbfe",
+  "sourceProposedSha": null,
+  "archetypeSha": "080cbbc6eb99a0fa",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 28,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+  "/nb/bank/bedrift/bedriftsforsikring/gruppelivsforsikring.html",
+  "/nb/bank/privat/kundeservice/forsikring/hva-er-forsikringssum.html",
+  "/nb/bank/privat/forsikring/livsforsikring/utbetaling.html",
+  "/nb/bank/privat/forsikring/livsforsikring.html",
+  "/nb/bank/privat/kundeservice/forsikring/kollektiv-forsikring.html",
+  "/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man/samboer.html",
+  "/nb/gudbrandsdal/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+  "/nb/hallingdal/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+  "/nb/helgeland/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+  "/nb/lom-skjaak/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+  "/nb/nord-norge/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+  "/nb/nordmore/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+  "/nb/ringerike-hadeland/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+  "/nb/smn/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+  "/nn/sogn-fjordane/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+  "/nb/sor-norge/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+  "/nb/ostfold-akershus/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+  "/nb/ostlandet/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/bedrift/kundeservice.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/ostlandet/bedrift/kundeservice.html",
+  "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+  "/nb/bank/bedrift/kundeservice/bestill/prisliste.html",
+  "/nb/bank/bedrift/svindel.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 23,
+ "metadata": {
+  "title": "Hva betyr begunstigelse? | Velg begunstiget | SpareBank 1",
+  "description": "Begunstigelse betyr at du velger hvem som skal motta forsikringssummen din hvis du dør.",
+  "canonical": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate"
+ ],
+ "contentCheck": "FAIL\nnb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html: content-check FAIL — checked text 48, hrefs 174, imgs 2; missing text 0, hrefs 1, imgs 0\n  HREF  main https://nettskjema.fremtind.no/skjema/katalog/begunstigelse-bm | Begunstigelse - gruppelivsforsikring\n",
+ "migratedAt": "2026-09-14T20:59:48.736Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "5bac44c76449cbfe",
+ "sourceProposedSha": null,
+ "archetypeSha": "080cbbc6eb99a0fa",
+ "assetsBundled": 3
+}

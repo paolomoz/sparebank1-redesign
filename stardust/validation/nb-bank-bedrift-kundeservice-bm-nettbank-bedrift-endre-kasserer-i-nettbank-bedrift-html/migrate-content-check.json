@@ -1,0 +1,20 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+ "file": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift.html",
+ "checked": {
+  "text": 48,
+  "href": 181,
+  "img": 3
+ },
+ "miss": {
+  "text": [],
+  "href": [
+   {
+    "r": "main",
+    "h": "/nb/bank/bedrift/kundeservice/bestill/ny-endre-administrator-nettbank-bedrift.html",
+    "t": "Endre administrator"
+   }
+  ],
+  "img": []
+ }
+}

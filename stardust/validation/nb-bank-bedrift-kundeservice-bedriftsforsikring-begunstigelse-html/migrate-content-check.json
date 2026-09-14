@@ -1,0 +1,20 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+ "file": "stardust/migrated/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+ "checked": {
+  "text": 48,
+  "href": 174,
+  "img": 2
+ },
+ "miss": {
+  "text": [],
+  "href": [
+   {
+    "r": "main",
+    "h": "https://nettskjema.fremtind.no/skjema/katalog/begunstigelse-bm",
+    "t": "Begunstigelse - gruppelivsforsikring"
+   }
+  ],
+  "img": []
+ }
+}

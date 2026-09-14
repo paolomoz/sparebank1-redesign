@@ -1,0 +1,108 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+ "type": "article",
+ "template": "faq",
+ "archetype": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+ "outputPath": "nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+ "deliveredPath": "/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+ "modules": [
+  "faq-question",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": false,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "c1a3c2d1c5a61c4a",
+  "sourceProposedSha": null,
+  "archetypeSha": "080cbbc6eb99a0fa",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 25,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+  "/nb/bank/bedrift/bedriftsforsikring/naringsbygg-forsikring.html",
+  "/nb/bank/bedrift/bedriftsforsikring/eiendeler-losore.html",
+  "/nb/bank/bedrift/bedriftsforsikring/avbruddsforsikring.html",
+  "/nb/gudbrandsdal/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+  "/nb/hallingdal/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+  "/nb/helgeland/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+  "/nb/lom-skjaak/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+  "/nb/nord-norge/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+  "/nb/nordmore/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+  "/nb/ringerike-hadeland/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+  "/nb/smn/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+  "/nn/sogn-fjordane/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+  "/nb/sor-norge/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+  "/nb/ostfold-akershus/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+  "/nb/ostlandet/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/bedrift/kundeservice.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/ostlandet/bedrift/kundeservice.html",
+  "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+  "/nb/bank/bedrift/kundeservice/bestill/prisliste.html",
+  "/nb/bank/bedrift/svindel.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 23,
+ "metadata": {
+  "title": "Rabatt på forsikringen ved sprinkleranlegg | SpareBank 1",
+  "description": "Vi gir rabatt på både næringsbygg-, eiendels- og avbruddstapsforsikringen hvis dere har FG-godkjent sprinkleranlegg.",
+  "canonical": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T20:59:48.853Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "c1a3c2d1c5a61c4a",
+ "sourceProposedSha": null,
+ "archetypeSha": "080cbbc6eb99a0fa",
+ "assetsBundled": 3
+}

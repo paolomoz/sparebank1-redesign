@@ -1,0 +1,93 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+ "type": "article",
+ "template": "news-article",
+ "archetype": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "outputPath": "nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html",
+ "deliveredPath": "/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html",
+ "modules": [
+  "article-header",
+  "article-body",
+  "card-rail"
+ ],
+ "chrome": {
+  "router": false,
+  "market": "om-oss",
+  "clientlib": "frontend"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "21b8357df0cd895c",
+  "sourceProposedSha": null,
+  "archetypeSha": "c9dee84f13641aed",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [
+  ".badge (local pill; canon lacks DESIGN.md § Badges)"
+ ],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 8,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/om-oss/om-banken.html",
+  "/nb/bank/privat/forsikring/vedlikehold/kraftig-regn-beskytt-boligen.html",
+  "/nb/bank/om-oss/nyheter/unngaa-bulkedagen.html",
+  "/nb/bank/om-oss/nyheter/ta-vare-dyra-nyttaarsaften.html",
+  "/nb/bank/om-oss/nyheter/fly-julen-raad-reisen.html",
+  "/nb/bank/om-oss/nyheter/fyrverkeri-risiko.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 25,
+ "metadata": {
+  "title": "“Det kunne gått mye verre” – Bamses historie fra traktorulykken | SpareBank 1",
+  "description": "Christian «Bamse» Sletten Hageberget har kjørt traktor siden han var 15 år gammel. Han droppet ofte setebelte, inntil en maidag i 2020.\n",
+  "canonical": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Bamse7.jpg.thumb.1280.2276.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T20:59:50.276Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "21b8357df0cd895c",
+ "sourceProposedSha": null,
+ "archetypeSha": "c9dee84f13641aed",
+ "assetsBundled": 3
+}

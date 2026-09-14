@@ -1,0 +1,122 @@
+{
+ "slug": "nb-bank-privat-kundeservice-html",
+ "type": "landing",
+ "template": "kundeservice-hub",
+ "archetype": "nb-bank-privat-kundeservice-html",
+ "renderBranch": "A",
+ "fidelityTier": "archetype",
+ "archetypeSource": null,
+ "outputPath": "nb/bank/privat/kundeservice.html",
+ "deliveredPath": "/nb/bank/privat/kundeservice",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/kundeservice.html",
+ "modules": [
+  "bank-router",
+  "hero-ask",
+  "chat-field",
+  "faq",
+  "topic-tiles",
+  "promo-band",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "477d64c4857e6fc8",
+  "sourceProposedSha": "5fc29cf3a301b808",
+  "archetypeSha": null,
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 35,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/kundeservice.html",
+  "/nb/hallingdal/privat/kundeservice.html",
+  "/nb/helgeland/privat/kundeservice.html",
+  "/nb/lom-skjaak/privat/kundeservice.html",
+  "/nb/nord-norge/privat/kundeservice.html",
+  "/nb/nordmore/privat/kundeservice.html",
+  "/nb/ringerike-hadeland/privat/kundeservice.html",
+  "/nb/smn/privat/kundeservice.html",
+  "/nn/sogn-fjordane/privat/kundeservice.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/ostfold-akershus/privat/kundeservice.html",
+  "/nb/ostlandet/privat/kundeservice.html",
+  "/nb/bank/privat/kundeservice/bankid.html",
+  "/nb/bank/privat/kundeservice/bestill.html",
+  "/nb/bank/privat/kundeservice/verktoy/e-signering.html",
+  "/nb/bank/privat/kundeservice/nettbank/glemt-passord-bankid.html",
+  "/nb/bank/privat/kundeservice/nettbank/hvordan-sperre-bankid.html",
+  "/nb/bank/privat/kundeservice/nettbank/min-bankid-er-sperret.html",
+  "/nb/bank/privat/kundeservice/mobil/engangkode-pa-mobil-virker-ikke.html",
+  "/nb/bank/privat/kundeservice/nettbank/feilmelding-som-starter-med-bid.html",
+  "/nb/bank/privat/kundeservice/nettbank/hvordan-bestille-ny-kodebrikke.html",
+  "/nb/bank/privat/kundeservice/nettbank/jeg-kommer-ikke-inn-i-nettbanken.html",
+  "/nb/bank/privat/kundeservice/lan.html",
+  "/nb/bank/privat/kundeservice/barn-og-ungdom.html",
+  "/nb/bank/privat/kundeservice/nettbank.html",
+  "/nb/bank/privat/kundeservice/forsikring.html",
+  "/nb/bank/privat/kundeservice/kort.html",
+  "/nb/bank/privat/kundeservice/betaling.html",
+  "/nb/bank/privat/kundeservice/mobil.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon.html",
+  "/nb/bank/privat/svindel/utsatt-for-svindel.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 33,
+ "metadata": {
+  "title": "Kundeservice | SpareBank 1",
+  "description": "Sperre kort, bestille/fornye BankID på mobil, melde skade, bli kunde, finne IBAN-nummer, få hjelp her.",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/kundeservice.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T20:59:51.262Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "477d64c4857e6fc8",
+ "sourceProposedSha": "5fc29cf3a301b808",
+ "archetypeSha": null,
+ "assetsBundled": 3
+}

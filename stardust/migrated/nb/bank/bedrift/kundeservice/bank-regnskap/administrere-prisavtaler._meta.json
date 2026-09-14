@@ -1,0 +1,105 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+ "type": "article",
+ "template": "faq",
+ "archetype": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+ "outputPath": "nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+ "deliveredPath": "/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+ "modules": [
+  "bank-router",
+  "faq-question",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "de014aa247010809",
+  "sourceProposedSha": null,
+  "archetypeSha": "080cbbc6eb99a0fa",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 23,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+  "/nb/gudbrandsdal/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+  "/nb/hallingdal/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+  "/nb/helgeland/bedrift/kundeservice.html",
+  "/nb/lom-skjaak/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+  "/nb/nord-norge/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+  "/nb/nordmore/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+  "/nb/ringerike-hadeland/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+  "/nb/smn/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+  "/nn/sogn-fjordane/bedrift/kundeservice.html",
+  "/nb/sor-norge/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+  "/nb/ostfold-akershus/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+  "/nb/ostlandet/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+  "/nb/bank/bedrift/regnskap/regnskapsprogram/sparebank1-regnskap/hjelpesider.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/bedrift/kundeservice.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/ostlandet/bedrift/kundeservice.html",
+  "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+  "/nb/bank/bedrift/kundeservice/bestill/prisliste.html",
+  "/nb/bank/bedrift/svindel.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 23,
+ "metadata": {
+  "title": "Administrere prisavtaler i SpareBank 1 Regnskap | SpareBank 1",
+  "description": "Du kan fritt endre på eksisterende prisavtaler. Du kan fjerne, endre eller legge til produkter og kunder når som helst. Når du endrer en prisavtale vil dette ikke ha tilbakevirkende kraft på verken tilbud, ordre eller faktura. Endringer påvirker kun faktura du oppretter etter at endringene i avtalen er lagre. ",
+  "canonical": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate"
+ ],
+ "contentCheck": "FAIL\nnb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html: content-check FAIL — checked text 54, hrefs 180, imgs 5; missing text 8, hrefs 1, imgs 2\n  TEXT  main \"Du kan fritt endre på eksisterende prisavtaler. Du kan fjerne, endre eller legge til produ\"\n  TEXT  main \"1. Gå til Salg og Prisavtaler i menyen. Her finner du en oversikt over alle prisavtalene d\"\n  TEXT  main \"2. Øverst i oversikten finner du faner der du kan sortere prisavtalene på Alle, Aktive ell\"\n  TEXT  main \"3. For å redigere en prisavtale trykker du på linjen til avtalen.\"\n  TEXT  main \"4. I selve avtalen kan du endre på informasjon under fanene Detaljer, Produkter og Kunder.\"\n  TEXT  main \"5. Du avslutter eller sletter en prisavtale ved å trykke på de tre prikkene oppe til høyre\"\n  TEXT  main \"Se også\"\n  TEXT  main \"Opprette ny prisavtale\"\n  HREF  main /nb/bank/bedrift/kundeservice/bank-regnskap/opprette-ny-prisavtale.html | Opprette ny prisavtale\n  IMG   main regnskapsprogram-administrer-prisavtaler-1.png\n  IMG   main regnskapsprogram-administrer-prisavtaler-2.png",
+ "migratedAt": "2026-09-14T20:59:48.501Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "de014aa247010809",
+ "sourceProposedSha": null,
+ "archetypeSha": "080cbbc6eb99a0fa",
+ "assetsBundled": 3
+}

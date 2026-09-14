@@ -1,0 +1,106 @@
+{
+ "slug": "nb-bank-privat-kundeservice-kontakt-html",
+ "type": "static",
+ "template": "utility",
+ "archetype": "nb-bank-privat-kundeservice-kontakt-html",
+ "renderBranch": "A",
+ "fidelityTier": "archetype",
+ "archetypeSource": null,
+ "outputPath": "nb/bank/privat/kundeservice/kontakt.html",
+ "deliveredPath": "/nb/bank/privat/kundeservice/kontakt",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/kundeservice/kontakt.html",
+ "modules": [
+  "hero-portrait",
+  "bank-table",
+  "callout",
+  "address-block",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": false,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "25b1f7002cbabc78",
+  "sourceProposedSha": "a780f50bd373565c",
+  "archetypeSha": null,
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 21,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/kundeservice/kontakt.html",
+  "/nb/gudbrandsdal/privat/kundeservice/kontakt.html",
+  "/nb/hallingdal/privat/kundeservice/kontakt.html",
+  "/nb/helgeland/privat/kundeservice/kontakt.html",
+  "/nb/helgeland/privat/kundeservice.html",
+  "/nb/lom-skjaak/privat/kundeservice/kontakt.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/nordvest/privat/kundeservice/kontakt.html",
+  "/nb/ringerike-hadeland/privat/kundeservice/kontakt.html",
+  "/nb/smn/privat/kundeservice/kontakt.html",
+  "/nn/sogn-fjordane/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice/kontakt.html",
+  "/nb/ostfold-akershus/privat/kundeservice/kontakt.html",
+  "/nb/ostlandet/privat/kundeservice/kontakt.html",
+  "/nb/ostlandet/privat/kundeservice.html",
+  "/nb/bank/privat/kundeservice/forsikring/hvordan-kontakte-fremtind-forsikring.html",
+  "/nb/nordmore/privat/kundeservice/kontakt.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 31,
+ "metadata": {
+  "title": "Kontakt oss | SpareBank 1",
+  "description": null,
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/kundeservice/kontakt.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T20:59:51.369Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "25b1f7002cbabc78",
+ "sourceProposedSha": "a780f50bd373565c",
+ "archetypeSha": null,
+ "assetsBundled": 3
+}

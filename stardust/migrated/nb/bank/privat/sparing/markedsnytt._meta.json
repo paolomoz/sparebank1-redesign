@@ -1,0 +1,118 @@
+{
+ "slug": "nb-bank-privat-sparing-markedsnytt-html",
+ "type": "listing",
+ "template": "markedsnytt-listing",
+ "archetype": "nb-bank-privat-sparing-markedsnytt-html",
+ "renderBranch": "A",
+ "fidelityTier": "archetype",
+ "archetypeSource": null,
+ "outputPath": "nb/bank/privat/sparing/markedsnytt.html",
+ "deliveredPath": "/nb/bank/privat/sparing/markedsnytt",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt.html",
+ "modules": [
+  "bank-router",
+  "campaign",
+  "card-rail",
+  "content-columns",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "613cf055442c458d",
+  "sourceProposedSha": "f34b73e81f59788d",
+  "archetypeSha": null,
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [
+  "a.video-frame.video-link ×3: YouTube embeds as linked static frames (2 of 3 have runtime-injected src)"
+ ],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 30,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/sparing/markedsnytt.html",
+  "/nb/hallingdal/privat/sparing/markedsnytt.html",
+  "/nb/helgeland/privat/sparing/markedsnytt.html",
+  "/nb/lom-skjaak/privat/sparing/markedsnytt.html",
+  "/nb/nord-norge/privat/sparing/markedsnytt.html",
+  "/nb/nordmore/privat/sparing/markedsnytt.html",
+  "/nb/ringerike-hadeland/privat/sparing/markedsnytt.html",
+  "/nb/smn/privat/sparing/markedsnytt.html",
+  "/nn/sogn-fjordane/privat/sparing/markedsnytt.html",
+  "/nb/sor-norge/privat/sparing/markedsnytt.html",
+  "/nb/ostfold-akershus/privat/sparing/markedsnytt.html",
+  "/nb/ostlandet/privat/sparing/markedsnytt.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/na-kan-du-spare-i-fire-nye-sparebank-1-indeksfond.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/topp-10-fond.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/stor-interesse-for-rentefond-na-er-det-enda-mer-gunstig.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/sjekk-pensjon-se-hvordan-okonomien-kan-bli-som-pensjonist.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/din-guide-til-livets-lengste-ferie.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/pensjon-mange-havner-i-62-arsfella.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/markedskommentar-av-alexander-miller-for-august-2026.html",
+  "/nb/bank/privat/sparing/investering/aksjehandel.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/what-the-fond.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/forventet-avkastning-fond.html",
+  "/nb/bank/privat/kundeservice/verktoy/vps-viktige-dokumenter.html",
+  "/nb/bank/privat/sparing/spare-i-fond/esg.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 32,
+ "metadata": {
+  "title": "Markedsnytt | SpareBank 1",
+  "description": "Forstå mer om markedet, og hvordan du kan investere pengene dine enda bedre.",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/mobildame-dame-smiler-mobil.jpg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T20:59:52.089Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "613cf055442c458d",
+ "sourceProposedSha": "f34b73e81f59788d",
+ "archetypeSha": null,
+ "assetsBundled": 3
+}

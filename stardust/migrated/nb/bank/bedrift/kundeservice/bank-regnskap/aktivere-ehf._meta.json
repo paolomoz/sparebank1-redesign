@@ -1,0 +1,105 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+ "type": "article",
+ "template": "faq",
+ "archetype": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+ "outputPath": "nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+ "deliveredPath": "/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+ "modules": [
+  "bank-router",
+  "faq-question",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "079bc8b37cc89fa1",
+  "sourceProposedSha": null,
+  "archetypeSha": "080cbbc6eb99a0fa",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 23,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+  "/nb/gudbrandsdal/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+  "/nb/hallingdal/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+  "/nb/helgeland/bedrift/kundeservice.html",
+  "/nb/lom-skjaak/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+  "/nb/nord-norge/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+  "/nb/nordmore/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+  "/nb/ringerike-hadeland/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+  "/nb/smn/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+  "/nn/sogn-fjordane/bedrift/kundeservice.html",
+  "/nb/sor-norge/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+  "/nb/ostfold-akershus/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+  "/nb/ostlandet/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+  "/nb/bank/bedrift/regnskap/regnskapsprogram/sparebank1-regnskap/hjelpesider/utgift.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/bedrift/kundeservice.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/ostlandet/bedrift/kundeservice.html",
+  "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+  "/nb/bank/bedrift/kundeservice/bestill/prisliste.html",
+  "/nb/bank/bedrift/svindel.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 23,
+ "metadata": {
+  "title": "Aktivere EHF i SpareBank 1 Regnskap | SpareBank 1",
+  "description": "Se hvordan du aktiverer EHF i SpareBank 1 Regnskap.",
+  "canonical": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate"
+ ],
+ "contentCheck": "FAIL\nnb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html: content-check FAIL — checked text 52, hrefs 179, imgs 4; missing text 4, hrefs 0, imgs 1\n  TEXT  main \"Slik aktiverer du EHF Mottak\"\n  TEXT  main \"Gå til Markedsplass og velg Moduler.\"\n  TEXT  main \"Under Utvidelser trykker du Aktiver på EHF Mottak for å kunne motta EHF.\"\n  TEXT  main \"Merk: Har du aktivert EHF i et annet regnskapsprogram, må du deaktivere der før du kan akt\"\n  IMG   main regnskapsprogram-ehf-mottak.png\n",
+ "migratedAt": "2026-09-14T20:59:48.619Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "079bc8b37cc89fa1",
+ "sourceProposedSha": null,
+ "archetypeSha": "080cbbc6eb99a0fa",
+ "assetsBundled": 3
+}

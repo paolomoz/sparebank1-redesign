@@ -1,0 +1,95 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+ "type": "article",
+ "template": "news-article",
+ "archetype": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "outputPath": "nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-.html",
+ "deliveredPath": "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-.html",
+ "modules": [
+  "article-header",
+  "article-body",
+  "card-rail"
+ ],
+ "chrome": {
+  "router": false,
+  "market": "om-oss",
+  "clientlib": "frontend"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "4856d70b9b8ea99a",
+  "sourceProposedSha": null,
+  "archetypeSha": "c9dee84f13641aed",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [
+  ".badge (local pill; canon lacks DESIGN.md § Badges)"
+ ],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 10,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/om-oss/om-banken.html",
+  "/nb/bank/privat/tips-og-rad/tips-til-enklere-hverdagsokonomi.html",
+  "/nb/bank/privat/daglig-bruk/kredittkort/reiseforsikring-mastercard.html",
+  "/nb/bank/om-oss/nyheter/sann-far-du-bedre-oversikt-over-boligutgiftene-dine.html",
+  "/nb/bank/om-oss/nyheter/skal-du-pa-reise-i-sommer--dette-bor-tenke-pa-for-du-drar-.html",
+  "/nb/bank/om-oss/nyheter/fa-total-kontroll.html",
+  "/nb/bank/privat/daglig-bruk/mobilbank/kampen-mot-smaautgiftene.html",
+  "/nb/bank/privat/daglig-bruk/mobilbank/digitalt-hjem.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 30,
+ "metadata": {
+  "title": "Kredittkort - 5 smarte tips til julehandel med kredittkort | SpareBank 1",
+  "description": "Noen ganger er det smartere å bruke kredittkort enn bankkort. Les våre tips til julehandel med kredittkort. ",
+  "canonical": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/foto/julegave_tips.jpg.thumb.1280.2276.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T20:59:50.100Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "4856d70b9b8ea99a",
+ "sourceProposedSha": null,
+ "archetypeSha": "c9dee84f13641aed",
+ "assetsBundled": 3
+}

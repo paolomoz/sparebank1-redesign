@@ -1,0 +1,127 @@
+{
+ "slug": "nb-bank-privat-lan-html",
+ "type": "landing",
+ "template": "category-hub",
+ "archetype": "nb-bank-privat-lan-html",
+ "renderBranch": "A",
+ "fidelityTier": "archetype",
+ "archetypeSource": null,
+ "outputPath": "nb/bank/privat/lan.html",
+ "deliveredPath": "/nb/bank/privat/lan",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/lan.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "visual-nav",
+  "shortcut-row",
+  "cobranding",
+  "split-media",
+  "promo-band",
+  "related-products",
+  "callout",
+  "feedback",
+  "cta-band",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "bcf41360dd6c0295",
+  "sourceProposedSha": "31f14bcf4accb350",
+  "archetypeSha": null,
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 35,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/lan.html",
+  "/nb/hallingdal/privat/lan.html",
+  "/nb/helgeland/privat/lan.html",
+  "/nb/lom-skjaak/privat/lan.html",
+  "/nb/nord-norge/privat/lan.html",
+  "/nb/nordmore/privat/lan.html",
+  "/nb/ringerike-hadeland/privat/lan.html",
+  "/nb/smn/privat/lan.html",
+  "/nn/sogn-fjordane/privat/lan.html",
+  "/nb/sor-norge/privat/lan.html",
+  "/nb/ostfold-akershus/privat/lan.html",
+  "/nb/ostlandet/privat/lan.html",
+  "/nb/bank/privat/lan/flytte-lan.html",
+  "/nb/bank/privat/lan/boliglan/finansieringsbevis.html",
+  "/nb/bank/privat/lan/andre-kjoretoy.html",
+  "/bank/nettbank-privat/finansiering/lan",
+  "/404/nettbank/boliglan_innfrielse_skjema",
+  "/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lofavor-fordeler.html",
+  "/nb/bank/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/bank/privat/kundeservice/bytte-bank.html",
+  "/nb/bank/privat/lan/boliglan/boliglan-for-unge.html",
+  "/nb/bank/privat/lan/boliglan/flexilan.html",
+  "/nb/bank/privat/lan/boliglan/fastrentelan.html",
+  "/nb/bank/privat/lan/boliglan/hyttelan.html",
+  "/nb/bank/privat/lan/boliglan/mellomfinansiering.html",
+  "/nb/bank/privat/lan/boliglan/byggelan.html",
+  "/nb/bank/privat/lan/boliglan/forstehjemslan.html",
+  "/nb/bank/privat/lan/boliglan/gront-boliglan.html",
+  "/nb/bank/privat/lan/billan/billan-for-unge.html",
+  "/nb/bank/privat/lan/batlan.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 39,
+ "metadata": {
+  "title": "Søk lån til bolig, bil eller andre ting | SpareBank 1",
+  "description": "Skal du kjøpe bolig, bil eller andre ting? Eller kanskje du vil samle alle smålån på en plass? Finn ut hvor mye du kan låne og få et uforpliktende tilbud her.",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/lan.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T20:59:51.780Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "bcf41360dd6c0295",
+ "sourceProposedSha": "31f14bcf4accb350",
+ "archetypeSha": null,
+ "assetsBundled": 3
+}

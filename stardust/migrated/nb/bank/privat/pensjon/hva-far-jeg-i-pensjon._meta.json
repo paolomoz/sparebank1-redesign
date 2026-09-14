@@ -1,0 +1,91 @@
+{
+ "slug": "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+ "type": "article",
+ "template": "news-article",
+ "archetype": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "outputPath": "nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.html",
+ "deliveredPath": "/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.html",
+ "modules": [
+  "article-header",
+  "article-body",
+  "card-rail"
+ ],
+ "chrome": {
+  "router": false,
+  "market": "privat",
+  "clientlib": "frontend"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "894d6d79682e02cd",
+  "sourceProposedSha": null,
+  "archetypeSha": "c9dee84f13641aed",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [
+  ".badge (local pill; canon lacks DESIGN.md § Badges)"
+ ],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 8,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/privat/pensjon/pensjonsordliste.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/sjekk-pensjon-se-hvordan-okonomien-kan-bli-som-pensjonist.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/din-guide-til-livets-lengste-ferie.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/pensjon-mange-havner-i-62-arsfella.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/pensjon-smarte-kvinner-tar-smarte-valg.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 31,
+ "metadata": {
+  "title": "Hvor mye får jeg i pensjon? | SpareBank 1",
+  "description": "Lurer du på hva du du kan forvente å få når du blir pensjonist? Bruk vår pensjonskalkulator og få oversikt over pensjonen din på 1-2-3. ",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/mobildame-dame-smiler-mobil.jpg.thumb.1280.2276.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate"
+ ],
+ "contentCheck": "FAIL\nnb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html: content-check FAIL — checked text 86, hrefs 73, imgs 13; missing text 0, hrefs 3, imgs 2\n  HREF  main /nb/bank/privat/pensjon/pensjonskalkulator.html | Sjekk hva du får i pensjon her\n  HREF  main https://www.sparebank1.no/privat/forsikring/pensjon/ | Logg inn og se pensjonen din\n  HREF  main https://lenker.sparebank1.no/privat/forsikring/pensjon/ | Logg inn og se pensjonen din\n  IMG   main Marianne-Christensen-pensjonsekspert.jpg.thumb.768.768.jpg\n  IMG   main dame-pc-glad.svg\n",
+ "migratedAt": "2026-09-14T20:59:51.968Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "894d6d79682e02cd",
+ "sourceProposedSha": null,
+ "archetypeSha": "c9dee84f13641aed",
+ "assetsBundled": 3
+}

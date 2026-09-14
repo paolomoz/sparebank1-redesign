@@ -1,0 +1,36 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+ "file": "stardust/migrated/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+ "checked": {
+  "text": 52,
+  "href": 179,
+  "img": 4
+ },
+ "miss": {
+  "text": [
+   {
+    "r": "main",
+    "t": "Slik aktiverer du EHF Mottak"
+   },
+   {
+    "r": "main",
+    "t": "Gå til Markedsplass og velg Moduler."
+   },
+   {
+    "r": "main",
+    "t": "Under Utvidelser trykker du Aktiver på EHF Mottak for å kunne motta EHF."
+   },
+   {
+    "r": "main",
+    "t": "Merk: Har du aktivert EHF i et annet regnskapsprogram, må du deaktivere der før du kan akt"
+   }
+  ],
+  "href": [],
+  "img": [
+   {
+    "r": "main",
+    "s": "regnskapsprogram-ehf-mottak.png"
+   }
+  ]
+ }
+}

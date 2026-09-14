@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-09-14T20:59:51.140Z
+  page:             nb-bank-privat-html
+  slug:             nb-bank-privat-html
+  pagePath:         migrated/nb/bank/privat.html
+  deliveredPath:    /nb/bank/privat
+  renderBranch:     A
+  template:         market-landing
+  archetypePath:    stardust/prototypes/nb-bank-privat-html-proposed.html
+  archetypeSha:     bdd167386ed281b4
+  sourceProposed:   stardust/prototypes/nb-bank-privat-html-proposed.html
+  sourceCurrent:    stardust/current/pages/nb-bank-privat-html.json
+  againstDirection: stardust/direction.md (Active 2026-09-14T21:10:00Z)
+  designMd:         DESIGN.md (sha: 9eaced02fd2340e7)
+  designJson:       DESIGN.json (sha: 356d124b47aa82e7)
+  canonShas:        header:7b575d4a8a06908b footer:a71bffa1aee4b031 css:b128d5c2de6ce444
+  decisionTrace:    privat._meta.json
+  brokenInternalLinks: 37
+  stardustVersion:  0.20.0
+-->
+<!-- stardust:provenance
+  writtenBy:         stardust:prototype (--prep; rendered through impeccable new-work against DESIGN.md; chrome = canon source stardust/scripts/proto/chrome.mjs)
+  writtenAt:         2026-09-14T20:37:59.368Z
+  page:              nb-bank-privat-html
+  pageUrl:           https://www.sparebank1.no/nb/bank/privat.html
+  againstDirection:  stardust/direction.md (Active 2026-09-14T21:10:00Z)
+  readArtifacts:
+    - stardust/current/pages/nb-bank-privat-html.json
+    - stardust/current/pages/nb-bank-privat-html.html
+    - DESIGN.md
+    - DESIGN.json
+    - stardust/prototypes/nb-bank-privat-html-shape.md
+  divergenceVersion: v1.0 (stardust v2)
+  fontDeck:          brand-inherited (SpareBank1-title-medium / medium / regular; static single-weight — Discipline 7 exempt)
+  paletteSource:     inherited (_ffe-tokens.json), Mode A
+  fidelity:          refined
+  iaFidelity:        verbatim
+  surprise:          low
+  reflexRejectAudit: { bypassed: true, reason: "Mode A pinned families" }
+  copyCadenceBypass: { rules: [em-dash-overuse, marketing-buzzword, exclamation], basis: "all copy captured-verbatim" }
+  shapeBrief: stardust/prototypes/nb-bank-privat-html-shape.md
+  dominantDimension: register/museum-didactic
+  conceptSeed: surface 3169e2f5 (dealt 4,5,3; 4 built)
+  unsourcedContent: []
+  signatureElements:
+    - bankchoice_bg.svg in the router band
+    - spot illustrations on product tiles
+    - one-corner-pair photo mask (campaign 96px, news 48px)
+  improvementsApplied:
+    - #1 compact router
+    - #2 calm two-tier header
+    - #3 1.25 scale
+    - #4 one card language
+    - #6 photo at content scale
+    - #7 5 movements, no dividers
+  stardustVersion:   0.20.0
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privat | SpareBank 1</title>
+<meta name="description" content="Prøv Norges beste og mest personlige mobilbank. Du er også velkommen til å chatte eller ringe og få hjelp av flinke folk hos oss når du trenger det.">
+<meta name="template" content="landing">
+<meta name="theme-color" content="#002776">
+<link rel="icon" href="data:image/png;base64,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">
+<style>
+:root {
+  --heading-font-family: "SpareBank1-title-medium", arial, sans-serif;
+  --title-font-family:   "SpareBank1-medium", arial, sans-serif;
+  --body-font-family:    "SpareBank1-regular", arial, sans-serif;
+
+  --heading-xxl: 61px;  --heading-xl: 49px;  --heading-lg: 39px;  --heading-md: 31px;
+  --title: 25px;  --lead: 20px;  --body: 16px;  --body-sm: 14px;  --label: 13px;
+  --t-display: clamp(2.5rem, 1.6rem + 2.4vw, 3.8125rem);
+  --t-headline: clamp(2.125rem, 1.5rem + 1.7vw, 3.0625rem);
+  --t-headline-sm: clamp(1.75rem, 1.4rem + 1vw, 2.4375rem);
+  --t-title: clamp(1.5rem, 1.3rem + .6vw, 1.9375rem);
+  --line-height-heading: 1.12;  --line-height-body: 1.55;
+
+  /* Hvit */ --color-bg: #ffffff;  /* Svart */ --color-fg: #020a0a;  /* Vann */ --color-accent: #005aa4;
+  --fjell: #002776; --vann: #005aa4; --natt: #001032; --skog: #00754e; --skog-hover: #095139;
+  --frost: #7eb5d2; --frost-30: #d8e9f2; --sand: #f8e9dd; --sand-70: #faf0e7; --sand-30: #fdf8f5; --syrin-30: #f2f2f9;
+  --multe: #f8b181; --lyng: #873953; --baer: #e44244; --nordlys: #33af85; --sol: #dc8000;
+  --koksgraa: #323232; --moerkgraa: #676767; --graa: #adadad; --lysgraa: #d8d8d8;
+
+  --spacing-xs: 4px;  --spacing-sm: 8px;  --spacing-md: 16px;  --spacing-lg: 24px;  --spacing-xl: 48px;  --spacing-2xl: 64px;  --spacing-3xl: 96px;
+  --section-padding: 64px;  --max-width: 1280px;  --gutter: 80px;
+  --radius: 16px;  --radius-sm: 8px;  --radius-img: 96px;  --radius-img-sm: 48px;  --radius-pill: 6em;
+  --shadow-lift: 0 8px 24px -12px rgba(0, 39, 118, 0.25);
+  --dur: 160ms;  --ease: cubic-bezier(0.2, 0, 0, 1);
+}
+@media (max-width: 1439px) { :root { --gutter: 48px; } }
+@media (max-width: 1023px) { :root { --section-padding: 48px; --gutter: 24px; } }
+@media (max-width: 640px)  { :root { --section-padding: 32px; --gutter: 20px; } }
+
+
+@font-face{font-family:"SpareBank1-title-medium";src:url("../../assets/fonts/SpareBank1-Title-Medium-Web.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"SpareBank1-medium";src:url("../../assets/fonts/SpareBank1-Medium-Web.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"SpareBank1-regular";src:url("../../assets/fonts/SpareBank1-Regular-Web.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+*,*::before,*::after{box-sizing:border-box}
+html{hanging-punctuation:first;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--color-bg);color:var(--color-fg);font:var(--body)/var(--line-height-body) var(--body-font-family);text-wrap:pretty;-webkit-font-smoothing:antialiased}
+::selection{background:var(--frost-30);color:var(--fjell)}
+:focus-visible{outline:2px solid var(--sol);outline-offset:2px;border-radius:4px}
+img,svg{display:block;max-width:100%}
+a{color:var(--vann);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.18em;transition:color var(--dur) var(--ease)}
+a:hover{color:var(--fjell)}a:visited{color:var(--lyng)}
+h1,h2,h3,h4{margin:0;font-family:var(--heading-font-family);font-weight:400;color:var(--fjell);text-wrap:balance;letter-spacing:-.005em}
+h1{font-size:var(--t-headline);line-height:var(--line-height-heading)}h2{font-size:var(--t-headline-sm);line-height:1.15}h3{font-size:var(--t-title);line-height:1.2}h4{font-family:var(--title-font-family);font-size:var(--title);line-height:1.25}
+.display{font-size:var(--t-display);line-height:1.1;letter-spacing:-.01em}
+.title{font-family:var(--heading-font-family);font-size:var(--t-title);line-height:1.2;color:var(--fjell)}
+.title-sm{font-family:var(--title-font-family);font-size:var(--title);line-height:1.25}
+p{margin:0}p+p{margin-top:var(--spacing-md)}
+.lead{font-size:var(--lead);line-height:1.5;max-width:60ch}.small{font-size:var(--body-sm);line-height:1.45}.label{font-family:var(--title-font-family);font-size:var(--label);line-height:1.4;letter-spacing:.01em}
+.muted{color:var(--moerkgraa)}.paper .muted,.paper-sand .muted,.paper-frost .muted,.paper-syrin .muted{color:var(--koksgraa)}
+.prose{max-width:68ch}.prose p+p,.prose ul,.prose ol{margin-top:var(--spacing-md)}.prose li+li{margin-top:var(--spacing-sm)}
+strong,b{font-family:var(--title-font-family);font-weight:400}
+.num,.tabular,td,.price{font-variant-numeric:tabular-nums}
+ul,ol{margin:0;padding:0;list-style:none}
+.container{width:min(100% - 2*var(--gutter),var(--max-width));margin-inline:auto}
+.movement{padding-block:var(--section-padding)}
+.paper-sand{background:var(--sand-30)}.paper-frost{background:var(--frost-30)}.paper-syrin{background:var(--syrin-30)}.paper-vann{background:var(--vann);color:#fff}
+.visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+.skip a{position:absolute;left:8px;top:-100px;z-index:100;padding:10px 16px;background:var(--fjell);color:#fff;border-radius:var(--radius-sm)}.skip a:focus{top:8px}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 24px;border-radius:var(--radius-pill);border:2px solid transparent;font:var(--body)/1.2 var(--body-font-family);text-decoration:none;cursor:pointer;transition:background-color var(--dur) var(--ease),color var(--dur) var(--ease),border-color var(--dur) var(--ease)}
+.btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.btn-primary{background:var(--vann);color:#fff}.btn-primary:hover{background:var(--fjell);color:#fff}
+.btn-action{background:var(--skog);color:#fff}.btn-action:hover{background:var(--skog-hover);color:#fff}
+.btn-secondary{background:#fff;color:var(--vann);border-color:var(--vann)}.btn-secondary:hover{background:var(--frost-30);color:var(--fjell);border-color:var(--fjell)}
+.btn-secondary.btn-on-vann{background:transparent;color:#fff;border-color:#fff}.btn-secondary.btn-on-vann:hover{background:#fff;color:var(--fjell);border-color:#fff}
+.btn-inline{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:8px 4px;color:var(--vann);background:none;border:0;font:var(--body)/1.2 var(--body-font-family);cursor:pointer;text-decoration:none}.btn-inline:hover{text-decoration:underline;color:var(--fjell)}
+.btn-inline.btn-on-vann{color:#fff}.btn-inline.btn-on-vann:hover{color:#fff}
+.btn-inline svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.btn-sm{min-height:40px;padding:8px 18px;font-size:var(--body-sm)}
+.btn:disabled,.btn[aria-disabled="true"],button:disabled,input:disabled,select:disabled,textarea:disabled,.is-disabled{background:var(--lysgraa);color:var(--koksgraa);border-color:var(--lysgraa);cursor:not-allowed;opacity:1}
+input:disabled::placeholder{color:var(--koksgraa)}
+.badge,a.badge{display:inline-flex;align-items:center;min-height:32px;padding:4px 12px;border-radius:var(--radius-pill);background:var(--frost-30);color:var(--fjell);font-family:var(--title-font-family);font-size:var(--label);letter-spacing:.01em;text-decoration:none;transition:background-color var(--dur) var(--ease),color var(--dur) var(--ease)}a.badge:hover{background:var(--vann);color:#fff}
+.video-frame{position:relative;display:grid;place-items:center;aspect-ratio:16/9;background:var(--frost-30);border-radius:var(--radius);overflow:hidden;color:var(--fjell);text-decoration:none}.video-frame svg{width:64px;height:64px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.btn-icon{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:6px 10px;color:var(--fjell);text-decoration:none;border-radius:var(--radius-sm);font-size:var(--body-sm)}.btn-icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}.btn-icon:hover{background:var(--frost-30);color:var(--fjell)}
+.link-more{display:inline-flex;align-items:center;gap:4px}.link-more svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform var(--dur) var(--ease)}.link-more:hover svg{transform:translateX(3px)}
+/* header */
+header[data-canon]{background:#fff;border-bottom:1px solid var(--lysgraa);position:relative;z-index:20}
+.hdr-utility{border-bottom:1px solid var(--lysgraa)}
+.hdr-utility-row{display:flex;align-items:center;justify-content:space-between;min-height:44px;gap:16px}
+.audience ul,.audience-mobile{display:flex;gap:4px}
+.audience a,.audience-mobile a{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;color:var(--fjell);text-decoration:none;font-size:var(--body-sm);border-radius:var(--radius-pill);font-family:var(--title-font-family)}
+.audience a.is-active,.audience-mobile a.is-active{background:var(--frost-30)}.audience a:hover,.audience-mobile a:hover{color:var(--vann)}
+.hdr-actions{display:flex;align-items:center;gap:8px}
+.hdr-main-row{position:relative;display:flex;align-items:center;gap:32px;min-height:64px}
+.logo{display:flex;align-items:center;flex:0 0 auto;width:140px;min-height:44px}.logo-svg{width:140px;height:auto}
+.hdr-mobile-actions{display:none;margin-left:auto}
+.ds-nav-toggle{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+.ds-nav-burger{display:none}
+.ds-nav{display:flex;align-items:center;flex:1 1 auto;gap:var(--spacing-md)}
+.ds-nav .market{display:flex;flex-wrap:wrap;gap:4px 20px}
+.ds-nav .market a{display:inline-flex;align-items:center;min-height:44px;color:var(--fjell);text-decoration:none;border-bottom:2px solid transparent;padding:0 2px;transition:border-color var(--dur) var(--ease)}
+.ds-nav .market a:hover,.ds-nav .market a.is-active{border-bottom-color:var(--vann);color:var(--fjell)}
+.nav-extra{display:none}
+/* router */
+.router{background:var(--vann);color:#fff}
+.router-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) 38%;grid-template-areas:"text form art" "all form art";align-items:center;column-gap:32px;row-gap:0;min-height:150px;padding-block:8px}
+.router-text{align-self:end}.router-all{align-self:start}.router-form{align-self:center}
+.router-text{grid-area:text}.router-heading{font-family:var(--title-font-family);font-size:var(--title);line-height:1.2;margin:0}.router-lede{font-size:var(--body-sm);opacity:.92;margin:2px 0 0}
+.router-form{grid-area:form;display:grid;gap:4px}.router-label{font-size:var(--label);font-family:var(--title-font-family);letter-spacing:.01em}
+.router-controls{display:flex;gap:8px;flex-wrap:wrap}
+.router-input{min-height:44px;width:9.5rem;padding:10px 14px;border:1px solid var(--lysgraa);border-radius:var(--radius-sm);font:var(--body)/1.2 var(--body-font-family);color:var(--color-fg);background:#fff}
+.router-input:focus-visible{outline:2px solid var(--sol);outline-offset:2px;border-color:var(--vann)}
+.router-all{grid-area:all}.router-all summary{list-style:none;justify-self:start}.router-all summary::-webkit-details-marker{display:none}.router-all[open] summary svg{transform:rotate(180deg)}
+.bank-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px 24px;padding:8px 0 20px}
+.bank-list li{padding:10px 0;border-top:1px solid rgba(255,255,255,.35);min-width:0;overflow-wrap:anywhere}.bank-list a{color:#fff;text-decoration:none;font-family:var(--title-font-family)}.bank-list a:hover{text-decoration:underline}.bank-list strong{display:block;font-size:var(--lead)}.bank-tagline{display:block;font-size:var(--body-sm);opacity:.9}
+.router-art{grid-area:art;align-self:center;justify-self:end;width:100%;max-width:520px;height:auto;aspect-ratio:1250/368;max-height:150px;object-fit:contain;object-position:right center}
+/* back link */
+.backlink{display:inline-flex;align-items:center;gap:4px;font-size:var(--body-sm);text-decoration:none;min-height:44px}.backlink svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+/* cards */
+.card{position:relative;display:grid;gap:12px;padding:var(--spacing-lg);background:var(--sand-30);border-radius:var(--radius);transition:box-shadow var(--dur) var(--ease),transform var(--dur) var(--ease)}
+.card.frost{background:var(--frost-30)}.card.plain{background:#fff;border:1px solid var(--lysgraa)}
+.card:hover,.card:focus-within{box-shadow:var(--shadow-lift)}
+.card .card-title a{color:var(--fjell);text-decoration:none}.card .card-title a::after{content:"";position:absolute;inset:0;border-radius:inherit}.card:hover .card-title a{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.15em}
+.card .meta{display:flex;flex-wrap:wrap;gap:4px 12px;color:var(--koksgraa);font-size:var(--label);font-family:var(--title-font-family);letter-spacing:.01em}
+.photo{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;background:var(--frost-30);border-radius:var(--radius-img) 0 var(--radius-img) 0}
+.photo-sm{border-radius:var(--radius-img-sm) 0 var(--radius-img-sm) 0}
+.illu{width:72px;height:72px;object-fit:contain}
+.promo-illu{height:auto}
+/* footer */
+footer[data-canon]{margin-top:0}
+.contact{padding-block:var(--section-padding);border-top:1px solid var(--lysgraa)}
+.contact-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px;margin-bottom:var(--spacing-lg)}
+.channels{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.channel details{border-radius:var(--radius)}.channel summary{list-style:none;display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:16px;border-radius:var(--radius);cursor:pointer;transition:background-color var(--dur) var(--ease)}.channel summary::-webkit-details-marker{display:none}
+.channel summary{position:relative;padding-right:16px}.channel .ch-text{display:grid;grid-template-columns:auto 22px;column-gap:6px;align-items:center}.channel .ch-name{grid-column:1}.channel .ch-text>svg{grid-column:2;width:22px;height:22px;fill:none;stroke:var(--vann);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform var(--dur) var(--ease)}.channel details[open] .ch-text>svg{transform:rotate(180deg)}.channel .ch-sub{grid-column:1/-1}.channel summary:hover{background:var(--frost-30)}.channel summary:hover .ch-name{text-decoration:underline}.channel summary>svg{position:absolute;left:0;top:0;width:0;height:0;opacity:0;fill:none;stroke:var(--vann);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform var(--dur) var(--ease)}.channel details[open] summary>svg{transform:rotate(180deg)}
+.icon-circle{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:var(--vann);color:#fff}.icon-circle svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.ch-text{display:grid}.ch-name{font-family:var(--title-font-family);color:var(--fjell);font-size:var(--lead)}.ch-sub{font-size:var(--body-sm);color:var(--koksgraa)}
+.channel .panel{grid-column:1/-1;padding:16px 16px 8px}
+.channel details[open]{grid-column:1/-1;background:var(--sand-30)}.channel details[open] summary{background:transparent}
+.channels{grid-auto-flow:row dense}
+.panel-title{font-family:var(--title-font-family);font-size:var(--lead);color:var(--fjell)}.panel-title .num{font-family:var(--body-font-family)}
+.bank-numbers{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px 32px;margin-top:16px}
+.bank-numbers li{border-top:1px solid var(--lysgraa);padding-top:12px}.bank-name{font-family:var(--title-font-family);color:var(--fjell);text-decoration:none}.bank-name:hover{text-decoration:underline}
+.bank-numbers dl{margin:8px 0 0;display:grid;gap:6px}.bank-numbers dt{display:inline;font-family:var(--title-font-family)}.bank-numbers dd{display:inline;margin:0}.bank-numbers dl>div{display:flex;flex-wrap:wrap;gap:4px 8px}
+.bank-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px 24px}.bank-links li{padding:10px 0;border-top:1px solid var(--lysgraa)}
+.office-search{display:grid;gap:4px;max-width:420px}
+.footer-main{background:var(--fjell);color:#fff;padding-block:var(--section-padding)}
+.footer-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.footer-col h2{color:#fff;font-family:var(--title-font-family);font-size:var(--title);margin-bottom:12px}
+.footer-col li{padding:0}.footer-col a{display:inline-flex;align-items:center;min-height:44px}.footer-col a.with-icon{gap:8px}.footer-col a.with-icon img{width:20px;height:20px}.footer-col a{color:#fff;text-decoration:none}.footer-col a:hover{text-decoration:underline;color:#fff}.footer-col a:visited{color:#fff}
+.footer-legal{background:var(--natt);color:#fff;padding-block:24px;font-size:var(--body-sm)}
+.footer-legal-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px}
+.small-links{display:flex;flex-wrap:wrap;gap:0 24px}.small-links a{display:inline-flex;align-items:center;min-height:44px;color:#fff;text-decoration:none}.small-links a:hover{text-decoration:underline;color:#fff}.small-links a:visited{color:#fff}
+.address{opacity:.9}
+/* generic modules */
+.faq details{border-top:1px solid var(--lysgraa)}.faq details:last-of-type{border-bottom:1px solid var(--lysgraa)}
+.faq summary{list-style:none;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:20px 0;cursor:pointer;font-family:var(--title-font-family);font-size:var(--title);line-height:1.25;color:var(--fjell)}.faq summary::-webkit-details-marker{display:none}
+.faq summary svg{flex:0 0 auto;width:24px;height:24px;margin-top:4px;fill:none;stroke:var(--vann);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform var(--dur) var(--ease)}.faq details[open] summary svg{transform:rotate(180deg)}
+.faq .answer{padding:0 0 24px;max-width:68ch}
+.feedback{border-top:1px solid var(--lysgraa);padding-block:var(--spacing-xl)}.feedback-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px}.feedback h2{font-family:var(--title-font-family);font-size:var(--title)}
+.feedback .btn svg{width:22px;height:22px}
+.callout{display:flex;gap:16px;padding:20px 24px;background:var(--sand-30);border-radius:var(--radius);max-width:68ch}.callout svg{flex:0 0 auto;width:28px;height:28px;fill:none;stroke:var(--sol);stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}.callout.info{background:var(--frost-30)}.callout.info svg{stroke:var(--vann)}
+.cta-band{display:grid;gap:12px;max-width:68ch}
+@media (max-width:1279px){.router-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 32%}}
+@media (max-width:1023px){
+  .ds-nav-burger{margin-left:auto}
+  .router-grid{grid-template-columns:1fr 1fr;grid-template-areas:"text all" "form form" "art art";row-gap:8px;padding-block:16px 0;min-height:0}.router-all{justify-self:end;align-self:center}.router-all[open]{grid-column:1/-1;justify-self:stretch}.router-all[open] summary{width:max-content;margin-left:auto}.router-art{max-width:none;max-height:none;aspect-ratio:auto;justify-self:stretch;height:56px;width:100%;object-fit:cover;object-position:50% 60%;margin-top:8px}
+  .channels{grid-template-columns:repeat(3,minmax(0,1fr))}.footer-cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:1023px){
+  .hdr-main-row{gap:12px;min-height:60px}
+  .ds-nav-burger{display:inline-flex;align-items:center;gap:8px;cursor:pointer;min-height:40px;padding:8px 12px;font:var(--body-sm)/1 var(--body-font-family);color:var(--fjell);background:transparent;border:1px solid var(--fjell);border-radius:var(--radius-pill);user-select:none}
+  .ds-nav-burger-icon{width:16px;height:12px;position:relative}.ds-nav-burger-icon::before,.ds-nav-burger-icon::after{content:"";position:absolute;left:0;right:0;height:2px;background:currentColor}.ds-nav-burger-icon::before{top:0}.ds-nav-burger-icon::after{bottom:0}
+  .ds-nav{position:absolute;top:100%;left:calc(-1*var(--gutter));right:calc(-1*var(--gutter));flex-direction:column;align-items:stretch;gap:0;padding:8px var(--gutter) 24px;background:#fff;border-top:1px solid var(--lysgraa);border-bottom:1px solid var(--lysgraa);transform:translateY(-8px);opacity:0;visibility:hidden;pointer-events:none;transition:transform var(--dur) var(--ease),opacity var(--dur) var(--ease),visibility 0s linear var(--dur)}
+  .ds-nav .market{display:block}.ds-nav .market a{display:flex;min-height:48px;border-bottom:1px solid var(--lysgraa);font-size:var(--lead)}.ds-nav .market a.is-active{border-bottom:1px solid var(--lysgraa);color:var(--vann)}
+  .nav-extra{display:none}
+  @media (max-width:640px){.nav-extra{display:grid;gap:12px;padding-top:16px}}.audience-mobile{gap:8px}.nav-extra-actions{display:flex;flex-wrap:wrap;gap:8px}
+  .ds-nav-toggle:checked ~ .ds-nav{transform:translateY(0);opacity:1;visibility:visible;pointer-events:auto;transition:transform var(--dur) var(--ease),opacity var(--dur) var(--ease),visibility 0s linear 0s}
+}
+@media (max-width:640px){
+  .hdr-utility{display:none}.hdr-mobile-actions{display:flex}.logo,.logo-svg{width:118px}
+  .router-grid{grid-template-columns:1fr;grid-template-areas:"text" "all" "form" "art";row-gap:0;padding-top:10px}.router-all{justify-self:start;align-self:auto}.router-all summary{min-height:38px;padding-block:4px}.router-text{align-self:auto}.router-lede{margin-top:0}.router-label{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%)}.router-form{position:relative}.router-input{width:9rem}.router-art{height:32px;margin-top:6px}.router-heading{font-size:var(--lead)}
+  .channels{grid-template-columns:1fr 1fr}.channel summary{padding:12px}.icon-circle{width:48px;height:48px}
+  .footer-cols{grid-template-columns:1fr}
+}
+@media (max-width:400px){.channels{grid-template-columns:1fr}}
+
+
+.campaign-grid{display:grid;grid-template-columns:7fr 5fr;gap:var(--spacing-xl);align-items:center}
+.campaign-media{margin:0}.campaign-text{display:grid;gap:var(--spacing-md);max-width:34rem}
+.campaign-text .display{max-width:12ch}.campaign-cta{margin-top:var(--spacing-sm)}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--spacing-xl) var(--spacing-lg)}
+.tile{display:grid;gap:var(--spacing-md);align-content:start;padding-top:var(--spacing-lg);border-top:1px solid var(--lysgraa)}
+.tile-title{font-size:var(--t-title)}.tile-title a{color:var(--fjell);text-decoration:none}.tile-title a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.12em}
+.tile-links{display:grid;gap:var(--spacing-sm)}.tile-links a{text-decoration:none}.tile-links a:hover{text-decoration:underline}
+.promo-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-lg)}
+.promo{display:grid;grid-template-columns:auto 1fr;gap:var(--spacing-lg);align-items:center;padding:0 var(--spacing-xl) 0 0}.promo+.promo{border-left:1px solid var(--lysgraa);padding:0 0 0 var(--spacing-xl)}
+.promo:not(:has(.promo-illu)){grid-template-columns:1fr}
+.promo-illu{width:140px;height:auto}.promo-text{display:grid;gap:var(--spacing-sm)}.promo-text .btn{margin-top:var(--spacing-xs)}
+.section-title{margin-bottom:var(--spacing-lg)}
+.news-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--spacing-lg)}
+.news-card{padding:0;background:transparent;border-radius:0}.news-card:hover,.news-card:focus-within{box-shadow:none}.news-card .photo{margin-bottom:8px}
+.index{border-top:1px solid var(--lysgraa)}.index-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-xl)}
+.index-col{display:grid;gap:var(--spacing-md);align-content:start}.index-label{color:var(--koksgraa)}
+.index-links{display:grid;gap:var(--spacing-sm)}.index-links a{font-family:var(--title-font-family);font-size:var(--lead);text-decoration:none;color:var(--fjell)}.index-links a:hover{color:var(--vann);text-decoration:underline}
+.compare{padding-top:0}
+.link-more svg{width:16px;height:16px;margin-left:2px;vertical-align:-2px;display:inline-block}
+@media (max-width:1023px){.campaign-grid{grid-template-columns:1fr;gap:var(--spacing-lg)}.campaign-text{max-width:none}.tiles{grid-template-columns:1fr 1fr}.news-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.tiles{grid-template-columns:1fr;gap:var(--spacing-lg)}.tile{grid-template-columns:56px 1fr;grid-template-areas:"illu title" "links links";gap:8px 16px;align-items:center;padding-top:var(--spacing-md)}.tile .illu{grid-area:illu;width:56px;height:56px}.tile-title{grid-area:title}.tile-links{grid-area:links}.promo-grid{grid-template-columns:1fr;gap:var(--spacing-lg)}.promo{grid-template-columns:1fr;padding:0}.promo+.promo{border-left:0;border-top:1px solid var(--lysgraa);padding:var(--spacing-lg) 0 0}.promo-illu{width:110px}.news-grid{grid-template-columns:1fr}.index-grid{grid-template-columns:1fr}}
+
+</style>
+<link rel="canonical" href="https://www.sparebank1.no/nb/bank/privat.html">
+<meta property="og:site_name" content="SpareBank 1">
+<meta property="og:locale" content="nb-NO">
+<meta property="og:title" content="Privat">
+<meta property="og:description" content="Prøv Norges beste og mest personlige mobilbank. Du er også velkommen til å chatte eller ringe og få hjelp av flinke folk hos oss når du trenger det.">
+<meta property="og:image" content="https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index,follow">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"SpareBank 1","url":"https://www.sparebank1.no/","logo":"https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg"}</script>
+</head>
+<body data-template="landing">
+<nav class="skip" aria-label="Hurtiglenker"><a href="#main-menu">Til hovedmeny</a><a href="#main-content">Til hovedinnhold</a></nav>
+<header data-section="header" data-intent="site navigation, audience switch, one action" data-layout="contained" data-canon data-nav-collapse="hamburger">
+  <div class="hdr-utility">
+    <div class="container hdr-utility-row">
+      <nav class="audience" aria-label="Målgruppe"><ul><li><a href="./privat.html" aria-current="page" class="is-active">Privat</a></li><li><a href="./bedrift.html">Bedrift</a></li><li><a href="./om-oss.html">Om oss</a></li></ul></nav>
+      <div class="hdr-actions">
+        <a class="btn-icon" href="?search="><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg><span>Søk</span></a>
+        <a class="btn btn-secondary btn-sm" href="./privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat">Bli kunde</a>
+        <a class="btn btn-action btn-sm" href="https://login.sparebank1.no/" data-slot="login">Logg inn</a>
+      </div>
+    </div>
+  </div>
+  <div class="hdr-main">
+    <div class="container hdr-main-row">
+      <a class="logo" href="./privat.html"><svg version="1.1" id="SpareBank_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 viewBox="0 0 281.633 78.197"
+	 class="logo-svg" role="img" aria-label="Tilbake til forsiden for privat for - SpareBank 1" focusable="false">
+<g>
+	<rect x="0.009" y="0.011" fill="none" width="281.633" height="78.208"/>
+	<g>
+		<g>
+			<path fill="#002776" d="M27.867,54.834c-5.129,0-9.193-1.184-9.943-1.42c-0.395-0.158-0.592-0.474-0.592-0.828v-0.197
+				l0.513-2.605c0.079-0.394,0.355-0.513,0.67-0.513c0.079,0,0.158,0,0.276,0.039c0.829,0.158,4.853,1.303,8.641,1.303
+				c3.235,0,6.116-0.947,6.116-4.301c0-3.393-2.959-3.748-6.786-4.301c-4.261-0.632-9.746-1.775-9.746-8.483
+				c0-6.904,5.129-8.72,11.205-8.72c4.617,0,8.444,1.105,9.311,1.342c0.474,0.118,0.711,0.434,0.711,0.829v0.197l-0.552,2.564
+				c-0.04,0.276-0.316,0.552-0.631,0.552c-0.04,0-0.079-0.039-0.119-0.039c-1.894-0.395-4.814-1.184-8.286-1.184
+				c-2.919,0-5.997,0.553-5.997,3.867c0,3.275,3.314,3.749,6.826,4.261c4.616,0.71,9.864,1.381,9.864,8.72
+				C39.348,52.822,33.746,54.834,27.867,54.834z"/>
+			<path fill="#002776" d="M77.998,54.361c-1.381,0.315-3.275,0.552-5.484,0.552c-4.261,0-9.509-0.434-9.509-6.707
+				c0-5.09,3.196-5.642,6.352-6.155l7.023-1.144v-1.262c0-1.105-0.119-1.894-1.105-2.328c-0.631-0.276-1.578-0.395-2.998-0.395
+				c-2.683,0-5.603,0.789-6.786,1.104c-0.119,0-0.197,0.04-0.276,0.04c-0.197,0-0.395-0.079-0.434-0.355l-0.552-2.446v-0.158
+				c0-0.355,0.276-0.513,0.474-0.592c0.947-0.355,4.577-1.341,8.601-1.341c2.801,0,4.695,0.395,5.958,1.105
+				c2.012,1.104,2.407,2.959,2.407,5.089v10.89C81.668,53.217,80.681,53.73,77.998,54.361z M76.381,44.34l-4.893,0.789
+				c-1.618,0.236-3.117,0.473-3.117,3.037c0,3.078,2.486,3.314,4.38,3.314c1.539,0,2.801-0.275,3.63-0.553V44.34z"/>
+			<path fill="#002776" d="M95.744,37.237c-2.407,0-4.459,0.237-5.563,0.513v16.059c0,0.355-0.237,0.592-0.592,0.592h-4.024
+				c-0.237,0-0.671-0.236-0.671-0.592V36.764c0-1.539,0.907-2.012,2.801-2.564c1.736-0.552,4.538-0.947,6.786-0.986h0.671
+				c0.552,0,0.552,0,0.829,0.118c0.158,0.079,0.355,0.237,0.355,0.631v2.564C96.336,36.922,96.297,37.237,95.744,37.237z"/>
+			<path fill="#002776" d="M116.395,45.563c0,0.434-0.237,0.907-0.829,0.907h-13.217c0,1.815,0.513,2.802,1.578,3.63
+				c1.026,0.828,2.525,1.184,4.656,1.184c2.446,0,4.3-0.592,5.523-0.947c0.079-0.039,0.119-0.039,0.197-0.039
+				c0.237,0,0.434,0.158,0.553,0.553l0.513,2.012c0,0.039,0.04,0.119,0.04,0.197c0,0.316-0.197,0.474-0.474,0.592
+				c-1.341,0.553-4.025,1.263-7.141,1.263c-7.733,0-10.771-3.038-10.771-10.771c0-7.418,2.052-10.969,9.746-10.969
+				c3.985,0,6.431,1.026,7.851,2.92c1.341,1.775,1.775,4.3,1.775,7.575V45.563z M110.832,39.684c-0.513-2.17-1.697-2.88-4.024-2.88
+				c-2.644,0-3.749,0.789-4.183,2.762c-0.276,1.105-0.276,2.249-0.315,3.551l8.838-0.04
+				C111.148,41.815,111.108,40.749,110.832,39.684z"/>
+			<path fill="#002776" d="M161.279,54.361c-1.381,0.315-3.275,0.552-5.484,0.552c-4.262,0-9.509-0.434-9.509-6.707
+				c0-5.09,3.196-5.642,6.353-6.155l7.023-1.144v-1.262c0-1.105-0.119-1.894-1.105-2.328c-0.631-0.276-1.578-0.395-2.998-0.395
+				c-2.684,0-5.604,0.789-6.787,1.104c-0.118,0-0.197,0.04-0.275,0.04c-0.197,0-0.395-0.079-0.435-0.355l-0.552-2.446v-0.158
+				c0-0.355,0.275-0.513,0.473-0.592c0.947-0.355,4.577-1.341,8.602-1.341c2.801,0,4.695,0.395,5.958,1.105
+				c2.013,1.104,2.407,2.959,2.407,5.089v10.89C164.949,53.217,163.962,53.73,161.279,54.361z M159.662,44.34l-4.893,0.789
+				c-1.618,0.236-3.117,0.473-3.117,3.037c0,3.078,2.485,3.314,4.379,3.314c1.539,0,2.802-0.275,3.631-0.553V44.34z"/>
+			<path fill="#002776" d="M186.049,54.401h-4.064c-0.355,0-0.631-0.236-0.631-0.592V39.881c0-2.289-0.868-3.078-2.959-3.078
+				c-2.367,0-4.932,0.671-4.932,0.671v16.334c0,0.355-0.237,0.592-0.592,0.592h-4.025c-0.395,0-0.67-0.236-0.67-0.592V36.803
+				c0-1.499,0.749-2.012,2.959-2.604c2.012-0.552,5.326-1.026,7.852-1.026c4.932,0,7.654,1.263,7.654,5.997v14.638
+				C186.641,54.164,186.404,54.401,186.049,54.401z"/>
+			<path fill="#002776" d="M208.928,54.045c0,0.158-0.157,0.355-0.395,0.355h-5.287c-0.197,0-0.395,0-0.592-0.236l-6.115-8.326
+				h-1.342v7.971c0,0.355-0.197,0.592-0.592,0.592h-4.064c-0.354,0-0.632-0.236-0.632-0.592v-27.58c0-0.473,0.197-0.71,0.672-0.828
+				l3.865-0.671h0.158c0.355,0,0.592,0.237,0.592,0.671v16.886h1.342l6.234-8.325c0.157-0.237,0.316-0.276,0.513-0.276l4.814,0.118
+				c0.276,0,0.395,0.197,0.395,0.355c0,0.079-0.039,0.119-0.079,0.197l-7.457,9.391l7.892,10.1
+				C208.889,53.888,208.928,53.967,208.928,54.045z"/>
+			<path fill="#002776" d="M47.492,50.811"/>
+			<path fill="#002776" d="M52.739,33.174c-2.644,0-5.682,0.434-8.049,1.263c-1.776,0.552-2.486,1.144-2.486,3.196v24.423
+				c0,0.395,0.309,0.717,0.878,0.615c0.569-0.103,3.738-0.688,3.738-0.688c0.474-0.079,0.671-0.315,0.671-0.789v-6.879
+				c1.401,0.341,3.166,0.6,5.129,0.6c7.339,0,8.72-4.616,8.72-10.851C61.34,37.79,60.354,33.174,52.739,33.174z M51.24,51.283
+				c-2.13,0-3.748-0.473-3.748-0.473V37.514c0,0,2.328-0.631,4.143-0.631c2.999,0,4.301,0.67,4.301,7.063
+				C55.935,49.942,54.83,51.283,51.24,51.283z"/>
+			<path fill="#002776" d="M133.736,54.401h-13.139c-0.355,0-0.671-0.276-0.671-0.631V25.874c0-0.355,0.315-0.631,0.671-0.631
+				h13.178c6.671,0,9.39,2.616,9.39,7.354c0,4.182-2.323,5.679-5.918,6.708c3.991,0.658,6.905,2.825,6.905,7.48
+				C144.152,52.072,140.443,54.401,133.736,54.401z M133.222,29.307h-7.615v8.443l7.339-0.315c2.999-0.118,4.537-1.184,4.537-4.182
+				C137.484,30.49,136.142,29.307,133.222,29.307z M133.025,41.577l-7.417-0.236v8.995h7.417c3.985,0,5.287-1.735,5.287-4.143
+				C138.312,42.959,137.247,41.695,133.025,41.577z"/>
+		</g>
+		<g>
+			<path fill="#E60000" d="M242.543,11.35c-2.933,0-5.757,0.458-8.411,1.301c11.169-2.423,22.239,2.178,26.227,11.601
+				c4.609,10.892-1.989,24.096-14.737,29.491c-11.436,4.839-23.931,1.747-29.711-6.802c3.381,11.517,14.021,19.929,26.632,19.929
+				c15.331,0,27.76-12.428,27.76-27.76S257.874,11.35,242.543,11.35z"/>
+			<path fill="#AF0000" d="M245.622,53.743c12.749-5.395,19.347-18.598,14.737-29.491c-3.988-9.424-15.059-14.024-26.227-11.601
+				c-11.219,3.563-19.349,14.06-19.349,26.459c0,2.72,0.398,5.347,1.128,7.831C221.691,55.49,234.186,58.582,245.622,53.743z"/>
+			<g>
+				<path fill="#FFFFFF" d="M249.659,51.655V23.152c0-0.566-0.462-1.027-1.029-1.027h-6.454c-0.461,0-0.72,0.102-1.132,0.257
+					l-8.328,4.287c-0.513,0.207-0.719,0.514-0.719,1.029v4.671c0,0.549,0.445,0.992,0.993,0.992h5.33v22.409
+					c2.433-0.338,4.891-1.006,7.302-2.027C247.047,53.14,248.395,52.439,249.659,51.655z"/>
+				<path fill="none" d="M239.347,60.319h9.283c0.567,0,1.029-0.465,1.029-1.029v-7.635c-1.264,0.784-2.612,1.485-4.037,2.087
+					c-2.411,1.02-4.87,1.688-7.302,2.027v3.521C238.32,59.855,238.784,60.319,239.347,60.319z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg></a>
+      <div class="hdr-mobile-actions"><a class="btn btn-action btn-sm" href="https://login.sparebank1.no/">Logg inn</a></div>
+      <input type="checkbox" id="ds-nav-toggle" class="ds-nav-toggle" tabindex="-1" aria-hidden="true">
+      <label class="ds-nav-burger" for="ds-nav-toggle" role="button" tabindex="0" aria-controls="main-menu" aria-expanded="false"><span class="ds-nav-burger-icon" aria-hidden="true"></span><span class="ds-nav-burger-label">Meny</span></label>
+      <nav id="main-menu" class="ds-nav" aria-label="Hovedmeny">
+        <ul class="market"><li><a href="./privat/daglig-bruk.html">Daglig bruk</a></li><li><a href="./privat/lan.html">Låne</a></li><li><a href="./privat/sparing.html">Spare</a></li><li><a href="./privat/pensjon.html">Pensjon</a></li><li><a href="./privat/forsikring.html">Forsikring</a></li><li><a href="./privat/eiendom.html">Eiendom</a></li><li><a href="./privat/tips-og-rad.html">Tips og råd</a></li><li><a href="./privat/kundeservice.html">Kundeservice</a></li><li><a href="./privat/lofavor.html">LOfavør-fordeler</a></li></ul>
+        <div class="nav-extra">
+          <ul class="audience-mobile" aria-label="Målgruppe"><li><a href="./privat.html" aria-current="page" class="is-active">Privat</a></li><li><a href="./bedrift.html">Bedrift</a></li><li><a href="./om-oss.html">Om oss</a></li></ul>
+          <div class="nav-extra-actions"><a class="btn-icon" href="?search="><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg><span>Søk</span></a><a class="btn btn-secondary btn-sm" href="./privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat">Bli kunde</a></div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<aside class="router" data-section="bank-router" data-intent="route the visitor to a regional bank" data-layout="contained" data-module="bank-router" data-canon aria-label="Vi er flere banker i hele Norge">
+  <div class="container router-grid">
+    <div class="router-text">
+      <p class="router-heading" data-slot="heading">Vi er flere banker i hele Norge</p>
+      <p class="router-lede" data-slot="lede">Velg en bank for å se betingelser</p>
+    </div>
+    <form class="router-form" action="#alle-banker" method="get">
+      <label class="router-label" for="postnummer-input" data-slot="postcode-label">Ditt postnummer</label>
+      <div class="router-controls">
+        <input class="router-input" id="postnummer-input" name="postnummer" type="text" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="postal-code" placeholder="Postnummer">
+        <button class="btn btn-secondary btn-on-vann" type="submit" data-slot="cta-location"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-6-5.4-6-11a6 6 0 1 1 12 0c0 5.6-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg><span>Bruk min posisjon</span></button>
+      </div>
+    </form>
+    <details class="router-all" id="alle-banker">
+      <summary class="btn-inline btn-on-vann" data-slot="cta-all-banks">Se alle banker<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <ol class="bank-list" data-slot="banks"><li><a href="https://www.sparebank1.no/nb/gudbrandsdal/privat.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Gudbrandsdal</strong></a><span class="bank-tagline">Skaper verdier for kunder og lokalsamfunn.</span></li><li><a href="https://www.sparebank1.no/nb/hallingdal/privat.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Hallingdal Valdres</strong></a><span class="bank-tagline">Fjellstøtt gjennom livet.</span></li><li><a href="https://www.sparebank1.no/nb/helgeland/privat.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Helgeland</strong></a><span class="bank-tagline">En drivkraft for vekst på Helgeland.</span></li><li><a href="https://www.sparebank1.no/nb/lom-skjaak/privat.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Lom og Skjåk</strong></a><span class="bank-tagline">Lokalbanken din – der du er.</span></li><li><a href="https://www.sparebank1.no/nb/nord-norge/privat.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Nord-Norge</strong></a><span class="bank-tagline">For Nord-Norge.</span></li><li><a href="https://www.sparebank1.no/nb/nordmore/privat.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Nordmøre</strong></a><span class="bank-tagline">Tett på kundenes behov.</span></li><li><a href="https://www.sparebank1.no/nb/ringerike-hadeland/privat.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Ringerike Hadeland</strong></a><span class="bank-tagline">Stolt støttespiller til lokalsamfunnet.</span></li><li><a href="https://www.sparebank1.no/nb/smn/privat.html" data-broken-link="true" translate="no">SpareBank 1 <strong>SMN</strong></a><span class="bank-tagline">Sammen får vi ting til å skje.</span></li><li><a href="https://www.sparebank1.no/nn/sogn-fjordane/privat.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Sogn og Fjordane</strong></a><span class="bank-tagline">Vi er med heile vegen.</span></li><li><a href="https://www.sparebank1.no/nb/sor-norge/privat.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Sør-Norge</strong></a><span class="bank-tagline">Hjelper driftige folk og bedrifter dit de vil.</span></li><li><a href="https://www.sparebank1.no/nb/ostfold-akershus/privat.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Østfold Akershus</strong></a><span class="bank-tagline">Sammen får vi ting til å skje.</span></li><li><a href="https://www.sparebank1.no/nb/ostlandet/privat.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Østlandet</strong></a><span class="bank-tagline">Banken med kundeutbytte.</span></li></ol>
+    </details>
+    <img class="router-art" src="https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/bankchoice_bg.svg" alt="" aria-hidden="true" width="1250" height="368" loading="eager" fetchpriority="high" decoding="async">
+  </div>
+</aside>
+<main id="main-content" tabindex="-1">
+
+<h1 class="visually-hidden">Privat</h1>
+<section class="movement paper-syrin campaign" data-section="campaign" data-intent="one offer, one action" data-layout="split-media" data-media="image" data-module="campaign-carousel" data-items="1">
+  <div class="container campaign-grid">
+    <figure class="campaign-media" data-slot="image"><img class="photo" src="https://www.sparebank1.no/content/dam/SB1/kampanjer/refinansiering/Refinansiering_Hand_med_skjerm.jpg.thumb.1280.1280.jpg" alt="" width="1280" height="853" loading="eager" fetchpriority="high" decoding="async"></figure>
+    <div class="campaign-text">
+      <h2 class="display" data-slot="heading">Se hva du kan spare!</h2>
+      <p class="lead" data-slot="text">Refinansier forbrukslån og kredittkortgjeld.</p>
+      <p class="small num muted">Priseks.: Eff.rente 14,7 %, 150.000 kr. o/5 år, kostnad: 58.602 kr. Totalt: 208.602 kr .</p>
+      <p class="campaign-cta"><a class="btn btn-action" data-cta="primary" data-slot="cta" href="https://www.sparebank1.no/nb/bank/privat/lan/refinansiering/refinansiere-forbrukslan.html?icid=forside;;refinansiering;;hovedbanner;;sb1u_refinansiering_spare;;privat" data-broken-link="true">Se hva du kan spare</a></p>
+    </div>
+  </div>
+</section>
+<section class="movement products" data-section="products" data-intent="route to product areas" data-layout="grid" data-items="6" data-module="content-columns">
+  <div class="container"><ul class="tiles"><li class="tile"><img class="illu" src="https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2024/hus-rosa-tre.svg" alt="" aria-hidden="true" width="72" height="72" loading="lazy" decoding="async"><h2 class="tile-title"><a href="./privat/lan/boliglan.html">Boliglån</a></h2><ul class="tile-links"><li><a href="https://www.sparebank1.no/nb/bank/privat/lan/lanekalkulator/boliglanskalkulator.html" data-broken-link="true">Boliglånskalkulator</a></li><li><a href="https://www.sparebank1.no/nb/bank/privat/lan/boliglan/boliglan-for-unge.html" data-broken-link="true">Boliglån for unge</a></li><li><a href="https://www.sparebank1.no/nb/bank/privat/lan/boliglan/finansieringsbevis.html" data-broken-link="true">Finansieringsbevis til bolig</a></li></ul></li><li class="tile"><img class="illu" src="https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2024/kort-bla.svg" alt="" aria-hidden="true" width="72" height="72" loading="lazy" decoding="async"><h2 class="tile-title"><a href="./privat/daglig-bruk.html">Daglig Bruk</a></h2><ul class="tile-links"><li><a href="./privat/daglig-bruk/mobilbank.html">Norges beste mobilbank</a></li><li><a href="https://www.sparebank1.no/nb/bank/privat/daglig-bruk/mobilbank/mobilbank-for-barn.html" data-broken-link="true">Spink – mobilbank for barn</a></li><li><a href="./privat/daglig-bruk/bankkort.html">Kort</a></li></ul></li><li class="tile"><img class="illu" src="https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2024/sparegris-bla-rosa.svg" alt="" aria-hidden="true" width="72" height="72" loading="lazy" decoding="async"><h2 class="tile-title"><a href="./privat/sparing.html">Spare</a></h2><ul class="tile-links"><li><a href="https://www.sparebank1.no/nb/bank/privat/sparing/hvordan-spare.html" data-broken-link="true">Få sparetips tilpasset deg</a></li><li><a href="https://www.sparebank1.no/nb/bank/privat/sparing/spare-pa-konto/bsu.html" data-broken-link="true">BSU - Boligsparing for ungdom</a></li><li><a href="./privat/pensjon.html">Pensjon</a></li></ul></li><li class="tile"><img class="illu" src="https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2024/snubledame-banan.svg" alt="" aria-hidden="true" width="72" height="72" loading="lazy" decoding="async"><h2 class="tile-title"><a href="./privat/forsikring.html">Forsikring</a></h2><ul class="tile-links"><li><a href="./privat/forsikring/bilforsikring.html">Bilforsikring</a></li><li><a href="https://www.sparebank1.no/nb/bank/privat/forsikring/forsikringskalkulator.html" data-broken-link="true">Forsikringskalkulator</a></li><li><a href="./privat/forsikring/meld-skade.html">Meld skade</a></li></ul></li><li class="tile"><img class="illu" src="https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2024/bil-bla.svg" alt="" aria-hidden="true" width="72" height="72" loading="lazy" decoding="async"><h2 class="tile-title"><a href="./privat/lan/billan.html">Billån</a></h2><ul class="tile-links"><li><a href="https://www.sparebank1.no/nb/bank/privat/lan/billan/billan-for-unge.html" data-broken-link="true">Billån for unge</a></li><li><a href="https://www.sparebank1.no/nb/bank/privat/lan/mc-lan.html" data-broken-link="true">Lån til motorsykkel</a></li><li><a href="https://www.sparebank1.no/nb/bank/privat/lan/batlan.html" data-broken-link="true">Båtlån</a></li></ul></li><li class="tile"><img class="illu" src="https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2024/snakkebobler-lys-bakgrunn.svg" alt="" aria-hidden="true" width="72" height="72" loading="lazy" decoding="async"><h2 class="tile-title"><a href="./privat/kundeservice.html">Kundeservice</a></h2><ul class="tile-links"><li><a href="./privat/kundeservice/verktoy/iban-og-swift.html">IBAN OG BIC (SWIFT)</a></li><li><a href="https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy.html" data-broken-link="true">Verktøy</a></li><li><a href="https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/e-signering.html" data-broken-link="true">Elektronisk signering</a></li></ul></li></ul></div>
+</section>
+<section class="movement paper-sand membership" data-section="membership" data-intent="invite: switch bank, LO membership" data-layout="grid" data-items="2" data-module="promo-band">
+  <div class="container promo-grid"><article class="promo" data-module="promo-band"><img class="promo-illu" src="https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/jubelkor-lys-bakgrunn.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="160" height="120"><div class="promo-text"><h2 class="title-sm">Bytte bank til oss?</h2><p>Det er mye lettere enn du tror, og vi hjelper deg hele veien.</p><p><a class="btn btn-secondary" href="https://www.sparebank1.no/nb/bank/privat/kundeservice/bytte-bank.html?icid=forside;;bankbytte;;bannersmall;;sb1u_velkommen;;privat" data-broken-link="true">Les mer om bankbytte</a></p></div></article><article class="promo" data-module="promo-band"><img class="promo-illu" src="https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/LOlogo.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="160" height="120"><div class="promo-text"><h2 class="title-sm">Er du medlem i et LO-forbund?</h2><p>Da får du ekstra gode betingelser på blant annet lån, forsikring og eiendomsmegling.</p><p><a class="btn btn-secondary" href="./privat/lofavor.html?icid=forside;;lofavor;;underprodinng;;sb1u_beigestripe;;privat">Sjekk dine medlemsfordeler</a></p></div></article></div>
+</section>
+<section class="movement news" data-section="news" data-intent="cross-link: news and advice" data-layout="grid" data-items="4" data-module="card-rail" data-media="image">
+  <div class="container">
+    <h2 class="section-title" data-slot="heading">Nytt og nyttig</h2>
+    <ul class="news-grid" data-slot="cards"><li class="card news-card"><img class="photo photo-sm" src="https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/venner-pa-fest-mann-smiler.jpg.thumb.768.768.jpg" alt="" width="768" height="512" loading="lazy" decoding="async"><h3 class="card-title title-sm"><a href="https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/na-kan-du-spare-i-fire-nye-sparebank-1-indeksfond.html" data-broken-link="true">Nyhet: Fire nye SpareBank 1-indeksfond</a></h3><p class="meta"><span>Nyheter</span><time class="num">4. september 2026</time></p></li><li class="card news-card"><img class="photo photo-sm" src="https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/Forvaltning-Alexander-Miller-2026.jpg.thumb.768.768.jpg" alt="" width="768" height="512" loading="lazy" decoding="async"><h3 class="card-title title-sm"><a href="https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/markedskommentar-av-alexander-miller-for-august-2026.html" data-broken-link="true">I Heard It Through the Bond Market?</a></h3><p class="meta"><span>Nyheter</span><time class="num">2. september 2026</time></p></li><li class="card news-card"><img class="photo photo-sm" src="https://www.sparebank1.no/content/dam/SB1/foto/temakort/temakort-dodsbo.jpg.thumb.1280.1280.jpg" alt="" width="768" height="512" loading="lazy" decoding="async"><h3 class="card-title title-sm"><a href="https://www.sparebank1.no/nb/bank/privat/tips-og-rad/dodsbo.html" data-broken-link="true">Dødsbo – hva må du tenke på</a></h3><p class="meta"><span>Tips og råd</span></p></li><li class="card news-card"><img class="photo photo-sm" src="https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/dame-med-pc-i-handa.jpg.thumb.1280.1280.jpg" alt="" width="768" height="512" loading="lazy" decoding="async"><h3 class="card-title title-sm"><a href="https://www.sparebank1.no/nb/bank/privat/tips-og-rad/spare-til-pensjon.html" data-broken-link="true">Spare til pensjon – hva bør du tenke på?</a></h3><p class="meta"><span>Tips og råd</span></p></li></ul>
+  </div>
+</section>
+<section class="movement index" data-section="index" data-intent="secondary navigation: about and shortcuts" data-layout="grid" data-items="2" data-module="content-columns">
+  <div class="container index-grid"><div class="index-col"><h2 class="title-sm index-label">OM OSS</h2><ul class="index-links"><li><a href="https://www.sparebank1.no/nb/bank/om-oss/om-banken/om-sparebank-1-alliansen.html" data-broken-link="true">Om SpareBank 1-alliansen</a></li><li><a href="./om-oss/presse.html">Presse</a></li><li><a href="./om-oss/investor.html">Investor</a></li><li><a href="./om-oss/jobb-og-karriere.html">Jobb og karriere</a></li><li><a href="./om-oss/samfunnsansvar.html">Samfunnsansvar</a></li></ul></div><div class="index-col"><h2 class="title-sm index-label">SNARVEIER</h2><ul class="index-links"><li><a href="https://www.sparebank1.no/nb/bank/privat/lan/lanekalkulator/boliglanskalkulator.html" data-broken-link="true">Boliglånskalkulator</a></li><li><a href="./privat/kundeservice/verktoy/valutakalkulator.html">Valutakalkulator</a></li><li><a href="https://www.sparebank1.no/nb/bank/privat/pensjon/pensjonskalkulator.html" data-broken-link="true">Pensjonskalkulator</a></li><li><a href="./privat/kundeservice/verktoy/sparekalkulator.html">Sparekalkulator</a></li><li><a href="https://www.sparebank1.no/nb/bank/privat/forsikring/forsikringskalkulator.html" data-broken-link="true">Forsikringskalkulator</a></li></ul></div></div>
+</section>
+<section class="movement compare" data-section="compare" data-intent="regulatory: compare prices" data-layout="contained" data-module="cta-band">
+  <div class="container"><div class="cta-band"><h2 class="title-sm" data-slot="heading">Sammenlign priser</h2><p data-slot="text"><span class="subtle-text">Du kan sammenligne våre priser med priser fra&#160;andre selskaper på <a href="https://www.finansportalen.no/" target="_blank" rel="noopener" class="link-more" rel="noopener">Finansportalen.no<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></span></p></div></div>
+</section>
+</main>
+<footer data-section="footer" data-intent="contact and site map" data-layout="contained" data-canon>
+  <section class="contact" id="kontakt" data-section="contact-row" data-intent="five contact channels" data-layout="contained" data-module="contact-row" data-items="5">
+    <div class="container">
+      <div class="contact-head"><h2 data-slot="heading">Kontakt oss</h2><p><a href="./privat/kundeservice.html">Gå til kundeservice</a></p></div>
+      <ul class="channels" data-slot="channels"><li class="channel"><details><summary><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.5 3.5h3l1.6 4-2 1.4a10 10 0 0 0 5.9 5.9l1.4-2 4 1.6v3a2 2 0 0 1-2 2A15.5 15.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/></svg></span><span class="ch-text"><span class="ch-name">Ring oss</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg> <span class="ch-sub">7-22 (10-18)</span></span></summary><div class="panel"><div class="panel-top"><h3 class="panel-title">Melde skade <a href="tel:(+47)91502300" class="num">(+47) 915 02300</a></h3><p class="small">Meld skade forsikring (Fremtind)<br>Hverdager 08 - 16</p></div><ul class="bank-numbers"><li><a class="bank-name" href="https://www.sparebank1.no/nb/gudbrandsdal/privat.html" data-broken-link="true">SpareBank 1 Gudbrandsdal</a><dl><div><dt>Privat</dt> <dd><a href="tel:02095" class="num">02095</a> <span class="small">Fra utland: <a href="tel:+47 915 02095">+47 915 02095</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:02095" class="num">02095</a> <span class="small">Fra utland: <a href="tel:+47 91 50 20 95">+47 91 50 20 95</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/hallingdal/privat.html" data-broken-link="true">SpareBank 1 Hallingdal Valdres</a><dl><div><dt>Privat</dt> <dd><a href="tel:03202" class="num">03202</a> <span class="small">Fra utland: <a href="tel:+47 915 03 202">+47 915 03 202</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:03202" class="num">03202</a> <span class="small">Fra utland: <a href="tel:+47 915 03202">+47 915 03202</a> · 7 - 18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/helgeland/privat.html" data-broken-link="true">SpareBank 1 Helgeland</a><dl><div><dt>Privat</dt> <dd><a href="tel:+47 75 11 90 00" class="num">+47 75 11 90 00</a> <span class="small">Fra utland: <a href="tel:+47 75 11 90 00">+47 75 11 90 00</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:+47 75 11 90 00" class="num">+47 75 11 90 00</a> <span class="small">Fra utland: <a href="tel:+47 75 11 90 00">+47 75 11 90 00</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/lom-skjaak/privat.html" data-broken-link="true">SpareBank 1 Lom og Skjåk</a><dl><div><dt>Privat</dt> <dd><a href="tel:61 21 90 00" class="num">61 21 90 00</a> <span class="small">Fra utland: <a href="tel:+47 61 21 90 00">+47 61 21 90 00</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:61 21 90 00" class="num">61 21 90 00</a> <span class="small">Fra utland: <a href="tel:+47 61 21 90 00">+47 61 21 90 00</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/nord-norge/privat.html" data-broken-link="true">SpareBank 1 Nord-Norge</a><dl><div><dt>Privat</dt> <dd><a href="tel:915 02244" class="num">915 02244</a> <span class="small">Fra utland: <a href="tel:+47 915 02244">+47 915 02244</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:915 02244" class="num">915 02244</a> <span class="small">Fra utland: <a href="tel:+47 915 02244">+47 915 02244</a> · 8-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/nordmore/privat.html" data-broken-link="true">SpareBank 1 Nordmøre</a><dl><div><dt>Privat</dt> <dd><a href="tel:+47 915 03900" class="num">+47 915 03900</a> <span class="small">Fra utland: <a href="tel:+47 915 03900">+47 915 03900</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:+47 915 03900" class="num">+47 915 03900</a> <span class="small">Fra utland: <a href="tel:+47 915 03900">+47 915 03900</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/ringerike-hadeland/privat.html" data-broken-link="true">SpareBank 1 Ringerike Hadeland</a><dl><div><dt>Privat</dt> <dd><a href="tel:915 02130" class="num">915 02130</a> <span class="small">Fra utland: <a href="tel:+47 915 02130">+47 915 02130</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:915 02130" class="num">915 02130</a> <span class="small">Fra utland: <a href="tel:+47 915 02130">+47 915 02130</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/smn/privat.html" data-broken-link="true">SpareBank 1 SMN</a><dl><div><dt>Privat</dt> <dd><a href="tel:(+47) 915 07300" class="num">(+47) 915 07300</a> <span class="small">Fra utland: <a href="tel:+47 91507300">+47 91507300</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:(+47) 915 07303" class="num">(+47) 915 07303</a> <span class="small">Fra utland: <a href="tel:+47 91507303">+47 91507303</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nn/sogn-fjordane/privat.html" data-broken-link="true">SpareBank 1 Sogn og Fjordane</a><dl><div><dt>Privat</dt> <dd><a href="tel:+47 57 82 97 00" class="num">+47 57 82 97 00</a> <span class="small">Fra utland: <a href="tel:+47 57 82 97 00">+47 57 82 97 00</a> · 7 - 22 (10 - 18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:+47 57 82 97 00" class="num">+47 57 82 97 00</a> <span class="small">Fra utland: <a href="tel:+47 57 82 97 00">+47 57 82 97 00</a> · 7 - 18 (stengt)</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/sor-norge/privat.html" data-broken-link="true">SpareBank 1 Sør-Norge</a><dl><div><dt>Privat</dt> <dd><a href="tel:915 02002" class="num">915 02002</a> <span class="small">Fra utland: <a href="tel:+47 915 02002">+47 915 02002</a> · 7-22 hverdager (10-18 helg og helligdager)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:915 02002" class="num">915 02002</a> <span class="small">Fra utland: <a href="tel:+47 915 02002">+47 915 02002</a> · hverdager 08-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/ostfold-akershus/privat.html" data-broken-link="true">SpareBank 1 Østfold Akershus</a><dl><div><dt>Privat</dt> <dd><a href="tel:05700" class="num">05700</a> <span class="small">Fra utland: <a href="tel:(+47) 915 05700">(+47) 915 05700</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:05700" class="num">05700</a> <span class="small">Fra utland: <a href="tel:+47 915 05700">+47 915 05700</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/ostlandet/privat.html" data-broken-link="true">SpareBank 1 Østlandet</a><dl><div><dt>Privat</dt> <dd><a href="tel:915 07040" class="num">915 07040</a> <span class="small">Fra utland: <a href="tel:+47 915 07040">+47 915 07040</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:915 07050" class="num">915 07050</a> <span class="small">Fra utland: <a href="tel:+47 915 07050">+47 915 07050</a> · 7-18</span></dd></div></dl></li></ul></div></details></li><li class="channel"><details><summary><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span><span class="ch-text"><span class="ch-name">Avtal møte</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg> <span class="ch-sub">med en rådgiver</span></span></summary><div class="panel"><ul class="bank-links"><li><a href="https://www.sparebank1.no/nb/gudbrandsdal/privat.html#meeting" data-broken-link="true">SpareBank 1 Gudbrandsdal</a></li><li><a href="https://www.sparebank1.no/nb/hallingdal/privat.html#meeting" data-broken-link="true">SpareBank 1 Hallingdal Valdres</a></li><li><a href="https://www.sparebank1.no/nb/helgeland/privat.html#meeting" data-broken-link="true">SpareBank 1 Helgeland</a></li><li><a href="https://www.sparebank1.no/nb/lom-skjaak/privat.html#meeting" data-broken-link="true">SpareBank 1 Lom og Skjåk</a></li><li><a href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html" data-broken-link="true">SpareBank 1 Nord-Norge</a></li><li><a href="https://www.sparebank1.no/nb/nordmore/privat.html#meeting" data-broken-link="true">SpareBank 1 Nordmøre</a></li><li><a href="https://www.sparebank1.no/nb/ringerike-hadeland/privat.html#meeting" data-broken-link="true">SpareBank 1 Ringerike Hadeland</a></li><li><a href="https://www.sparebank1.no/nb/smn/privat.html#meeting" data-broken-link="true">SpareBank 1 SMN</a></li><li><a href="https://www.sparebank1.no/nn/sogn-fjordane/privat.html#meeting" data-broken-link="true">SpareBank 1 Sogn og Fjordane</a></li><li><a href="https://www.sparebank1.no/nb/sor-norge/privat.html#meeting" data-broken-link="true">SpareBank 1 Sør-Norge</a></li><li><a href="https://www.sparebank1.no/nb/ostfold-akershus/privat.html#meeting" data-broken-link="true">SpareBank 1 Østfold Akershus</a></li><li><a href="https://www.sparebank1.no/nb/ostlandet/privat.html#meeting" data-broken-link="true">SpareBank 1 Østlandet</a></li></ul></div></details></li><li class="channel"><details><summary><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><span class="ch-text"><span class="ch-name">Skriv til oss</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></span></summary><div class="panel"><ul class="bank-links"><li><a href="https://www.sparebank1.no/nb/gudbrandsdal/privat.html#message" data-broken-link="true">SpareBank 1 Gudbrandsdal</a></li><li><a href="https://www.sparebank1.no/nb/hallingdal/privat.html#message" data-broken-link="true">SpareBank 1 Hallingdal Valdres</a></li><li><a href="https://www.sparebank1.no/nb/helgeland/privat.html#message" data-broken-link="true">SpareBank 1 Helgeland</a></li><li><a href="https://www.sparebank1.no/nb/lom-skjaak/privat.html#message" data-broken-link="true">SpareBank 1 Lom og Skjåk</a></li><li><a href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/kontakt.html" data-broken-link="true">SpareBank 1 Nord-Norge</a></li><li><a href="https://www.sparebank1.no/nb/nordmore/privat.html#message" data-broken-link="true">SpareBank 1 Nordmøre</a></li><li><a href="https://www.sparebank1.no/nb/ringerike-hadeland/privat.html#message" data-broken-link="true">SpareBank 1 Ringerike Hadeland</a></li><li><a href="https://www.sparebank1.no/nb/smn/privat.html#message" data-broken-link="true">SpareBank 1 SMN</a></li><li><a href="https://www.sparebank1.no/nn/sogn-fjordane/privat.html#message" data-broken-link="true">SpareBank 1 Sogn og Fjordane</a></li><li><a href="https://www.sparebank1.no/nb/sor-norge/privat/kundeservice.html" data-broken-link="true">SpareBank 1 Sør-Norge</a></li><li><a href="https://www.sparebank1.no/nb/ostfold-akershus/privat.html#message" data-broken-link="true">SpareBank 1 Østfold Akershus</a></li><li><a href="https://www.sparebank1.no/nb/ostlandet/privat.html#message" data-broken-link="true">SpareBank 1 Østlandet</a></li></ul></div></details></li><li class="channel"><details><summary><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20.5V8.5l8-4.5 8 4.5v12M4 20.5h16M9.5 20.5v-5h5v5"/></svg></span><span class="ch-text"><span class="ch-name">Finn kontor</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></span></summary><div class="panel"><form class="office-search" action="?search=" method="get"><label for="office-q">Søk etter et kontor</label><div class="router-controls"><input id="office-q" name="search" type="search" class="router-input"><button class="btn btn-primary" type="submit">Søk</button></div></form></div></details></li><li class="channel"><details><summary><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5.5h16v10H9l-4.5 3.5v-3.5H4z"/></svg></span><span class="ch-text"><span class="ch-name">Chat</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg> <span class="ch-sub">7-22 (10-18)</span></span></summary><div class="panel"><h3 class="panel-title">Chat med oss</h3><ul class="bank-links"><li><a href="https://www.sparebank1.no/nb/gudbrandsdal/privat.html#sb1openchat" data-broken-link="true">SpareBank 1 Gudbrandsdal</a></li><li><a href="https://www.sparebank1.no/nb/hallingdal/privat.html#sb1openchat" data-broken-link="true">SpareBank 1 Hallingdal Valdres</a></li><li><a href="https://www.sparebank1.no/nb/helgeland/privat.html#sb1openchat" data-broken-link="true">SpareBank 1 Helgeland</a></li><li><a href="https://www.sparebank1.no/nb/lom-skjaak/privat.html#sb1openchat" data-broken-link="true">SpareBank 1 Lom og Skjåk</a></li><li><a href="https://www.sparebank1.no/nb/nord-norge/privat.html#sb1openchat" data-broken-link="true">SpareBank 1 Nord-Norge</a></li><li><a href="https://www.sparebank1.no/nb/nordmore/privat.html#sb1openchat" data-broken-link="true">SpareBank 1 Nordmøre</a></li><li><a href="https://www.sparebank1.no/nb/ringerike-hadeland/privat.html#sb1openchat" data-broken-link="true">SpareBank 1 Ringerike Hadeland</a></li><li><a href="https://www.sparebank1.no/nb/smn/privat.html#sb1openchat" data-broken-link="true">SpareBank 1 SMN</a></li><li><a href="https://www.sparebank1.no/nn/sogn-fjordane/privat.html#sb1openchat" data-broken-link="true">SpareBank 1 Sogn og Fjordane</a></li><li><a href="https://www.sparebank1.no/nb/sor-norge/privat.html#sb1openchat" data-broken-link="true">SpareBank 1 Sør-Norge</a></li><li><a href="https://www.sparebank1.no/nb/ostfold-akershus/privat.html#sb1openchat" data-broken-link="true">SpareBank 1 Østfold Akershus</a></li><li><a href="https://www.sparebank1.no/nb/ostlandet/privat.html#sb1openchat" data-broken-link="true">SpareBank 1 Østlandet</a></li></ul></div></details></li></ul>
+    </div>
+  </section>
+  <div class="footer-main"><div class="container footer-cols"><div class="footer-col"><h2>Privat</h2><ul><li><a href="./privat/kundeservice/bestill/bli-kunde.html">Bli kunde</a></li><li><a href="./privat/kundeservice/verktoy/sperre-kort.html">Sperre kort</a></li><li><a href="./privat/forsikring/meld-skade.html">Meld skade</a></li><li><a href="./privat/kundeservice/bestill/prisliste.html">Prisliste</a></li><li><a href="./privat/kundeservice.html">Kundeservice</a></li><li><a href="./privat/kundeservice/verktoy/klager.html">Klage</a></li><li><a href="./privat/svindel.html">Svindel</a></li></ul></div><div class="footer-col"><h2>Logg inn</h2><ul><li><a href="https://www.sparebank1.no/nb/bank/privat/innlogging.html" data-broken-link="true">Nettbank privat</a></li><li><a href="https://www.sparebank1.no/nb/bank/bedrift/innlogging.html" data-broken-link="true">Nettbank bedrift</a></li><li><a href="https://kundeforsikring.sparebank1.no">Forsikring</a></li><li><a href="https://kundeforsikring.sparebank1.no/privat/sparing">Pensjon</a></li></ul></div><div class="footer-col"><h2>Sosiale medier</h2><ul><li><a href="https://no.linkedin.com/company/sparebank-1" class="with-icon"><img src="https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy">Linkedin</a></li><li><a href="https://www.youtube.com/channel/UCdfZfi4HC6bK0-OfRcDJSzg" class="with-icon"><img src="https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy">YouTube</a></li></ul></div></div></div>
+  <div class="footer-legal"><div class="container footer-legal-row"><ul class="small-links"><li><a href="./om-oss/om-banken/selskapsinformasjon.html">Selskapsinformasjon</a></li><li><a href="./om-oss/personvern/generelle-vilkar.html">Vilkår for bruk av nettsiden</a></li><li><a href="./om-oss/personvern.html">Personvern</a></li><li><a href="./om-oss/personvern.html#cookies">Informasjonskapsler</a></li><li><a href="./bedrift/open-api.html">For utviklere</a></li></ul><p class="address">SpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo</p></div></div>
+</footer>
+<script>
+(() => {
+  const t = document.getElementById('ds-nav-toggle');
+  const b = document.querySelector('.ds-nav-burger');
+  if (!t || !b) return;
+  const sync = () => b.setAttribute('aria-expanded', t.checked);
+  t.addEventListener('change', sync); sync();
+  b.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); t.checked = !t.checked; sync(); } });
+  addEventListener('keydown', e => { if (e.key === 'Escape' && t.checked) { t.checked = false; sync(); b.focus(); } });
+})();
+</script>
+</body>
+</html>

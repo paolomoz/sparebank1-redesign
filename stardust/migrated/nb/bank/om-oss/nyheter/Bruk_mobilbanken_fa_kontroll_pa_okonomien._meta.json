@@ -1,0 +1,91 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+ "type": "article",
+ "template": "news-article",
+ "archetype": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "outputPath": "nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.html",
+ "deliveredPath": "/nb/bank/om-oss/nyheter/bruk-mobilbanken-fa-kontroll-pa-okonomien",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.html",
+ "modules": [
+  "article-header",
+  "article-body",
+  "card-rail"
+ ],
+ "chrome": {
+  "router": false,
+  "market": "om-oss",
+  "clientlib": "frontend"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "fd64c208aa758a4a",
+  "sourceProposedSha": null,
+  "archetypeSha": "c9dee84f13641aed",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [
+  ".badge (local pill; canon lacks DESIGN.md § Badges)"
+ ],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 8,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/om-oss/om-banken.html",
+  "/nb/bank/privat/lan/billan/billan-i-boliglan.html",
+  "/nb/bank/om-oss/nyheter/skal-du-pa-reise-i-sommer--dette-bor-tenke-pa-for-du-drar-.html",
+  "/nb/bank/privat/lan/refinansiering/refinansiere-forbrukslan/ubrukte-handlekontoer-kredittkort.html",
+  "/nb/bank/om-oss/nyheter/foreldre-vil-vente-med-bankkort-til-barna---eksperten-anbefaler-.html",
+  "/nb/bank/om-oss/nyheter/slik-handterer-du-okonomiske-bekymringer.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 26,
+ "metadata": {
+  "title": "Bruk mobilbanken for å få kontroll på økonomien | SpareBank 1",
+  "description": "SpareBank 1&nbsp;fikk&nbsp;sølvplass i Cicero sin kåring av Norges Beste mobilbank. For mobilbankfar Thomas Allan Nygaard trumfer enkelhet&nbsp;og oversikt,&nbsp;mange&nbsp;valg og funksjoner. Mobilbanken skal gi deg basiskunnskap og trygghet på egen økonomi.&nbsp;\n",
+  "canonical": null,
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/bank/sor-norge/Nyheter/Thomas_Allan_Nygaard.JPG"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate"
+ ],
+ "contentCheck": "FAIL\nnb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html: content-check FAIL — checked text 74, hrefs 60, imgs 13; missing text 0, hrefs 0, imgs 1\n  IMG   main Thomas_Allan_Nygaard.JPG.thumb.768.768.jpg\n",
+ "migratedAt": "2026-09-14T20:59:50.460Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "fd64c208aa758a4a",
+ "sourceProposedSha": null,
+ "archetypeSha": "c9dee84f13641aed",
+ "assetsBundled": 3
+}

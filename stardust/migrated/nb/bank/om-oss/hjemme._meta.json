@@ -1,0 +1,93 @@
+{
+ "slug": "nb-bank-om-oss-hjemme-html",
+ "type": "landing",
+ "template": "campaign-landing",
+ "archetype": "nb-bank-om-oss-hjemme-html",
+ "renderBranch": "A",
+ "fidelityTier": "archetype",
+ "archetypeSource": null,
+ "outputPath": "nb/bank/om-oss/hjemme.html",
+ "deliveredPath": "/nb/bank/om-oss/hjemme",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/om-oss/hjemme.html",
+ "modules": [
+  "video-hero",
+  "story-text",
+  "split-media",
+  "video"
+ ],
+ "chrome": {
+  "router": false,
+  "market": "om-oss",
+  "clientlib": "frontend"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "b6078825da691a0b",
+  "sourceProposedSha": "7f8b25dff4c4a250",
+  "archetypeSha": null,
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [
+  "img.photo-portrait ×4: portrait source 1280×2276 — 4:5 frame instead of canon 3:2"
+ ],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 7,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/bank/bedrift/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/bank/bedrift/tips-og-rad/hjelp-til-a-lykkes.html",
+  "/nb/bank/privat/kundeservice/bytte-bank.html",
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde/bytte-bank-bedrift.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 19,
+ "metadata": {
+  "title": "Der du føler deg hjemme | SpareBank 1",
+  "description": "Uansett hvor og hvordan du lever, kan du føle deg hjemme hos oss. ",
+  "canonical": "https://www.sparebank1.no/nb/bank/om-oss/hjemme.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/kampanjer/Bedrift/bedriftsloftet-bestefar-pa-arbeidsplass.jpg.thumb.1280.2276.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T20:59:49.973Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "b6078825da691a0b",
+ "sourceProposedSha": "7f8b25dff4c4a250",
+ "archetypeSha": null,
+ "assetsBundled": 3
+}

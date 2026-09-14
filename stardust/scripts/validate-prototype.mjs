@@ -6,7 +6,8 @@
 import fs from 'node:fs'; import path from 'node:path';
 import { chromium } from 'playwright';
 const slug=process.argv[2]; const noShots=process.argv.includes('--no-shots');
-const file=path.resolve(`stardust/prototypes/${slug}-proposed.html`);
+const optv=(k)=>{const i=process.argv.indexOf(k); return i>0?process.argv[i+1]:null;};
+const file=path.resolve(optv('--file')||`stardust/prototypes/${slug}-proposed.html`); const OUTDIR=optv("--out")||`stardust/validation/${slug}`;
 const html=fs.readFileSync(file,'utf8');
 const report={slug,file,at:new Date().toISOString(),contract:{},viewports:{},mobileNav:{},pass:true,issues:[]};
 const issue=(sev,where,msg)=>{report.issues.push({sev,where,msg}); if(sev==='P0'||sev==='P1') report.pass=false;};
@@ -84,7 +85,7 @@ for (const [w,h] of VPS){
   const card=await page.$('main a.card, main .card a, main [data-section] a'); if(card){ await card.hover().catch(()=>{}); smoke.hovered=true; }
   vp.smoke=smoke;
   await page.evaluate(()=>{ if(document.activeElement) document.activeElement.blur(); window.scrollTo(0,0); }); await page.waitForTimeout(100);
-  if(!noShots){ fs.mkdirSync(`stardust/validation/${slug}`,{recursive:true}); await page.screenshot({path:`stardust/validation/${slug}/${w}.png`,fullPage:true}); }
+  if(!noShots){ fs.mkdirSync(OUTDIR,{recursive:true}); await page.screenshot({path:`${OUTDIR}/${w}.png`,fullPage:true}); }
   report.viewports[w]=vp; await ctx.close();
 }
 // mobile-nav audit at 360
@@ -95,8 +96,8 @@ for (const [w,h] of VPS){
   report.mobileNav=r; if(r.over>1) issue('P1','360','audit/responsive: horizontal-overflow-at-360px'); if(r.minFont<11) issue('P1','360','audit/responsive: nav-readability-floor (font)'); if(r.minGap!=null && r.minGap<10 && !r.collapse) issue('P1','360','audit/responsive: nav-readability-floor (gap)');
   await ctx.close(); }
 await browser.close();
-fs.mkdirSync(`stardust/validation/${slug}`,{recursive:true});
-fs.writeFileSync(`stardust/validation/${slug}/report.json`,JSON.stringify(report,null,1));
+fs.mkdirSync(OUTDIR,{recursive:true});
+fs.writeFileSync(`${OUTDIR}/report.json`,JSON.stringify(report,null,1));
 const p01=report.issues.filter(i=>i.sev==='P0'||i.sev==='P1');
 console.log(`${slug}: ${report.pass?'PASS':'FAIL'} — ${p01.length} P0/P1, ${report.issues.length-p01.length} P2/P3; externalFulfilled ${Object.values(report.viewports).map(v=>v.externalFulfilled).join('/')}; heights ${Object.values(report.viewports).map(v=>v.docHeight).join('/')}`);
 for (const i of report.issues) console.log(`  [${i.sev}] ${i.where}: ${i.msg}`);

@@ -1,0 +1,124 @@
+{
+ "slug": "nb-bank-privat-html",
+ "type": "landing",
+ "template": "market-landing",
+ "archetype": "nb-bank-privat-html",
+ "renderBranch": "A",
+ "fidelityTier": "archetype",
+ "archetypeSource": null,
+ "outputPath": "nb/bank/privat.html",
+ "deliveredPath": "/nb/bank/privat",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat.html",
+ "modules": [
+  "bank-router",
+  "campaign-carousel",
+  "content-columns",
+  "promo-band",
+  "card-rail",
+  "cta-band",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "d316d3f8a0c66e0b",
+  "sourceProposedSha": "bdd167386ed281b4",
+  "archetypeSha": null,
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 37,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat.html",
+  "/nb/hallingdal/privat.html",
+  "/nb/helgeland/privat.html",
+  "/nb/lom-skjaak/privat.html",
+  "/nb/nord-norge/privat.html",
+  "/nb/nordmore/privat.html",
+  "/nb/ringerike-hadeland/privat.html",
+  "/nb/smn/privat.html",
+  "/nn/sogn-fjordane/privat.html",
+  "/nb/sor-norge/privat.html",
+  "/nb/ostfold-akershus/privat.html",
+  "/nb/ostlandet/privat.html",
+  "/nb/bank/privat/lan/refinansiering/refinansiere-forbrukslan.html",
+  "/nb/bank/privat/lan/lanekalkulator/boliglanskalkulator.html",
+  "/nb/bank/privat/lan/boliglan/boliglan-for-unge.html",
+  "/nb/bank/privat/lan/boliglan/finansieringsbevis.html",
+  "/nb/bank/privat/daglig-bruk/mobilbank/mobilbank-for-barn.html",
+  "/nb/bank/privat/sparing/hvordan-spare.html",
+  "/nb/bank/privat/sparing/spare-pa-konto/bsu.html",
+  "/nb/bank/privat/forsikring/forsikringskalkulator.html",
+  "/nb/bank/privat/lan/billan/billan-for-unge.html",
+  "/nb/bank/privat/lan/mc-lan.html",
+  "/nb/bank/privat/lan/batlan.html",
+  "/nb/bank/privat/kundeservice/verktoy.html",
+  "/nb/bank/privat/kundeservice/verktoy/e-signering.html",
+  "/nb/bank/privat/kundeservice/bytte-bank.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/na-kan-du-spare-i-fire-nye-sparebank-1-indeksfond.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/markedskommentar-av-alexander-miller-for-august-2026.html",
+  "/nb/bank/privat/tips-og-rad/dodsbo.html",
+  "/nb/bank/privat/tips-og-rad/spare-til-pensjon.html",
+  "/nb/bank/om-oss/om-banken/om-sparebank-1-alliansen.html",
+  "/nb/bank/privat/pensjon/pensjonskalkulator.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 50,
+ "metadata": {
+  "title": "Privat | SpareBank 1",
+  "description": "Prøv Norges beste og mest personlige mobilbank. Du er også velkommen til å chatte eller ringe og få hjelp av flinke folk hos oss når du trenger det.",
+  "canonical": null,
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T20:59:51.140Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "d316d3f8a0c66e0b",
+ "sourceProposedSha": "bdd167386ed281b4",
+ "archetypeSha": null,
+ "assetsBundled": 3
+}

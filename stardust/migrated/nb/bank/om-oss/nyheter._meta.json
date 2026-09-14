@@ -1,0 +1,115 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-html",
+ "type": "listing",
+ "template": "news-listing",
+ "archetype": "nb-bank-om-oss-nyheter-html",
+ "renderBranch": "A",
+ "fidelityTier": "archetype",
+ "archetypeSource": null,
+ "outputPath": "nb/bank/om-oss/nyheter.html",
+ "deliveredPath": "/nb/bank/om-oss/nyheter",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.html",
+ "modules": [
+  "article-header",
+  "card-rail",
+  "button-row"
+ ],
+ "chrome": {
+  "router": false,
+  "market": "om-oss",
+  "clientlib": "frontend"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "a6f7652ede8b277b",
+  "sourceProposedSha": "a87632cbcedb89ad",
+  "archetypeSha": null,
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 32,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/om-oss/om-banken.html",
+  "/nb/bank/om-oss/nyheter/advarer-bedrifter-mot-ny-svindelmetode--falsk-faktura-forst---fa.html",
+  "/nb/bank/om-oss/nyheter/sann-far-du-bedre-oversikt-over-boligutgiftene-dine.html",
+  "/nb/bank/om-oss/nyheter/investeringssvindel--lokker-deg-med-drommer.html",
+  "/nb/bank/om-oss/nyheter/ikke-glem-sikkerheten.html",
+  "/nb/bank/om-oss/nyheter/skal-du-pa-reise-i-sommer--dette-bor-tenke-pa-for-du-drar-.html",
+  "/nb/bank/om-oss/nyheter/unngaa-bulkedagen.html",
+  "/nb/bank/om-oss/nyheter/ta-vare-dyra-nyttaarsaften.html",
+  "/nb/bank/om-oss/nyheter/fly-julen-raad-reisen.html",
+  "/nb/bank/om-oss/nyheter/fyrverkeri-risiko.html",
+  "/nb/bank/om-oss/nyheter/hund-katt-syk-ferien.html",
+  "/nb/bank/om-oss/nyheter/foreldre-vil-vente-med-bankkort-til-barna---eksperten-anbefaler-.html",
+  "/nb/bank/om-oss/nyheter/faerre-deler-passord-til-nettbank--fortsatt-for-mange--mener-svi.html",
+  "/nb/bank/om-oss/nyheter/slik-handterer-du-okonomiske-bekymringer.html",
+  "/nb/bank/om-oss/nyheter/sunt-bondevett-hodet.html",
+  "/nb/bank/om-oss/nyheter/host-dugnad-vinterklart.html",
+  "/nb/bank/om-oss/nyheter/barneforsikring-okonomisk-trygghet-firebarnsfamilien.html",
+  "/nb/bank/om-oss/nyheter/morten-soberg-inn-i-ny-rolle-i-sparebank1-forvaltning.html",
+  "/nb/bank/om-oss/nyheter/felles-forsikringer-samlivsbrudd.html",
+  "/nb/bank/om-oss/nyheter/barna-trygg-skolevei.html",
+  "/nb/bank/om-oss/nyheter/flytte-hjemmefra-forsikringer-okonomi.html",
+  "/nb/bank/om-oss/nyheter/nyansatt-dette-maa-paa-plass-arbeidsgiver.html",
+  "/nb/bank/om-oss/nyheter/rammer-spesielt-de-eldre--sparebank-1-advarer-mot-gavekortsvinde.html",
+  "/nb/bank/om-oss/nyheter/--ikke-bare-de--godtroende--som-blir-lurt-lenger.html",
+  "/nb/bank/om-oss/nyheter/--mange-foler-det-er-deres-egen-feil-at-de-blir-svindlet.html",
+  "/nb/bank/om-oss/nyheter/unngaa-skadedyr-borettslag-sameier.html",
+  "/nb/bank/om-oss/nyheter/redd-miste-horeapparatet-forsikre-det.html",
+  "/nb/bank/om-oss/nyheter/oppmerksomhet-bilen.html",
+  "/nb/bank/om-oss/nyheter/finn-hjertestopp-nar-deg.html",
+  "/nb/bank/om-oss/nyheter/hva-naar-bedriften-dataangrep.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 26,
+ "metadata": {
+  "title": "Nyheter | SpareBank 1",
+  "description": null,
+  "canonical": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.2276.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T20:59:50.547Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "a6f7652ede8b277b",
+ "sourceProposedSha": "a87632cbcedb89ad",
+ "archetypeSha": null,
+ "assetsBundled": 3
+}

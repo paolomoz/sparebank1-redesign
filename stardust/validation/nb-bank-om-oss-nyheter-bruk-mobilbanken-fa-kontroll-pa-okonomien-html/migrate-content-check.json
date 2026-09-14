@@ -1,0 +1,19 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+ "file": "stardust/migrated/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.html",
+ "checked": {
+  "text": 74,
+  "href": 60,
+  "img": 13
+ },
+ "miss": {
+  "text": [],
+  "href": [],
+  "img": [
+   {
+    "r": "main",
+    "s": "Thomas_Allan_Nygaard.JPG.thumb.768.768.jpg"
+   }
+  ]
+ }
+}

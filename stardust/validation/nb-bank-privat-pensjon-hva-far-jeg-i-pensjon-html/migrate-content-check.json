@@ -1,0 +1,39 @@
+{
+ "slug": "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+ "file": "stardust/migrated/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.html",
+ "checked": {
+  "text": 86,
+  "href": 73,
+  "img": 13
+ },
+ "miss": {
+  "text": [],
+  "href": [
+   {
+    "r": "main",
+    "h": "/nb/bank/privat/pensjon/pensjonskalkulator.html",
+    "t": "Sjekk hva du får i pensjon her"
+   },
+   {
+    "r": "main",
+    "h": "https://www.sparebank1.no/privat/forsikring/pensjon/",
+    "t": "Logg inn og se pensjonen din"
+   },
+   {
+    "r": "main",
+    "h": "https://lenker.sparebank1.no/privat/forsikring/pensjon/",
+    "t": "Logg inn og se pensjonen din"
+   }
+  ],
+  "img": [
+   {
+    "r": "main",
+    "s": "Marianne-Christensen-pensjonsekspert.jpg.thumb.768.768.jpg"
+   },
+   {
+    "r": "main",
+    "s": "dame-pc-glad.svg"
+   }
+  ]
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+ "type": "article",
+ "template": "news-article",
+ "archetype": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "outputPath": "nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.html",
+ "deliveredPath": "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.html",
+ "modules": [
+  "article-header",
+  "article-body",
+  "card-rail"
+ ],
+ "chrome": {
+  "router": false,
+  "market": "om-oss",
+  "clientlib": "frontend"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "6ef47ad2d5265f0b",
+  "sourceProposedSha": null,
+  "archetypeSha": "c9dee84f13641aed",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [
+  ".badge (local pill; canon lacks DESIGN.md § Badges)"
+ ],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 8,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/om-oss/om-banken.html",
+  "/nb/bank/om-oss/nyheter/advarer-bedrifter-mot-ny-svindelmetode--falsk-faktura-forst---fa.html",
+  "/nb/bank/om-oss/nyheter/investeringssvindel--lokker-deg-med-drommer.html",
+  "/nb/bank/om-oss/nyheter/ikke-glem-sikkerheten.html",
+  "/nb/bank/privat/daglig-bruk/kredittkort/svindel-falsk-netthandel-kredittkort.html",
+  "/nb/bank/privat/daglig-bruk/kredittkort/kortsvindel-ukjent-transaksjon-kredittkort.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 25,
+ "metadata": {
+  "title": "Advarer mot ny svindelbølge: – Eldre og enslige kvinner særlig utsatt | SpareBank 1",
+  "description": "Den siste tiden har det kommet flere rapporter om en svindelmetode som lenge har vært kjent, men som hittil ikke har vært særlig utbredt her i Norge, nemlig såkalt svindel med hjemmebesøk. Metoden kombinerer digital manipulering med fysisk korttyveri og rammer ofte sårbare kunder, særlig eldre og enslige kvinner.\n",
+  "canonical": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/kjøpte-bilder/pixabay-eldre-dame.jpg.thumb.1280.2276.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate"
+ ],
+ "contentCheck": "FAIL\nnb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html: content-check FAIL — checked text 80, hrefs 58, imgs 11; missing text 0, hrefs 0, imgs 1\n  IMG   main AnnaRoennning.jpg.thumb.768.768.jpg\n",
+ "migratedAt": "2026-09-14T20:59:50.188Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "6ef47ad2d5265f0b",
+ "sourceProposedSha": null,
+ "archetypeSha": "c9dee84f13641aed",
+ "assetsBundled": 3
+}
