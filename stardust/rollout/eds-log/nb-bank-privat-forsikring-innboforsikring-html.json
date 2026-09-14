@@ -1,0 +1,123 @@
+{
+ "slug": "nb-bank-privat-forsikring-innboforsikring-html",
+ "deliveredPath": "/nb/bank/privat/forsikring/innboforsikring",
+ "file": "content/nb/bank/privat/forsikring/innboforsikring.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": null,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "product-hero",
+   "blocks": [
+    "hero",
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "cobranding",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "table",
+   "blocks": [
+    "table"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "content-columns",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "cta-band",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "hero",
+  "breadcrumbs",
+  "columns",
+  "table",
+  "accordion",
+  "cards",
+  "callout",
+  "feedback"
+ ],
+ "notes": [
+  "product-hero (product): the canon USP list rides the hero text cell as an authored <ul> — hero (usp) paints the check marks / icons",
+  "cobranding (product): the canon co-brand band is always open (no <details>) → columns (cobrand) — one row [logo, h2, <em>member question</em>, prose, CTAs][illustration + adviser note]; not the hub cobranding disclosure",
+  "media: illustrasjon-usymmetrisk-samboer-dame-mann-high-five.svg is 43025 B of SVG (> 40000) — authored as DA media illustrasjon-usymmetrisk-samboer-dame-mann-high-five.png",
+  "split-media (product): canon `media-right` (text 7 / media 5) → columns (split text-first), cells in the visual order",
+  "table: Block Collection table (compare) — 25 cover rows × 3 columns; each canon expandable detail row is folded into its cover's row-header cell (D3: no spans), check icons stay authored images",
+  "rich-text (product): prose is default content (prose-narrow); each canon disclosure (\"Se detaljerte vilkår\") is an accordion (disclosure) — one row [label][body], collapsed like the canon <details>",
+  "card-rail (product): choices cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "content-columns (product): a callout authored inside a column follows the columns block as a callout (D2 — no nested blocks)",
+  "content-columns (product): a single remaining column (the other was a callout / disclosure, now its own block) is default content (D1), the extracted block follows",
+  "card-rail (product): links cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-usymmetrisk-samboer-dame-mann-high-five.svg"
+ ],
+ "writtenAt": "2026-09-14T22:29:14.411Z"
+}

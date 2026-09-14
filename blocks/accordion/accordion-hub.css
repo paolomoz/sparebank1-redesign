@@ -1,1 +1,26 @@
 /* accordion — hub family group additions (additive variants only; imported by accordion.css) */
+
+/* ===== kundeservice-hub: wide (frost hairlines, full-column answers, h4/h5 sub-headings) · rate (per-answer Ja/Nei row) ===== */
+.accordion.faq.wide { max-width: none; }
+main .section.paper-frost .accordion.faq.wide .faq-item { border-top-color: var(--frost); }
+main .section.paper-frost .accordion.faq.wide .faq > .faq-item:last-child { border-bottom-color: var(--frost); }
+.accordion.faq.wide .answer { max-width: none; }
+.accordion.faq.wide .answer > :is(p, ul, ol, h4, h5, h6) { max-width: 68ch; }
+.accordion.faq.wide .answer h4 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; color: var(--fjell); margin-top: var(--spacing-lg); }
+.accordion.faq.wide .answer h5 { font-family: var(--title-font-family); font-size: var(--lead); line-height: 1.3; color: var(--fjell); margin-top: var(--spacing-lg); }
+.accordion.faq.wide .answer h6 { font-family: var(--title-font-family); font-size: var(--body); line-height: 1.4; color: var(--fjell); margin-top: var(--spacing-md); }
+.accordion.faq.wide .answer :is(h4, h5, h6) + :is(p, ol) { margin-top: var(--spacing-sm); }
+.accordion.faq.wide .answer ol li + li { margin-top: 6px; }
+.accordion.faq.wide .answer picture,
+.accordion.faq.wide .answer img { width: 112px; height: 112px; max-width: none; object-fit: contain; margin-top: var(--spacing-lg); }
+.accordion.faq.rate .faq-foot-feedback { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: var(--spacing-lg); padding-top: var(--spacing-md); border-top: 1px solid var(--frost); }
+.accordion.faq.rate .feedback-q { font-family: var(--title-font-family); color: var(--fjell); margin-right: 4px; }
+.accordion.faq.rate button.thumb { min-height: 40px; padding: 8px 18px; font-size: var(--body-sm); gap: 6px; }
+.accordion.faq.rate button.thumb svg { width: 20px; height: 20px; }
+.accordion.faq.rate button.thumb.is-on { background: var(--frost-30); color: var(--fjell); border-color: var(--fjell); }
+.accordion.faq.rate .faq-foot-feedback + p { margin-top: var(--spacing-md); }
+.accordion.faq.rate .faq-foot-feedback + p a:any-link { font-family: var(--title-font-family); }
+
+@media (width <= 640px) {
+  .accordion.faq.wide .faq-q :is(p, h3, h4) { font-size: var(--lead); }
+}

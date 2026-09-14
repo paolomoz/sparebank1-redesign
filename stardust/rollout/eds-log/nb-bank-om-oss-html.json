@@ -1,0 +1,69 @@
+{
+ "slug": "nb-bank-om-oss-html",
+ "deliveredPath": "/nb/bank/om-oss",
+ "file": "content/nb/bank/om-oss.html",
+ "chrome": {
+  "nav": "/nav-om-oss",
+  "footer": "/footer-om-oss",
+  "router": "/fragments/bank-router-om-oss",
+  "market": "om-oss",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "campaign",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "cards",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "market landing: the visually-hidden h1 is authored as the hero h1 (block hides it visually)",
+  "split-media (media-right): columns (split text-first) — cells swapped so the text leads and the media sits right",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:23:44.601Z"
+}

@@ -25,7 +25,9 @@
   },
   {
    "module": "steps",
-   "blocks": []
+   "blocks": [
+    "columns"
+   ]
   },
   {
    "module": "callout",
@@ -48,16 +50,16 @@
  ],
  "blocks": [
   "breadcrumbs",
-  "callout",
   "columns",
+  "callout",
   "feedback"
  ],
  "notes": [
+  "steps: columns (split steps) keeps the authored order (ol → paragraph → action pill → small note); the note is the trailing paragraph",
+  "lint D1 callout: designed compound (canon icon + tinted paper), Block Collection-shaped single cell of prose — kept as a block like the product archetype",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
- "gaps": [
-  "no encoder for module steps (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T21:39:12.051Z"
+ "writtenAt": "2026-09-14T22:30:27.867Z"
 }

@@ -1,0 +1,60 @@
+{
+ "slug": "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html",
+ "deliveredPath": "/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man",
+ "file": "content/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": null,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "product-hero",
+   "blocks": [
+    "hero",
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "breadcrumbs",
+  "cards",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "split-media (media-right): columns (split text-first) — cells swapped so the text leads and the media sits right",
+  "split-media (illustration): variant illustration — SVG media kept at its own ratio (no 3:2 crop / paper)",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:23:44.593Z"
+}

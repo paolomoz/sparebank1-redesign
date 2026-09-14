@@ -1,0 +1,155 @@
+{
+  "/footer-bedrift": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:06.214Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/footer-frontend-2": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:06.214Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/footer-frontend-om-oss-2": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:06.214Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/footer-frontend-om-oss": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:12.313Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/footer-frontend": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:12.313Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/footer-kundeservice": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:12.686Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/footer-om-oss": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:16.844Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/footer": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:16.958Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/fragments/bank-router-bedrift": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:17.702Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/fragments/bank-router-om-oss": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:21.599Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/fragments/bank-router": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:21.822Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nav-bedrift": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:21.842Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nav-minimal-om-oss": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:25.778Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nav-minimal": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:26.329Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nav-om-oss": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:26.836Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nav": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:30.288Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/privat/lan/boliglan": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:40:30.595Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  }
+}

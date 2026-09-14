@@ -1,1 +1,4 @@
 /* hero — theme family group additions (additive variants only; imported by hero.css) */
+
+/* ===== market landing: campaign — the small price note under the lead keeps the canon p + p 16 px (the core hero-text p { margin: 0 } drops it) ===== */
+.hero.campaign .lead-wrap + .note-wrap { margin-top: var(--spacing-md); }

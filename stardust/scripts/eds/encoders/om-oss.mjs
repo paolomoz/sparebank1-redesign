@@ -53,8 +53,22 @@ const isCardsCol = (col) => col.children.length === 1 && col.firstElementChild.m
 const isFaqCol = (col) => col.children.length === 1 && col.firstElementChild.matches('.faq');
 const hasPanel = (col) => !!q(col, ':scope > .panel');
 
+/** Captured answers list several document links in ONE paragraph separated by <br> (and stray empty anchors): drop the empty anchors,
+ *  move a trailing <br> out of its <strong>, and split such paragraphs at the <br> — one link per paragraph (delivery-lint P1 one-cta-per-p). */
+const balanced = (s) => ['strong', 'em', 'a'].every((t) => (s.match(new RegExp(`<${t}[ >]`, 'g')) || []).length === (s.match(new RegExp(`</${t}>`, 'g')) || []).length);
+function tidyAnswer(html) {
+  html = html.replace(/<a [^>]*>\s*<\/a>/g, '').replace(/<(strong|em)><\1>([\s\S]*?)<\/\1><\/\1>/g, '<$1>$2</$1>');
+  for (let i = 0; i < 3; i += 1) html = html.replace(/<(strong|em)>\s*<\/\1>/g, '').replace(/<(strong|em)>((?:\s*<br>)+\s*)/g, '$2<$1>').replace(/((?:\s*<br>)+\s*)<\/(strong|em)>/g, '</$2>$1'); // hoist the label's own line breaks out of the emphasis
+  html = html.replace(/<a ([^>]*)>([^<]*)((?:\s*<br>)[\s\S]*?)<\/a>/g, '<a $1>$2</a>$3'); // a captured link wrapping a line break (and the next label): the link ends at its own line
+  for (let i = 0; i < 3; i += 1) html = html.replace(/<(strong|em)>\s*<\/\1>/g, '').replace(/<(strong|em)>((?:\s*<br>)+\s*)/g, '$2<$1>').replace(/((?:\s*<br>)+\s*)<\/(strong|em)>/g, '</$2>$1'); // and again after the cut
+  return html.replace(/<p>([\s\S]*?)<\/p>/g, (m, inner) => {
+    if ((inner.match(/<a /g) || []).length < 2 || !/<br>/.test(inner)) return m;
+    const parts = inner.split(/\s*<br>\s*/).map((x) => x.trim()).filter(Boolean);
+    return parts.every(balanced) ? parts.map((x) => `<p>${x}</p>`).join('') : m;
+  });
+}
 function faqBlock(faq, ctx) {
-  const rows = qa(faq, ':scope > details').map((d) => { const s = q(d, 'summary'); const a = q(d, '.answer'); return [`<h3>${inline(s, ctx).trim()}</h3>`, a ? prose(a, ctx) : '']; });
+  const rows = qa(faq, ':scope > details').map((d) => { const s = q(d, 'summary'); const a = q(d, '.answer'); return [`<h3>${inline(s, ctx).trim()}</h3>`, a ? tidyAnswer(prose(a, ctx)) : '']; });
   return block('accordion', ['faq'], rows);
 }
 function cardsBlock(lists, ctx, extra = []) {
@@ -100,7 +114,7 @@ function encodeCols(colsEl, ctx, acc) {
       cell += one(n, ctx);
     }
     const plain = panel && cls(panel).includes('plain');
-    acc.parts.push(block('columns', ['om-oss', illu ? 'illu' : null, panel ? 'panel' : null, plain ? 'plain' : null, m === 1 ? 'text-first' : null], [m === 0 ? [pic(img, ctx), cell] : [cell, pic(img, ctx)]])); acc.blocks.push('columns');
+    acc.parts.push(block('columns', ['om-oss', illu ? 'spot' : null, panel ? 'panel' : null, plain ? 'plain' : null, m === 1 ? 'text-first' : null], [m === 0 ? [pic(img, ctx), cell] : [cell, pic(img, ctx)]])); acc.blocks.push('columns');
     for (const n of after) { if (n.matches('.faq')) { acc.parts.push(faqBlock(n, ctx)); acc.blocks.push('accordion'); } else { acc.parts.push(cardsBlock([n], ctx)); acc.blocks.push('cards'); } }
     return;
   }

@@ -1,0 +1,6 @@
+# campaign-landing — EDS conversion journal (Worker C, story group)
+
+- 2026-09-15 · `video-hero` → `hero (video)` [mp4 link][h1] (hero.js builds <video controls muted loop preload=metadata>; the link stays in a hidden wrapper); `story-text` → default content, style `chapter` (+ `paper-sand`, + `lead-first` only where the captured first paragraph is the lead); `split-media` → `columns (split slides)` / `columns (split closing)`; `video` → plain mp4 link auto-blocked to the new `video` block + caption paragraph (icon + <em>title</em>), style `film`.
+- New block `blocks/video/{video.js,video.css}` (3:2, 48 px corner, 16:9 ≤ 1023; media stays on www.sparebank1.no).
+- Traps met: a spanning h2 (`grid-row: 1 / span 30`) multiplies the wrapper row-gap — chapter uses row-gap 0 + margins; the film width is 7/12 of the container, not the section; slide gap 48 at ≤ 640.
+- Body identical to the prototype at both widths; gate FAILS only on the lead's frontend footer — eds-requests story #1. EW 25/25 editable. Lint 0 🔴 (1 🟡 D4: verify video-ikon.svg is pure vector), delivery 0 P0-P1. Captured in-page anchors (#kontakt, #blikunde, #samfunn) → section ids `slides` and `samfunn` only (per-row anchors are not authorable in one block).

@@ -18,16 +18,20 @@
   },
   {
    "module": "adviser-list",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "promo-band",
-   "blocks": []
+   "blocks": [
+    "columns"
+   ]
   },
   {
    "module": "campaign",
    "blocks": [
-    "hero"
+    "columns"
    ]
   },
   {
@@ -39,14 +43,15 @@
  ],
  "blocks": [
   "hero",
+  "cards",
+  "columns",
   "feedback"
  ],
  "notes": [
-  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels",
+  "presse: the feedback band under the Sand paper drops its hairline (proto .paper-sand+.feedback{border-top:0}) → style hairline-none"
  ],
- "gaps": [
-  "no encoder for module adviser-list (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T21:39:12.047Z"
+ "writtenAt": "2026-09-14T22:03:33.193Z"
 }

@@ -1,0 +1,85 @@
+{
+  "slug": "nb-bank-om-oss-hjemme-html",
+  "edsUrl": "http://localhost:3020/nb/bank/om-oss/hjemme",
+  "protoUrl": "http://localhost:8820/nb-bank-om-oss-hjemme-html-proposed.html",
+  "at": "2026-09-14T22:24:38.432Z",
+  "pixel": {
+    "360": {
+      "pct": 3.97,
+      "heightDelta": -252,
+      "compared": {
+        "width": 360,
+        "height": 5867
+      },
+      "pass": false,
+      "hot": [
+        "5500-5867:60.4%"
+      ]
+    },
+    "1440": {
+      "pct": 1.77,
+      "heightDelta": -252,
+      "compared": {
+        "width": 1440,
+        "height": 5097
+      },
+      "pass": false,
+      "hot": [
+        "5000-5097:91.8%"
+      ]
+    }
+  },
+  "chrome": {
+    "360": {
+      "header": 99.66,
+      "footer": 77.29,
+      "headerH": {
+        "proto": 61,
+        "eds": 61
+      },
+      "footerH": {
+        "proto": 970,
+        "eds": 1222
+      },
+      "footerY": {
+        "proto": 4898,
+        "eds": 4898
+      },
+      "doc": {
+        "proto": 5867,
+        "eds": 6119
+      }
+    },
+    "1440": {
+      "header": 99.96,
+      "footer": 81.71,
+      "headerH": {
+        "proto": 110,
+        "eds": 110
+      },
+      "footerH": {
+        "proto": 481,
+        "eds": 733
+      },
+      "footerY": {
+        "proto": 4616,
+        "eds": 4616
+      },
+      "doc": {
+        "proto": 5097,
+        "eds": 5349
+      }
+    }
+  },
+  "content": {
+    "red": 0,
+    "justified": 0,
+    "amber": 2,
+    "orange": 2,
+    "summary": [
+      "  EDS: 25 text nodes — 7 headings, 0 eyebrows, 8 CTAs, 10 body; 5 img",
+      "  editable texts (outermost h*/p/ul/ol): proto 20 / EDS 25"
+    ]
+  },
+  "pass": false
+}

@@ -1,0 +1,84 @@
+{
+ "slug": "nb-bank-bedrift-starte-bedrift-html",
+ "deliveredPath": "/nb/bank/bedrift/starte-bedrift",
+ "file": "content/nb/bank/bedrift/starte-bedrift.html",
+ "chrome": {
+  "nav": "/nav-bedrift",
+  "footer": "/footer-bedrift",
+  "router": "/fragments/bank-router-bedrift",
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "page-title",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "card-grid",
+   "blocks": []
+  },
+  {
+   "module": "card-grid",
+   "blocks": []
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "media: workshop-idemyldring-mennesker-rullestol-bord-lys.svg is 99251 B of SVG (> 40000) — authored as DA media workshop-idemyldring-mennesker-rullestol-bord-lys.png",
+  "media: skattetrekkskonto-2.svg is 62210 B of SVG (> 40000) — authored as DA media skattetrekkskonto-2.png",
+  "media: student-mann-pa-laptop.svg is 47068 B of SVG (> 40000) — authored as DA media student-mann-pa-laptop.png",
+  "media: bonde-ku-landbruk-mork.svg is 56362 B of SVG (> 40000) — authored as DA media bonde-ku-landbruk-mork.png",
+  "media: kakemakere-lys-bakgrunn.svg is 94208 B of SVG (> 40000) — authored as DA media kakemakere-lys-bakgrunn.png",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [
+  "no encoder for module card-grid (emitted as prose)",
+  "no encoder for module card-grid (emitted as prose)"
+ ],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/workshop-idemyldring-mennesker-rullestol-bord-lys.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/skattetrekkskonto-2.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/student-mann-pa-laptop.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/bonde-ku-landbruk-mork.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/kakemakere-lys-bakgrunn.svg"
+ ],
+ "writtenAt": "2026-09-14T22:30:27.574Z"
+}

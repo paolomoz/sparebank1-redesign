@@ -1,0 +1,101 @@
+{
+ "slug": "nb-bank-privat-lofavor-html",
+ "deliveredPath": "/nb/bank/privat/lofavor",
+ "file": "content/nb/bank/privat/lofavor.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "page-title",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "card-grid",
+   "blocks": []
+  },
+  {
+   "module": "card-grid",
+   "blocks": []
+  },
+  {
+   "module": "card-grid",
+   "blocks": []
+  },
+  {
+   "module": "card-grid",
+   "blocks": []
+  },
+  {
+   "module": "card-grid",
+   "blocks": []
+  },
+  {
+   "module": "tabs",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-grid",
+   "blocks": []
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "cta-band",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "accordion",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "media: mann-sofa-lese.svg is 43614 B of SVG (> 40000) — authored as DA media mann-sofa-lese.png",
+  "media: sparing-2.svg is 44279 B of SVG (> 40000) — authored as DA media sparing-2.png",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [
+  "no encoder for module card-grid (emitted as prose)",
+  "no encoder for module card-grid (emitted as prose)",
+  "no encoder for module card-grid (emitted as prose)",
+  "no encoder for module card-grid (emitted as prose)",
+  "no encoder for module card-grid (emitted as prose)",
+  "no encoder for module card-grid (emitted as prose)"
+ ],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/mann-sofa-lese.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/sparing-2.svg"
+ ],
+ "writtenAt": "2026-09-14T22:30:27.617Z"
+}

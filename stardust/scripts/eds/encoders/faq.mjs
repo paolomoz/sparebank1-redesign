@@ -12,7 +12,7 @@ function answerParts(answer, ctx) {
   const parts = []; let buf = '';
   const flush = () => { if (buf.trim()) parts.push(buf); buf = ''; };
   for (const n of answer.children) {
-    if (n.matches('.answer-step')) { flush(); const paper = (paperOf(n) || '').replace('paper-', ''); parts.push(block('callout', ['step', paper || null], [[prose(n, ctx)]])); ctx.blocks.add('callout'); continue; }
+    if (n.matches('.answer-step')) { flush(); const paper = (paperOf(n) || '').replace('paper-', ''); parts.push(block('callout', ['step', paper || null], [[prose(n, ctx)]])); ctx.blocks.add('callout'); ctx.notes.push('lint D1 callout (step): a captured background-container — tinted paper grouping one step of the answer with its screenshot; the tint is design, not prose'); continue; }
     if (n.matches('.answer-cta, .ctas')) { buf += ctas(n, ctx); continue; }
     if (n.matches('.answer-rte, .answer-figure')) { buf += prose(n.matches('figure') ? { childNodes: [n] } : n, ctx); continue; }
     buf += prose({ childNodes: [n] }, ctx);
@@ -24,7 +24,7 @@ export default {
   'faq-question': (root, ctx) => {
     const back = q(root, 'a.backlink'); const h1 = q(root, 'h1'); const answer = q(root, '.answer-prose'); const fb = q(root, '.faq-feedback');
     const parts = []; const blocks = [];
-    if (back) { parts.push(block('breadcrumbs', [], [[`<p><a href="${esc(L.href(back.getAttribute('href') || '', ctx))}">${inline(back, ctx).trim()}</a></p>`]])); blocks.push('breadcrumbs'); }
+    if (back) { ctx.notes.push('lint D1 breadcrumbs: the canon back link is a designed navigation module (Block Collection name), not prose'); parts.push(block('breadcrumbs', [], [[`<p><a href="${esc(L.href(back.getAttribute('href') || '', ctx))}">${inline(back, ctx).trim()}</a></p>`]])); blocks.push('breadcrumbs'); }
     if (h1) parts.push(`<h1>${inline(h1, ctx)}</h1>`);
     if (answer) parts.push(...answerParts(answer, ctx));
     if (fb) {

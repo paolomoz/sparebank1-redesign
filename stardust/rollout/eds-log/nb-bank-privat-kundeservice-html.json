@@ -19,7 +19,10 @@
   },
   {
    "module": "hero-ask",
-   "blocks": []
+   "blocks": [
+    "hero",
+    "cards"
+   ]
   },
   {
    "module": "faq",
@@ -41,18 +44,19 @@
   }
  ],
  "blocks": [
-  "accordion",
+  "hero",
   "cards",
+  "accordion",
   "columns"
  ],
  "notes": [
+  "hero-ask: chat form (dynamics #6 interim — controls disabled) authored as a second two-cell row [field label + note][button label]; the textarea placeholder repeats the label (@ew-exempt in hero.js)",
+  "faq (hub): `.cols` sub-columns flattened to prose in reading order (answers are collapsed; D2 no nested blocks); the \"Var dette nyttig?\" rating row is accordion `rate` chrome (@ew-exempt labels, dynamics #5)",
   "media: samtale-2.svg is 71813 B of SVG (> 40000) — authored as DA media samtale-2.png"
  ],
- "gaps": [
-  "no encoder for module hero-ask (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/samtale-2.svg"
  ],
- "writtenAt": "2026-09-14T21:39:12.030Z"
+ "writtenAt": "2026-09-14T22:30:27.759Z"
 }

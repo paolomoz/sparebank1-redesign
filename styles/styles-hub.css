@@ -1,1 +1,64 @@
 /* styles — hub family group section styles (closed-set additions only; imported by styles.css) */
+
+/* ===== category-hub ===== */
+/* shortcuts: h2 (title-sm) + a flat list of inline chevron links under a hairline, 48px movement */
+main .section.shortcuts { padding-block: var(--spacing-xl); }
+main .section.shortcuts .default-content-wrapper { gap: var(--spacing-xs); padding-top: var(--spacing-lg); border-top: 1px solid var(--lysgraa); }
+main .section.shortcuts .default-content-wrapper h2 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
+main .section.shortcuts .default-content-wrapper ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0 var(--spacing-lg); }
+main .section.shortcuts .default-content-wrapper ul li::marker { content: none; }
+main .section.shortcuts .default-content-wrapper ul a:any-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 8px 0; color: var(--vann); text-decoration: none; font: var(--body) / 1.2 var(--body-font-family); }
+main .section.shortcuts .default-content-wrapper ul a::after { content: ""; width: 18px; height: 18px; flex: 0 0 auto; background: currentcolor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 6 6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat; }
+main .section.shortcuts .default-content-wrapper ul a:hover { text-decoration: underline; color: var(--fjell); }
+
+/* ===== kundeservice-hub ===== */
+/* faq-aside: the movement h2 sits (sticky) in a 4/12 column beside the 8/12 accordion */
+main .section.faq-aside { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: var(--spacing-xl); align-items: start; padding-inline: max(var(--gutter), calc((100% - var(--max-width)) / 2)); }
+main .section.faq-aside > div { width: 100%; margin: 0; }
+main .section.faq-aside > div + div { margin-top: 0; }
+main .section.faq-aside > .default-content-wrapper { position: sticky; top: var(--spacing-lg); }
+
+/* ===== tool ===== */
+/* tool-intro: back link, then h1 (20ch) + lead (52ch); 48px under the lead */
+main .section.tool-intro { padding-bottom: var(--spacing-xl); }
+main .section.tool-intro .breadcrumbs-wrapper + .default-content-wrapper { margin-top: var(--spacing-md); }
+main .section.tool-intro .default-content-wrapper h1 { max-width: 20ch; }
+main .section.intro.tool-intro .default-content-wrapper h1 + p { max-width: 52ch; }
+
+/* ===== utility ===== */
+/* directory: h2 in a sticky 3/12 column, the table + partners prose in 9/12 */
+main .section.directory { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: 0 var(--spacing-xl); align-items: start; padding-inline: max(var(--gutter), calc((100% - var(--max-width)) / 2)); }
+main .section.directory > div { width: 100%; margin: 0; }
+main .section.directory > div + div { margin-top: 0; }
+main .section.directory > .default-content-wrapper:first-child { position: sticky; top: var(--spacing-lg); grid-column: 1; }
+main .section.directory > .table-wrapper { grid-column: 2; }
+main .section.directory > .table-wrapper + .default-content-wrapper { grid-column: 2; margin-top: var(--spacing-xl); gap: var(--spacing-sm); max-width: 68ch; }
+main .section.directory > .table-wrapper + .default-content-wrapper h3 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
+
+/* quick: the rich callout hangs 48px under the directory, flush to the next movement */
+main .section.quick { padding-block: var(--spacing-xl) 0; }
+
+/* address: h2 (title) over a 4-column ledger of <strong>Term</strong><br>value paragraphs */
+main .section.address .default-content-wrapper { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--spacing-lg) var(--spacing-xl); }
+main .section.address .default-content-wrapper h2 { grid-column: 1 / -1; font-size: var(--t-title); line-height: 1.2; }
+main .section.address .default-content-wrapper p { padding-top: var(--spacing-md); border-top: 1px solid var(--lysgraa); font-variant-numeric: tabular-nums; }
+main .section.address .default-content-wrapper p > strong:first-child { display: block; color: var(--fjell); margin-bottom: 4px; }
+main .section.address .default-content-wrapper p > strong:first-child + br { display: none; }
+
+@media (width <= 1023px) {
+  main .section.faq-aside { grid-template-columns: 1fr; gap: var(--spacing-md); }
+  main .section.faq-aside > .default-content-wrapper { position: static; }
+  main .section.directory { grid-template-columns: 1fr; gap: 0; }
+  main .section.directory > .default-content-wrapper:first-child { position: static; }
+  main .section.directory > .table-wrapper { grid-column: 1; margin-top: var(--spacing-md); }
+  main .section.directory > .table-wrapper + .default-content-wrapper { grid-column: 1; }
+  main .section.address .default-content-wrapper { grid-template-columns: 1fr 1fr; }
+}
+
+@media (width <= 640px) {
+  main .section.shortcuts .default-content-wrapper ul { display: grid; gap: 0; }
+  main .section.shortcuts .default-content-wrapper ul a:any-link { width: 100%; justify-content: space-between; }
+  main .section.tool-intro { padding-bottom: var(--spacing-md); }
+  main .section.address .default-content-wrapper { grid-template-columns: 1fr; gap: var(--spacing-md); }
+  main .section.address .default-content-wrapper h2 { margin-bottom: var(--spacing-sm); }
+}

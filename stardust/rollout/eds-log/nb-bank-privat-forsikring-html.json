@@ -1,0 +1,126 @@
+{
+ "slug": "nb-bank-privat-forsikring-html",
+ "deliveredPath": "/nb/bank/privat/forsikring",
+ "file": "content/nb/bank/privat/forsikring.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": null,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "page-title",
+   "blocks": []
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "promo-band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "static-cards",
+   "blocks": []
+  },
+  {
+   "module": "image",
+   "blocks": []
+  },
+  {
+   "module": "disclosure",
+   "blocks": []
+  },
+  {
+   "module": "static-cards",
+   "blocks": []
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cta-band",
+   "blocks": []
+  },
+  {
+   "module": "shortcut-row",
+   "blocks": []
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "columns",
+  "accordion",
+  "feedback"
+ ],
+ "notes": [
+  "media: dame-koffert-reise-rosa.svg is 47074 B of SVG (> 40000) — authored as DA media dame-koffert-reise-rosa.png",
+  "media: barekraft-skifte-sykkeldekk-lys-bakgrunn.svg is 52880 B of SVG (> 40000) — authored as DA media barekraft-skifte-sykkeldekk-lys-bakgrunn.png",
+  "media: Mennesker_personer_voksen_forelder_barn.svg is 77637 B of SVG (> 40000) — authored as DA media Mennesker_personer_voksen_forelder_barn.png",
+  "media: barn_spiller_fotball.svg is 93129 B of SVG (> 40000) — authored as DA media barn_spiller_fotball.png",
+  "media: bonde-ku-landbruk-mork.svg is 56362 B of SVG (> 40000) — authored as DA media bonde-ku-landbruk-mork.png",
+  "shortcut-row: prose h2 + ul of links (David's Model D5 simple list); section style `shortcuts` paints the hairline, the inline-link row and the chevrons",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [
+  "no encoder for module static-cards (emitted as prose)",
+  "no encoder for module image (emitted as prose)",
+  "no encoder for module disclosure (emitted as prose)",
+  "no encoder for module static-cards (emitted as prose)"
+ ],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-koffert-reise-rosa.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/barekraft-skifte-sykkeldekk-lys-bakgrunn.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/Mennesker_personer_voksen_forelder_barn.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/barn_spiller_fotball.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/bonde-ku-landbruk-mork.svg"
+ ],
+ "writtenAt": "2026-09-14T22:30:27.601Z"
+}

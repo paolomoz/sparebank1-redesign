@@ -1,0 +1,50 @@
+{
+ "slug": "nb-bank-bedrift-open-api-html",
+ "deliveredPath": "/nb/bank/bedrift/open-api",
+ "file": "content/nb/bank/bedrift/open-api.html",
+ "chrome": {
+  "nav": "/nav-bedrift",
+  "footer": "/footer-bedrift",
+  "router": "/fragments/bank-router-bedrift",
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "product-hero",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "hero",
+  "cards"
+ ],
+ "notes": [
+  "media: dame-mann-kontor.svg is 59916 B of SVG (> 40000) — authored as DA media dame-mann-kontor.png",
+  "card-rail (product): choices cols-3 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-mann-kontor.svg"
+ ],
+ "writtenAt": "2026-09-14T22:29:14.321Z"
+}

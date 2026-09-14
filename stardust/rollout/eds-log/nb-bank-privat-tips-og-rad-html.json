@@ -1,0 +1,73 @@
+{
+ "slug": "nb-bank-privat-tips-og-rad-html",
+ "deliveredPath": "/nb/bank/privat/tips-og-rad",
+ "file": "content/nb/bank/privat/tips-og-rad.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "page-title",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "text-and-image",
+   "blocks": []
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "media: tips-og-rad-hverdagen.svg is 61249 B of SVG (> 40000) — authored as DA media tips-og-rad-hverdagen.png",
+  "media: tips-og-rad-mitt-hjem.svg is 86797 B of SVG (> 40000) — authored as DA media tips-og-rad-mitt-hjem.png",
+  "media: tips-og-rad-familieliv.svg is 61914 B of SVG (> 40000) — authored as DA media tips-og-rad-familieliv.png",
+  "media: tips-og-rad-toffe-tider.svg is 63833 B of SVG (> 40000) — authored as DA media tips-og-rad-toffe-tider.png",
+  "media: tips-og-rad-ung.svg is 128311 B of SVG (> 40000) — authored as DA media tips-og-rad-ung.png",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [
+  "no encoder for module text-and-image (emitted as prose)"
+ ],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-hverdagen.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-mitt-hjem.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-familieliv.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-toffe-tider.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-ung.svg"
+ ],
+ "writtenAt": "2026-09-14T22:30:27.644Z"
+}

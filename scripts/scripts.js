@@ -85,8 +85,11 @@ function buildMediaAutoBlocks(main) {
     if (link.closest('.embed, .video, .widget, .hero, .columns')) return;
     const p = link.closest('p');
     if (p.querySelectorAll('a').length !== 1 || p.textContent.trim() !== link.textContent.trim()) return;
-    if (EMBED.test(link.href)) p.replaceWith(buildBlock('embed', { elems: [link] }));
-    else if (VIDEO.test(link.href)) p.replaceWith(buildBlock('video', { elems: [link] }));
+    const name = EMBED.test(link.href) ? 'embed' : VIDEO.test(link.href) ? 'video' : null;
+    if (!name) return;
+    // the authored PARAGRAPH is moved (it carries the editor's prose index — EW1/EW3); the block reads its link
+    const parent = p.parentNode; const next = p.nextSibling;
+    parent.insertBefore(buildBlock(name, { elems: [p] }), next);
   });
 }
 

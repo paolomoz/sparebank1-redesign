@@ -1,0 +1,99 @@
+{
+ "slug": "nb-bank-bedrift-bedriftsforsikring-html",
+ "deliveredPath": "/nb/bank/bedrift/bedriftsforsikring",
+ "file": "content/nb/bank/bedrift/bedriftsforsikring.html",
+ "chrome": {
+  "nav": "/nav-bedrift",
+  "footer": "/footer-bedrift",
+  "router": null,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "page-title",
+   "blocks": []
+  },
+  {
+   "module": "content-columns",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "promo-band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "cards",
+  "columns",
+  "accordion",
+  "feedback"
+ ],
+ "notes": [
+  "content-columns (cols-4, illustration + heading per column): cards (tiles grid-4); disclosures flattened to visible link lists",
+  "disclosure: details.disclosure flattened — the summary label as text, its links as a visible list",
+  "disclosure: details.disclosure flattened — the summary label as text, its links as a visible list",
+  "disclosure: details.disclosure flattened — the summary label as text, its links as a visible list",
+  "media: bonde-ku-landbruk-mork.svg is 56362 B of SVG (> 40000) — authored as DA media bonde-ku-landbruk-mork.png",
+  "disclosure: details.disclosure flattened — the summary label as text, its links as a visible list",
+  "split-media (illustration): variant illustration — SVG media kept at its own ratio (no 3:2 crop / paper)",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/bonde-ku-landbruk-mork.svg"
+ ],
+ "writtenAt": "2026-09-14T22:23:44.577Z"
+}

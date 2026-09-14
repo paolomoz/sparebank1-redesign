@@ -1,0 +1,81 @@
+{
+  "slug": "nb-bank-om-oss-presse-html",
+  "edsUrl": "http://localhost:3020/nb/bank/om-oss/presse",
+  "protoUrl": "http://localhost:8820/nb-bank-om-oss-presse-html-proposed.html",
+  "at": "2026-09-14T22:16:03.007Z",
+  "pixel": {
+    "360": {
+      "pct": 0.33,
+      "heightDelta": 0,
+      "compared": {
+        "width": 360,
+        "height": 3963
+      },
+      "pass": true,
+      "hot": []
+    },
+    "1440": {
+      "pct": 2.14,
+      "heightDelta": 0,
+      "compared": {
+        "width": 1440,
+        "height": 3270
+      },
+      "pass": true,
+      "hot": []
+    }
+  },
+  "chrome": {
+    "360": {
+      "header": 99.66,
+      "footer": 100,
+      "headerH": {
+        "proto": 61,
+        "eds": 61
+      },
+      "footerH": {
+        "proto": 970,
+        "eds": 970
+      },
+      "footerY": {
+        "proto": 2993,
+        "eds": 2993
+      },
+      "doc": {
+        "proto": 3963,
+        "eds": 3963
+      }
+    },
+    "1440": {
+      "header": 99.96,
+      "footer": 99.8,
+      "headerH": {
+        "proto": 110,
+        "eds": 110
+      },
+      "footerH": {
+        "proto": 481,
+        "eds": 481
+      },
+      "footerY": {
+        "proto": 2790,
+        "eds": 2790
+      },
+      "doc": {
+        "proto": 3270,
+        "eds": 3270
+      }
+    }
+  },
+  "content": {
+    "red": 0,
+    "justified": 0,
+    "amber": 0,
+    "orange": 0,
+    "summary": [
+      "  EDS: 36 text nodes — 10 headings, 0 eyebrows, 8 CTAs, 18 body; 8 img",
+      "  editable texts (outermost h*/p/ul/ol): proto 14 / EDS 17"
+    ]
+  },
+  "pass": true
+}

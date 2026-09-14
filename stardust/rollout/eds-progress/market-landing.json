@@ -1,0 +1,95 @@
+{
+  "archetype": "nb-bank-privat-html",
+  "document": "content/nb/bank/privat.html",
+  "blocks": {
+    "new": [],
+    "reused": [
+      "fragment (bank-router)",
+      "hero (campaign)",
+      "cards (tiles)",
+      "columns (promo promo-2 — new rules)",
+      "cards (news)",
+      "columns (index — new variant)"
+    ],
+    "sectionStyles": [
+      "paper-syrin",
+      "paper-sand",
+      "hairline-top",
+      "flush-top, compare"
+    ]
+  },
+  "iterations": 6,
+  "breakpoints": {
+    "360": {
+      "pixelPct": 0.15,
+      "heightDelta": 0,
+      "header": 99.66,
+      "footer": 98.91,
+      "pass": true
+    },
+    "1440": {
+      "pixelPct": 0.12,
+      "heightDelta": 0,
+      "header": 99.96,
+      "footer": 99.89,
+      "pass": true
+    }
+  },
+  "contentDiff": {
+    "red": 0,
+    "justified": [],
+    "amber": 17,
+    "orange": 12
+  },
+  "ew": {
+    "editable": 38,
+    "dead": 0,
+    "exempt": 1,
+    "duplicated": 0,
+    "exemptNote": "fragment reference /fragments/bank-router (@ew-exempt all)"
+  },
+  "lint": {
+    "davidsModel": "0 🔴 · 2 🟡 (D1 fragment single-row block = chrome convention, D4 SVG batch-verify)",
+    "delivery": "0 P0 · 0 P1 · 9 P2"
+  },
+  "productRegression": {
+    "slug": "nb-bank-privat-lan-boliglan-html",
+    "pixelPct": 0.74,
+    "heightDelta": -1,
+    "pass": true
+  },
+  "siblings": {
+    "converted": [
+      "nb-bank-bedrift-html",
+      "nb-bank-om-oss-html"
+    ],
+    "gaps": {
+      "nb-bank-bedrift-html": 0,
+      "nb-bank-om-oss-html": 0
+    },
+    "lintRed": {
+      "nb-bank-bedrift-html": 0,
+      "nb-bank-om-oss-html": 0
+    },
+    "contentDiffSampled": {
+      "slug": "nb-bank-bedrift-html",
+      "red": 0,
+      "findings": 29,
+      "ew": {
+        "editable": 37,
+        "dead": 0,
+        "duplicated": 0,
+        "exempt": 1
+      }
+    },
+    "blocksAdded": [
+      "cards (quick-links — new variant)",
+      "cards (link-cards grid-N — new variant)",
+      "cards (choices grid-3 + trailing CTA as default content)",
+      "columns (cols cols-2)",
+      "columns (split text-first illustration)",
+      "hero (campaign) ×2 on bedrift"
+    ]
+  },
+  "requestsFiled": "stardust/rollout/eds-requests.md § theme + market-landing — EDS Worker E2"
+}

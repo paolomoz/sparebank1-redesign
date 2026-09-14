@@ -1,0 +1,85 @@
+{
+  "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+  "edsUrl": "http://localhost:3020/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast",
+  "protoUrl": "http://localhost:8820/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html-proposed.html",
+  "at": "2026-09-14T22:27:00.070Z",
+  "pixel": {
+    "360": {
+      "pct": 4.01,
+      "heightDelta": -252,
+      "compared": {
+        "width": 360,
+        "height": 5693
+      },
+      "pass": false,
+      "hot": [
+        "5500-5693:93.1%"
+      ]
+    },
+    "1440": {
+      "pct": 3.28,
+      "heightDelta": -252,
+      "compared": {
+        "width": 1440,
+        "height": 3402
+      },
+      "pass": false,
+      "hot": [
+        "3000-3402:22.2%"
+      ]
+    }
+  },
+  "chrome": {
+    "360": {
+      "header": 99.66,
+      "footer": 77.42,
+      "headerH": {
+        "proto": 61,
+        "eds": 61
+      },
+      "footerH": {
+        "proto": 970,
+        "eds": 1222
+      },
+      "footerY": {
+        "proto": 4723,
+        "eds": 4723
+      },
+      "doc": {
+        "proto": 5693,
+        "eds": 5945
+      }
+    },
+    "1440": {
+      "header": 99.96,
+      "footer": 81.77,
+      "headerH": {
+        "proto": 110,
+        "eds": 110
+      },
+      "footerH": {
+        "proto": 481,
+        "eds": 733
+      },
+      "footerY": {
+        "proto": 2922,
+        "eds": 2922
+      },
+      "doc": {
+        "proto": 3402,
+        "eds": 3654
+      }
+    }
+  },
+  "content": {
+    "red": 0,
+    "justified": 0,
+    "amber": 0,
+    "orange": 0,
+    "summary": [
+      "  EDS: 33 text nodes — 6 headings, 0 eyebrows, 7 CTAs, 20 body; 7 img",
+      "  editable texts (outermost h*/p/ul/ol): proto 22 / EDS 24"
+    ]
+  },
+  "pass": false
+}

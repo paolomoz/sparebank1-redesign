@@ -1,0 +1,41 @@
+{
+ "slug": "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+ "deliveredPath": "/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon",
+ "file": "content/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer-frontend",
+  "router": null,
+  "market": "privat",
+  "clientlib": "frontend"
+ },
+ "modules": [
+  {
+   "module": "article-header",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "article-body",
+   "blocks": [
+    "callout",
+    "columns",
+    "cards"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "callout",
+  "columns",
+  "cards"
+ ],
+ "notes": [
+  "hero (article): the three share buttons are block chrome (captured JS handlers, no href; aria-labels @ew-exempt)",
+  "lint D3 cards (rail): one-cell rows are the two rail group headings (\"Relaterte artikler\", \"Relaterte tema\") and the tag list; two-cell rows are the stories — one block so the sticky rail stays one authored unit beside the body"
+ ],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:28:59.217Z"
+}

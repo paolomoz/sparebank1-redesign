@@ -1,0 +1,67 @@
+{
+ "slug": "nb-bank-privat-daglig-bruk-bankkonto-html",
+ "deliveredPath": "/nb/bank/privat/daglig-bruk/bankkonto",
+ "file": "content/nb/bank/privat/daglig-bruk/bankkonto.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "page-title",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "shortcuts",
+   "blocks": []
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "cta-band",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "cards",
+  "feedback"
+ ],
+ "notes": [
+  "card-rail (product): choices cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "shortcuts: h2 + one secondary CTA per shortcut as default content (D6 — pills from emphasis); the `shortcut-pills` section style lays the row out",
+  "card-rail (product): tips cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:29:14.341Z"
+}

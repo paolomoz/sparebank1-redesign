@@ -1,0 +1,72 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-html",
+ "deliveredPath": "/nb/bank/bedrift/kundeservice",
+ "file": "content/nb/bank/bedrift/kundeservice.html",
+ "chrome": {
+  "nav": "/nav-bedrift",
+  "footer": "/footer-bedrift",
+  "router": "/fragments/bank-router-bedrift",
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "hero-ask",
+   "blocks": [
+    "hero",
+    "cards"
+   ]
+  },
+  {
+   "module": "image",
+   "blocks": []
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "callout",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "topic-tiles",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "promo-band",
+   "blocks": [
+    "columns"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "cards",
+  "accordion",
+  "callout",
+  "columns"
+ ],
+ "notes": [
+  "hero-ask: chat form (dynamics #6 interim — controls disabled) authored as a second two-cell row [field label + note][button label]; the textarea placeholder repeats the label (@ew-exempt in hero.js)",
+  "faq (hub): `.cols` sub-columns flattened to prose in reading order (answers are collapsed; D2 no nested blocks); the \"Var dette nyttig?\" rating row is accordion `rate` chrome (@ew-exempt labels, dynamics #5)"
+ ],
+ "gaps": [
+  "no encoder for module image (emitted as prose)"
+ ],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:30:27.748Z"
+}

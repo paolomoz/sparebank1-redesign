@@ -1,0 +1,118 @@
+{
+ "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+ "deliveredPath": "/nb/bank/bedrift/betaling/utenlandsbetaling",
+ "file": "content/nb/bank/bedrift/betaling/utenlandsbetaling.html",
+ "chrome": {
+  "nav": "/nav-bedrift",
+  "footer": "/footer-bedrift",
+  "router": "/fragments/bank-router-bedrift",
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "product-hero",
+   "blocks": [
+    "hero",
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "steps",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "callout",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "accordion",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "content-columns",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "breadcrumbs",
+  "cards",
+  "callout",
+  "accordion",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "card-rail (product): choices cols-2 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "steps (product): cards (steps) — one row per step [h3, text]; the numbered circle is block chrome (CSS counter), the canon title self-anchor (#sbs-…) is dropped (no ids in the authored document)",
+  "accordion: h2 + lead as default content (lead-first), then accordion (faq) — one row per item [h3][answer]",
+  "media: verdenskart-verden-lys-bakgrunn.svg is 64250 B of SVG (> 40000) — authored as DA media verdenskart-verden-lys-bakgrunn.png",
+  "content-columns (product): columns (cols cols-2 spot) — one row, one cell per authored column (verbatim prose)",
+  "split-media (product): canon `media-right` (text 7 / media 5) → columns (split text-first), cells in the visual order",
+  "card-rail (product): choices cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head + lede and trailing prose are default content",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2025/verdenskart-verden-lys-bakgrunn.svg"
+ ],
+ "writtenAt": "2026-09-14T22:29:14.291Z"
+}

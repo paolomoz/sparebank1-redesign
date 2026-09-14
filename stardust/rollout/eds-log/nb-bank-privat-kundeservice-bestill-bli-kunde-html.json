@@ -1,0 +1,74 @@
+{
+ "slug": "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+ "deliveredPath": "/nb/bank/privat/kundeservice/bestill/bli-kunde",
+ "file": "content/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "product-hero",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "promo-band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "columns",
+  "cards",
+  "feedback"
+ ],
+ "notes": [
+  "media: illustrasjon-dame-sand-sirkel-usymmetrisk.svg is 1012845 B of SVG (> 40000) — authored as DA media illustrasjon-dame-sand-sirkel-usymmetrisk.png",
+  "media: illustrasjon-usymmetrisk-samboer-dame-mann-high-five.svg is 43025 B of SVG (> 40000) — authored as DA media illustrasjon-usymmetrisk-samboer-dame-mann-high-five.png",
+  "media: illustrasjon-kyss-sand-sirkel-usymmetrisk.svg is 983750 B of SVG (> 40000) — authored as DA media illustrasjon-kyss-sand-sirkel-usymmetrisk.png",
+  "product-hero (product): the canon USP list rides the hero text cell as an authored <ul> (icon + line items) — hero (usp) paints the check marks / icons",
+  "media: illustrasjon-penger-sand-sirkel-usymmetrisk.svg is 1026451 B of SVG (> 40000) — authored as DA media illustrasjon-penger-sand-sirkel-usymmetrisk.png",
+  "card-rail (product): links cols-1 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-dame-sand-sirkel-usymmetrisk.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-usymmetrisk-samboer-dame-mann-high-five.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kyss-sand-sirkel-usymmetrisk.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-penger-sand-sirkel-usymmetrisk.svg"
+ ],
+ "writtenAt": "2026-09-14T22:29:14.442Z"
+}

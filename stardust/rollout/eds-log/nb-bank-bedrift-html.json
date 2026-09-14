@@ -1,0 +1,102 @@
+{
+ "slug": "nb-bank-bedrift-html",
+ "deliveredPath": "/nb/bank/bedrift",
+ "file": "content/nb/bank/bedrift.html",
+ "chrome": {
+  "nav": "/nav-bedrift",
+  "footer": "/footer-bedrift",
+  "router": "/fragments/bank-router-bedrift",
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "campaign",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "quick-links",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "content-columns",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "promo-band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "campaign",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "content-columns",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "hero",
+  "cards",
+  "columns"
+ ],
+ "notes": [
+  "market landing: the visually-hidden h1 is authored as the hero h1 (block hides it visually)",
+  "quick-links: cards (quick-links) — one row per entry [icon][link]",
+  "split-media (media-right): columns (split text-first) — cells swapped so the text leads and the media sits right",
+  "split-media (illustration): variant illustration — SVG media kept at its own ratio (no 3:2 crop / paper)",
+  "content-columns (cols-2, mixed): columns (cols cols-2) — one prose cell per column (nested cards/columns flattened in order)",
+  "media: bonde-ku-landbruk-mork.svg is 56362 B of SVG (> 40000) — authored as DA media bonde-ku-landbruk-mork.png",
+  "media: folk-med-sportsutstyr-dame-gutt-basketball-hockey-lys.svg is 49883 B of SVG (> 40000) — authored as DA media folk-med-sportsutstyr-dame-gutt-basketball-hockey-lys.png",
+  "media: mobilbank-bedrift.svg is 43191 B of SVG (> 40000) — authored as DA media mobilbank-bedrift.png",
+  "content-columns (cols-4, one card per column + trailing CTA column as default content): cards (choices grid-3)"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/bonde-ku-landbruk-mork.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2023/folk-med-sportsutstyr-dame-gutt-basketball-hockey-lys.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2025/mobilbank-bedrift.svg"
+ ],
+ "writtenAt": "2026-09-14T22:23:44.598Z"
+}

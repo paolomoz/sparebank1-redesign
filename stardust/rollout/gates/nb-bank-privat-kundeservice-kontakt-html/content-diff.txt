@@ -1,0 +1,8 @@
+
+Content diff @ 1440px (profile "eds", root "main")
+  proto: 59 text nodes — 5 headings, 0 eyebrows, 39 CTAs, 15 body; 1 img
+  EDS: 58 text nodes — 5 headings, 0 eyebrows, 39 CTAs, 14 body; 1 img
+  editable texts (outermost h*/p/ul/ol): proto 11 / EDS 54
+
+Findings: 1 (0 structural 🔴)
+  🟡 MISSING BODY: proto body "Finn din bank"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.

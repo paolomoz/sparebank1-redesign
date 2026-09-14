@@ -1,0 +1,34 @@
+{
+ "slug": "nb-bank-om-oss-personvern-generelle-vilkar-html",
+ "deliveredPath": "/nb/bank/om-oss/personvern/generelle-vilkar",
+ "file": "content/nb/bank/om-oss/personvern/generelle-vilkar.html",
+ "chrome": {
+  "nav": "/nav-om-oss",
+  "footer": "/footer-om-oss",
+  "router": "/fragments/bank-router-om-oss",
+  "market": "om-oss",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "text",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  }
+ ],
+ "blocks": [
+  "breadcrumbs"
+ ],
+ "notes": [],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:22:56.667Z"
+}

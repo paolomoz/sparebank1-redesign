@@ -3,7 +3,7 @@
 /* ===== om-oss ===== */
 /* contacts — the presse `nasjonale` head: h2 + lead (phone number in tabular medium) + a small muted note */
 main .section.contacts .default-content-wrapper :is(h1, h2) + p { font-size: var(--lead); line-height: 1.5; max-width: 60ch; font-variant-numeric: tabular-nums; }
-main .section.contacts .default-content-wrapper :is(h1, h2) + p + p { font-size: var(--body-sm); line-height: 1.45; color: var(--koksgraa); }
+main .section.contacts .default-content-wrapper :is(h1, h2) + p + p { margin-top: var(--spacing-md); font-size: var(--body-sm); line-height: 1.45; color: var(--koksgraa); } /* canon p + p on top of the prose gap */
 
 /* hairline-none — a feedback band directly under a Sand paper: the paper edge marks the movement, no hairline (presse) */
 main .section.feedback-band.hairline-none { border-top: 0; }
@@ -16,7 +16,6 @@ main .section.prose-run .default-content-wrapper > h4 { font-size: var(--body); 
 main .section.prose-run .default-content-wrapper > :is(h1, h2, h3, h4) + p { margin-top: calc(-1 * var(--spacing-sm)); }
 main .section.prose-run .default-content-wrapper > h1 + p { margin-top: 0; }
 main .section.prose-run .default-content-wrapper > :first-child { margin-top: 0; }
-main .section.prose-run .breadcrumbs-wrapper + .default-content-wrapper { margin-top: 0; }
 
 /* tabs — dynamics #11 interim: the tab buttons are a jump list of badges above the in-page panels */
 main .section.tabs .default-content-wrapper > ul { display: flex; flex-wrap: wrap; gap: var(--spacing-sm); list-style: none; padding: 0; }
@@ -37,10 +36,15 @@ main .section.video-row .default-content-wrapper h3 { max-width: 24ch; }
 main .section.video-row .default-content-wrapper h3 + h3 { margin-top: calc(-1 * var(--spacing-sm)); }
 main .section.video-row .default-content-wrapper h2 { font-size: var(--t-title); line-height: 1.2; max-width: 24ch; }
 main .section.video-row .default-content-wrapper :is(ul, ol) { padding-left: 1.2em; }
+main .section.video-row .default-content-wrapper li + li { margin-top: var(--spacing-sm); } /* canon .prose li + li on top of the list gap */
 main .section.video-row .default-content-wrapper p.button-wrapper { margin-top: var(--spacing-sm); }
 main .section.video-row .default-content-wrapper p:has(> a:only-child):not(.button-wrapper) { margin-top: var(--spacing-sm); }
 main .section.video-row .default-content-wrapper p:has(> a:only-child):not(.button-wrapper) a:any-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; text-decoration: none; font: var(--body) / 1.2 var(--body-font-family); }
 main .section.video-row .default-content-wrapper p:has(> a:only-child):not(.button-wrapper) a:hover { text-decoration: underline; color: var(--fjell); }
+
+/* canon external-link glyph on the webinar CTAs (pill and inline link) — off-site hrefs only */
+main .section.video-row .default-content-wrapper a.button[href^="http"]:not([href*="sparebank1.no"])::after { content: ""; flex: 0 0 auto; width: 20px; height: 20px; background: currentcolor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5'/%3E%3C/svg%3E") center / contain no-repeat; }
+main .section.video-row .default-content-wrapper p:has(> a:only-child):not(.button-wrapper) a[href^="http"]:not([href*="sparebank1.no"])::after { content: ""; flex: 0 0 auto; width: 20px; height: 20px; background: currentcolor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5'/%3E%3C/svg%3E") center / contain no-repeat; }
 
 /* fineprint — the regulatory foot: a title-sm h2 above two running-text columns */
 main .section.fineprint .default-content-wrapper h2 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }

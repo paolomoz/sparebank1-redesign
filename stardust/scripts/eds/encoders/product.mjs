@@ -11,7 +11,7 @@
  * Group CSS: blocks/{hero,cards,columns,accordion}/<block>-product.css · styles/styles-product.css.
  */
 import * as L from '../lib.mjs';
-import { cardRail, splitMedia, promoBand, productHero, pageTitle, richText, faq } from '../encoders.mjs';
+import { cardRail, splitMedia, promoBand, productHero, pageTitle, richText, faq, calculator } from '../encoders.mjs';
 
 const { q, qa, cls, txt, inline, prose, ctaHtml, ctas, pic, block, section, styleOf, paperOf, esc } = L;
 
@@ -44,7 +44,9 @@ const tidy = (html) => html.replace(/(?:\s|<br>|&nbsp;)+<\/(p|li|h[1-6])>/g, '</
 function prep(root, ctx) {
   if (root.__prepped) return; root.__prepped = true;
   const phone = qa(root, '.only-phone'); if (phone.length) { ctx.notes.push(`prep: ${phone.length} phone-only duplicate CTA(s) (app deep links, hidden ≥ 768 in the canon) dropped — the desktop link is the authored one (dynamics: app-link redirect)`); phone.forEach((n) => n.remove()); }
-  for (const n of qa(root, '.faq-link, .visually-hidden, dialog, .cmp-carousel__indicators, .guide__indicators, .cmp-carousel__action, .comparison__filter-button, .scroll-indicator__dot, button.textcf__fragment--close, .guide-count')) n.remove();
+  // the canon's per-question article link (a.faq-link, visually-hidden label = the question) stays: like the core faq on the archetype it is
+  // authored as the answer's closing link paragraph (verbatim label) — a visible "read the full answer" link, never hidden copy (D15)
+  for (const n of qa(root, '.visually-hidden, dialog, .cmp-carousel__indicators, .guide__indicators, .cmp-carousel__action, .comparison__filter-button, .scroll-indicator__dot, button.textcf__fragment--close, .guide-count')) { if (n.closest('a.faq-link')) continue; n.remove(); }
   for (const b of qa(root, 'button.textcf__text-glossary')) { const s = root.ownerDocument.createElement('span'); s.textContent = txt(b); b.replaceWith(s); }
   for (const p of qa(root, 'p')) { if (!p.textContent.replace(/ /g, ' ').trim() && !p.querySelector('img, a')) p.remove(); }
 }
@@ -76,9 +78,9 @@ const gridOf = (ul) => (cls(ul).find((c) => /^grid-[1-4]$/.test(c)) || '').repla
 function cardsBlock(ul, ctx, variant) {
   const items = qa(ul, ':scope > li'); if (!items.length) return null;
   const g = gridOf(ul); const imgs = qa(ul, ':scope > li > img, :scope > li > figure img');
-  const illu = imgs.length && imgs.every((i) => /\.svg(\?|$)/i.test(i.getAttribute('src') || '') || cls(i).includes('illu'));
-  const r = rows(items, ctx); const uniform = r.every((x) => x.length === r[0].length);
-  return block('cards', [variant, g ? `cols-${g}` : null, illu ? 'illu' : null], uniform ? r : r.map((x) => (x.length === 1 ? ['', x[0]] : x)));
+  const nIllu = imgs.filter((i) => /\.svg(\?|$)/i.test(i.getAttribute('src') || '') || cls(i).includes('illu')).length;
+  const illu = imgs.length && nIllu * 2 >= imgs.length; // majority of the card images are spot illustrations → contained, no 3:2 crop
+  return block('cards', [variant, g ? `cols-${g}` : null, illu ? 'spot' : null], rows(items, ctx).map((x) => (x.length === 1 ? ['', x[0]] : x))); // always [media?][body] (D3 uniform rows)
 }
 const LIST_VARIANT = { 'choice-grid': 'choices', 'link-cards': 'links', 'tips-grid': 'tips', 'bio-grid': 'bios' };
 const listVariant = (ul) => cls(ul).map((c) => LIST_VARIANT[c]).find(Boolean) || 'choices';
@@ -121,9 +123,15 @@ function contentColumns(root, ctx) {
   for (const d of qa(grid, 'details.disclosure')) { after.push(disclosure(d, ctx)); blocks.add('accordion'); d.remove(); ctx.notes.push('content-columns (product): a disclosure inside a column follows the columns block as an accordion (disclosure) (D2)'); }
   const imgs = qa(grid, 'img'); const illu = imgs.length && imgs.every((i) => /\.svg(\?|$)/i.test(i.getAttribute('src') || ''));
   const live = cols.filter((c) => c.textContent.trim() || q(c, 'img'));
-  parts.push(block('columns', ['cols', `cols-${Math.min(live.length, 4)}`, illu ? 'illu' : null], [live.map((c) => prose(c, ctx))])); blocks.add('columns');
+  if (live.length <= 1) { // D1: one remaining column is prose, not a one-cell block
+    if (live.length) parts.push(prose(live[0], ctx));
+    parts.push(...after);
+    ctx.notes.push('content-columns (product): a single remaining column (the other was a callout / disclosure, now its own block) is default content (D1), the extracted block follows');
+    return { html: section(parts, { style: style(root, 'prose-start') }), blocks: [...blocks] };
+  }
+  parts.push(block('columns', ['cols', `cols-${Math.min(live.length, 4)}`, illu ? 'spot' : null], [live.map((c) => prose(c, ctx))])); blocks.add('columns');
   parts.push(...after);
-  ctx.notes.push(`content-columns (product): columns (cols cols-${Math.min(live.length, 4)}${illu ? ' illu' : ''}) — one row, one cell per authored column (verbatim prose)`);
+  ctx.notes.push(`content-columns (product): columns (cols cols-${Math.min(live.length, 4)}${illu ? ' spot' : ''}) — one row, one cell per authored column (verbatim prose)`);
   return { html: section(parts, { style: style(root) }), blocks: [...blocks] };
 }
 
@@ -132,13 +140,18 @@ function productSplit(root, ctx) {
   const right = cls(root).includes('media-right'); const video = q(root, '.q-media .video-link a[href], .q-media a.video-frame');
   if (!right && !video) return splitMedia(root, ctx);
   const media = q(root, '.q-media'); const text = q(root, '.q-text');
-  let mediaHtml = '';
-  if (video) { mediaHtml = `<p><em><a href="${esc(video.getAttribute('href'))}">${inline(video, ctx).trim()}</a></em></p>`; ctx.notes.push('split-media (product): the canon video link (secondary pill with play glyph → YouTube) is the media cell as a secondary CTA; variant `video` paints the glyph (auto-blocking is off inside columns)'); }
-  else { const img = q(media, 'img'); mediaHtml = img ? pic(img, ctx) : ''; }
   const textHtml = prose(text, ctx);
+  if (video) {
+    // D1: a video URL is never authored inside a block — plain link in default content, auto-blocked to `embed` by scripts.js;
+    // the `video-split` section style lays the embed and the prose side by side (5/7, or 7/5 when the text comes first).
+    const link = `<p><a href="${esc(video.getAttribute('href'))}">${inline(video, ctx).trim()}</a></p>`;
+    ctx.notes.push(`split-media (product): the canon video link (${esc(video.getAttribute('href'))}) is a plain default-content link → auto-blocked embed (D1); section style \`video-split\` keeps the canon split (${right ? 'text 7 / video 5' : 'video 5 / text 7'})`);
+    return { html: section([head(root, ctx), ...(right ? [textHtml, link] : [link, textHtml])], { style: style(root, 'video-split') }), blocks: ['embed'] };
+  }
+  const img = q(media, 'img'); const mediaHtml = img ? pic(img, ctx) : '';
   const cells = right ? [textHtml, mediaHtml] : [mediaHtml, textHtml];
-  if (right) ctx.notes.push('split-media (product): canon `media-right` (text 7 / media 5) → columns (split text-first), cells in the visual order');
-  return { html: section([head(root, ctx), block('columns', ['split', right ? 'text-first' : null, video ? 'video' : null], [cells])], { style: style(root) }), blocks: ['columns'] };
+  ctx.notes.push('split-media (product): canon `media-right` (text 7 / media 5) → columns (split text-first), cells in the visual order');
+  return { html: section([head(root, ctx), block('columns', ['split', 'text-first'], [cells])], { style: style(root) }), blocks: ['columns'] };
 }
 
 /* ------------------------------------------------------------- promo-band: `extra` (second logo after the text) ------------------------------------------------------------- */
@@ -158,7 +171,7 @@ function disclosure(d, ctx) {
 }
 function productRichText(root, ctx) {
   const c = q(root, ':scope > .container') || root;
-  if (!q(c, 'details.disclosure')) return richText(root, ctx);
+  if (!q(c, 'details.disclosure')) { const r = richText(root, ctx); if (r) r.html = restyle(r.html, style(root, 'prose-start')); return r; } // canon .prose-block is start-aligned
   const parts = []; let buf = '';
   const flush = () => { if (buf.trim()) parts.push(buf); buf = ''; };
   for (const n of c.children) {
@@ -169,15 +182,15 @@ function productRichText(root, ctx) {
   }
   flush();
   ctx.notes.push('rich-text (product): prose is default content (prose-narrow); each canon disclosure ("Se detaljerte vilkår") is an accordion (disclosure) — one row [label][body], collapsed like the canon <details>');
-  return { html: section(parts, { style: style(root, 'prose-narrow') }), blocks: ['accordion'] };
+  return { html: section(parts, { style: style(root, 'prose-start') }), blocks: ['accordion'] };
 }
 
 /* ------------------------------------------------------------- hero · page-title ------------------------------------------------------------- */
 function heroProduct(root, ctx) {
   const r = productHero(root, ctx); if (!r) return r;
   const illu = q(root, '.hero-media img.illu, .hero-media .hero-illu'); const usp = q(root, '.hero-text ul.usp-list');
-  r.html = addVariant(r.html, 'hero', illu ? 'illu' : null, usp ? 'usp' : null);
-  if (illu) ctx.notes.push('product-hero (product): SVG illustration instead of a photo → hero (product illu): contained, no 3:2 crop');
+  r.html = addVariant(r.html, 'hero', illu ? 'spot' : null, usp ? 'usp' : null);
+  if (illu) ctx.notes.push('product-hero (product): SVG illustration instead of a photo → hero (product spot): contained, no 3:2 crop');
   if (usp) ctx.notes.push(`product-hero (product): the canon USP list rides the hero text cell as an authored <ul>${cls(usp).includes('usp-icons') ? ' (icon + line items)' : ''} — hero (usp) paints the check marks / icons`);
   return r;
 }
@@ -226,7 +239,7 @@ function compareTable(root, ctx) {
     const cells = [...tr.children].map(cell); while (cells.length < ncol) cells.push(''); out.push(cells.slice(0, ncol));
   }
   const cap = q(tb, 'caption'); const parts = [head(root, ctx)]; if (cap && txt(cap)) parts.push(`<p>${inline(cap, ctx)}</p>`);
-  parts.push(block('table', ['compare'], out));
+  parts.push(block('table', ['compare', 'row-headers'], out)); // `row-headers` = the existing generic table.js variant (first column → <th scope="row">)
   ctx.notes.push(`table: Block Collection table (compare) — ${out.length - 1} cover rows × ${ncol} columns; each canon expandable detail row is folded into its cover's row-header cell (D3: no spans), check icons stay authored images`);
   return { html: section(parts, { style: style(root) }), blocks: ['table'] };
 }
@@ -265,6 +278,16 @@ function steps(root, ctx) {
   ctx.notes.push('steps (product): cards (steps) — one row per step [h3, text]; the numbered circle is block chrome (CSS counter), the canon title self-anchor (#sbs-…) is dropped (no ids in the authored document)');
   return { html: section([head(root, ctx), block('cards', ['steps'], r), ...rest], { style: style(root) }), blocks: ['cards'] };
 }
+/** calculator (product): the walker keeps the canon lead paragraph(s) between the h2 and the widget — default content before the block (core otherwise). */
+function productCalculator(root, ctx) {
+  const c = q(root, '.calc-wrap') || q(root, ':scope > .container') || root;
+  const lead = qa(c, ':scope > p, :scope > .prose').filter((n) => !q(n, '.calc') && txt(n));
+  const r = calculator(root, ctx); if (!r || !lead.length) return r;
+  const leadHtml = lead.map((n) => prose({ childNodes: [n] }, ctx)).join('');
+  r.html = r.html.replace('</h2>', `</h2>${leadHtml}`);
+  ctx.notes.push('calculator (product): the canon lead paragraph under the section title is default content above the calculator block');
+  return r;
+}
 /** cobranding (product): the always-open co-brand band [logo, h2, <em>question</em>, prose, CTAs][illustration + note] → columns (cobrand) — not the hub's disclosure. */
 function cobranding(root, ctx) {
   const cb = q(root, '.cobrand'); if (!cb) return null;
@@ -294,6 +317,7 @@ export default {
   cobranding: wrap(cobranding),
   steps: wrap(steps),
   faq: wrap(faq),
+  calculator: wrap(productCalculator),
   'price-terms': wrap(priceTerms),
   shortcuts: wrap(shortcuts),
   'people-cards': wrap(peopleCards),

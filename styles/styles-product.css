@@ -1,1 +1,72 @@
 /* styles — product family sibling section styles (closed-set additions only; imported by styles.css) */
+
+/* ===== product ===== */
+/* price-terms: h2 · check list · price example · one pill — default content, start-aligned, 24px rhythm (canon .price-terms / .check-list) */
+main .section.price-terms .default-content-wrapper { gap: var(--spacing-lg); justify-items: start; }
+main .section.price-terms .default-content-wrapper ul { list-style: none; padding: 0; display: grid; gap: var(--spacing-sm); max-width: 68ch; }
+main .section.price-terms .default-content-wrapper ul li { position: relative; padding-left: 1.75rem; color: var(--koksgraa); }
+main .section.price-terms .default-content-wrapper ul li::marker { content: none; }
+main .section.price-terms .default-content-wrapper ul li::before { content: ""; position: absolute; left: 0.25rem; top: 0.2em; width: 0.45rem; height: 0.85rem; border: solid var(--vann); border-width: 0 2px 2px 0; transform: rotate(45deg); }
+main .section.price-terms .default-content-wrapper p { max-width: 68ch; color: var(--koksgraa); }
+main .section.price-terms .default-content-wrapper p + p { margin-top: calc(var(--spacing-md) - var(--spacing-lg)); }
+main .section.price-terms .default-content-wrapper p.button-wrapper { margin-top: 0; }
+
+/* shortcut-pills: h2 + a wrapping row of secondary pills (canon .shortcut-list), one CTA paragraph per shortcut */
+main .section.shortcut-pills .default-content-wrapper { display: flex; flex-wrap: wrap; align-items: center; gap: var(--spacing-sm); }
+main .section.shortcut-pills .default-content-wrapper h2 { flex: 1 1 100%; margin-bottom: var(--spacing-md); }
+main .section.shortcut-pills .default-content-wrapper p.button-wrapper { margin: 0; }
+
+/* prose-start: the canon .prose-block — running prose start-aligned in the container, every line capped at 68ch
+   (the core prose-narrow caps the wrapper itself, which the section grid then centres) */
+main .section.prose-start .default-content-wrapper > * { max-width: 68ch; }
+main .section.prose-start .default-content-wrapper p:has(> img:only-child, > picture:only-child) { line-height: 0; }
+main .section.prose-start .default-content-wrapper img { width: auto; max-width: min(100%, 360px); height: auto; }
+main .section.prose-start .default-content-wrapper h3 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
+main .section.prose-start .default-content-wrapper h4 { font-size: var(--body); line-height: 1.4; }
+
+/* video-split: the canon split-media whose media is a video — the auto-blocked embed (5) beside the prose (7); text first → 7 / 5.
+   The video URL stays a plain link in default content (D1); the section grid replaces the columns block. */
+main .section.video-split { display: grid; grid-template-columns: 5fr 7fr; gap: var(--spacing-xl); align-items: center; width: min(100% - 2 * var(--gutter), var(--max-width)); margin-inline: auto; }
+main .section.video-split:has(> .default-content-wrapper:first-child) { grid-template-columns: 7fr 5fr; }
+main .section.video-split > div { width: auto; margin: 0; }
+main .section.video-split > div + div { margin-top: 0; }
+main .section.video-split .default-content-wrapper { max-width: 38rem; }
+main .section.video-split .default-content-wrapper h2 + p { font-size: var(--lead); line-height: 1.5; max-width: 60ch; }
+main .section.video-split .embed-wrapper { align-self: center; }
+
+/* topic-list: spot illustration (120px) above the h2, then the feature accordion */
+main .section.topic-list .default-content-wrapper p:has(> img:only-child, > picture:only-child) { line-height: 0; }
+main .section.topic-list .default-content-wrapper img { width: 120px; height: 120px; object-fit: contain; border-radius: 0; }
+main .section.topic-list .default-content-wrapper + .accordion-wrapper { margin-top: var(--spacing-md); }
+
+/* table compare (the canon .cmp-table): row headers hold the cover line + its detail prose; check icons centred.
+   Block-scoped rules live here because blocks/table/ has no group import (request filed: eds-requests.md § product). */
+main .table.compare table { min-width: 0; }
+main .table.compare th,
+main .table.compare td { padding: 12px 16px; vertical-align: top; }
+main .table.compare thead th { font-family: var(--title-font-family); font-size: var(--body); color: var(--fjell); text-align: center; padding-top: 0; }
+main .table.compare thead th:first-child { text-align: left; }
+main .table.compare tbody th { font-family: var(--body-font-family); font-weight: 400; color: var(--koksgraa); text-align: left; padding-left: 0; }
+main .table.compare tbody th > p:first-child { color: var(--color-fg, inherit); }
+main .table.compare tbody th > * + * { margin-top: var(--spacing-sm); font-size: var(--body-sm); line-height: 1.45; color: var(--koksgraa); max-width: 60ch; }
+main .table.compare tbody th ul { list-style: disc; padding-left: 1.25em; display: grid; gap: 4px; }
+main .table.compare tbody th a:any-link { color: var(--vann); }
+main .table.compare tbody td { text-align: center; width: 9rem; }
+main .table.compare tbody td img { display: inline-block; width: 24px; height: 24px; border-radius: 0; vertical-align: middle; }
+main .table.compare tbody td p { margin: 0; }
+main .table.compare tbody tr:not(:has(td img, td p, td picture)) th { font-family: var(--title-font-family); color: var(--fjell); padding-top: var(--spacing-lg); }
+
+@media (width <= 1023px) {
+  main .section.video-split,
+  main .section.video-split:has(> .default-content-wrapper:first-child) { grid-template-columns: minmax(0, 1fr); gap: var(--spacing-lg); }
+  main .section.video-split .default-content-wrapper { max-width: none; }
+  main .section.video-split .embed-wrapper { max-width: 36rem; }
+}
+
+@media (width <= 640px) {
+  main .section.shortcut-pills .default-content-wrapper p.button-wrapper,
+  main .section.shortcut-pills .default-content-wrapper p.button-wrapper a.button { width: 100%; }
+  main .table.compare th,
+  main .table.compare td { padding: 10px 8px; }
+  main .table.compare tbody td { width: 5rem; }
+}

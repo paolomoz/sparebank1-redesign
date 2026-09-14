@@ -1,0 +1,11 @@
+
+Content diff @ 1440px (profile "eds", root "main")
+  proto: 25 text nodes — 7 headings, 0 eyebrows, 6 CTAs, 12 body; 5 img
+  EDS: 25 text nodes — 7 headings, 0 eyebrows, 8 CTAs, 10 body; 5 img
+  editable texts (outermost h*/p/ul/ol): proto 20 / EDS 25
+
+Findings: 4 (0 structural 🔴)
+  🟠 EXTRA: EDS cta "https://www.sparebank1.no/content/dam/sb1-video/" has no proto source — Unexpected node with no proto source.
+  🟠 EXTRA: EDS cta "https://www.sparebank1.no/content/dam/sb1-video/" has no proto source — Unexpected node with no proto source.
+  🟡 MISSING BODY: proto body "Your browser does not support the video"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Your browser does not support the video"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.

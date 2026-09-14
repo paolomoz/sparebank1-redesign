@@ -1,0 +1,59 @@
+{
+ "slug": "nb-bank-om-oss-samfunnsansvar-html",
+ "deliveredPath": "/nb/bank/om-oss/samfunnsansvar",
+ "file": "content/nb/bank/om-oss/samfunnsansvar.html",
+ "chrome": {
+  "nav": "/nav-om-oss",
+  "footer": "/footer-om-oss",
+  "router": null,
+  "market": "om-oss",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "campaign",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "cards",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "columns-grid",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "columns-grid",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "cards",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "media: visning-familie-mork.svg is 83567 B of SVG (> 40000) — authored as DA media visning-familie-mork.png",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/visning-familie-mork.svg"
+ ],
+ "writtenAt": "2026-09-14T22:22:56.685Z"
+}

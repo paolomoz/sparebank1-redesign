@@ -1,0 +1,95 @@
+{
+ "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+ "deliveredPath": "/nb/bank/bedrift/bedriftskort/kredittkort",
+ "file": "content/nb/bank/bedrift/bedriftskort/kredittkort.html",
+ "chrome": {
+  "nav": "/nav-bedrift",
+  "footer": "/footer-bedrift",
+  "router": "/fragments/bank-router-bedrift",
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "product-hero",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "content-columns",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "price-terms",
+   "blocks": []
+  },
+  {
+   "module": "rich-text",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "callout",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "columns",
+  "cards",
+  "accordion",
+  "callout",
+  "feedback"
+ ],
+ "notes": [
+  "product-hero (product): the canon USP list rides the hero text cell as an authored <ul> — hero (usp) paints the check marks / icons",
+  "prep: 2 phone-only duplicate CTA(s) (app deep links, hidden ≥ 768 in the canon) dropped — the desktop link is the authored one (dynamics: app-link redirect)",
+  "content-columns (product): columns (cols cols-3 spot) — one row, one cell per authored column (verbatim prose)",
+  "card-rail (product): choices cols-2 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "price-terms: prose composition (h2, check list, price example, pill) → default content with the `price-terms` section style (styles-product.css)",
+  "rich-text (product): prose is default content (prose-narrow); each canon disclosure (\"Se detaljerte vilkår\") is an accordion (disclosure) — one row [label][body], collapsed like the canon <details>",
+  "split-media (product): canon `media-right` (text 7 / media 5) → columns (split text-first), cells in the visual order",
+  "card-rail (product): links cols-3 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:29:14.278Z"
+}

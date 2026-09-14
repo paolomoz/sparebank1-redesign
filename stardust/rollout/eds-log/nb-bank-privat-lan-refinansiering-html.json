@@ -1,0 +1,88 @@
+{
+ "slug": "nb-bank-privat-lan-refinansiering-html",
+ "deliveredPath": "/nb/bank/privat/lan/refinansiering",
+ "file": "content/nb/bank/privat/lan/refinansiering.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "product-hero",
+   "blocks": [
+    "hero",
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "promo-band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "cta-band",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "hero",
+  "breadcrumbs",
+  "cards",
+  "columns",
+  "accordion",
+  "feedback"
+ ],
+ "notes": [
+  "media: ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.svg is 55304 B of SVG (> 40000) — authored as DA media ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.png",
+  "card-rail (product): choices cols-3 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "prep: 2 phone-only duplicate CTA(s) (app deep links, hidden ≥ 768 in the canon) dropped — the desktop link is the authored one (dynamics: app-link redirect)",
+  "card-rail (product): tips cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2025/ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.svg"
+ ],
+ "writtenAt": "2026-09-14T22:29:14.467Z"
+}

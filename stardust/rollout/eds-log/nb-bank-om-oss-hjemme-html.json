@@ -12,7 +12,9 @@
  "modules": [
   {
    "module": "video-hero",
-   "blocks": []
+   "blocks": [
+    "hero"
+   ]
   },
   {
    "module": "story-text",
@@ -30,7 +32,9 @@
   },
   {
    "module": "video",
-   "blocks": []
+   "blocks": [
+    "video"
+   ]
   },
   {
    "module": "split-media",
@@ -40,15 +44,16 @@
   }
  ],
  "blocks": [
-  "columns"
+  "hero",
+  "columns",
+  "video"
  ],
- "notes": [],
- "gaps": [
-  "no encoder for module video-hero (emitted as prose)",
-  "no encoder for module story-text (emitted as prose)",
-  "no encoder for module story-text (emitted as prose)",
-  "no encoder for module video (emitted as prose)"
+ "notes": [
+  "hero (video): the campaign loop stays on the source origin (never content.da.live); the block renders <video controls muted loop preload=metadata> from the authored link",
+  "slides: captured in-page anchors (#kontakt, #blikunde) live on the individual slides; the section carries id=slides (dynamics: anchor targets per row are not authorable in one block)",
+  "lint D1 video: authored as a plain mp4 link (auto-blocked to `video` by scripts.js); the film stays on the source origin"
  ],
+ "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T21:39:12.045Z"
+ "writtenAt": "2026-09-14T22:24:36.186Z"
 }

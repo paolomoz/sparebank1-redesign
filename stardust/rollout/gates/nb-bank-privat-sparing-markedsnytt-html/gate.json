@@ -1,0 +1,81 @@
+{
+  "slug": "nb-bank-privat-sparing-markedsnytt-html",
+  "edsUrl": "http://localhost:3020/nb/bank/privat/sparing/markedsnytt",
+  "protoUrl": "http://localhost:8820/nb-bank-privat-sparing-markedsnytt-html-proposed.html",
+  "at": "2026-09-14T22:20:01.183Z",
+  "pixel": {
+    "360": {
+      "pct": 0.32,
+      "heightDelta": 0,
+      "compared": {
+        "width": 360,
+        "height": 10351
+      },
+      "pass": true,
+      "hot": []
+    },
+    "1440": {
+      "pct": 0.08,
+      "heightDelta": 0,
+      "compared": {
+        "width": 1440,
+        "height": 6704
+      },
+      "pass": true,
+      "hot": []
+    }
+  },
+  "chrome": {
+    "360": {
+      "header": 99.66,
+      "footer": 100,
+      "headerH": {
+        "proto": 61,
+        "eds": 61
+      },
+      "footerH": {
+        "proto": 1884,
+        "eds": 1884
+      },
+      "footerY": {
+        "proto": 8466,
+        "eds": 8466
+      },
+      "doc": {
+        "proto": 10351,
+        "eds": 10351
+      }
+    },
+    "1440": {
+      "header": 99.96,
+      "footer": 99.89,
+      "headerH": {
+        "proto": 110,
+        "eds": 110
+      },
+      "footerH": {
+        "proto": 917,
+        "eds": 917
+      },
+      "footerY": {
+        "proto": 5787,
+        "eds": 5787
+      },
+      "doc": {
+        "proto": 6704,
+        "eds": 6704
+      }
+    }
+  },
+  "content": {
+    "red": 0,
+    "justified": 0,
+    "amber": 26,
+    "orange": 12,
+    "summary": [
+      "  EDS: 100 text nodes — 18 headings, 0 eyebrows, 33 CTAs, 49 body; 11 img",
+      "  editable texts (outermost h*/p/ul/ol): proto 43 / EDS 55"
+    ]
+  },
+  "pass": true
+}

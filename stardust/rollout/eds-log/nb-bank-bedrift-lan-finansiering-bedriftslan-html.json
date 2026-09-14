@@ -1,0 +1,97 @@
+{
+ "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+ "deliveredPath": "/nb/bank/bedrift/lan-finansiering/bedriftslan",
+ "file": "content/nb/bank/bedrift/lan-finansiering/bedriftslan.html",
+ "chrome": {
+  "nav": "/nav-bedrift",
+  "footer": "/footer-bedrift",
+  "router": "/fragments/bank-router-bedrift",
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "product-hero",
+   "blocks": [
+    "hero",
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "price-terms",
+   "blocks": []
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "callout",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "breadcrumbs",
+  "columns",
+  "callout",
+  "accordion",
+  "cards",
+  "feedback"
+ ],
+ "notes": [
+  "product-hero (product): the canon USP list rides the hero text cell as an authored <ul> — hero (usp) paints the check marks / icons",
+  "price-terms: prose composition (h2, check list, price example, pill) → default content with the `price-terms` section style (styles-product.css)",
+  "split-media (product): canon `media-right` (text 7 / media 5) → columns (split text-first), cells in the visual order",
+  "card-rail (product): links cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:29:14.304Z"
+}

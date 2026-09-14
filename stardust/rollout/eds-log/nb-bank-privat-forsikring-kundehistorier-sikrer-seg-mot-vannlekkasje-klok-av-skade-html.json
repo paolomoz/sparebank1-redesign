@@ -1,0 +1,34 @@
+{
+ "slug": "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+ "deliveredPath": "/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade",
+ "file": "content/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade.html",
+ "chrome": {
+  "nav": "/nav-minimal",
+  "footer": "/footer-frontend",
+  "router": null,
+  "market": "privat",
+  "clientlib": "frontend"
+ },
+ "modules": [
+  {
+   "module": "article-header",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "article-body",
+   "blocks": [
+    "columns"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "columns"
+ ],
+ "notes": [],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:28:59.214Z"
+}

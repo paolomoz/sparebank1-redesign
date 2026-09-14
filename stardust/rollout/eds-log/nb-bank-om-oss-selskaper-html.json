@@ -1,0 +1,43 @@
+{
+ "slug": "nb-bank-om-oss-selskaper-html",
+ "deliveredPath": "/nb/bank/om-oss/selskaper",
+ "file": "content/nb/bank/om-oss/selskaper.html",
+ "chrome": {
+  "nav": "/nav-om-oss",
+  "footer": "/footer-om-oss",
+  "router": "/fragments/bank-router-om-oss",
+  "market": "om-oss",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "text",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "background-container",
+   "blocks": [
+    "columns",
+    "cards"
+   ]
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "columns",
+  "cards"
+ ],
+ "notes": [],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:22:56.688Z"
+}

@@ -1,0 +1,71 @@
+{
+ "slug": "nb-bank-privat-forsikring-meld-skade-html",
+ "deliveredPath": "/nb/bank/privat/forsikring/meld-skade",
+ "file": "content/nb/bank/privat/forsikring/meld-skade.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer-frontend-2",
+  "router": null,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "page-title",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "card-grid",
+   "blocks": []
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "accordion",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "media: dame-hjemmekontor.svg is 45095 B of SVG (> 40000) — authored as DA media dame-hjemmekontor.png",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [
+  "no encoder for module card-grid (emitted as prose)"
+ ],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-hjemmekontor.svg"
+ ],
+ "writtenAt": "2026-09-14T22:30:27.845Z"
+}

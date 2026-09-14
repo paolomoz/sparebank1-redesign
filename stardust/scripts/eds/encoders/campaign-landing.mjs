@@ -19,8 +19,8 @@ export default {
   },
   'story-text': (root, ctx) => {
     const h = q(root, '.chapter-title, h2'); const pr = q(root, '.prose');
-    const id = root.getAttribute('id');
-    return { html: section([h ? `<h2>${inline(h, ctx)}</h2>` : '', pr ? prose(pr, ctx) : ''], { style: styleOf(paperOf(root), 'chapter'), ...(id ? { id } : {}) }), blocks: [] };
+    const id = root.getAttribute('id'); const lead = !!q(pr, ':scope > p.lead:first-child'); // only chapters whose captured first paragraph is the lead
+    return { html: section([h ? `<h2>${inline(h, ctx)}</h2>` : '', pr ? prose(pr, ctx) : ''], { style: styleOf(paperOf(root), 'chapter', lead ? 'lead-first' : null), ...(id ? { id } : {}) }), blocks: [] };
   },
   'split-media': (root, ctx) => {
     const slides = qa(root, '.slide');

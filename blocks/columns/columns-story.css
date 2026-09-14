@@ -35,6 +35,7 @@
 }
 
 @media (width <= 640px) {
+  .columns.split.slides .container { gap: var(--spacing-xl); }
   .columns.split.slides .split-row,
   .columns.split.slides .split-row:nth-child(even),
   .columns.split.closing .split-row { grid-template-columns: 1fr; gap: var(--spacing-lg); }

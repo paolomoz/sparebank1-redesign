@@ -1,0 +1,62 @@
+{
+ "slug": "nb-bank-privat-sparing-spare-til-barn-html",
+ "deliveredPath": "/nb/bank/privat/sparing/spare-til-barn",
+ "file": "content/nb/bank/privat/sparing/spare-til-barn.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "page-title",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "cards",
+  "feedback"
+ ],
+ "notes": [
+  "card-rail (product): choices cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "card-rail (product): tips cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:29:14.491Z"
+}

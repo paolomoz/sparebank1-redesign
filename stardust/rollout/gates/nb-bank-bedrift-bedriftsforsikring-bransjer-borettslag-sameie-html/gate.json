@@ -1,0 +1,81 @@
+{
+  "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+  "edsUrl": "http://localhost:3020/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie",
+  "protoUrl": "http://localhost:8820/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html-proposed.html",
+  "at": "2026-09-14T22:25:33.600Z",
+  "pixel": {
+    "360": {
+      "pct": 0.35,
+      "heightDelta": 0,
+      "compared": {
+        "width": 360,
+        "height": 8086
+      },
+      "pass": true,
+      "hot": []
+    },
+    "1440": {
+      "pct": 0.04,
+      "heightDelta": 0,
+      "compared": {
+        "width": 1440,
+        "height": 4525
+      },
+      "pass": true,
+      "hot": []
+    }
+  },
+  "chrome": {
+    "360": {
+      "header": 99.66,
+      "footer": 100,
+      "headerH": {
+        "proto": 61,
+        "eds": 61
+      },
+      "footerH": {
+        "proto": 1861,
+        "eds": 1861
+      },
+      "footerY": {
+        "proto": 6225,
+        "eds": 6225
+      },
+      "doc": {
+        "proto": 8086,
+        "eds": 8086
+      }
+    },
+    "1440": {
+      "header": 99.96,
+      "footer": 99.89,
+      "headerH": {
+        "proto": 110,
+        "eds": 110
+      },
+      "footerH": {
+        "proto": 917,
+        "eds": 917
+      },
+      "footerY": {
+        "proto": 3608,
+        "eds": 3608
+      },
+      "doc": {
+        "proto": 4525,
+        "eds": 4525
+      }
+    }
+  },
+  "content": {
+    "red": 0,
+    "justified": 0,
+    "amber": 0,
+    "orange": 0,
+    "summary": [
+      "  EDS: 49 text nodes — 8 headings, 0 eyebrows, 19 CTAs, 22 body; 8 img",
+      "  editable texts (outermost h*/p/ul/ol): proto 27 / EDS 30"
+    ]
+  },
+  "pass": true
+}

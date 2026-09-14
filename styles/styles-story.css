@@ -14,7 +14,7 @@ main .section.question .default-content-wrapper img { max-width: 100%; border-ra
 main .section.question .callout-wrapper { margin-top: var(--spacing-xl); }
 main .section.question .callout-wrapper + .callout-wrapper { margin-top: var(--spacing-lg); }
 main .section.question .callout-wrapper + .default-content-wrapper { margin-top: var(--spacing-xl); }
-main .section.question .feedback-wrapper { margin-top: var(--spacing-xl); }
+main .section.question .feedback-wrapper { margin-top: var(--spacing-2xl); }
 
 @media (width <= 1023px) { main .section.question { padding-block: var(--spacing-lg) var(--spacing-xl); } }
 
@@ -59,6 +59,7 @@ main .section.article .columns-wrapper + .default-content-wrapper { margin-top: 
 @media (width <= 640px) {
   main .section.article .default-content-wrapper * + p:has(> img:only-child, > picture:only-child) { margin-top: var(--spacing-sm); }
   main .section.article .default-content-wrapper p:has(> img:only-child, > picture:only-child) + p:has(> em:only-child) + * { margin-top: var(--spacing-sm); }
+  main .section.article .default-content-wrapper p:has(> img:only-child, > picture:only-child) + p:has(> em:only-child) + h2 { margin-top: calc(var(--spacing-xl) - var(--spacing-md)); } /* canon: h2 keeps 48 after a figure */
 }
 
 /* featured (news listing): h1 48px above the featured story; listing: 48/48 */
@@ -79,24 +80,23 @@ main .section.video-hero { padding-top: var(--spacing-xl); }
 @media (width <= 640px) { main .section.video-hero { padding-top: var(--spacing-lg); } }
 
 /* chapter (campaign landing): h2 at headline size in the 5-column, the story in the 7-column; first paragraph as lead */
-main .section.chapter .default-content-wrapper { grid-template-columns: 5fr 7fr; column-gap: var(--spacing-xl); align-items: start; }
+main .section.chapter .default-content-wrapper { grid-template-columns: 5fr 7fr; gap: 0 var(--spacing-xl); align-items: start; }
 main .section.chapter .default-content-wrapper > h2 { grid-column: 1; grid-row: 1 / span 30; font-size: var(--t-headline); line-height: var(--line-height-heading); max-width: 16ch; }
 main .section.chapter .default-content-wrapper > :not(h2) { grid-column: 2; max-width: 68ch; }
-main .section.chapter .default-content-wrapper > h2 + p { font-size: var(--lead); line-height: 1.5; }
-main .section.chapter .default-content-wrapper > p.button-wrapper { margin-top: calc(var(--spacing-sm) - var(--spacing-md) + var(--spacing-md)); }
+main .section.chapter .default-content-wrapper > :not(h2) + :not(h2) { margin-top: var(--spacing-md); }
+main .section.chapter.lead-first .default-content-wrapper > h2 + p { max-width: 68ch; } /* the canon chapter lead runs the full prose width */
 
 @media (width <= 1023px) {
-  main .section.chapter .default-content-wrapper { grid-template-columns: 1fr; gap: var(--spacing-lg); }
-  main .section.chapter .default-content-wrapper > h2 { grid-row: auto; max-width: none; }
+  main .section.chapter .default-content-wrapper { grid-template-columns: 1fr; gap: 0; }
+  main .section.chapter .default-content-wrapper > h2 { grid-row: auto; max-width: none; margin-bottom: var(--spacing-lg); }
   main .section.chapter .default-content-wrapper > :not(h2) { grid-column: 1; }
-  main .section.chapter .default-content-wrapper > p + p { margin-top: calc(var(--spacing-md) - var(--spacing-lg)); }
 }
 
 /* film (campaign landing): the film in the 7-column, caption (icon + title) 8px under it */
-main .section.film .video-wrapper { width: calc(100% * 7 / 12); }
+main .section.film .video .video-fig { width: calc(100% * 7 / 12); }
 main .section.film .video-wrapper + .default-content-wrapper { margin-top: var(--spacing-sm); }
 main .section.film .default-content-wrapper p:has(> em) { display: flex; align-items: center; gap: var(--spacing-sm); font-size: var(--body-sm); line-height: 1.45; color: var(--moerkgraa); }
 main .section.film .default-content-wrapper p em { font-style: normal; }
 main .section.film .default-content-wrapper img { width: 24px; height: 24px; border-radius: 0; }
 
-@media (width <= 1023px) { main .section.film .video-wrapper { width: 100%; } }
+@media (width <= 1023px) { main .section.film .video .video-fig { width: 100%; } }

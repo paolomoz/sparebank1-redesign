@@ -1,0 +1,37 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+ "deliveredPath": "/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken",
+ "file": "content/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html",
+ "chrome": {
+  "nav": "/nav-om-oss",
+  "footer": "/footer-frontend-om-oss-2",
+  "router": null,
+  "market": "om-oss",
+  "clientlib": "frontend"
+ },
+ "modules": [
+  {
+   "module": "article-header",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "article-body",
+   "blocks": [
+    "cards"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "cards"
+ ],
+ "notes": [
+  "hero (article): the three share buttons are block chrome (captured JS handlers, no href; aria-labels @ew-exempt)",
+  "lint D3 cards (rail): one-cell rows are the two rail group headings (\"Relaterte artikler\", \"Relaterte tema\") and the tag list; two-cell rows are the stories — one block so the sticky rail stays one authored unit beside the body"
+ ],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:28:59.204Z"
+}

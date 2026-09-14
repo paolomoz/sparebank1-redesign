@@ -1,0 +1,64 @@
+{
+ "archetype": "nb-bank-om-oss-hjemme-html",
+ "document": "content/nb/bank/om-oss/hjemme.html",
+ "blocks": {
+  "new": [
+   "video"
+  ],
+  "reused": [
+   "hero (video)",
+   "columns (split slides|closing)"
+  ]
+ },
+ "iterations": 4,
+ "breakpoints": {
+  "360": {
+   "pixelPct": 3.97,
+   "heightDelta": -252,
+   "header": 99.66,
+   "footer": 77.29,
+   "pass": false,
+   "bodyHeightDelta": 0,
+   "note": "footer crop fails on the lead's frontend footer document (legal links rendered as a 4th column, +252 px) — body matches; see eds-requests.md story #1"
+  },
+  "1440": {
+   "pixelPct": 1.77,
+   "heightDelta": -252,
+   "header": 99.96,
+   "footer": 81.71,
+   "pass": false,
+   "bodyHeightDelta": 0,
+   "note": "footer crop fails on the lead's frontend footer document (legal links rendered as a 4th column, +252 px) — body matches; see eds-requests.md story #1"
+  }
+ },
+ "contentDiff": {
+  "red": 0,
+  "justified": []
+ },
+ "ew": {
+  "editable": 25,
+  "dead": 0,
+  "exempt": 0
+ },
+ "lint": {
+  "davidsModelRed": 0,
+  "deliveryP0P1": 0
+ },
+ "productRegression": {
+  "slug": "nb-bank-privat-lan-boliglan-html",
+  "pixelPct1440": 0.74,
+  "heightDelta": -1,
+  "pass": true
+ },
+ "siblings": {
+  "converted": [],
+  "gaps": {},
+  "lintRed": {},
+  "contentDiffSampled": null
+ },
+ "requests": [
+  "stardust/rollout/eds-requests.md → story #1 (frontend footer 4th column), #2 (lib.inline collapses nbsp)"
+ ],
+ "gatePass": false,
+ "writtenAt": "2026-09-14T22:31:17.951Z"
+}

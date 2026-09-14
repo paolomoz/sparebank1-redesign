@@ -51,12 +51,15 @@ main .columns.split.prevention .split-row { grid-template-columns: 1fr 1fr; } /*
 @media (width <= 1023px) {
   .columns.sheets .split-row { gap: var(--spacing-xl); }
   .columns.split.resident .col-media { justify-content: flex-start; }
-  .columns.split.resident .col-media img { width: min(100%, 300px); }
+  main .columns.split.resident .col-media img { width: min(100%, 300px); } /* main prefix: outranks the later .illustration width */
   .columns.split.prevention .col-media { max-width: 36rem; }
+  main .columns.split.prevention .split-row { grid-template-columns: 1fr; } /* stacks like the core split (the main-prefixed desktop rule would otherwise win here) */
 }
 
 @media (width <= 767px) {
-  .columns.sheets .split-row { grid-template-columns: 1fr; grid-template-rows: none; }
+  /* PROTOTYPE PARITY: the approved prototype keeps its 4 explicit rows when the sheets stack (2 empty tracks × 48 px gap = 96 px of blank
+     paper before the compare link) — filed in eds-requests.md; drop `grid-template-rows` here once the renderer resets it at 767 */
+  .columns.sheets .split-row { grid-template-columns: 1fr; }
   .columns.sheets .col-text { grid-row: auto; grid-template-rows: none; }
 }
 
@@ -64,8 +67,37 @@ main .columns.split.prevention .split-row { grid-template-columns: 1fr 1fr; } /*
   .columns.split.resident .cta-row p.button-wrapper { flex: 1 1 100%; }
   .columns.split.resident .cta-row a.button { width: 100%; }
   .columns.promo.promo-2 .container { grid-template-columns: 1fr; }
-  .columns.promo.promo-2 .split-row { padding: 0; grid-template-columns: 1fr; }
+  .columns.promo.promo-2 .split-row { padding: 0; grid-template-columns: 1fr; gap: var(--spacing-lg); } /* canon .promo keeps gap 24 at 640 */
   .columns.promo.promo-2 .split-row + .split-row { padding: var(--spacing-lg) 0 0; border-left: 0; border-top: 1px solid var(--lysgraa); }
   .columns.promo.promo-2 .col-media img { width: 110px; }
   .columns.index .split-row { grid-template-columns: 1fr; }
+}
+
+/* ===== theme + market landing siblings (migrated vocabulary): split illustration · cols cols-N ===== */
+/* illustration: the split media is an SVG illustration — its own ratio, no 3:2 crop, no Frost paper, no corner mask (NOT `illu`: canon compound class) */
+.columns.split.illustration .col-media img { aspect-ratio: auto; object-fit: contain; border-radius: 0; background: transparent; width: min(100%, 400px); margin-inline: auto; }
+
+/* cols: the migrate workers' editorial columns — one prose cell per column (canon .cols / .cols-3 / .cols-4) */
+.columns.cols .split-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--spacing-xl); align-items: start; }
+.columns.cols.cols-3 .split-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.columns.cols.cols-4 .split-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.columns.cols .col-text { max-width: none; min-width: 0; }
+.columns.cols .col-text :is(h3, h4) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
+.columns.cols .col-text p:has(> img:only-child, > picture:only-child) { line-height: 0; }
+.columns.cols .col-text p img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: var(--frost-30); border-radius: var(--radius-img-sm) 0 var(--radius-img-sm) 0; }
+.columns.cols .col-text p img[src$=".svg"],
+.columns.cols .col-text p img[src*=".svg?"] { width: 72px; height: 72px; aspect-ratio: auto; object-fit: contain; background: transparent; border-radius: 0; }
+.columns.cols .col-text :is(ul, ol) { list-style: none; padding: 0; }
+.columns.cols .col-text .cta-row { margin-top: var(--spacing-xs); }
+
+@media (width <= 1023px) {
+  .columns.cols .split-row,
+  .columns.cols.cols-3 .split-row,
+  .columns.cols.cols-4 .split-row { grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); }
+}
+
+@media (width <= 640px) {
+  .columns.cols .split-row,
+  .columns.cols.cols-3 .split-row,
+  .columns.cols.cols-4 .split-row { grid-template-columns: 1fr; }
 }

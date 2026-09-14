@@ -1,0 +1,55 @@
+{
+ "slug": "nb-bank-om-oss-investor-html",
+ "deliveredPath": "/nb/bank/om-oss/investor",
+ "file": "content/nb/bank/om-oss/investor.html",
+ "chrome": {
+  "nav": "/nav-om-oss",
+  "footer": "/footer-frontend-om-oss",
+  "router": null,
+  "market": "om-oss",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "campaign",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "background-container",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "tabs",
+   "blocks": [
+    "accordion",
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "columns",
+  "accordion",
+  "feedback"
+ ],
+ "notes": [
+  "media: lyspare-og-mobilskjerm-med-data-mobil-grafer-lys-mork-bakgrunn.svg is 273127 B of SVG (> 40000) — authored as DA media lyspare-og-mobilskjerm-med-data-mobil-grafer-lys-mork-bakgrunn.png",
+  "lint D1 tabs: dynamics #11 interim — the tab buttons are a jump list of badges (default content, style tabs); each panel is a following section (h2 + accordion)",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2024/lyspare-og-mobilskjerm-med-data-mobil-grafer-lys-mork-bakgrunn.svg"
+ ],
+ "writtenAt": "2026-09-14T22:30:12.088Z"
+}

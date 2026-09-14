@@ -17,10 +17,10 @@ main .section .breadcrumbs-wrapper + .hero-wrapper:has(.hero.listing) { margin-t
 @media (width <= 1023px) {
   .hero.om-oss .hero-grid,
   .hero.listing .hero-grid { grid-template-columns: 1fr; gap: var(--spacing-lg); }
-  .hero.om-oss .hero-media,
   .hero.listing .hero-media { grid-column: 1; grid-row: 2; max-width: 600px; }
-  .hero.om-oss .hero-text,
   .hero.listing .hero-text { grid-column: 1; grid-row: 1; }
+  .hero.om-oss .hero-media { grid-column: 1; grid-row: 1; max-width: 600px; } /* om-oss keeps DOM order: photo above the text */
+  .hero.om-oss .hero-text { grid-column: 1; grid-row: 2; }
   .hero.om-oss .hero-media img,
   .hero.listing .hero-media img { aspect-ratio: 3 / 2; }
   .hero.listing .hero-text h1 { max-width: none; }

@@ -1,0 +1,61 @@
+{
+ "slug": "nb-bank-privat-lan-gronne-lan-html",
+ "deliveredPath": "/nb/bank/privat/lan/gronne-lan",
+ "file": "content/nb/bank/privat/lan/gronne-lan.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "page-title",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "promo-band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "cards",
+  "columns"
+ ],
+ "notes": [
+  "card-rail (product): choices cols-3 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "promo-band (product): the trailing partner logo is a third media cell — columns (promo extra)",
+  "media: snekker-med-hammer.svg is 59011 B of SVG (> 40000) — authored as DA media snekker-med-hammer.png",
+  "card-rail (product): links cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/snekker-med-hammer.svg"
+ ],
+ "writtenAt": "2026-09-14T22:29:14.456Z"
+}

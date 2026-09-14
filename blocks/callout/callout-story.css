@@ -15,8 +15,8 @@
 .callout.fact .callout { display: grid; gap: var(--spacing-md); padding: var(--spacing-lg); max-width: none; background: var(--sand-30); }
 .callout.fact > .callout > svg { display: none; }
 .callout.fact .callout-text { gap: var(--spacing-md); }
-.callout.fact .callout-text h2 { margin: 0; font-family: var(--heading-font-family); font-size: var(--t-title); line-height: 1.2; }
-.callout.fact .callout-text :is(ul, ol) { display: grid; gap: var(--spacing-sm); margin: 0; padding-left: 1.2em; list-style: disc; }
+.callout.fact .callout-text h2 { margin: 0; font-family: var(--heading-font-family); font-size: var(--t-title); line-height: 1.15; }
+.callout.fact .callout-text :is(ul, ol) { display: grid; gap: var(--spacing-md); margin: 0; padding-left: 1.2em; list-style: disc; } /* canon: .prose li + li 8 + grid gap 8 */
 .callout.fact .callout-text li::marker { color: var(--vann); }
 .callout.fact .callout-text p.button-wrapper { margin-top: var(--spacing-xs); }
 

@@ -2,18 +2,8 @@
   "slug": "nb-bank-privat-lan-boliglan-html",
   "edsUrl": "http://localhost:3020/nb/bank/privat/lan/boliglan",
   "protoUrl": "http://localhost:8820/nb-bank-privat-lan-boliglan-html-proposed.html",
-  "at": "2026-09-14T21:37:32.691Z",
+  "at": "2026-09-14T22:29:13.349Z",
   "pixel": {
-    "360": {
-      "pct": 1.49,
-      "heightDelta": -1,
-      "compared": {
-        "width": 360,
-        "height": 9893
-      },
-      "pass": true,
-      "hot": []
-    },
     "1440": {
       "pct": 0.74,
       "heightDelta": -1,
@@ -26,26 +16,6 @@
     }
   },
   "chrome": {
-    "360": {
-      "header": 99.66,
-      "footer": 100,
-      "headerH": {
-        "proto": 61,
-        "eds": 61
-      },
-      "footerH": {
-        "proto": 1884,
-        "eds": 1884
-      },
-      "footerY": {
-        "proto": 8008,
-        "eds": 8009
-      },
-      "doc": {
-        "proto": 9893,
-        "eds": 9894
-      }
-    },
     "1440": {
       "header": 99.96,
       "footer": 99.9,

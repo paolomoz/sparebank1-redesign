@@ -12,11 +12,15 @@
  "modules": [
   {
    "module": "hero-portrait",
-   "blocks": []
+   "blocks": [
+    "hero"
+   ]
   },
   {
    "module": "bank-table",
-   "blocks": []
+   "blocks": [
+    "table"
+   ]
   },
   {
    "module": "callout",
@@ -30,14 +34,16 @@
   }
  ],
  "blocks": [
+  "hero",
+  "table",
   "callout"
  ],
- "notes": [],
- "gaps": [
-  "no encoder for module hero-portrait (emitted as prose)",
-  "no encoder for module bank-table (emitted as prose)",
-  "no encoder for module address-block (emitted as prose)"
+ "notes": [
+  "bank-table: Block Collection `table` (first row = header, variant `directory` = first column as row headers, phone numbers stay tel: links); the partners prose trails as default content",
+  "lint D1 callout: designed compound (canon icon + tinted paper), Block Collection-shaped single cell of prose — kept as a block like the product archetype",
+  "address-block: prose paragraphs <strong>Term</strong><br>value lines in an `address` section grid (D1 — no key/value block for displayed copy, D14)"
  ],
+ "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T21:39:12.059Z"
+ "writtenAt": "2026-09-14T22:30:27.962Z"
 }

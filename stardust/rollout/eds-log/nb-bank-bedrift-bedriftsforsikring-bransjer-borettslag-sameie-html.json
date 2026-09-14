@@ -18,7 +18,9 @@
   },
   {
    "module": "content-columns",
-   "blocks": []
+   "blocks": [
+    "columns"
+   ]
   },
   {
    "module": "callout",
@@ -57,17 +59,19 @@
  ],
  "blocks": [
   "breadcrumbs",
-  "callout",
   "columns",
+  "callout",
   "cards",
   "feedback"
  ],
  "notes": [
+  "content-columns (sheets): columns (sheets) — one row, one cell per sheet [illustration, h2, paragraphs, link list]; the trailing compare link is default content",
+  "callout (offer): variant `offer` = callout with a CTA pill (callout-theme.css restores the canon p + p 16 px before the pill)",
+  "split-media (illustration): variant illustration — SVG media kept at its own ratio (no 3:2 crop / paper)",
+  "cta-row (claim): default content (icon, title line, primary pill) with the `claim` section style (styles-theme.css) — a prose composition, not a block (D1)",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
- "gaps": [
-  "no encoder for module cta-row (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T21:39:12.063Z"
+ "writtenAt": "2026-09-14T22:23:44.559Z"
 }

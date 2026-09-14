@@ -1,0 +1,50 @@
+{
+ "slug": "nb-bank-privat-eiendom-html",
+ "deliveredPath": "/nb/bank/privat/eiendom",
+ "file": "content/nb/bank/privat/eiendom.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "page-title",
+   "blocks": []
+  },
+  {
+   "module": "visual-nav",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "shortcut-row",
+   "blocks": []
+  },
+  {
+   "module": "related-topics",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "cards"
+ ],
+ "notes": [
+  "shortcut-row: prose h2 + ul of links (David's Model D5 simple list); section style `shortcuts` paints the hairline, the inline-link row and the chevrons"
+ ],
+ "gaps": [
+  "no encoder for module related-topics (emitted as prose)"
+ ],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:30:27.588Z"
+}

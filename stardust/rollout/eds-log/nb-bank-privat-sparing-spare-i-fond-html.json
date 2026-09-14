@@ -1,0 +1,154 @@
+{
+ "slug": "nb-bank-privat-sparing-spare-i-fond-html",
+ "deliveredPath": "/nb/bank/privat/sparing/spare-i-fond",
+ "file": "content/nb/bank/privat/sparing/spare-i-fond.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "page-title",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "content-columns",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "cta-band",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "cards",
+  "columns",
+  "accordion",
+  "feedback"
+ ],
+ "notes": [
+  "card-rail (product): choices cols-3 — one row per card [media?][headings, text, lists, CTAs] in authored order; head + lede and trailing prose are default content",
+  "media: girls-just-want-to-have-fond-med-ameline-usymmetrisk-.svg is 1019801 B of SVG (> 40000) — authored as DA media girls-just-want-to-have-fond-med-ameline-usymmetrisk-.png",
+  "split-media (product): canon `media-right` (text 7 / media 5) → columns (split text-first), cells in the visual order",
+  "card-rail (product): choices cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "card-rail (product): choices cols-1 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "prep: 2 phone-only duplicate CTA(s) (app deep links, hidden ≥ 768 in the canon) dropped — the desktop link is the authored one (dynamics: app-link redirect)",
+  "split-media (product): canon `media-right` (text 7 / media 5) → columns (split text-first), cells in the visual order",
+  "prep: 1 phone-only duplicate CTA(s) (app deep links, hidden ≥ 768 in the canon) dropped — the desktop link is the authored one (dynamics: app-link redirect)",
+  "media: dame-star-pa-penger-spare-fond.svg is 51791 B of SVG (> 40000) — authored as DA media dame-star-pa-penger-spare-fond.png",
+  "split-media (product): canon `media-right` (text 7 / media 5) → columns (split text-first), cells in the visual order",
+  "content-columns (product): columns (cols cols-2) — one row, one cell per authored column (verbatim prose)",
+  "card-rail (product): links cols-3 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "card-rail (product): tips cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/girls-just-want-to-have-fond-med-ameline-usymmetrisk-.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2023/dame-star-pa-penger-spare-fond.svg"
+ ],
+ "writtenAt": "2026-09-14T22:29:14.484Z"
+}

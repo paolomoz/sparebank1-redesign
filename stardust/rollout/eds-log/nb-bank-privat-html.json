@@ -43,7 +43,9 @@
   },
   {
    "module": "content-columns",
-   "blocks": []
+   "blocks": [
+    "columns"
+   ]
   },
   {
    "module": "cta-band",
@@ -57,11 +59,12 @@
  ],
  "notes": [
   "market landing: the visually-hidden h1 is authored as the hero h1 (block hides it visually)",
-  "media: jubelkor-lys-bakgrunn.svg is 52845 B of SVG (> 40000) — authored as DA media jubelkor-lys-bakgrunn.png"
+  "media: jubelkor-lys-bakgrunn.svg is 52845 B of SVG (> 40000) — authored as DA media jubelkor-lys-bakgrunn.png",
+  "content-columns (index): columns (index) — one row, one cell per column [h2 label, link list]; hairline-top section"
  ],
  "gaps": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/jubelkor-lys-bakgrunn.svg"
  ],
- "writtenAt": "2026-09-14T21:39:12.014Z"
+ "writtenAt": "2026-09-14T22:23:44.568Z"
 }

@@ -1,0 +1,48 @@
+{
+ "slug": "nb-bank-om-oss-vare-eksperter-html",
+ "deliveredPath": "/nb/bank/om-oss/vare-eksperter",
+ "file": "content/nb/bank/om-oss/vare-eksperter.html",
+ "chrome": {
+  "nav": "/nav-om-oss",
+  "footer": "/footer-om-oss",
+  "router": "/fragments/bank-router-om-oss",
+  "market": "om-oss",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "page-title",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "people-cards",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "people-cards",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "cards"
+ ],
+ "notes": [
+  "people-cards: cards (bios cols-4) — one row per expert [photo][name, role as <em>, bio, \"Les mer\" link]",
+  "people-cards: empty expert list in the migrated page (0 items) — nothing to author"
+ ],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:29:14.329Z"
+}

@@ -1,0 +1,29 @@
+{
+ "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
+ "deliveredPath": "/nb/bank/privat/kundeservice/bestill/prisliste",
+ "file": "content/nb/bank/privat/kundeservice/bestill/prisliste.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer-frontend-2",
+  "router": null,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "page-title",
+   "blocks": []
+  },
+  {
+   "module": "image",
+   "blocks": []
+  }
+ ],
+ "blocks": [],
+ "notes": [],
+ "gaps": [
+  "no encoder for module image (emitted as prose)"
+ ],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:30:27.954Z"
+}

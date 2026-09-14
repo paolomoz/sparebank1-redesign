@@ -32,7 +32,9 @@
   },
   {
    "module": "content-columns",
-   "blocks": []
+   "blocks": [
+    "embed"
+   ]
   },
   {
    "module": "card-rail",
@@ -42,15 +44,21 @@
   },
   {
    "module": "content-columns",
-   "blocks": []
+   "blocks": [
+    "columns"
+   ]
   },
   {
    "module": "content-columns",
-   "blocks": []
+   "blocks": [
+    "columns"
+   ]
   },
   {
    "module": "content-columns",
-   "blocks": []
+   "blocks": [
+    "embed"
+   ]
   },
   {
    "module": "feedback",
@@ -60,19 +68,26 @@
   },
   {
    "module": "content-columns",
-   "blocks": []
+   "blocks": [
+    "columns"
+   ]
   }
  ],
  "blocks": [
   "hero",
   "breadcrumbs",
   "cards",
+  "embed",
+  "columns",
   "feedback"
  ],
  "notes": [
+  "lint D1 embed: each webinar row is its own section (style video-row) — running text + the bare YouTube link that buildMediaAutoBlocks() turns into the embed block (click-to-load player; dynamics #16 interim)",
+  "news meta: the canon <span>tag</span><time>date</time> is authored as one <em>tag date</em> (the two nodes flatten without a space in the core inline())",
+  "lint D1 embed: each webinar row is its own section (style video-row) — running text + the bare YouTube link that buildMediaAutoBlocks() turns into the embed block (click-to-load player; dynamics #16 interim)",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T21:39:12.067Z"
+ "writtenAt": "2026-09-14T22:03:33.203Z"
 }

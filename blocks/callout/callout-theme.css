@@ -4,3 +4,8 @@
    p + p 16 px; the CTA paragraph 16 + the pill's 4 px (the core `.callout-text p { margin: 0 }` drops it) ===== */
 .callout.offer .callout-text p + p { margin-top: var(--spacing-md); }
 .callout.offer .callout-text p + p.button-wrapper { margin-top: calc(var(--spacing-md) + var(--spacing-xs)); }
+
+/* the canon callout stays a row (icon beside the text) at every width — the core flips to a column at 640 */
+@media (width <= 640px) {
+  .callout.offer .callout { flex-direction: row; }
+}

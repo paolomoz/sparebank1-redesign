@@ -1,0 +1,38 @@
+{
+ "slug": "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+ "deliveredPath": "/nb/bank/om-oss/om-banken/selskapsinformasjon",
+ "file": "content/nb/bank/om-oss/om-banken/selskapsinformasjon.html",
+ "chrome": {
+  "nav": "/nav-om-oss",
+  "footer": "/footer-om-oss",
+  "router": "/fragments/bank-router-om-oss",
+  "market": "om-oss",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "text",
+   "blocks": [
+    "breadcrumbs",
+    "table"
+   ]
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "table"
+ ],
+ "notes": [
+  "table: the caption is authored as a bold paragraph above the block (table block rows = table rows)"
+ ],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:22:56.662Z"
+}

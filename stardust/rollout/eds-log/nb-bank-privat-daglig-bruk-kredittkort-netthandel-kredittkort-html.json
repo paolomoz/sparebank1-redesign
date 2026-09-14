@@ -1,0 +1,85 @@
+{
+ "slug": "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+ "deliveredPath": "/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort",
+ "file": "content/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "product-hero",
+   "blocks": [
+    "hero",
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "breadcrumbs",
+  "columns",
+  "cards",
+  "feedback"
+ ],
+ "notes": [
+  "split-media (media-right): columns (split text-first) — cells swapped so the text leads and the media sits right",
+  "split-media (media-right): columns (split text-first) — cells swapped so the text leads and the media sits right",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:23:44.585Z"
+}

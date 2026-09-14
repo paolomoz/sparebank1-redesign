@@ -1,0 +1,44 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+ "deliveredPath": "/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler",
+ "file": "content/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+ "chrome": {
+  "nav": "/nav-bedrift",
+  "footer": "/footer-bedrift",
+  "router": "/fragments/bank-router-bedrift",
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "faq-question",
+   "blocks": [
+    "breadcrumbs",
+    "feedback",
+    "callout"
+   ]
+  }
+ ],
+ "blocks": [
+  "callout",
+  "breadcrumbs",
+  "feedback"
+ ],
+ "notes": [
+  "lint D1 breadcrumbs: the canon back link is a designed navigation module (Block Collection name), not prose",
+  "lint D1 callout (step): a captured background-container — tinted paper grouping one step of the answer with its screenshot; the tint is design, not prose",
+  "lint D1 callout (step): a captured background-container — tinted paper grouping one step of the answer with its screenshot; the tint is design, not prose",
+  "lint D1 callout (step): a captured background-container — tinted paper grouping one step of the answer with its screenshot; the tint is design, not prose",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); inline variant: question label + Ja/Nei beside the answer"
+ ],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:28:59.138Z"
+}

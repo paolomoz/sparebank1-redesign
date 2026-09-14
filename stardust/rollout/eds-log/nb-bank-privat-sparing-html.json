@@ -1,0 +1,69 @@
+{
+ "slug": "nb-bank-privat-sparing-html",
+ "deliveredPath": "/nb/bank/privat/sparing",
+ "file": "content/nb/bank/privat/sparing.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "page-title",
+   "blocks": []
+  },
+  {
+   "module": "visual-nav",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "calculator",
+   "blocks": []
+  },
+  {
+   "module": "related-topics",
+   "blocks": []
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "cta-band",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "cards",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "lint D1 calculator: bespoke widget (dynamics #7 interim static shell — controls disabled, captured strings; labels/values are control config, @ew-exempt in the block)",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [
+  "no encoder for module related-topics (emitted as prose)"
+ ],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:30:27.637Z"
+}

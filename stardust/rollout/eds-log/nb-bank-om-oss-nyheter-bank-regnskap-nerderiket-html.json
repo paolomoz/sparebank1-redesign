@@ -1,0 +1,36 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+ "deliveredPath": "/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket",
+ "file": "content/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket.html",
+ "chrome": {
+  "nav": "/nav-minimal-om-oss",
+  "footer": "/footer-frontend-om-oss-2",
+  "router": null,
+  "market": "om-oss",
+  "clientlib": "frontend"
+ },
+ "modules": [
+  {
+   "module": "article-header",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "article-body",
+   "blocks": [
+    "columns",
+    "callout"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "columns",
+  "callout"
+ ],
+ "notes": [],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:28:59.208Z"
+}

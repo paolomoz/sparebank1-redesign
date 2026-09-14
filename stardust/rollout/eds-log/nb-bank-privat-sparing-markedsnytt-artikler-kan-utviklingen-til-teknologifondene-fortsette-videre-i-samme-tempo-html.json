@@ -1,0 +1,34 @@
+{
+ "slug": "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html",
+ "deliveredPath": "/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo",
+ "file": "content/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.html",
+ "chrome": {
+  "nav": "/nav-minimal",
+  "footer": "/footer-frontend",
+  "router": null,
+  "market": "privat",
+  "clientlib": "frontend"
+ },
+ "modules": [
+  {
+   "module": "article-header",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "article-body",
+   "blocks": [
+    "callout"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "callout"
+ ],
+ "notes": [],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:28:59.226Z"
+}

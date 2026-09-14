@@ -1,0 +1,95 @@
+{
+ "slug": "nb-bank-privat-sparing-spare-pa-konto-html",
+ "deliveredPath": "/nb/bank/privat/sparing/spare-pa-konto",
+ "file": "content/nb/bank/privat/sparing/spare-pa-konto.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "page-title",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "cobranding",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "content-columns",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "cards",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "card-rail (product): choices cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "card-rail (product): choices cols-2 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "cobranding (product): the canon co-brand band is always open (no <details>) → columns (cobrand) — one row [logo, h2, <em>member question</em>, prose, CTAs][illustration + adviser note]; not the hub cobranding disclosure",
+  "split-media (product): canon `media-right` (text 7 / media 5) → columns (split text-first), cells in the visual order",
+  "prep: 3 phone-only duplicate CTA(s) (app deep links, hidden ≥ 768 in the canon) dropped — the desktop link is the authored one (dynamics: app-link redirect)",
+  "media: illustrasjon-liten-penger.svg is 95992 B of SVG (> 40000) — authored as DA media illustrasjon-liten-penger.png",
+  "content-columns (product): columns (cols cols-3 spot) — one row, one cell per authored column (verbatim prose)",
+  "card-rail (product): tips cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-liten-penger.svg"
+ ],
+ "writtenAt": "2026-09-14T22:29:14.488Z"
+}

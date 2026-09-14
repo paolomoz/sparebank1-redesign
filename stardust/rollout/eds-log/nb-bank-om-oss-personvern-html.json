@@ -1,0 +1,110 @@
+{
+ "slug": "nb-bank-om-oss-personvern-html",
+ "deliveredPath": "/nb/bank/om-oss/personvern",
+ "file": "content/nb/bank/om-oss/personvern.html",
+ "chrome": {
+  "nav": "/nav-om-oss",
+  "footer": "/footer-om-oss",
+  "router": "/fragments/bank-router-om-oss",
+  "market": "om-oss",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "columns-grid",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "background-container",
+   "blocks": []
+  },
+  {
+   "module": "background-container",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "background-container",
+   "blocks": [
+    "columns",
+    "cards"
+   ]
+  },
+  {
+   "module": "background-container",
+   "blocks": [
+    "columns",
+    "accordion"
+   ]
+  },
+  {
+   "module": "background-container",
+   "blocks": [
+    "columns",
+    "accordion"
+   ]
+  },
+  {
+   "module": "background-container",
+   "blocks": [
+    "columns",
+    "accordion"
+   ]
+  },
+  {
+   "module": "background-container",
+   "blocks": [
+    "columns",
+    "accordion"
+   ]
+  },
+  {
+   "module": "background-container",
+   "blocks": [
+    "columns",
+    "accordion"
+   ]
+  },
+  {
+   "module": "background-container",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "section",
+   "blocks": [
+    "accordion"
+   ]
+  }
+ ],
+ "blocks": [
+  "columns",
+  "cards",
+  "accordion"
+ ],
+ "notes": [
+  "media: mote-spisebord-kaffe.svg is 61476 B of SVG (> 40000) — authored as DA media mote-spisebord-kaffe.png",
+  "columns-grid: side-by-side FAQ columns are stacked accordions (one movement, two rails → two blocks)",
+  "media: person-med-signert-papir-i-handa-lys-bakgrunn.svg is 55023 B of SVG (> 40000) — authored as DA media person-med-signert-papir-i-handa-lys-bakgrunn.png",
+  "columns-grid: side-by-side FAQ columns are stacked accordions (one movement, two rails → two blocks)",
+  "media: menneske-person-voksen-med-hund-i-lenestol-sjekker-mobilen.svg is 41470 B of SVG (> 40000) — authored as DA media menneske-person-voksen-med-hund-i-lenestol-sjekker-mobilen.png"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/mote-spisebord-kaffe.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/person-med-signert-papir-i-handa-lys-bakgrunn.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/menneske-person-voksen-med-hund-i-lenestol-sjekker-mobilen.svg"
+ ],
+ "writtenAt": "2026-09-14T22:30:12.101Z"
+}

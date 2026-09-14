@@ -1,0 +1,138 @@
+{
+ "slug": "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+ "deliveredPath": "/nb/bank/privat/pensjon/egen-pensjonskonto",
+ "file": "content/nb/bank/privat/pensjon/egen-pensjonskonto.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "product-hero",
+   "blocks": [
+    "hero",
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "price-terms",
+   "blocks": []
+  },
+  {
+   "module": "rich-text",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "cta-band",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "hero",
+  "breadcrumbs",
+  "columns",
+  "accordion",
+  "cards",
+  "feedback"
+ ],
+ "notes": [
+  "product-hero (product): the canon USP list rides the hero text cell as an authored <ul> — hero (usp) paints the check marks / icons",
+  "media: pensjon-forvaltning-aktiv-umerket-uten-bakgrunn.svg is 189273 B of SVG (> 40000) — authored as DA media pensjon-forvaltning-aktiv-umerket-uten-bakgrunn.png",
+  "prep: 1 phone-only duplicate CTA(s) (app deep links, hidden ≥ 768 in the canon) dropped — the desktop link is the authored one (dynamics: app-link redirect)",
+  "split-media (product): canon `media-right` (text 7 / media 5) → columns (split text-first), cells in the visual order",
+  "price-terms: prose composition (h2, check list, price example, pill) → default content with the `price-terms` section style (styles-product.css)",
+  "rich-text (product): prose is default content (prose-narrow); each canon disclosure (\"Se detaljerte vilkår\") is an accordion (disclosure) — one row [label][body], collapsed like the canon <details>",
+  "prep: 1 phone-only duplicate CTA(s) (app deep links, hidden ≥ 768 in the canon) dropped — the desktop link is the authored one (dynamics: app-link redirect)",
+  "split-media (product): canon `media-right` (text 7 / media 5) → columns (split text-first), cells in the visual order",
+  "media: avkastningsgraf-pensjon-2026.svg is 242396 B of SVG (> 40000) — authored as DA media avkastningsgraf-pensjon-2026.png",
+  "rich-text (product): prose is default content (prose-narrow); each canon disclosure (\"Se detaljerte vilkår\") is an accordion (disclosure) — one row [label][body], collapsed like the canon <details>",
+  "media: illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg is 860616 B of SVG (> 40000) — authored as DA media illustrasjon-sporsmal-sand-sirkel-usymmetrisk.png",
+  "split-media (product): canon `media-right` (text 7 / media 5) → columns (split text-first), cells in the visual order",
+  "card-rail (product): links cols-3 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "card-rail (product): tips cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/pensjon-forvaltning-aktiv-umerket-uten-bakgrunn.svg",
+  "https://www.sparebank1.no/content/dam/SB1/vedlegg/pensjon/bilder/avkastningsgraf-pensjon-2026.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg"
+ ],
+ "writtenAt": "2026-09-14T22:29:14.474Z"
+}

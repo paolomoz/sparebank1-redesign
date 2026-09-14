@@ -1,0 +1,7 @@
+
+Content diff @ 1440px (profile "eds", root "main")
+  proto: 49 text nodes — 8 headings, 0 eyebrows, 19 CTAs, 22 body; 8 img
+  EDS: 49 text nodes — 8 headings, 0 eyebrows, 19 CTAs, 22 body; 8 img
+  editable texts (outermost h*/p/ul/ol): proto 27 / EDS 30
+
+Findings: none — content + roles match

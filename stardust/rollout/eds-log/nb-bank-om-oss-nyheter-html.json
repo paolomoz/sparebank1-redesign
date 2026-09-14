@@ -12,7 +12,9 @@
  "modules": [
   {
    "module": "article-header",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "card-rail",
@@ -28,11 +30,10 @@
  "blocks": [
   "cards"
  ],
- "notes": [],
- "gaps": [
-  "no encoder for module article-header (emitted as prose)",
-  "no encoder for module button-row (emitted as prose)"
+ "notes": [
+  "dynamics #11: \"Se flere artikler\" kept as the captured page-2 query link (index-backed listing later)"
  ],
+ "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T21:39:12.042Z"
+ "writtenAt": "2026-09-14T21:54:51.075Z"
 }

@@ -1,0 +1,100 @@
+{
+ "archetype": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+ "document": "content/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan.html",
+ "blocks": {
+  "new": [],
+  "reused": [
+   "breadcrumbs",
+   "feedback (inline labels)",
+   "callout (step sand|syrin)"
+  ]
+ },
+ "iterations": 2,
+ "breakpoints": {
+  "360": {
+   "pixelPct": 0.12,
+   "heightDelta": 0,
+   "header": 99.66,
+   "footer": 100,
+   "pass": true,
+   "bodyHeightDelta": 0
+  },
+  "1440": {
+   "pixelPct": 0.15,
+   "heightDelta": 0,
+   "header": 99.96,
+   "footer": 99.89,
+   "pass": true,
+   "bodyHeightDelta": 0
+  }
+ },
+ "contentDiff": {
+  "red": 0,
+  "justified": []
+ },
+ "ew": {
+  "editable": 9,
+  "dead": 0,
+  "exempt": 1
+ },
+ "lint": {
+  "davidsModelRed": 0,
+  "deliveryP0P1": 0
+ },
+ "productRegression": {
+  "slug": "nb-bank-privat-lan-boliglan-html",
+  "pixelPct1440": 0.74,
+  "heightDelta": -1,
+  "pass": true
+ },
+ "siblings": {
+  "converted": [
+   "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+   "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+   "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+   "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+   "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+   "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+   "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+   "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+   "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+   "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+   "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html"
+  ],
+  "gaps": {
+   "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html": 0,
+   "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html": 0,
+   "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html": 0,
+   "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html": 0,
+   "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html": 0,
+   "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html": 0,
+   "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html": 0,
+   "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html": 0,
+   "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html": 0,
+   "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html": 0,
+   "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html": 0
+  },
+  "lintRed": {
+   "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html": 0,
+   "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html": 0,
+   "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html": 0,
+   "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html": 0,
+   "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html": 0,
+   "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html": 0,
+   "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html": 0,
+   "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html": 0,
+   "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html": 0,
+   "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html": 0,
+   "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html": 0
+  },
+  "contentDiffSampled": {
+   "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+   "red": 0
+  }
+ },
+ "requests": [
+  "stardust/rollout/eds-requests.md → story #1 (frontend footer 4th column), #2 (lib.inline collapses nbsp)"
+ ],
+ "gatePass": true,
+ "writtenAt": "2026-09-14T22:31:17.948Z"
+}

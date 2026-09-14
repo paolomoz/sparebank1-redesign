@@ -1,0 +1,21 @@
+{
+  "archetype": "nb-bank-privat-sparing-markedsnytt-html",
+  "document": "content/nb/bank/privat/sparing/markedsnytt.html",
+  "blocks": {
+    "new": ["embed"],
+    "reused": ["breadcrumbs", "hero (listing)", "cards (articles)", "cards (news cols-3)", "columns (expert)", "columns (text)", "feedback (labels)", "fragment (bank-router)"]
+  },
+  "sectionStyles": ["head-xl", "video-row", "fineprint"],
+  "sharedJs": ["columns.js: media-cell caption slot (col-caption) + `text` variant keeps link paragraphs in place — additive", "scripts.js buildMediaAutoBlocks: moves the authored paragraph (EW fix)"],
+  "iterations": 3,
+  "breakpoints": {
+    "1440": { "pixelPct": 0.08, "heightDelta": 0, "header": 99.96, "footer": 99.89, "pass": true },
+    "360": { "pixelPct": 0.32, "heightDelta": 0, "header": 99.66, "footer": 100, "pass": true }
+  },
+  "contentDiff": { "red": 0, "justified": [], "amber": 26, "orange": 12 },
+  "ew": { "editable": 62, "dead": 0, "exempt": 1, "authored": 63 },
+  "lint": { "davidsModel": "0 🔴 / 3 🟡 (fragment + breadcrumbs single-row blocks, D4 SVG batch-verify)", "delivery": "0 P0 · 0 P1 · 5 P2 (cross-origin-optimize advisories)" },
+  "productRegression": { "slug": "nb-bank-privat-lan-boliglan-html", "pixelPct": 0.74, "heightDelta": -1, "pass": true },
+  "siblings": { "converted": [], "gaps": {}, "lintRed": {}, "contentDiffSampled": null },
+  "requests": ["lib inline() span+time spacing (worked around)"]
+}

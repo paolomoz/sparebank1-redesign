@@ -1,0 +1,102 @@
+{
+  "archetype": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+  "document": "content/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+  "blocks": {
+    "new": [],
+    "reused": [
+      "breadcrumbs",
+      "columns (sheets — new variant)",
+      "callout (frost offer — new variant)",
+      "columns (split text-first resident illustration)",
+      "columns (split text-first prevention)",
+      "cards (papers — new variant)",
+      "feedback"
+    ],
+    "sectionStyles": [
+      "intro, tight-top, intro-backlink (new token)",
+      "paper-sand",
+      "flush-top",
+      "claim, flush-top (new token)",
+      "paper-frost",
+      "feedback-band"
+    ]
+  },
+  "iterations": 9,
+  "breakpoints": {
+    "360": {
+      "pixelPct": 0.35,
+      "heightDelta": 0,
+      "header": 99.66,
+      "footer": 100,
+      "pass": true
+    },
+    "1440": {
+      "pixelPct": 0.04,
+      "heightDelta": 0,
+      "header": 99.96,
+      "footer": 99.89,
+      "pass": true
+    }
+  },
+  "contentDiff": {
+    "red": 0,
+    "justified": [],
+    "amber": 0,
+    "orange": 0
+  },
+  "ew": {
+    "editable": 35,
+    "dead": 0,
+    "exempt": 0,
+    "duplicated": 0
+  },
+  "lint": {
+    "davidsModel": "0 🔴 · 3 🟡 (D1 breadcrumbs/callout single-row blocks = core conventions, D4 SVG batch-verify)",
+    "delivery": "0 P0 · 0 P1 · 5 P2"
+  },
+  "productRegression": {
+    "slug": "nb-bank-privat-lan-boliglan-html",
+    "pixelPct": 0.74,
+    "heightDelta": -1,
+    "pass": true
+  },
+  "siblings": {
+    "converted": [
+      "nb-bank-bedrift-bedriftsforsikring-html",
+      "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+      "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html"
+    ],
+    "gaps": {
+      "nb-bank-bedrift-bedriftsforsikring-html": 0,
+      "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html": 0,
+      "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html": 0
+    },
+    "lintRed": {
+      "nb-bank-bedrift-bedriftsforsikring-html": 0,
+      "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html": 0,
+      "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html": 0
+    },
+    "contentDiffSampled": {
+      "slug": "nb-bank-bedrift-bedriftsforsikring-html",
+      "red": 0,
+      "findings": 1,
+      "ew": {
+        "editable": 137,
+        "dead": 0,
+        "duplicated": 0
+      }
+    },
+    "blocksAdded": [
+      "cards (tiles grid-4 — illustration + heading columns, disclosure → visible link list)",
+      "cards (choices grid-N)",
+      "columns (cols cols-N)",
+      "columns (split text-first illustration)",
+      "accordion (faq, more)"
+    ]
+  },
+  "requestsFiled": "stardust/rollout/eds-requests.md § theme + market-landing — EDS Worker E2",
+  "notes": [
+    "prototype parity kept for the 97 px empty grid tracks under the stacked sheets at ≤767 (renderer defect, see requests)",
+    "rasterise-svg.mjs run once (36 uploaded / 10 unchanged / 0 failed)"
+  ]
+}

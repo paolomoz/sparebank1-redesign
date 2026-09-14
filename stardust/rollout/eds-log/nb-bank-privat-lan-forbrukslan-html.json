@@ -1,0 +1,113 @@
+{
+ "slug": "nb-bank-privat-lan-forbrukslan-html",
+ "deliveredPath": "/nb/bank/privat/lan/forbrukslan",
+ "file": "content/nb/bank/privat/lan/forbrukslan.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "product-hero",
+   "blocks": [
+    "hero",
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "embed"
+   ]
+  },
+  {
+   "module": "price-terms",
+   "blocks": []
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "callout",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "topic-list",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "content-columns",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "cta-band",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "hero",
+  "breadcrumbs",
+  "embed",
+  "callout",
+  "accordion",
+  "columns",
+  "cards",
+  "feedback"
+ ],
+ "notes": [
+  "split-media (product): the canon video link (https://www.youtube.com/watch?v=tW7anZVP2WU) is a plain default-content link → auto-blocked embed (D1); section style `video-split` keeps the canon split (video 5 / text 7)",
+  "price-terms: prose composition (h2, check list, price example, pill) → default content with the `price-terms` section style (styles-product.css)",
+  "topic-list: spot illustration + h2 (+ lead) as default content with the `topic-list` section style, the feature list as accordion (faq) rows [h3][answer]",
+  "content-columns (product): columns (cols cols-4) — one row, one cell per authored column (verbatim prose)",
+  "card-rail (product): choices cols-3 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:29:14.453Z"
+}

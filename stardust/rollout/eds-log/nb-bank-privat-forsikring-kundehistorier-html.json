@@ -1,0 +1,47 @@
+{
+ "slug": "nb-bank-privat-forsikring-kundehistorier-html",
+ "deliveredPath": "/nb/bank/privat/forsikring/kundehistorier",
+ "file": "content/nb/bank/privat/forsikring/kundehistorier.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": null,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "product-hero",
+   "blocks": [
+    "hero",
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "breadcrumbs",
+  "cards",
+  "feedback"
+ ],
+ "notes": [
+  "product-hero (product): SVG illustration instead of a photo → hero (product spot): contained, no 3:2 crop",
+  "card-rail (product): choices cols-1 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:29:14.414Z"
+}

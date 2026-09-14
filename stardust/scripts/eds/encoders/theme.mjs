@@ -1,7 +1,7 @@
 /**
  * stardust/scripts/eds/encoders/theme.mjs — theme family (archetype nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html).
  * Overrides for THIS family: page-title (intro rhythm 16/64), content-columns (sheets | index | cols | rail), split-media (resident flush-top,
- * media-right → text-first, SVG media → illu), card-rail (generic rail: every heading/CTA/meta of an item, lede, grid-N; rec-grid → papers),
+ * media-right → text-first, SVG media → illustration), card-rail (generic rail: every heading/CTA/meta of an item, lede, grid-N; rec-grid → papers),
  * callout (+ `offer` when it ends in a pill). New shared keys: cta-row (icon · line · pill → default content, `claim` section style), quick-links.
  * Group CSS: blocks/columns/columns-theme.css (sheets · index · resident · prevention · promo-2), blocks/cards/cards-theme.css (papers),
  * styles/styles-theme.css (claim · intro-backlink).
@@ -134,9 +134,15 @@ export function cols(root, ctx) {
   const n = (cls(grid).find((c) => /^cols-[2-4]$/.test(c)) || 'cols-2').replace('cols-', '');
   const parts = [head(root, ctx), lede(root, ctx, grid)]; const hasLede = /<p>/.test(parts[1] || '');
   const style = styleOf(paperOf(root), hasLede ? 'lead-first' : null);
-  // (a) every column is exactly one card → one cards block (the canon choice grid)
-  const single = items.every((c) => c.children.length === 1 && c.firstElementChild.matches('ul.choice-grid, ul.tips-grid') && qa(c.firstElementChild, ':scope > li').length === 1);
-  if (single) { ctx.notes.push(`content-columns (cols-${n}, one card per column): cards (choices grid-${n})`); return { html: section([...parts, block('cards', ['choices', `grid-${n}`], itemRows(items.map((c) => q(c, 'li')), ctx))], { style }), blocks: ['cards'] }; }
+  // (a) every column is exactly one card (trailing text/CTA-only columns allowed) → one cards block (the canon choice grid) + the trailing prose
+  const isCardCol = (c) => c.children.length === 1 && c.firstElementChild.matches('ul.choice-grid, ul.tips-grid') && qa(c.firstElementChild, ':scope > li').length === 1;
+  const isProseCol = (c) => [...c.children].every((k) => k.matches('p, a'));
+  const cardCols = items.filter(isCardCol); const rest = items.filter((c) => !isCardCol(c));
+  if (cardCols.length >= 2 && rest.every(isProseCol) && rest.every((c) => items.indexOf(c) >= cardCols.length)) {
+    const gridN = Math.min(4, cardCols.length); const tail = rest.map((c) => prose(c, ctx)).join('');
+    ctx.notes.push(`content-columns (cols-${n}, one card per column${rest.length ? ' + trailing CTA column as default content' : ''}): cards (choices grid-${gridN})`);
+    return { html: section([...parts, block('cards', ['choices', `grid-${gridN}`], itemRows(cardCols.map((c) => q(c, 'li')), ctx)), tail], { style }), blocks: ['cards'] };
+  }
   // (b) every column is [illustration, heading, text?, disclosure/list?] → cards (tiles): illustration + title + link list
   const tileLike = items.every((c) => q(c, ':scope > figure img, :scope > img') && q(c, ':scope > h2, :scope > h3') && !q(c, '.cols, ul.choice-grid'));
   if (tileLike) { ctx.notes.push(`content-columns (cols-${n}, illustration + heading per column): cards (tiles grid-${n}); disclosures flattened to visible link lists`); return { html: section([...parts, block('cards', ['tiles', `grid-${n}`], itemRows(items, ctx))], { style }), blocks: ['cards'] }; }
@@ -175,7 +181,7 @@ export function themeSplit(root, ctx) {
     const { document } = parseHTML(`<html><body>${r.html}</body></html>`); const b = document.querySelector('.columns');
     if (b) {
       if (right && !b.classList.contains('text-first')) { b.classList.add('text-first'); for (const row of b.children) if (row.children.length === 2) row.append(row.firstElementChild); ctx.notes.push('split-media (media-right): columns (split text-first) — cells swapped so the text leads and the media sits right'); }
-      if (illu) { b.classList.add('illu'); ctx.notes.push('split-media (illustration): variant illu — SVG media kept at its own ratio (no 3:2 crop / paper)'); }
+      if (illu) { b.classList.add('illustration'); ctx.notes.push('split-media (illustration): variant illustration — SVG media kept at its own ratio (no 3:2 crop / paper)'); }
       r.html = document.body.innerHTML;
     }
   }

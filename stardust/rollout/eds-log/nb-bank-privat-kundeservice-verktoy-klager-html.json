@@ -1,0 +1,49 @@
+{
+ "slug": "nb-bank-privat-kundeservice-verktoy-klager-html",
+ "deliveredPath": "/nb/bank/privat/kundeservice/verktoy/klager",
+ "file": "content/nb/bank/privat/kundeservice/verktoy/klager.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "page-title",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "steps",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "accordion-list",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "columns"
+ ],
+ "notes": [
+  "steps: columns (split steps) keeps the authored order (ol → paragraph → action pill → small note); the note is the trailing paragraph"
+ ],
+ "gaps": [
+  "no encoder for module accordion-list (emitted as prose)"
+ ],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:30:27.859Z"
+}

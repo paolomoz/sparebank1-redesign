@@ -1,0 +1,51 @@
+{
+  "slug": "nb-bank-privat-lan-boliglan-html",
+  "edsUrl": "http://localhost:3020/nb/bank/privat/lan/boliglan",
+  "protoUrl": "http://localhost:8820/nb-bank-privat-lan-boliglan-html-proposed.html",
+  "at": "2026-09-14T22:21:09.756Z",
+  "pixel": {
+    "1440": {
+      "pct": 0.74,
+      "heightDelta": -1,
+      "compared": {
+        "width": 1440,
+        "height": 5967
+      },
+      "pass": true,
+      "hot": []
+    }
+  },
+  "chrome": {
+    "1440": {
+      "header": 99.96,
+      "footer": 99.9,
+      "headerH": {
+        "proto": 110,
+        "eds": 110
+      },
+      "footerH": {
+        "proto": 917,
+        "eds": 917
+      },
+      "footerY": {
+        "proto": 5051,
+        "eds": 5052
+      },
+      "doc": {
+        "proto": 5967,
+        "eds": 5968
+      }
+    }
+  },
+  "content": {
+    "red": 0,
+    "justified": 0,
+    "amber": 20,
+    "orange": 12,
+    "summary": [
+      "  EDS: 301 text nodes — 29 headings, 0 eyebrows, 102 CTAs, 170 body; 14 img",
+      "  editable texts (outermost h*/p/ul/ol): proto 124 / EDS 161"
+    ]
+  },
+  "pass": true
+}

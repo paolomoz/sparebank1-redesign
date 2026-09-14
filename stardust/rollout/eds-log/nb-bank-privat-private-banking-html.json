@@ -1,0 +1,89 @@
+{
+ "slug": "nb-bank-privat-private-banking-html",
+ "deliveredPath": "/nb/bank/privat/private-banking",
+ "file": "content/nb/bank/privat/private-banking.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "page-title",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "usp",
+   "blocks": []
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-grid",
+   "blocks": []
+  },
+  {
+   "module": "card-grid",
+   "blocks": []
+  },
+  {
+   "module": "cta-row",
+   "blocks": []
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "static-cards",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "columns",
+  "accordion"
+ ],
+ "notes": [
+  "media: Her_jobber_jeg_ja_usymmetrisk_multeskygge.svg is 625212 B of SVG (> 40000) — authored as DA media Her_jobber_jeg_ja_usymmetrisk_multeskygge.png"
+ ],
+ "gaps": [
+  "no encoder for module usp (emitted as prose)",
+  "no encoder for module card-grid (emitted as prose)",
+  "no encoder for module card-grid (emitted as prose)",
+  "no encoder for module static-cards (emitted as prose)"
+ ],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/Her_jobber_jeg_ja_usymmetrisk_multeskygge.svg"
+ ],
+ "writtenAt": "2026-09-14T22:30:27.632Z"
+}

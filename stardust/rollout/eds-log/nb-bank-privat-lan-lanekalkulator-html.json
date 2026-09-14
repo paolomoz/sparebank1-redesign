@@ -1,0 +1,116 @@
+{
+ "slug": "nb-bank-privat-lan-lanekalkulator-html",
+ "deliveredPath": "/nb/bank/privat/lan/lanekalkulator",
+ "file": "content/nb/bank/privat/lan/lanekalkulator.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "product-hero",
+   "blocks": [
+    "hero",
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "calculator",
+   "blocks": [
+    "calculator"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "content-columns",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "cta-band",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "hero",
+  "breadcrumbs",
+  "cards",
+  "calculator",
+  "feedback"
+ ],
+ "notes": [
+  "media: illustrasjon-kalkulator-sand-sirkel-usymmetrisk.svg is 861599 B of SVG (> 40000) — authored as DA media illustrasjon-kalkulator-sand-sirkel-usymmetrisk.png",
+  "product-hero (product): SVG illustration instead of a photo → hero (product spot): contained, no 3:2 crop",
+  "card-rail (product): choices cols-3 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "media: mann-sparegris.svg is 41078 B of SVG (> 40000) — authored as DA media mann-sparegris.png",
+  "media: dame-tenker-okonomi-sammenlikner.svg is 51143 B of SVG (> 40000) — authored as DA media dame-tenker-okonomi-sammenlikner.png",
+  "card-rail (product): choices cols-2 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "lint D1 calculator: bespoke widget (dynamics #7 interim static shell — controls disabled, captured strings; labels/values are control config, @ew-exempt in the block)",
+  "calculator (product): the canon lead paragraph under the section title is default content above the calculator block",
+  "card-rail (product): choices cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "card-rail (product): choices cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "card-rail (product): choices cols-2 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "card-rail (product): choices cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "content-columns (product): the walker's one-card columns are one cards (choices) block, the trailing link is default content",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kalkulator-sand-sirkel-usymmetrisk.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/mann-sparegris.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/dame-tenker-okonomi-sammenlikner.svg"
+ ],
+ "writtenAt": "2026-09-14T22:29:14.462Z"
+}

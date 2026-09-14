@@ -1,1 +1,55 @@
 /* hero — hub family group additions (additive variants only; imported by hero.css) */
+
+/* ===== kundeservice-hub: ask — photo left 7/5, h1 beside it (own grid area), title + lead + line + chat form ===== */
+.hero.ask .hero-grid { grid-template-columns: 7fr 5fr; grid-template-areas: "media h1" "media text"; gap: var(--spacing-md) var(--spacing-xl); align-items: center; }
+.hero.ask .hero-media { grid-column: auto; grid-row: auto; grid-area: media; align-self: center; }
+.hero.ask .hero-h1 { grid-area: h1; align-self: end; }
+.hero.ask .hero-h1 h1 { max-width: 14ch; }
+.hero.ask .hero-text { grid-column: auto; grid-row: auto; grid-area: text; align-self: start; max-width: none; }
+.hero.ask .hero-text h2 { font-family: var(--heading-font-family); font-size: var(--t-title); line-height: 1.2; margin-top: var(--spacing-xs); }
+.hero.ask .lead-wrap p { max-width: 36ch; }
+.hero.ask .lead-wrap + .note-wrap { margin-top: var(--spacing-md); }
+.hero.ask .ask { display: grid; gap: 6px; margin-top: var(--spacing-sm); max-width: 36rem; }
+.hero.ask .ask-label p { margin: 0; }
+.hero.ask .ask-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.hero.ask .ask-input { flex: 1 1 14rem; min-height: 44px; padding: 10px 16px; border: 1px solid var(--lysgraa); border-radius: var(--radius-sm); font: var(--body) / 1.35 var(--body-font-family); color: var(--color-fg); background: #fff; resize: none; }
+.hero.ask .ask-input:disabled { color: var(--moerkgraa); background: #fff; border-style: dashed; }
+.hero.ask .ask-input:disabled::placeholder { color: var(--moerkgraa); }
+.hero.ask .ask button.button:disabled { cursor: not-allowed; background: #fff; color: var(--moerkgraa); border-color: var(--lysgraa); opacity: 1; }
+.hero.ask .ask-btn-label p { margin: 0; }
+.hero.ask .ask-note { margin-top: 2px; }
+.hero.ask .ask-note p { margin: 0; }
+.hero.ask .ask-input:focus-visible { outline: 2px solid var(--sol); outline-offset: 2px; border-color: var(--vann); }
+
+/* ===== utility: portrait — 340px circle portrait left, h1 + two leads + secondary pill ===== */
+.hero.portrait .hero-grid { grid-template-columns: 340px minmax(0, 1fr); gap: var(--spacing-xl); align-items: center; }
+.hero.portrait .hero-media { grid-column: 1; grid-row: 1 / span 2; width: 100%; }
+.hero.portrait .hero-media img { aspect-ratio: 1; border-radius: 50%; object-fit: cover; }
+.hero.portrait .hero-h1 { grid-column: 2; grid-row: 1; align-self: end; }
+.hero.portrait .hero-text { grid-column: 2; grid-row: 2; align-self: start; max-width: 44rem; }
+.hero.portrait .hero-grid:has(.hero-h1) { grid-template-rows: auto auto; row-gap: var(--spacing-md); align-content: center; }
+.hero.portrait .lead-wrap p,
+.hero.portrait .note-wrap p { font-size: var(--lead); line-height: 1.5; max-width: 44ch; }
+.hero.portrait .cta-row { margin-top: var(--spacing-sm); }
+
+@media (width <= 1023px) {
+  .hero.ask .hero-grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--spacing-md) var(--spacing-lg); }
+  .hero.ask .hero-media img { aspect-ratio: 3 / 2; }
+  .hero.ask .lead-wrap p { max-width: 60ch; }
+  .hero.portrait .hero-grid { grid-template-columns: 240px minmax(0, 1fr); gap: var(--spacing-md) var(--spacing-lg); }
+  .hero.portrait .hero-media { grid-column: 1; grid-row: 1 / span 2; }
+  .hero.portrait .hero-media img { aspect-ratio: 1; }
+  .hero.portrait .hero-text { grid-column: 2; grid-row: 2; max-width: 44rem; }
+}
+
+@media (width <= 640px) {
+  .hero.ask .hero-grid { grid-template-columns: minmax(0, 1fr) 44%; grid-template-areas: "h1 media" "text text"; gap: var(--spacing-md); }
+  .hero.ask .hero-h1 { align-self: center; }
+  .hero.ask .hero-h1 h1 { max-width: none; }
+  .hero.ask .hero-media img { aspect-ratio: 3 / 2; border-radius: var(--radius-img-sm) 0 var(--radius-img-sm) 0; }
+  .hero.portrait .hero-grid { grid-template-columns: minmax(0, 1fr) 38%; grid-template-rows: auto auto; gap: var(--spacing-lg); align-items: center; }
+  .hero.portrait .hero-media { grid-column: 2; grid-row: 1; justify-self: end; }
+  .hero.portrait .hero-h1 { grid-column: 1; grid-row: 1; align-self: center; }
+  .hero.portrait .hero-text { grid-column: 1 / -1; grid-row: 2; margin-top: var(--spacing-md); gap: calc(var(--spacing-lg) + var(--spacing-md)); }
+  .hero.portrait .cta-row { margin-top: 0; }
+}

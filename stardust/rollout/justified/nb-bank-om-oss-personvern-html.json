@@ -1,0 +1,4 @@
+{
+  "patterns": ["ROLE SWAP: .* is a body in the proto but a heading in EDS"],
+  "reason": "The walker renders FAQ questions as bare <summary> text (body role); the accordion block authors them as <h3> — the canon FAQ heading rank, the same choice the core faq encoder makes for the product archetype. Role-faithful and editable, not a mis-segmented slot."
+}

@@ -1,0 +1,58 @@
+{
+ "slug": "nb-bank-om-oss-jobb-og-karriere-html",
+ "deliveredPath": "/nb/bank/om-oss/jobb-og-karriere",
+ "file": "content/nb/bank/om-oss/jobb-og-karriere.html",
+ "chrome": {
+  "nav": "/nav-om-oss",
+  "footer": "/footer-om-oss",
+  "router": null,
+  "market": "om-oss",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "campaign",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "columns-grid",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "columns-grid",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "columns-grid",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "media: Innovasjons%20workshop%202%20lys%20bakgrunn.svg is 49559 B of SVG (> 40000) — authored as DA media Innovasjons%20workshop%202%20lys%20bakgrunn.png",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2025/Innovasjons%20workshop%202%20lys%20bakgrunn.svg"
+ ],
+ "writtenAt": "2026-09-14T22:22:56.659Z"
+}

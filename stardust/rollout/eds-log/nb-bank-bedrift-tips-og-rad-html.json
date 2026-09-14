@@ -1,0 +1,45 @@
+{
+ "slug": "nb-bank-bedrift-tips-og-rad-html",
+ "deliveredPath": "/nb/bank/bedrift/tips-og-rad",
+ "file": "content/nb/bank/bedrift/tips-og-rad.html",
+ "chrome": {
+  "nav": "/nav-bedrift",
+  "footer": "/footer-bedrift",
+  "router": "/fragments/bank-router-bedrift",
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "page-title",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "card-grid",
+   "blocks": []
+  },
+  {
+   "module": "card-grid",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "breadcrumbs"
+ ],
+ "notes": [],
+ "gaps": [
+  "no encoder for module card-grid (emitted as prose)",
+  "no encoder for module card-grid (emitted as prose)"
+ ],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T22:30:27.579Z"
+}

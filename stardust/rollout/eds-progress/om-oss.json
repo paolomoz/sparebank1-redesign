@@ -1,0 +1,123 @@
+{
+  "archetype": "nb-bank-om-oss-presse-html",
+  "document": "content/nb/bank/om-oss/presse.html",
+  "blocks": {
+    "new": [
+      "table (row-headers alias on the hub worker's block)"
+    ],
+    "reused": [
+      "hero (om-oss)",
+      "cards (advisers)",
+      "cards (om-oss, cols-3, plain)",
+      "columns (promo lokale)",
+      "columns (split text-first presserom)",
+      "columns (om-oss, spot, panel, plain, text-first, text)",
+      "accordion (faq)",
+      "breadcrumbs",
+      "feedback (labels)"
+    ]
+  },
+  "sectionStyles": [
+    "contacts",
+    "hairline-none",
+    "prose-run",
+    "tabs"
+  ],
+  "iterations": 3,
+  "breakpoints": {
+    "360": {
+      "pixelPct": 0.33,
+      "heightDelta": 0,
+      "header": 99.66,
+      "footer": 100,
+      "pass": true
+    },
+    "1440": {
+      "pixelPct": 2.14,
+      "heightDelta": 0,
+      "header": 99.96,
+      "footer": 99.8,
+      "pass": true
+    }
+  },
+  "contentDiff": {
+    "red": 0,
+    "justified": []
+  },
+  "ew": {
+    "editable": 35,
+    "dead": 0,
+    "exempt": 0,
+    "authored": 35
+  },
+  "lint": {
+    "davidsModel": "0 🔴 / 1 🟡 (D4 SVG batch-verify)",
+    "delivery": "0 P0 · 0 P1 · 8 P2 (cross-origin-optimize advisories)"
+  },
+  "productRegression": {
+    "slug": "nb-bank-privat-lan-boliglan-html",
+    "pixelPct": 0.74,
+    "heightDelta": -1,
+    "pass": true
+  },
+  "siblings": {
+    "converted": [
+      "nb-bank-om-oss-investor-html",
+      "nb-bank-om-oss-jobb-og-karriere-html",
+      "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+      "nb-bank-om-oss-personvern-generelle-vilkar-html",
+      "nb-bank-om-oss-personvern-html",
+      "nb-bank-om-oss-samfunnsansvar-html",
+      "nb-bank-om-oss-selskaper-html"
+    ],
+    "gaps": {
+      "nb-bank-om-oss-investor-html": 0,
+      "nb-bank-om-oss-jobb-og-karriere-html": 0,
+      "nb-bank-om-oss-om-banken-selskapsinformasjon-html": 0,
+      "nb-bank-om-oss-personvern-generelle-vilkar-html": 0,
+      "nb-bank-om-oss-personvern-html": 0,
+      "nb-bank-om-oss-samfunnsansvar-html": 0,
+      "nb-bank-om-oss-selskaper-html": 0
+    },
+    "lintRed": {
+      "nb-bank-om-oss-investor-html": 0,
+      "nb-bank-om-oss-jobb-og-karriere-html": 0,
+      "nb-bank-om-oss-om-banken-selskapsinformasjon-html": 0,
+      "nb-bank-om-oss-personvern-generelle-vilkar-html": 0,
+      "nb-bank-om-oss-personvern-html": 0,
+      "nb-bank-om-oss-samfunnsansvar-html": 0,
+      "nb-bank-om-oss-selskaper-html": 0
+    },
+    "deliveryP1": {
+      "nb-bank-om-oss-investor-html": "0 P0 · 0 P1 (44 one-cta-per-p fixed by tidyAnswer: captured RTE answers split one link per paragraph)"
+    },
+    "contentDiffSampled": {
+      "slug": "nb-bank-om-oss-personvern-html",
+      "red": 0,
+      "justified": [
+        {
+          "pattern": "ROLE SWAP: .* is a body in the proto but a heading in EDS",
+          "count": 25,
+          "reason": "FAQ questions: walker <summary> body text → accordion <h3> (canon FAQ rank, same as the core faq encoder)"
+        }
+      ]
+    },
+    "eyeballed": [
+      "personvern 1440+360",
+      "investor 1440",
+      "selskaper 1440",
+      "jobb-og-karriere 1440",
+      "samfunnsansvar 1440",
+      "selskapsinformasjon 1440"
+    ],
+    "skippedModules": {
+      "contact-row": "footer chrome carries the contact section (/footer-om-oss)"
+    }
+  },
+  "requests": [
+    "scripts.js buildMediaAutoBlocks keeps the authored <p> (edited)",
+    "table.js row-headers alias (edited)",
+    "lib inline() span+time spacing",
+    "rasterName %20 (emulation-only breakage on jobb-og-karriere)"
+  ]
+}

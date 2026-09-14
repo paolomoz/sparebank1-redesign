@@ -1,0 +1,81 @@
+{
+  "slug": "nb-bank-privat-kundeservice-html",
+  "edsUrl": "http://localhost:3020/nb/bank/privat/kundeservice",
+  "protoUrl": "http://localhost:8820/nb-bank-privat-kundeservice-html-proposed.html",
+  "at": "2026-09-14T22:25:12.903Z",
+  "pixel": {
+    "360": {
+      "pct": 0.01,
+      "heightDelta": 0,
+      "compared": {
+        "width": 360,
+        "height": 5009
+      },
+      "pass": true,
+      "hot": []
+    },
+    "1440": {
+      "pct": 0.04,
+      "heightDelta": 0,
+      "compared": {
+        "width": 1440,
+        "height": 2999
+      },
+      "pass": true,
+      "hot": []
+    }
+  },
+  "chrome": {
+    "360": {
+      "header": 99.66,
+      "footer": 100,
+      "headerH": {
+        "proto": 61,
+        "eds": 61
+      },
+      "footerH": {
+        "proto": 1883,
+        "eds": 1883
+      },
+      "footerY": {
+        "proto": 3126,
+        "eds": 3126
+      },
+      "doc": {
+        "proto": 5009,
+        "eds": 5009
+      }
+    },
+    "1440": {
+      "header": 99.96,
+      "footer": 99.89,
+      "headerH": {
+        "proto": 110,
+        "eds": 110
+      },
+      "footerH": {
+        "proto": 917,
+        "eds": 917
+      },
+      "footerY": {
+        "proto": 2082,
+        "eds": 2082
+      },
+      "doc": {
+        "proto": 2999,
+        "eds": 2999
+      }
+    }
+  },
+  "content": {
+    "red": 0,
+    "justified": 0,
+    "amber": 17,
+    "orange": 12,
+    "summary": [
+      "  EDS: 135 text nodes — 22 headings, 0 eyebrows, 41 CTAs, 72 body; 15 img",
+      "  editable texts (outermost h*/p/ul/ol): proto 59 / EDS 67"
+    ]
+  },
+  "pass": true
+}

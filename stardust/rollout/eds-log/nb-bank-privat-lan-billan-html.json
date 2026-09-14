@@ -1,0 +1,115 @@
+{
+ "slug": "nb-bank-privat-lan-billan-html",
+ "deliveredPath": "/nb/bank/privat/lan/billan",
+ "file": "content/nb/bank/privat/lan/billan.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "product-hero",
+   "blocks": [
+    "hero",
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "price-terms",
+   "blocks": []
+  },
+  {
+   "module": "cobranding",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "shortcuts",
+   "blocks": []
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "cta-band",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "hero",
+  "breadcrumbs",
+  "columns",
+  "cards",
+  "accordion",
+  "feedback"
+ ],
+ "notes": [
+  "product-hero (product): the canon USP list rides the hero text cell as an authored <ul> — hero (usp) paints the check marks / icons",
+  "price-terms: prose composition (h2, check list, price example, pill) → default content with the `price-terms` section style (styles-product.css)",
+  "cobranding (product): the canon co-brand band is always open (no <details>) → columns (cobrand) — one row [logo, h2, <em>member question</em>, prose, CTAs][illustration + adviser note]; not the hub cobranding disclosure",
+  "media: mann-bil-tre.svg is 69217 B of SVG (> 40000) — authored as DA media mann-bil-tre.png",
+  "card-rail (product): choices cols-3 — one row per card [media?][headings, text, lists, CTAs] in authored order; head + lede and trailing prose are default content",
+  "prep: 3 phone-only duplicate CTA(s) (app deep links, hidden ≥ 768 in the canon) dropped — the desktop link is the authored one (dynamics: app-link redirect)",
+  "shortcuts: h2 + one secondary CTA per shortcut as default content (D6 — pills from emphasis); the `shortcut-pills` section style lays the row out",
+  "split-media (product): canon `media-right` (text 7 / media 5) → columns (split text-first), cells in the visual order",
+  "prep: 2 phone-only duplicate CTA(s) (app deep links, hidden ≥ 768 in the canon) dropped — the desktop link is the authored one (dynamics: app-link redirect)",
+  "card-rail (product): links cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "card-rail (product): tips cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg"
+ ],
+ "writtenAt": "2026-09-14T22:29:14.447Z"
+}

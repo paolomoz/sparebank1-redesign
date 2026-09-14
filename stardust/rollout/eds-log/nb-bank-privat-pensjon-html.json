@@ -1,0 +1,124 @@
+{
+ "slug": "nb-bank-privat-pensjon-html",
+ "deliveredPath": "/nb/bank/privat/pensjon",
+ "file": "content/nb/bank/privat/pensjon.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "page-title",
+   "blocks": []
+  },
+  {
+   "module": "card-grid",
+   "blocks": []
+  },
+  {
+   "module": "cobranding",
+   "blocks": [
+    "cobranding"
+   ]
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "calculator",
+   "blocks": []
+  },
+  {
+   "module": "card-grid",
+   "blocks": []
+  },
+  {
+   "module": "shortcut-row",
+   "blocks": []
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "related-products",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "related-topics",
+   "blocks": []
+  },
+  {
+   "module": "rich-text",
+   "blocks": []
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "cta-band",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "cobranding",
+  "columns",
+  "accordion",
+  "cards",
+  "feedback"
+ ],
+ "notes": [
+  "media: stable-penger-lys-hand.svg is 55566 B of SVG (> 40000) — authored as DA media stable-penger-lys-hand.png",
+  "media: sparing-2.svg is 44279 B of SVG (> 40000) — authored as DA media sparing-2.png",
+  "media: dame-tenker-okonomi-sammenlikner.svg is 51143 B of SVG (> 40000) — authored as DA media dame-tenker-okonomi-sammenlikner.png",
+  "cobranding: bespoke disclosure block (details/summary → head row + hidden panel, accordion.js pattern); the toggle label is authored text outside the <button>",
+  "lint D1 calculator: bespoke widget (dynamics #7 interim static shell — controls disabled, captured strings; labels/values are control config, @ew-exempt in the block)",
+  "media: menneske_person_tenaaring_2-CZfMiezN.svg is 50135 B of SVG (> 40000) — authored as DA media menneske_person_tenaaring_2-CZfMiezN.png",
+  "shortcut-row: prose h2 + ul of links (David's Model D5 simple list); section style `shortcuts` paints the hairline, the inline-link row and the chevrons",
+  "media: illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg is 860616 B of SVG (> 40000) — authored as DA media illustrasjon-sporsmal-sand-sirkel-usymmetrisk.png",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [
+  "no encoder for module card-grid (emitted as prose)",
+  "no encoder for module card-grid (emitted as prose)",
+  "no encoder for module related-topics (emitted as prose)"
+ ],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/stable-penger-lys-hand.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/sparing-2.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/dame-tenker-okonomi-sammenlikner.svg",
+  "https://www.sparebank1.no/privat/forsikring/pensjon/assets/menneske_person_tenaaring_2-CZfMiezN.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg"
+ ],
+ "writtenAt": "2026-09-14T22:30:27.625Z"
+}

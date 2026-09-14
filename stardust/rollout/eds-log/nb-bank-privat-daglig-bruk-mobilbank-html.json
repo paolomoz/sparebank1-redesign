@@ -1,0 +1,108 @@
+{
+ "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+ "deliveredPath": "/nb/bank/privat/daglig-bruk/mobilbank",
+ "file": "content/nb/bank/privat/daglig-bruk/mobilbank.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "product-hero",
+   "blocks": [
+    "hero",
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "promo-band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "content-columns",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "content-columns",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "guide-list",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "topic-list",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "breadcrumbs",
+  "columns",
+  "cards",
+  "accordion",
+  "feedback"
+ ],
+ "notes": [
+  "media: pengene-vokser-dame-mater-fisk-lys-bakgrunn.svg is 320828 B of SVG (> 40000) — authored as DA media pengene-vokser-dame-mater-fisk-lys-bakgrunn.png",
+  "content-columns (product): columns (cols cols-3 spot) — one row, one cell per authored column (verbatim prose)",
+  "media: mann-bil-tre.svg is 69217 B of SVG (> 40000) — authored as DA media mann-bil-tre.png",
+  "content-columns (product): columns (cols cols-3 spot) — one row, one cell per authored column (verbatim prose)",
+  "guide-list: cards (guide) — one row per carousel screen [screenshot][h3, <em>label</em>, text] (dynamics: carousel rendered as a stacked list; the \"1 av 5\" indicator is carousel chrome, not content)",
+  "media: ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.svg is 55304 B of SVG (> 40000) — authored as DA media ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.png",
+  "topic-list: spot illustration + h2 (+ lead) as default content with the `topic-list` section style, the feature list as accordion (faq) rows [h3][answer]",
+  "card-rail (product): links cols-3 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/pengene-vokser-dame-mater-fisk-lys-bakgrunn.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2025/ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.svg"
+ ],
+ "writtenAt": "2026-09-14T22:29:14.372Z"
+}
