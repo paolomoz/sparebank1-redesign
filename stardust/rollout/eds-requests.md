@@ -37,3 +37,19 @@
 4. **Core `faq` keeps the canon's hidden per-question article link as a visible paragraph** (`a.faq-link` → `<p><a>Question?</a></p>` at the end of every
    answer — 39 on product siblings, also on the LIVE archetype: `grep -c 'kundeservice/lan/' content/nb/bank/privat/lan/boliglan.html`). Product follows the
    core for consistency; a design decision (drop / relabel "Les hele svaret") should be taken once, in encoders.mjs.
+
+## hub (category-hub · kundeservice-hub · tool · utility) — E4
+- **delivery-lint `one-cta-per-p` false positive on running text.** The rule fires on ANY `<strong>`/`<em>` in a paragraph with > 1 link
+  (`emphasized = /<(strong|em)\b/`), but `decorateButtons` (scripts/scripts.js:128) only buttonizes when the paragraph's text equals the
+  link's text — a bold phrase in a sentence with two links (forsikring FAQ: "Hvis du skal <strong>flytte</strong> <a>skadeforsikringen</a>
+  til annet forsikringsselskap …, … <a>flytter forsikringen til oss</a>.") ships as plain running text. Suggest testing `strong > a` /
+  `em > a` (or `p.textContent === a.textContent`) instead. Worked around locally (`tidyProse` in encoders/category-hub.mjs: run-in bold
+  labels become their own paragraph, a bold span around a link is split, and as a last resort the paragraph is split at a sentence boundary).
+- **callout p + p rhythm.** `blocks/callout/callout.css` zeroes every paragraph margin inside `.callout-text` (grid gap 8) and gives
+  `p.button-wrapper` only 4px, so a pill after a paragraph sits 12px under it; the canon (`.callout p + p` 16 + `.btn` 4, lan prototype
+  "Samtykke Altinn": p ends 173 → pill 201) needs 28. Worked around with the hub variant `callout (… cta)` (callout-hub.css: 20px);
+  a core `.callout .callout-text p + p.button-wrapper { margin-top: 20px }` would let every family drop the variant.
+- **hub CSS import order.** The group files are `@import`ed BEFORE the main block rules, so an equal-specificity group rule loses
+  (e.g. `.cards li.small-door` vs `.cards li.tile`, `main .section.tool-intro … h1 + p` vs `main .section.intro … h1 + p`). Every hub
+  rule now carries one extra class (`.cards li.tile.small-door`, `main .section.intro.tool-intro`). Importing the group files AFTER the
+  main rules (or documenting the specificity contract in the brief) would spare the next worker the same detour.

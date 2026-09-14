@@ -59,7 +59,7 @@ function cobranding(root, ctx) {
 /* ---- split-media (hub): two stacked help columns [photo][h2 + line + pill] → columns (split help), one row per column ---- */
 export function hubSplit(root, ctx) {
   const cols = qa(root, '.help-col'); if (!cols.length) return splitMedia(root, ctx);
-  const rows = cols.map((c) => { const img = q(c, 'img'); let body = ''; for (const n of c.children) { if (n === img) continue; body += prose({ childNodes: [n] }, ctx); } return [img ? pic(img, ctx) : '', body]; });
+  const rows = cols.map((c) => { const img = q(c, 'img'); let body = ''; for (const n of c.children) { if (n === img) continue; body += prose({ childNodes: [n] }, ctx); } return [img ? pic(img, ctx) : '', tidyProse(linkListify(body))]; });
   return { html: section([head(root, ctx), block('columns', ['split', 'help'], rows)], { style: hubStyle(root) }), blocks: ['columns'] };
 }
 
@@ -90,12 +90,28 @@ export function unwrapLayoutTables(el) {
 export function linkListify(html) {
   return html.replace(/<p>((?:(?!<\/p>).)*?)<\/p>/g, (m, inner) => {
     if ((inner.match(/<a /g) || []).length < 2 || !/<br>/.test(inner)) return m;
-    const lines = inner.split(/\s*<br>\s*/).map((l) => l.trim()).filter(Boolean);
+    const lines = inner.replace(/(<br>\s*)+<\/strong>/g, '</strong><br>').split(/\s*<br>\s*/).map((l) => l.trim()).filter(Boolean);
     if (!lines.every((l, i) => /^<a [^>]*>[^<]*<\/a>\.?$/.test(l) || (i === 0 && /^<strong>/.test(l)))) return m;
     let out = ''; const items = [];
     for (const l of lines) { if (/^<strong>/.test(l)) out += `<p>${l.replace(/<br>\s*<\/strong>/, '</strong>')}</p>`; else items.push(`<li>${l}</li>`); }
     return `${out}<ul>${items.join('')}</ul>`;
   });
+}
+/** Run-in bold labels (`<strong>Label<br></strong> body…`) become their own paragraph; a <strong> wrapping an inline link is split around
+ *  the link (same weight, no strong > a nesting) — so running text never reads as a multi-link CTA paragraph (delivery P1, D6). */
+export function tidyProse(html) {
+  return html
+    .replace(/<p><strong>([^<]+?)\s*(?:<br>\s*)+<\/strong>\s*(?=\S)/g, '<p><strong>$1</strong></p><p>')
+    .replace(/<strong>([^<]*)(<a [^>]*>[^<]*<\/a>)([^<]*)<\/strong>/g, (m, a, link, b) => `${a.trim() ? `<strong>${a}</strong>` : ''}${link}${b.trim() ? `<strong>${b}</strong>` : ''}`)
+    // last resort: running text with a bold phrase AND several links → one paragraph per sentence group (verbatim text, delivery-lint P1 heuristic)
+    .replace(/<p>((?:(?!<\/p>).)*?)<\/p>/g, (m, inner) => {
+      if ((inner.match(/<a /g) || []).length < 2 || !/<(strong|em)\b/.test(inner) || /<br>/.test(inner)) return m;
+      const sentences = inner.split(/(?<=[.!?])\s+(?=[A-ZÆØÅ])/); if (sentences.length < 2) return m;
+      const paras = []; let cur = '';
+      for (const sn of sentences) { const next = cur ? `${cur} ${sn}` : sn; const ok = (next.match(/<a /g) || []).length < 2 || !/<(strong|em)\b/.test(next); if (ok || !cur) cur = next; else { paras.push(cur); cur = sn; } }
+      if (cur) paras.push(cur);
+      return paras.map((x) => `<p>${x}</p>`).join('');
+    });
 }
 /** Prose of a container minus the back link (the intro's `p.back` or a wrapper that holds it). */
 function proseExcept(container, back, ctx) {
@@ -185,7 +201,8 @@ function disclosure(root, ctx) {
     if (q(body, 'table') && !q(body, '.help-col')) { parts.push(discloseTable(d, ctx)); blocks.push('table'); ctx.notes.push('disclosure: data table behind a toggle → table (disclose): row 1 = toggle label, row 2 = heading, then header + rows'); continue; }
     unwrapLayoutTables(body);
     const cols = qa(body, '.help-col'); let ans = '';
-    for (const col of cols.length ? cols : [body]) ans += linkListify(prose(col, ctx));
+    for (const part of [...body.children].length ? [...body.children] : [body]) { const pc = qa(part, '.help-col'); for (const piece of pc.length ? pc : [part]) ans += prose(piece, ctx); }
+    ans = tidyProse(linkListify(ans));
     parts.push(block('accordion', ['disclose'], [[`<p>${inline(q(d, 'summary'), ctx).trim()}</p>`, ans]])); blocks.push('accordion');
     ctx.notes.push(`disclosure: toggle + ${cols.length ? `${cols.length} illustrated columns` : 'prose'} → accordion (disclose), one row [label][prose]${cols.length ? ' — the columns are flattened in reading order (D2), nested toggles become label + link list' : ''}`);
   }
@@ -199,7 +216,7 @@ export function hubFaq(root, ctx, extra = []) {
   const item = (d) => {
     const s = q(d, 'summary'); const qEl = q(s, 'h3, h2, .faq-q') || s; const a = q(d, '.answer, .answer-wide'); if (a) unwrapLayoutTables(a);
     let ans = ''; for (const c of a ? [...a.children] : []) { if (c.classList.contains('faq-foot-feedback')) continue; ans += prose(c, ctx); }
-    return [`<h3>${inline(qEl, ctx).trim()}</h3>`, linkListify(ans)];
+    return [`<h3>${inline(qEl, ctx).trim()}</h3>`, tidyProse(linkListify(ans))];
   };
   const shown = qa(wrap, ':scope > details:not(.faq-more)').map(item);
   const variants = ['faq', aside ? 'wide' : null, rate ? 'rate' : null, ...extra];

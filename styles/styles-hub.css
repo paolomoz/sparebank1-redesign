@@ -11,6 +11,10 @@ main .section.shortcuts .default-content-wrapper ul a:any-link { display: inline
 main .section.shortcuts .default-content-wrapper ul a::after { content: ""; width: 18px; height: 18px; flex: 0 0 auto; background: currentcolor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 6 6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat; }
 main .section.shortcuts .default-content-wrapper ul a:hover { text-decoration: underline; color: var(--fjell); }
 
+/* figure (siblings): a lone illustration movement */
+main .section.figure .default-content-wrapper p { line-height: 0; }
+main .section.figure .default-content-wrapper img { width: min(100%, 320px); max-height: 240px; height: auto; object-fit: contain; object-position: left; border-radius: 0; }
+
 /* ===== kundeservice-hub ===== */
 /* faq-aside: the movement h2 sits (sticky) in a 4/12 column beside the 8/12 accordion */
 main .section.faq-aside { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: var(--spacing-xl); align-items: start; padding-inline: max(var(--gutter), calc((100% - var(--max-width)) / 2)); }

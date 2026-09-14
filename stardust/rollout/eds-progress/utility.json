@@ -1,0 +1,66 @@
+{
+  "archetype": "nb-bank-privat-kundeservice-kontakt-html",
+  "document": "content/nb/bank/privat/kundeservice/kontakt.html",
+  "blocks": {
+    "new": [
+      "table"
+    ],
+    "reused": [
+      "hero (portrait)",
+      "callout (tip rich)"
+    ]
+  },
+  "iterations": 3,
+  "breakpoints": {
+    "360": {
+      "pixelPct": 0,
+      "heightDelta": 0,
+      "header": 99.66,
+      "footer": 100,
+      "pass": true
+    },
+    "1440": {
+      "pixelPct": 0.26,
+      "heightDelta": 0,
+      "header": 99.96,
+      "footer": 99.89,
+      "pass": true
+    }
+  },
+  "contentDiff": {
+    "red": 0,
+    "justified": []
+  },
+  "ew": {
+    "editable": 54,
+    "dead": 0,
+    "exempt": 0
+  },
+  "lint": {
+    "davidsModelRed": 0,
+    "deliveryP0": 0,
+    "deliveryP1": 0
+  },
+  "siblings": {
+    "converted": [
+      "nb-bank-privat-kundeservice-bestill-prisliste-html"
+    ],
+    "gaps": {
+      "nb-bank-privat-kundeservice-bestill-prisliste-html": 0
+    },
+    "lintRed": {
+      "nb-bank-privat-kundeservice-bestill-prisliste-html": 0
+    },
+    "contentDiffSampled": {
+      "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
+      "red": 0
+    }
+  },
+  "productRegression": {
+    "slug": "nb-bank-privat-lan-boliglan-html",
+    "pixelPct1440": 0.74,
+    "heightDelta": -1,
+    "pass": true
+  },
+  "gatedAt": "2026-09-14T22:43:39.485Z"
+}

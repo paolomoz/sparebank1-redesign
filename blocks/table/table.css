@@ -26,3 +26,19 @@
   .table.directory td:nth-child(3) { grid-column: 1 / -1; }
   .table.directory td:nth-child(3) a { display: inline-block; padding-block: 4px; }
 }
+
+/* disclose: the canon .disclose (secondary pill toggle → hidden panel with heading + data table) */
+.table.disclose .disclose-head { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; max-width: 100%; padding: 10px 24px; border: 2px solid var(--vann); border-radius: var(--radius-pill); background: #fff; color: var(--vann); font: var(--body) / 1.2 var(--body-font-family); cursor: pointer; transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease), border-color var(--dur) var(--ease); }
+.table.disclose .disclose-head:hover { background: var(--frost-30); color: var(--fjell); border-color: var(--fjell); }
+.table.disclose .disclose-label p { margin: 0; }
+.table.disclose .disclose-toggle { display: inline-flex; width: 20px; height: 20px; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
+.table.disclose .disclose-toggle svg { width: 20px; height: 20px; fill: none; stroke: currentcolor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; transition: transform var(--dur) var(--ease); }
+.table.disclose.is-open .disclose-toggle svg { transform: rotate(180deg); }
+.table.disclose .disclose-body { display: grid; gap: var(--spacing-sm); margin-top: var(--spacing-lg); }
+.table.disclose .disclose-body[hidden] { display: none; }
+.table.disclose .disclose-heading :is(h2, h3) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
+.table .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.table.disclose th,
+.table.disclose td { padding: 12px 16px 12px 0; font-variant-numeric: tabular-nums; }
+.table.disclose thead th { padding-top: 12px; }
+main .section .default-content-wrapper + .table-wrapper:has(.table.disclose) { margin-top: var(--spacing-md); }

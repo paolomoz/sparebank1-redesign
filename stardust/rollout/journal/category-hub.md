@@ -1,0 +1,22 @@
+# category-hub — EDS conversion journal (worker E4, hub group)
+
+## Decisions
+- `shortcut-row` → DEFAULT CONTENT (h2 + `<ul>` of links) with the section style `shortcuts` (styles-hub.css): hairline, inline-link row, CSS-mask chevrons. David's Model D1/D5 — no block for a simple link list.
+- `cobranding` → new block `cobranding` (blocks/cobranding): three two-cell rows [question][toggle label] · [logo][name + prose + CTAs] · [illustration][note]. details/summary becomes a head row + `hidden` panel (accordion.js pattern); the toggle label is authored text next to a chevron-only `<button>` (EW7). Closed by default like the canon.
+- Doors / small tiles / popular → `cards (doors | small | popular)`; help columns → `columns (split help)` (own `hubSplit` encoder: the core `splitMedia` mangled the two `.help-col`s into three rows and dropped h2 + CTA); switch promo → `columns (promo switch)` with the section style `flush-top`.
+- Callout with a pill → variant `cta` (callout-hub.css `p.button-wrapper { margin-top: 20px }`): the core callout zeroes paragraph margins, so the canon p + p 16 + .btn 4 rhythm needed a variant. Request filed for a core rule.
+- The variant token `small` collides with the foundation utility `.small` (14 px): reset in cards-hub.css (`.cards.small { font-size: var(--body) }`).
+- Hub CSS files are `@import`ed BEFORE the main block rules, so equal-specificity rules lose: every hub rule carries an extra class (`.cards li.tile.small-door`, `.cards ul.cards-list.pop-grid`, `.columns.split.help`, `main .section.intro.tool-intro`). Request filed.
+- Siblings (shared keys in encoders/category-hub.mjs): `page-title` intro-media → `hero (intro)` (text 7/12 left, photo/illustration right; the core `pageTitle` dropped the whole `.intro-text` because it contained the back link); `card-grid`/`related-topics`/`static-cards` → `cards (photo-tiles | popular)` (+ `lead-first` when a lead follows the h2); `usp` → `cards (usp)`; `image` → default-content image with the `figure` style; `text-and-image` → `columns (split illu)`; `disclosure` → `accordion (disclose)` (one row [label][flattened prose]) or `table (disclose)` when the panel is a data table; `accordion-list` → `accordion (faq list)`; `faq` → shared `hubFaq` (layout tables unwrapped, link lines → lists).
+- Prose normalisers (`tidyProse`, `linkListify`): run-in bold labels become their own paragraph, a `<strong>` wrapping an inline link is split around it, several links on `<br>` lines become a `<ul>`, and as a last resort a bold-phrase paragraph with two links is split at a sentence boundary — verbatim text, only paragraphing changes (delivery-lint P1 heuristic; request filed).
+
+## Findings
+- Gate: 1440 0.32 % / Δh 0 · 360 0.63 % / Δh 0 · header 99.96/99.66 · footer 99.89/100 · content-diff 0 🔴 (0 justified) · EW dead 0 / dup 0 / exempt 1 (fragment) · lint 0 🔴 (🟡: fragment/callout D1 = designed compounds, D4 SVG batch-verify) · delivery 0 P0/P1.
+- 19 siblings converted, gaps 0, lint clean. Sampled forsikring: content-diff 0 structural 🔴 (after keeping the disclosure's trailing "Se alle bedriftsforsikringer" prose).
+- Eyeball (forsikring 1440/360): "Se våre forsikringer" puts the section head in the first help cell — that is the migrated canon's own `help-grid` (head column = first cell), kept. The FAQ h2 appears twice in the stitched shot only because it is `position: sticky` (same in the kundeservice prototype); the document has one h2.
+- Ordliste split: the lone-link `p.lead` "Se ordlisten vår" is a CTA by the emphasis convention, so columns.js moves it to the end of the text column (canon shows it under the h2). Editable, present; a `columns` order-keeping variant would fix it if the owner minds.
+- `rich-text` (core) prose-narrow renders the 68ch column centred (product worker's request #3) — visible on forsikring's "Du har alltid full oversikt…".
+
+## Open questions
+- `href="#"` shortcuts (three self-service links captured without a target) ship as-is.
+- The bedrift hubs' category pages use `nb-bank-privat-lan-html`'s prototype vocabulary; no bedrift category prototype exists — siblings were checked against their migrated pages only.

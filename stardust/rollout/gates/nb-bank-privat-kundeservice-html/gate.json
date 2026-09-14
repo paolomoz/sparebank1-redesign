@@ -2,7 +2,7 @@
   "slug": "nb-bank-privat-kundeservice-html",
   "edsUrl": "http://localhost:3020/nb/bank/privat/kundeservice",
   "protoUrl": "http://localhost:8820/nb-bank-privat-kundeservice-html-proposed.html",
-  "at": "2026-09-14T22:25:12.903Z",
+  "at": "2026-09-14T22:48:20.061Z",
   "pixel": {
     "360": {
       "pct": 0.01,
@@ -74,7 +74,7 @@
     "orange": 12,
     "summary": [
       "  EDS: 135 text nodes — 22 headings, 0 eyebrows, 41 CTAs, 72 body; 15 img",
-      "  editable texts (outermost h*/p/ul/ol): proto 59 / EDS 67"
+      "  editable texts (outermost h*/p/ul/ol): proto 59 / EDS 65"
     ]
   },
   "pass": true

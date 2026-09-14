@@ -7,6 +7,9 @@
 .columns.split.help .col-text { max-width: none; }
 .columns.split.help .lead-wrap p { font-size: var(--body); line-height: var(--line-height-body); max-width: 44rem; }
 .columns.split.help .col-text .cta-row { margin-top: var(--spacing-md); }
+.columns.split.help .col-text :is(ul, ol) { list-style: none; padding: 0; gap: var(--spacing-xs); }
+.columns.split.help .col-text :is(h2, h3) a:any-link { color: var(--fjell); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.15em; }
+.columns.split.help .col-text :is(h2, h3) a:hover { color: var(--vann); }
 .columns.promo.switch .split-row { gap: var(--spacing-xl); padding-top: var(--spacing-xl); border-top: 1px solid var(--lysgraa); }
 .columns.promo.switch .col-media img { width: 140px; }
 
@@ -62,3 +65,11 @@
   .columns.split.steps .col-text > :is(p, .lead-wrap, .cta-row) { grid-column: 1 / -1; }
   .columns.split.reopen .col-media img.photo { aspect-ratio: 3 / 2; border-radius: var(--radius-img-sm) 0 var(--radius-img-sm) 0; }
 }
+
+/* ===== hub siblings: illu — an illustration stack (logo + spot) beside h2/lead/pill ===== */
+.columns.split.illu .col-media { display: grid; gap: var(--spacing-md); justify-items: start; }
+.columns.split.illu .col-media img.photo { width: min(100%, 320px); max-height: 320px; height: auto; aspect-ratio: auto; object-fit: contain; border-radius: 0; background: transparent; }
+.columns.split.illu .col-caption { display: grid; gap: var(--spacing-md); }
+.columns.split.illu .col-caption p { margin: 0; line-height: 0; }
+.columns.split.illu .col-caption img { width: 112px; height: 112px; object-fit: contain; }
+.columns.split.illu .lead-wrap p { font-size: var(--body); line-height: var(--line-height-body); max-width: 68ch; }

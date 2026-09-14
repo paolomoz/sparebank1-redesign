@@ -1,0 +1,124 @@
+{
+  "archetype": "nb-bank-privat-lan-html",
+  "document": "content/nb/bank/privat/lan.html",
+  "blocks": {
+    "new": [
+      "cobranding"
+    ],
+    "reused": [
+      "cards (doors · small · popular)",
+      "columns (split help · promo switch)",
+      "callout (tip cta)",
+      "feedback",
+      "breadcrumbs",
+      "fragment"
+    ]
+  },
+  "iterations": 4,
+  "breakpoints": {
+    "360": {
+      "pixelPct": 0.63,
+      "heightDelta": 0,
+      "header": 99.66,
+      "footer": 100,
+      "pass": true
+    },
+    "1440": {
+      "pixelPct": 0.32,
+      "heightDelta": 0,
+      "header": 99.96,
+      "footer": 99.89,
+      "pass": true
+    }
+  },
+  "contentDiff": {
+    "red": 0,
+    "justified": []
+  },
+  "ew": {
+    "editable": 58,
+    "dead": 0,
+    "exempt": 1
+  },
+  "lint": {
+    "davidsModelRed": 0,
+    "deliveryP0": 0,
+    "deliveryP1": 0
+  },
+  "siblings": {
+    "converted": [
+      "nb-bank-bedrift-bedriftskort-html",
+      "nb-bank-bedrift-betaling-html",
+      "nb-bank-bedrift-daglig-drift-html",
+      "nb-bank-bedrift-konto-html",
+      "nb-bank-bedrift-lan-finansiering-html",
+      "nb-bank-bedrift-pensjon-html",
+      "nb-bank-bedrift-regnskap-html",
+      "nb-bank-bedrift-sparing-investering-html",
+      "nb-bank-bedrift-starte-bedrift-html",
+      "nb-bank-bedrift-tips-og-rad-html",
+      "nb-bank-privat-daglig-bruk-html",
+      "nb-bank-privat-eiendom-html",
+      "nb-bank-privat-forsikring-html",
+      "nb-bank-privat-lofavor-html",
+      "nb-bank-privat-pensjon-html",
+      "nb-bank-privat-private-banking-html",
+      "nb-bank-privat-sparing-html",
+      "nb-bank-privat-svindel-html",
+      "nb-bank-privat-tips-og-rad-html"
+    ],
+    "gaps": {
+      "nb-bank-bedrift-bedriftskort-html": 0,
+      "nb-bank-bedrift-betaling-html": 0,
+      "nb-bank-bedrift-daglig-drift-html": 0,
+      "nb-bank-bedrift-konto-html": 0,
+      "nb-bank-bedrift-lan-finansiering-html": 0,
+      "nb-bank-bedrift-pensjon-html": 0,
+      "nb-bank-bedrift-regnskap-html": 0,
+      "nb-bank-bedrift-sparing-investering-html": 0,
+      "nb-bank-bedrift-starte-bedrift-html": 0,
+      "nb-bank-bedrift-tips-og-rad-html": 0,
+      "nb-bank-privat-daglig-bruk-html": 0,
+      "nb-bank-privat-eiendom-html": 0,
+      "nb-bank-privat-forsikring-html": 0,
+      "nb-bank-privat-lofavor-html": 0,
+      "nb-bank-privat-pensjon-html": 0,
+      "nb-bank-privat-private-banking-html": 0,
+      "nb-bank-privat-sparing-html": 0,
+      "nb-bank-privat-svindel-html": 0,
+      "nb-bank-privat-tips-og-rad-html": 0
+    },
+    "lintRed": {
+      "nb-bank-bedrift-bedriftskort-html": 0,
+      "nb-bank-bedrift-betaling-html": 0,
+      "nb-bank-bedrift-daglig-drift-html": 0,
+      "nb-bank-bedrift-konto-html": 0,
+      "nb-bank-bedrift-lan-finansiering-html": 0,
+      "nb-bank-bedrift-pensjon-html": 0,
+      "nb-bank-bedrift-regnskap-html": 0,
+      "nb-bank-bedrift-sparing-investering-html": 0,
+      "nb-bank-bedrift-starte-bedrift-html": 0,
+      "nb-bank-bedrift-tips-og-rad-html": 0,
+      "nb-bank-privat-daglig-bruk-html": 0,
+      "nb-bank-privat-eiendom-html": 0,
+      "nb-bank-privat-forsikring-html": 0,
+      "nb-bank-privat-lofavor-html": 0,
+      "nb-bank-privat-pensjon-html": 0,
+      "nb-bank-privat-private-banking-html": 0,
+      "nb-bank-privat-sparing-html": 0,
+      "nb-bank-privat-svindel-html": 0,
+      "nb-bank-privat-tips-og-rad-html": 0
+    },
+    "contentDiffSampled": {
+      "slug": "nb-bank-privat-forsikring-html",
+      "red": 0
+    }
+  },
+  "productRegression": {
+    "slug": "nb-bank-privat-lan-boliglan-html",
+    "pixelPct1440": 0.74,
+    "heightDelta": -1,
+    "pass": true
+  },
+  "gatedAt": "2026-09-14T22:54:05.434Z"
+}

@@ -23,6 +23,7 @@ function heroAsk(root, ctx) {
   const parts = [block('hero', ['ask'], rows)]; const blocks = ['hero'];
   const tools = q(root, 'ul.tools, ul[data-slot="tools"]');
   if (tools) { const rows = cardRows(qa(tools, ':scope > li'), ctx); parts.push(block('cards', ['tools'], rows.some((r) => r[0]) ? rows : rows.map((r) => [r[1]]))); blocks.push('cards'); }
+  for (const p of qa(root, '.hero-grid > p, .container > p')) if (!p.closest('.hero-text, form, ul')) parts.push(/class="btn|link-more/.test(p.innerHTML) ? L.ctas(p, ctx) : `<p>${inline(p, ctx).trim()}</p>`); // e.g. the bedrift hub's "Se priser …" link under the tool tiles
   return { html: section(parts, { style: hubStyle(root) }), blocks };
 }
 

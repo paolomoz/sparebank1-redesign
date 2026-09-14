@@ -1,0 +1,51 @@
+{
+  "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+  "edsUrl": "http://localhost:3020/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast",
+  "protoUrl": "http://localhost:8820/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html-proposed.html",
+  "at": "2026-09-14T22:55:57.619Z",
+  "pixel": {
+    "360": {
+      "pct": 0.14,
+      "heightDelta": 0,
+      "compared": {
+        "width": 360,
+        "height": 5693
+      },
+      "pass": true,
+      "hot": []
+    }
+  },
+  "chrome": {
+    "360": {
+      "header": 99.66,
+      "footer": 100,
+      "headerH": {
+        "proto": 61,
+        "eds": 61
+      },
+      "footerH": {
+        "proto": 970,
+        "eds": 970
+      },
+      "footerY": {
+        "proto": 4723,
+        "eds": 4723
+      },
+      "doc": {
+        "proto": 5693,
+        "eds": 5693
+      }
+    }
+  },
+  "content": {
+    "red": 0,
+    "justified": 0,
+    "amber": 0,
+    "orange": 0,
+    "summary": [
+      "  EDS: 33 text nodes — 6 headings, 0 eyebrows, 7 CTAs, 20 body; 7 img",
+      "  editable texts (outermost h*/p/ul/ol): proto 22 / EDS 24"
+    ]
+  },
+  "pass": true
+}

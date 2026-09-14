@@ -1,0 +1,10 @@
+
+Content diff @ 1440px (profile "eds", root "main")
+  proto: 33 text nodes — 6 headings, 0 eyebrows, 7 CTAs, 20 body; 7 img
+  EDS: 32 text nodes — 6 headings, 0 eyebrows, 7 CTAs, 19 body; 7 img
+  editable texts (outermost h*/p/ul/ol): proto 22 / EDS 24
+
+Findings: 3 (0 structural 🔴)
+  🟡 MISSING BODY: proto body "Bærekraft"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "9. februar 2022"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 EXTRA: EDS body "Bærekraft9. februar 2022" has no proto source — Invented / placeholder-filled copy; confirm it is intended.

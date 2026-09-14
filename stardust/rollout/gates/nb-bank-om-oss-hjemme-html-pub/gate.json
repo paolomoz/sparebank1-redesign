@@ -1,0 +1,81 @@
+{
+  "slug": "nb-bank-om-oss-hjemme-html",
+  "edsUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/hjemme",
+  "protoUrl": "http://localhost:8820/nb-bank-om-oss-hjemme-html-proposed.html",
+  "at": "2026-09-14T22:48:06.002Z",
+  "pixel": {
+    "360": {
+      "pct": 0.25,
+      "heightDelta": 0,
+      "compared": {
+        "width": 360,
+        "height": 5867
+      },
+      "pass": true,
+      "hot": []
+    },
+    "1440": {
+      "pct": 0.04,
+      "heightDelta": 0,
+      "compared": {
+        "width": 1440,
+        "height": 5097
+      },
+      "pass": true,
+      "hot": []
+    }
+  },
+  "chrome": {
+    "360": {
+      "header": 99.66,
+      "footer": 99.8,
+      "headerH": {
+        "proto": 61,
+        "eds": 61
+      },
+      "footerH": {
+        "proto": 970,
+        "eds": 970
+      },
+      "footerY": {
+        "proto": 4898,
+        "eds": 4898
+      },
+      "doc": {
+        "proto": 5867,
+        "eds": 5867
+      }
+    },
+    "1440": {
+      "header": 99.96,
+      "footer": 99.7,
+      "headerH": {
+        "proto": 110,
+        "eds": 110
+      },
+      "footerH": {
+        "proto": 481,
+        "eds": 481
+      },
+      "footerY": {
+        "proto": 4616,
+        "eds": 4616
+      },
+      "doc": {
+        "proto": 5097,
+        "eds": 5097
+      }
+    }
+  },
+  "content": {
+    "red": 0,
+    "justified": 0,
+    "amber": 2,
+    "orange": 2,
+    "summary": [
+      "  EDS: 25 text nodes — 7 headings, 0 eyebrows, 8 CTAs, 10 body; 5 img",
+      "  editable texts (outermost h*/p/ul/ol): proto 20 / EDS 25"
+    ]
+  },
+  "pass": true
+}

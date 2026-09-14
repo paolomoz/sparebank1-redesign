@@ -2,14 +2,14 @@
   "slug": "nb-bank-privat-kundeservice-kontakt-html",
   "edsUrl": "http://localhost:3020/nb/bank/privat/kundeservice/kontakt",
   "protoUrl": "http://localhost:8820/nb-bank-privat-kundeservice-kontakt-html-proposed.html",
-  "at": "2026-09-14T22:27:39.453Z",
+  "at": "2026-09-14T22:43:39.485Z",
   "pixel": {
     "360": {
-      "pct": 5.68,
-      "heightDelta": 8,
+      "pct": 0,
+      "heightDelta": 0,
       "compared": {
         "width": 360,
-        "height": 4896
+        "height": 4904
       },
       "pass": true,
       "hot": []
@@ -39,11 +39,11 @@
       },
       "footerY": {
         "proto": 3019,
-        "eds": 3011
+        "eds": 3019
       },
       "doc": {
         "proto": 4904,
-        "eds": 4896
+        "eds": 4904
       }
     },
     "1440": {

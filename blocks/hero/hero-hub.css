@@ -54,3 +54,19 @@
   .hero.portrait .hero-text { grid-column: 1 / -1; grid-row: 2; margin-top: var(--spacing-md); gap: calc(var(--spacing-lg) + var(--spacing-md)); }
   .hero.portrait .cta-row { margin-top: 0; }
 }
+
+/* ===== hub siblings: intro — the intro-media page title (text 7/12 left, photo or illustration 5/12 right, leads + pills) ===== */
+.hero.intro .hero-grid { grid-template-columns: 7fr 5fr; gap: var(--spacing-xl); align-items: center; }
+.hero.intro .hero-media { grid-column: 2; grid-row: 1; }
+.hero.intro .hero-text { grid-column: 1; grid-row: 1; max-width: none; }
+.hero.intro .lead-wrap p,
+.hero.intro .note-wrap p { font-size: var(--lead); line-height: 1.5; max-width: 60ch; }
+.hero.intro .hero-media img[src$=".svg"],
+.hero.intro .hero-media img[src*=".svg?"] { width: auto; max-width: 200px; aspect-ratio: auto; object-fit: contain; border-radius: 0; background: transparent; margin-inline: auto; }
+.hero.intro .cta-row { margin-top: var(--spacing-xs); }
+
+@media (width <= 1023px) {
+  .hero.intro .hero-grid { grid-template-columns: 1fr; }
+  .hero.intro .hero-text { grid-column: 1; grid-row: 1; }
+  .hero.intro .hero-media { grid-column: 1; grid-row: 2; }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "nb-bank-om-oss-nyheter-html",
+  "edsUrl": "http://localhost:3020/nb/bank/om-oss/nyheter",
+  "protoUrl": "http://localhost:8820/nb-bank-om-oss-nyheter-html-proposed.html",
+  "at": "2026-09-14T22:55:16.629Z",
+  "pixel": {
+    "360": {
+      "pct": 1.58,
+      "heightDelta": 0,
+      "compared": {
+        "width": 360,
+        "height": 5419
+      },
+      "pass": true,
+      "hot": []
+    }
+  },
+  "chrome": {
+    "360": {
+      "header": 99.66,
+      "footer": 99.8,
+      "headerH": {
+        "proto": 61,
+        "eds": 61
+      },
+      "footerH": {
+        "proto": 970,
+        "eds": 970
+      },
+      "footerY": {
+        "proto": 4450,
+        "eds": 4450
+      },
+      "doc": {
+        "proto": 5419,
+        "eds": 5419
+      }
+    }
+  },
+  "content": {
+    "red": 0,
+    "justified": 0,
+    "amber": 0,
+    "orange": 0,
+    "summary": [
+      "  EDS: 95 text nodes — 1 headings, 0 eyebrows, 32 CTAs, 62 body; 28 img",
+      "  editable texts (outermost h*/p/ul/ol): proto 4 / EDS 4"
+    ]
+  },
+  "pass": true
+}

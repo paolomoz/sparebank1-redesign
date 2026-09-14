@@ -24,3 +24,25 @@ main .section.paper-frost .accordion.faq.wide .faq > .faq-item:last-child { bord
 @media (width <= 640px) {
   .accordion.faq.wide .faq-q :is(p, h3, h4) { font-size: var(--lead); }
 }
+
+/* ===== hub siblings: disclose (secondary-pill toggle → hidden prose panel) · list (accordion-list: lead-size questions) ===== */
+.accordion.disclose { max-width: none; margin-top: var(--spacing-md); }
+.accordion.disclose .faq-item { border-top: 0; }
+.accordion.disclose .faq > .faq-item:last-child { border-bottom: 0; }
+.accordion.disclose .faq-head { display: inline-flex; width: max-content; max-width: 100%; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 10px 24px; border: 2px solid var(--vann); border-radius: var(--radius-pill); background: #fff; color: var(--vann); transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease), border-color var(--dur) var(--ease); }
+.accordion.disclose .faq-head:hover { background: var(--frost-30); color: var(--fjell); border-color: var(--fjell); }
+.accordion.disclose .faq-q :is(p, h3) { font: var(--body) / 1.2 var(--body-font-family); color: inherit; text-wrap: nowrap; }
+.accordion.disclose .faq-toggle { width: 20px; height: 20px; margin-top: 0; color: inherit; }
+.accordion.disclose .faq-toggle svg { width: 20px; height: 20px; stroke-width: 1.75; }
+.accordion.disclose .answer { max-width: none; padding: var(--spacing-lg) 0 0; display: grid; gap: var(--spacing-md); }
+.accordion.disclose .answer > * { margin-top: 0; }
+.accordion.disclose .answer :is(h2, h3) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; margin-top: var(--spacing-sm); }
+.accordion.disclose .answer h2 a:any-link { color: var(--fjell); text-decoration: none; }
+.accordion.disclose .answer h2 a:hover { text-decoration: underline; }
+.accordion.disclose .answer picture,
+.accordion.disclose .answer img { width: 100%; max-width: 200px; height: auto; margin-top: var(--spacing-md); }
+.accordion.disclose .answer ul { list-style: none; padding: 0; display: grid; gap: var(--spacing-sm); }
+.accordion.disclose .answer li + li { margin-top: 0; }
+.accordion.faq.list .faq-q :is(p, h3) { font-size: var(--lead); line-height: 1.3; }
+.accordion.faq.list .answer table { width: 100%; border-collapse: collapse; }
+.accordion.faq.list .answer td { padding: 8px 0; vertical-align: top; }

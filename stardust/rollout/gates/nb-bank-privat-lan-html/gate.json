@@ -2,10 +2,10 @@
   "slug": "nb-bank-privat-lan-html",
   "edsUrl": "http://localhost:3020/nb/bank/privat/lan",
   "protoUrl": "http://localhost:8820/nb-bank-privat-lan-html-proposed.html",
-  "at": "2026-09-14T22:23:42.812Z",
+  "at": "2026-09-14T22:54:05.434Z",
   "pixel": {
     "360": {
-      "pct": 0.02,
+      "pct": 0.63,
       "heightDelta": 0,
       "compared": {
         "width": 360,
@@ -15,7 +15,7 @@
       "hot": []
     },
     "1440": {
-      "pct": 0.09,
+      "pct": 0.32,
       "heightDelta": 0,
       "compared": {
         "width": 1440,

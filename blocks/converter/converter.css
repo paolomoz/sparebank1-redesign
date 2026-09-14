@@ -1,0 +1,13 @@
+/* converter — canon .conv (frost paper, two fields per row, read-only values). Lifted from the tool sibling renderer. */
+.converter .conv { display: grid; gap: var(--spacing-md); max-width: 36rem; padding: var(--spacing-lg); background: var(--frost-30); border-radius: var(--radius); }
+.converter .conv-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--spacing-md); }
+.converter .conv-field { display: grid; gap: 4px; }
+.converter .conv-field .label p { margin: 0; }
+.converter .conv-out { display: flex; align-items: center; min-height: 44px; padding: 10px 14px; border: 1px dashed var(--lysgraa); border-radius: var(--radius-sm); font: var(--body) / 1.2 var(--body-font-family); color: var(--koksgraa); background: #fff; width: 100%; }
+.converter .conv-out p { margin: 0; }
+.converter .conv-rate p { margin: 0; font-family: var(--title-font-family); }
+.converter .conv-msg p { margin: 0; }
+
+@media (width <= 640px) {
+  .converter .conv-row { grid-template-columns: 1fr; }
+}

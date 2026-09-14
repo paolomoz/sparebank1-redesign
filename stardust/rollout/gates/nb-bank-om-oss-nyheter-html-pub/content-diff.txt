@@ -1,0 +1,100 @@
+
+Content diff @ 1440px (profile "eds", root "main")
+  proto: 95 text nodes — 1 headings, 0 eyebrows, 32 CTAs, 62 body; 28 img
+  EDS: 64 text nodes — 1 headings, 0 eyebrows, 32 CTAs, 31 body; 28 img
+  editable texts (outermost h*/p/ul/ol): proto 4 / EDS 4
+
+Findings: 93 (0 structural 🔴)
+  🟡 MISSING BODY: proto body "Svindel"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "7/8/2026"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Bolig"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "6/7/2026"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Svindel"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "16/6/2026"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Svindel"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "12/6/2026"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forbrukerøkonomi"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "19/5/2026"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Svindel"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "27/2/2026"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "28/11/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "28/11/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "28/11/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "28/11/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "28/11/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forbrukerøkonomi"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "17/11/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Svindel"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "23/10/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forbrukerøkonomi"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "6/10/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "1/10/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "29/8/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "29/8/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Nyheter"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "5/8/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "30/6/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "30/6/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "30/6/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "30/6/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Svindel"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "20/6/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Svindel"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "17/6/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Svindel"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "17/6/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "28/5/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "28/5/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "28/5/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "28/5/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "28/5/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Forsikring"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "30/4/2025"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 EXTRA: EDS body "Svindel7/8/2026" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Bolig6/7/2026" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Svindel16/6/2026" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Svindel12/6/2026" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forbrukerøkonomi19/5/2026" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Svindel27/2/2026" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring28/11/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring28/11/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring28/11/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring28/11/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring28/11/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forbrukerøkonomi17/11/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Svindel23/10/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forbrukerøkonomi6/10/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring1/10/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring29/8/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring29/8/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Nyheter5/8/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring30/6/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring30/6/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring30/6/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring30/6/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Svindel20/6/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Svindel17/6/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Svindel17/6/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring28/5/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring28/5/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring28/5/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring28/5/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring28/5/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Forsikring30/4/2025" has no proto source — Invented / placeholder-filled copy; confirm it is intended.

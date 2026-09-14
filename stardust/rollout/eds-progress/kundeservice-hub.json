@@ -1,0 +1,67 @@
+{
+  "archetype": "nb-bank-privat-kundeservice-html",
+  "document": "content/nb/bank/privat/kundeservice.html",
+  "blocks": {
+    "new": [],
+    "reused": [
+      "hero (ask)",
+      "cards (tools · topics)",
+      "accordion (faq wide rate)",
+      "columns (promo promo-2 invites)",
+      "fragment"
+    ]
+  },
+  "iterations": 3,
+  "breakpoints": {
+    "360": {
+      "pixelPct": 0.01,
+      "heightDelta": 0,
+      "header": 99.66,
+      "footer": 100,
+      "pass": true
+    },
+    "1440": {
+      "pixelPct": 0.04,
+      "heightDelta": 0,
+      "header": 99.96,
+      "footer": 99.89,
+      "pass": true
+    }
+  },
+  "contentDiff": {
+    "red": 0,
+    "justified": []
+  },
+  "ew": {
+    "editable": 77,
+    "dead": 0,
+    "exempt": 1
+  },
+  "lint": {
+    "davidsModelRed": 0,
+    "deliveryP0": 0,
+    "deliveryP1": 0
+  },
+  "siblings": {
+    "converted": [
+      "nb-bank-bedrift-kundeservice-html"
+    ],
+    "gaps": {
+      "nb-bank-bedrift-kundeservice-html": 0
+    },
+    "lintRed": {
+      "nb-bank-bedrift-kundeservice-html": 0
+    },
+    "contentDiffSampled": {
+      "slug": "nb-bank-bedrift-kundeservice-html",
+      "red": 0
+    }
+  },
+  "productRegression": {
+    "slug": "nb-bank-privat-lan-boliglan-html",
+    "pixelPct1440": 0.74,
+    "heightDelta": -1,
+    "pass": true
+  },
+  "gatedAt": "2026-09-14T22:48:20.061Z"
+}
