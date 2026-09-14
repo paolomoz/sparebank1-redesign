@@ -50,7 +50,7 @@
   },
   {
    "kind": "bounce-links",
-   "count": 29,
+   "count": 30,
    "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
   }
  ],
@@ -69,6 +69,7 @@
   "/nb/sor-norge/bedrift/lan-finansiering/leasing.html",
   "/nb/ostfold-akershus/bedrift/lan-finansiering/leasing.html",
   "/nb/ostlandet/bedrift/lan-finansiering/leasing.html",
+  "${linksbm.leasingbillan.sok}",
   "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/hva-er-forskjellen-pa-lan-og-leasing.html",
   "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-kjope-utstyret-etter-endt-leieperiode.html",
   "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/lonner-det-seg-med-lan-eller-leasing.html",
@@ -103,12 +104,10 @@
  "gatesPassed": [
   "mobile-adapt",
   "one-h1",
-  "placeholder-gate",
-  "content-verbatim",
-  "content-count"
+  "placeholder-gate"
  ],
- "contentCheck": "PASS",
- "migratedAt": "2026-09-14T22:03:29.899Z",
+ "contentCheck": "FAIL\n",
+ "migratedAt": "2026-09-14T22:16:40.691Z",
  "designMdSha": "9eaced02fd2340e7",
  "designJsonSha": "356d124b47aa82e7",
  "sourceCurrentSha": "1bcdb4e3aaa1a68b",

@@ -62,7 +62,7 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 13,
+   "media": 14,
    "narrowest": 400
   }
  },
@@ -74,7 +74,7 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T22:03:20.723Z",
+ "migratedAt": "2026-09-14T22:15:17.861Z",
  "designMdSha": "9eaced02fd2340e7",
  "designJsonSha": "356d124b47aa82e7",
  "sourceCurrentSha": "82b1e4de2a32a026",

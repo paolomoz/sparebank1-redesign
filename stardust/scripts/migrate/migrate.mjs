@@ -60,6 +60,9 @@ function sitePath(h) {
 function rewriteLinks(html, outputPath) {
   const broken = []; let rewritten = 0;
   const out = html.replace(/<a\b([^>]*?)\shref="([^"]*)"([^>]*)>/g, (m, pre, href, post) => {
+    // unresolved AEM link templates (${links.x}) and authoring placeholders (a sentence as href) — the live site resolves them at runtime;
+    // the bundle keeps the reader on the source page (bounce), flagged (contentDeviations kind: unresolved-link)
+    if (/^\$\{/.test(href.trim()) || (!/^(\/|https?:|tel:|mailto:|sms:|#|\.\.?\/|\?)/i.test(href.trim()) && /%20|\s/.test(href.trim()))) { if (!broken.includes(href)) broken.push(href); return `<a${pre} href="${esc(ORIGIN + pageMap.find((x) => x.outputPath === outputPath).sourceUrl)}" data-broken-link="true" data-unresolved-href="${esc(href)}"${post}>`; }
     const sp = sitePath(href); if (sp === null) return m;
     const [p, rest0 = ''] = sp.split(/(?=[?#])/);
     const rest = rest0.replace(/([?&])icid=[^&#]*&?/g, '$1').replace(/\?(#|$)/, '$1').replace(/&$/, ''); // SB1 campaign tracking (icid) is a tracking param — stripped per content-preservation § Internal link rewriting

@@ -67,6 +67,7 @@ export function href(h = '', ctx) {
   if (!h) return h;
   let s = h.trim();
   if (/^(#|mailto:|tel:|javascript:|sms:|data:)/i.test(s)) return s;
+  if (/^\$\{/.test(s) || (!/^(\/|https?:|tel:|mailto:|sms:|#|\.\.?\/|\?)/i.test(s) && /%20|\s/.test(s))) { ctx?.notes?.push(`unresolved captured href kept as a bounce to the source page: ${s.slice(0, 60)}`); return SOURCE_ORIGIN + (ctx?.map?.sourceUrl || '/'); } // AEM link templates / authoring placeholders
   if (/^\.\.?\//.test(s) && ctx?.map) { const [p, rest = ''] = s.split(/(?=[?#])/); const abs = `/${path.posix.normalize(path.posix.join(path.posix.dirname(ctx.map.outputPath), p))}`; const hit = BY_SOURCE.get(abs.toLowerCase()); if (hit) return hit.deliveredPath + rest; s = SOURCE_ORIGIN + abs + rest; }
   if (s.startsWith('//')) s = `https:${s}`;
   let u; try { u = new URL(s, SOURCE_ORIGIN); } catch { return s; }

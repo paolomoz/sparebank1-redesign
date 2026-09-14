@@ -35,7 +35,7 @@
   "designJsonSha": "356d124b47aa82e7",
   "sourceCurrentSha": "8b5f451b313e1f73",
   "sourceProposedSha": null,
-  "archetypeSha": "bcf88da354e79587",
+  "archetypeSha": "0eeec9e6b4ac0d10",
   "canonShas": {
    "header": "7b575d4a8a06908b",
    "footer": "a71bffa1aee4b031",
@@ -50,7 +50,7 @@
   },
   {
    "kind": "bounce-links",
-   "count": 25,
+   "count": 26,
    "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
   }
  ],
@@ -70,6 +70,7 @@
   "/nb/ostlandet/privat/private-banking.html",
   "/nb/bank/privat/daglig-bruk/kredittkort/elite.html",
   "/nb/bank/privat/kundeservice/private-banking/hva-er-private-banking.html",
+  "${links.private-banking.skjema}",
   "/nb/bank/privat/kundeservice/private-banking/hva-ma-til-for-a-bli-private-banking-kunde.html",
   "/nb/bank/privat/kundeservice/private-banking/hva-er-fordelene-med-private-banking.html",
   "/nb/bank/privat/kundeservice/private-banking/hva-koster-private-banking.html",
@@ -92,23 +93,21 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 13,
+   "media": 14,
    "narrowest": 400
   }
  },
  "gatesPassed": [
   "mobile-adapt",
   "one-h1",
-  "placeholder-gate",
-  "content-verbatim",
-  "content-count"
+  "placeholder-gate"
  ],
- "contentCheck": "PASS",
- "migratedAt": "2026-09-14T22:03:25.340Z",
+ "contentCheck": "FAIL\n",
+ "migratedAt": "2026-09-14T22:16:40.820Z",
  "designMdSha": "9eaced02fd2340e7",
  "designJsonSha": "356d124b47aa82e7",
  "sourceCurrentSha": "8b5f451b313e1f73",
  "sourceProposedSha": null,
- "archetypeSha": "bcf88da354e79587",
+ "archetypeSha": "0eeec9e6b4ac0d10",
  "assetsBundled": 3
 }

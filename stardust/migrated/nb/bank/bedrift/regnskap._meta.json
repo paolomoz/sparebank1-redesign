@@ -34,7 +34,7 @@
   "designJsonSha": "356d124b47aa82e7",
   "sourceCurrentSha": "59c37b789d8cd17f",
   "sourceProposedSha": null,
-  "archetypeSha": "bcf88da354e79587",
+  "archetypeSha": "0eeec9e6b4ac0d10",
   "canonShas": {
    "header": "7b575d4a8a06908b",
    "footer": "a71bffa1aee4b031",
@@ -49,7 +49,7 @@
   },
   {
    "kind": "bounce-links",
-   "count": 32,
+   "count": 33,
    "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
   }
  ],
@@ -68,6 +68,7 @@
   "/nb/sor-norge/bedrift/regnskap.html",
   "/nb/ostfold-akershus/bedrift/regnskap.html",
   "/nb/ostlandet/bedrift/regnskap.html",
+  "Legg%20inn%20link%20til%20kontaktskjema%20for%20å%20få%20tilbud%20på%20regnskapstjenester",
   "/nb/bank/bedrift/regnskap/regnskapskontor.html",
   "/nb/bank/bedrift/regnskap/regnskapsprogram.html",
   "/nb/bank/bedrift/regnskap/regnskapsforer.html",
@@ -98,23 +99,21 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 13,
+   "media": 14,
    "narrowest": 400
   }
  },
  "gatesPassed": [
   "mobile-adapt",
   "one-h1",
-  "placeholder-gate",
-  "content-verbatim",
-  "content-count"
+  "placeholder-gate"
  ],
- "contentCheck": "PASS",
- "migratedAt": "2026-09-14T22:03:15.841Z",
+ "contentCheck": "FAIL\n",
+ "migratedAt": "2026-09-14T22:16:40.770Z",
  "designMdSha": "9eaced02fd2340e7",
  "designJsonSha": "356d124b47aa82e7",
  "sourceCurrentSha": "59c37b789d8cd17f",
  "sourceProposedSha": null,
- "archetypeSha": "bcf88da354e79587",
+ "archetypeSha": "0eeec9e6b4ac0d10",
  "assetsBundled": 3
 }

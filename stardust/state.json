@@ -1,7 +1,7 @@
 {
  "_provenance": {
   "writtenBy": "stardust:migrate",
-  "writtenAt": "2026-09-14T22:03:35.996Z",
+  "writtenAt": "2026-09-14T22:16:46.534Z",
   "stardustVersion": "0.20.0",
   "readArtifacts": [
    "../sparebank1/stardust/state.json",
@@ -158,7 +158,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Kategori",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -167,6 +167,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -174,9 +178,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-bedrift-bedriftskort-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-bedriftskort-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/bedrift/bedriftskort.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-bedriftskort-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
@@ -225,7 +236,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Kategori",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -234,6 +245,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -241,9 +256,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-bedrift-betaling-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-betaling-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/bedrift/betaling.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-betaling-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
@@ -292,7 +314,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Kategori",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -301,6 +323,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -308,9 +334,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-bedrift-daglig-drift-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-daglig-drift-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/bedrift/daglig-drift.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-daglig-drift-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-bedrift-html",
@@ -398,7 +431,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Kategori",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -407,6 +440,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -414,9 +451,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-bedrift-konto-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-konto-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/bedrift/konto.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-konto-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
@@ -911,7 +955,7 @@
    "archetypeFamily": "kundeservice-hub",
    "aemPageType": "Kundeservice",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -920,6 +964,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -927,9 +975,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-bedrift-kundeservice-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-kundeservice-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/bedrift/kundeservice.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-kundeservice-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-kundeservice-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
@@ -978,7 +1033,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Produkt",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -987,6 +1042,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -994,9 +1053,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-bedrift-lan-finansiering-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-lan-finansiering-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/bedrift/lan-finansiering.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-lan-finansiering-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
@@ -1123,7 +1189,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Kategori",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -1132,6 +1198,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -1139,9 +1209,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-bedrift-pensjon-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-pensjon-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/bedrift/pensjon.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-pensjon-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-bedrift-regnskap-html",
@@ -1151,7 +1228,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Produkt",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -1160,6 +1237,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -1167,9 +1248,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-bedrift-regnskap-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-regnskap-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/bedrift/regnskap.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-regnskap-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-bedrift-sparing-investering-html",
@@ -1179,7 +1267,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Kategori",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -1188,6 +1276,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -1195,9 +1287,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-bedrift-sparing-investering-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-sparing-investering-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/bedrift/sparing-investering.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-sparing-investering-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-bedrift-starte-bedrift-html",
@@ -1207,7 +1306,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Produkt",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -1216,6 +1315,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -1223,9 +1326,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-bedrift-starte-bedrift-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-starte-bedrift-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/bedrift/starte-bedrift.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-starte-bedrift-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
@@ -1274,7 +1384,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Oversikt side",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -1283,6 +1393,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -1290,9 +1404,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-bedrift-tips-og-rad-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-tips-og-rad-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/bedrift/tips-og-rad.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-tips-og-rad-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-om-oss-hjemme-html",
@@ -2194,7 +2315,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Kategori",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -2203,6 +2324,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -2210,9 +2335,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-privat-daglig-bruk-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-daglig-bruk-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/privat/daglig-bruk.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-daglig-bruk-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-privat-daglig-bruk-kredittkort-html",
@@ -2339,7 +2471,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Kategori",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -2348,6 +2480,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -2355,9 +2491,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-privat-eiendom-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-eiendom-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/privat/eiendom.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-eiendom-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-privat-forsikring-barneforsikring-html",
@@ -2445,7 +2588,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Kategori",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -2454,6 +2597,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -2461,9 +2608,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-privat-forsikring-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-forsikring-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/privat/forsikring.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-forsikring-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html",
@@ -2629,7 +2783,7 @@
    "archetypeFamily": "tool",
    "aemPageType": "Verktoy",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -2638,6 +2792,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -2645,9 +2803,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-privat-forsikring-meld-skade-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-forsikring-meld-skade-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/privat/forsikring/meld-skade.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-forsikring-meld-skade-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-privat-forsikring-reiseforsikring-html",
@@ -2791,7 +2956,7 @@
    "archetypeFamily": "utility",
    "aemPageType": "Pristliste",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -2800,6 +2965,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -2807,9 +2976,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-bestill-prisliste-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-bestill-prisliste-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/privat/kundeservice/bestill/prisliste.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-bestill-prisliste-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-kundeservice-kontakt-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-privat-kundeservice-html",
@@ -2931,7 +3107,7 @@
    "archetypeFamily": "tool",
    "aemPageType": "Verktoy",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -2940,6 +3116,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -2947,9 +3127,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-iban-og-swift-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-iban-og-swift-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/privat/kundeservice/verktoy/iban-og-swift.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-verktoy-iban-og-swift-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-privat-kundeservice-verktoy-klager-html",
@@ -2959,7 +3146,7 @@
    "archetypeFamily": "tool",
    "aemPageType": "Verktoy",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -2968,6 +3155,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -2975,9 +3166,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-klager-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-klager-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/privat/kundeservice/verktoy/klager.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-verktoy-klager-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
@@ -2987,7 +3185,7 @@
    "archetypeFamily": "tool",
    "aemPageType": "Verktoy",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -2996,6 +3194,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -3003,9 +3205,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-sparekalkulator-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-sparekalkulator-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-verktoy-sparekalkulator-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
@@ -3071,7 +3280,7 @@
    "archetypeFamily": "tool",
    "aemPageType": "Verktoy",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -3080,6 +3289,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -3087,9 +3300,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-valutakalkulator-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-valutakalkulator-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/privat/kundeservice/verktoy/valutakalkulator.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-verktoy-valutakalkulator-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-privat-lan-billan-html",
@@ -3406,7 +3626,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Produkt",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -3415,6 +3635,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -3422,9 +3646,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-privat-lofavor-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-lofavor-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/privat/lofavor.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-lofavor-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-privat-pensjon-egen-pensjonskonto-html",
@@ -3473,7 +3704,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Produkt",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -3482,6 +3713,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -3489,9 +3724,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-privat-pensjon-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-pensjon-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/privat/pensjon.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-pensjon-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
@@ -3540,7 +3782,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Produkt",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -3549,6 +3791,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -3556,9 +3802,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-privat-private-banking-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-private-banking-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/privat/private-banking.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-private-banking-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-privat-sparing-html",
@@ -3568,7 +3821,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Kategori",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -3577,6 +3830,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -3584,9 +3841,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-privat-sparing-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-sparing-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/privat/sparing.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-sparing-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
@@ -3849,7 +4113,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Kategori",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -3858,6 +4122,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -3865,9 +4133,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-privat-svindel-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-svindel-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/privat/svindel.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-svindel-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   },
   {
    "slug": "nb-bank-privat-tips-og-rad-html",
@@ -3877,7 +4152,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Oversikt side",
    "clientlib": "base",
-   "status": "directed",
+   "status": "migrated",
    "history": [
     {
      "status": "extracted",
@@ -3886,6 +4161,10 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-14T22:08:45.096Z"
     }
    ],
    "stale": false,
@@ -3893,9 +4172,16 @@
    "currentStatePath": "stardust/current/pages/nb-bank-privat-tips-og-rad-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-tips-og-rad-html.html",
    "prototypePath": null,
-   "migratedPath": null,
+   "migratedPath": "stardust/migrated/nb/bank/privat/tips-og-rad.html",
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-tips-og-rad-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "fidelityTier": "sibling",
+   "archetypeSource": "nb-bank-privat-lan-html",
+   "gatesPassed": [
+    "content-verbatim",
+    "content-count",
+    "mobile-adapt"
+   ]
   }
  ],
  "migrate": {
@@ -4714,13 +5000,29 @@
   "missingAssets": [],
   "cleanedAssets": [],
   "mediaPolicy": "source-origin URLs (Mode A image-reuse); SVG > 40 KB rasterised to DA media at rollout",
-  "lastRunAt": "2026-09-14T22:03:35.996Z"
+  "lastRunAt": "2026-09-14T22:16:46.534Z"
  },
  "lastRun": {
   "skill": "stardust:migrate",
-  "at": "2026-09-14T22:03:35.996Z",
-  "migrated": 70,
+  "at": "2026-09-14T22:16:46.534Z",
+  "migrated": 0,
   "unchanged": 0,
-  "failures": []
+  "failures": [
+   {
+    "slug": "nb-bank-bedrift-lan-finansiering-leasing-html",
+    "status": "content-fail",
+    "error": "FAIL | "
+   },
+   {
+    "slug": "nb-bank-bedrift-regnskap-html",
+    "status": "content-fail",
+    "error": "FAIL | "
+   },
+   {
+    "slug": "nb-bank-privat-private-banking-html",
+    "status": "content-fail",
+    "error": "FAIL | "
+   }
+  ]
  }
 }

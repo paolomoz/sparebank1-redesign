@@ -1,0 +1,171 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-html",
+ "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/migrated/nb/bank/bedrift/kundeservice.html",
+ "at": "2026-09-14T22:04:14.511Z",
+ "contract": {
+  "rootFirst": true,
+  "tokensMissing": [],
+  "inlineScripts": 2
+ },
+ "viewports": {
+  "390": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 19,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 26,
+   "sectionsNoAttr": [],
+   "btnSmall": 5,
+   "btnSmallList": [
+    "label.router-label@1px \"Ditt postnummer\"",
+    "summary.btn-inline@38px \"Se alle banker\"",
+    "label.label@18px \"Skriv det du lurer p\"",
+    "a.link-more@25px \"Jeg kommer ikke inn \"",
+    "label.@25px \"Søk etter et kontor\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "entreprenoren.jpg.thumb.1280.1280.jpg",
+    "area": 15809
+   },
+   "focusRing": false,
+   "docHeight": 5564,
+   "smoke": {
+    "detailsOpen": true,
+    "navOpen": true,
+    "ariaExpanded": "true",
+    "navClosedByEsc": true,
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  },
+  "768": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 19,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [
+    "li@823",
+    "a@823",
+    "strong@823",
+    "span.bank-tagline@823",
+    "li@823"
+   ],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 26,
+   "sectionsNoAttr": [],
+   "btnSmall": 9,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.is-active@36px \"Bedrift\"",
+    "a.@36px \"Om oss\"",
+    "label.router-label@20px \"Ditt postnummer\"",
+    "label.label@18px \"Skriv det du lurer p\"",
+    "a.link-more@25px \"Jeg kommer ikke inn \""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "entreprenoren.jpg.thumb.1280.1280.jpg",
+    "area": 56065
+   },
+   "focusRing": false,
+   "docHeight": 4280,
+   "smoke": {
+    "detailsOpen": true,
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  },
+  "1440": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 19,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 26,
+   "sectionsNoAttr": [],
+   "btnSmall": 9,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.is-active@36px \"Bedrift\"",
+    "a.@36px \"Om oss\"",
+    "label.router-label@20px \"Ditt postnummer\"",
+    "label.label@18px \"Skriv det du lurer p\"",
+    "a.link-more@25px \"Jeg kommer ikke inn \""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "entreprenoren.jpg.thumb.1280.1280.jpg",
+    "area": 344304
+   },
+   "focusRing": false,
+   "docHeight": 3785,
+   "smoke": {
+    "detailsOpen": true,
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  }
+ },
+ "mobileNav": {
+  "over": 0,
+  "minFont": 14,
+  "minGap": 0,
+  "collapse": "hamburger"
+ },
+ "pass": true,
+ "issues": [
+  {
+   "sev": "P2",
+   "where": "self-contained",
+   "msg": "2 inline scripts (only the nav a11y script is permitted)"
+  },
+  {
+   "sev": "P2",
+   "where": "390",
+   "msg": "5 interactive elements < 40px tall: label.router-label@1px \"Ditt postnummer\", summary.btn-inline@38px \"Se alle banker\", label.label@18px \"Skriv det du lurer p\", a.link-more@25px \"Jeg kommer ikke inn \", label.@25px \"Søk etter et kontor\""
+  }
+ ]
+}

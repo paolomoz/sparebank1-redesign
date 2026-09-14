@@ -36,6 +36,8 @@ function faqHub(root, ctx) {
       if (c.classList.contains('faq-foot-feedback')) continue; // per-answer rating = block chrome (accordion `rate`, dynamics #5 interim)
       ans += prose(c, ctx);
     }
+    // "Se også:" + several links on <br> lines in ONE paragraph would read as a multi-link CTA paragraph (delivery P1) → one paragraph per line
+    ans = ans.replace(/<p>((?:(?!<\/p>).)*?)<\/p>/g, (m, inner) => ((inner.match(/<a /g) || []).length > 1 && /<strong>/.test(inner) && /<br>/.test(inner) ? inner.split(/\s*<br>\s*/).map((l) => l.replace(/^(<strong>[^<]*)<\/strong>\s*$/, '$1</strong>').trim()).filter(Boolean).map((l) => `<p>${l}</p>`).join('') : m));
     return [`<h3>${inline(qEl, ctx).trim()}</h3>`, ans];
   };
   const rows = qa(wrap, ':scope > details:not(.faq-more)').map(item);

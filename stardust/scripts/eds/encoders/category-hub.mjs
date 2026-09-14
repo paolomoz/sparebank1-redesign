@@ -77,7 +77,7 @@ export function hubCallout(root, ctx) {
   const variant = cls(co).includes('info') ? 'info' : cls(co).includes('callout-frost') ? 'frost' : 'tip';
   const body = q(co, '.callout-text, .callout-body') || co;
   ctx.notes.push('lint D1 callout: designed compound (canon icon + tinted paper), Block Collection-shaped single cell of prose — kept as a block like the product archetype');
-  return { html: section([head(root, ctx), block('callout', [variant, cls(co).includes('callout-rich') ? 'rich' : null], [[prose(body, ctx)]])], { style: hubStyle(root, cls(root).includes('quick') ? 'quick' : null) }), blocks: ['callout'] };
+  return { html: section([head(root, ctx), block('callout', [variant, cls(co).includes('callout-rich') ? 'rich' : null, q(body, 'a.btn') ? 'cta' : null], [[prose(body, ctx)]])], { style: hubStyle(root, cls(root).includes('quick') ? 'quick' : null) }), blocks: ['callout'] };
 }
 
 export default {
