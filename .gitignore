@@ -1,0 +1,9 @@
+# secrets + heavy local evidence (token hygiene BEFORE first commit)
+.env
+.env.*
+qa/
+node_modules/
+.DS_Store
+stardust/current/assets/screenshots/
+stardust/validation/**/*.png
+scope/*.html
