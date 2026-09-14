@@ -1,0 +1,52 @@
+{
+ "slug": "nb-bank-om-oss-presse-html",
+ "deliveredPath": "/nb/bank/om-oss/presse",
+ "file": "content/nb/bank/om-oss/presse.html",
+ "chrome": {
+  "nav": "/nav-om-oss",
+  "footer": "/footer-frontend-om-oss",
+  "router": null,
+  "market": "om-oss",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "campaign",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "adviser-list",
+   "blocks": []
+  },
+  {
+   "module": "promo-band",
+   "blocks": []
+  },
+  {
+   "module": "campaign",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "feedback"
+ ],
+ "notes": [
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [
+  "no encoder for module adviser-list (emitted as prose)"
+ ],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T21:39:12.047Z"
+}

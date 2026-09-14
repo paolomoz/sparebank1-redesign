@@ -20,7 +20,7 @@ export default function decorate(block) {
       }
       const text = el('div', { class: 'col-text' }); const ctaRow = el('div', { class: 'cta-row' }); let leadDone = false;
       [...cell.children].forEach((n) => {
-        if (n.matches('p') && n.querySelector('a.button, strong > a, em > a')) { ctaRow.append(n); return; }
+        if (n.matches('p') && (n.querySelector('a.button, strong > a, em > a') || (n.querySelector('a') && n.textContent.trim() === n.querySelector('a').textContent.trim()))) { ctaRow.append(n); return; }
         if (block.classList.contains('split') && n.matches('p') && !leadDone && text.querySelector('h1, h2, h3')) { leadDone = true; text.append(el('div', { class: 'lead-wrap' }, n)); return; }
         text.append(n);
       });

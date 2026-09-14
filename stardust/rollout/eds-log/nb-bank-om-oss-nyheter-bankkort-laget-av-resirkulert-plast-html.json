@@ -1,0 +1,30 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "deliveredPath": "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast",
+ "file": "content/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+ "chrome": {
+  "nav": "/nav-om-oss",
+  "footer": "/footer-frontend-om-oss-2",
+  "router": null,
+  "market": "om-oss",
+  "clientlib": "frontend"
+ },
+ "modules": [
+  {
+   "module": "article-header",
+   "blocks": []
+  },
+  {
+   "module": "article-body",
+   "blocks": []
+  }
+ ],
+ "blocks": [],
+ "notes": [],
+ "gaps": [
+  "no encoder for module article-header (emitted as prose)",
+  "no encoder for module article-body (emitted as prose)"
+ ],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T21:39:12.036Z"
+}

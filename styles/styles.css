@@ -487,3 +487,4 @@ a.badge:hover { background: var(--vann); color: #fff; }
 
 /* trailing prose after a card rail (price example + its CTA): the canon .price-foot rhythm */
 main .section:has(.cards.price) .cards-wrapper + .default-content-wrapper { margin-top: var(--spacing-xl); gap: 32px; }
+main .section:has(.cards.price) .cards-wrapper + .default-content-wrapper p:not(.button-wrapper) { max-width: 68ch; }

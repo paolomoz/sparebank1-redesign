@@ -14,7 +14,9 @@
 /* split: photo 5 / text 7 (questions) */
 .columns.split .split-row { grid-template-columns: 5fr 7fr; }
 .columns.split .col-text { max-width: 38rem; }
-.columns.split .col-text .cta-row { margin-top: var(--spacing-xs); }
+.columns.split .col-text .cta-row { margin-top: calc(var(--spacing-md) + var(--spacing-xs)); } /* canon: p + p 16 + .btn 4 */
+.columns .cta-row p:not(.button-wrapper) { margin: 0; }
+.columns .cta-row p:not(.button-wrapper) a:any-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 8px 4px; color: var(--vann); text-decoration: none; font: var(--body) / 1.2 var(--body-font-family); }
 .columns.split.text-first .split-row { grid-template-columns: 7fr 5fr; }
 
 /* promo: spot illustration + title-sm + one line + one pill; `in-rail` = after a card rail inside the same movement (hairline above) */
@@ -22,7 +24,7 @@
 .columns.promo .col-media img { width: 180px; height: auto; aspect-ratio: auto; object-fit: contain; border-radius: 0; background: transparent; }
 .columns.promo .col-text { gap: var(--spacing-sm); max-width: 44rem; }
 .columns.promo .col-text :is(h2, h3) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
-.columns.promo .col-text .cta-row { margin-top: var(--spacing-xs); }
+.columns.promo .col-text .cta-row { margin-top: calc(var(--spacing-md) + var(--spacing-xs)); }
 main .section .cards-wrapper + .columns-wrapper:has(.columns.promo) { margin-top: var(--spacing-xl); padding-top: var(--spacing-xl); border-top: 1px solid var(--lysgraa); }
 
 @media (width <= 1023px) {

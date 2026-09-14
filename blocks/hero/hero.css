@@ -9,6 +9,9 @@
 .hero .lead-wrap p { font-size: var(--lead); line-height: 1.5; max-width: 60ch; }
 .hero .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--spacing-sm) var(--spacing-md); margin-top: var(--spacing-sm); }
 .hero .cta-row p.button-wrapper { margin: 0; }
+.hero .cta-row p:not(.button-wrapper) { margin: 0; }
+.hero .cta-row p:not(.button-wrapper) a:any-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 8px 4px; color: var(--vann); text-decoration: none; font: var(--body) / 1.2 var(--body-font-family); }
+.hero .cta-row p:not(.button-wrapper) a:hover { text-decoration: underline; color: var(--fjell); }
 
 /* the breadcrumb (back link) sits 8px above the grid in the same section */
 main .section .breadcrumbs-wrapper + .hero-wrapper { margin-top: var(--spacing-sm); }

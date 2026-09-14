@@ -29,7 +29,87 @@ function faqBody(body,doc){
 // Canon gap (see stardust/prototypes/canon-requests.md #1): footerData() reads img[src] only; on this capture the footer social icons carry data-lazy-src only.
 export function patchData(d){ if(!d.footer) return; const f=d.doc.querySelector('footer'); for(const col of d.footer.columns) for(const l of col.links){ if(l.icon) continue; const a=[...f.querySelectorAll('.footer-bottom__column-links li a')].find(x=>x.getAttribute('href')===l.href); const i=a?.querySelector('img'); if(i) l.icon=i.getAttribute('data-lazy-src')||i.getAttribute('src')||null; } }
 
-export function render({doc,pj}){
+const CSS=`
+.hero{padding-top:var(--spacing-md)}
+.backlink-row{margin:0 0 var(--spacing-sm)}
+.hero-grid{display:grid;grid-template-columns:7fr 5fr;gap:var(--spacing-xl);align-items:center}
+.hero-media{margin:0;grid-column:1;grid-row:1}.hero-text{grid-column:2;grid-row:1;display:grid;gap:var(--spacing-md);max-width:34rem}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:var(--spacing-sm) var(--spacing-md);margin-top:var(--spacing-sm)}
+.section-title{margin-bottom:var(--spacing-lg)}.section-title.centered{text-align:center}
+.choice-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--spacing-lg)}
+.choice{background:transparent;padding:0;border-radius:0}.choice:hover,.choice:focus-within{box-shadow:none}.choice .photo{margin-bottom:8px}
+.card-title{font-family:var(--title-font-family);font-size:var(--title)}.card p{color:var(--koksgraa)}
+.promo{display:grid;grid-template-columns:auto 1fr;gap:var(--spacing-lg);align-items:center;margin-top:var(--spacing-xl);padding-top:var(--spacing-xl);border-top:1px solid var(--lysgraa)}
+.promo-illu{width:180px;height:auto}.promo-text{display:grid;gap:var(--spacing-sm);max-width:44rem}.promo-text .btn{margin-top:var(--spacing-xs)}
+.q-grid{display:grid;grid-template-columns:5fr 7fr;gap:var(--spacing-xl);align-items:center}
+.q-media{margin:0}.q-text{display:grid;gap:var(--spacing-md);max-width:38rem}.q-text .btn{margin-top:var(--spacing-xs)}
+.price-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--spacing-lg)}
+.price-card{gap:8px;align-content:start;padding:var(--spacing-md) var(--spacing-lg)}.price-card .card-title{font-size:var(--lead);line-height:1.25;overflow-wrap:anywhere;hyphens:auto}
+.price-foot{display:grid;gap:var(--spacing-md);justify-items:start;margin-top:var(--spacing-xl)}
+.price-example{max-width:68ch}
+/* calculator — static shell (dynamics #7 interim): controls disabled, captured strings */
+.calc{display:grid;gap:var(--spacing-lg);width:min(100%,44rem);justify-items:start;text-align:left}
+.calc-tabs{display:inline-flex;padding:4px;background:#fff;border:1px solid var(--graa);border-radius:var(--radius-pill)}
+.calc-tab{min-height:40px;padding:8px 20px;border:0;border-radius:var(--radius-pill);background:transparent;color:var(--fjell);font:var(--body)/1.2 var(--body-font-family);cursor:not-allowed}
+.calc-tab{color:var(--moerkgraa)}.calc-tab.is-on{background:var(--lysgraa);color:var(--koksgraa)}
+.calc-groups{display:flex;flex-wrap:wrap;gap:var(--spacing-md) var(--spacing-xl)}
+.calc-pills{margin:0;padding:0;border:0;display:grid;gap:8px;justify-items:start}
+.calc-pills legend{padding:0;margin-bottom:8px;color:var(--fjell)}
+.pill-row{display:flex;flex-wrap:wrap;gap:8px}
+.pill{position:relative;display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:0 12px;border:1px solid var(--graa);border-radius:var(--radius-pill);background:#fff;color:var(--moerkgraa);font-family:var(--title-font-family);cursor:not-allowed}
+.pill input{position:absolute;opacity:0;width:1px;height:1px;margin:0}.pill.is-on{background:var(--lysgraa);border-color:var(--graa);color:var(--koksgraa)}
+.calc-fields{display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-md);width:min(100%,32rem)}
+.field{display:grid;gap:6px;text-align:left}.field .label{color:var(--fjell)}
+.input{min-height:44px;width:100%;padding:10px 14px;border:1px solid var(--lysgraa);border-radius:var(--radius-sm);font:var(--body)/1.2 var(--body-font-family);color:var(--koksgraa);background:#fff;text-align:right}
+.input:disabled{background:var(--lysgraa);border-color:var(--graa);color:var(--koksgraa);-webkit-text-fill-color:var(--koksgraa);opacity:1;cursor:not-allowed}
+.calc-result{display:grid;gap:4px;padding-top:var(--spacing-sm)}
+.calc-result-label{color:var(--koksgraa)}.calc-result-value{font-family:var(--heading-font-family);font-size:var(--t-headline-sm);line-height:1.15;color:var(--fjell)}
+.calc-ctas{display:flex;flex-wrap:wrap;gap:var(--spacing-sm) var(--spacing-md)}
+.calc-note{max-width:60ch;color:var(--koksgraa)}.calc-note+.calc-note{margin-top:0}
+/* faq */
+.faq-wrap .faq{max-width:52rem}
+.faq-q{flex:1 1 auto;font:inherit;color:inherit;letter-spacing:inherit}
+.faq .answer :is(h4){font-family:var(--title-font-family);font-size:var(--lead);color:var(--fjell);margin-top:var(--spacing-md)}
+.faq .answer ul{list-style:disc;padding-left:1.25rem}.faq .answer ul{margin-top:var(--spacing-md)}
+.faq .answer .btn-row{display:flex;flex-wrap:wrap;gap:var(--spacing-sm);margin-top:var(--spacing-md)}
+.faq .answer .faq-cols{display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-lg);margin-top:var(--spacing-md)}.faq .answer .faq-col{display:grid;gap:8px;align-content:start}
+.faq .answer .faq-col h4{margin-top:0}.faq .answer .faq-col p{margin-top:0;color:var(--koksgraa);font-size:var(--body-sm)}
+.illu-wide{width:100%;height:auto;max-width:360px}
+.only-phone{display:none}
+.faq-more{border:0!important}.faq-more>summary{list-style:none;justify-content:flex-start;padding:16px 0 0;font:var(--body)/1.2 var(--body-font-family);color:var(--vann)}.faq-more>summary::-webkit-details-marker{display:none}
+.faq-more>summary svg{stroke:currentColor}.faq-more[open]>summary svg{transform:rotate(180deg)}
+.faq-more-items{margin-top:var(--spacing-md)}.faq-more-items details:first-of-type{border-top:1px solid var(--lysgraa)}
+.faq details:last-of-type{border-bottom:1px solid var(--lysgraa)}.faq > details.faq-more{border-bottom:0!important}
+/* tips */
+.tips-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--spacing-lg)}
+.tips-grid .card{padding:0;background:transparent;border-radius:0}.tips-grid .card:hover,.tips-grid .card:focus-within{box-shadow:none}.tips-grid .photo{margin-bottom:8px}
+.feedback-btns{display:flex;gap:8px}.feedback .btn{min-width:56px;padding-inline:14px}
+.compare{padding-top:0}
+.link-more svg{width:16px;height:16px;margin-left:2px;vertical-align:-2px;display:inline-block}
+@media (max-width:1023px){
+  .hero-grid{grid-template-columns:1fr;gap:var(--spacing-lg)}.hero-text{grid-column:1;grid-row:1;max-width:none}.hero-media{grid-column:1;grid-row:2}.hero-media .photo{aspect-ratio:16/9}
+  .choice-grid{grid-template-columns:1fr 1fr}
+  .q-grid{grid-template-columns:1fr;gap:var(--spacing-lg)}.q-media{max-width:36rem}.q-text{max-width:none}
+  .price-grid{grid-template-columns:1fr 1fr}
+  .tips-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:767px){.only-phone{display:inline-flex}.only-desktop{display:none}}
+@media (max-width:640px){
+  .choice-grid{grid-template-columns:1fr;gap:var(--spacing-md)}.choice{grid-template-columns:38% 1fr;grid-template-areas:"img title" "img text";gap:4px 16px;align-items:start;padding:0}.choice .photo{grid-area:img;margin:0;align-self:center;border-radius:var(--spacing-lg) 0 var(--spacing-lg) 0}.choice .card-title{grid-area:title}.choice p{grid-area:text}
+  .promo{grid-template-columns:1fr;gap:var(--spacing-md)}.promo-illu{width:140px}
+  .price-grid{grid-template-columns:1fr;gap:var(--spacing-sm)}.price-card{padding:var(--spacing-md) var(--spacing-lg)}
+  .calc{justify-items:stretch}.calc-tabs{display:grid;grid-template-columns:1fr 1fr}
+  .calc-fields{grid-template-columns:1fr}.calc-ctas .btn{flex:1 1 100%}
+  .faq .answer .faq-cols{grid-template-columns:1fr}
+  .tips-grid{grid-template-columns:1fr}
+}
+`;
+
+export const ARCHETYPE='nb-bank-privat-lan-boliglan-html';
+/** Family renderer: the archetype keeps its approved composition; every sibling renders through the component walker (renderSibling). */
+export function render(d){ return (!d.slug||d.slug===ARCHETYPE)?renderArchetype(d):renderSibling(d,{family:'product'}); }
+
+function renderArchetype({doc,pj}){
   const main=doc.querySelector('main');
   const back=main.querySelector('.to-parent a');
   const heroC=main.querySelector(':scope > .background-container');
@@ -138,81 +218,7 @@ export function render({doc,pj}){
   <div class="container"><div class="cta-band"><h2 class="title-sm" data-slot="heading">${esc(norm(cmpH.textContent))}</h2><p data-slot="text">${cmpHtml}</p></div></div>
 </section>`;
 
-  const css=`
-.hero{padding-top:var(--spacing-md)}
-.backlink-row{margin:0 0 var(--spacing-sm)}
-.hero-grid{display:grid;grid-template-columns:7fr 5fr;gap:var(--spacing-xl);align-items:center}
-.hero-media{margin:0;grid-column:1;grid-row:1}.hero-text{grid-column:2;grid-row:1;display:grid;gap:var(--spacing-md);max-width:34rem}
-.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:var(--spacing-sm) var(--spacing-md);margin-top:var(--spacing-sm)}
-.section-title{margin-bottom:var(--spacing-lg)}.section-title.centered{text-align:center}
-.choice-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--spacing-lg)}
-.choice{background:transparent;padding:0;border-radius:0}.choice:hover,.choice:focus-within{box-shadow:none}.choice .photo{margin-bottom:8px}
-.card-title{font-family:var(--title-font-family);font-size:var(--title)}.card p{color:var(--koksgraa)}
-.promo{display:grid;grid-template-columns:auto 1fr;gap:var(--spacing-lg);align-items:center;margin-top:var(--spacing-xl);padding-top:var(--spacing-xl);border-top:1px solid var(--lysgraa)}
-.promo-illu{width:180px;height:auto}.promo-text{display:grid;gap:var(--spacing-sm);max-width:44rem}.promo-text .btn{margin-top:var(--spacing-xs)}
-.q-grid{display:grid;grid-template-columns:5fr 7fr;gap:var(--spacing-xl);align-items:center}
-.q-media{margin:0}.q-text{display:grid;gap:var(--spacing-md);max-width:38rem}.q-text .btn{margin-top:var(--spacing-xs)}
-.price-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--spacing-lg)}
-.price-card{gap:8px;align-content:start;padding:var(--spacing-md) var(--spacing-lg)}.price-card .card-title{font-size:var(--lead);line-height:1.25;overflow-wrap:anywhere;hyphens:auto}
-.price-foot{display:grid;gap:var(--spacing-md);justify-items:start;margin-top:var(--spacing-xl)}
-.price-example{max-width:68ch}
-/* calculator — static shell (dynamics #7 interim): controls disabled, captured strings */
-.calc{display:grid;gap:var(--spacing-lg);width:min(100%,44rem);justify-items:start;text-align:left}
-.calc-tabs{display:inline-flex;padding:4px;background:#fff;border:1px solid var(--graa);border-radius:var(--radius-pill)}
-.calc-tab{min-height:40px;padding:8px 20px;border:0;border-radius:var(--radius-pill);background:transparent;color:var(--fjell);font:var(--body)/1.2 var(--body-font-family);cursor:not-allowed}
-.calc-tab{color:var(--moerkgraa)}.calc-tab.is-on{background:var(--lysgraa);color:var(--koksgraa)}
-.calc-groups{display:flex;flex-wrap:wrap;gap:var(--spacing-md) var(--spacing-xl)}
-.calc-pills{margin:0;padding:0;border:0;display:grid;gap:8px;justify-items:start}
-.calc-pills legend{padding:0;margin-bottom:8px;color:var(--fjell)}
-.pill-row{display:flex;flex-wrap:wrap;gap:8px}
-.pill{position:relative;display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:0 12px;border:1px solid var(--graa);border-radius:var(--radius-pill);background:#fff;color:var(--moerkgraa);font-family:var(--title-font-family);cursor:not-allowed}
-.pill input{position:absolute;opacity:0;width:1px;height:1px;margin:0}.pill.is-on{background:var(--lysgraa);border-color:var(--graa);color:var(--koksgraa)}
-.calc-fields{display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-md);width:min(100%,32rem)}
-.field{display:grid;gap:6px;text-align:left}.field .label{color:var(--fjell)}
-.input{min-height:44px;width:100%;padding:10px 14px;border:1px solid var(--lysgraa);border-radius:var(--radius-sm);font:var(--body)/1.2 var(--body-font-family);color:var(--koksgraa);background:#fff;text-align:right}
-.input:disabled{background:var(--lysgraa);border-color:var(--graa);color:var(--koksgraa);-webkit-text-fill-color:var(--koksgraa);opacity:1;cursor:not-allowed}
-.calc-result{display:grid;gap:4px;padding-top:var(--spacing-sm)}
-.calc-result-label{color:var(--koksgraa)}.calc-result-value{font-family:var(--heading-font-family);font-size:var(--t-headline-sm);line-height:1.15;color:var(--fjell)}
-.calc-ctas{display:flex;flex-wrap:wrap;gap:var(--spacing-sm) var(--spacing-md)}
-.calc-note{max-width:60ch;color:var(--koksgraa)}.calc-note+.calc-note{margin-top:0}
-/* faq */
-.faq-wrap .faq{max-width:52rem}
-.faq-q{flex:1 1 auto;font:inherit;color:inherit;letter-spacing:inherit}
-.faq .answer :is(h4){font-family:var(--title-font-family);font-size:var(--lead);color:var(--fjell);margin-top:var(--spacing-md)}
-.faq .answer ul{list-style:disc;padding-left:1.25rem}.faq .answer ul{margin-top:var(--spacing-md)}
-.faq .answer .btn-row{display:flex;flex-wrap:wrap;gap:var(--spacing-sm);margin-top:var(--spacing-md)}
-.faq .answer .faq-cols{display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-lg);margin-top:var(--spacing-md)}.faq .answer .faq-col{display:grid;gap:8px;align-content:start}
-.faq .answer .faq-col h4{margin-top:0}.faq .answer .faq-col p{margin-top:0;color:var(--koksgraa);font-size:var(--body-sm)}
-.illu-wide{width:100%;height:auto;max-width:360px}
-.only-phone{display:none}
-.faq-more{border:0!important}.faq-more>summary{list-style:none;justify-content:flex-start;padding:16px 0 0;font:var(--body)/1.2 var(--body-font-family);color:var(--vann)}.faq-more>summary::-webkit-details-marker{display:none}
-.faq-more>summary svg{stroke:currentColor}.faq-more[open]>summary svg{transform:rotate(180deg)}
-.faq-more-items{margin-top:var(--spacing-md)}.faq-more-items details:first-of-type{border-top:1px solid var(--lysgraa)}
-.faq details:last-of-type{border-bottom:1px solid var(--lysgraa)}.faq > details.faq-more{border-bottom:0!important}
-/* tips */
-.tips-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--spacing-lg)}
-.tips-grid .card{padding:0;background:transparent;border-radius:0}.tips-grid .card:hover,.tips-grid .card:focus-within{box-shadow:none}.tips-grid .photo{margin-bottom:8px}
-.feedback-btns{display:flex;gap:8px}.feedback .btn{min-width:56px;padding-inline:14px}
-.compare{padding-top:0}
-.link-more svg{width:16px;height:16px;margin-left:2px;vertical-align:-2px;display:inline-block}
-@media (max-width:1023px){
-  .hero-grid{grid-template-columns:1fr;gap:var(--spacing-lg)}.hero-text{grid-column:1;grid-row:1;max-width:none}.hero-media{grid-column:1;grid-row:2}.hero-media .photo{aspect-ratio:16/9}
-  .choice-grid{grid-template-columns:1fr 1fr}
-  .q-grid{grid-template-columns:1fr;gap:var(--spacing-lg)}.q-media{max-width:36rem}.q-text{max-width:none}
-  .price-grid{grid-template-columns:1fr 1fr}
-  .tips-grid{grid-template-columns:1fr 1fr}
-}
-@media (max-width:767px){.only-phone{display:inline-flex}.only-desktop{display:none}}
-@media (max-width:640px){
-  .choice-grid{grid-template-columns:1fr;gap:var(--spacing-md)}.choice{grid-template-columns:38% 1fr;grid-template-areas:"img title" "img text";gap:4px 16px;align-items:start;padding:0}.choice .photo{grid-area:img;margin:0;align-self:center;border-radius:var(--spacing-lg) 0 var(--spacing-lg) 0}.choice .card-title{grid-area:title}.choice p{grid-area:text}
-  .promo{grid-template-columns:1fr;gap:var(--spacing-md)}.promo-illu{width:140px}
-  .price-grid{grid-template-columns:1fr;gap:var(--spacing-sm)}.price-card{padding:var(--spacing-md) var(--spacing-lg)}
-  .calc{justify-items:stretch}.calc-tabs{display:grid;grid-template-columns:1fr 1fr}
-  .calc-fields{grid-template-columns:1fr}.calc-ctas .btn{flex:1 1 100%}
-  .faq .answer .faq-cols{grid-template-columns:1fr}
-  .tips-grid{grid-template-columns:1fr}
-}
-`;
+  const css=CSS;
   return { template:'program', title:pj.title, description:pj.metaDescription, main:mainHtml, css,
     provenance:{ shapeBrief:'stardust/prototypes/nb-bank-privat-lan-boliglan-html-shape.md', dominantDimension:'composition/guided-catalogue', conceptSeed:'surface 2386009b (dealt 6,3,7; 6 built)', unsourcedContent:[], calculatorInterim:'dynamics #7 — static shell; config-script strings by selector, remaining visible strings transcribed from the captured screenshot (data-source="captured-screenshot")', signatureElements:['bankchoice_bg.svg in the router band','one-corner-pair photo mask (hero 96px, cards 48px)','spot illustration on the Klar for budrunden? promo'], improvementsApplied:['#1 compact router','#2 calm two-tier header','#3 1.25 scale','#4 one card language (choices, prices, tips)','#6 hero photo at content scale','#7 movements on paper, 4 dividers dropped'] } };
 }

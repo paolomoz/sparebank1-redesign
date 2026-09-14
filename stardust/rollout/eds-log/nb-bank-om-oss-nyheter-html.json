@@ -1,0 +1,38 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-html",
+ "deliveredPath": "/nb/bank/om-oss/nyheter",
+ "file": "content/nb/bank/om-oss/nyheter.html",
+ "chrome": {
+  "nav": "/nav-om-oss",
+  "footer": "/footer-frontend-om-oss-2",
+  "router": null,
+  "market": "om-oss",
+  "clientlib": "frontend"
+ },
+ "modules": [
+  {
+   "module": "article-header",
+   "blocks": []
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "button-row",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "cards"
+ ],
+ "notes": [],
+ "gaps": [
+  "no encoder for module article-header (emitted as prose)",
+  "no encoder for module button-row (emitted as prose)"
+ ],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T21:39:12.042Z"
+}

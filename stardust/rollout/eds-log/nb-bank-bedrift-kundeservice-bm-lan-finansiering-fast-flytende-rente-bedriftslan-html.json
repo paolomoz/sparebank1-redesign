@@ -1,0 +1,32 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+ "deliveredPath": "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan",
+ "file": "content/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan.html",
+ "chrome": {
+  "nav": "/nav-bedrift",
+  "footer": "/footer-bedrift",
+  "router": "/fragments/bank-router-bedrift",
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "faq-question",
+   "blocks": []
+  }
+ ],
+ "blocks": [],
+ "notes": [],
+ "gaps": [
+  "no encoder for module faq-question (emitted as prose)"
+ ],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T21:39:12.034Z"
+}

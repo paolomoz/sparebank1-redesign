@@ -1,0 +1,94 @@
+{
+ "slug": "nb-bank-privat-lan-boliglan-html",
+ "deliveredPath": "/nb/bank/privat/lan/boliglan",
+ "file": "content/nb/bank/privat/lan/boliglan.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "product-hero",
+   "blocks": [
+    "hero",
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards",
+    "columns"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "price-cards",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "calculator",
+   "blocks": [
+    "calculator"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "cta-band",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "hero",
+  "breadcrumbs",
+  "cards",
+  "columns",
+  "calculator",
+  "accordion",
+  "feedback"
+ ],
+ "notes": [
+  "media: illustrasjon-usymmetrisk-samboer-dame-mann-high-five-lys-bakgrunn.svg is 70275 B of SVG (> 40000) — authored as DA media illustrasjon-usymmetrisk-samboer-dame-mann-high-five-lys-bakgrunn.png",
+  "lint D1 calculator: bespoke widget (dynamics #7 interim static shell — controls disabled, captured strings; labels/values are control config, @ew-exempt in the block)",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/graferogillustrasjoner/illustrasjon-usymmetrisk-samboer-dame-mann-high-five-lys-bakgrunn.svg"
+ ],
+ "writtenAt": "2026-09-14T21:32:02.177Z"
+}

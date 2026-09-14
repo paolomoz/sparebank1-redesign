@@ -18,7 +18,7 @@ export default function decorate(block) {
   const ctaRow = el('div', { class: 'cta-row' });
   let leadDone = false;
   [...textCell.children].forEach((n) => {
-    if (n.matches('p') && n.querySelector('a.button, strong > a, em > a')) { ctaRow.append(n); return; }
+    if (n.matches('p') && (n.querySelector('a.button, strong > a, em > a') || (n.querySelector('a') && n.textContent.trim() === n.querySelector('a').textContent.trim()))) { ctaRow.append(n); return; } // pills AND the canon inline tertiary link share the CTA row
     if (n.matches('p') && !leadDone && !n.querySelector('picture, img')) { leadDone = true; text.append(el('div', { class: 'lead-wrap' }, n)); return; }
     if (n.matches('p') && !n.querySelector('picture, img')) { text.append(el('div', { class: 'note-wrap' }, n)); return; }
     text.append(n);

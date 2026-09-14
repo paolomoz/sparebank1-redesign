@@ -1,7 +1,7 @@
 import { el, icon } from '../../scripts/sb1.js';
 
 /**
- * accordion — the canon FAQ (Block Collection name, D11): one row per question [question] [answer].
+ * accordion — the canon FAQ (Block Collection name, D11): one row per question [question as <h3>] [answer].
  * Variant `more`: the FIRST row is the disclosure label ("Se flere spørsmål og svar") and the remaining rows sit behind it (dynamics #4 interim).
  * The question paragraph is MOVED into a heading row whose whole surface toggles the answer (EW7: the toggle is a chevron-only
  * <button>, the authored text never sits inside a <button>/<summary>). Answers are hidden until opened (`hidden`), so the

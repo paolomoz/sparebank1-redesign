@@ -1,0 +1,58 @@
+{
+ "slug": "nb-bank-privat-kundeservice-html",
+ "deliveredPath": "/nb/bank/privat/kundeservice",
+ "file": "content/nb/bank/privat/kundeservice.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer-kundeservice",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "hero-ask",
+   "blocks": []
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "topic-tiles",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "promo-band",
+   "blocks": [
+    "columns"
+   ]
+  }
+ ],
+ "blocks": [
+  "accordion",
+  "cards",
+  "columns"
+ ],
+ "notes": [
+  "media: samtale-2.svg is 71813 B of SVG (> 40000) — authored as DA media samtale-2.png"
+ ],
+ "gaps": [
+  "no encoder for module hero-ask (emitted as prose)"
+ ],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/samtale-2.svg"
+ ],
+ "writtenAt": "2026-09-14T21:39:12.030Z"
+}

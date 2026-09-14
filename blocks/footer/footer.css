@@ -61,7 +61,7 @@ footer .router-input:focus-visible { outline: 2px solid var(--sol); outline-offs
 /* Fjell columns */
 footer .footer-main { background: var(--fjell); color: #fff; padding-block: var(--section-padding); }
 footer .footer-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
-footer .footer-col h2 { color: #fff; font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; margin-bottom: 12px; }
+footer .footer-col h2 { color: #fff; font-family: var(--title-font-family); font-size: var(--title); line-height: 1.15; margin-bottom: 12px; }
 footer .footer-col a:any-link { display: inline-flex; align-items: center; min-height: 44px; color: #fff; text-decoration: none; }
 footer .footer-col a.with-icon { gap: 8px; }
 footer .footer-col a.with-icon picture,

@@ -1,0 +1,73 @@
+{
+ "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+ "deliveredPath": "/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie",
+ "file": "content/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+ "chrome": {
+  "nav": "/nav-bedrift",
+  "footer": "/footer-bedrift",
+  "router": null,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "page-title",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "content-columns",
+   "blocks": []
+  },
+  {
+   "module": "callout",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cta-row",
+   "blocks": []
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "callout",
+  "columns",
+  "cards",
+  "feedback"
+ ],
+ "notes": [
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+ ],
+ "gaps": [
+  "no encoder for module cta-row (emitted as prose)"
+ ],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T21:39:12.063Z"
+}

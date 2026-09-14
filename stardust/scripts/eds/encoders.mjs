@@ -127,7 +127,7 @@ export function calculator(root, ctx) {
 
 export function faq(root, ctx) {
   const wrap = q(root, '.faq[data-slot="items"], .faq, [data-slot="items"]'); if (!wrap) return null;
-  const item = (d) => { const s = q(d, 'summary'); const qEl = q(s, 'h3, h2, .faq-q') || s; const a = q(d, '.answer, .answer-wide'); return [`<p>${inline(qEl, ctx).trim()}</p>`, a ? prose(a, ctx) : '']; };
+  const item = (d) => { const s = q(d, 'summary'); const qEl = q(s, 'h3, h2, .faq-q') || s; const a = q(d, '.answer, .answer-wide'); return [`<h3>${inline(qEl, ctx).trim()}</h3>`, a ? prose(a, ctx) : '']; }; // the question keeps the canon's heading rank (h3) — role-faithful and editable
   const shown = qa(wrap, ':scope > details:not(.faq-more)').map(item);
   const parts = [sectionHead(root, ctx), block('accordion', ['faq'], shown)];
   const more = q(wrap, ':scope > details.faq-more');

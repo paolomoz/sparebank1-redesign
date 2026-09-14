@@ -1,0 +1,67 @@
+{
+ "slug": "nb-bank-privat-html",
+ "deliveredPath": "/nb/bank/privat",
+ "file": "content/nb/bank/privat.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer",
+  "router": "/fragments/bank-router",
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "modules": [
+  {
+   "module": "bank-router",
+   "blocks": [
+    "fragment",
+    "bank-router"
+   ]
+  },
+  {
+   "module": "campaign-carousel",
+   "blocks": [
+    "hero"
+   ]
+  },
+  {
+   "module": "content-columns",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "promo-band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "content-columns",
+   "blocks": []
+  },
+  {
+   "module": "cta-band",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "hero",
+  "cards",
+  "columns"
+ ],
+ "notes": [
+  "market landing: the visually-hidden h1 is authored as the hero h1 (block hides it visually)",
+  "media: jubelkor-lys-bakgrunn.svg is 52845 B of SVG (> 40000) — authored as DA media jubelkor-lys-bakgrunn.png"
+ ],
+ "gaps": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/jubelkor-lys-bakgrunn.svg"
+ ],
+ "writtenAt": "2026-09-14T21:39:12.014Z"
+}

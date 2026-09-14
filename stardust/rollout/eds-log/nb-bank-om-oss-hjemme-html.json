@@ -1,0 +1,54 @@
+{
+ "slug": "nb-bank-om-oss-hjemme-html",
+ "deliveredPath": "/nb/bank/om-oss/hjemme",
+ "file": "content/nb/bank/om-oss/hjemme.html",
+ "chrome": {
+  "nav": "/nav-minimal-om-oss",
+  "footer": "/footer-frontend-om-oss-2",
+  "router": null,
+  "market": "om-oss",
+  "clientlib": "frontend"
+ },
+ "modules": [
+  {
+   "module": "video-hero",
+   "blocks": []
+  },
+  {
+   "module": "story-text",
+   "blocks": []
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "story-text",
+   "blocks": []
+  },
+  {
+   "module": "video",
+   "blocks": []
+  },
+  {
+   "module": "split-media",
+   "blocks": [
+    "columns"
+   ]
+  }
+ ],
+ "blocks": [
+  "columns"
+ ],
+ "notes": [],
+ "gaps": [
+  "no encoder for module video-hero (emitted as prose)",
+  "no encoder for module story-text (emitted as prose)",
+  "no encoder for module story-text (emitted as prose)",
+  "no encoder for module video (emitted as prose)"
+ ],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T21:39:12.045Z"
+}
