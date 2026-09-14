@@ -1,0 +1,19 @@
+<!-- stardust:canon
+  writtenBy:        stardust:prototype --prep
+  writtenAt:        2026-09-14T19:56:39.865Z
+  sourceSlug:       nb-bank-privat-html
+  sourcePrototype:  stardust/prototypes/nb-bank-privat-html-proposed.html
+  region:           nav-a11y script
+  stardustVersion:  0.20.0
+-->
+<script>
+(() => {
+  const t = document.getElementById('ds-nav-toggle');
+  const b = document.querySelector('.ds-nav-burger');
+  if (!t || !b) return;
+  const sync = () => b.setAttribute('aria-expanded', t.checked);
+  t.addEventListener('change', sync); sync();
+  b.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); t.checked = !t.checked; sync(); } });
+  addEventListener('keydown', e => { if (e.key === 'Escape' && t.checked) { t.checked = false; sync(); b.focus(); } });
+})();
+</script>

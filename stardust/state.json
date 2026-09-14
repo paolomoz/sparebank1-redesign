@@ -1,7 +1,7 @@
 {
  "_provenance": {
-  "writtenBy": "stardust:direct (--prep)",
-  "writtenAt": "2026-09-14T21:20:00Z",
+  "writtenBy": "stardust:prototype (--prep)",
+  "writtenAt": "2026-09-14T19:56:39.790Z",
   "stardustVersion": "0.20.0",
   "readArtifacts": [
    "../sparebank1/stardust/state.json",
@@ -1993,7 +1993,7 @@
    "archetypeFamily": "market-landing",
    "aemPageType": "Marked",
    "clientlib": "base",
-   "status": "directed",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
@@ -2002,16 +2002,38 @@
     {
      "status": "directed",
      "at": "2026-09-14T21:20:00Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T19:56:39.790Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T19:56:39.790Z",
+     "approvedBy": "hands-off"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-privat-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-privat-html-proposed.html",
    "migratedPath": null,
    "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-html.png",
-   "visionCheck": "ok"
+   "visionCheck": "ok",
+   "shapeBriefPath": "stardust/prototypes/nb-bank-privat-html-shape.md",
+   "gatesPassed": [
+    "validation-loop 1440/768/390 (console, network, overflow, landmarks, a11y quick-pass, contrast, LCP, interaction smoke)",
+    "mobile-nav-audit 360",
+    "content-verbatim",
+    "token-contract",
+    "data-attributes",
+    "impeccable detect (cramped-padding on var() padding dismissed)",
+    "finish-review: fix → 8 material fixes applied in one batch → verdict pass: 7 resolved + 1 partial → aspect fix → ship (all 8 resolved, regressions resolved)"
+   ],
+   "fidelityTier": "archetype",
+   "archetypeSource": null,
+   "canonDeviations": []
   },
   {
    "slug": "nb-bank-privat-kundeservice-bestill-bli-kunde-html",

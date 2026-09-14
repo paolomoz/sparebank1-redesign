@@ -54,3 +54,31 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Next:** `prototype --prep --canon-from nb-bank-privat-html` — 13 archetypes, full validation loop, hands-off approval, canon.
 
 ---
+## 2026-09-14T23:45:00Z — prototype --prep: canon author approved (market landing), canon written; 12 archetypes fanned out; assets + dynamics gate
+
+**Prompt:** (continuation, hands-off) — render the canon-author archetype through the full loop, approve, extract canon, fan out the remaining 12, run prepare-migration Phases 4 / 4.5.
+
+**Decisions:**
+- Rendering is generator-driven for verbatim fidelity: `stardust/scripts/proto/{data,chrome,build}.mjs` lift header / router / footer / body content from the captured rendered DOM with linkedom selectors; the design (composition, CSS, tokens, chrome) is authored in `chrome.mjs` (= canon source) and per-page modules `pages/<slug>.mjs`. impeccable new-work was followed as the craft procedure: `impeccable context` ran, the surface concept-seed roll (key 3169e2f5, dealt 4/5/3 → structure 4 "router-led landing" built) is recorded in the shape brief, craft-floor applied; the interactive decision page and comp round are hands-off gates replaced by the shape brief (stardust prototype § Phase 1 hands-off compliance).
+- Header resolved as two calm tiers (108 px) rather than the improvements-list "one 72 px row": 9 market links + 3 audience links + 3 actions cannot sit in one 1280 px row verbatim. Hamburger collapse below 1024 (reviewer fix 2). Recorded in the shape brief § Open questions.
+- Router treatment (A8): compact band, landscape illustration committed at band height on desktop (reviewer fix 1), cropped slice on tablet/mobile.
+- Offline validation: the harness fulfils www.sparebank1.no image requests with same-aspect tinted plates (no live hits); one live probe (1/5) afterwards to verify CDN images fill their boxes (reviewer hand-off caveat).
+- Quality cascade per archetype: `validate-prototype.mjs` (3 viewports + 360 nav audit) → `content-check.mjs` (verbatim gate) → `impeccable detect` → lead vision gate → fresh-context `impeccable-finish-reviewer` → fixes → verdict pass. Approval only after all pass (`approve.mjs` refuses otherwise).
+- Canon extracted from the approved render (`extract-canon.mjs --author`): header, footer, bank-router, skip-links, nav-a11y script, canon.css (:root contract + compound language), 7 module renderings; 14 pinned tokens; 7 compositional moves; `DESIGN.json.extensions.canon` written.
+- Fan-out: three fresh general-purpose workers (A product/hub/campaign/theme · B kundeservice/tool/utility/faq · C news/listing/om-oss/markedsnytt) under `stardust/prototypes/ARCHETYPE-BRIEF.md`; each owns its slugs' files; the lead merges state and extends canon.
+- Phase 4 assets: favicon variants from the captured 144 px favicon.png (rasterised at 512/192/180 — upscaled; a vector mark from the customer would be better), fonts + logo staged in `stardust/migrated/assets/`. Phase 4.5: Flow A dynamics triage reused (A7), gate PASS 20/20, Flow B rendering deltas appended to `dynamic-features.md`.
+
+**Artifacts touched:** stardust/scripts/proto/* (data, chrome, build, extract-canon, approve), stardust/scripts/{page-content,validate-prototype,content-check,contact-panels}.mjs — created · stardust/prototypes/nb-bank-privat-html-{shape.md,proposed.html}, ARCHETYPE-BRIEF.md, fonts/ — created · stardust/canon/** — created · DESIGN.json (extensions.canon, module renderings) — updated · stardust/validation/nb-bank-privat-html/** — created · stardust/migrated/assets/** — created · stardust/dynamic-features.md — appended · stardust/state.json (market landing approved) · stardust/status.jsonl — appended.
+
+**Findings worth flagging:**
+- Presentational `width`/`height` attributes on `<img>` override CSS `aspect-ratio` unless `height:auto` is set — every photo slot stretched on the first render.
+- Chromium's sequential-focus start point is not reset by `blur()`; a keyboard-walk check must focus a known first element before tabbing.
+- `impeccable detect` reports `cramped-padding` on every container whose padding comes from a CSS custom property — static-CSS misread; worth an upstream note.
+- The finish-reviewer caught what the harness cannot: an offline SVG plate served at the wrong aspect grew an unconstrained img box (router band 340 px instead of 159) — always pin `aspect-ratio` on externally loaded images.
+- Hand-authored provenance timestamps in direction.md / DESIGN* / brief are local time (CEST) written with a `Z` suffix; machine-written ones (state.json, canon files) are true UTC — ~2 h apart. Not rewritten (append-only); noted for reviewers.
+
+**Open questions:** fonts A5 (unchanged); favicon vector source from the customer; live-CDN image rehosting is a rollout decision.
+
+**Next:** merge workers A/B/C (approve each after gates, extend canon in diff mode), then the final prep summary; hand off to `migrate`.
+
+---

@@ -220,7 +220,7 @@
    {
     "fg": "vann",
     "bg": "hvit",
-    "ratio": 7.0,
+    "ratio": 7,
     "aa-body": true
    },
    {
@@ -232,7 +232,7 @@
    {
     "fg": "hvit",
     "bg": "vann",
-    "ratio": 7.0,
+    "ratio": 7,
     "aa-body": true
    },
    {
@@ -399,10 +399,10 @@
    ],
    "containerMaxWidth": "1280px",
    "sideMargins": {
-    "1440": "80px",
-    "1024": "48px",
+    "390": "20px",
     "768": "24px",
-    "390": "20px"
+    "1024": "48px",
+    "1440": "80px"
    },
    "navCollapse": 640
   },
@@ -735,7 +735,10 @@
       "required": false
      }
     ],
-    "canonicalRendering": null,
+    "canonicalRendering": {
+     "path": "stardust/canon/modules/bank-router.html",
+     "sha": "d9c495a34baa73b2"
+    },
     "note": "complementary landmark on 70/100 pages (missed by the main-child scan); signature § 8b; dynamics #1"
    },
    {
@@ -810,7 +813,10 @@
       "required": true
      }
     ],
-    "canonicalRendering": null,
+    "canonicalRendering": {
+     "path": "stardust/canon/modules/campaign-carousel.html",
+     "sha": "318189d62f72c853"
+    },
     "note": "market landings; one campaign visible, rotation as dynamics interim"
    },
    {
@@ -880,7 +886,10 @@
       "required": false
      }
     ],
-    "canonicalRendering": null
+    "canonicalRendering": {
+     "path": "stardust/canon/modules/content-columns.html",
+     "sha": "f9948ae92f6b0440"
+    }
    },
    {
     "id": "card-grid",
@@ -971,7 +980,10 @@
       "required": true
      }
     ],
-    "canonicalRendering": null
+    "canonicalRendering": {
+     "path": "stardust/canon/modules/card-rail.html",
+     "sha": "64a2cc5547bc9bac"
+    }
    },
    {
     "id": "faq-accordion",
@@ -1105,7 +1117,10 @@
       "required": true
      }
     ],
-    "canonicalRendering": null,
+    "canonicalRendering": {
+     "path": "stardust/canon/modules/contact-row.html",
+     "sha": "479fa460c6d32e04"
+    },
     "note": "footer-top contact-section on 84/100 pages; dynamics #6"
    },
    {
@@ -1160,7 +1175,10 @@
       "required": true
      }
     ],
-    "canonicalRendering": null
+    "canonicalRendering": {
+     "path": "stardust/canon/modules/promo-band.html",
+     "sha": "927752d55bcec7e6"
+    }
    },
    {
     "id": "cta-band",
@@ -1187,7 +1205,10 @@
       "required": true
      }
     ],
-    "canonicalRendering": null
+    "canonicalRendering": {
+     "path": "stardust/canon/modules/cta-band.html",
+     "sha": "ae3b14266d52f25d"
+    }
    },
    {
     "id": "feature-list",
@@ -1814,6 +1835,68 @@
    "archetypeFamilies": 13,
    "source": "stardust/current/_page-types.json"
   },
-  "canon": null
+  "canon": {
+   "sourceSlug": "nb-bank-privat-html",
+   "approvedAt": "2026-09-14T19:56:39.865Z",
+   "files": {
+    "header": {
+     "path": "stardust/canon/header.html",
+     "sha": "48ecec8533632945"
+    },
+    "footer": {
+     "path": "stardust/canon/footer.html",
+     "sha": "14e18cdd460c871e"
+    },
+    "router": {
+     "path": "stardust/canon/bank-router.html",
+     "sha": "686ff2004e04a54a"
+    },
+    "skip": {
+     "path": "stardust/canon/skip-links.html",
+     "sha": "bf5b74e5f28802ed"
+    },
+    "navScript": {
+     "path": "stardust/canon/nav-a11y.html",
+     "sha": "c32893a6f6d5e9a5"
+    },
+    "css": {
+     "path": "stardust/canon/canon.css",
+     "sha": "c34ffd4ec5833dd9"
+    }
+   },
+   "pinned": {
+    "sectionPadding.desktop": "64px",
+    "sectionPadding.tablet": "48px",
+    "sectionPadding.mobile": "32px",
+    "densityTier": "balanced",
+    "typeScale": 1.25,
+    "lineHeights.display": 1.1,
+    "lineHeights.headline": 1.12,
+    "lineHeights.body": 1.55,
+    "containerMaxWidth": "1280px",
+    "gutters": "80/48/24/20",
+    "radius.card": "16px",
+    "radius.photo": "96px / 48px one-corner-pair",
+    "radius.button": "6em",
+    "navCollapse": "640px hamburger"
+   },
+   "compositionalMoves": [
+    "Chrome is two calm tiers on white (audience switch + one Skog action above; logo + market nav below) that collapse to one row and a hamburger at 640px; the header is never sticky on desktop.",
+    "The alliance router is a compact Vann band in every first viewport it was captured on: heading, postcode field, one secondary action, the 12-bank list behind a details disclosure, the landscape illustration at reduced scale on the right.",
+    "A page is 3–6 movements separated by paper changes (Hvit → Sand-30 / Frost-30 / Syrin-30) and space; dividers, card shadows at rest and eyebrow labels are not used.",
+    "Photographs are content: one per module, native 3:2, one-corner-pair mask (96px hero, 48px card); type never sits on a photograph.",
+    "Hierarchy is the 1.25 scale on the three single-weight brand faces; Fjell for headlines, Vann for every link, Skog reserved to the single relationship-starting action per module.",
+    "Repeated content (product columns, news, promos) is set as flat tinted papers or hairline-topped tiles with the whole tile as the link and category/date as a meta line under the title.",
+    "Contact channels and long verbatim lists (bank numbers, bank links) live behind native details disclosures inside the Hvit contact section above the Fjell footer."
+   ],
+   "history": [
+    {
+     "at": "2026-09-14T19:56:39.865Z",
+     "from": "nb-bank-privat-html",
+     "kind": "first-approval"
+    }
+   ],
+   "notes": "Canon source of truth is stardust/scripts/proto/chrome.mjs; the files here are lifted verbatim from the approved canon-author render. Header/footer link SETS vary per audience (privat/bedrift/om-oss) and are injected from each page's captured data — structure and style are canon, link sets are content."
+  }
  }
 }

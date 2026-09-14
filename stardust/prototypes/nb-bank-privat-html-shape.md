@@ -116,3 +116,21 @@ Structure list (ordered by resonance) for the surface roll: 1 reading-room sprea
 - Header: two tiers (108 px) rather than one 72 px row — see section 1.
 - Campaign photo link with empty accessible name dropped in favour of the CTA (same href) — a11y fix, no CTA lost.
 - Router illustration hidden below 1024 (captured hides below 768) so the compact band stays ≤ 96 px on tablets.
+
+## Validation (final clean pass)
+
+- `validate-prototype.mjs`: PASS — 0 P0/P1 at 1440 / 768 / 390 (console clean, no network failures, no horizontal overflow, landmarks present, alt/labels ok, 1 h1, 0 low-contrast nodes, LCP eager/high, burger opens/closes + Escape, CTA reachable by keyboard, card hover); 360 nav audit clean (`data-nav-collapse="hamburger"`). Heights 3770 / 5058 / 6992. Remaining P2: three sub-40px targets (two form labels, one inline link) — advisory.
+- `content-check.mjs`: PASS — 98 texts, 223 hrefs, 15 images verbatim; 0 missing. Excluded by rule: `href="#/"` tab anchors, chevron/decoration imgs, dynamic bank-picker UI strings inside the contact panels (postcode filter label, error/empty states — dynamics #6 interim renders the full bank list instead).
+- `impeccable detect --json`: 7 × cramped-padding on `.movement` / `.hdr-utility` / `.footer-*` — static-CSS misreads of `padding-block: var(--section-padding)`; confirmed as no real cramped edge by the finish reviewer. Dismissed.
+- Vision gate (lead, 3 viewports vs `stardust/current/assets/screenshots/nb-bank-privat-html.png`): pass — brand-fit "that's us, refreshed" (Fjell/Vann/Skog, brand faces, alliance router, spot illustrations, one-corner photo mask), hierarchy lands on the campaign headline, calm not generic.
+
+## Review (impeccable finish reviewer, fresh context, code-led)
+
+- Round 1 disposition **fix** — 8 material fixes: (1) router landscape under-committed → art at band height, 38 % of the band, cropped slice below 1024; (2) market nav wrapped at 768 → hamburger below 1024, utility tier kept to 641; (3) contact channels had no disclosure affordance → inline chevron + hover underline; (4) OM OSS / SNARVEIER as `<p class="label">` → `<h2 class="title-sm">`; (5) mobile router 320 px → 228 px, campaign photo top inside the first screen; (6) six stacked product tiles ~2100 px → illustration inline-left, ~1140 px; (7) membership white bordered cards → invitations directly on Sand-30 with one hairline; (8) news photo inset in tinted paper → photo + title + meta on white.
+- Verdict pass 1: 7 resolved, fix 1 partial (harness served the SVG plate at 1200×800; img had no aspect constraint) + 2 regressions from it. Fix: `aspect-ratio: 1250/368; max-height: 150px` on the router art; harness now serves SVGs at intrinsic aspect.
+- Verdict pass 2: **ship** — all 8 resolved, both regressions resolved, chevron craft note resolved. Reviewer hand-off caveat: verify live CDN images fill the router landscape box and the 3:2 photo slots without letterboxing (offline plates were judged for composition/scale only).
+- Kept untouched per the reviewer: the campaign composition (7/5 split, 96 px one-corner mask on Syrin-30, display headline, one Skog action) — the page's "that's us, refreshed" moment.
+
+## Approval
+
+`approved` at 2026-09-14 (hands-off, `approvedBy: "hands-off"`) after every gate passed; canon-author. Canon written to `stardust/canon/` and `DESIGN.json.extensions.canon` per canon-extraction.md.

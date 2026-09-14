@@ -1,0 +1,28 @@
+<!-- stardust:canon
+  writtenBy:        stardust:prototype --prep
+  writtenAt:        2026-09-14T19:56:39.865Z
+  sourceSlug:       nb-bank-privat-html
+  sourcePrototype:  stardust/prototypes/nb-bank-privat-html-proposed.html
+  region:           bank-router
+  stardustVersion:  0.20.0
+-->
+<aside class="router" data-section="bank-router" data-intent="route the visitor to a regional bank" data-layout="contained" data-module="bank-router" data-canon="" aria-label="Vi er flere banker i hele Norge">
+  <div class="container router-grid">
+    <div class="router-text">
+      <p class="router-heading" data-slot="heading">Vi er flere banker i hele Norge</p>
+      <p class="router-lede" data-slot="lede">Velg en bank for å se betingelser</p>
+    </div>
+    <form class="router-form" action="#alle-banker" method="get">
+      <label class="router-label" for="postnummer-input" data-slot="postcode-label">Ditt postnummer</label>
+      <div class="router-controls">
+        <input class="router-input" id="postnummer-input" name="postnummer" type="text" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="postal-code" placeholder="Postnummer">
+        <button class="btn btn-secondary btn-on-vann" type="submit" data-slot="cta-location"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-6-5.4-6-11a6 6 0 1 1 12 0c0 5.6-6 11-6 11z" /><circle cx="12" cy="10" r="2.2" /></svg><span>Bruk min posisjon</span></button>
+      </div>
+    </form>
+    <details class="router-all" id="alle-banker">
+      <summary class="btn-inline btn-on-vann" data-slot="cta-all-banks">Se alle banker<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg></summary>
+      <ol class="bank-list" data-slot="banks"><li><a href="/nb/gudbrandsdal/privat.html" translate="no">SpareBank 1 <strong>Gudbrandsdal</strong></a><span class="bank-tagline">Skaper verdier for kunder og lokalsamfunn.</span></li><li><a href="/nb/hallingdal/privat.html" translate="no">SpareBank 1 <strong>Hallingdal Valdres</strong></a><span class="bank-tagline">Fjellstøtt gjennom livet.</span></li><li><a href="/nb/helgeland/privat.html" translate="no">SpareBank 1 <strong>Helgeland</strong></a><span class="bank-tagline">En drivkraft for vekst på Helgeland.</span></li><li><a href="/nb/lom-skjaak/privat.html" translate="no">SpareBank 1 <strong>Lom og Skjåk</strong></a><span class="bank-tagline">Lokalbanken din – der du er.</span></li><li><a href="/nb/nord-norge/privat.html" translate="no">SpareBank 1 <strong>Nord-Norge</strong></a><span class="bank-tagline">For Nord-Norge.</span></li><li><a href="/nb/nordmore/privat.html" translate="no">SpareBank 1 <strong>Nordmøre</strong></a><span class="bank-tagline">Tett på kundenes behov.</span></li><li><a href="/nb/ringerike-hadeland/privat.html" translate="no">SpareBank 1 <strong>Ringerike Hadeland</strong></a><span class="bank-tagline">Stolt støttespiller til lokalsamfunnet.</span></li><li><a href="/nb/smn/privat.html" translate="no">SpareBank 1 <strong>SMN</strong></a><span class="bank-tagline">Sammen får vi ting til å skje.</span></li><li><a href="/nn/sogn-fjordane/privat.html" translate="no">SpareBank 1 <strong>Sogn og Fjordane</strong></a><span class="bank-tagline">Vi er med heile vegen.</span></li><li><a href="/nb/sor-norge/privat.html" translate="no">SpareBank 1 <strong>Sør-Norge</strong></a><span class="bank-tagline">Hjelper driftige folk og bedrifter dit de vil.</span></li><li><a href="/nb/ostfold-akershus/privat.html" translate="no">SpareBank 1 <strong>Østfold Akershus</strong></a><span class="bank-tagline">Sammen får vi ting til å skje.</span></li><li><a href="/nb/ostlandet/privat.html" translate="no">SpareBank 1 <strong>Østlandet</strong></a><span class="bank-tagline">Banken med kundeutbytte.</span></li></ol>
+    </details>
+    <img class="router-art" src="https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/bankchoice_bg.svg" alt="" aria-hidden="true" width="1250" height="368" loading="lazy" decoding="async">
+  </div>
+</aside>
