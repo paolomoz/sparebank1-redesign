@@ -6,4 +6,18 @@ node_modules/
 .DS_Store
 stardust/current/assets/screenshots/
 stardust/validation/**/*.png
+stardust/rollout/gates/**/*.png
+stardust/rollout/raster/
 scope/*.html
+
+# aem-boilerplate
+.hlx/*
+coverage/*
+logs/*
+helix-importer-ui
+*.bak
+.idea
+
+# Ensure these files are tracked
+!CLAUDE.md
+!AGENTS.md
