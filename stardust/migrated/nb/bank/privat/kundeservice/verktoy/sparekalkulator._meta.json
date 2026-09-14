@@ -1,0 +1,108 @@
+{
+ "slug": "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
+ "type": "form",
+ "template": "tool",
+ "archetype": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+ "outputPath": "nb/bank/privat/kundeservice/verktoy/sparekalkulator.html",
+ "deliveredPath": "/nb/bank/privat/kundeservice/verktoy/sparekalkulator",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "calculator",
+  "related-products",
+  "feedback",
+  "cta-band",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "49b816fbcd37d695",
+  "sourceProposedSha": null,
+  "archetypeSha": "0300e68e6a123ccd",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 21,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/kundeservice/verktoy/sparekalkulator.html",
+  "/nb/hallingdal/privat/kundeservice/verktoy/sparekalkulator.html",
+  "/nb/helgeland/privat/kundeservice/verktoy/sparekalkulator.html",
+  "/nb/lom-skjaak/privat/kundeservice/verktoy/sparekalkulator.html",
+  "/nb/nord-norge/privat/kundeservice/verktoy/sparekalkulator.html",
+  "/nb/nordmore/privat/kundeservice/verktoy/sparekalkulator.html",
+  "/nb/ringerike-hadeland/privat/kundeservice/verktoy/sparekalkulator.html",
+  "/nb/smn/privat/kundeservice/verktoy/sparekalkulator.html",
+  "/nn/sogn-fjordane/privat/kundeservice/verktoy/sparekalkulator.html",
+  "/nb/sor-norge/privat/kundeservice/verktoy/sparekalkulator.html",
+  "/nb/ostfold-akershus/privat/kundeservice/verktoy/sparekalkulator.html",
+  "/nb/ostlandet/privat/kundeservice/verktoy/sparekalkulator.html",
+  "/nb/bank/privat/sparing/spare-i-fond/fondssparing.html",
+  "/nb/bank/privat/sparing/spare-i-fond/fondsoversikt.html",
+  "/nb/bank/privat/sparing/investering/aksjesparekonto.html",
+  "/nb/bank/privat/sparing/spare-pa-konto/sparekonto.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 32,
+ "metadata": {
+  "title": "Sparekalkulator | Hvor mye bør du spare? | SpareBank 1",
+  "description": "Se hvor mye månedlig sparing kan gi, eller sett et sparemål og se hvor mye du må spare for å nå målet ditt i sparekalkulatoren.",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kalkulator-sand-sirkel-usymmetrisk.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:22.711Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "49b816fbcd37d695",
+ "sourceProposedSha": null,
+ "archetypeSha": "0300e68e6a123ccd",
+ "assetsBundled": 3
+}

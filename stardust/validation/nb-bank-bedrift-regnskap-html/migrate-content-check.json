@@ -1,0 +1,14 @@
+{
+ "slug": "nb-bank-bedrift-regnskap-html",
+ "file": "stardust/migrated/nb/bank/bedrift/regnskap.html",
+ "checked": {
+  "text": 63,
+  "href": 190,
+  "img": 11
+ },
+ "miss": {
+  "text": [],
+  "href": [],
+  "img": []
+ }
+}

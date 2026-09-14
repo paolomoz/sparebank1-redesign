@@ -12,6 +12,7 @@
  "modules": [
   "bank-router",
   "faq-question",
+  "background-container",
   "feedback",
   "contact-row"
  ],
@@ -30,7 +31,7 @@
   "designJsonSha": "356d124b47aa82e7",
   "sourceCurrentSha": "de014aa247010809",
   "sourceProposedSha": null,
-  "archetypeSha": "080cbbc6eb99a0fa",
+  "archetypeSha": "51cf72edd9aa8ee5",
   "canonShas": {
    "header": "7b575d4a8a06908b",
    "footer": "a71bffa1aee4b031",
@@ -45,7 +46,7 @@
   },
   {
    "kind": "bounce-links",
-   "count": 23,
+   "count": 24,
    "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
   }
  ],
@@ -65,6 +66,7 @@
   "/nb/ostfold-akershus/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
   "/nb/ostlandet/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
   "/nb/bank/bedrift/regnskap/regnskapsprogram/sparebank1-regnskap/hjelpesider.html",
+  "/nb/bank/bedrift/kundeservice/bank-regnskap/opprette-ny-prisavtale.html",
   "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
   "/nb/sor-norge/bedrift/kundeservice.html",
   "/nb/nord-norge/privat/kundeservice/kontakt.html",
@@ -85,21 +87,23 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 11,
+   "media": 12,
    "narrowest": 400
   }
  },
  "gatesPassed": [
   "mobile-adapt",
   "one-h1",
-  "placeholder-gate"
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
  ],
- "contentCheck": "FAIL\nnb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html: content-check FAIL — checked text 54, hrefs 180, imgs 5; missing text 8, hrefs 1, imgs 2\n  TEXT  main \"Du kan fritt endre på eksisterende prisavtaler. Du kan fjerne, endre eller legge til produ\"\n  TEXT  main \"1. Gå til Salg og Prisavtaler i menyen. Her finner du en oversikt over alle prisavtalene d\"\n  TEXT  main \"2. Øverst i oversikten finner du faner der du kan sortere prisavtalene på Alle, Aktive ell\"\n  TEXT  main \"3. For å redigere en prisavtale trykker du på linjen til avtalen.\"\n  TEXT  main \"4. I selve avtalen kan du endre på informasjon under fanene Detaljer, Produkter og Kunder.\"\n  TEXT  main \"5. Du avslutter eller sletter en prisavtale ved å trykke på de tre prikkene oppe til høyre\"\n  TEXT  main \"Se også\"\n  TEXT  main \"Opprette ny prisavtale\"\n  HREF  main /nb/bank/bedrift/kundeservice/bank-regnskap/opprette-ny-prisavtale.html | Opprette ny prisavtale\n  IMG   main regnskapsprogram-administrer-prisavtaler-1.png\n  IMG   main regnskapsprogram-administrer-prisavtaler-2.png",
- "migratedAt": "2026-09-14T20:59:48.501Z",
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:28.315Z",
  "designMdSha": "9eaced02fd2340e7",
  "designJsonSha": "356d124b47aa82e7",
  "sourceCurrentSha": "de014aa247010809",
  "sourceProposedSha": null,
- "archetypeSha": "080cbbc6eb99a0fa",
+ "archetypeSha": "51cf72edd9aa8ee5",
  "assetsBundled": 3
 }

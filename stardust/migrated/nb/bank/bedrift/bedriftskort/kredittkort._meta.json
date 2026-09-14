@@ -1,0 +1,120 @@
+{
+ "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+ "type": "program",
+ "template": "product",
+ "archetype": "nb-bank-privat-lan-boliglan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+ "outputPath": "nb/bank/bedrift/bedriftskort/kredittkort.html",
+ "deliveredPath": "/nb/bank/bedrift/bedriftskort/kredittkort",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/bedrift/bedriftskort/kredittkort.html",
+ "modules": [
+  "bank-router",
+  "product-hero",
+  "usp",
+  "content-columns",
+  "card-rail",
+  "price-terms",
+  "rich-text",
+  "split-media",
+  "callout",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "ff31ccc967b8a6a5",
+  "sourceProposedSha": null,
+  "archetypeSha": "ae3d38738877847b",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 29,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+  "/nb/gudbrandsdal/bedrift/bedriftskort/kredittkort.html",
+  "/nb/hallingdal/bedrift/bedriftskort/kredittkort.html",
+  "/nb/helgeland/bedrift/bedriftskort/kredittkort.html",
+  "/nb/lom-skjaak/bedrift/bedriftskort/kredittkort.html",
+  "/nb/nord-norge/bedrift/bedriftskort/kredittkort.html",
+  "/nb/nordmore/bedrift/bedriftskort/kredittkort.html",
+  "/nb/ringerike-hadeland/bedrift/bedriftskort/kredittkort.html",
+  "/nb/smn/bedrift/bedriftskort/kredittkort.html",
+  "/nn/sogn-fjordane/bedrift/bedriftskort/kredittkort.html",
+  "/nb/sor-norge/bedrift/bedriftskort/kredittkort.html",
+  "/nb/ostfold-akershus/bedrift/bedriftskort/kredittkort.html",
+  "/nb/ostlandet/bedrift/bedriftskort/kredittkort.html",
+  "/nb/bank/bedrift/bedriftskort/virtuelt-kort.html",
+  "/nb/bank/om-oss/selskaper/eurocard.html",
+  "/content/dam/SB1/vedlegg/vilkar/Genrelle-vilkar-AirPlus.pdf",
+  "/content/dam/SB1/vedlegg/vilkar/Vilkar-AirPlus-Corporate-Engelsk.pdf",
+  "/content/dam/SB1/vedlegg/vilkar/Reiseforsikring-vilkar-og-bevis-AirPlus.pdf",
+  "/nb/bank/bedrift/bedriftskort/bankkort.html",
+  "/nb/bank/bedrift/daglig-drift/nettbank-bedrift.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/bedrift/kundeservice.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/ostlandet/bedrift/kundeservice.html",
+  "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+  "/nb/bank/bedrift/kundeservice/bestill/prisliste.html",
+  "/nb/bank/bedrift/svindel.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 24,
+ "metadata": {
+  "title": "Kredittkort bedrift | SpareBank 1",
+  "description": "Med kredittkort fra AirPlus blir hverdagen mer effektiv – både for bedriften og de ansatte.",
+  "canonical": "https://www.sparebank1.no/nb/bank/bedrift/bedriftskort/kredittkort.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:27.817Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "ff31ccc967b8a6a5",
+ "sourceProposedSha": null,
+ "archetypeSha": "ae3d38738877847b",
+ "assetsBundled": 3
+}

@@ -1,0 +1,103 @@
+{
+ "slug": "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+ "type": "static",
+ "template": "om-oss",
+ "archetype": "nb-bank-om-oss-presse-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-om-oss-presse-html",
+ "outputPath": "nb/bank/om-oss/om-banken/selskapsinformasjon.html",
+ "deliveredPath": "/nb/bank/om-oss/om-banken/selskapsinformasjon",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/om-oss/om-banken/selskapsinformasjon.html",
+ "modules": [
+  "bank-router",
+  "text",
+  "table",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "om-oss",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "f9db7fc17260c7b0",
+  "sourceProposedSha": null,
+  "archetypeSha": "ff2255ba5b4b6219",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 19,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/om-oss/om-banken.html",
+  "/nb/gudbrandsdal/om-oss/om-banken/selskapsinformasjon.html",
+  "/nb/hallingdal/om-oss/om-banken/selskapsinformasjon.html",
+  "/nb/helgeland/om-oss/om-banken/selskapsinformasjon.html",
+  "/nb/lom-skjaak/om-oss/om-banken/selskapsinformasjon.html",
+  "/nb/nord-norge/om-oss/om-banken/selskapsinformasjon.html",
+  "/nb/nordmore/om-oss/om-banken/selskapsinformasjon.html",
+  "/nb/ringerike-hadeland/om-oss/om-banken/selskapsinformasjon.html",
+  "/nb/smn/om-oss/om-banken/selskapsinformasjon.html",
+  "/nn/sogn-fjordane/om-oss/om-banken/selskapsinformasjon.html",
+  "/nb/sor-norge/om-oss/om-banken/selskapsinformasjon.html",
+  "/nb/ostfold-akershus/om-oss/om-banken/selskapsinformasjon.html",
+  "/nb/ostlandet/om-oss/om-banken/selskapsinformasjon.html",
+  "/nb/bank/om-oss/om-banken/om-sparebank-1-alliansen.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/ostlandet/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 25,
+ "metadata": {
+  "title": "Selskapsinformasjon | SpareBank 1",
+  "description": null,
+  "canonical": "https://www.sparebank1.no/nb/bank/om-oss/om-banken/selskapsinformasjon.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:31.470Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "f9db7fc17260c7b0",
+ "sourceProposedSha": null,
+ "archetypeSha": "ff2255ba5b4b6219",
+ "assetsBundled": 3
+}

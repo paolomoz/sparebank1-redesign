@@ -1,0 +1,105 @@
+{
+ "slug": "nb-bank-privat-kundeservice-verktoy-klager-html",
+ "type": "form",
+ "template": "tool",
+ "archetype": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+ "outputPath": "nb/bank/privat/kundeservice/verktoy/klager.html",
+ "deliveredPath": "/nb/bank/privat/kundeservice/verktoy/klager",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/klager.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "steps",
+  "rich-text",
+  "accordion-list",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "77fbd6df72958bae",
+  "sourceProposedSha": null,
+  "archetypeSha": "0300e68e6a123ccd",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 19,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/kundeservice/verktoy/klager.html",
+  "/nb/hallingdal/privat/kundeservice/verktoy/klager.html",
+  "/nb/helgeland/privat/kundeservice/verktoy/klager.html",
+  "/nb/lom-skjaak/privat/kundeservice/verktoy/klager.html",
+  "/nb/nord-norge/privat/kundeservice/verktoy/klager.html",
+  "/nb/nordmore/privat/kundeservice/verktoy/klager.html",
+  "/nb/ringerike-hadeland/privat/kundeservice/verktoy/klager.html",
+  "/nb/smn/privat/kundeservice/verktoy/klager.html",
+  "/nn/sogn-fjordane/privat/kundeservice/verktoy/klager.html",
+  "/nb/sor-norge/privat/kundeservice/verktoy/klager.html",
+  "/nb/ostfold-akershus/privat/kundeservice/verktoy/klager.html",
+  "/nb/ostlandet/privat/kundeservice/verktoy/klager.html",
+  "/content/dam/SB1/vedlegg/verktoy/rutine-klagebehandling-sparebank1forsikring.pdf",
+  "/nb/bank/om-oss/selskaper/sparebank-1-forvaltning.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 35,
+ "metadata": {
+  "title": "Kundeklage | Bank, forsikring, pensjon | SpareBank 1",
+  "description": "Det er viktig at du er fornøyd med å være kunde hos oss. Hvis noe ikke er som det skal, setter vi pris på at du forteller det til oss.",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/klager.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:21.180Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "77fbd6df72958bae",
+ "sourceProposedSha": null,
+ "archetypeSha": "0300e68e6a123ccd",
+ "assetsBundled": 3
+}

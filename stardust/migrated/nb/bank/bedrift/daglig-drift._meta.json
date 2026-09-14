@@ -1,0 +1,118 @@
+{
+ "slug": "nb-bank-bedrift-daglig-drift-html",
+ "type": "landing",
+ "template": "category-hub",
+ "archetype": "nb-bank-privat-lan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-html",
+ "outputPath": "nb/bank/bedrift/daglig-drift.html",
+ "deliveredPath": "/nb/bank/bedrift/daglig-drift",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/bedrift/daglig-drift.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "card-grid",
+  "visual-nav",
+  "split-media",
+  "shortcut-row",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "2997a8b32d7db7f1",
+  "sourceProposedSha": null,
+  "archetypeSha": "bcf88da354e79587",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 30,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+  "/nb/gudbrandsdal/bedrift/daglig-drift.html",
+  "/nb/hallingdal/bedrift/daglig-drift.html",
+  "/nb/helgeland/bedrift/daglig-drift.html",
+  "/nb/lom-skjaak/bedrift/daglig-drift.html",
+  "/nb/nord-norge/bedrift/daglig-drift.html",
+  "/nb/nordmore/bedrift/daglig-drift.html",
+  "/nb/ringerike-hadeland/bedrift/daglig-drift.html",
+  "/nb/smn/bedrift/daglig-drift.html",
+  "/nn/sogn-fjordane/bedrift/daglig-drift.html",
+  "/nb/sor-norge/bedrift/daglig-drift.html",
+  "/nb/ostfold-akershus/bedrift/daglig-drift.html",
+  "/nb/ostlandet/bedrift/daglig-drift.html",
+  "/nb/bank/bedrift/innlogging.html",
+  "/nb/bank/bedrift/daglig-drift/nettbank-bedrift.html",
+  "/nb/bank/bedrift/daglig-drift/mobilbank-bedrift.html",
+  "/nb/bank/bedrift/regnskap/regnskapsprogram.html",
+  "/nb/bank/bedrift/daglig-drift/nettbank-lag-forening.html",
+  "/nb/bank/bedrift/starte-bedrift/drive-bedrift.html",
+  "/nb/bank/bedrift/daglig-drift/bankid.html",
+  "/nb/bank/bedrift/daglig-drift/nettbank-bedrift/bankintegrasjon.html",
+  "/nb/bank/bedrift/regnskap/guide.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/bedrift/kundeservice.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/ostlandet/bedrift/kundeservice.html",
+  "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+  "/nb/bank/bedrift/kundeservice/bestill/prisliste.html",
+  "/nb/bank/bedrift/svindel.html",
+  "/nb/bank/privat/innlogging.html"
+ ],
+ "linksRewritten": 29,
+ "metadata": {
+  "title": "Daglig drift | Nettbank og regnskapsprogram for bedrifter | SpareBank 1",
+  "description": "For å ha kontroll på økonomien i bedriften, trenger du en nettbank som gir deg god oversikt, og er regnskapsprogram som er enkelt å bruke.",
+  "canonical": "https://www.sparebank1.no/nb/bank/bedrift/daglig-drift.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/grunder-idearbeid.jpg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:14.771Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "2997a8b32d7db7f1",
+ "sourceProposedSha": null,
+ "archetypeSha": "bcf88da354e79587",
+ "assetsBundled": 3
+}

@@ -1,0 +1,120 @@
+{
+ "slug": "nb-bank-privat-lan-lanekalkulator-html",
+ "type": "program",
+ "template": "product",
+ "archetype": "nb-bank-privat-lan-boliglan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+ "outputPath": "nb/bank/privat/lan/lanekalkulator.html",
+ "deliveredPath": "/nb/bank/privat/lan/lanekalkulator",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/lan/lanekalkulator.html",
+ "modules": [
+  "bank-router",
+  "product-hero",
+  "card-rail",
+  "calculator",
+  "content-columns",
+  "feedback",
+  "cta-band",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "caafbd785b3e72a1",
+  "sourceProposedSha": null,
+  "archetypeSha": "ae3d38738877847b",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 32,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/lan/lanekalkulator.html",
+  "/nb/hallingdal/privat/lan/lanekalkulator.html",
+  "/nb/helgeland/privat/lan/lanekalkulator.html",
+  "/nb/lom-skjaak/privat/lan/lanekalkulator.html",
+  "/nb/nord-norge/privat/lan/lanekalkulator.html",
+  "/nb/nordmore/privat/lan/lanekalkulator.html",
+  "/nb/ringerike-hadeland/privat/lan/lanekalkulator.html",
+  "/nb/smn/privat/lan/lanekalkulator.html",
+  "/nn/sogn-fjordane/privat/lan/lanekalkulator.html",
+  "/nb/sor-norge/privat/lan/lanekalkulator.html",
+  "/nb/ostfold-akershus/privat/lan/lanekalkulator.html",
+  "/nb/ostlandet/privat/lan/lanekalkulator.html",
+  "/nb/bank/privat/lan/lanekalkulator/boliglanskalkulator.html",
+  "/nb/bank/privat/lan/lanekalkulator/lofavor.html",
+  "/nb/bank/privat/lan/refinansiering/refinansiere-forbrukslan.html",
+  "/bank/nettbank-privat/boliglan-soknad/start",
+  "/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lan.html",
+  "/nb/bank/privat/lan/lanekalkulator/hvor-mye-kan-jeg-lane.html",
+  "/nb/bank/privat/lan/lanekalkulator/hva-koster-lanet.html",
+  "/nb/bank/privat/forsikring/bilforsikring/elbil-forsikring.html",
+  "/nb/bank/privat/forsikring/bilforsikring/bobil-forsikring.html",
+  "/nb/bank/privat/forsikring/batforsikring.html",
+  "/nb/bank/privat/forsikring/mc-motorsykkelforsikring.html",
+  "/nb/bank/privat/forsikring/mopedforsikring.html",
+  "/nb/bank/privat/forsikring/campingvognforsikring.html",
+  "/nb/bank/privat/forsikring/snoscooterforsikring.html",
+  "/nb/bank/privat/forsikring/kjoretoyforsikringer.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 34,
+ "metadata": {
+  "title": "Lånekalkulator | Hvor mye koster lånet? | SpareBank 1",
+  "description": "Prøv en av våre lånekalkulatorer for å se på hvor mye du kan låne. Det er selvfølgelig gratis og uforpliktende. Se kostnad på lånet, renter og nedbetalingsplan.",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/lan/lanekalkulator.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:34.852Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "caafbd785b3e72a1",
+ "sourceProposedSha": null,
+ "archetypeSha": "ae3d38738877847b",
+ "assetsBundled": 3
+}

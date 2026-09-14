@@ -1,0 +1,119 @@
+{
+ "slug": "nb-bank-bedrift-betaling-html",
+ "type": "landing",
+ "template": "category-hub",
+ "archetype": "nb-bank-privat-lan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-html",
+ "outputPath": "nb/bank/bedrift/betaling.html",
+ "deliveredPath": "/nb/bank/bedrift/betaling",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/bedrift/betaling.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "visual-nav",
+  "split-media",
+  "shortcut-row",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "bb1e824b494d7db9",
+  "sourceProposedSha": null,
+  "archetypeSha": "bcf88da354e79587",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 32,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+  "/nb/gudbrandsdal/bedrift/betaling.html",
+  "/nb/hallingdal/bedrift/betaling.html",
+  "/nb/helgeland/bedrift/betaling.html",
+  "/nb/lom-skjaak/bedrift/betaling.html",
+  "/nb/nord-norge/bedrift/betaling.html",
+  "/nb/nordmore/bedrift/betaling.html",
+  "/nb/ringerike-hadeland/bedrift/betaling.html",
+  "/nb/smn/bedrift/betaling.html",
+  "/nn/sogn-fjordane/bedrift/betaling.html",
+  "/nb/sor-norge/bedrift/betaling.html",
+  "/nb/ostfold-akershus/bedrift/betaling.html",
+  "/nb/ostlandet/bedrift/betaling.html",
+  "/nb/bank/bedrift/betaling/fakturering.html",
+  "/nb/bank/bedrift/betaling/betalingsterminal.html",
+  "/nb/bank/bedrift/betaling/vipps-bedrift.html",
+  "/nb/bank/bedrift/betaling/nettbutikk.html",
+  "/nb/bank/bedrift/betaling/inkasso.html",
+  "/nb/bank/bedrift/daglig-drift/nettbank-bedrift/transaksjoner.html",
+  "/nb/bank/privat/daglig-bruk/betaling/kontaktlos-betaling/apple-pay.html",
+  "/nb/bank/bedrift/daglig-drift/nettbank-bedrift/bankintegrasjon.html",
+  "/nb/bank/bedrift/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/bank/bedrift/betaling/kontanttjenester.html",
+  "/nb/bank/bedrift/svindel.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/bedrift/kundeservice.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/ostlandet/bedrift/kundeservice.html",
+  "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+  "/nb/bank/bedrift/kundeservice/bestill/prisliste.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 25,
+ "metadata": {
+  "title": "Betaling | SpareBank 1",
+  "description": null,
+  "canonical": "https://www.sparebank1.no/nb/bank/bedrift/betaling.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:14.648Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "bb1e824b494d7db9",
+ "sourceProposedSha": null,
+ "archetypeSha": "bcf88da354e79587",
+ "assetsBundled": 3
+}

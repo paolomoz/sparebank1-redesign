@@ -1,0 +1,14 @@
+{
+ "slug": "nb-bank-bedrift-konto-html",
+ "file": "stardust/migrated/nb/bank/bedrift/konto.html",
+ "checked": {
+  "text": 60,
+  "href": 187,
+  "img": 8
+ },
+ "miss": {
+  "text": [],
+  "href": [],
+  "img": []
+ }
+}

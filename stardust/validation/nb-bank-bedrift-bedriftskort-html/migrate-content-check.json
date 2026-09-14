@@ -1,0 +1,14 @@
+{
+ "slug": "nb-bank-bedrift-bedriftskort-html",
+ "file": "stardust/migrated/nb/bank/bedrift/bedriftskort.html",
+ "checked": {
+  "text": 60,
+  "href": 185,
+  "img": 6
+ },
+ "miss": {
+  "text": [],
+  "href": [],
+  "img": []
+ }
+}

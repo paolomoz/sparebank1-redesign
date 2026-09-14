@@ -1,0 +1,107 @@
+{
+ "slug": "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+ "type": "program",
+ "template": "product",
+ "archetype": "nb-bank-privat-lan-boliglan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+ "outputPath": "nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+ "deliveredPath": "/nb/bank/privat/kundeservice/bestill/bli-kunde",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+ "modules": [
+  "bank-router",
+  "product-hero",
+  "usp",
+  "split-media",
+  "promo-band",
+  "card-rail",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "b45d47f4b3ed1e96",
+  "sourceProposedSha": null,
+  "archetypeSha": "ae3d38738877847b",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 19,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/kundeservice/bestill/bli-kunde.html",
+  "/nb/hallingdal/privat/kundeservice/bestill/bli-kunde.html",
+  "/nb/helgeland/privat/kundeservice/bestill/bli-kunde.html",
+  "/nb/lom-skjaak/privat/kundeservice/bestill/bli-kunde.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bli-kunde.html",
+  "/nb/nordmore/privat/kundeservice/bestill/bli-kunde.html",
+  "/nb/ringerike-hadeland/privat/kundeservice/bestill/bli-kunde.html",
+  "/nb/smn/privat/kundeservice/bestill/bli-kunde.html",
+  "/nn/sogn-fjordane/privat/kundeservice/bestill/bli-kunde.html",
+  "/nb/sor-norge/privat/kundeservice/bestill/bli-kunde.html",
+  "/nb/ostfold-akershus/privat/kundeservice/bestill/bli-kunde.html",
+  "/nb/ostlandet/privat/kundeservice/bestill/bli-kunde.html",
+  "/nb/bank/om-oss/nyheter/--en-god-og-brukervennlig-mobilbank-for-alle.html",
+  "/nb/bank/privat/kundeservice/bytte-bank.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 34,
+ "metadata": {
+  "title": "Bli kunde | SpareBank 1",
+  "description": null,
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:34.207Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "b45d47f4b3ed1e96",
+ "sourceProposedSha": null,
+ "archetypeSha": "ae3d38738877847b",
+ "assetsBundled": 3
+}

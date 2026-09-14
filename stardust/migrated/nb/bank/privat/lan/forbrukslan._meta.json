@@ -1,0 +1,134 @@
+{
+ "slug": "nb-bank-privat-lan-forbrukslan-html",
+ "type": "program",
+ "template": "product",
+ "archetype": "nb-bank-privat-lan-boliglan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+ "outputPath": "nb/bank/privat/lan/forbrukslan.html",
+ "deliveredPath": "/nb/bank/privat/lan/forbrukslan",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/lan/forbrukslan.html",
+ "modules": [
+  "bank-router",
+  "product-hero",
+  "split-media",
+  "price-terms",
+  "rich-text",
+  "callout",
+  "topic-list",
+  "content-columns",
+  "card-rail",
+  "faq",
+  "feedback",
+  "cta-band",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "7bd14fdd3bb20dc7",
+  "sourceProposedSha": null,
+  "archetypeSha": "ae3d38738877847b",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 41,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/lan/forbrukslan.html",
+  "/nb/hallingdal/privat/lan/forbrukslan.html",
+  "/nb/helgeland/privat/lan/forbrukslan.html",
+  "/nb/lom-skjaak/privat/lan/forbrukslan.html",
+  "/nb/nord-norge/privat/lan/forbrukslan.html",
+  "/nb/nordmore/privat/lan/forbrukslan.html",
+  "/nb/ringerike-hadeland/privat/lan/forbrukslan.html",
+  "/nb/smn/privat/lan/forbrukslan.html",
+  "/nn/sogn-fjordane/privat/lan/forbrukslan.html",
+  "/nb/sor-norge/privat/lan/forbrukslan.html",
+  "/nb/ostfold-akershus/privat/lan/forbrukslan.html",
+  "/nb/ostlandet/privat/lan/forbrukslan.html",
+  "/nb/bank/privat/lan/forbrukslan/hoy-rente-dyrt-forbrukslan-kredittkort.html",
+  "/nb/bank/privat/kundeservice/lan/hva-er-forskjellen-pa-nominell-og-effektiv-rente.html",
+  "/nb/bank/om-oss/selskaper/kredittbanken.html",
+  "/content/dam/SB1/vedlegg/vilkar/Avtalevilkar_forbrukslan.pdf",
+  "/nb/bank/privat/lan/refinansiering/refinansiere-forbrukslan.html",
+  "/nb/bank/privat/lan/forbrukslan/forbrukslan-kalkulator.html",
+  "/nb/bank/privat/sparing/spare-pa-konto/bufferkonto.html",
+  "/nb/bank/privat/lan/forbrukslan/forbrukslan-boliglan.html",
+  "/nb/bank/privat/lan/forbrukslan/forbrukslan-kredittkort.html",
+  "/nb/bank/privat/forsikring/husforsikring/vannskader-forsikring.html",
+  "/nb/bank/privat/lan/forbrukslan/laneeksempler.html",
+  "/nb/bank/privat/forsikring/bilforsikring/bilforsikringer.html",
+  "/nb/bank/privat/svindel/svindelmetoder/id-tyveri.html",
+  "/nb/bank/privat/kundeservice/lan/hvor-raskt-utbetaler-dere-forbrukslanet.html",
+  "/nb/bank/privat/kundeservice/lan/forbrukslan-hvor-mye-kan-jeg-lane.html",
+  "/nb/bank/privat/lan/boliglan/boliglansrente/sammenligne-boliglan.html",
+  "/nb/bank/privat/kundeservice/lan/forskjellen-pa-fastrente-og-flytende-rente.html",
+  "/nb/bank/privat/kundeservice/lan/hva-er-belaningsgrad.html",
+  "/nb/bank/privat/kundeservice/lan/lan-uten-sikkerhet.html",
+  "/nb/bank/privat/kundeservice/lan/priseksempel.html",
+  "/nb/bank/privat/lan/refinansiering/refinansiere-forbrukslan/refinansiering-kalkulator.html",
+  "/nb/bank/privat/kundeservice/lan/hva-er-refinansiering-forbrukslan.html",
+  "/nb/bank/privat/kundeservice/lan/hva-er-forbrukslan.html",
+  "/nb/bank/privat/lan/forbrukslan/mitt-forbrukslan.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 42,
+ "metadata": {
+  "title": "Forbrukslån | Lån uten sikkerhet | SpareBank 1",
+  "description": "Det beste forbrukslånet er det du har kontroll på. Hos oss får du oversikt over forbruksgjelden og lån uten sikkerhet med fast lav rente. Søk forbrukslån her!",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/lan/forbrukslan.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:34.581Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "7bd14fdd3bb20dc7",
+ "sourceProposedSha": null,
+ "archetypeSha": "ae3d38738877847b",
+ "assetsBundled": 3
+}

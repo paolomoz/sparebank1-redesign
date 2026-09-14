@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/bedrift/bedriftsforsikring.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/bedrift/bedriftskort.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/bedrift/bedriftskort/kredittkort.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/bedrift/betaling.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/bedrift/betaling/utenlandsbetaling.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/bedrift/daglig-drift.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/bedrift.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/bedrift/konto/bedriftskonto.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/bedrift/konto.html</loc><priority>1.0</priority></url>
   <url><loc>/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html</loc><priority>0.5</priority></url>
   <url><loc>/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html</loc><priority>0.5</priority></url>
   <url><loc>/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html</loc><priority>0.5</priority></url>
   <url><loc>/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html</loc><priority>0.5</priority></url>
+  <url><loc>/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-blir-jeg-bedriftskunde.html</loc><priority>0.5</priority></url>
   <url><loc>/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html</loc><priority>0.5</priority></url>
   <url><loc>/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankaxept.html</loc><priority>0.5</priority></url>
   <url><loc>/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode.html</loc><priority>0.5</priority></url>
@@ -12,20 +22,82 @@
   <url><loc>/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd.html</loc><priority>0.5</priority></url>
   <url><loc>/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift.html</loc><priority>0.5</priority></url>
   <url><loc>/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura.html</loc><priority>0.5</priority></url>
+  <url><loc>/nb/bank/bedrift/kundeservice.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/bedrift/lan-finansiering/bedriftslan.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/bedrift/lan-finansiering.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/bedrift/lan-finansiering/kassekreditt.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/bedrift/lan-finansiering/leasing.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/bedrift/open-api.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/bedrift/pensjon.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/bedrift/regnskap.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/bedrift/sparing-investering.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/bedrift/starte-bedrift.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/bedrift/tips-og-rad.html</loc><priority>1.0</priority></url>
   <url><loc>/nb/bank/om-oss/hjemme.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/om-oss.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/om-oss/investor.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/om-oss/jobb-og-karriere.html</loc><priority>0.7</priority></url>
   <url><loc>/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-.html</loc><priority>0.5</priority></url>
   <url><loc>/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.html</loc><priority>0.5</priority></url>
   <url><loc>/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html</loc><priority>0.5</priority></url>
+  <url><loc>/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket.html</loc><priority>0.5</priority></url>
   <url><loc>/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html</loc><priority>0.5</priority></url>
   <url><loc>/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.html</loc><priority>0.5</priority></url>
   <url><loc>/nb/bank/om-oss/nyheter.html</loc><priority>0.6</priority></url>
+  <url><loc>/nb/bank/om-oss/om-banken/selskapsinformasjon.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/om-oss/personvern/generelle-vilkar.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/om-oss/personvern.html</loc><priority>0.7</priority></url>
   <url><loc>/nb/bank/om-oss/presse.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/om-oss/samfunnsansvar.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/om-oss/selskaper.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/om-oss/vare-eksperter.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/daglig-bruk/bankid.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/daglig-bruk/bankkonto.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/daglig-bruk/bankkort.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/daglig-bruk.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/privat/daglig-bruk/kredittkort.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/daglig-bruk/mobilbank.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/eiendom.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/privat/forsikring/barneforsikring.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/forsikring/bilforsikring.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/forsikring.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/forsikring/innboforsikring.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/forsikring/kundehistorier.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade.html</loc><priority>0.5</priority></url>
+  <url><loc>/nb/bank/privat/forsikring/meld-skade.html</loc><priority>0.4</priority></url>
+  <url><loc>/nb/bank/privat/forsikring/reiseforsikring.html</loc><priority>0.7</priority></url>
   <url><loc>/nb/bank/privat.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/privat/kundeservice/bestill/bli-kunde.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/kundeservice/bestill/prisliste.html</loc><priority>0.7</priority></url>
   <url><loc>/nb/bank/privat/kundeservice.html</loc><priority>1.0</priority></url>
   <url><loc>/nb/bank/privat/kundeservice/kontakt.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/kundeservice/verktoy/iban-og-swift.html</loc><priority>0.4</priority></url>
+  <url><loc>/nb/bank/privat/kundeservice/verktoy/klager.html</loc><priority>0.4</priority></url>
+  <url><loc>/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html</loc><priority>0.4</priority></url>
   <url><loc>/nb/bank/privat/kundeservice/verktoy/sperre-kort.html</loc><priority>0.4</priority></url>
+  <url><loc>/nb/bank/privat/kundeservice/verktoy/valutakalkulator.html</loc><priority>0.4</priority></url>
+  <url><loc>/nb/bank/privat/lan/billan.html</loc><priority>0.7</priority></url>
   <url><loc>/nb/bank/privat/lan/boliglan.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/lan/forbrukslan.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/lan/gronne-lan.html</loc><priority>0.7</priority></url>
   <url><loc>/nb/bank/privat/lan.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/privat/lan/lanekalkulator.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/lan/refinansiering.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/lofavor.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/privat/pensjon/egen-pensjonskonto.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/pensjon.html</loc><priority>1.0</priority></url>
   <url><loc>/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.html</loc><priority>0.5</priority></url>
+  <url><loc>/nb/bank/privat/private-banking.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/privat/sparing.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.html</loc><priority>0.5</priority></url>
+  <url><loc>/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.html</loc><priority>0.5</priority></url>
   <url><loc>/nb/bank/privat/sparing/markedsnytt.html</loc><priority>0.6</priority></url>
+  <url><loc>/nb/bank/privat/sparing/spare-i-fond.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/sparing/spare-pa-konto.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/sparing/spare-til-barn.html</loc><priority>0.7</priority></url>
+  <url><loc>/nb/bank/privat/svindel.html</loc><priority>1.0</priority></url>
+  <url><loc>/nb/bank/privat/tips-og-rad.html</loc><priority>1.0</priority></url>
 </urlset>

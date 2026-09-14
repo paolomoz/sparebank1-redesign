@@ -1,0 +1,14 @@
+{
+ "slug": "nb-bank-privat-pensjon-html",
+ "file": "stardust/migrated/nb/bank/privat/pensjon.html",
+ "checked": {
+  "text": 95,
+  "href": 210,
+  "img": 24
+ },
+ "miss": {
+  "text": [],
+  "href": [],
+  "img": []
+ }
+}

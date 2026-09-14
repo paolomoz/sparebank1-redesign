@@ -1,0 +1,107 @@
+{
+ "slug": "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+ "type": "form",
+ "template": "tool",
+ "archetype": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+ "outputPath": "nb/bank/privat/kundeservice/verktoy/iban-og-swift.html",
+ "deliveredPath": "/nb/bank/privat/kundeservice/verktoy/iban-og-swift",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/iban-og-swift.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "rich-text",
+  "disclosure",
+  "table",
+  "related-products",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "a109695087f33899",
+  "sourceProposedSha": null,
+  "archetypeSha": "0300e68e6a123ccd",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 19,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/kundeservice/verktoy/iban-og-swift.html",
+  "/nb/hallingdal/privat/kundeservice/verktoy/iban-og-swift.html",
+  "/nb/helgeland/privat/kundeservice/verktoy/iban-og-swift.html",
+  "/nb/lom-skjaak/privat/kundeservice/verktoy/iban-og-swift.html",
+  "/nb/nord-norge/privat/kundeservice/verktoy/iban-og-swift.html",
+  "/nb/nordmore/privat/kundeservice/verktoy/iban-og-swift.html",
+  "/nb/ringerike-hadeland/privat/kundeservice/verktoy/iban-og-swift.html",
+  "/nb/smn/privat/kundeservice/verktoy/iban-og-swift.html",
+  "/nn/sogn-fjordane/privat/kundeservice/verktoy/iban-og-swift.html",
+  "/nb/sor-norge/privat/kundeservice/verktoy/iban-og-swift.html",
+  "/nb/ostfold-akershus/privat/kundeservice/verktoy/iban-og-swift.html",
+  "/nb/ostlandet/privat/kundeservice/verktoy/iban-og-swift.html",
+  "/nb/bank/privat/kundeservice/verktoy.html",
+  "/nb/bank/privat/daglig-bruk/betaling/sende-penger-til-utlandet.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 33,
+ "metadata": {
+  "title": "IBAN | Finn ditt IBAN | SpareBank 1",
+  "description": "Her får du IBAN-nummeret ditt kjapt uten å logge inn. Du kan også sjekke om et IBAN-nummer stemmer.",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/iban-og-swift.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:21.059Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "a109695087f33899",
+ "sourceProposedSha": null,
+ "archetypeSha": "0300e68e6a123ccd",
+ "assetsBundled": 3
+}

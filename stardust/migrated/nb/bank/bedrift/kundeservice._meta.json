@@ -1,0 +1,134 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-html",
+ "type": "landing",
+ "template": "kundeservice-hub",
+ "archetype": "nb-bank-privat-kundeservice-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-kundeservice-html",
+ "outputPath": "nb/bank/bedrift/kundeservice.html",
+ "deliveredPath": "/nb/bank/bedrift/kundeservice",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice.html",
+ "modules": [
+  "bank-router",
+  "hero-ask",
+  "chat-field",
+  "image",
+  "faq",
+  "callout",
+  "topic-tiles",
+  "promo-band",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "bf94bcd6a12520f8",
+  "sourceProposedSha": null,
+  "archetypeSha": "a407ec3bc40f66cc",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 45,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+  "/nb/gudbrandsdal/bedrift/kundeservice.html",
+  "/nb/hallingdal/bedrift/kundeservice.html",
+  "/nb/helgeland/bedrift/kundeservice.html",
+  "/nb/lom-skjaak/bedrift/kundeservice.html",
+  "/nb/nord-norge/bedrift/kundeservice.html",
+  "/nb/nordmore/bedrift/kundeservice.html",
+  "/nb/ringerike-hadeland/bedrift/kundeservice.html",
+  "/nb/smn/bedrift/kundeservice.html",
+  "/nn/sogn-fjordane/bedrift/kundeservice.html",
+  "/nb/sor-norge/bedrift/kundeservice.html",
+  "/nb/ostfold-akershus/bedrift/kundeservice.html",
+  "/nb/ostlandet/bedrift/kundeservice.html",
+  "/nb/bank/bedrift/kundeservice/bestill.html",
+  "/nb/bank/bedrift/daglig-drift/nettbank-bedrift/administrasjon-av-brukere.html",
+  "/nb/bank/bedrift/info/oppdatering-kundeinformasjon.html",
+  "/nb/bank/bedrift/kundeservice/verktoy/esignering.html",
+  "/nb/bank/bedrift/kundeservice/bestill/prisliste.html",
+  "/nb/bank/privat/kundeservice/mobil/engangkode-pa-mobil-virker-ikke.html",
+  "/nb/bank/privat/kundeservice/nettbank/feilmelding-som-starter-med-bid.html",
+  "/nb/bank/privat/kundeservice/nettbank/glemt-passord-bankid.html",
+  "/nb/bank/privat/kundeservice/nettbank/hvordan-bestille-ny-kodebrikke.html",
+  "/nb/bank/privat/kundeservice/nettbank/jeg-kommer-ikke-inn-i-nettbanken.html",
+  "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/nar-gar-godkjente-betalinger-ut-av-kontoen.html",
+  "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-opprette-ny-bruker-i-nettbank-bedrift.html",
+  "/nb/bank/bedrift/kundeservice/bestill/ny-endre-administrator-nettbank-bedrift.html",
+  "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hjelpesider-filoverforing.html",
+  "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift.html",
+  "/nb/bank/bedrift/kundeservice/bm-kort-betaling.html",
+  "/nb/bank/bedrift/kundeservice/bm-lan-finansiering.html",
+  "/nb/bank/bedrift/kundeservice/bedriftsforsikring.html",
+  "/nb/bank/bedrift/kundeservice/bm-pensjon.html",
+  "/nb/bank/bedrift/kundeservice/bm-plassering.html",
+  "/nb/bank/bedrift/kundeservice/bm-regnskap.html",
+  "/nb/bank/bedrift/kundeservice/lag-og-forening.html",
+  "/nb/bank/bedrift/kundeservice/bm-starte-drive-bedrift.html",
+  "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal.html",
+  "/nb/bank/bedrift/svindel/utsatt-for-svindel.html",
+  "/nb/bank/bedrift/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+  "/nb/bank/bedrift/svindel.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 24,
+ "metadata": {
+  "title": "Kundeservice | SpareBank 1",
+  "description": "Bli kunde, endre administrator, finn IBAN-nummer, signere dokumenter, få hjelp her.",
+  "canonical": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:15.001Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "bf94bcd6a12520f8",
+ "sourceProposedSha": null,
+ "archetypeSha": "a407ec3bc40f66cc",
+ "assetsBundled": 3
+}

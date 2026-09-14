@@ -1,0 +1,123 @@
+{
+ "slug": "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+ "type": "program",
+ "template": "product",
+ "archetype": "nb-bank-privat-lan-boliglan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+ "outputPath": "nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+ "deliveredPath": "/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+ "modules": [
+  "bank-router",
+  "product-hero",
+  "card-rail",
+  "split-media",
+  "rich-text",
+  "faq",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "45feefb43ec749cf",
+  "sourceProposedSha": null,
+  "archetypeSha": "ae3d38738877847b",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 35,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+  "/nb/gudbrandsdal/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+  "/nb/hallingdal/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+  "/nb/helgeland/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+  "/nb/lom-skjaak/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+  "/nb/nord-norge/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+  "/nb/nordmore/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+  "/nb/ringerike-hadeland/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+  "/nb/smn/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+  "/nn/sogn-fjordane/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+  "/nb/sor-norge/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+  "/nb/ostfold-akershus/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+  "/nb/ostlandet/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+  "/nb/bank/bedrift/starte-bedrift/selskapsform.html",
+  "/nb/bank/bedrift/starte-bedrift/selskapsform/aksjeselskap.html",
+  "/nb/bank/bedrift/starte-bedrift/selskapsform/enkeltpersonforetak.html",
+  "/nb/bank/bedrift/pensjon/obligatorisk-tjenestepensjon.html",
+  "/nb/bank/bedrift/pensjon/innskuddspensjon-for-selvstendig-naeringsdrivende.html",
+  "/nb/bank/bedrift/kundeservice/bm-starte-drive-bedrift/hva-er-aksjekapital.html",
+  "/nb/bank/bedrift/kundeservice/bm-starte-drive-bedrift/hva-koster-det-a-starte-as.html",
+  "/nb/bank/bedrift/kundeservice/bm-starte-drive-bedrift/hva-er-enkeltpersonforetak.html",
+  "/nb/bank/bedrift/kundeservice/bm-starte-drive-bedrift/hva-koster-det-a-starte-enk.html",
+  "/nb/bank/bedrift/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/bank/bedrift/starte-bedrift/selskapsform/ue.html",
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde/lag-og-forening.html",
+  "/nb/bank/bedrift/starte-bedrift/selskapsform/opprette-sameie.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/bedrift/kundeservice.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/ostlandet/bedrift/kundeservice.html",
+  "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+  "/nb/bank/bedrift/kundeservice/bestill/prisliste.html",
+  "/nb/bank/bedrift/svindel.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 24,
+ "metadata": {
+  "title": "Aksjeselskap vs enkeltpersonforetak | Forskjellen mellom AS og ENK | SpareBank 1",
+  "description": "Med et enkeltpersonforetak er du personlig juridisk ansvarlig for selskapet, mens et AS regnes som en egen juridisk enhet. Les om de viktigste forskjellene her.",
+  "canonical": "https://www.sparebank1.no/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:30.140Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "45feefb43ec749cf",
+ "sourceProposedSha": null,
+ "archetypeSha": "ae3d38738877847b",
+ "assetsBundled": 3
+}

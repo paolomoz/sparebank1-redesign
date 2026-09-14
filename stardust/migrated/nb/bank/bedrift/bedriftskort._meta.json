@@ -1,0 +1,112 @@
+{
+ "slug": "nb-bank-bedrift-bedriftskort-html",
+ "type": "landing",
+ "template": "category-hub",
+ "archetype": "nb-bank-privat-lan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-html",
+ "outputPath": "nb/bank/bedrift/bedriftskort.html",
+ "deliveredPath": "/nb/bank/bedrift/bedriftskort",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/bedrift/bedriftskort.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "card-grid",
+  "callout",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "1370de8d751eeef9",
+  "sourceProposedSha": null,
+  "archetypeSha": "bcf88da354e79587",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 26,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+  "/nb/gudbrandsdal/bedrift/bedriftskort.html",
+  "/nb/hallingdal/bedrift/bedriftskort.html",
+  "/nb/helgeland/bedrift/bedriftskort.html",
+  "/nb/lom-skjaak/bedrift/bedriftskort.html",
+  "/nb/nord-norge/bedrift/bedriftskort.html",
+  "/nb/nordmore/bedrift/bedriftskort.html",
+  "/nb/ringerike-hadeland/bedrift/bedriftskort.html",
+  "/nb/smn/bedrift/bedriftskort.html",
+  "/nn/sogn-fjordane/bedrift/bedriftskort.html",
+  "/nb/sor-norge/bedrift/bedriftskort.html",
+  "/nb/ostfold-akershus/bedrift/bedriftskort.html",
+  "/nb/ostlandet/bedrift/bedriftskort.html",
+  "/nb/bank/bedrift/bedriftskort/bankkort.html",
+  "/nb/bank/bedrift/bedriftskort/virtuelt-kort.html",
+  "/nb/bank/bedrift/betaling/kontanttjenester.html",
+  "/nb/bank/bedrift/bedriftskort/kommunalt-utbetalingskort.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/bedrift/kundeservice.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/ostlandet/bedrift/kundeservice.html",
+  "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+  "/nb/bank/bedrift/kundeservice/bestill/prisliste.html",
+  "/nb/bank/bedrift/svindel.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 26,
+ "metadata": {
+  "title": "Bedriftskort | Bankkort og kredittkort bedrift | SpareBank 1",
+  "description": "Det er mange fordeler med å ha bankkort og kredittkort bedrift. Du slipper å legge ut, får bedre oversikt. I mastercard bedrift er reiseforsikring inkludert.",
+  "canonical": "https://www.sparebank1.no/nb/bank/bedrift/bedriftskort.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:14.518Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "1370de8d751eeef9",
+ "sourceProposedSha": null,
+ "archetypeSha": "bcf88da354e79587",
+ "assetsBundled": 3
+}

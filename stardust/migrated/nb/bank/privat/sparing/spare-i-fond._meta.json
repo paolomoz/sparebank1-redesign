@@ -1,0 +1,150 @@
+{
+ "slug": "nb-bank-privat-sparing-spare-i-fond-html",
+ "type": "program",
+ "template": "product",
+ "archetype": "nb-bank-privat-lan-boliglan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+ "outputPath": "nb/bank/privat/sparing/spare-i-fond.html",
+ "deliveredPath": "/nb/bank/privat/sparing/spare-i-fond",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/sparing/spare-i-fond.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "card-rail",
+  "split-media",
+  "rich-text",
+  "faq",
+  "content-columns",
+  "feedback",
+  "cta-band",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "17a587387d0318dc",
+  "sourceProposedSha": null,
+  "archetypeSha": "ae3d38738877847b",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 60,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/sparing/spare-i-fond.html",
+  "/nb/hallingdal/privat/sparing/spare-i-fond.html",
+  "/nb/helgeland/privat/sparing/spare-i-fond.html",
+  "/nb/lom-skjaak/privat/sparing/spare-i-fond.html",
+  "/nb/nord-norge/privat/sparing/spare-i-fond.html",
+  "/nb/nordmore/privat/sparing/spare-i-fond.html",
+  "/nb/ringerike-hadeland/privat/sparing/spare-i-fond.html",
+  "/nb/smn/privat/sparing/spare-i-fond.html",
+  "/nn/sogn-fjordane/privat/sparing/spare-i-fond.html",
+  "/nb/sor-norge/privat/sparing/spare-i-fond.html",
+  "/nb/ostfold-akershus/privat/sparing/spare-i-fond.html",
+  "/nb/ostlandet/privat/sparing/spare-i-fond.html",
+  "/nb/bank/privat/sparing/spare-i-fond/alt-i-ett.html",
+  "/nb/bank/privat/sparing/spare-i-fond/fondspakke.html",
+  "/nb/bank/privat/sparing/spare-i-fond/fondsoversikt.html",
+  "/nb/bank/privat/sparing/spare-i-fond/girls-just-want-to-have-fond.html",
+  "/nb/bank/privat/sparing/spare-i-fond/priser-fondssparing.html",
+  "/nb/bank/privat/sparing/spare-i-fond/aksjefond.html",
+  "/nb/bank/privat/sparing/spare-i-fond/indeksfond.html",
+  "/nb/bank/privat/sparing/spare-i-fond/kombinasjonsfond.html",
+  "/nb/bank/privat/sparing/spare-i-fond/rentefond.html",
+  "/nb/bank/privat/sparing/spare-i-fond/sparebank1-fondene.html",
+  "/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-sparing.html",
+  "/nb/bank/privat/sparing/spare-i-fond/hva-er-fond.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/kan-jeg-tape-penger-fond.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hva-er-aksje-og-rentefond.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/forventet-avkastning-fond.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/forskjell-fond-og-aksjer.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hvor-mange-fond-bor-jeg-ha.html",
+  "/nb/bank/privat/sparing/spare-i-fond/fondssparing.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/slik-kan-du-doble-sparepengene-dine-med-72-regelen.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hva-er-rentes-rente-effekten.html",
+  "/nb/bank/privat/sparing/investering/aksjehandel.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/kjope-eller-selge-fond-nar-markedet-gar-ned.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/fond-hvilke-fondstyper-kan-jeg-velge-mellom-.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/forskjellen-indeksfond-aktivt-forvaltede-fond.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/nar-utbetales-penger-ved-salg-av-fond.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hva-er-realisasjon.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/ta-ut-fond-trenger-penger.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/kurs-kjop-salg-fond.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hvordan-flytte-spareavtalene-mine-fra-fondslosningen-til-aksjesparekontolosningen.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hva-gjor-jeg-hvis-jeg-eier-fond-hos-annen-leverandor.html",
+  "/nb/bank/privat/sparing/investering/aksjesparekonto.html",
+  "/nb/bank/privat/sparing/spare-i-fond/spare-i-fond-til-barn.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/smartjustering-av-spareavtale-i-fond.html",
+  "/nb/bank/privat/daglig-bruk/mobilbank/best-i-test-mobilbank.html",
+  "/bank/nettbank-privat/min-sparing",
+  "/nb/bank/privat/kundeservice/verktoy/vps-viktige-dokumenter.html",
+  "/nb/bank/privat/sparing/spare-i-fond/esg.html",
+  "/nb/bank/privat/sparing/spare-i-fond/fond-forklart.html",
+  "/nb/bank/privat/sparing/spare-i-fond/fondskalkulator.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/na-kan-du-spare-i-fire-nye-sparebank-1-indeksfond.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/markedskommentar-av-alexander-miller-for-august-2026.html",
+  "/nb/bank/privat/tips-og-rad/spareveileder.html",
+  "/nb/bank/privat/tips-og-rad/spare-til-pensjon.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 38,
+ "metadata": {
+  "title": "Fond | Spare i fond | SpareBank 1",
+  "description": "Sparing i fond er et smart valg når du skal spare langsiktig. Lær mer om fond, finn fond som passer for deg og kjøp fond her.",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/sparing/spare-i-fond.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/boligselgere-i-sofa-mann-dame.jpg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:35.625Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "17a587387d0318dc",
+ "sourceProposedSha": null,
+ "archetypeSha": "ae3d38738877847b",
+ "assetsBundled": 3
+}

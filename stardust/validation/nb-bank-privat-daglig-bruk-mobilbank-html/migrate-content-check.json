@@ -1,0 +1,14 @@
+{
+ "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+ "file": "stardust/migrated/nb/bank/privat/daglig-bruk/mobilbank.html",
+ "checked": {
+  "text": 131,
+  "href": 200,
+  "img": 25
+ },
+ "miss": {
+  "text": [],
+  "href": [],
+  "img": []
+ }
+}

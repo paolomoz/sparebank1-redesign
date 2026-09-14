@@ -1,0 +1,164 @@
+{
+ "slug": "nb-bank-bedrift-html",
+ "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/migrated/nb/bank/bedrift.html",
+ "at": "2026-09-14T22:01:01.605Z",
+ "contract": {
+  "rootFirst": true,
+  "tokensMissing": [],
+  "inlineScripts": 2
+ },
+ "viewports": {
+  "390": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 17,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 23,
+   "sectionsNoAttr": [],
+   "btnSmall": 3,
+   "btnSmallList": [
+    "label.router-label@1px \"Ditt postnummer\"",
+    "summary.btn-inline@38px \"Se alle banker\"",
+    "label.@25px \"Søk etter et kontor\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "mann-ipad-lyspare.svg",
+    "area": 81665
+   },
+   "focusRing": true,
+   "docHeight": 6667,
+   "smoke": {
+    "navOpen": true,
+    "ariaExpanded": "true",
+    "navClosedByEsc": true,
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  },
+  "768": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 18,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [
+    "li@823",
+    "a@823",
+    "strong@823",
+    "span.bank-tagline@823",
+    "li@823"
+   ],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 23,
+   "sectionsNoAttr": [],
+   "btnSmall": 5,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.is-active@36px \"Bedrift\"",
+    "a.@36px \"Om oss\"",
+    "label.router-label@20px \"Ditt postnummer\"",
+    "label.@25px \"Søk etter et kontor\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "mann-ipad-lyspare.svg",
+    "area": 102441
+   },
+   "focusRing": true,
+   "docHeight": 5103,
+   "smoke": {
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  },
+  "1440": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 18,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 23,
+   "sectionsNoAttr": [],
+   "btnSmall": 5,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.is-active@36px \"Bedrift\"",
+    "a.@36px \"Om oss\"",
+    "label.router-label@20px \"Ditt postnummer\"",
+    "label.@25px \"Søk etter et kontor\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "mann-ipad-lyspare.svg",
+    "area": 344304
+   },
+   "focusRing": true,
+   "docHeight": 4943,
+   "smoke": {
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  }
+ },
+ "mobileNav": {
+  "over": 0,
+  "minFont": 14,
+  "minGap": 0,
+  "collapse": "hamburger"
+ },
+ "pass": true,
+ "issues": [
+  {
+   "sev": "P2",
+   "where": "self-contained",
+   "msg": "2 inline scripts (only the nav a11y script is permitted)"
+  },
+  {
+   "sev": "P2",
+   "where": "390",
+   "msg": "3 interactive elements < 40px tall: label.router-label@1px \"Ditt postnummer\", summary.btn-inline@38px \"Se alle banker\", label.@25px \"Søk etter et kontor\""
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "slug": "nb-bank-bedrift-regnskap-html",
+ "type": "landing",
+ "template": "category-hub",
+ "archetype": "nb-bank-privat-lan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-html",
+ "outputPath": "nb/bank/bedrift/regnskap.html",
+ "deliveredPath": "/nb/bank/bedrift/regnskap",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/bedrift/regnskap.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "card-grid",
+  "visual-nav",
+  "split-media",
+  "callout",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "59c37b789d8cd17f",
+  "sourceProposedSha": null,
+  "archetypeSha": "bcf88da354e79587",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 32,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+  "/nb/gudbrandsdal/bedrift/regnskap.html",
+  "/nb/hallingdal/bedrift/regnskap.html",
+  "/nb/helgeland/bedrift/regnskap.html",
+  "/nb/lom-skjaak/bedrift/regnskap.html",
+  "/nb/nord-norge/bedrift/regnskap.html",
+  "/nb/nordmore/bedrift/regnskap.html",
+  "/nb/ringerike-hadeland/bedrift/regnskap.html",
+  "/nb/smn/bedrift/regnskap.html",
+  "/nn/sogn-fjordane/bedrift.html",
+  "/nb/sor-norge/bedrift/regnskap.html",
+  "/nb/ostfold-akershus/bedrift/regnskap.html",
+  "/nb/ostlandet/bedrift/regnskap.html",
+  "/nb/bank/bedrift/regnskap/regnskapskontor.html",
+  "/nb/bank/bedrift/regnskap/regnskapsprogram.html",
+  "/nb/bank/bedrift/regnskap/regnskapsforer.html",
+  "/nb/bank/bedrift/regnskap/lonn-personal.html",
+  "/nb/bank/bedrift/regnskap/arsregnskap.html",
+  "/nb/bank/bedrift/regnskap/landbruksregnskap.html",
+  "/nb/bank/bedrift/regnskap/regnskapsprogram/sparebank1-regnskap.html",
+  "/nb/bank/bedrift/regnskap/regnskapsbyra.html",
+  "/nb/bank/bedrift/regnskap/guide.html",
+  "/nb/bank/bedrift/regnskap/kan-jeg-fore-regnskapet-selv.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/bedrift/kundeservice.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/ostlandet/bedrift/kundeservice.html",
+  "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+  "/nb/bank/bedrift/kundeservice/bestill/prisliste.html",
+  "/nb/bank/bedrift/svindel.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 24,
+ "metadata": {
+  "title": "Regnskap | Alt på ett sted | SpareBank 1",
+  "description": "Få alt du trenger for å holde orden på regnskapet – enten du vil gjøre regnskapsføringen selv eller sette bort hele eller deler av jobben til en regnskapsfører.",
+  "canonical": "https://www.sparebank1.no/nb/bank/bedrift/regnskap.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:15.841Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "59c37b789d8cd17f",
+ "sourceProposedSha": null,
+ "archetypeSha": "bcf88da354e79587",
+ "assetsBundled": 3
+}

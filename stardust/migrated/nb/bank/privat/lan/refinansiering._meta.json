@@ -1,0 +1,133 @@
+{
+ "slug": "nb-bank-privat-lan-refinansiering-html",
+ "type": "program",
+ "template": "product",
+ "archetype": "nb-bank-privat-lan-boliglan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+ "outputPath": "nb/bank/privat/lan/refinansiering.html",
+ "deliveredPath": "/nb/bank/privat/lan/refinansiering",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/lan/refinansiering.html",
+ "modules": [
+  "bank-router",
+  "product-hero",
+  "card-rail",
+  "split-media",
+  "faq",
+  "promo-band",
+  "feedback",
+  "cta-band",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "a8b1644f31101e70",
+  "sourceProposedSha": null,
+  "archetypeSha": "ae3d38738877847b",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 44,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/lan/refinansiering.html",
+  "/nb/hallingdal/privat/lan/refinansiering.html",
+  "/nb/helgeland/privat/lan/refinansiering.html",
+  "/nb/lom-skjaak/privat/lan/refinansiering.html",
+  "/nb/nord-norge/privat/lan/refinansiering.html",
+  "/nb/nordmore/privat/lan/refinansiering.html",
+  "/nb/ringerike-hadeland/privat/lan/refinansiering.html",
+  "/nb/smn/privat/lan/refinansiering.html",
+  "/nn/sogn-fjordane/privat/lan/refinansiering.html",
+  "/nb/sor-norge/privat/lan/refinansiering.html",
+  "/nb/ostfold-akershus/privat/lan/refinansiering.html",
+  "/nb/ostlandet/privat/lan/refinansiering.html",
+  "/nb/bank/privat/lan/boliglan/refinansiering-av-boliglan.html",
+  "/nb/bank/privat/lan/refinansiering/refinansiere-forbrukslan.html",
+  "/nb/bank/privat/lan/refinansiering/refinansiering-billan.html",
+  "/nb/bank/privat/kundeservice/lan/jeg-onsker-a-refinansiere-boliglanet.html",
+  "/nb/bank/privat/lan/refinansiering/refinansiere-forbrukslan/refinansiering-kalkulator.html",
+  "/nb/bank/privat/kundeservice/lan/hva-er-refinansiering-forbrukslan.html",
+  "/nb/bank/privat/kundeservice/lan/hva-er-forbrukslan.html",
+  "/nb/bank/privat/kundeservice/lan/hvor-mye-egenkapital-til-bolig.html",
+  "/nb/bank/privat/kundeservice/lan/hvor-mye-kan-jeg-fa-i-boliglan.html",
+  "/nb/bank/privat/kundeservice/lan/hva-menes-med-sikkerhet-i-bolig.html",
+  "/bank/nettbank-privat/boliglan-soknad/start",
+  "/nb/bank/privat/kundeservice/lan/oke-boliglanet.html",
+  "/nb/bank/privat/lan/boliglan/avdragsfrihet.html",
+  "/nb/bank/privat/tips-og-rad/utfordringer-i-privatokonomien.html",
+  "/nb/bank/privat/tips-og-rad/bekymret-for-okonomien.html",
+  "/nb/bank/privat/kundeservice/lan/hva-er-avdragsfrihet.html",
+  "/nb/bank/privat/kundeservice/lan/hvordan-endrer-jeg-trekkdato-pa-lanet.html",
+  "/nb/bank/privat/kundeservice/lan/hvordan-endrer-jeg-konto-som-lanet-trekkes-fra.html",
+  "/nb/bank/privat/lan/forbrukslan/hoy-rente-dyrt-forbrukslan-kredittkort.html",
+  "/nb/bank/privat/kundeservice/lan/lan-uten-sikkerhet.html",
+  "/nb/bank/privat/kundeservice/lan/rad-ved-avslag-pa-refinansiering-forbrukslan.html",
+  "/nb/bank/privat/kundeservice/lan/hva-er-forskjellen-pa-nominell-og-effektiv-rente.html",
+  "/nb/bank/privat/kundeservice/lan/hvor-finner-jeg-info-om-lanet-mitt.html",
+  "/nb/bank/privat/lan/flytte-lan.html",
+  "/nb/bank/privat/tips-og-rad/oppussing.html",
+  "/nb/bank/privat/tips-og-rad/tips-til-enklere-hverdagsokonomi.html",
+  "/nb/bank/privat/tips-og-rad/gjeldsregisteret.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 37,
+ "metadata": {
+  "title": "Refinansiering | Refinansiere boliglån og forbruksgjeld | SpareBank 1",
+  "description": "Vil du refinansiere boliglånet eller samle flere smålån til ett? Her starter du prosessen mot bedre vilkår og en ryddigere økonomi. Søk om refinansiering her!",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/lan/refinansiering.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:34.986Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "a8b1644f31101e70",
+ "sourceProposedSha": null,
+ "archetypeSha": "ae3d38738877847b",
+ "assetsBundled": 3
+}

@@ -1,0 +1,117 @@
+{
+ "slug": "nb-bank-privat-sparing-spare-pa-konto-html",
+ "type": "program",
+ "template": "product",
+ "archetype": "nb-bank-privat-lan-boliglan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+ "outputPath": "nb/bank/privat/sparing/spare-pa-konto.html",
+ "deliveredPath": "/nb/bank/privat/sparing/spare-pa-konto",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/sparing/spare-pa-konto.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "card-rail",
+  "cobranding",
+  "split-media",
+  "content-columns",
+  "rich-text",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "9d52489e95aa9219",
+  "sourceProposedSha": null,
+  "archetypeSha": "ae3d38738877847b",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 28,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/sparing/spare-pa-konto.html",
+  "/nb/hallingdal/privat/sparing/spare-pa-konto.html",
+  "/nb/helgeland/privat/sparing/spare-pa-konto.html",
+  "/nb/lom-skjaak/privat/sparing/spare-pa-konto.html",
+  "/nb/nord-norge/privat/sparing/spare-pa-konto.html",
+  "/nb/nordmore/privat/sparing/spare-pa-konto.html",
+  "/nb/ringerike-hadeland/privat/sparing/spare-pa-konto.html",
+  "/nb/smn/privat/sparing/spare-pa-konto.html",
+  "/nn/sogn-fjordane/privat/sparing/spare-pa-konto.html",
+  "/nb/sor-norge/privat/sparing/spare-pa-konto.html",
+  "/nb/ostfold-akershus/privat/sparing/spare-pa-konto.html",
+  "/nb/ostlandet/privat/sparing/spare-pa-konto.html",
+  "/nb/bank/privat/sparing/spare-pa-konto/sparekonto.html",
+  "/nb/bank/privat/sparing/spare-pa-konto/fastrenteinnskudd.html",
+  "/nb/bank/privat/sparing/spare-pa-konto/bsu.html",
+  "/nb/bank/privat/sparing/spare-pa-konto/bufferkonto.html",
+  "/nb/bank/privat/sparing/spare-pa-konto/mikrosparing.html",
+  "/nb/bank/privat/sparing/spare-pa-konto/lofavor-sparekonto-pluss.html",
+  "/nb/bank/privat/tips-og-rad/spareveileder.html",
+  "/nb/bank/privat/tips-og-rad/ditt-forste-barn.html",
+  "/nb/bank/privat/tips-og-rad/tenaring-og-okonomi.html",
+  "/nb/bank/privat/tips-og-rad/tips-til-enklere-hverdagsokonomi.html",
+  "/nb/bank/privat/sparing/spare-pa-konto/innskuddsgaranti.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 34,
+ "metadata": {
+  "title": "Spare på konto | God rente og fleksibel sparing | SpareBank 1",
+  "description": "Å spare penger på en konto er en sikker og forutsigbar spareform. Uansett sparebehov finner du en konto som passer for deg!",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/sparing/spare-pa-konto.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/student-pa-pc-og-mobil.jpg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:35.766Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "9d52489e95aa9219",
+ "sourceProposedSha": null,
+ "archetypeSha": "ae3d38738877847b",
+ "assetsBundled": 3
+}

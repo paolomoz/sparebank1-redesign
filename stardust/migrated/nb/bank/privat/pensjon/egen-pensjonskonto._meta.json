@@ -1,0 +1,138 @@
+{
+ "slug": "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+ "type": "program",
+ "template": "product",
+ "archetype": "nb-bank-privat-lan-boliglan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+ "outputPath": "nb/bank/privat/pensjon/egen-pensjonskonto.html",
+ "deliveredPath": "/nb/bank/privat/pensjon/egen-pensjonskonto",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/pensjon/egen-pensjonskonto.html",
+ "modules": [
+  "bank-router",
+  "product-hero",
+  "usp",
+  "split-media",
+  "price-terms",
+  "rich-text",
+  "faq",
+  "card-rail",
+  "feedback",
+  "cta-band",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "b3fc927542a2864e",
+  "sourceProposedSha": null,
+  "archetypeSha": "ae3d38738877847b",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 47,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/pensjon/egen-pensjonskonto.html",
+  "/nb/hallingdal/privat/pensjon/egen-pensjonskonto.html",
+  "/nb/helgeland/privat/pensjon/egen-pensjonskonto.html",
+  "/nb/lom-skjaak/privat/pensjon/egen-pensjonskonto.html",
+  "/nb/nord-norge/privat/pensjon/egen-pensjonskonto.html",
+  "/nb/nordmore/privat/pensjon/egen-pensjonskonto.html",
+  "/nb/ringerike-hadeland/privat/pensjon/egen-pensjonskonto.html",
+  "/nb/smn/privat/pensjon/egen-pensjonskonto.html",
+  "/nn/sogn-fjordane/privat/pensjon/egen-pensjonskonto.html",
+  "/nb/sor-norge/privat/pensjon/egen-pensjonskonto.html",
+  "/nb/ostfold-akershus/privat/pensjon/egen-pensjonskonto.html",
+  "/nb/ostlandet/privat/pensjon/egen-pensjonskonto.html",
+  "/privat/forsikring/pensjon/sl/start",
+  "/nb/bank/om-oss/selskaper/sparebank-1-forsikring.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hvilke-andre-spareprofiler-kan-jeg-velge-mellom.html",
+  "/content/dam/SB1/vedlegg/pensjon/Vilkar-Egen-pensjonskonto.pdf",
+  "/content/dam/SB1/vedlegg/pensjon/Viktig-info-sparebank-1-egen-pensjonskonto.pdf",
+  "/nb/bank/bedrift/pensjon/innskuddspensjon/avkastningsrapport-innskuddspensjon-morningstar.html",
+  "/nb/bank/privat/pensjon/lofavor-egen-pensjonskonto.html",
+  "/bank/nettbank-privat/min-sparing/pensjon",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hva-er-innskuddspensjon.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hvem-gjelder-ikke-egenpensjonskonto.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hva-skjer-med-egen-pensjonskonto-bytter-jobb.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hva-er-pensjonskonto.html",
+  "/nb/bank/privat/pensjon/pensjonssparekonto.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/forskjell-mellom-pensjonssparekonto-egen-pensjonskonto.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hvem-betaler-for-egen-pensjonskonto.html",
+  "/nb/bank/privat/pensjon/flytte-pensjonskapitalbevis.html",
+  "/nb/bank/privat/pensjon/ips.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/angrerett-unntak-pensjon.html",
+  "/nb/bank/bedrift/pensjon/innskuddspensjon.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/flyttetid-egen-pensjonskonto.html",
+  "/nb/bank/privat/pensjon/pensjonsordliste.html",
+  "/nb/bank/om-oss/selskaper/sparebank-1-forsikring/kapitalforvaltning.html",
+  "/nb/bank/privat/pensjon/pensjonskalkulator.html",
+  "/nb/bank/privat/pensjon/pensjon-fra-arbeidsgiver.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/sjekk-pensjon-se-hvordan-okonomien-kan-bli-som-pensjonist.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/din-guide-til-livets-lengste-ferie.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/pensjon-mange-havner-i-62-arsfella.html",
+  "/nb/bank/privat/tips-og-rad/spare-til-pensjon.html",
+  "/nb/bank/privat/pensjon/pensjon-skjema.html",
+  "/nb/bank/privat/pensjon/pensjon-utbetaling.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 40,
+ "metadata": {
+  "title": "Egen pensjonskonto | Din pensjonsoversikt | SpareBank 1",
+  "description": "Egen pensjonskonto - din pensjonsoversikt. Samler all din pensjon på ett sted. Gjelder innskuddspensjon og pensjonskapitalbevis. Les mer om egen pensjonskonto\n",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/pensjon/egen-pensjonskonto.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:35.111Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "b3fc927542a2864e",
+ "sourceProposedSha": null,
+ "archetypeSha": "ae3d38738877847b",
+ "assetsBundled": 3
+}

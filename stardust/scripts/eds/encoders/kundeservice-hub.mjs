@@ -17,12 +17,12 @@ function heroAsk(root, ctx) {
   const rows = [[img ? pic(img, ctx) : '', body]];
   if (form) {
     const label = q(form, 'label'); const btn = q(form, 'button'); const note = q(form, '.ask-note, p');
-    rows.push([`<p>${inline(label, ctx).trim()}</p>`, `<p>${esc(txt(btn))}</p>`, `<p>${inline(note, ctx).trim()}</p>`]);
-    ctx.notes.push('hero-ask: chat form (dynamics #6 interim — controls disabled) authored as one row [label][button label][note]; the textarea placeholder repeats the label (@ew-exempt in hero.js)');
+    rows.push([`<p>${inline(label, ctx).trim()}</p><p>${inline(note, ctx).trim()}</p>`, `<p>${esc(txt(btn))}</p>`]);
+    ctx.notes.push('hero-ask: chat form (dynamics #6 interim — controls disabled) authored as a second two-cell row [field label + note][button label]; the textarea placeholder repeats the label (@ew-exempt in hero.js)');
   }
   const parts = [block('hero', ['ask'], rows)]; const blocks = ['hero'];
   const tools = q(root, 'ul.tools, ul[data-slot="tools"]');
-  if (tools) { parts.push(block('cards', ['tools'], cardRows(qa(tools, ':scope > li'), ctx))); blocks.push('cards'); }
+  if (tools) { const rows = cardRows(qa(tools, ':scope > li'), ctx); parts.push(block('cards', ['tools'], rows.some((r) => r[0]) ? rows : rows.map((r) => [r[1]]))); blocks.push('cards'); }
   return { html: section(parts, { style: hubStyle(root) }), blocks };
 }
 

@@ -1,0 +1,133 @@
+{
+ "slug": "nb-bank-privat-lan-billan-html",
+ "type": "program",
+ "template": "product",
+ "archetype": "nb-bank-privat-lan-boliglan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+ "outputPath": "nb/bank/privat/lan/billan.html",
+ "deliveredPath": "/nb/bank/privat/lan/billan",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/lan/billan.html",
+ "modules": [
+  "bank-router",
+  "product-hero",
+  "usp",
+  "price-terms",
+  "cobranding",
+  "card-rail",
+  "shortcuts",
+  "split-media",
+  "faq",
+  "feedback",
+  "cta-band",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "0e20d2448245b2ce",
+  "sourceProposedSha": null,
+  "archetypeSha": "ae3d38738877847b",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 41,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/lan/billan.html",
+  "/nb/hallingdal/privat/lan/billan.html",
+  "/nb/helgeland/privat/lan/billan.html",
+  "/nb/lom-skjaak/privat/lan/billan.html",
+  "/nb/nord-norge/privat/lan/billan.html",
+  "/nb/nordmore/privat/lan/billan.html",
+  "/nb/ringerike-hadeland/privat/lan/billan.html",
+  "/nb/smn/privat/lan/billan.html",
+  "/nn/sogn-fjordane/privat/lan/billan.html",
+  "/nb/sor-norge/privat/lan/billan.html",
+  "/nb/ostfold-akershus/privat/lan/billan.html",
+  "/nb/ostlandet/privat/lan/billan.html",
+  "/nb/bank/privat/lan/billan/flytt-billan.html",
+  "/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lofavor-fordeler.html",
+  "/nb/bank/privat/lan/billan/kjope-bil.html",
+  "/nb/bank/privat/lan/billan/selge-bil.html",
+  "/nb/bank/privat/lan/billan/bytte-bil.html",
+  "/bank/nettbank-privat/finansiering/lan",
+  "/nb/bank/privat/lan/billan/finansieringsbevis-billan.html",
+  "/nb/bank/privat/forsikring/kundefordeler/samlerabatt.html",
+  "/nb/bank/privat/lan/billan/billanskalkulator.html",
+  "/nb/bank/privat/kundeservice/lan/billaan-eller-boliglaan.html",
+  "/nb/bank/privat/kundeservice/lan/egenkapital-billaan.html",
+  "/nb/bank/privat/kundeservice/lan/hvor-mye-billan-kan-jeg-fa.html",
+  "/nb/bank/privat/kundeservice/lan/kan-jeg-nedbetale-ekstra-laanet.html",
+  "/nb/bank/privat/kundeservice/lan/endre-forfallsdato-billaan.html",
+  "/nb/bank/privat/kundeservice/lan/hvordan-kan-jeg-innfri-billanet.html",
+  "/nb/bank/privat/kundeservice/lan/nedbetaling-billaan.html",
+  "/nb/bank/privat/kundeservice/lan/billaan-heftelser.html",
+  "/nb/bank/privat/lan/billan/billan-uten-egenkapital.html",
+  "/nb/bank/privat/lan/andre-kjoretoy.html",
+  "/nb/bank/privat/lan/andre-kjoretoy/lofavor-kjoretoy.html",
+  "/nb/bank/privat/lan/billan/mine-kjoretoy.html",
+  "/nb/bank/privat/forsikring/betalingsforsikring/lan-kjoretoy.html",
+  "/nb/bank/privat/tips-og-rad/betale-lan-eller-spare.html",
+  "/nb/bank/privat/tips-og-rad/gjeldsregisteret.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 37,
+ "metadata": {
+  "title": "Billån | Søk lån til både ny og brukt bil | SpareBank 1",
+  "description": "Skal du kjøpe bil? Hos oss kan du få billån uten egenkapital, enten du kjøper ny eller brukt bil. Søk om billån på nett, og få svar med en gang.",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/lan/billan.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/lo-favor-familie-dame-barn-bil.jpg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:34.330Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "0e20d2448245b2ce",
+ "sourceProposedSha": null,
+ "archetypeSha": "ae3d38738877847b",
+ "assetsBundled": 3
+}

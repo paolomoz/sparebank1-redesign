@@ -30,7 +30,7 @@
   "designJsonSha": "356d124b47aa82e7",
   "sourceCurrentSha": "591971baa69a3ec4",
   "sourceProposedSha": null,
-  "archetypeSha": "080cbbc6eb99a0fa",
+  "archetypeSha": "51cf72edd9aa8ee5",
   "canonShas": {
    "header": "7b575d4a8a06908b",
    "footer": "a71bffa1aee4b031",
@@ -45,7 +45,7 @@
   },
   {
    "kind": "bounce-links",
-   "count": 23,
+   "count": 24,
    "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
   }
  ],
@@ -65,6 +65,7 @@
   "/nb/ostfold-akershus/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
   "/nb/ostlandet/bedrift/kundeservice/bm-andre-sporsmal.html",
   "/nb/bank/bedrift/betaling/fakturering/efaktura.html",
+  "/nb/bank/bedrift/betaling/fakturering.html",
   "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
   "/nb/sor-norge/bedrift/kundeservice.html",
   "/nb/nord-norge/privat/kundeservice/kontakt.html",
@@ -85,21 +86,23 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 11,
+   "media": 12,
    "narrowest": 400
   }
  },
  "gatesPassed": [
   "mobile-adapt",
   "one-h1",
-  "placeholder-gate"
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
  ],
- "contentCheck": "FAIL\nnb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html: content-check FAIL — checked text 46, hrefs 181, imgs 3; missing text 0, hrefs 1, imgs 0\n  HREF  main /nb/bank/bedrift/betaling/fakturering.html | Les mer om betalingstjenester\n",
- "migratedAt": "2026-09-14T20:59:48.983Z",
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:28.866Z",
  "designMdSha": "9eaced02fd2340e7",
  "designJsonSha": "356d124b47aa82e7",
  "sourceCurrentSha": "591971baa69a3ec4",
  "sourceProposedSha": null,
- "archetypeSha": "080cbbc6eb99a0fa",
+ "archetypeSha": "51cf72edd9aa8ee5",
  "assetsBundled": 3
 }

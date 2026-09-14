@@ -1,0 +1,93 @@
+{
+ "slug": "nb-bank-privat-forsikring-meld-skade-html",
+ "type": "form",
+ "template": "tool",
+ "archetype": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+ "outputPath": "nb/bank/privat/forsikring/meld-skade.html",
+ "deliveredPath": "/nb/bank/privat/forsikring/meld-skade",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/forsikring/meld-skade.html",
+ "modules": [
+  "page-title",
+  "card-grid",
+  "faq",
+  "split-media",
+  "feedback"
+ ],
+ "chrome": {
+  "router": false,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "d0a91c419133c353",
+  "sourceProposedSha": null,
+  "archetypeSha": "0300e68e6a123ccd",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 8,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+  "/nb/bank/privat/forsikring/bilforsikring/skademeldingsskjema.html",
+  "/nb/bank/privat/kundeservice/forsikring/forsinket-bagasje-pa-reise.html",
+  "/nb/bank/privat/kundeservice/forsikring/hva-er-egenandel-og-hvor-mye-bor-jeg-velge.html",
+  "/nb/bank/privat/forsikring/bilforsikring/bonus-bilforsikring.html",
+  "/nb/bank/privat/forsikring/bilforsikring/bilreparasjon-rabatt.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 35,
+ "metadata": {
+  "title": "Meld skade, tap eller sykdom | SpareBank 1",
+  "description": "Fortell hva som har skjedd og følg veiledningen hos forsikringsselskapet vårt Fremtind.",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/forsikring/meld-skade.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:20.618Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "d0a91c419133c353",
+ "sourceProposedSha": null,
+ "archetypeSha": "0300e68e6a123ccd",
+ "assetsBundled": 3
+}

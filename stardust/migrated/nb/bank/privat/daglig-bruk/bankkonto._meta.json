@@ -1,0 +1,113 @@
+{
+ "slug": "nb-bank-privat-daglig-bruk-bankkonto-html",
+ "type": "program",
+ "template": "product",
+ "archetype": "nb-bank-privat-lan-boliglan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+ "outputPath": "nb/bank/privat/daglig-bruk/bankkonto.html",
+ "deliveredPath": "/nb/bank/privat/daglig-bruk/bankkonto",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/bankkonto.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "card-rail",
+  "shortcuts",
+  "feedback",
+  "cta-band",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "dbb0a2eda4c37089",
+  "sourceProposedSha": null,
+  "archetypeSha": "ae3d38738877847b",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 26,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/daglig-bruk/bankkonto.html",
+  "/nb/hallingdal/privat/daglig-bruk/bankkonto.html",
+  "/nb/helgeland/privat/daglig-bruk/bankkonto.html",
+  "/nb/lom-skjaak/privat/daglig-bruk/bankkonto.html",
+  "/nb/nord-norge/privat/daglig-bruk/bankkonto.html",
+  "/nb/nordmore/privat/daglig-bruk/bankkonto.html",
+  "/nb/ringerike-hadeland/privat/daglig-bruk/bankkonto.html",
+  "/nb/smn/privat/daglig-bruk/bankkonto.html",
+  "/nn/sogn-fjordane/privat/daglig-bruk/bankkonto.html",
+  "/nb/sor-norge/privat/daglig-bruk/bankkonto.html",
+  "/nb/ostfold-akershus/privat/daglig-bruk/bankkonto.html",
+  "/nb/ostlandet/privat/daglig-bruk/bankkonto.html",
+  "/nb/bank/privat/daglig-bruk/bankkonto/brukskonto.html",
+  "/nb/bank/privat/daglig-bruk/bankkonto/regningskonto.html",
+  "/nb/bank/privat/sparing/spare-pa-konto/bufferkonto.html",
+  "/nb/bank/privat/daglig-bruk/bankkonto/depositumskonto.html",
+  "/nb/bank/privat/daglig-bruk/bankkonto/vergemal.html",
+  "/nb/bank/privat/tips-og-rad/tips-til-enklere-hverdagsokonomi.html",
+  "/nb/bank/privat/tips-og-rad/10-rad-for-a-unnga-id-tyveri.html",
+  "/nb/bank/privat/tips-og-rad/sikker-bruk-av-nettbank-og-mobilbank.html",
+  "/nb/bank/privat/tips-og-rad/utfordringer-i-privatokonomien.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 33,
+ "metadata": {
+  "title": "Bankkonto | SpareBank 1",
+  "description": null,
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/bankkonto.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:32.401Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "dbb0a2eda4c37089",
+ "sourceProposedSha": null,
+ "archetypeSha": "ae3d38738877847b",
+ "assetsBundled": 3
+}

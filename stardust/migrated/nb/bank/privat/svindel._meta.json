@@ -1,0 +1,110 @@
+{
+ "slug": "nb-bank-privat-svindel-html",
+ "type": "landing",
+ "template": "category-hub",
+ "archetype": "nb-bank-privat-lan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-html",
+ "outputPath": "nb/bank/privat/svindel.html",
+ "deliveredPath": "/nb/bank/privat/svindel",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/svindel.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "card-grid",
+  "callout",
+  "related-topics",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "21798bf23a8b7d06",
+  "sourceProposedSha": null,
+  "archetypeSha": "bcf88da354e79587",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 23,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/svindel.html",
+  "/nb/hallingdal/privat/svindel.html",
+  "/nb/helgeland/privat/svindel.html",
+  "/nb/lom-skjaak/privat/svindel.html",
+  "/nb/nord-norge/privat/svindel.html",
+  "/nb/nordmore/privat/svindel.html",
+  "/nb/ringerike-hadeland/privat/svindel.html",
+  "/nb/smn/privat/svindel.html",
+  "/nn/sogn-fjordane/privat/svindel.html",
+  "/nb/sor-norge/privat/svindel.html",
+  "/nb/ostfold-akershus/privat/svindel.html",
+  "/nb/ostlandet/privat/svindel.html",
+  "/nb/bank/privat/svindel/utsatt-for-svindel.html",
+  "/nb/bank/privat/svindel/unnga-a-bli-svindlet.html",
+  "/nb/bank/privat/svindel/svindelmetoder.html",
+  "/nb/bank/om-oss/nyheter/advarer-bedrifter-mot-ny-svindelmetode--falsk-faktura-forst---fa.html",
+  "/nb/bank/om-oss/nyheter/investeringssvindel--lokker-deg-med-drommer.html",
+  "/nb/bank/om-oss/nyheter/ikke-glem-sikkerheten.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 32,
+ "metadata": {
+  "title": "Svindel | Sikkerhet | SpareBank 1",
+  "description": "De fleste av oss blir jevnlig utsatt for svindelforsøk, og svindlerne blir stadig mer utspekulerte. Lær mer om hvordan du kan beskytte deg mot svindel her!",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/svindel.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:26.530Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "21798bf23a8b7d06",
+ "sourceProposedSha": null,
+ "archetypeSha": "bcf88da354e79587",
+ "assetsBundled": 3
+}

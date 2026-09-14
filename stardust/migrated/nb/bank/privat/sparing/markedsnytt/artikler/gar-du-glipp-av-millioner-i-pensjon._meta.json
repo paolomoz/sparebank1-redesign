@@ -1,0 +1,93 @@
+{
+ "slug": "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+ "type": "article",
+ "template": "news-article",
+ "archetype": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "outputPath": "nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.html",
+ "deliveredPath": "/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.html",
+ "modules": [
+  "article-header",
+  "article-body",
+  "card-rail"
+ ],
+ "chrome": {
+  "router": false,
+  "market": "privat",
+  "clientlib": "frontend"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "572aa6d580f2e7df",
+  "sourceProposedSha": null,
+  "archetypeSha": "f7a218a9f0599fd0",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [
+  ".badge (local pill; canon lacks DESIGN.md § Badges)"
+ ],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 8,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/privat/sparing/markedsnytt/artikler/sjekk-pensjon-se-hvordan-okonomien-kan-bli-som-pensjonist.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/din-guide-til-livets-lengste-ferie.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/pensjon-mange-havner-i-62-arsfella.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/pensjon-smarte-kvinner-tar-smarte-valg.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/millionforskjellen-du-ikke-vil-ga-glipp-av.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 35,
+ "metadata": {
+  "title": "Går du glipp av millioner i pensjon? – Mange får seg en overraskelse | SpareBank 1",
+  "description": "De færreste av oss vet hvor mye arbeidsgiveren vår sparer for oss til pensjon. Forskjellen på de beste og dårligste tjenestepensjonsordningene kan faktisk utgjøre mange millioner kroner den dagen du slutter å jobbe. Har du råd til å la være å sjekke tallene dine?",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/pensjonssak-tjenestepensjon-illustrasjon-markedsnytt-ny.jpg.thumb.1280.2276.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:35.335Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "572aa6d580f2e7df",
+ "sourceProposedSha": null,
+ "archetypeSha": "f7a218a9f0599fd0",
+ "assetsBundled": 3
+}

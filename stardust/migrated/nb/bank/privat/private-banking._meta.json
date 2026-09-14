@@ -1,0 +1,114 @@
+{
+ "slug": "nb-bank-privat-private-banking-html",
+ "type": "landing",
+ "template": "category-hub",
+ "archetype": "nb-bank-privat-lan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-html",
+ "outputPath": "nb/bank/privat/private-banking.html",
+ "deliveredPath": "/nb/bank/privat/private-banking",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/private-banking.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "usp",
+  "split-media",
+  "card-grid",
+  "cta-row",
+  "faq",
+  "static-cards",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "8b5f451b313e1f73",
+  "sourceProposedSha": null,
+  "archetypeSha": "bcf88da354e79587",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 25,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/private-banking.html",
+  "/nb/hallingdal/privat.html",
+  "/nb/helgeland/privat.html",
+  "/nb/lom-skjaak/privat.html",
+  "/nb/nord-norge/privat/private-banking.html",
+  "/nb/nordmore/privat.html",
+  "/nb/ringerike-hadeland/privat.html",
+  "/nb/smn/privat/private-banking.html",
+  "/nn/sogn-fjordane/privat.html",
+  "/nb/sor-norge/privat/private-banking.html",
+  "/nb/ostfold-akershus/privat/private-banking.html",
+  "/nb/ostlandet/privat/private-banking.html",
+  "/nb/bank/privat/daglig-bruk/kredittkort/elite.html",
+  "/nb/bank/privat/kundeservice/private-banking/hva-er-private-banking.html",
+  "/nb/bank/privat/kundeservice/private-banking/hva-ma-til-for-a-bli-private-banking-kunde.html",
+  "/nb/bank/privat/kundeservice/private-banking/hva-er-fordelene-med-private-banking.html",
+  "/nb/bank/privat/kundeservice/private-banking/hva-koster-private-banking.html",
+  "/nb/bank/privat/kundeservice/private-banking/hva-er-forskjellen-pa-private-banking-og-formuesforvaltning.html",
+  "/nb/bank/privat/sparing/investering/aksjehandel.html",
+  "/nb/bank/privat/sparing/spare-i-fond/fondsoversikt.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 33,
+ "metadata": {
+  "title": "Private Banking | SpareBank 1",
+  "description": "Med Private Banking får du hjelp til å bevare og utvikle verdiene dine – i dag og for fremtidige generasjoner.",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/private-banking.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/na-skinner-sola-i-vinduskarmen-mann-vanner-blomster.jpg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:25.340Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "8b5f451b313e1f73",
+ "sourceProposedSha": null,
+ "archetypeSha": "bcf88da354e79587",
+ "assetsBundled": 3
+}

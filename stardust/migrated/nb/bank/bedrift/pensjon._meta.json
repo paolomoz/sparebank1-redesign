@@ -1,0 +1,123 @@
+{
+ "slug": "nb-bank-bedrift-pensjon-html",
+ "type": "landing",
+ "template": "category-hub",
+ "archetype": "nb-bank-privat-lan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-html",
+ "outputPath": "nb/bank/bedrift/pensjon.html",
+ "deliveredPath": "/nb/bank/bedrift/pensjon",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/bedrift/pensjon.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "visual-nav",
+  "split-media",
+  "faq",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "913d6808264b1109",
+  "sourceProposedSha": null,
+  "archetypeSha": "bcf88da354e79587",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 36,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+  "/nb/gudbrandsdal/bedrift/pensjon.html",
+  "/nb/hallingdal/bedrift/pensjon.html",
+  "/nb/helgeland/bedrift/pensjon.html",
+  "/nb/lom-skjaak/bedrift/pensjon.html",
+  "/nb/nord-norge/bedrift/pensjon.html",
+  "/nb/nordmore/bedrift/pensjon.html",
+  "/nb/ringerike-hadeland/bedrift/pensjon.html",
+  "/nb/smn/bedrift/pensjon.html",
+  "/nn/sogn-fjordane/bedrift/pensjon.html",
+  "/nb/sor-norge/bedrift/pensjon.html",
+  "/nb/ostfold-akershus/bedrift/pensjon.html",
+  "/nb/ostlandet/bedrift/pensjon.html",
+  "/nb/bank/bedrift/pensjon/obligatorisk-tjenestepensjon.html",
+  "/nb/bank/bedrift/pensjon/pensjonssparing-bransje.html",
+  "/nb/bank/bedrift/pensjon/flytte-pensjonsavtale.html",
+  "/nb/bank/bedrift/pensjon/mer-tjenestepensjon-et-ansattgode.html",
+  "/nb/bank/bedrift/pensjon/innskuddspensjon.html",
+  "/nb/bank/bedrift/pensjon/hybridpensjon.html",
+  "/nb/bank/bedrift/pensjon/uforepensjon.html",
+  "/nb/bank/bedrift/pensjon/selvstendig-naeringsdrivende-pensjon.html",
+  "/nb/bank/privat/pensjon/pensjonsordliste.html",
+  "/nb/bank/bedrift/kundeservice/bm-pensjon/hva-ma-vi-tilby.html",
+  "/nb/bank/bedrift/kundeservice/bm-pensjon/otp-innskuddspensjon-forskjell.html",
+  "/nb/bank/bedrift/kundeservice/bm-pensjon/hvordan-holder-jeg-oversikt-over-bedriftens-pensjonsavtale.html",
+  "/nb/bank/bedrift/kundeservice/bm-pensjon/hva-skjer-hvis-en-ansatt-slutter.html",
+  "/nb/bank/bedrift/kundeservice/bestill/kontakt-meg-om-pensjon.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/bedrift/kundeservice.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/ostlandet/bedrift/kundeservice.html",
+  "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+  "/nb/bank/bedrift/kundeservice/bestill/prisliste.html",
+  "/nb/bank/bedrift/svindel.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 24,
+ "metadata": {
+  "title": "Pensjon for bedrifter | Spar til pensjon til dine ansatte | SpareBank 1",
+  "description": "Har du ansatte i bedriften din, er du pålagt å spare til pensjon. Det heter obligatorisk tjenestepensjon eller OTP. Velg mellom pensjonsordningene innskuddspensjon eller hybridpensjon.",
+  "canonical": "https://www.sparebank1.no/nb/bank/bedrift/pensjon.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:15.721Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "913d6808264b1109",
+ "sourceProposedSha": null,
+ "archetypeSha": "bcf88da354e79587",
+ "assetsBundled": 3
+}

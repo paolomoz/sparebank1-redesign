@@ -1,0 +1,124 @@
+{
+ "slug": "nb-bank-bedrift-html",
+ "type": "landing",
+ "template": "market-landing",
+ "archetype": "nb-bank-privat-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-html",
+ "outputPath": "nb/bank/bedrift.html",
+ "deliveredPath": "/nb/bank/bedrift",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/bedrift.html",
+ "modules": [
+  "bank-router",
+  "campaign",
+  "quick-links",
+  "split-media",
+  "content-columns",
+  "card-rail",
+  "promo-band",
+  "rich-text",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "551c45e2e6021c80",
+  "sourceProposedSha": null,
+  "archetypeSha": "3eb17a389544ca96",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 35,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+  "/nb/gudbrandsdal/bedrift.html",
+  "/nb/hallingdal/bedrift.html",
+  "/nb/helgeland/bedrift.html",
+  "/nb/lom-skjaak/bedrift.html",
+  "/nb/nord-norge/bedrift.html",
+  "/nb/nordmore/bedrift.html",
+  "/nb/ringerike-hadeland/bedrift.html",
+  "/nb/smn/bedrift.html",
+  "/nn/sogn-fjordane/bedrift.html",
+  "/nb/sor-norge/bedrift.html",
+  "/nb/ostfold-akershus/bedrift.html",
+  "/nb/ostlandet/bedrift.html",
+  "/nb/bank/bedrift/daglig-drift/nettbank-bedrift/oversikt-nettbank-bedrift.html",
+  "/nb/bank/bedrift/innlogging.html",
+  "/nb/bank/bedrift/konto/se-kontoer.html",
+  "/nb/bank/bedrift/kundeservice/verktoy/esignering.html",
+  "/nb/bank/bedrift/bransjer/landbruk.html",
+  "/nb/bank/bedrift/tips-og-rad/lag-og-forening.html",
+  "/nb/bank/bedrift/daglig-drift/mobilbank-bedrift.html",
+  "/nb/bank/bedrift/regnskap/regnskapsprogram/sparebank1-regnskap.html",
+  "/nb/bank/bedrift/svindel.html",
+  "/nb/bank/bedrift/starte-bedrift/kundehistorier/osten-som-skaper-stolthet-i-bygda.html",
+  "/nb/bank/bedrift/starte-bedrift/kundehistorier/grundereventyret-sorrisniva.html",
+  "/nb/bank/bedrift/starte-bedrift/kundehistorier/fra-juss-til-gjester.html",
+  "/nb/bank/bedrift/starte-bedrift/kundehistorier.html",
+  "/nb/bank/bedrift/kundeservice/bestill.html",
+  "/nb/bank/bedrift/daglig-drift/nettbank-bedrift.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/bedrift/kundeservice.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/ostlandet/bedrift/kundeservice.html",
+  "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+  "/nb/bank/bedrift/kundeservice/bestill/prisliste.html",
+  "/nb/bank/privat/innlogging.html"
+ ],
+ "linksRewritten": 28,
+ "metadata": {
+  "title": "Bedrift | SpareBank 1",
+  "description": "Du får en bank som kjenner det lokale markedet, og som alltid er her for å gi deg god hjelp i viktige avgjørelser.",
+  "canonical": null,
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:28.079Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "551c45e2e6021c80",
+ "sourceProposedSha": null,
+ "archetypeSha": "3eb17a389544ca96",
+ "assetsBundled": 3
+}

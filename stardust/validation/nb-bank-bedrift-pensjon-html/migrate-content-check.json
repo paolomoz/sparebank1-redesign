@@ -1,0 +1,14 @@
+{
+ "slug": "nb-bank-bedrift-pensjon-html",
+ "file": "stardust/migrated/nb/bank/bedrift/pensjon.html",
+ "checked": {
+  "text": 72,
+  "href": 191,
+  "img": 10
+ },
+ "miss": {
+  "text": [],
+  "href": [],
+  "img": []
+ }
+}

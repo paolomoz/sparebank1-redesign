@@ -1,0 +1,117 @@
+{
+ "slug": "nb-bank-bedrift-lan-finansiering-html",
+ "type": "landing",
+ "template": "category-hub",
+ "archetype": "nb-bank-privat-lan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-html",
+ "outputPath": "nb/bank/bedrift/lan-finansiering.html",
+ "deliveredPath": "/nb/bank/bedrift/lan-finansiering",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "visual-nav",
+  "split-media",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "b90d7d192a316c71",
+  "sourceProposedSha": null,
+  "archetypeSha": "bcf88da354e79587",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 31,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+  "/nb/gudbrandsdal/bedrift/lan-finansiering.html",
+  "/nb/hallingdal/bedrift/lan-finansiering.html",
+  "/nb/helgeland/bedrift/lan-finansiering.html",
+  "/nb/lom-skjaak/bedrift/lan-finansiering.html",
+  "/nb/nord-norge/bedrift/lan-finansiering.html",
+  "/nb/nordmore/bedrift/lan-finansiering.html",
+  "/nb/ringerike-hadeland/bedrift/lan-finansiering.html",
+  "/nb/smn/bedrift/lan-finansiering.html",
+  "/nn/sogn-fjordane/bedrift/lan-finansiering.html",
+  "/nb/sor-norge/bedrift/lan-finansiering.html",
+  "/nb/ostfold-akershus/bedrift/lan-finansiering.html",
+  "/nb/ostlandet/bedrift/lan-finansiering.html",
+  "/nb/bank/bedrift/starte-bedrift/finansiering.html",
+  "/nb/bank/bedrift/lan-finansiering/gronne-bedriftslan.html",
+  "/nb/bank/bedrift/lan-finansiering/bankgarantier.html",
+  "/nb/bank/bedrift/lan-finansiering/byggelan.html",
+  "/nb/bank/bedrift/lan-finansiering/billan-bedrift.html",
+  "/nb/bank/bedrift/lan-finansiering/vekstgaranti.html",
+  "/nb/bank/bedrift/lan-finansiering/driftskredittforlandbruket.html",
+  "/nb/bank/bedrift/lan-finansiering/factoring.html",
+  "/nb/bank/bedrift/lan-finansiering/finansieringsguiden.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/bedrift/kundeservice.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/ostlandet/bedrift/kundeservice.html",
+  "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+  "/nb/bank/bedrift/kundeservice/bestill/prisliste.html",
+  "/nb/bank/bedrift/svindel.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 27,
+ "metadata": {
+  "title": "Finansiering | SpareBank 1",
+  "description": "Vi hjelper deg med å finne finansieringen som passer best for din bedrift.",
+  "canonical": "https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:15.607Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "b90d7d192a316c71",
+ "sourceProposedSha": null,
+ "archetypeSha": "bcf88da354e79587",
+ "assetsBundled": 3
+}

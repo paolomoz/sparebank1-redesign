@@ -12,6 +12,7 @@
  "modules": [
   "article-header",
   "article-body",
+  "quote",
   "card-rail"
  ],
  "chrome": {
@@ -29,7 +30,7 @@
   "designJsonSha": "356d124b47aa82e7",
   "sourceCurrentSha": "fd64c208aa758a4a",
   "sourceProposedSha": null,
-  "archetypeSha": "c9dee84f13641aed",
+  "archetypeSha": "f7a218a9f0599fd0",
   "canonShas": {
    "header": "7b575d4a8a06908b",
    "footer": "a71bffa1aee4b031",
@@ -71,21 +72,23 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 11,
+   "media": 13,
    "narrowest": 400
   }
  },
  "gatesPassed": [
   "mobile-adapt",
   "one-h1",
-  "placeholder-gate"
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
  ],
- "contentCheck": "FAIL\nnb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html: content-check FAIL — checked text 74, hrefs 60, imgs 13; missing text 0, hrefs 0, imgs 1\n  IMG   main Thomas_Allan_Nygaard.JPG.thumb.768.768.jpg\n",
- "migratedAt": "2026-09-14T20:59:50.460Z",
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:31.289Z",
  "designMdSha": "9eaced02fd2340e7",
  "designJsonSha": "356d124b47aa82e7",
  "sourceCurrentSha": "fd64c208aa758a4a",
  "sourceProposedSha": null,
- "archetypeSha": "c9dee84f13641aed",
+ "archetypeSha": "f7a218a9f0599fd0",
  "assetsBundled": 3
 }

@@ -185,7 +185,7 @@ async function migrateOne(p, log) {
 /* ---------- run ---------- */
 const want = args.filter((a) => !a.startsWith('--') && a !== PIN);
 const inScope = state.pages.filter((p) => (want.length ? want.includes(p.slug) : (args.includes('--all') || ['directed', 'prototyped', 'approved', 'migrated'].includes(p.status))) && (args.includes('--all') || !p.stale));
-console.log(`migrate: ${inScope.length} pages in scope (${inScope.filter((p) => p.status === 'approved').length} Path A, ${inScope.filter((p) => p.status !== 'approved').length} Path A′)`);
+console.log(`migrate: ${inScope.length} pages in scope (${inScope.filter((p) => (types.types[p.archetypeFamily]?.archetype === p.slug)).length} Path A, ${inScope.filter((p) => types.types[p.archetypeFamily]?.archetype !== p.slug).length} Path A′)`);
 const results = [];
 for (const p of inScope) {
   try { const r = await migrateOne(p); results.push(r); console.log(`${r.status.padEnd(12)} ${r.renderBranch || ''} ${p.slug}${r.broken ? ` (bounce links ${r.broken})` : ''}${r.check && r.check.startsWith('FAIL') ? `\n${r.check}` : ''}`); }

@@ -1,0 +1,135 @@
+{
+ "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+ "type": "program",
+ "template": "product",
+ "archetype": "nb-bank-privat-lan-boliglan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+ "outputPath": "nb/bank/privat/daglig-bruk/mobilbank.html",
+ "deliveredPath": "/nb/bank/privat/daglig-bruk/mobilbank",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/mobilbank.html",
+ "modules": [
+  "bank-router",
+  "product-hero",
+  "promo-band",
+  "content-columns",
+  "guide-list",
+  "split-media",
+  "topic-list",
+  "faq",
+  "card-rail",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "d79f31a3b22f8110",
+  "sourceProposedSha": null,
+  "archetypeSha": "ae3d38738877847b",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 44,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/daglig-bruk/mobilbank.html",
+  "/nb/hallingdal/privat/daglig-bruk/mobilbank.html",
+  "/nb/helgeland/privat/daglig-bruk/mobilbank.html",
+  "/nb/lom-skjaak/privat/daglig-bruk/mobilbank.html",
+  "/nb/nord-norge/privat/daglig-bruk/mobilbank.html",
+  "/nb/nordmore/privat/daglig-bruk/mobilbank.html",
+  "/nb/ringerike-hadeland/privat/daglig-bruk/mobilbank.html",
+  "/nb/smn/privat/daglig-bruk/mobilbank.html",
+  "/nn/sogn-fjordane/privat/daglig-bruk/mobilbank.html",
+  "/nb/sor-norge/privat/daglig-bruk/mobilbank.html",
+  "/nb/ostfold-akershus/privat/daglig-bruk/mobilbank.html",
+  "/nb/ostlandet/privat/daglig-bruk/mobilbank.html",
+  "/nb/bank/privat/daglig-bruk/mobilbank/mobilbank-for-barn.html",
+  "/nb/bank/privat/sparing/investering.html",
+  "/nb/bank/privat/pensjon/min-pensjon.html",
+  "/nb/bank/privat/lan/boliglan/min-bolig.html",
+  "/nb/bank/privat/lan/billan/mine-kjoretoy.html",
+  "/nb/bank/privat/daglig-bruk/mobilbank/best-i-test-mobilbank.html",
+  "/nb/bank/privat/daglig-bruk/mobilbank/samle-kontoer-pa-ett-sted.html",
+  "/nb/bank/privat/daglig-bruk/mobilbank/oversikt-usikret-gjeld.html",
+  "/nb/bank/privat/daglig-bruk/betaling/avtalegiro-og-efaktura.html",
+  "/nb/bank/privat/kundeservice/mobil/fakturaskanner.html",
+  "/nb/bank/privat/sparing/spare-pa-konto/mikrosparing.html",
+  "/nb/bank/privat/kundeservice/mobil/hvordan-logge-inn-i-mobilbank.html",
+  "/nb/bank/privat/kundeservice/mobil/hva-er-aldersgrensen-for-mobilbank.html",
+  "/nb/bank/privat/kundeservice/nettbank/glemt-passord-bankid.html",
+  "/nb/bank/privat/kundeservice/mobil/glemt-kode-mobilbank-barn.html",
+  "/nb/bank/privat/kundeservice/kort/jeg-husker-ikke-pin-koden.html",
+  "/nb/bank/privat/kundeservice/kort/kredittkort-jeg-husker-ikke-pin-koden-min--hva-gjor-jeg-.html",
+  "/nb/bank/privat/kundeservice/mobil/endre-pin-kode-mobilbank.html",
+  "/nb/bank/privat/kundeservice/mobil/mobilbank-kan-jeg-bruke-mobilbank-pa-apple-watch.html",
+  "/nb/bank/privat/kundeservice/mobil/hva-skal-jeg-gjore-hvis-jeg-mister-telefonen-min.html",
+  "/nb/bank/privat/daglig-bruk/mobilbank/sms-varsel.html",
+  "/nb/bank/privat/kundeservice/mobil/hvordan-sette-opp-pushvarsel-i-mobilbank.html",
+  "/nb/bank/privat/kundeservice/mobil/hvilke-telefoner-fungerer-mobilbanken-pa.html",
+  "/nb/bank/privat/tips-og-rad/sikker-bruk-av-nettbank-og-mobilbank.html",
+  "/nb/bank/privat/kundeservice/mobil/er-det-trygt-a-bruke-mobilbanken.html",
+  "/nb/bank/privat/kundeservice/mobil/koster-det-noe-a-bruke-mobilbanken.html",
+  "/nb/bank/privat/daglig-bruk/nettbank.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 37,
+ "metadata": {
+  "title": "Mobilbank | Nettbank på mobil | Enklere privatøkonomi | SpareBank 1",
+  "description": "Mobilbanken gjør det enkelt og raskt å sjekke saldo, betale regninger og få full oversikt over din økonomi. Du vil ha banken rett i lomma! ",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/mobilbank.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/kampanjer/mobilbank/2024/16x9-norges beste.jpg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:32.943Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "d79f31a3b22f8110",
+ "sourceProposedSha": null,
+ "archetypeSha": "ae3d38738877847b",
+ "assetsBundled": 3
+}

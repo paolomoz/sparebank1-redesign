@@ -1,0 +1,110 @@
+{
+ "slug": "nb-bank-om-oss-html",
+ "type": "landing",
+ "template": "market-landing",
+ "archetype": "nb-bank-privat-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-html",
+ "outputPath": "nb/bank/om-oss.html",
+ "deliveredPath": "/nb/bank/om-oss",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/om-oss.html",
+ "modules": [
+  "bank-router",
+  "campaign",
+  "card-rail",
+  "rich-text",
+  "split-media",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "om-oss",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "d35d5f45a828577c",
+  "sourceProposedSha": null,
+  "archetypeSha": "3eb17a389544ca96",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 23,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/om-oss/om-banken.html",
+  "/nb/gudbrandsdal/om-oss.html",
+  "/nb/hallingdal/om-oss.html",
+  "/nb/helgeland/om-oss.html",
+  "/nb/lom-skjaak/om-oss.html",
+  "/nb/nord-norge/om-oss.html",
+  "/nb/nordmore/om-oss.html",
+  "/nb/ringerike-hadeland/om-oss.html",
+  "/nb/smn/om-oss.html",
+  "/nn/sogn-fjordane/om-oss.html",
+  "/nb/sor-norge/om-oss.html",
+  "/nb/ostfold-akershus/om-oss.html",
+  "/nb/ostlandet/om-oss.html",
+  "/nb/bank/om-oss/om-banken/om-sparebank-1-alliansen.html",
+  "/nb/bank/om-oss/nyheter/advarer-bedrifter-mot-ny-svindelmetode--falsk-faktura-forst---fa.html",
+  "/nb/bank/om-oss/nyheter/sann-far-du-bedre-oversikt-over-boligutgiftene-dine.html",
+  "/nb/bank/om-oss/nyheter/investeringssvindel--lokker-deg-med-drommer.html",
+  "/nb/bank/om-oss/nyheter/ikke-glem-sikkerheten.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/ostlandet/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 31,
+ "metadata": {
+  "title": "Om oss | SpareBank 1",
+  "description": null,
+  "canonical": null,
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:30.344Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "d35d5f45a828577c",
+ "sourceProposedSha": null,
+ "archetypeSha": "3eb17a389544ca96",
+ "assetsBundled": 3
+}

@@ -1,0 +1,90 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+ "type": "article",
+ "template": "news-article",
+ "archetype": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "outputPath": "nb/bank/om-oss/nyheter/bank-regnskap-nerderiket.html",
+ "deliveredPath": "/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket.html",
+ "modules": [
+  "article-header",
+  "article-body",
+  "quote",
+  "story-block"
+ ],
+ "chrome": {
+  "router": false,
+  "market": "om-oss",
+  "clientlib": "frontend"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "306d7b15a29ac5b3",
+  "sourceProposedSha": null,
+  "archetypeSha": "f7a218a9f0599fd0",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [
+  ".badge (local pill; canon lacks DESIGN.md § Badges)"
+ ],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 4,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/regnskap/regnskapsprogram/sparebank1-regnskap.html",
+  "/nb/bank/bedrift/kundeservice/bestill/kontakt-meg-om-bank-regnskap.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 21,
+ "metadata": {
+  "title": "Regnskapet fikser jeg selv | SpareBank 1",
+  "description": "Gro Katarina Andorsen er patentrådgiver av yrke, og glødende opptatt av å bidra til at kundene tar bedre vare på verdiene sine. Sine egne verdier får hun god hjelp av regnskapsfører Judith i SpareBank 1.&nbsp;\n&nbsp;\nTidlig i 2022 starter Gro for seg selv etter mange år som ansatt. Målet med selskapet som får navnet Nerderiket, er å bidra til at små og store teknologibedrifter tar godt vare på de immaterielle verdiene sine. Det vil si alt fra forretningshemmeligheter og interne prosedyrer til personavhengig know how eller fargekombinasjonen i selskapets logo, blant annet.\nMen, som Gro vet godt: Driver du din egen konsulentvirksomhet, går tiden gjerne med til mye annet enn akkurat det som er faget ditt.&nbsp;\n",
+  "canonical": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/foto/story/nerderiket/nerderiket-1-1920x1280.jpg.thumb.1280.2276.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:31.113Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "306d7b15a29ac5b3",
+ "sourceProposedSha": null,
+ "archetypeSha": "f7a218a9f0599fd0",
+ "assetsBundled": 3
+}

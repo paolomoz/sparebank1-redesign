@@ -1,0 +1,111 @@
+{
+ "slug": "nb-bank-privat-daglig-bruk-html",
+ "type": "landing",
+ "template": "category-hub",
+ "archetype": "nb-bank-privat-lan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-html",
+ "outputPath": "nb/bank/privat/daglig-bruk.html",
+ "deliveredPath": "/nb/bank/privat/daglig-bruk",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "visual-nav",
+  "shortcut-row",
+  "related-topics",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "caf482f53087c7c7",
+  "sourceProposedSha": null,
+  "archetypeSha": "bcf88da354e79587",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 24,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/daglig-bruk.html",
+  "/nb/hallingdal/privat/daglig-bruk.html",
+  "/nb/helgeland/privat/daglig-bruk.html",
+  "/nb/lom-skjaak/privat/daglig-bruk.html",
+  "/nb/nord-norge/privat/daglig-bruk.html",
+  "/nb/nordmore/privat/daglig-bruk.html",
+  "/nb/ringerike-hadeland/privat/daglig-bruk.html",
+  "/nb/smn/privat/daglig-bruk.html",
+  "/nn/sogn-fjordane/privat/daglig-bruk.html",
+  "/nb/sor-norge/privat/daglig-bruk.html",
+  "/nb/ostfold-akershus/privat/daglig-bruk.html",
+  "/nb/ostlandet/privat/daglig-bruk.html",
+  "/nb/bank/privat/daglig-bruk/nettbank.html",
+  "/nb/bank/privat/daglig-bruk/betaling.html",
+  "/nb/bank/privat/daglig-bruk/spleis.html",
+  "/nb/bank/privat/tips-og-rad/tips-til-enklere-hverdagsokonomi.html",
+  "/nb/bank/privat/tips-og-rad/10-rad-for-a-unnga-id-tyveri.html",
+  "/nb/bank/privat/tips-og-rad/sikker-bruk-av-nettbank-og-mobilbank.html",
+  "/nb/bank/privat/tips-og-rad/slik-sikrer-du-kortet-ditt.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 39,
+ "metadata": {
+  "title": "Daglig bruk | SpareBank 1",
+  "description": null,
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:16.302Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "caf482f53087c7c7",
+ "sourceProposedSha": null,
+ "archetypeSha": "bcf88da354e79587",
+ "assetsBundled": 3
+}

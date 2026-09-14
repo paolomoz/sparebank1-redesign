@@ -1,0 +1,118 @@
+{
+ "slug": "nb-bank-bedrift-lan-finansiering-leasing-html",
+ "type": "program",
+ "template": "product",
+ "archetype": "nb-bank-privat-lan-boliglan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+ "outputPath": "nb/bank/bedrift/lan-finansiering/leasing.html",
+ "deliveredPath": "/nb/bank/bedrift/lan-finansiering/leasing",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering/leasing.html",
+ "modules": [
+  "bank-router",
+  "product-hero",
+  "usp",
+  "price-terms",
+  "split-media",
+  "content-columns",
+  "faq",
+  "card-rail",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "bedrift",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "1bcdb4e3aaa1a68b",
+  "sourceProposedSha": null,
+  "archetypeSha": "ae3d38738877847b",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 29,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+  "/nb/gudbrandsdal/bedrift/lan-finansiering/leasing.html",
+  "/nb/hallingdal/bedrift/lan-finansiering/leasing.html",
+  "/nb/helgeland/bedrift/lan-finansiering/leasing.html",
+  "/nb/lom-skjaak/bedrift/lan-finansiering/leasing.html",
+  "/nb/nord-norge/bedrift/lan-finansiering/leasing.html",
+  "/nb/nordmore/bedrift/lan-finansiering/leasing.html",
+  "/nb/ringerike-hadeland/bedrift/lan-finansiering/leasing.html",
+  "/nb/smn/bedrift/lan-finansiering/leasing.html",
+  "/nn/sogn-fjordane/bedrift/lan-finansiering/leasing.html",
+  "/nb/sor-norge/bedrift/lan-finansiering/leasing.html",
+  "/nb/ostfold-akershus/bedrift/lan-finansiering/leasing.html",
+  "/nb/ostlandet/bedrift/lan-finansiering/leasing.html",
+  "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/hva-er-forskjellen-pa-lan-og-leasing.html",
+  "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-kjope-utstyret-etter-endt-leieperiode.html",
+  "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/lonner-det-seg-med-lan-eller-leasing.html",
+  "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/hva-er-inkludert-i-prisen-ved-leasing.html",
+  "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/hvor-finner-jeg-fakturakopi-leasing.html",
+  "/nb/bank/bedrift/lan-finansiering/leasing/leasing-bil-bedrift.html",
+  "/nb/bank/bedrift/bedriftsforsikring/kjoretoy-maskinforsikring.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/bedrift/kundeservice.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/ostlandet/bedrift/kundeservice.html",
+  "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+  "/nb/bank/bedrift/kundeservice/bestill/prisliste.html",
+  "/nb/bank/bedrift/svindel.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 25,
+ "metadata": {
+  "title": "Leasing | SpareBank 1",
+  "description": "Bedriften leier kjøretøy, utstyr og maskiner gjennom oss - i stedet for å kjøpe det selv.",
+  "canonical": "https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering/leasing.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:29.899Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "1bcdb4e3aaa1a68b",
+ "sourceProposedSha": null,
+ "archetypeSha": "ae3d38738877847b",
+ "assetsBundled": 3
+}

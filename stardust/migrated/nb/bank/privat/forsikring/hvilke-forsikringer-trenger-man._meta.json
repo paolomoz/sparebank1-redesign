@@ -1,0 +1,112 @@
+{
+ "slug": "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html",
+ "type": "program",
+ "template": "theme",
+ "archetype": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+ "outputPath": "nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+ "deliveredPath": "/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+ "modules": [
+  "product-hero",
+  "card-rail",
+  "split-media",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": false,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "5e896c73c2952eb3",
+  "sourceProposedSha": null,
+  "archetypeSha": "df6ef5ef55cfcbcb",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 27,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man/ung.html",
+  "/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man/samboer.html",
+  "/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man/familie.html",
+  "/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man/eldre.html",
+  "/nb/bank/privat/kundeservice/forsikring/dobbel-forsikring.html",
+  "/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man/ikke.html",
+  "/nb/bank/privat/tips-og-rad/ditt-forste-barn.html",
+  "/nb/bank/privat/tips-og-rad/tips-til-enklere-hverdagsokonomi.html",
+  "/nb/bank/privat/tips-og-rad/forste-bolig.html",
+  "/nb/bank/privat/tips-og-rad/arbeidsledig.html",
+  "/nb/gudbrandsdal/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+  "/nb/hallingdal/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+  "/nb/helgeland/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+  "/nb/lom-skjaak/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+  "/nb/nord-norge/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+  "/nb/nordmore/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+  "/nb/ringerike-hadeland/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+  "/nb/smn/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+  "/nn/sogn-fjordane/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+  "/nb/sor-norge/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+  "/nb/ostfold-akershus/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+  "/nb/ostlandet/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 32,
+ "metadata": {
+  "title": "Hvilke forsikringer trenger jeg? | Sparebank 1 | SpareBank 1",
+  "description": "Hvilke forsikringer bør jeg ha når en har blitt student, stiftet familie eller når barna har flyttet ut? Forsikringer tilpasset din livssituasjon.",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/dame-barn-sykkeltur.jpg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:33.436Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "5e896c73c2952eb3",
+ "sourceProposedSha": null,
+ "archetypeSha": "df6ef5ef55cfcbcb",
+ "assetsBundled": 3
+}

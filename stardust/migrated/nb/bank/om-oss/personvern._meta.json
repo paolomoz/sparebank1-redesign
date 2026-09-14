@@ -1,0 +1,112 @@
+{
+ "slug": "nb-bank-om-oss-personvern-html",
+ "type": "static",
+ "template": "om-oss",
+ "archetype": "nb-bank-om-oss-presse-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-om-oss-presse-html",
+ "outputPath": "nb/bank/om-oss/personvern.html",
+ "deliveredPath": "/nb/bank/om-oss/personvern",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/om-oss/personvern.html",
+ "modules": [
+  "bank-router",
+  "columns-grid",
+  "background-container",
+  "cards",
+  "faq",
+  "section",
+  "table",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "om-oss",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "a409820e9ef1d57e",
+  "sourceProposedSha": null,
+  "archetypeSha": "ff2255ba5b4b6219",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 24,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/bank/om-oss/om-banken.html",
+  "/nb/gudbrandsdal/om-oss/personvern.html",
+  "/nb/hallingdal/om-oss/personvern.html",
+  "/nb/helgeland/om-oss/personvern.html",
+  "/nb/lom-skjaak/om-oss/personvern.html",
+  "/nb/nord-norge/om-oss/personvern.html",
+  "/nb/nordmore/om-oss/personvern.html",
+  "/nb/ringerike-hadeland/om-oss/personvern.html",
+  "/nb/smn/om-oss/personvern.html",
+  "/nn/sogn-fjordane/om-oss/personvern.html",
+  "/nb/sor-norge/om-oss/personvern.html",
+  "/nb/ostfold-akershus/om-oss/personvern.html",
+  "/nb/ostlandet/om-oss/personvern.html",
+  "/nb/bank/om-oss/om-banken/om-sparebank-1-alliansen.html",
+  "/nb/bank/om-oss/personvern/kontakt.html",
+  "/content/dam/SB1/vedlegg/veiledninger/Personvernerklaring.pdf",
+  "/content/dam/SB1/vedlegg/veiledninger/Privacy-policy.pdf",
+  "/nb/bank/om-oss/personvern/hvorfor-behandler-vi-personopplysninger.html",
+  "/nb/bank/om-oss/personvern/informasjonskapsler-vi-bruker.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/ostlandet/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 27,
+ "metadata": {
+  "title": "Personvern | SpareBank 1",
+  "description": null,
+  "canonical": "https://www.sparebank1.no/nb/bank/om-oss/personvern.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 11,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:31.688Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "a409820e9ef1d57e",
+ "sourceProposedSha": null,
+ "archetypeSha": "ff2255ba5b4b6219",
+ "assetsBundled": 3
+}

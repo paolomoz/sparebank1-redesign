@@ -7,30 +7,8 @@
   "img": 4
  },
  "miss": {
-  "text": [
-   {
-    "r": "main",
-    "t": "Slik aktiverer du EHF Mottak"
-   },
-   {
-    "r": "main",
-    "t": "Gå til Markedsplass og velg Moduler."
-   },
-   {
-    "r": "main",
-    "t": "Under Utvidelser trykker du Aktiver på EHF Mottak for å kunne motta EHF."
-   },
-   {
-    "r": "main",
-    "t": "Merk: Har du aktivert EHF i et annet regnskapsprogram, må du deaktivere der før du kan akt"
-   }
-  ],
+  "text": [],
   "href": [],
-  "img": [
-   {
-    "r": "main",
-    "s": "regnskapsprogram-ehf-mottak.png"
-   }
-  ]
+  "img": []
  }
 }

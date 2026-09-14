@@ -29,7 +29,7 @@
   "designJsonSha": "356d124b47aa82e7",
   "sourceCurrentSha": "5bac44c76449cbfe",
   "sourceProposedSha": null,
-  "archetypeSha": "080cbbc6eb99a0fa",
+  "archetypeSha": "51cf72edd9aa8ee5",
   "canonShas": {
    "header": "7b575d4a8a06908b",
    "footer": "a71bffa1aee4b031",
@@ -89,21 +89,23 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 11,
+   "media": 12,
    "narrowest": 400
   }
  },
  "gatesPassed": [
   "mobile-adapt",
   "one-h1",
-  "placeholder-gate"
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
  ],
- "contentCheck": "FAIL\nnb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html: content-check FAIL — checked text 48, hrefs 174, imgs 2; missing text 0, hrefs 1, imgs 0\n  HREF  main https://nettskjema.fremtind.no/skjema/katalog/begunstigelse-bm | Begunstigelse - gruppelivsforsikring\n",
- "migratedAt": "2026-09-14T20:59:48.736Z",
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:28.544Z",
  "designMdSha": "9eaced02fd2340e7",
  "designJsonSha": "356d124b47aa82e7",
  "sourceCurrentSha": "5bac44c76449cbfe",
  "sourceProposedSha": null,
- "archetypeSha": "080cbbc6eb99a0fa",
+ "archetypeSha": "51cf72edd9aa8ee5",
  "assetsBundled": 3
 }

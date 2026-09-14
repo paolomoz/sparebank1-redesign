@@ -1,0 +1,146 @@
+{
+ "slug": "nb-bank-privat-pensjon-html",
+ "type": "landing",
+ "template": "category-hub",
+ "archetype": "nb-bank-privat-lan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-html",
+ "outputPath": "nb/bank/privat/pensjon.html",
+ "deliveredPath": "/nb/bank/privat/pensjon",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/pensjon.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "card-grid",
+  "cobranding",
+  "rich-text",
+  "calculator",
+  "shortcut-row",
+  "split-media",
+  "faq",
+  "related-products",
+  "related-topics",
+  "feedback",
+  "cta-band",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "6e8c1bdcb27aed6f",
+  "sourceProposedSha": null,
+  "archetypeSha": "bcf88da354e79587",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 52,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/pensjon.html",
+  "/nb/hallingdal/privat/pensjon.html",
+  "/nb/helgeland/privat/pensjon.html",
+  "/nb/lom-skjaak/privat/pensjon.html",
+  "/nb/nord-norge/privat/pensjon.html",
+  "/nb/nordmore/privat/pensjon.html",
+  "/nb/ringerike-hadeland/privat/pensjon.html",
+  "/nb/smn/privat/pensjon.html",
+  "/nn/sogn-fjordane/privat/pensjon.html",
+  "/nb/sor-norge/privat/pensjon.html",
+  "/nb/ostfold-akershus/privat/pensjon.html",
+  "/nb/ostlandet/privat/pensjon.html",
+  "/nb/bank/privat/pensjon/pensjonssparekonto.html",
+  "/privat/forsikring/pensjon/kjop/intro",
+  "/nb/bank/privat/pensjon/ips.html",
+  "/nb/bank/privat/pensjon/flytte-pensjonskapitalbevis.html",
+  "/nb/bank/privat/pensjon/lofavor-egen-pensjonskonto.html",
+  "/privat/forsikring/pensjon",
+  "/nb/bank/privat/pensjon/ung.html",
+  "/nb/bank/privat/pensjon/voksen.html",
+  "/nb/bank/privat/pensjon/godt-voksen.html",
+  "/nb/bank/privat/pensjon/pensjonist.html",
+  "/nb/bank/privat/pensjon/pensjonsordliste.html",
+  "/nb/bank/om-oss/selskaper/sparebank-1-forsikring.html",
+  "/nb/bank/om-oss/selskaper/sparebank-1-forsikring/kapitalforvaltning.html",
+  "/nb/bank/privat/pensjon/skatt-pa-pensjon.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/skatt-pa-pensjon.html",
+  "/nb/bank/privat/pensjon/pensjon-utbetaling.html",
+  "/nb/bank/privat/pensjon/pensjon-fra-arbeidsgiver.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hva-bestaar-pensjonen-min-av.html",
+  "/nb/bank/privat/pensjon/afp.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/i-hvilken-rekkefolge-bor-jeg-ta-ut-pensjonen-min.html",
+  "/nb/bank/privat/tips-og-rad/spare-til-pensjon.html",
+  "/nb/bank/privat/pensjon/pensjonskalkulator.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hvor-mye-er-full-pensjon.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/forskjell-mellom-pensjonssparekonto-egen-pensjonskonto.html",
+  "/nb/bank/bedrift/pensjon/innskuddspensjon/avkastningsrapport-innskuddspensjon-morningstar.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hvilke-andre-spareprofiler-kan-jeg-velge-mellom.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hva-skjer-med-pensjonen-min-nar-jeg-dor.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/levealdersjustering.html",
+  "/nb/bank/privat/kundeservice/sparing-og-pensjon/hvor-mye-far-jeg-i-pensjon.html",
+  "/nb/bank/privat/pensjon/tilleggssparing-fordel.html",
+  "/nb/bank/bedrift/pensjon/uforepensjon-gjennom-jobben.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/sjekk-pensjon-se-hvordan-okonomien-kan-bli-som-pensjonist.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/din-guide-til-livets-lengste-ferie.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/pensjon-mange-havner-i-62-arsfella.html",
+  "/nb/bank/privat/pensjon/pensjon-skjema.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 34,
+ "metadata": {
+  "title": "Pensjon | Din fremtidige lønn | SpareBank 1",
+  "description": "Din pensjon er pengene du skal leve av i fremtiden. Hvordan skal du forholde deg til din pensjon? Få gode pensjonsråd her.",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/pensjon.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/Boligselgere_diskuterer.jpg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:23.285Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "6e8c1bdcb27aed6f",
+ "sourceProposedSha": null,
+ "archetypeSha": "bcf88da354e79587",
+ "assetsBundled": 3
+}

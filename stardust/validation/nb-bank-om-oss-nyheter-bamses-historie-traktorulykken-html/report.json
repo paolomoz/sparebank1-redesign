@@ -1,0 +1,145 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+ "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/migrated/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html",
+ "at": "2026-09-14T21:25:00.328Z",
+ "contract": {
+  "rootFirst": true,
+  "tokensMissing": [],
+  "inlineScripts": 3
+ },
+ "viewports": {
+  "390": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 10,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 16,
+   "sectionsNoAttr": [],
+   "btnSmall": 0,
+   "btnSmallList": [],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "Bamse7.jpg.thumb.1280.2276.jpg",
+    "area": 81665
+   },
+   "focusRing": true,
+   "docHeight": 5793,
+   "smoke": {
+    "navOpen": true,
+    "ariaExpanded": "true",
+    "navClosedByEsc": true,
+    "ctaReachableByKeyboard": "no-primary-cta",
+    "hovered": true
+   }
+  },
+  "768": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 10,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 16,
+   "sectionsNoAttr": [],
+   "btnSmall": 3,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.@36px \"Bedrift\"",
+    "a.is-active@36px \"Om oss\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "Bamse7.jpg.thumb.1280.2276.jpg",
+    "area": 240000
+   },
+   "focusRing": true,
+   "docHeight": 5067,
+   "smoke": {
+    "ctaReachableByKeyboard": "no-primary-cta",
+    "hovered": true
+   }
+  },
+  "1440": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 10,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 16,
+   "sectionsNoAttr": [],
+   "btnSmall": 3,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.@36px \"Bedrift\"",
+    "a.is-active@36px \"Om oss\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "Bamse4.jpg.thumb.1280.1280.jpg",
+    "area": 307269
+   },
+   "focusRing": true,
+   "docHeight": 4142,
+   "smoke": {
+    "ctaReachableByKeyboard": "no-primary-cta",
+    "hovered": true
+   }
+  }
+ },
+ "mobileNav": {
+  "over": 0,
+  "minFont": 14,
+  "minGap": 0,
+  "collapse": "hamburger"
+ },
+ "pass": true,
+ "issues": [
+  {
+   "sev": "P2",
+   "where": "self-contained",
+   "msg": "3 inline scripts (only the nav a11y script is permitted)"
+  }
+ ]
+}

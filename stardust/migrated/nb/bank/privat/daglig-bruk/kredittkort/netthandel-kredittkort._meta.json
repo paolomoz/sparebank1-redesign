@@ -1,0 +1,109 @@
+{
+ "slug": "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+ "type": "program",
+ "template": "theme",
+ "archetype": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+ "outputPath": "nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+ "deliveredPath": "/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+ "modules": [
+  "bank-router",
+  "product-hero",
+  "split-media",
+  "card-rail",
+  "feedback",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "d657418382b44f8b",
+  "sourceProposedSha": null,
+  "archetypeSha": "df6ef5ef55cfcbcb",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 23,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+  "/nb/hallingdal/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+  "/nb/helgeland/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+  "/nb/lom-skjaak/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+  "/nb/nord-norge/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+  "/nb/nordmore/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+  "/nb/ringerike-hadeland/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+  "/nb/smn/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+  "/nn/sogn-fjordane/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+  "/nb/sor-norge/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+  "/nb/ostfold-akershus/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+  "/nb/ostlandet/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+  "/nb/bank/privat/daglig-bruk/kredittkort/mastercard-ung/rabatt-streaming.html",
+  "/nb/bank/om-oss/selskaper/kredittbanken.html",
+  "/nb/bank/privat/daglig-bruk/kredittkort/svindel-falsk-netthandel-reklamasjon.html",
+  "/nb/bank/privat/daglig-bruk/kredittkort/ferie-kredittkort.html",
+  "/nb/bank/privat/forsikring/innboforsikring/id-tyveri-forsikring.html",
+  "/nb/bank/privat/daglig-bruk/bankkort/reklamasjon.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 34,
+ "metadata": {
+  "title": "Netthandel og kredittkort | SpareBank 1",
+  "description": "Netthandel er tryggere med kredittkort. Betal med Mastercard når du handler på nett, så er du bedre beskyttet mot svindel.",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 16,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:32.829Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "d657418382b44f8b",
+ "sourceProposedSha": null,
+ "archetypeSha": "df6ef5ef55cfcbcb",
+ "assetsBundled": 3
+}

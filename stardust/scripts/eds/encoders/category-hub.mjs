@@ -4,7 +4,7 @@
  * the core overrides below (`visual-nav`, `promo-band`) apply to category-hub pages only.
  */
 import * as L from '../lib.mjs';
-import { cardRows } from '../encoders.mjs';
+import { cardRows, splitMedia } from '../encoders.mjs';
 
 const { q, qa, cls, inline, prose, ctas, pic, block, section, styleOf, paperOf, esc } = L;
 
@@ -56,6 +56,13 @@ function cobranding(root, ctx) {
   return { html: section([block('cobranding', [], rows)], { style: hubStyle(root) }), blocks: ['cobranding'] };
 }
 
+/* ---- split-media (hub): two stacked help columns [photo][h2 + line + pill] → columns (split help), one row per column ---- */
+export function hubSplit(root, ctx) {
+  const cols = qa(root, '.help-col'); if (!cols.length) return splitMedia(root, ctx);
+  const rows = cols.map((c) => { const img = q(c, 'img'); let body = ''; for (const n of c.children) { if (n === img) continue; body += prose({ childNodes: [n] }, ctx); } return [img ? pic(img, ctx) : '', body]; });
+  return { html: section([head(root, ctx), block('columns', ['split', 'help'], rows)], { style: hubStyle(root) }), blocks: ['columns'] };
+}
+
 /* ---- promo-band: one or two promos; family class (`switch` flush under the help columns · `invites` two side by side) rides the block ---- */
 export function hubPromo(root, ctx) {
   const promos = qa(root, 'article.promo, .promo'); if (!promos.length) return null;
@@ -69,12 +76,14 @@ export function hubCallout(root, ctx) {
   const co = q(root, '.callout'); if (!co) return null;
   const variant = cls(co).includes('info') ? 'info' : cls(co).includes('callout-frost') ? 'frost' : 'tip';
   const body = q(co, '.callout-text, .callout-body') || co;
+  ctx.notes.push('lint D1 callout: designed compound (canon icon + tinted paper), Block Collection-shaped single cell of prose — kept as a block like the product archetype');
   return { html: section([head(root, ctx), block('callout', [variant, cls(co).includes('callout-rich') ? 'rich' : null], [[prose(body, ctx)]])], { style: hubStyle(root, cls(root).includes('quick') ? 'quick' : null) }), blocks: ['callout'] };
 }
 
 export default {
   'visual-nav': visualNav,
   callout: hubCallout,
+  'split-media': hubSplit,
   'shortcut-row': shortcutRow,
   cobranding,
   'promo-band': hubPromo,

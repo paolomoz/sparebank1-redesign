@@ -1,0 +1,113 @@
+{
+ "slug": "nb-bank-privat-sparing-html",
+ "type": "landing",
+ "template": "category-hub",
+ "archetype": "nb-bank-privat-lan-html",
+ "renderBranch": "A'",
+ "fidelityTier": "sibling",
+ "archetypeSource": "nb-bank-privat-lan-html",
+ "outputPath": "nb/bank/privat/sparing.html",
+ "deliveredPath": "/nb/bank/privat/sparing",
+ "sourceUrl": "https://www.sparebank1.no/nb/bank/privat/sparing.html",
+ "modules": [
+  "bank-router",
+  "page-title",
+  "visual-nav",
+  "split-media",
+  "calculator",
+  "related-topics",
+  "feedback",
+  "cta-band",
+  "contact-row"
+ ],
+ "chrome": {
+  "router": true,
+  "market": "privat",
+  "clientlib": "base"
+ },
+ "canonShas": {
+  "header": "7b575d4a8a06908b",
+  "footer": "a71bffa1aee4b031",
+  "css": "b128d5c2de6ce444"
+ },
+ "inputs": {
+  "designMdSha": "9eaced02fd2340e7",
+  "designJsonSha": "356d124b47aa82e7",
+  "sourceCurrentSha": "18cbde1fdd43e520",
+  "sourceProposedSha": null,
+  "archetypeSha": "bcf88da354e79587",
+  "canonShas": {
+   "header": "7b575d4a8a06908b",
+   "footer": "a71bffa1aee4b031",
+   "css": "b128d5c2de6ce444"
+  }
+ },
+ "deviations": [],
+ "migrationDecisions": [
+  {
+   "kind": "media-reuse",
+   "note": "photos/illustrations stay on the public www.sparebank1.no DAM (Mode A image-reuse; SVG > 40 KB rasterised at rollout)"
+  },
+  {
+   "kind": "bounce-links",
+   "count": 24,
+   "note": "internal links outside the 100-page roster stay absolute to the source origin (a bounce beats a 404)"
+  }
+ ],
+ "contentDeviations": [],
+ "brokenInternalLinks": [
+  "/nb/gudbrandsdal/privat/sparing.html",
+  "/nb/hallingdal/privat/sparing.html",
+  "/nb/helgeland/privat/sparing.html",
+  "/nb/lom-skjaak/privat/sparing.html",
+  "/nb/nord-norge/privat/sparing.html",
+  "/nb/nordmore/privat/sparing.html",
+  "/nb/ringerike-hadeland/privat/sparing.html",
+  "/nb/smn/privat/sparing.html",
+  "/nn/sogn-fjordane/privat/sparing.html",
+  "/nb/sor-norge/privat/sparing.html",
+  "/nb/ostfold-akershus/privat/sparing.html",
+  "/nb/ostlandet/privat/sparing.html",
+  "/nb/bank/privat/sparing/investering.html",
+  "/nb/bank/privat/pensjon/pensjonssparing.html",
+  "/nb/bank/privat/sparing/hvordan-spare.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/na-kan-du-spare-i-fire-nye-sparebank-1-indeksfond.html",
+  "/nb/bank/privat/sparing/markedsnytt/artikler/markedskommentar-av-alexander-miller-for-august-2026.html",
+  "/nb/bank/privat/tips-og-rad/spareveileder.html",
+  "/nb/bank/privat/tips-og-rad/spare-til-pensjon.html",
+  "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+  "/nb/nord-norge/privat/kundeservice/kontakt.html",
+  "/nb/sor-norge/privat/kundeservice.html",
+  "/nb/bank/privat/innlogging.html",
+  "/nb/bank/bedrift/innlogging.html"
+ ],
+ "linksRewritten": 36,
+ "metadata": {
+  "title": "Spare | Sparing | SpareBank 1",
+  "description": "Det har aldri vært viktigere å spare. Her kan du spare i fond, på konto, til pensjon eller kjøpe aksjer. Start sparing i dag du også! ",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/sparing.html",
+  "ogImage": "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/Spare_dame.svg.thumb.1280.1280.jpg"
+ },
+ "audit": {
+  "adapt": {
+   "viewport": true,
+   "media": 13,
+   "narrowest": 400
+  }
+ },
+ "gatesPassed": [
+  "mobile-adapt",
+  "one-h1",
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
+ ],
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:03:26.416Z",
+ "designMdSha": "9eaced02fd2340e7",
+ "designJsonSha": "356d124b47aa82e7",
+ "sourceCurrentSha": "18cbde1fdd43e520",
+ "sourceProposedSha": null,
+ "archetypeSha": "bcf88da354e79587",
+ "assetsBundled": 3
+}
