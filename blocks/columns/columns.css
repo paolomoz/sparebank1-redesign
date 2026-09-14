@@ -7,7 +7,7 @@
 .columns .container { width: 100%; display: grid; gap: var(--spacing-2xl); }
 .columns .split-row { display: grid; gap: var(--spacing-xl); align-items: center; }
 .columns .col-media { margin: 0; }
-.columns .col-media picture { display: block; }
+.columns .col-media picture { display: block; width: 100%; } /* the pipeline's <picture> must span the column — a flex figure would shrink-wrap it and any `min(100%, …)` on the img resolves against the shrunk picture */
 .columns .col-media img.photo { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: var(--frost-30); border-radius: var(--radius-img-sm) 0 var(--radius-img-sm) 0; }
 .columns .col-text { display: grid; gap: var(--spacing-md); align-content: start; }
 .columns .col-text p { margin: 0; }
