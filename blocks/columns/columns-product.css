@@ -20,6 +20,7 @@ main .columns.cols.spot .col-media img.photo { width: 72px; height: 72px; border
 main .columns.cols .col-text p:has(> img:only-child, > picture:only-child) { line-height: 0; }
 main .columns.cols .col-text p img { width: 100%; max-width: 360px; height: auto; border-radius: var(--radius-img-sm) 0 var(--radius-img-sm) 0; }
 main .columns.cols.spot .col-text p img { width: 72px; height: 72px; object-fit: contain; border-radius: 0; }
+main .columns.cols .col-text h3 { font-family: var(--heading-font-family); font-size: var(--t-title); line-height: 1.2; } /* the canon .col h3 keeps the heading face (title-medium) */
 main .columns.cols .col-caption { display: grid; gap: var(--spacing-md); }
 main .columns.cols .col-caption p { margin: 0; }
 main .columns.cols .col-caption p.button-wrapper { margin-top: var(--spacing-xs); }

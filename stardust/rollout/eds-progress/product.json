@@ -1,0 +1,226 @@
+{
+  "archetype": "nb-bank-privat-lan-boliglan-html",
+  "document": "content/nb/bank/privat/lan/boliglan.html",
+  "worker": "E5 (group product)",
+  "scope": "29 product siblings; the archetype itself is LIVE and untouched (re-conversion verified byte-identical to the core path, entity encoding aside)",
+  "blocks": {
+    "new": [],
+    "reused": [
+      "hero (product, spot, usp)",
+      "breadcrumbs",
+      "cards (choices, tips, cols-1..4, spot, links, bios, guide, steps)",
+      "columns (split, text-first, promo, extra, cols cols-1..4, spot, cobrand)",
+      "accordion (faq, more, disclosure)",
+      "callout (tip, info)",
+      "calculator",
+      "table (compare row-headers)",
+      "embed (auto-blocked from a plain YouTube link)",
+      "feedback",
+      "fragment (router)"
+    ],
+    "sectionStyles": {
+      "core": [
+        "paper-sand",
+        "paper-frost",
+        "tight-top",
+        "intro",
+        "flush-top",
+        "compare",
+        "feedback-band",
+        "lead-first"
+      ],
+      "product": [
+        "price-terms",
+        "shortcut-pills",
+        "topic-list",
+        "video-split",
+        "prose-start"
+      ]
+    }
+  },
+  "iterations": 4,
+  "breakpoints": {
+    "360": {
+      "note": "not re-run (siblings only; the archetype CSS path is untouched — group file rules are all scoped to the new variant tokens)"
+    },
+    "1440": {
+      "pixelPct": 0.74,
+      "heightDelta": -1,
+      "header": 99.96,
+      "footer": 99.9,
+      "pass": true,
+      "note": "archetype regression after the product group CSS — unchanged vs the closed gate (stardust/rollout/gates/nb-bank-privat-lan-boliglan-html-regress-product)"
+    }
+  },
+  "contentDiff": {
+    "red": 0,
+    "justified": []
+  },
+  "ew": {
+    "note": "no block JS changed (table.js row-headers variant reused); every new variant moves authored nodes via the existing block decorators"
+  },
+  "lint": {
+    "davidsModel": "0 🔴 on all 29; 🟡 = breadcrumbs/fragment D1 (family-wide, same as the archetype), accordion D3 (the `more` label row, same as the archetype), callout D1 (designed compound, same as archetype/hub), calculator D3, table D10 (bilforsikring: genuine 5-column data table), D4 SVG advisories",
+    "delivery": "0 P0 · 0 P1 on all 29"
+  },
+  "siblings": {
+    "converted": [
+      "nb-bank-bedrift-bedriftskort-kredittkort-html",
+      "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+      "nb-bank-bedrift-konto-bedriftskonto-html",
+      "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+      "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+      "nb-bank-bedrift-lan-finansiering-leasing-html",
+      "nb-bank-bedrift-open-api-html",
+      "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+      "nb-bank-om-oss-vare-eksperter-html",
+      "nb-bank-privat-daglig-bruk-bankid-html",
+      "nb-bank-privat-daglig-bruk-bankkonto-html",
+      "nb-bank-privat-daglig-bruk-bankkort-html",
+      "nb-bank-privat-daglig-bruk-kredittkort-html",
+      "nb-bank-privat-daglig-bruk-mobilbank-html",
+      "nb-bank-privat-forsikring-barneforsikring-html",
+      "nb-bank-privat-forsikring-bilforsikring-html",
+      "nb-bank-privat-forsikring-innboforsikring-html",
+      "nb-bank-privat-forsikring-kundehistorier-html",
+      "nb-bank-privat-forsikring-reiseforsikring-html",
+      "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+      "nb-bank-privat-lan-billan-html",
+      "nb-bank-privat-lan-forbrukslan-html",
+      "nb-bank-privat-lan-gronne-lan-html",
+      "nb-bank-privat-lan-lanekalkulator-html",
+      "nb-bank-privat-lan-refinansiering-html",
+      "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+      "nb-bank-privat-sparing-spare-i-fond-html",
+      "nb-bank-privat-sparing-spare-pa-konto-html",
+      "nb-bank-privat-sparing-spare-til-barn-html"
+    ],
+    "documents": {
+      "nb-bank-bedrift-bedriftskort-kredittkort-html": "/nb/bank/bedrift/bedriftskort/kredittkort",
+      "nb-bank-bedrift-betaling-utenlandsbetaling-html": "/nb/bank/bedrift/betaling/utenlandsbetaling",
+      "nb-bank-bedrift-konto-bedriftskonto-html": "/nb/bank/bedrift/konto/bedriftskonto",
+      "nb-bank-bedrift-lan-finansiering-bedriftslan-html": "/nb/bank/bedrift/lan-finansiering/bedriftslan",
+      "nb-bank-bedrift-lan-finansiering-kassekreditt-html": "/nb/bank/bedrift/lan-finansiering/kassekreditt",
+      "nb-bank-bedrift-lan-finansiering-leasing-html": "/nb/bank/bedrift/lan-finansiering/leasing",
+      "nb-bank-bedrift-open-api-html": "/nb/bank/bedrift/open-api",
+      "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html": "/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk",
+      "nb-bank-om-oss-vare-eksperter-html": "/nb/bank/om-oss/vare-eksperter",
+      "nb-bank-privat-daglig-bruk-bankid-html": "/nb/bank/privat/daglig-bruk/bankid",
+      "nb-bank-privat-daglig-bruk-bankkonto-html": "/nb/bank/privat/daglig-bruk/bankkonto",
+      "nb-bank-privat-daglig-bruk-bankkort-html": "/nb/bank/privat/daglig-bruk/bankkort",
+      "nb-bank-privat-daglig-bruk-kredittkort-html": "/nb/bank/privat/daglig-bruk/kredittkort",
+      "nb-bank-privat-daglig-bruk-mobilbank-html": "/nb/bank/privat/daglig-bruk/mobilbank",
+      "nb-bank-privat-forsikring-barneforsikring-html": "/nb/bank/privat/forsikring/barneforsikring",
+      "nb-bank-privat-forsikring-bilforsikring-html": "/nb/bank/privat/forsikring/bilforsikring",
+      "nb-bank-privat-forsikring-innboforsikring-html": "/nb/bank/privat/forsikring/innboforsikring",
+      "nb-bank-privat-forsikring-kundehistorier-html": "/nb/bank/privat/forsikring/kundehistorier",
+      "nb-bank-privat-forsikring-reiseforsikring-html": "/nb/bank/privat/forsikring/reiseforsikring",
+      "nb-bank-privat-kundeservice-bestill-bli-kunde-html": "/nb/bank/privat/kundeservice/bestill/bli-kunde",
+      "nb-bank-privat-lan-billan-html": "/nb/bank/privat/lan/billan",
+      "nb-bank-privat-lan-forbrukslan-html": "/nb/bank/privat/lan/forbrukslan",
+      "nb-bank-privat-lan-gronne-lan-html": "/nb/bank/privat/lan/gronne-lan",
+      "nb-bank-privat-lan-lanekalkulator-html": "/nb/bank/privat/lan/lanekalkulator",
+      "nb-bank-privat-lan-refinansiering-html": "/nb/bank/privat/lan/refinansiering",
+      "nb-bank-privat-pensjon-egen-pensjonskonto-html": "/nb/bank/privat/pensjon/egen-pensjonskonto",
+      "nb-bank-privat-sparing-spare-i-fond-html": "/nb/bank/privat/sparing/spare-i-fond",
+      "nb-bank-privat-sparing-spare-pa-konto-html": "/nb/bank/privat/sparing/spare-pa-konto",
+      "nb-bank-privat-sparing-spare-til-barn-html": "/nb/bank/privat/sparing/spare-til-barn"
+    },
+    "gaps": {
+      "nb-bank-bedrift-bedriftskort-kredittkort-html": 0,
+      "nb-bank-bedrift-betaling-utenlandsbetaling-html": 0,
+      "nb-bank-bedrift-konto-bedriftskonto-html": 0,
+      "nb-bank-bedrift-lan-finansiering-bedriftslan-html": 0,
+      "nb-bank-bedrift-lan-finansiering-kassekreditt-html": 0,
+      "nb-bank-bedrift-lan-finansiering-leasing-html": 0,
+      "nb-bank-bedrift-open-api-html": 0,
+      "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html": 0,
+      "nb-bank-om-oss-vare-eksperter-html": 0,
+      "nb-bank-privat-daglig-bruk-bankid-html": 0,
+      "nb-bank-privat-daglig-bruk-bankkonto-html": 0,
+      "nb-bank-privat-daglig-bruk-bankkort-html": 0,
+      "nb-bank-privat-daglig-bruk-kredittkort-html": 0,
+      "nb-bank-privat-daglig-bruk-mobilbank-html": 0,
+      "nb-bank-privat-forsikring-barneforsikring-html": 0,
+      "nb-bank-privat-forsikring-bilforsikring-html": 0,
+      "nb-bank-privat-forsikring-innboforsikring-html": 0,
+      "nb-bank-privat-forsikring-kundehistorier-html": 0,
+      "nb-bank-privat-forsikring-reiseforsikring-html": 0,
+      "nb-bank-privat-kundeservice-bestill-bli-kunde-html": 0,
+      "nb-bank-privat-lan-billan-html": 0,
+      "nb-bank-privat-lan-forbrukslan-html": 0,
+      "nb-bank-privat-lan-gronne-lan-html": 0,
+      "nb-bank-privat-lan-lanekalkulator-html": 0,
+      "nb-bank-privat-lan-refinansiering-html": 0,
+      "nb-bank-privat-pensjon-egen-pensjonskonto-html": 0,
+      "nb-bank-privat-sparing-spare-i-fond-html": 0,
+      "nb-bank-privat-sparing-spare-pa-konto-html": 0,
+      "nb-bank-privat-sparing-spare-til-barn-html": 0
+    },
+    "lintRed": {
+      "nb-bank-bedrift-bedriftskort-kredittkort-html": 0,
+      "nb-bank-bedrift-betaling-utenlandsbetaling-html": 0,
+      "nb-bank-bedrift-konto-bedriftskonto-html": 0,
+      "nb-bank-bedrift-lan-finansiering-bedriftslan-html": 0,
+      "nb-bank-bedrift-lan-finansiering-kassekreditt-html": 0,
+      "nb-bank-bedrift-lan-finansiering-leasing-html": 0,
+      "nb-bank-bedrift-open-api-html": 0,
+      "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html": 0,
+      "nb-bank-om-oss-vare-eksperter-html": 0,
+      "nb-bank-privat-daglig-bruk-bankid-html": 0,
+      "nb-bank-privat-daglig-bruk-bankkonto-html": 0,
+      "nb-bank-privat-daglig-bruk-bankkort-html": 0,
+      "nb-bank-privat-daglig-bruk-kredittkort-html": 0,
+      "nb-bank-privat-daglig-bruk-mobilbank-html": 0,
+      "nb-bank-privat-forsikring-barneforsikring-html": 0,
+      "nb-bank-privat-forsikring-bilforsikring-html": 0,
+      "nb-bank-privat-forsikring-innboforsikring-html": 0,
+      "nb-bank-privat-forsikring-kundehistorier-html": 0,
+      "nb-bank-privat-forsikring-reiseforsikring-html": 0,
+      "nb-bank-privat-kundeservice-bestill-bli-kunde-html": 0,
+      "nb-bank-privat-lan-billan-html": 0,
+      "nb-bank-privat-lan-forbrukslan-html": 0,
+      "nb-bank-privat-lan-gronne-lan-html": 0,
+      "nb-bank-privat-lan-lanekalkulator-html": 0,
+      "nb-bank-privat-lan-refinansiering-html": 0,
+      "nb-bank-privat-pensjon-egen-pensjonskonto-html": 0,
+      "nb-bank-privat-sparing-spare-i-fond-html": 0,
+      "nb-bank-privat-sparing-spare-pa-konto-html": 0,
+      "nb-bank-privat-sparing-spare-til-barn-html": 0
+    },
+    "contentDiffSampled": [
+      {
+        "slug": "nb-bank-privat-lan-lanekalkulator-html",
+        "red": 0,
+        "amber": "bank-router copy inside <main> on EDS (outside on the migrated page); calculator control labels/values"
+      },
+      {
+        "slug": "nb-bank-om-oss-vare-eksperter-html",
+        "red": 0,
+        "amber": "role + employer flattened into one <em> meta line (canon: span + text)"
+      },
+      {
+        "slug": "nb-bank-privat-daglig-bruk-bankid-html",
+        "red": 0,
+        "amber": "one glossary sentence split by a <span> in the migrated page, one paragraph on EDS"
+      }
+    ],
+    "eyeballed": [
+      "lanekalkulator 1440/360",
+      "vare-eksperter 1440/360",
+      "bankid 1440/360"
+    ]
+  },
+  "blocksSeen": [
+    "hero",
+    "columns",
+    "cards",
+    "accordion",
+    "callout",
+    "feedback",
+    "breadcrumbs",
+    "embed",
+    "table",
+    "calculator"
+  ]
+}

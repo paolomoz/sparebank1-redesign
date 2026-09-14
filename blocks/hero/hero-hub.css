@@ -47,7 +47,8 @@
   .hero.ask .hero-h1 { align-self: center; }
   .hero.ask .hero-h1 h1 { max-width: none; }
   .hero.ask .hero-media img { aspect-ratio: 3 / 2; border-radius: var(--radius-img-sm) 0 var(--radius-img-sm) 0; }
-  .hero.portrait .hero-grid { grid-template-columns: minmax(0, 1fr) 38%; grid-template-rows: auto auto; gap: var(--spacing-lg); align-items: center; }
+  .hero.portrait .hero-grid,
+  .hero.portrait .hero-grid:has(.hero-h1) { grid-template-columns: minmax(0, 1fr) 38%; grid-template-rows: auto auto; gap: var(--spacing-lg); row-gap: var(--spacing-lg); align-items: center; align-content: start; }
   .hero.portrait .hero-media { grid-column: 2; grid-row: 1; justify-self: end; }
   .hero.portrait .hero-h1 { grid-column: 1; grid-row: 1; align-self: center; }
   .hero.portrait .hero-text { grid-column: 1 / -1; grid-row: 2; margin-top: var(--spacing-md); gap: calc(var(--spacing-lg) + var(--spacing-md)); }

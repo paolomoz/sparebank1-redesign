@@ -123,6 +123,7 @@
   "product-hero (product): the canon USP list rides the hero text cell as an authored <ul> (icon + line items) — hero (usp) paints the check marks / icons",
   "cobranding (product): the canon co-brand band is always open (no <details>) → columns (cobrand) — one row [logo, h2, <em>member question</em>, prose, CTAs][illustration + adviser note]; not the hub cobranding disclosure",
   "media: illustrasjon-kyss-sand-sirkel-usymmetrisk.svg is 983750 B of SVG (> 40000) — authored as DA media illustrasjon-kyss-sand-sirkel-usymmetrisk.png",
+  "lint D10 table: a genuine data table (cover levels × cover lines) — the >4-column advisory is the D10 exception",
   "table: Block Collection table (compare) — 33 cover rows × 2 columns; each canon expandable detail row is folded into its cover's row-header cell (D3: no spans), check icons stay authored images",
   "topic-list: spot illustration + h2 (+ lead) as default content with the `topic-list` section style, the feature list as accordion (faq) rows [h3][answer]",
   "rich-text (product): prose is default content (prose-narrow); each canon disclosure (\"Se detaljerte vilkår\") is an accordion (disclosure) — one row [label][body], collapsed like the canon <details>",
@@ -141,5 +142,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kyss-sand-sirkel-usymmetrisk.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mobil-lege.svg"
  ],
- "writtenAt": "2026-09-14T22:29:14.384Z"
+ "writtenAt": "2026-09-14T22:33:12.943Z"
 }

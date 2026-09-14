@@ -42,6 +42,9 @@ function navDoc(h) {
 const bankHome = (h, market) => { const m = (h || '').match(/^(?:https:\/\/www\.sparebank1\.no)?\/(nb|nn)\/([a-z-]+)\//); return m ? `https://www.sparebank1.no/${m[1]}/${m[2]}/${market === 'bedrift' ? 'bedrift' : 'privat'}.html` : href(h, CTX); };
 function footerDoc(f, market) {
   const secs = [];
+  // frontend-clientlib footers: a heading-less column is the legal-links strip (the prototype modules filter columns to those with an h2) → it feeds `small`
+  const headless = f.columns.filter((c) => !c.heading && c.links.length); if (headless.length && !f.small.length) f = { ...f, small: headless.flatMap((c) => c.links) };
+  f = { ...f, columns: f.columns.filter((c) => c.heading) };
   if (f.tabs.length) {
     const chan = f.tabs.map((t, i) => `<li><a href="#kontakt-${i + 1}">${esc(t.name)}</a>${t.sub ? `<br>${esc(t.sub)}` : ''}</li>`).join('');
     secs.push(section([`<h2>${esc(f.contactHeading)}</h2>`, f.contactLink ? `<p><a href="${esc(href(f.contactLink.href, CTX))}">${esc(f.contactLink.t)}</a></p>` : '', `<ul>${chan}</ul>`], { style: 'contact' }));

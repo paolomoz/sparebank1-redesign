@@ -107,6 +107,7 @@
   "cobranding (product): the canon co-brand band is always open (no <details>) → columns (cobrand) — one row [logo, h2, <em>member question</em>, prose, CTAs][illustration + adviser note]; not the hub cobranding disclosure",
   "media: illustrasjon-usymmetrisk-samboer-dame-mann-high-five.svg is 43025 B of SVG (> 40000) — authored as DA media illustrasjon-usymmetrisk-samboer-dame-mann-high-five.png",
   "split-media (product): canon `media-right` (text 7 / media 5) → columns (split text-first), cells in the visual order",
+  "lint D10 table: a genuine data table (cover levels × cover lines) — the >4-column advisory is the D10 exception",
   "table: Block Collection table (compare) — 25 cover rows × 3 columns; each canon expandable detail row is folded into its cover's row-header cell (D3: no spans), check icons stay authored images",
   "rich-text (product): prose is default content (prose-narrow); each canon disclosure (\"Se detaljerte vilkår\") is an accordion (disclosure) — one row [label][body], collapsed like the canon <details>",
   "card-rail (product): choices cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
@@ -119,5 +120,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-usymmetrisk-samboer-dame-mann-high-five.svg"
  ],
- "writtenAt": "2026-09-14T22:29:14.411Z"
+ "writtenAt": "2026-09-14T22:33:12.972Z"
 }

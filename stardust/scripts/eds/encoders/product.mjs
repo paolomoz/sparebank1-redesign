@@ -240,7 +240,7 @@ function compareTable(root, ctx) {
   }
   const cap = q(tb, 'caption'); const parts = [head(root, ctx)]; if (cap && txt(cap)) parts.push(`<p>${inline(cap, ctx)}</p>`);
   parts.push(block('table', ['compare', 'row-headers'], out)); // `row-headers` = the existing generic table.js variant (first column → <th scope="row">)
-  ctx.notes.push(`table: Block Collection table (compare) — ${out.length - 1} cover rows × ${ncol} columns; each canon expandable detail row is folded into its cover's row-header cell (D3: no spans), check icons stay authored images`);
+  ctx.notes.push('lint D10 table: a genuine data table (cover levels × cover lines) — the >4-column advisory is the D10 exception'); ctx.notes.push(`table: Block Collection table (compare) — ${out.length - 1} cover rows × ${ncol} columns; each canon expandable detail row is folded into its cover's row-header cell (D3: no spans), check icons stay authored images`);
   return { html: section(parts, { style: style(root) }), blocks: ['table'] };
 }
 /** accordion / topic-list: [illustration] h2 [lead] as default content + accordion (faq), one row per item [question h3][answer]. */
