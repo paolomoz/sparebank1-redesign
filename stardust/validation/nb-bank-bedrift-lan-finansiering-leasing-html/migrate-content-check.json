@@ -8,18 +8,7 @@
  },
  "miss": {
   "text": [],
-  "href": [
-   {
-    "r": "main",
-    "h": "${linksbm.leasingbillan.sok}",
-    "t": "Beregn pris og søk leasing"
-   },
-   {
-    "r": "main",
-    "h": "${linksbm.leasingbillan.sok}",
-    "t": "Beregn pris i måneden"
-   }
-  ],
+  "href": [],
   "img": []
  }
 }

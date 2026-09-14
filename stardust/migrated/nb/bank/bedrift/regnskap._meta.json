@@ -106,10 +106,12 @@
  "gatesPassed": [
   "mobile-adapt",
   "one-h1",
-  "placeholder-gate"
+  "placeholder-gate",
+  "content-verbatim",
+  "content-count"
  ],
- "contentCheck": "FAIL\n",
- "migratedAt": "2026-09-14T22:16:40.770Z",
+ "contentCheck": "PASS",
+ "migratedAt": "2026-09-14T22:17:20.939Z",
  "designMdSha": "9eaced02fd2340e7",
  "designJsonSha": "356d124b47aa82e7",
  "sourceCurrentSha": "59c37b789d8cd17f",

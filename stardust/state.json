@@ -1,7 +1,7 @@
 {
  "_provenance": {
   "writtenBy": "stardust:migrate",
-  "writtenAt": "2026-09-14T22:16:46.534Z",
+  "writtenAt": "2026-09-14T22:17:26.414Z",
   "stardustVersion": "0.20.0",
   "readArtifacts": [
    "../sparebank1/stardust/state.json",
@@ -5000,29 +5000,13 @@
   "missingAssets": [],
   "cleanedAssets": [],
   "mediaPolicy": "source-origin URLs (Mode A image-reuse); SVG > 40 KB rasterised to DA media at rollout",
-  "lastRunAt": "2026-09-14T22:16:46.534Z"
+  "lastRunAt": "2026-09-14T22:17:26.414Z"
  },
  "lastRun": {
   "skill": "stardust:migrate",
-  "at": "2026-09-14T22:16:46.534Z",
-  "migrated": 0,
+  "at": "2026-09-14T22:17:26.414Z",
+  "migrated": 3,
   "unchanged": 0,
-  "failures": [
-   {
-    "slug": "nb-bank-bedrift-lan-finansiering-leasing-html",
-    "status": "content-fail",
-    "error": "FAIL | "
-   },
-   {
-    "slug": "nb-bank-bedrift-regnskap-html",
-    "status": "content-fail",
-    "error": "FAIL | "
-   },
-   {
-    "slug": "nb-bank-privat-private-banking-html",
-    "status": "content-fail",
-    "error": "FAIL | "
-   }
-  ]
+  "failures": []
  }
 }
