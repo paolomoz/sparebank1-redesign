@@ -3,9 +3,10 @@
  * Family overrides: `page-title` (48px intro under the back link), `callout` (rich body).
  */
 import * as L from '../lib.mjs';
-import { hubStyle, head, hubCallout } from './category-hub.mjs';
+import { calculator } from '../encoders.mjs';
+import { hubStyle, head, hubCallout, hubFaq, hubTitle } from './category-hub.mjs';
 
-const { q, inline, prose, pic, block, section, esc } = L;
+const { q, prose, pic, block, section } = L;
 
 /* ---- steps: h2 + numbered ledger + note + CTA + small note, illustration beside → columns (split steps): one row [text][illustration] ---- */
 function steps(root, ctx) {
@@ -16,17 +17,22 @@ function steps(root, ctx) {
   return { html: section([block('columns', ['split', 'steps'], [[body, media ? pic(media, ctx) : '']])], { style: hubStyle(root) }), blocks: ['columns'] };
 }
 
-/* ---- page-title (tool): back link (breadcrumbs) + h1 + lead; the tool intro keeps 48px under the lead (`tool-intro`) ---- */
+/* ---- page-title (tool): the plain intro keeps 48px under the lead (`tool-intro`); the intro-media shape is the shared hero (intro) ---- */
 function toolTitle(root, ctx) {
-  const back = q(root, 'a.backlink'); const parts = [];
-  if (back) parts.push(block('breadcrumbs', [], [[`<p><a href="${esc(L.href(back.getAttribute('href') || '', ctx))}">${inline(back, ctx).trim()}</a></p>`]]));
-  const c = q(root, ':scope > .container') || root;
-  for (const n of c.children) { if (n === back || n.contains(back)) continue; parts.push(prose({ childNodes: [n] }, ctx)); }
-  return { html: section(parts, { style: hubStyle(root, 'intro', 'tool-intro') }), blocks: back ? ['breadcrumbs'] : [] };
+  const r = hubTitle(root, ctx); if (!r) return null;
+  return q(root, '.intro-grid') ? r : { ...r, html: r.html.replace('<div>intro, tight-bottom</div>', '<div>intro, tool-intro</div>') };
+}
+/* ---- calculator (tool): the loan shell when captured; an empty React mount (dynamics #8) has no authored content and is omitted ---- */
+function toolCalculator(root, ctx) {
+  if (q(root, '.calc')) return calculator(root, ctx);
+  if (q(root, '.calc-mount')) { ctx.notes.push('calculator: React mount with nothing captured (dynamics #8, owner-bound) — no authored content, module omitted'); return { html: '', blocks: [] }; }
+  return null;
 }
 
 export default {
   steps,
   'page-title': toolTitle,
   callout: hubCallout,
+  faq: hubFaq,
+  calculator: toolCalculator,
 };

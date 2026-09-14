@@ -29,11 +29,15 @@
   },
   {
    "module": "disclosure",
-   "blocks": []
+   "blocks": [
+    "table"
+   ]
   },
   {
    "module": "disclosure",
-   "blocks": []
+   "blocks": [
+    "table"
+   ]
   },
   {
    "module": "rich-text",
@@ -54,16 +58,16 @@
  ],
  "blocks": [
   "breadcrumbs",
+  "table",
   "cards",
   "feedback"
  ],
  "notes": [
+  "disclosure: data table behind a toggle → table (disclose): row 1 = toggle label, row 2 = heading, then header + rows",
+  "disclosure: data table behind a toggle → table (disclose): row 1 = toggle label, row 2 = heading, then header + rows",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
- "gaps": [
-  "no encoder for module disclosure (emitted as prose)",
-  "no encoder for module disclosure (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T22:30:27.855Z"
+ "writtenAt": "2026-09-14T22:39:22.006Z"
 }

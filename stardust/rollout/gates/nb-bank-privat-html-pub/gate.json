@@ -1,0 +1,81 @@
+{
+  "slug": "nb-bank-privat-html",
+  "edsUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat",
+  "protoUrl": "http://localhost:8820/nb-bank-privat-html-proposed.html",
+  "at": "2026-09-14T22:38:18.045Z",
+  "pixel": {
+    "360": {
+      "pct": 0.32,
+      "heightDelta": 0,
+      "compared": {
+        "width": 360,
+        "height": 6915
+      },
+      "pass": true,
+      "hot": []
+    },
+    "1440": {
+      "pct": 0.12,
+      "heightDelta": 0,
+      "compared": {
+        "width": 1440,
+        "height": 3770
+      },
+      "pass": true,
+      "hot": []
+    }
+  },
+  "chrome": {
+    "360": {
+      "header": 99.66,
+      "footer": 99.03,
+      "headerH": {
+        "proto": 61,
+        "eds": 61
+      },
+      "footerH": {
+        "proto": 1884,
+        "eds": 1884
+      },
+      "footerY": {
+        "proto": 5030,
+        "eds": 5031
+      },
+      "doc": {
+        "proto": 6915,
+        "eds": 6915
+      }
+    },
+    "1440": {
+      "header": 99.96,
+      "footer": 99.89,
+      "headerH": {
+        "proto": 110,
+        "eds": 110
+      },
+      "footerH": {
+        "proto": 917,
+        "eds": 917
+      },
+      "footerY": {
+        "proto": 2853,
+        "eds": 2853
+      },
+      "doc": {
+        "proto": 3770,
+        "eds": 3770
+      }
+    }
+  },
+  "content": {
+    "red": 0,
+    "justified": 0,
+    "amber": 17,
+    "orange": 12,
+    "summary": [
+      "  EDS: 90 text nodes — 8 headings, 0 eyebrows, 54 CTAs, 28 body; 14 img",
+      "  editable texts (outermost h*/p/ul/ol): proto 20 / EDS 23"
+    ]
+  },
+  "pass": true
+}

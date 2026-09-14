@@ -2,7 +2,7 @@
 import { esc, asset, icons } from '../chrome.mjs';
 const norm=s=>(s||'').replace(/\s+/g,' ').trim();
 const btnKind=cls=>/--secondary/.test(cls)?'btn-secondary':/inline-button|tertiary/.test(cls)?'btn-inline':'btn-primary'; // captured --action here = meeting/see-more, not apply → Vann (Skog reservation)
-const bgUrl=el=>{ const s=el?.getAttribute('style')||''; return (s.match(/url\(["']?([^"')]+)/)||[])[1]||''; };
+const bgUrl=el=>{ const s=el?.getAttribute('style')||''; return (s.match(/url\((?:"([^"]*)"|'([^']*)'|([^)]+))/)||[]).slice(1).find(Boolean)||''; };
 
 // Frontend-clientlib footer lives inside <main>: build footerData()-shaped data from it.
 function footerFromMain(doc){

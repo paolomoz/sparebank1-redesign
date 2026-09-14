@@ -25,11 +25,15 @@
   },
   {
    "module": "card-grid",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "card-grid",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "callout",
@@ -46,6 +50,7 @@
  ],
  "blocks": [
   "breadcrumbs",
+  "cards",
   "callout",
   "feedback"
  ],
@@ -53,10 +58,7 @@
   "lint D1 callout: designed compound (canon icon + tinted paper), Block Collection-shaped single cell of prose — kept as a block like the product archetype",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
- "gaps": [
-  "no encoder for module card-grid (emitted as prose)",
-  "no encoder for module card-grid (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T22:30:27.525Z"
+ "writtenAt": "2026-09-14T22:39:21.681Z"
 }

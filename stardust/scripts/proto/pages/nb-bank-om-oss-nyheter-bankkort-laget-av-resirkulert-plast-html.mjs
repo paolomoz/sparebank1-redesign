@@ -34,7 +34,7 @@ function mediaOf(root){
   const video=root.querySelector('video'); const icon=root.querySelector('img.video__placeholder');
   if(video||icon){ const src=video?.querySelector('source')?.getAttribute('src')||video?.getAttribute('src'); return {kind:'video',src,title:video?.getAttribute('title')||'',icon:icon?.getAttribute('src')}; }
   const img=root.querySelector('img'); if(img){ const src=img.getAttribute('data-lazy-src')||img.getAttribute('src'); if(src) return {kind:/\.svg(\?|$)/i.test(src)?'illu':'image',src,alt:img.getAttribute('alt')||''}; }
-  const bg=[...root.querySelectorAll('[style*="background-image"]')].map(e=>(e.getAttribute('style').match(/url\(["']?([^"')]+)/)||[])[1]).find(Boolean); if(bg) return {kind:'image',src:bg,alt:''};
+  const bg=[...root.querySelectorAll('[style*="background-image"]')].map(e=>(e.getAttribute('style').match(/url\((?:"([^"]*)"|'([^']*)'|([^)]+))/)||[]).slice(1).find(Boolean)).find(Boolean); if(bg) return {kind:'image',src:bg,alt:''};
   return null;
 }
 const videoHtml=(m,cls='art-video')=>`<figure class="video-frame ${cls}" data-dynamics="video (captured source, preload none)">${m.src?`<video controls preload="none" playsinline${m.title?` title="${esc(m.title)}"`:''}><source src="${asset(m.src)}" type="video/mp4"></video>`:''}${m.icon?`<img class="video-icon" src="${asset(m.icon)}" alt="" aria-hidden="true" width="64" height="64" loading="lazy" decoding="async">`:''}</figure>`;

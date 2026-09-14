@@ -33,7 +33,9 @@
   },
   {
    "module": "related-topics",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "feedback",
@@ -50,9 +52,7 @@
   "shortcut-row: prose h2 + ul of links (David's Model D5 simple list); section style `shortcuts` paints the hairline, the inline-link row and the chevrons",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
- "gaps": [
-  "no encoder for module related-topics (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T22:30:27.584Z"
+ "writtenAt": "2026-09-14T22:39:21.741Z"
 }

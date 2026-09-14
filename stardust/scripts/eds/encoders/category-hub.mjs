@@ -6,7 +6,7 @@
 import * as L from '../lib.mjs';
 import { cardRows, splitMedia } from '../encoders.mjs';
 
-const { q, qa, cls, inline, prose, ctas, pic, block, section, styleOf, paperOf, esc } = L;
+const { q, qa, cls, txt, inline, prose, ctas, pic, block, section, styleOf, paperOf, esc } = L;
 
 /** Section style: the movement's paper + explicit tokens (hub pages set their own rhythm tokens, never the core guesses). */
 export const hubStyle = (root, ...extra) => styleOf(paperOf(root), ...extra);
@@ -80,7 +80,160 @@ export function hubCallout(root, ctx) {
   return { html: section([head(root, ctx), block('callout', [variant, cls(co).includes('callout-rich') ? 'rich' : null, q(body, 'a.btn') ? 'cta' : null], [[prose(body, ctx)]])], { style: hubStyle(root, cls(root).includes('quick') ? 'quick' : null) }), blocks: ['callout'] };
 }
 
+/* ============================== shared sibling modules (migrate workers' sibling-only vocabulary) ============================== */
+
+/** Layout tables (a single td wrapping prose, from the source CMS) are unwrapped before serialising — never a nested table (D2). */
+export function unwrapLayoutTables(el) {
+  for (const t of qa(el, 'table')) { const cells = qa(t, 'td, th'); if (cells.length !== 1) continue; const td = cells[0]; while (td.firstChild) t.parentNode.insertBefore(td.firstChild, t); t.remove(); }
+}
+/** A paragraph of several links on <br> lines (optionally led by <strong>Label</strong>) → label paragraph + a link list (D5). */
+export function linkListify(html) {
+  return html.replace(/<p>((?:(?!<\/p>).)*?)<\/p>/g, (m, inner) => {
+    if ((inner.match(/<a /g) || []).length < 2 || !/<br>/.test(inner)) return m;
+    const lines = inner.split(/\s*<br>\s*/).map((l) => l.trim()).filter(Boolean);
+    if (!lines.every((l, i) => /^<a [^>]*>[^<]*<\/a>\.?$/.test(l) || (i === 0 && /^<strong>/.test(l)))) return m;
+    let out = ''; const items = [];
+    for (const l of lines) { if (/^<strong>/.test(l)) out += `<p>${l.replace(/<br>\s*<\/strong>/, '</strong>')}</p>`; else items.push(`<li>${l}</li>`); }
+    return `${out}<ul>${items.join('')}</ul>`;
+  });
+}
+/** Prose of a container minus the back link (the intro's `p.back` or a wrapper that holds it). */
+function proseExcept(container, back, ctx) {
+  let out = '';
+  for (const n of container.children) {
+    if (n === back) continue;
+    if (back && n.contains(back)) { if (n.children.length <= 1 && !n.textContent.replace(txt(back), '').trim()) continue; out += proseExcept(n, back, ctx); continue; }
+    out += prose({ childNodes: [n] }, ctx);
+  }
+  return out;
+}
+/** A table cell → block-cell HTML (several paragraphs kept, else one paragraph). */
+const cellHtml = (cell, ctx) => (q(cell, 'p, ul, ol') ? prose(cell, ctx) : `<p>${inline(cell, ctx).trim()}</p>`);
+
+/* ---- page-title (hub): back link + h1 + lead(s) [+ CTAs]; the `intro-media` shape (text left, photo right) → hero (intro) ---- */
+export function hubTitle(root, ctx) {
+  const back = q(root, 'a.backlink'); const parts = []; const blocks = [];
+  if (back) { parts.push(block('breadcrumbs', [], [[`<p><a href="${esc(L.href(back.getAttribute('href') || '', ctx))}">${inline(back, ctx).trim()}</a></p>`]])); blocks.push('breadcrumbs'); }
+  const grid = q(root, '.intro-grid');
+  if (grid) {
+    const img = q(grid, 'figure img, .intro-figure img'); const text = q(grid, '.intro-text') || grid;
+    parts.push(block('hero', ['intro'], [[proseExcept(text, back, ctx), img ? pic(img, ctx) : '']])); blocks.push('hero');
+    ctx.notes.push('page-title (intro-media): text + photo intro → hero (intro) — photo right, h1 + leads + pills left');
+    return { html: section(parts, { style: hubStyle(root, back ? 'tight-top' : null, 'tight-bottom') }), blocks };
+  }
+  const c = q(root, ':scope > .container') || root;
+  parts.push(proseExcept(c, back, ctx));
+  return { html: section(parts, { style: hubStyle(root, 'intro', 'tight-bottom') }), blocks };
+}
+
+/* ---- card-grid · related-topics · static-cards: photo tiles (h3 link, optional tag + prose) or text-only pop tiles → cards (photo-tiles | popular) ---- */
+function tileRow(li, ctx) {
+  const img = q(li, ':scope > img, :scope > picture img, :scope > figure img'); const title = q(li, '.card-title'); const titleLink = title ? (title.tagName === 'A' ? title : q(title, 'a')) : null;
+  const meta = q(li, ':scope > p.meta'); let body = '';
+  if (meta) body += `<p><em>${inline(meta, ctx).trim()}</em></p>`;
+  if (title) { const lvl = /^H[1-6]$/.test(title.tagName) ? title.tagName.toLowerCase() : 'h3'; body += titleLink ? `<${lvl}><a href="${esc(L.href(titleLink.getAttribute('href') || '', ctx))}">${inline(titleLink, ctx)}</a></${lvl}>` : `<${lvl}>${inline(title, ctx)}</${lvl}>`; }
+  for (const n of li.children) { if (n === title || n === meta || /^(IMG|PICTURE|FIGURE)$/.test(n.tagName)) continue; body += /class="btn/.test(n.innerHTML) ? ctas(n, ctx) : prose({ childNodes: [n] }, ctx); }
+  return [img ? pic(img, ctx) : '', body];
+}
+export function tileGrid(root, ctx) {
+  const c = q(root, ':scope > .container') || root; const parts = [head(root, ctx)]; const blocks = [];
+  const lead = q(c, ':scope > p.lead, :scope > .cards-lead'); if (lead) parts.push(`<p>${inline(lead, ctx).trim()}</p>`);
+  for (const ul of qa(c, ':scope > ul')) {
+    const v = cls(ul).includes('card-grid') ? 'photo-tiles' : cardVariant(ul);
+    const rows = qa(ul, ':scope > li').map((li) => tileRow(li, ctx));
+    parts.push(block('cards', [v], rows.some((r) => r[0]) ? rows : rows.map((r) => [r[1]]))); blocks.push('cards');
+  }
+  for (const p of qa(c, ':scope > p:not(.lead):not(.cards-lead), :scope > .cta-row')) parts.push(/class="btn/.test(p.innerHTML) ? ctas(p, ctx) : `<p>${inline(p, ctx).trim()}</p>`);
+  return { html: section(parts, { style: hubStyle(root, lead ? 'lead-first' : null) }), blocks: [...new Set(blocks)] };
+}
+
+/* ---- usp: icon + title-sm + line, three across → cards (usp) ---- */
+function usp(root, ctx) {
+  const ul = q(root, 'ul'); if (!ul) return null;
+  const rows = qa(ul, ':scope > li').map((li) => { const img = q(li, 'img'); let body = ''; for (const n of li.children) { if (n === img) continue; body += prose({ childNodes: [n] }, ctx); } return [img ? pic(img, ctx) : '', body]; });
+  return { html: section([head(root, ctx), block('cards', ['usp'], rows)], { style: hubStyle(root) }), blocks: ['cards'] };
+}
+
+/* ---- image: a lone illustration movement → DEFAULT CONTENT image with the `figure` section style (D1) ---- */
+function image(root, ctx) {
+  const img = q(root, 'img'); if (!img) return null;
+  return { html: section([pic(img, ctx)], { style: hubStyle(root, 'figure') }), blocks: [] };
+}
+
+/* ---- text-and-image: illustration stack + h2/lead/pill → columns (split illu) ---- */
+function textAndImage(root, ctx) {
+  const fig = q(root, 'figure, .split-media'); const text = q(root, '.split-text') || q(root, ':scope > .container');
+  const media = qa(fig, 'img').map((i) => pic(i, ctx)).join('');
+  const reverse = !!(fig && text && (fig.compareDocumentPosition(text) & 2));
+  const cells = reverse ? [prose(text, ctx), media] : [media, prose(text, ctx)];
+  return { html: section([block('columns', ['split', 'illu', reverse ? 'text-first' : null], [cells])], { style: hubStyle(root) }), blocks: ['columns'] };
+}
+
+/* ---- disclosure: <details> behind a secondary pill — a data table → table (disclose); anything else → accordion (disclose), one row [label][prose] ---- */
+function discloseTable(d, ctx) {
+  const body = q(d, '.disclose-body') || d; const tb = q(body, 'table'); const h = q(body, 'h2, h3');
+  const rows = [[`<p>${inline(q(d, 'summary'), ctx).trim()}</p>`]]; if (h) rows.push([`<h2>${inline(h, ctx)}</h2>`]);
+  const caption = q(tb, 'caption'); if (!h && caption && txt(caption)) rows.push([`<h2>${inline(caption, ctx)}</h2>`]);
+  rows.push(...qa(tb, 'tr').map((tr) => [...tr.children].map((cell) => cellHtml(cell, ctx))));
+  return block('table', ['disclose'], rows);
+}
+function disclosure(root, ctx) {
+  const c = q(root, ':scope > .container') || root; const parts = [head(root, ctx)]; const blocks = [];
+  const lead = q(c, ':scope > p.lead'); if (lead) parts.push(`<p>${inline(lead, ctx).trim()}</p>`);
+  for (const d of qa(c, ':scope > details')) {
+    const body = q(d, '.disclose-body') || d;
+    if (q(body, 'table') && !q(body, '.help-col')) { parts.push(discloseTable(d, ctx)); blocks.push('table'); ctx.notes.push('disclosure: data table behind a toggle → table (disclose): row 1 = toggle label, row 2 = heading, then header + rows'); continue; }
+    unwrapLayoutTables(body);
+    const cols = qa(body, '.help-col'); let ans = '';
+    for (const col of cols.length ? cols : [body]) ans += linkListify(prose(col, ctx));
+    parts.push(block('accordion', ['disclose'], [[`<p>${inline(q(d, 'summary'), ctx).trim()}</p>`, ans]])); blocks.push('accordion');
+    ctx.notes.push(`disclosure: toggle + ${cols.length ? `${cols.length} illustrated columns` : 'prose'} → accordion (disclose), one row [label][prose]${cols.length ? ' — the columns are flattened in reading order (D2), nested toggles become label + link list' : ''}`);
+  }
+  return { html: section(parts, { style: hubStyle(root, lead ? 'lead-first' : null) }), blocks: [...new Set(blocks)] };
+}
+
+/* ---- faq (hub, shared): h3 question rows; answers flattened (layout tables unwrapped, link lines → lists); `faq-grid` → sticky h2 beside a wide list ---- */
+export function hubFaq(root, ctx, extra = []) {
+  const wrap = q(root, '.faq[data-slot="items"], .faq, [data-slot="items"]'); if (!wrap) return null;
+  const aside = !!q(root, '.faq-grid'); const rate = !!q(root, '.faq-foot-feedback');
+  const item = (d) => {
+    const s = q(d, 'summary'); const qEl = q(s, 'h3, h2, .faq-q') || s; const a = q(d, '.answer, .answer-wide'); if (a) unwrapLayoutTables(a);
+    let ans = ''; for (const c of a ? [...a.children] : []) { if (c.classList.contains('faq-foot-feedback')) continue; ans += prose(c, ctx); }
+    return [`<h3>${inline(qEl, ctx).trim()}</h3>`, linkListify(ans)];
+  };
+  const shown = qa(wrap, ':scope > details:not(.faq-more)').map(item);
+  const variants = ['faq', aside ? 'wide' : null, rate ? 'rate' : null, ...extra];
+  const parts = [head(root, ctx), block('accordion', variants, shown)];
+  const more = q(wrap, ':scope > details.faq-more');
+  if (more) { const label = q(more, 'summary'); parts.push(block('accordion', ['faq', 'more'], [[`<p>${inline(label, ctx).trim()}</p>`], ...qa(more, '.faq-more-items > details').map(item)])); }
+  if (rate) ctx.notes.push('faq: the "Var dette nyttig?" rating row is accordion `rate` chrome (@ew-exempt labels, dynamics #5 interim)');
+  return { html: section(parts, { style: hubStyle(root, aside ? 'faq-aside' : null) }), blocks: ['accordion'] };
+}
+const accordionList = (root, ctx) => hubFaq(root, ctx, ['list']);
+
+/* ---- currency-converter: static shell (dynamics #9) → converter block [label][value] rows + rate + note; the rate list → table (disclose) ---- */
+function currencyConverter(root, ctx) {
+  const form = q(root, 'form'); const parts = [head(root, ctx)]; const blocks = [];
+  if (form) {
+    const rows = [];
+    for (const f of qa(form, '.conv-field')) {
+      const label = q(f, 'label, .label'); const sel = q(f, 'select'); const inp = q(f, 'input'); const out = q(f, 'output');
+      const val = sel ? txt(q(sel, 'option[selected]') || q(sel, 'option')) : inp ? (inp.getAttribute('value') || '') : txt(out);
+      rows.push([`<p>${inline(label, ctx).trim()}</p>`, `<p>${esc(val)}</p>`]);
+    }
+    for (const p of qa(form, ':scope > p')) { const s = inline(q(p, 'span:not([hidden])') || p, ctx).trim(); if (s) rows.push([`<p>${s}</p>`]); }
+    parts.push(block('converter', [], rows)); blocks.push('converter');
+    ctx.notes.push('currency-converter: dynamics #9 interim — the captured selection/amount/result are authored [label][value] rows, controls disabled; the currency option lists are the live widget\'s data (not authored)');
+  }
+  for (const d of qa(root, 'details')) if (q(d, 'table')) { parts.push(discloseTable(d, ctx)); blocks.push('table'); }
+  return { html: section(parts, { style: hubStyle(root) }), blocks: [...new Set(blocks)] };
+}
+
 export default {
+  'page-title': hubTitle,
+  faq: hubFaq,
+  'card-grid': tileGrid, 'related-topics': tileGrid, 'static-cards': tileGrid,
+  usp, image, 'text-and-image': textAndImage, disclosure, 'accordion-list': accordionList, 'currency-converter': currencyConverter,
   'visual-nav': visualNav,
   callout: hubCallout,
   'split-media': hubSplit,

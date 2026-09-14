@@ -31,19 +31,20 @@
   },
   {
    "module": "accordion-list",
-   "blocks": []
+   "blocks": [
+    "accordion"
+   ]
   }
  ],
  "blocks": [
   "breadcrumbs",
-  "columns"
+  "columns",
+  "accordion"
  ],
  "notes": [
   "steps: columns (split steps) keeps the authored order (ol → paragraph → action pill → small note); the note is the trailing paragraph"
  ],
- "gaps": [
-  "no encoder for module accordion-list (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T22:30:27.859Z"
+ "writtenAt": "2026-09-14T22:39:22.010Z"
 }

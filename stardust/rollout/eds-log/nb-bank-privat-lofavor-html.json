@@ -20,7 +20,8 @@
   {
    "module": "page-title",
    "blocks": [
-    "breadcrumbs"
+    "breadcrumbs",
+    "hero"
    ]
   },
   {
@@ -29,23 +30,33 @@
   },
   {
    "module": "card-grid",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "card-grid",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "card-grid",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "card-grid",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "card-grid",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "tabs",
@@ -61,7 +72,9 @@
   },
   {
    "module": "card-grid",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "feedback",
@@ -76,26 +89,22 @@
  ],
  "blocks": [
   "breadcrumbs",
+  "hero",
+  "cards",
   "accordion",
   "columns",
   "feedback"
  ],
  "notes": [
+  "page-title (intro-media): text + photo intro → hero (intro) — photo right, h1 + leads + pills left",
   "media: mann-sofa-lese.svg is 43614 B of SVG (> 40000) — authored as DA media mann-sofa-lese.png",
   "media: sparing-2.svg is 44279 B of SVG (> 40000) — authored as DA media sparing-2.png",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
- "gaps": [
-  "no encoder for module card-grid (emitted as prose)",
-  "no encoder for module card-grid (emitted as prose)",
-  "no encoder for module card-grid (emitted as prose)",
-  "no encoder for module card-grid (emitted as prose)",
-  "no encoder for module card-grid (emitted as prose)",
-  "no encoder for module card-grid (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/mann-sofa-lese.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/sparing-2.svg"
  ],
- "writtenAt": "2026-09-14T22:30:27.617Z"
+ "writtenAt": "2026-09-14T22:39:21.771Z"
 }

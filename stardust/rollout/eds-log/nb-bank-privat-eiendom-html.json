@@ -33,7 +33,9 @@
   },
   {
    "module": "related-topics",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   }
  ],
  "blocks": [
@@ -42,9 +44,7 @@
  "notes": [
   "shortcut-row: prose h2 + ul of links (David's Model D5 simple list); section style `shortcuts` paints the hairline, the inline-link row and the chevrons"
  ],
- "gaps": [
-  "no encoder for module related-topics (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T22:30:27.588Z"
+ "writtenAt": "2026-09-14T22:39:21.744Z"
 }

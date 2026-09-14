@@ -75,11 +75,12 @@
  ],
  "notes": [
   "media: illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg is 860616 B of SVG (> 40000) — authored as DA media illustrasjon-sporsmal-sand-sirkel-usymmetrisk.png",
+  "faq: the \"Var dette nyttig?\" rating row is accordion `rate` chrome (@ew-exempt labels, dynamics #5 interim)",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
  "gaps": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg"
  ],
- "writtenAt": "2026-09-14T22:30:27.561Z"
+ "writtenAt": "2026-09-14T22:39:21.721Z"
 }

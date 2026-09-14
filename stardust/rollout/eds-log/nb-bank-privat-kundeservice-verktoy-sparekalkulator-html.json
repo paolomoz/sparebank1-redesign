@@ -24,6 +24,10 @@
    ]
   },
   {
+   "module": "calculator",
+   "blocks": []
+  },
+  {
    "module": "related-products",
    "blocks": [
     "cards"
@@ -46,12 +50,10 @@
   "feedback"
  ],
  "notes": [
-  "lint D1 calculator: bespoke widget (dynamics #7 interim static shell — controls disabled, captured strings; labels/values are control config, @ew-exempt in the block)",
+  "calculator: React mount with nothing captured (dynamics #8, owner-bound) — no authored content, module omitted",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
- "gaps": [
-  "module calculator produced no content"
- ],
+ "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T22:30:27.864Z"
+ "writtenAt": "2026-09-14T22:39:22.015Z"
 }

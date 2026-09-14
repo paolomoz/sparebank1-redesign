@@ -50,7 +50,9 @@
   },
   {
    "module": "static-cards",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "image",
@@ -58,11 +60,15 @@
   },
   {
    "module": "disclosure",
-   "blocks": []
+   "blocks": [
+    "accordion"
+   ]
   },
   {
    "module": "static-cards",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "faq",
@@ -97,6 +103,7 @@
  ],
  "blocks": [
   "columns",
+  "cards",
   "accordion",
   "feedback"
  ],
@@ -106,15 +113,12 @@
   "media: Mennesker_personer_voksen_forelder_barn.svg is 77637 B of SVG (> 40000) — authored as DA media Mennesker_personer_voksen_forelder_barn.png",
   "media: barn_spiller_fotball.svg is 93129 B of SVG (> 40000) — authored as DA media barn_spiller_fotball.png",
   "media: bonde-ku-landbruk-mork.svg is 56362 B of SVG (> 40000) — authored as DA media bonde-ku-landbruk-mork.png",
+  "disclosure: toggle + 4 illustrated columns → accordion (disclose), one row [label][prose] — the columns are flattened in reading order (D2), nested toggles become label + link list",
+  "faq: the \"Var dette nyttig?\" rating row is accordion `rate` chrome (@ew-exempt labels, dynamics #5 interim)",
   "shortcut-row: prose h2 + ul of links (David's Model D5 simple list); section style `shortcuts` paints the hairline, the inline-link row and the chevrons",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
- "gaps": [
-  "no encoder for module static-cards (emitted as prose)",
-  "no encoder for module image (emitted as prose)",
-  "no encoder for module disclosure (emitted as prose)",
-  "no encoder for module static-cards (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-koffert-reise-rosa.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/barekraft-skifte-sykkeldekk-lys-bakgrunn.svg",
@@ -122,5 +126,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/barn_spiller_fotball.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/bonde-ku-landbruk-mork.svg"
  ],
- "writtenAt": "2026-09-14T22:30:27.601Z"
+ "writtenAt": "2026-09-14T22:39:21.758Z"
 }

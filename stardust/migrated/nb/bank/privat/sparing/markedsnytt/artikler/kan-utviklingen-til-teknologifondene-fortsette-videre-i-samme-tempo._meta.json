@@ -29,7 +29,7 @@
   "designJsonSha": "356d124b47aa82e7",
   "sourceCurrentSha": "b619ce37a4bc03cf",
   "sourceProposedSha": null,
-  "archetypeSha": "f7a218a9f0599fd0",
+  "archetypeSha": "9e4e89216bec1a8e",
   "canonShas": {
    "header": "7b575d4a8a06908b",
    "footer": "a71bffa1aee4b031",
@@ -79,11 +79,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T22:15:24.962Z",
+ "migratedAt": "2026-09-14T22:39:32.358Z",
  "designMdSha": "9eaced02fd2340e7",
  "designJsonSha": "356d124b47aa82e7",
  "sourceCurrentSha": "b619ce37a4bc03cf",
  "sourceProposedSha": null,
- "archetypeSha": "f7a218a9f0599fd0",
+ "archetypeSha": "9e4e89216bec1a8e",
  "assetsBundled": 3
 }

@@ -1,7 +1,7 @@
 {
  "_provenance": {
   "writtenBy": "stardust:migrate",
-  "writtenAt": "2026-09-14T22:17:26.414Z",
+  "writtenAt": "2026-09-14T22:39:32.447Z",
   "stardustVersion": "0.20.0",
   "readArtifacts": [
    "../sparebank1/stardust/state.json",
@@ -5000,12 +5000,12 @@
   "missingAssets": [],
   "cleanedAssets": [],
   "mediaPolicy": "source-origin URLs (Mode A image-reuse); SVG > 40 KB rasterised to DA media at rollout",
-  "lastRunAt": "2026-09-14T22:17:26.414Z"
+  "lastRunAt": "2026-09-14T22:39:32.447Z"
  },
  "lastRun": {
   "skill": "stardust:migrate",
-  "at": "2026-09-14T22:17:26.414Z",
-  "migrated": 3,
+  "at": "2026-09-14T22:39:32.447Z",
+  "migrated": 11,
   "unchanged": 0,
   "failures": []
  }

@@ -23,7 +23,9 @@
   },
   {
    "module": "card-grid",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "callout",
@@ -33,7 +35,9 @@
   },
   {
    "module": "related-topics",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "feedback",
@@ -43,6 +47,7 @@
   }
  ],
  "blocks": [
+  "cards",
   "callout",
   "feedback"
  ],
@@ -51,12 +56,9 @@
   "lint D1 callout: designed compound (canon icon + tinted paper), Block Collection-shaped single cell of prose — kept as a block like the product archetype",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
- "gaps": [
-  "no encoder for module card-grid (emitted as prose)",
-  "no encoder for module related-topics (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/kunden-i-fokus-dame-med-kikkert-lys-bakgrunn.svg"
  ],
- "writtenAt": "2026-09-14T22:30:27.640Z"
+ "writtenAt": "2026-09-14T22:39:21.795Z"
 }

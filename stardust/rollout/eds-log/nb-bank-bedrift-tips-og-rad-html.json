@@ -25,21 +25,23 @@
   },
   {
    "module": "card-grid",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "card-grid",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   }
  ],
  "blocks": [
-  "breadcrumbs"
+  "breadcrumbs",
+  "cards"
  ],
  "notes": [],
- "gaps": [
-  "no encoder for module card-grid (emitted as prose)",
-  "no encoder for module card-grid (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T22:30:27.579Z"
+ "writtenAt": "2026-09-14T22:39:21.736Z"
 }

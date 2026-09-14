@@ -18,7 +18,9 @@
   },
   {
    "module": "card-grid",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "faq",
@@ -53,6 +55,7 @@
  ],
  "blocks": [
   "breadcrumbs",
+  "cards",
   "accordion",
   "columns",
   "feedback"
@@ -61,11 +64,9 @@
   "media: dame-hjemmekontor.svg is 45095 B of SVG (> 40000) — authored as DA media dame-hjemmekontor.png",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
- "gaps": [
-  "no encoder for module card-grid (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-hjemmekontor.svg"
  ],
- "writtenAt": "2026-09-14T22:30:27.845Z"
+ "writtenAt": "2026-09-14T22:39:21.994Z"
 }

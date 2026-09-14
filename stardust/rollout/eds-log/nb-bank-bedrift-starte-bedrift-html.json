@@ -20,16 +20,21 @@
   {
    "module": "page-title",
    "blocks": [
-    "breadcrumbs"
+    "breadcrumbs",
+    "hero"
    ]
   },
   {
    "module": "card-grid",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "card-grid",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "split-media",
@@ -58,10 +63,13 @@
  ],
  "blocks": [
   "breadcrumbs",
+  "hero",
+  "cards",
   "columns",
   "feedback"
  ],
  "notes": [
+  "page-title (intro-media): text + photo intro → hero (intro) — photo right, h1 + leads + pills left",
   "media: workshop-idemyldring-mennesker-rullestol-bord-lys.svg is 99251 B of SVG (> 40000) — authored as DA media workshop-idemyldring-mennesker-rullestol-bord-lys.png",
   "media: skattetrekkskonto-2.svg is 62210 B of SVG (> 40000) — authored as DA media skattetrekkskonto-2.png",
   "media: student-mann-pa-laptop.svg is 47068 B of SVG (> 40000) — authored as DA media student-mann-pa-laptop.png",
@@ -69,10 +77,7 @@
   "media: kakemakere-lys-bakgrunn.svg is 94208 B of SVG (> 40000) — authored as DA media kakemakere-lys-bakgrunn.png",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
- "gaps": [
-  "no encoder for module card-grid (emitted as prose)",
-  "no encoder for module card-grid (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/workshop-idemyldring-mennesker-rullestol-bord-lys.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/skattetrekkskonto-2.svg",
@@ -80,5 +85,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/bonde-ku-landbruk-mork.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/kakemakere-lys-bakgrunn.svg"
  ],
- "writtenAt": "2026-09-14T22:30:27.574Z"
+ "writtenAt": "2026-09-14T22:39:21.733Z"
 }

@@ -3,7 +3,7 @@
  * Family override: `callout` (rich body, `quick` rhythm).
  */
 import * as L from '../lib.mjs';
-import { hubStyle, head, hubCallout } from './category-hub.mjs';
+import { hubStyle, head, hubCallout, hubFaq, hubTitle } from './category-hub.mjs';
 
 const { q, qa, inline, prose, pic, block, section } = L;
 
@@ -38,4 +38,6 @@ export default {
   'bank-table': bankTable,
   'address-block': addressBlock,
   callout: hubCallout,
+  'page-title': hubTitle,
+  faq: hubFaq,
 };

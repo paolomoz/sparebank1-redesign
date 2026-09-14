@@ -39,7 +39,9 @@
   },
   {
    "module": "related-topics",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "feedback",
@@ -61,9 +63,7 @@
   "lint D1 calculator: bespoke widget (dynamics #7 interim static shell — controls disabled, captured strings; labels/values are control config, @ew-exempt in the block)",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
- "gaps": [
-  "no encoder for module related-topics (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T22:30:27.637Z"
+ "writtenAt": "2026-09-14T22:39:21.792Z"
 }

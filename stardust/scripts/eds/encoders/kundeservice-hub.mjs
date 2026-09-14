@@ -4,9 +4,9 @@
  */
 import * as L from '../lib.mjs';
 import { cardRows } from '../encoders.mjs';
-import { hubStyle, head, hubPromo, cardVariant } from './category-hub.mjs';
+import { hubStyle, head, hubPromo, cardVariant, hubFaq, hubTitle } from './category-hub.mjs';
 
-const { q, qa, cls, txt, inline, prose, pic, block, section, esc } = L;
+const { q, qa, txt, inline, prose, pic, block, section, esc } = L;
 
 /* ---- hero-ask: split hero (photo · h1 + title + lead + line) + the chat form row (label · button label · note) + the tool tiles ---- */
 function heroAsk(root, ctx) {
@@ -26,25 +26,6 @@ function heroAsk(root, ctx) {
   return { html: section(parts, { style: hubStyle(root) }), blocks };
 }
 
-/* ---- faq (hub): sticky h2 beside the list; answers may hold a second prose column, `.cols` sub-columns, a rating row and the "read more" link ---- */
-function faqHub(root, ctx) {
-  const wrap = q(root, '.faq[data-slot="items"], .faq'); if (!wrap) return null;
-  const item = (d) => {
-    const s = q(d, 'summary'); const qEl = q(s, 'h3, h2, .faq-q') || s; const a = q(d, '.answer, .answer-wide');
-    let ans = '';
-    for (const c of a ? [...a.children] : []) {
-      if (c.classList.contains('faq-foot-feedback')) continue; // per-answer rating = block chrome (accordion `rate`, dynamics #5 interim)
-      ans += prose(c, ctx);
-    }
-    // "Se også:" + several links on <br> lines in ONE paragraph would read as a multi-link CTA paragraph (delivery P1) → one paragraph per line
-    ans = ans.replace(/<p>((?:(?!<\/p>).)*?)<\/p>/g, (m, inner) => ((inner.match(/<a /g) || []).length > 1 && /<strong>/.test(inner) && /<br>/.test(inner) ? inner.split(/\s*<br>\s*/).map((l) => l.replace(/^(<strong>[^<]*)<\/strong>\s*$/, '$1</strong>').trim()).filter(Boolean).map((l) => `<p>${l}</p>`).join('') : m));
-    return [`<h3>${inline(qEl, ctx).trim()}</h3>`, ans];
-  };
-  const rows = qa(wrap, ':scope > details:not(.faq-more)').map(item);
-  ctx.notes.push('faq (hub): `.cols` sub-columns flattened to prose in reading order (answers are collapsed; D2 no nested blocks); the "Var dette nyttig?" rating row is accordion `rate` chrome (@ew-exempt labels, dynamics #5)');
-  return { html: section([head(root, ctx), block('accordion', ['faq', 'wide', 'rate'], rows)], { style: hubStyle(root, 'faq-aside') }), blocks: ['accordion'] };
-}
-
 /* ---- topic-tiles: icon + single link per tile → cards (topics), one row [icon][link] ---- */
 function topicTiles(root, ctx) {
   const ul = q(root, 'ul.topics, ul[data-slot="tiles"], ul'); if (!ul) return null;
@@ -54,7 +35,8 @@ function topicTiles(root, ctx) {
 
 export default {
   'hero-ask': heroAsk,
-  faq: faqHub,
+  'page-title': hubTitle,
+  faq: hubFaq,
   'topic-tiles': topicTiles,
   'promo-band': hubPromo,
 };

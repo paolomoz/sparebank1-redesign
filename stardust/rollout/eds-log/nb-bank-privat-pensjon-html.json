@@ -23,7 +23,9 @@
   },
   {
    "module": "card-grid",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "cobranding",
@@ -41,7 +43,9 @@
   },
   {
    "module": "card-grid",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "shortcut-row",
@@ -73,7 +77,9 @@
   },
   {
    "module": "related-topics",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   },
   {
    "module": "rich-text",
@@ -91,10 +97,10 @@
   }
  ],
  "blocks": [
+  "cards",
   "cobranding",
   "columns",
   "accordion",
-  "cards",
   "feedback"
  ],
  "notes": [
@@ -106,13 +112,10 @@
   "media: menneske_person_tenaaring_2-CZfMiezN.svg is 50135 B of SVG (> 40000) — authored as DA media menneske_person_tenaaring_2-CZfMiezN.png",
   "shortcut-row: prose h2 + ul of links (David's Model D5 simple list); section style `shortcuts` paints the hairline, the inline-link row and the chevrons",
   "media: illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg is 860616 B of SVG (> 40000) — authored as DA media illustrasjon-sporsmal-sand-sirkel-usymmetrisk.png",
+  "faq: the \"Var dette nyttig?\" rating row is accordion `rate` chrome (@ew-exempt labels, dynamics #5 interim)",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
- "gaps": [
-  "no encoder for module card-grid (emitted as prose)",
-  "no encoder for module card-grid (emitted as prose)",
-  "no encoder for module related-topics (emitted as prose)"
- ],
+ "gaps": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/stable-penger-lys-hand.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/sparing-2.svg",
@@ -120,5 +123,5 @@
   "https://www.sparebank1.no/privat/forsikring/pensjon/assets/menneske_person_tenaaring_2-CZfMiezN.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg"
  ],
- "writtenAt": "2026-09-14T22:30:27.625Z"
+ "writtenAt": "2026-09-14T22:39:21.784Z"
 }
