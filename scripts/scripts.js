@@ -74,6 +74,23 @@ function buildWidgetAutoBlocks(main) {
 }
 
 /**
+ * Auto-blocks media URLs (D1): a paragraph holding only a fully-qualified YouTube / Vimeo link becomes an `embed` block;
+ * one holding only an .mp4/.webm link becomes a `video` block (Block Collection shapes: one cell, the link). The link node is moved.
+ * @param {Element} main The container element
+ */
+function buildMediaAutoBlocks(main) {
+  const EMBED = /(youtube\.com\/(embed\/|watch)|youtu\.be\/|youtube-nocookie\.com\/embed\/|player\.vimeo\.com\/video\/|vimeo\.com\/\d)/;
+  const VIDEO = /\.(mp4|webm)(\?|$)/i;
+  main.querySelectorAll('p > a[href]').forEach((link) => {
+    if (link.closest('.embed, .video, .widget, .hero, .columns')) return;
+    const p = link.closest('p');
+    if (p.querySelectorAll('a').length !== 1 || p.textContent.trim() !== link.textContent.trim()) return;
+    if (EMBED.test(link.href)) p.replaceWith(buildBlock('embed', { elems: [link] }));
+    else if (VIDEO.test(link.href)) p.replaceWith(buildBlock('video', { elems: [link] }));
+  });
+}
+
+/**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
@@ -97,6 +114,7 @@ function buildAutoBlocks(main) {
       });
     }
     buildWidgetAutoBlocks(main);
+    buildMediaAutoBlocks(main);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
@@ -160,7 +178,7 @@ export function decorateMain(main) {
  * @param {Element} doc The container element
  */
 async function loadEager(doc) {
-  document.documentElement.lang = 'en';
+  document.documentElement.lang = 'nb';
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
   if (main) {

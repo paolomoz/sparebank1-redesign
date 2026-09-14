@@ -1,0 +1,10 @@
+/* feedback — canon .feedback strip (the section carries `feedback-band`: hairline top, 48px padding). */
+.feedback .container { width: 100%; }
+.feedback .feedback-row { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; }
+.feedback .feedback-q :is(h2, h3, p) { margin: 0; font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; color: var(--fjell); letter-spacing: -0.005em; }
+.feedback .feedback-btns { display: flex; gap: 8px; }
+.feedback button.thumb { min-width: 56px; padding-inline: 14px; gap: 8px; }
+.feedback button.thumb svg { width: 22px; height: 22px; }
+.feedback .thumb-label p { margin: 0; }
+.feedback button.thumb.is-on { background: var(--frost-30); color: var(--fjell); border-color: var(--fjell); }
+.feedback.labels .feedback-row { justify-content: flex-start; }

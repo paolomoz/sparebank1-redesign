@@ -1,3 +1,7 @@
+/**
+ * Fragment Block — the authored link names the fragment document to include (config, never displayed).
+ * @ew-exempt all — fragment reference, replaced by the fragment's own sections
+ */
 /*
  * Fragment Block
  * Include content on a page as a fragment.

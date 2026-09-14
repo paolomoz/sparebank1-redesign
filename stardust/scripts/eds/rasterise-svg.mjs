@@ -10,14 +10,15 @@ import { ORG, REPO, rasterName } from './lib.mjs';
 const TOKEN = process.env.DA_TOKEN; if (!TOKEN) { console.error('DA_TOKEN missing (set -a; source ~/.claude/.env; set +a)'); process.exit(1); }
 const LEDGER = 'stardust/rollout/raster-ledger.json'; const OUT = 'stardust/rollout/raster'; fs.mkdirSync(OUT, { recursive: true });
 const args = process.argv.slice(2); let urls = args.filter((a) => !a.startsWith('--'));
-if (!urls.length) { const set = new Set(); for (const f of fs.readdirSync('stardust/rollout/eds-log')) (JSON.parse(fs.readFileSync(`stardust/rollout/eds-log/${f}`, 'utf8')).rasterise || []).forEach((u) => set.add(u)); urls = [...set]; }
+if (args.includes('--from-migrated')) { const sizes = JSON.parse(fs.readFileSync('stardust/rollout/svg-sizes.json', 'utf8')); const set = new Set(); (function walk(d) { for (const f of fs.readdirSync(d)) { const p = `${d}/${f}`; if (fs.statSync(p).isDirectory()) walk(p); else if (p.endsWith('.html')) for (const m of fs.readFileSync(p, 'utf8').matchAll(/src="(https:\/\/www\.sparebank1\.no[^"]+\.svg)[^"]*"/g)) if ((sizes[m[1]] || 0) > 40000) set.add(m[1]); } })('stardust/migrated'); urls = [...set]; }
+else if (!urls.length) { const set = new Set(); for (const f of fs.readdirSync('stardust/rollout/eds-log')) (JSON.parse(fs.readFileSync(`stardust/rollout/eds-log/${f}`, 'utf8')).rasterise || []).forEach((u) => set.add(u)); urls = [...set]; }
 const ledger = fs.existsSync(LEDGER) ? JSON.parse(fs.readFileSync(LEDGER, 'utf8')) : {};
 const browser = await chromium.launch(); let up = 0, skip = 0, fail = 0;
 for (const url of urls) {
   const name = rasterName(url);
   if (ledger[url]?.status === 201 && !args.includes('--force')) { skip++; continue; }
   try {
-    const svg = await (await fetch(url)).text();
+    const svg = await (await fetch(url)).text(); if (!/<svg[\s>]/i.test(svg.slice(0, 2000))) throw new Error('response is not an SVG (HTML page?)');
     const page = await browser.newPage({ viewport: { width: 1200, height: 1200 }, deviceScaleFactor: 2 });
     await page.setContent(`<!doctype html><html><body style="margin:0;background:transparent">${svg}</body></html>`);
     const box = await page.evaluate(() => { const s = document.querySelector('svg'); const vb = s.viewBox?.baseVal; const w = s.width?.baseVal?.value || vb?.width || 800; const h = s.height?.baseVal?.value || vb?.height || 600; s.setAttribute('width', w); s.setAttribute('height', h); s.style.display = 'block'; const r = s.getBoundingClientRect(); return { w: Math.ceil(r.width), h: Math.ceil(r.height) }; });

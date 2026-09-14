@@ -1,0 +1,977 @@
+{
+ "writtenAt": "2026-09-14T21:15:48.336Z",
+ "routerFrom": "nb-bank-privat-sparing-markedsnytt-html",
+ "variants": {
+  "nav": [
+   {
+    "path": "/nav",
+    "pages": [
+     "nb-bank-privat-sparing-markedsnytt-html",
+     "nb-bank-privat-lan-html",
+     "nb-bank-privat-lan-boliglan-html",
+     "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+     "nb-bank-privat-kundeservice-kontakt-html",
+     "nb-bank-privat-kundeservice-html",
+     "nb-bank-privat-html",
+     "nb-bank-privat-daglig-bruk-bankid-html",
+     "nb-bank-privat-daglig-bruk-bankkonto-html",
+     "nb-bank-privat-daglig-bruk-bankkort-html",
+     "nb-bank-privat-daglig-bruk-html",
+     "nb-bank-privat-daglig-bruk-kredittkort-html",
+     "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+     "nb-bank-privat-daglig-bruk-mobilbank-html",
+     "nb-bank-privat-eiendom-html",
+     "nb-bank-privat-forsikring-barneforsikring-html",
+     "nb-bank-privat-forsikring-bilforsikring-html",
+     "nb-bank-privat-forsikring-html",
+     "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html",
+     "nb-bank-privat-forsikring-innboforsikring-html",
+     "nb-bank-privat-forsikring-kundehistorier-html",
+     "nb-bank-privat-forsikring-meld-skade-html",
+     "nb-bank-privat-forsikring-reiseforsikring-html",
+     "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+     "nb-bank-privat-kundeservice-bestill-prisliste-html",
+     "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+     "nb-bank-privat-kundeservice-verktoy-klager-html",
+     "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
+     "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html",
+     "nb-bank-privat-lan-billan-html",
+     "nb-bank-privat-lan-forbrukslan-html",
+     "nb-bank-privat-lan-gronne-lan-html",
+     "nb-bank-privat-lan-lanekalkulator-html",
+     "nb-bank-privat-lan-refinansiering-html",
+     "nb-bank-privat-lofavor-html",
+     "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+     "nb-bank-privat-pensjon-html",
+     "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+     "nb-bank-privat-private-banking-html",
+     "nb-bank-privat-sparing-html",
+     "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+     "nb-bank-privat-sparing-spare-i-fond-html",
+     "nb-bank-privat-sparing-spare-pa-konto-html",
+     "nb-bank-privat-sparing-spare-til-barn-html",
+     "nb-bank-privat-svindel-html",
+     "nb-bank-privat-tips-og-rad-html"
+    ]
+   },
+   {
+    "path": "/nav-minimal",
+    "pages": [
+     "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+     "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html"
+    ]
+   },
+   {
+    "path": "/nav-bedrift",
+    "pages": [
+     "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+     "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+     "nb-bank-bedrift-bedriftsforsikring-html",
+     "nb-bank-bedrift-bedriftskort-html",
+     "nb-bank-bedrift-bedriftskort-kredittkort-html",
+     "nb-bank-bedrift-betaling-html",
+     "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+     "nb-bank-bedrift-daglig-drift-html",
+     "nb-bank-bedrift-html",
+     "nb-bank-bedrift-konto-bedriftskonto-html",
+     "nb-bank-bedrift-konto-html",
+     "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+     "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+     "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+     "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+     "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+     "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+     "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+     "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+     "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+     "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+     "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html",
+     "nb-bank-bedrift-kundeservice-html",
+     "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+     "nb-bank-bedrift-lan-finansiering-html",
+     "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+     "nb-bank-bedrift-lan-finansiering-leasing-html",
+     "nb-bank-bedrift-open-api-html",
+     "nb-bank-bedrift-pensjon-html",
+     "nb-bank-bedrift-regnskap-html",
+     "nb-bank-bedrift-sparing-investering-html",
+     "nb-bank-bedrift-starte-bedrift-html",
+     "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+     "nb-bank-bedrift-tips-og-rad-html"
+    ]
+   },
+   {
+    "path": "/nav-om-oss",
+    "pages": [
+     "nb-bank-om-oss-presse-html",
+     "nb-bank-om-oss-nyheter-html",
+     "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+     "nb-bank-om-oss-html",
+     "nb-bank-om-oss-investor-html",
+     "nb-bank-om-oss-jobb-og-karriere-html",
+     "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+     "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+     "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+     "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+     "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+     "nb-bank-om-oss-personvern-generelle-vilkar-html",
+     "nb-bank-om-oss-personvern-html",
+     "nb-bank-om-oss-samfunnsansvar-html",
+     "nb-bank-om-oss-selskaper-html",
+     "nb-bank-om-oss-vare-eksperter-html"
+    ]
+   },
+   {
+    "path": "/nav-minimal-om-oss",
+    "pages": [
+     "nb-bank-om-oss-hjemme-html",
+     "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html"
+    ]
+   }
+  ],
+  "footer": [
+   {
+    "path": "/footer",
+    "pages": [
+     "nb-bank-privat-sparing-markedsnytt-html",
+     "nb-bank-privat-lan-html",
+     "nb-bank-privat-lan-boliglan-html",
+     "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+     "nb-bank-privat-kundeservice-kontakt-html",
+     "nb-bank-privat-html",
+     "nb-bank-privat-daglig-bruk-bankid-html",
+     "nb-bank-privat-daglig-bruk-bankkonto-html",
+     "nb-bank-privat-daglig-bruk-bankkort-html",
+     "nb-bank-privat-daglig-bruk-html",
+     "nb-bank-privat-daglig-bruk-kredittkort-html",
+     "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+     "nb-bank-privat-daglig-bruk-mobilbank-html",
+     "nb-bank-privat-eiendom-html",
+     "nb-bank-privat-forsikring-barneforsikring-html",
+     "nb-bank-privat-forsikring-bilforsikring-html",
+     "nb-bank-privat-forsikring-html",
+     "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html",
+     "nb-bank-privat-forsikring-innboforsikring-html",
+     "nb-bank-privat-forsikring-kundehistorier-html",
+     "nb-bank-privat-forsikring-reiseforsikring-html",
+     "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+     "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+     "nb-bank-privat-kundeservice-verktoy-klager-html",
+     "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
+     "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html",
+     "nb-bank-privat-lan-billan-html",
+     "nb-bank-privat-lan-forbrukslan-html",
+     "nb-bank-privat-lan-gronne-lan-html",
+     "nb-bank-privat-lan-lanekalkulator-html",
+     "nb-bank-privat-lan-refinansiering-html",
+     "nb-bank-privat-lofavor-html",
+     "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+     "nb-bank-privat-pensjon-html",
+     "nb-bank-privat-private-banking-html",
+     "nb-bank-privat-sparing-html",
+     "nb-bank-privat-sparing-spare-i-fond-html",
+     "nb-bank-privat-sparing-spare-pa-konto-html",
+     "nb-bank-privat-sparing-spare-til-barn-html",
+     "nb-bank-privat-svindel-html",
+     "nb-bank-privat-tips-og-rad-html"
+    ]
+   },
+   {
+    "path": "/footer-kundeservice",
+    "pages": [
+     "nb-bank-privat-kundeservice-html"
+    ]
+   },
+   {
+    "path": "/footer-frontend",
+    "pages": [
+     "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+     "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+     "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+     "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html"
+    ]
+   },
+   {
+    "path": "/footer-frontend-2",
+    "pages": [
+     "nb-bank-privat-forsikring-meld-skade-html",
+     "nb-bank-privat-kundeservice-bestill-prisliste-html"
+    ]
+   },
+   {
+    "path": "/footer-bedrift",
+    "pages": [
+     "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+     "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+     "nb-bank-bedrift-bedriftsforsikring-html",
+     "nb-bank-bedrift-bedriftskort-html",
+     "nb-bank-bedrift-bedriftskort-kredittkort-html",
+     "nb-bank-bedrift-betaling-html",
+     "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+     "nb-bank-bedrift-daglig-drift-html",
+     "nb-bank-bedrift-html",
+     "nb-bank-bedrift-konto-bedriftskonto-html",
+     "nb-bank-bedrift-konto-html",
+     "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+     "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+     "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+     "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+     "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+     "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+     "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+     "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+     "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+     "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+     "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html",
+     "nb-bank-bedrift-kundeservice-html",
+     "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+     "nb-bank-bedrift-lan-finansiering-html",
+     "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+     "nb-bank-bedrift-lan-finansiering-leasing-html",
+     "nb-bank-bedrift-open-api-html",
+     "nb-bank-bedrift-pensjon-html",
+     "nb-bank-bedrift-regnskap-html",
+     "nb-bank-bedrift-sparing-investering-html",
+     "nb-bank-bedrift-starte-bedrift-html",
+     "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+     "nb-bank-bedrift-tips-og-rad-html"
+    ]
+   },
+   {
+    "path": "/footer-frontend-om-oss",
+    "pages": [
+     "nb-bank-om-oss-presse-html",
+     "nb-bank-om-oss-investor-html"
+    ]
+   },
+   {
+    "path": "/footer-frontend-om-oss-2",
+    "pages": [
+     "nb-bank-om-oss-nyheter-html",
+     "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+     "nb-bank-om-oss-hjemme-html",
+     "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+     "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+     "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+     "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+     "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html"
+    ]
+   },
+   {
+    "path": "/footer-om-oss",
+    "pages": [
+     "nb-bank-om-oss-html",
+     "nb-bank-om-oss-jobb-og-karriere-html",
+     "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+     "nb-bank-om-oss-personvern-generelle-vilkar-html",
+     "nb-bank-om-oss-personvern-html",
+     "nb-bank-om-oss-samfunnsansvar-html",
+     "nb-bank-om-oss-selskaper-html",
+     "nb-bank-om-oss-vare-eksperter-html"
+    ]
+   }
+  ]
+ },
+ "pages": {
+  "nb-bank-privat-sparing-markedsnytt-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-lan-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-lan-boliglan-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-kundeservice-verktoy-sperre-kort-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-kundeservice-kontakt-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": null,
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-kundeservice-html": {
+   "nav": "/nav",
+   "footer": "/footer-kundeservice",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-daglig-bruk-bankid-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-daglig-bruk-bankkonto-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-daglig-bruk-bankkort-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-daglig-bruk-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-daglig-bruk-kredittkort-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-daglig-bruk-mobilbank-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-eiendom-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-forsikring-barneforsikring-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": null,
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-forsikring-bilforsikring-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": null,
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-forsikring-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": null,
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": null,
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-forsikring-innboforsikring-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": null,
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-forsikring-kundehistorier-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": null,
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html": {
+   "nav": "/nav-minimal",
+   "footer": "/footer-frontend",
+   "router": null,
+   "market": "privat",
+   "clientlib": "frontend"
+  },
+  "nb-bank-privat-forsikring-meld-skade-html": {
+   "nav": "/nav",
+   "footer": "/footer-frontend-2",
+   "router": null,
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-forsikring-reiseforsikring-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": null,
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-kundeservice-bestill-bli-kunde-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-kundeservice-bestill-prisliste-html": {
+   "nav": "/nav",
+   "footer": "/footer-frontend-2",
+   "router": null,
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-kundeservice-verktoy-klager-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-lan-billan-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-lan-forbrukslan-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-lan-gronne-lan-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-lan-lanekalkulator-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-lan-refinansiering-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-lofavor-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-pensjon-egen-pensjonskonto-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-pensjon-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html": {
+   "nav": "/nav",
+   "footer": "/footer-frontend",
+   "router": null,
+   "market": "privat",
+   "clientlib": "frontend"
+  },
+  "nb-bank-privat-private-banking-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-sparing-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html": {
+   "nav": "/nav",
+   "footer": "/footer-frontend",
+   "router": null,
+   "market": "privat",
+   "clientlib": "frontend"
+  },
+  "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html": {
+   "nav": "/nav-minimal",
+   "footer": "/footer-frontend",
+   "router": null,
+   "market": "privat",
+   "clientlib": "frontend"
+  },
+  "nb-bank-privat-sparing-spare-i-fond-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-sparing-spare-pa-konto-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-sparing-spare-til-barn-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-svindel-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-privat-tips-og-rad-html": {
+   "nav": "/nav",
+   "footer": "/footer",
+   "router": "/fragments/bank-router",
+   "market": "privat",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": null,
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-bedriftsforsikring-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": null,
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-bedriftskort-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-bedriftskort-kredittkort-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-betaling-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-betaling-utenlandsbetaling-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-daglig-drift-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-konto-bedriftskonto-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-konto-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": null,
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": null,
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-kundeservice-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-lan-finansiering-bedriftslan-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-lan-finansiering-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-lan-finansiering-kassekreditt-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-lan-finansiering-leasing-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-open-api-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-pensjon-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-regnskap-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-sparing-investering-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-starte-bedrift-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-bedrift-tips-og-rad-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift",
+   "router": "/fragments/bank-router-bedrift",
+   "market": "bedrift",
+   "clientlib": "base"
+  },
+  "nb-bank-om-oss-presse-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-frontend-om-oss",
+   "router": null,
+   "market": "om-oss",
+   "clientlib": "base"
+  },
+  "nb-bank-om-oss-nyheter-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-frontend-om-oss-2",
+   "router": null,
+   "market": "om-oss",
+   "clientlib": "frontend"
+  },
+  "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-frontend-om-oss-2",
+   "router": null,
+   "market": "om-oss",
+   "clientlib": "frontend"
+  },
+  "nb-bank-om-oss-hjemme-html": {
+   "nav": "/nav-minimal-om-oss",
+   "footer": "/footer-frontend-om-oss-2",
+   "router": null,
+   "market": "om-oss",
+   "clientlib": "frontend"
+  },
+  "nb-bank-om-oss-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-om-oss",
+   "router": "/fragments/bank-router-om-oss",
+   "market": "om-oss",
+   "clientlib": "base"
+  },
+  "nb-bank-om-oss-investor-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-frontend-om-oss",
+   "router": null,
+   "market": "om-oss",
+   "clientlib": "base"
+  },
+  "nb-bank-om-oss-jobb-og-karriere-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-om-oss",
+   "router": null,
+   "market": "om-oss",
+   "clientlib": "base"
+  },
+  "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-frontend-om-oss-2",
+   "router": null,
+   "market": "om-oss",
+   "clientlib": "frontend"
+  },
+  "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-frontend-om-oss-2",
+   "router": null,
+   "market": "om-oss",
+   "clientlib": "frontend"
+  },
+  "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-frontend-om-oss-2",
+   "router": null,
+   "market": "om-oss",
+   "clientlib": "frontend"
+  },
+  "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html": {
+   "nav": "/nav-minimal-om-oss",
+   "footer": "/footer-frontend-om-oss-2",
+   "router": null,
+   "market": "om-oss",
+   "clientlib": "frontend"
+  },
+  "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-frontend-om-oss-2",
+   "router": null,
+   "market": "om-oss",
+   "clientlib": "frontend"
+  },
+  "nb-bank-om-oss-om-banken-selskapsinformasjon-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-om-oss",
+   "router": "/fragments/bank-router-om-oss",
+   "market": "om-oss",
+   "clientlib": "base"
+  },
+  "nb-bank-om-oss-personvern-generelle-vilkar-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-om-oss",
+   "router": "/fragments/bank-router-om-oss",
+   "market": "om-oss",
+   "clientlib": "base"
+  },
+  "nb-bank-om-oss-personvern-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-om-oss",
+   "router": "/fragments/bank-router-om-oss",
+   "market": "om-oss",
+   "clientlib": "base"
+  },
+  "nb-bank-om-oss-samfunnsansvar-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-om-oss",
+   "router": null,
+   "market": "om-oss",
+   "clientlib": "base"
+  },
+  "nb-bank-om-oss-selskaper-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-om-oss",
+   "router": "/fragments/bank-router-om-oss",
+   "market": "om-oss",
+   "clientlib": "base"
+  },
+  "nb-bank-om-oss-vare-eksperter-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-om-oss",
+   "router": "/fragments/bank-router-om-oss",
+   "market": "om-oss",
+   "clientlib": "base"
+  }
+ }
+}

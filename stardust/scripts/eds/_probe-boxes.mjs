@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+// _probe-boxes.mjs <url> "<heading text>" [width] — rects of the text/media boxes inside the main section that contains the heading
+import { chromium } from 'playwright';
+const [url, heading, w = '1440'] = process.argv.slice(2); const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: +w, height: +w > 1000 ? 900 : 844 } });
+await p.goto(url, { waitUntil: 'networkidle', timeout: 60000 }); await p.evaluate(async () => { for (let y = 0; y < document.documentElement.scrollHeight; y += 600) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 40)); } window.scrollTo(0, 0); }); await p.waitForTimeout(400);
+const rows = await p.evaluate((needle) => { const secs = [...document.querySelectorAll('main > section, main > .section, main > article > section')]; const sec = secs.find((s) => [...s.querySelectorAll('h1,h2,h3')].some((h) => h.textContent.trim().startsWith(needle))); if (!sec) return [{ label: 'SECTION NOT FOUND' }];
+  const out = []; const r0 = sec.getBoundingClientRect(); out.push({ label: 'SECTION ' + sec.className.split(' ').slice(0, 3).join('.'), top: 0, h: Math.round(r0.height), pad: getComputedStyle(sec).paddingTop + '/' + getComputedStyle(sec).paddingBottom });
+  sec.querySelectorAll('*').forEach((el) => { const r = el.getBoundingClientRect(); if (r.height < 1 || r.width < 1) return; const cs = getComputedStyle(el); if (!/^(H[1-6]|P|LI|IMG|PICTURE|UL|OL|A|BUTTON|FIGURE|DIV|ARTICLE|SECTION|SPAN|INPUT|LABEL|LEGEND|FIELDSET)$/.test(el.tagName)) return; if (el.tagName === 'DIV' && !el.className) return; if (el.tagName === 'SPAN' && !el.className) return;
+    out.push({ label: el.tagName.toLowerCase() + (el.className ? '.' + String(el.className).split(' ').slice(0, 2).join('.') : ''), top: Math.round(r.top - r0.top), h: Math.round(r.height), wd: Math.round(r.width), fs: cs.fontSize, mt: cs.marginTop, mb: cs.marginBottom, txt: (el.children.length ? '' : el.textContent.trim().slice(0, 22)) }); });
+  return out; }, heading);
+console.log(url, '—', heading); for (const r of rows) console.log(String(r.top ?? '').padStart(5), String(r.h ?? '').padStart(5), String(r.wd ?? '').padStart(5), (r.fs || '').padStart(5), (r.mt || r.pad || '').padStart(6), (r.mb || '').padStart(6), r.label, r.txt ? JSON.stringify(r.txt) : ''); await b.close();

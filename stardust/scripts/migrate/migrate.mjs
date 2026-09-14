@@ -98,7 +98,7 @@ function headMeta(pj, page, m) {
 async function migrateOne(p, log) {
   const m = pageMap.find((x) => x.slug === p.slug);
   const fam = types.types[p.archetypeFamily]; const archetype = fam?.archetype || p.slug;
-  const pathA = p.status === 'approved' && fs.existsSync(`stardust/prototypes/${p.slug}-proposed.html`);
+  const pathA = (archetype === p.slug || p.fidelityTier === 'archetype') && fs.existsSync(`stardust/prototypes/${p.slug}-proposed.html`); // Path A = the family's approved archetype (status advances to migrated, so never key on status)
   const outFile = path.join(OUT, m.outputPath); const sideFile = path.join(OUT, sidecarFor(m.outputPath));
   const sourceCurrentSha = fsha(`stardust/current/pages/${p.slug}.html`);
   const sourceProposedSha = pathA ? fsha(`stardust/prototypes/${p.slug}-proposed.html`) : null;

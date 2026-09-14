@@ -1,8 +1,8 @@
-// _pm-pubgate.mjs <short> <da-path> [--widths 1440,360] [--origin https://main--sparebank1--paolomoz.aem.live]
+// _pm-pubgate.mjs <short> <da-path> [--widths 1440,360] [--origin https://main--sparebank1-redesign--paolomoz.aem.live]
 // published-origin gate: stitch the published page, pixel vs stardust/replica/gates/<short>-<w>/live.png, header + footer crops (footer measured on the page)
 import { execFileSync } from 'node:child_process'; import fs from 'node:fs'; import { chromium } from 'playwright';
 const [short, daPath] = process.argv.slice(2); const opt = (k, d) => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : d; };
-const widths = opt('--widths', '1440,360').split(',').map(Number); const origin = opt('--origin', 'https://main--sparebank1--paolomoz.aem.live');
+const widths = opt('--widths', '1440,360').split(',').map(Number); const origin = opt('--origin', 'https://main--sparebank1-redesign--paolomoz.aem.live');
 const g0 = (s, re) => (s.match(re) || [])[1];
 const run = (args) => { try { return execFileSync('node', args, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }); } catch (e) { return (e.stdout || '') + (e.stderr || ''); } };
 const b = await chromium.launch(); const out = {};

@@ -4,14 +4,14 @@
  *   /<path>            → full document: head.html + styles + scripts.js, <main> from content/<path>.html (metadata block removed)
  *   /<path>.plain.html → the content page's <main> (what the runtime fetches for /nav, /footer, fragments)
  *   everything else    → repo files (blocks/, scripts/, styles/, img/, icons/, fonts/)
- *   content.da.live media URLs are rewritten to stardust/prototypes/assets/img/<file> so pages render with the real assets.
+ *   content.da.live media URLs are rewritten to stardust/rollout/raster/<file> so pages render with the real assets.
  * Usage: node stardust/scripts/eds/serve.mjs [--port 3010]
  */
 import http from 'node:http'; import fs from 'node:fs'; import path from 'node:path'; import { parseHTML } from 'linkedom'; import { imageSize } from 'image-size';
 const port = +(process.argv[process.argv.indexOf('--port') + 1] || 3010);
 const ROOT = process.cwd();
 const TYPES = { html: 'text/html', js: 'text/javascript', css: 'text/css', svg: 'image/svg+xml', png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg', webp: 'image/webp', gif: 'image/gif', woff2: 'font/woff2', json: 'application/json', ico: 'image/x-icon' };
-const MEDIA = /https:\/\/content\.da\.live\/paolomoz\/sparebank1\/media\//g;
+const MEDIA = /https:\/\/content\.da\.live\/paolomoz\/sparebank1-redesign\/media\//g;
 const head = fs.readFileSync('head.html', 'utf8');
 function mainOf(file) {
   const html = fs.readFileSync(file, 'utf8').replace(MEDIA, '/__media/');
@@ -41,7 +41,7 @@ function mainOf(file) {
   });
   // like the pipeline: <img> gets intrinsic width/height (and a <picture> wrapper) from the media
   [...document.querySelectorAll('img[src^="/__media/"]')].forEach((img) => {
-    try { const f = path.join(ROOT, 'stardust/prototypes/assets/img', path.basename(img.getAttribute('src'))); const d = imageSize(fs.readFileSync(f)); if (d.width) { img.setAttribute('width', d.width); img.setAttribute('height', d.height); } } catch {}
+    try { const f = path.join(ROOT, 'stardust/rollout/raster', path.basename(img.getAttribute('src'))); const d = imageSize(fs.readFileSync(f)); if (d.width) { img.setAttribute('width', d.width); img.setAttribute('height', d.height); } } catch {}
     img.setAttribute('loading', 'lazy');
     const pic = document.createElement('picture'); img.replaceWith(pic); pic.append(img);
   });
@@ -56,7 +56,7 @@ function metaOf(file) {
 http.createServer((req, res) => {
   let url = decodeURIComponent(req.url.split('?')[0]);
   try {
-    if (url.startsWith('/__media/')) { const f = path.join(ROOT, 'stardust/prototypes/assets/img', path.basename(url)); if (!fs.existsSync(f)) throw 404; res.writeHead(200, { 'content-type': TYPES[f.split('.').pop()] || 'application/octet-stream' }); return res.end(fs.readFileSync(f)); }
+    if (url.startsWith('/__media/')) { const f = path.join(ROOT, 'stardust/rollout/raster', path.basename(url)); if (!fs.existsSync(f)) throw 404; res.writeHead(200, { 'content-type': TYPES[f.split('.').pop()] || 'application/octet-stream' }); return res.end(fs.readFileSync(f)); }
     if (url.endsWith('.plain.html')) { const f = path.join(ROOT, 'content', `${url.replace(/\.plain\.html$/, '')}.html`); if (!fs.existsSync(f)) throw 404; res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' }); return res.end(mainOf(f)); }
     const file = path.join(ROOT, url);
     if (url !== '/' && fs.existsSync(file) && fs.statSync(file).isFile()) { res.writeHead(200, { 'content-type': TYPES[file.split('.').pop()] || 'application/octet-stream' }); return res.end(fs.readFileSync(file)); }

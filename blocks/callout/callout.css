@@ -1,0 +1,14 @@
+/* callout — canon .callout */
+.callout .callout { display: flex; align-items: flex-start; gap: 16px; padding: 20px 24px; background: var(--sand-30); border-radius: var(--radius); max-width: 68ch; }
+.callout .callout > svg { flex: 0 0 auto; width: 28px; height: 28px; fill: none; stroke: var(--sol); stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+.callout .callout.info { background: var(--frost-30); }
+.callout .callout.info > svg { stroke: var(--vann); }
+.callout .callout.callout-frost { background: var(--frost-30); }
+.callout .callout-text { display: grid; gap: var(--spacing-sm); }
+.callout .callout-text p { margin: 0; }
+.callout .callout-text :is(h2, h3) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
+.callout .callout-text p.button-wrapper { margin-top: var(--spacing-xs); }
+
+@media (width <= 640px) {
+  .callout .callout { flex-direction: column; }
+}

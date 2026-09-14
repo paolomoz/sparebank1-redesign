@@ -1,27 +1,80 @@
-.cards > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+/* cards — canon card language. Grids and treatments lifted from the approved archetypes; families extend additively below their marker. */
+.cards ul.cards-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--spacing-lg); }
+.cards li { margin: 0; position: relative; display: grid; gap: 12px; align-content: start; }
+.cards li p,
+.cards li h2,
+.cards li h3 { margin: 0; }
+.cards .card-media { line-height: 0; }
+.cards .card-media picture { display: block; }
+.cards .card-media img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: var(--frost-30); border-radius: var(--radius-img-sm) 0 var(--radius-img-sm) 0; }
+.cards .card-title :is(h2, h3, h4) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; letter-spacing: -0.005em; text-wrap: balance; }
+.cards .card-title a:any-link { color: var(--fjell); text-decoration: none; }
+.cards .card-title a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.cards li:hover .card-title a,
+.cards li:focus-within .card-title a { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.15em; }
+.cards .card-text p { color: var(--koksgraa); }
+.cards .meta p { display: flex; flex-wrap: wrap; gap: 4px 12px; color: var(--koksgraa); font-size: var(--label); font-family: var(--title-font-family); letter-spacing: 0.01em; }
+.cards .meta em { font-style: normal; }
+
+/* card papers */
+.cards li.card { padding: var(--spacing-lg); background: var(--sand-30); border-radius: var(--radius); transition: box-shadow var(--dur) var(--ease); }
+.cards li.card:hover,
+.cards li.card:focus-within { box-shadow: var(--shadow-lift); }
+
+/* ===== product: choices (4 flat photo cards on Sand-30) · price (5×2 Sand-30 papers) · tips (4 flat photo cards) ===== */
+.cards ul.choice-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.cards li.choice { background: transparent; padding: 0; border-radius: 0; }
+.cards li.choice:hover,
+.cards li.choice:focus-within { box-shadow: none; }
+.cards li.choice .card-media { margin-bottom: 8px; }
+.cards ul.price-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.cards li.price-card { gap: 8px; padding: var(--spacing-md) var(--spacing-lg); }
+.cards li.price-card .card-title :is(h2, h3) { font-size: var(--lead); line-height: 1.25; overflow-wrap: anywhere; hyphens: auto; }
+.cards ul.tips-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.cards ul.tips-grid li.card { padding: 0; background: transparent; border-radius: 0; }
+.cards ul.tips-grid li.card:hover,
+.cards ul.tips-grid li.card:focus-within { box-shadow: none; }
+.cards ul.tips-grid .card-media { margin-bottom: 8px; }
+
+/* ===== market landing: news (4 flat photo cards) · tiles (illustration + title + link list, hairline top) ===== */
+.cards ul.news-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.cards li.news-card { padding: 0; background: transparent; border-radius: 0; }
+.cards li.news-card:hover,
+.cards li.news-card:focus-within { box-shadow: none; }
+.cards li.news-card .card-media { margin-bottom: 8px; }
+.cards ul.tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-xl) var(--spacing-lg); }
+.cards li.tile { gap: var(--spacing-md); padding-top: var(--spacing-lg); border-top: 1px solid var(--lysgraa); }
+.cards li.tile .card-media img { width: 72px; height: 72px; aspect-ratio: auto; object-fit: contain; border-radius: 0; background: transparent; }
+.cards li.tile .card-title :is(h2, h3) { font-family: var(--heading-font-family); font-size: var(--t-title); line-height: 1.2; }
+.cards li.tile .card-title a::after { content: none; }
+.cards .card-links ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--spacing-sm); }
+.cards .card-links li { display: block; margin: 0; }
+.cards .card-links a:any-link { text-decoration: none; }
+.cards .card-links a:hover { text-decoration: underline; }
+
+@media (width <= 1023px) {
+  .cards ul.choice-grid,
+  .cards ul.price-grid,
+  .cards ul.tips-grid,
+  .cards ul.news-grid { grid-template-columns: 1fr 1fr; }
+  .cards ul.tiles { grid-template-columns: 1fr 1fr; }
 }
 
-.cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
-}
-
-.cards .cards-card-body {
-  margin: 16px;
-}
-
-.cards .cards-card-image {
-  line-height: 0;
-}
-
-.cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+@media (width <= 640px) {
+  .cards ul.choice-grid { grid-template-columns: 1fr; gap: var(--spacing-md); }
+  .cards li.choice { grid-template-columns: 38% 1fr; grid-template-areas: "img title" "img text"; gap: 4px 16px; align-items: start; }
+  .cards li.choice .card-media { grid-area: img; margin: 0; align-self: center; }
+  .cards li.choice .card-media img { border-radius: var(--spacing-lg) 0 var(--spacing-lg) 0; }
+  .cards li.choice .card-title { grid-area: title; }
+  .cards li.choice .card-text { grid-area: text; }
+  .cards ul.price-grid { grid-template-columns: 1fr; gap: var(--spacing-sm); }
+  .cards li.price-card { padding: var(--spacing-md) var(--spacing-lg); }
+  .cards ul.tips-grid,
+  .cards ul.news-grid { grid-template-columns: 1fr; }
+  .cards ul.tiles { grid-template-columns: 1fr; gap: var(--spacing-lg); }
+  .cards li.tile { grid-template-columns: 56px 1fr; grid-template-areas: "illu title" "links links"; gap: 8px 16px; align-items: center; padding-top: var(--spacing-md); }
+  .cards li.tile .card-media { grid-area: illu; }
+  .cards li.tile .card-media img { width: 56px; height: 56px; }
+  .cards li.tile .card-title { grid-area: title; }
+  .cards li.tile .card-links { grid-area: links; }
 }

@@ -1,37 +1,30 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
-  padding: 0;
-}
+/* hero — canon split hero. Product: photo LEFT as content (7/5), text right; campaign (market landing): photo left, display h2. */
+.hero .container { width: 100%; }
+.hero .hero-grid { display: grid; grid-template-columns: 7fr 5fr; gap: var(--spacing-xl); align-items: center; }
+.hero .hero-media { margin: 0; grid-column: 1; grid-row: 1; }
+.hero .hero-text { grid-column: 2; grid-row: 1; display: grid; gap: var(--spacing-md); max-width: 34rem; }
+.hero .hero-media picture { display: block; }
+.hero .hero-media img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: var(--frost-30); border-radius: var(--radius-img) 0 var(--radius-img) 0; }
+.hero .hero-text p { margin: 0; }
+.hero .lead-wrap p { font-size: var(--lead); line-height: 1.5; max-width: 60ch; }
+.hero .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--spacing-sm) var(--spacing-md); margin-top: var(--spacing-sm); }
+.hero .cta-row p.button-wrapper { margin: 0; }
 
-.hero {
-  position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
-}
+/* the breadcrumb (back link) sits 8px above the grid in the same section */
+main .section .breadcrumbs-wrapper + .hero-wrapper { margin-top: var(--spacing-sm); }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
-}
+/* campaign (market landing): the page h1 is visually hidden, the campaign heading is a display h2, then lead + small note */
+.hero.campaign .hero-text h1 { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0; }
+.hero.campaign .hero-text h2 { font-size: var(--t-display); line-height: 1.1; letter-spacing: -0.01em; max-width: 12ch; }
+.hero.campaign .note-wrap p { font-size: var(--body-sm); line-height: 1.45; color: var(--koksgraa); font-variant-numeric: tabular-nums; }
 
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
-.hero img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-@media (width >= 900px) {
-  .hero {
-    padding: 40px 32px;
-  }
+@media (width <= 1023px) {
+  .hero .hero-grid { grid-template-columns: 1fr; gap: var(--spacing-lg); }
+  .hero .hero-text { grid-column: 1; grid-row: 1; max-width: none; }
+  .hero .hero-media { grid-column: 1; grid-row: 2; }
+  .hero .hero-media img { aspect-ratio: 16 / 9; }
+  .hero.campaign .hero-media { grid-row: 1; }
+  .hero.campaign .hero-text { grid-row: 2; }
+  .hero.campaign .hero-text h2 { max-width: none; }
+  .hero.campaign .hero-media img { aspect-ratio: 3 / 2; }
 }
