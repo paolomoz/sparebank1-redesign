@@ -1,4 +1,7 @@
-/* breadcrumbs — canon .backlink */
+@import url("breadcrumbs-theme.css");
+@import url("breadcrumbs-hub.css");
+@import url("breadcrumbs-story.css");
+@import url("breadcrumbs-omoss.css");/* breadcrumbs — canon .backlink */
 .breadcrumbs .backlink-row p { margin: 0; }
 .breadcrumbs .backlink-row a:any-link { display: inline-flex; align-items: center; gap: 4px; font-size: var(--body-sm); text-decoration: none; min-height: 44px; color: var(--vann); }
 .breadcrumbs .backlink-row a:hover { color: var(--fjell); text-decoration: underline; }

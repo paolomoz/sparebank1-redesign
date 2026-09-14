@@ -1,0 +1,81 @@
+{
+  "slug": "nb-bank-privat-lan-boliglan-html",
+  "edsUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan/boliglan",
+  "protoUrl": "http://localhost:8820/nb-bank-privat-lan-boliglan-html-proposed.html",
+  "at": "2026-09-14T21:40:58.062Z",
+  "pixel": {
+    "360": {
+      "pct": 1.46,
+      "heightDelta": -1,
+      "compared": {
+        "width": 360,
+        "height": 9893
+      },
+      "pass": true,
+      "hot": []
+    },
+    "1440": {
+      "pct": 0.73,
+      "heightDelta": -1,
+      "compared": {
+        "width": 1440,
+        "height": 5967
+      },
+      "pass": true,
+      "hot": []
+    }
+  },
+  "chrome": {
+    "360": {
+      "header": 99.66,
+      "footer": 100,
+      "headerH": {
+        "proto": 61,
+        "eds": 61
+      },
+      "footerH": {
+        "proto": 1884,
+        "eds": 1884
+      },
+      "footerY": {
+        "proto": 8008,
+        "eds": 8009
+      },
+      "doc": {
+        "proto": 9893,
+        "eds": 9894
+      }
+    },
+    "1440": {
+      "header": 99.96,
+      "footer": 99.9,
+      "headerH": {
+        "proto": 110,
+        "eds": 110
+      },
+      "footerH": {
+        "proto": 917,
+        "eds": 917
+      },
+      "footerY": {
+        "proto": 5051,
+        "eds": 5052
+      },
+      "doc": {
+        "proto": 5967,
+        "eds": 5968
+      }
+    }
+  },
+  "content": {
+    "red": 0,
+    "justified": 0,
+    "amber": 20,
+    "orange": 12,
+    "summary": [
+      "  EDS: 301 text nodes — 29 headings, 0 eyebrows, 102 CTAs, 170 body; 14 img",
+      "  editable texts (outermost h*/p/ul/ol): proto 124 / EDS 161"
+    ]
+  },
+  "pass": true
+}

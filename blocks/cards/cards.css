@@ -1,4 +1,7 @@
-/* cards — canon card language. Grids and treatments lifted from the approved archetypes; families extend additively below their marker. */
+@import url("cards-theme.css");
+@import url("cards-hub.css");
+@import url("cards-story.css");
+@import url("cards-omoss.css");/* cards — canon card language. Grids and treatments lifted from the approved archetypes; families extend additively below their marker. */
 .cards ul.cards-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--spacing-lg); }
 .cards li { margin: 0; position: relative; display: grid; gap: 12px; align-content: start; }
 .cards li p,

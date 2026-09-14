@@ -1,4 +1,7 @@
-/* calculator — static shell of the captured widget (dynamics #7 interim), canon .calc on Frost-30 */
+@import url("calculator-theme.css");
+@import url("calculator-hub.css");
+@import url("calculator-story.css");
+@import url("calculator-omoss.css");/* calculator — static shell of the captured widget (dynamics #7 interim), canon .calc on Frost-30 */
 .calculator .container { width: 100%; }
 .calculator .calc { display: grid; gap: var(--spacing-lg); width: min(100%, 44rem); justify-items: start; text-align: left; }
 .calculator .calc p { margin: 0; }

@@ -1,4 +1,7 @@
-/* accordion — canon .faq (details → head row + hidden answer, same metrics). */
+@import url("accordion-theme.css");
+@import url("accordion-hub.css");
+@import url("accordion-story.css");
+@import url("accordion-omoss.css");/* accordion — canon .faq (details → head row + hidden answer, same metrics). */
 .accordion { max-width: 52rem; }
 .accordion .faq-item { border-top: 1px solid var(--lysgraa); }
 .accordion .faq > .faq-item:last-child { border-bottom: 1px solid var(--lysgraa); }
