@@ -21,3 +21,19 @@
 - **Group CSS order (FYI):** `blocks/<block>/<block>-<group>.css` is `@import`ed BEFORE the core rules, so a group variant with the same specificity as a core rule loses (e.g. `.cards li.art-card` vs `.cards li.card`). Variants must out-specify (`.cards li.card.art-card`) — worth a line in the brief.
 - **Variant naming (FYI):** a block variant token that equals a canon compound class collapses the block (`illu` → `.illu { width: 72px }` shrank `columns` to 72 px). Renamed to `spot`.
 2. **`lib.inline()` collapses non-breaking spaces.** `out.replace(/\s+/g, ' ')` turns U+00A0 into a plain space, so captured "1&#160;500 tonn", "CO2&#160;-utslipp" re-wrap: on the news-article archetype at 360 the body lost one line before the first figure. Worked around in `encoders/news-article.mjs` (nbsp → private-use char before serialising, back to `&#160;` after). Suggest `/[ \t\n\r\f]+/g` in `inline()` (and `prose()`'s text-node branch) so every family keeps the author's nbsp.
+
+## product — E5
+1. **`.illu` compound collides with block variants named `illu`** (styles.css § shared canon compounds: `.illu { width: 72px; height: 72px; object-fit: contain }`).
+   Any block authored with the class token `illu` becomes a 72×72 box: measured on the emulation (lanekalkulator, before rename) `.hero.illu .hero-grid` = 72 px wide,
+   `.cards.illu ul` grid columns `8px 8px 8px`, images spilling over the next movement. Product renamed its variant to `spot`, but four other documents still
+   carry the token: `content/nb/bank/bedrift.html`, `content/nb/bank/bedrift/bedriftsforsikring.html`,
+   `content/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html`, `content/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man.html`
+   (`grep -l 'class="\(hero\|cards\|columns\)[^"]* illu' content/…`). Either scope the compound (`img.illu`) in styles.css or ask those groups to rename.
+2. **`blocks/table/` has no group CSS import.** Product's `table (compare row-headers)` rules had to live in `styles/styles-product.css` (block-scoped selectors
+   `main .table.compare …`). Please add `@import url("table-product.css")` (and the other groups) to `blocks/table/table.css` like the other blocks; I will move the rules.
+3. **`prose-narrow` centres the prose.** `main .section.prose-narrow .default-content-wrapper { max-width: 68ch }` caps the section's `> div`, which carries
+   `margin-inline: auto` → the 68ch column floats to the middle (bankid "Avtalevilkår for BankID" measured at x≈380 px on 1440). The canon `.prose-block`
+   is start-aligned. Product added `prose-start` (`.default-content-wrapper > * { max-width: 68ch }`); consider making that the core behaviour.
+4. **Core `faq` keeps the canon's hidden per-question article link as a visible paragraph** (`a.faq-link` → `<p><a>Question?</a></p>` at the end of every
+   answer — 39 on product siblings, also on the LIVE archetype: `grep -c 'kundeservice/lan/' content/nb/bank/privat/lan/boliglan.html`). Product follows the
+   core for consistency; a design decision (drop / relabel "Les hele svaret") should be taken once, in encoders.mjs.
