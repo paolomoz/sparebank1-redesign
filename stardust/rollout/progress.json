@@ -1,0 +1,39 @@
+{
+ "_provenance": { "writtenBy": "stardust:rollout (Flow B lead)", "writtenAt": "2026-09-14T22:40:00Z", "stardustVersion": "0.20.0", "note": "hands-off; updated per phase — see stardust/journal.md and stardust/status.jsonl" },
+ "site": {
+  "repo": "https://github.com/paolomoz/sparebank1-redesign",
+  "da": "https://da.live/#/paolomoz/sparebank1-redesign",
+  "preview": "https://main--sparebank1-redesign--paolomoz.aem.page",
+  "live": "https://main--sparebank1-redesign--paolomoz.aem.live",
+  "home": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat",
+  "codeSyncInstallation": 27711897,
+  "config": "auto-created from fstab.yaml (contentSourceUrl https://content.da.live/paolomoz/sparebank1-redesign/)"
+ },
+ "gates": {
+  "bar": { "pixelPct": 10, "heightDeltaPx": 8, "chromeCropPct": 98, "contentDiffRed": 0, "ewDead": 0, "lintRed": 0 },
+  "reference": "approved prototypes stardust/prototypes/<slug>-proposed.html (served from stardust/prototypes on :8820); EDS side = published origin (aem.live) for the archetype gate, local emulation (:3020) for the loop"
+ },
+ "chrome": {
+  "nav": ["/nav", "/nav-bedrift", "/nav-om-oss", "/nav-minimal", "/nav-minimal-om-oss"],
+  "footer": ["/footer", "/footer-bedrift", "/footer-om-oss", "/footer-kundeservice", "/footer-frontend", "/footer-frontend-2", "/footer-frontend-om-oss", "/footer-frontend-om-oss-2"],
+  "router": ["/fragments/bank-router", "/fragments/bank-router-bedrift", "/fragments/bank-router-om-oss"],
+  "assumptions": {
+   "E1": "the regional-bank links in the footer 'Ring oss' panel and in the router list point at each bank's market landing on www.sparebank1.no (the captured hrefs were the regional alternate of the CURRENT page; the shared documents cannot carry per-page targets)",
+   "E2": "chrome variants follow the approved prototypes' captured header states — the four nettsider-frontend pages whose capture had no market navigation get /nav-minimal(-om-oss); a capture-state carried by approval, flagged for the customer",
+   "E3": "social icons that the live lazy-loader had not swapped in at capture are filled from the captured icon set (facebook / linkedin / youtube), tracking params (?icid=) are stripped from internal links"
+  }
+ },
+ "archetypes": {
+  "product": {
+   "slug": "nb-bank-privat-lan-boliglan-html", "path": "/nb/bank/privat/lan/boliglan", "status": "live",
+   "blocks": { "reused": ["hero", "cards", "columns", "accordion", "breadcrumbs", "fragment", "header", "footer"], "new": ["bank-router", "feedback", "callout", "calculator"] },
+   "published": { "1440": { "pixelPct": 0.73, "heightDelta": -1, "header": 99.96, "footer": 99.9 }, "360": { "pixelPct": 1.46, "heightDelta": -1, "header": 99.66, "footer": 100 }, "contentDiffRed": 0, "ew": { "editable": 191, "dead": 0, "exempt": 1 }, "cls": { "1440": 0.011, "390": 0.05 }, "decoration": "14 blocks loaded, grids compute grid, 0 pageerrors, 0 broken images, 1 h1" },
+   "iterations": 4,
+   "fixes": ["promo illustration = 70 KB SVG → DA-media PNG (rasterise-svg)", "price-foot rhythm (48 px + p+p) and 68ch measure", "calculator p+p margins inside wrappers", "FAQ questions authored as h3 (role parity) with normal tracking", "hero inline tertiary link in the CTA row", "split/promo CTA row p+p margin", "footer h2 line-height 1.15", "router reserve 159 px"]
+  }
+ },
+ "waves": [
+  { "id": 0, "at": "2026-09-14T22:20:00Z", "pages": ["/nav", "/nav-bedrift", "/nav-om-oss", "/nav-minimal", "/nav-minimal-om-oss", "/footer", "/footer-bedrift", "/footer-om-oss", "/footer-kundeservice", "/footer-frontend", "/footer-frontend-2", "/footer-frontend-om-oss", "/footer-frontend-om-oss-2", "/fragments/bank-router", "/fragments/bank-router-bedrift", "/fragments/bank-router-om-oss", "/nb/bank/privat/lan/boliglan", "/redirects.json"], "result": "17/17 live + redirects sheet (108 rows) live; / → /nb/bank/privat 301; .html → extensionless 301" }
+ ],
+ "dynamics": { "interimTiers": ["#1 bank-router: native details list, postcode form opens the list", "#4 FAQ: accordion block", "#5 feedback: static thumbs", "#6 contact: footer details disclosures", "#7/#8/#9 calculators: static shells, controls disabled", "#11 listings: authored cards + helix-query.yaml indexes (news, markedsnytt)", "#16 video/embed: auto-blocked links", "#20 search: link to live search"], "ownerBatch": "unchanged from stardust/dynamic-features.md" }
+}

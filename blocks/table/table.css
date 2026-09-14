@@ -1,0 +1,18 @@
+/* table — canon .table-wrap (hairline rows, Frost-30 header band, small body type). */
+.table .table-wrap { overflow-x: auto; max-width: 100%; }
+.table table { width: 100%; min-width: 32rem; border-collapse: collapse; font-size: var(--body-sm); line-height: var(--line-height-body); }
+.table th,
+.table td { padding: 12px 16px; border-bottom: 1px solid var(--lysgraa); text-align: left; vertical-align: top; }
+.table th { font-family: var(--title-font-family); font-weight: 400; color: var(--fjell); }
+.table thead td,
+.table thead th { background: var(--frost-30); }
+.table td p,
+.table th p { margin: 0; }
+.table td p + p,
+.table th p + p { margin-top: var(--spacing-sm); }
+
+@media (width <= 640px) {
+  .table table { min-width: 0; }
+  .table th,
+  .table td { padding: 8px 10px; }
+}

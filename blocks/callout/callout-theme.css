@@ -1,1 +1,6 @@
 /* callout — theme family group additions (additive variants only; imported by callout.css) */
+
+/* ===== theme: offer — the canon callout that ends in an action pill (h2, line, CTA) keeps the canon paragraph rhythm:
+   p + p 16 px; the CTA paragraph 16 + the pill's 4 px (the core `.callout-text p { margin: 0 }` drops it) ===== */
+.callout.offer .callout-text p + p { margin-top: var(--spacing-md); }
+.callout.offer .callout-text p + p.button-wrapper { margin-top: calc(var(--spacing-md) + var(--spacing-xs)); }

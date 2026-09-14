@@ -1,5 +1,9 @@
 // Theme archetype (bedrift · borettslag og sameie) — composition per stardust/prototypes/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html-shape.md; content verbatim.
 import { esc, asset, icons } from '../chrome.mjs';
+import { renderSibling } from './nb-bank-privat-lan-boliglan-html.mjs';
+export const ARCHETYPE='nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html';
+/** Family renderer (theme): the archetype keeps its approved composition; siblings render through the shared Path A′ component walker. */
+export function render(d){ return (!d.slug||d.slug===ARCHETYPE)?renderTheme(d):renderSibling(d,{family:'theme',archetype:ARCHETYPE}); }
 const norm=s=>(s||'').replace(/\s+/g,' ').trim();
 const imgSrc=i=>i?.getAttribute('data-lazy-src')||i?.getAttribute('src')||'';
 const btnKind=(cls,skogOk=false)=>/--action/.test(cls)?(skogOk?'btn-action':'btn-primary'):/--secondary/.test(cls)?'btn-secondary':/inline-button|tertiary/.test(cls)?'btn-inline':'btn-primary';
@@ -9,7 +13,7 @@ function inline(el){ const c=el.cloneNode(true); for(const x of c.querySelectorA
 
 export function patchData(d){ if(!d.footer) return; const f=d.doc.querySelector('footer'); for(const col of d.footer.columns) for(const l of col.links){ if(l.icon) continue; const a=[...f.querySelectorAll('.footer-bottom__column-links li a')].find(x=>x.getAttribute('href')===l.href); const i=a?.querySelector('img'); if(i) l.icon=i.getAttribute('data-lazy-src')||i.getAttribute('src')||null; } }
 
-export function render({doc,pj}){
+function renderTheme({doc,pj}){
   const main=doc.querySelector('main');
   const back=main.querySelector('.to-parent a'); const h1=main.querySelector('h1'); const lead=main.querySelector(':scope > .text .text-wrapper p');
   const cmpC=main.querySelector(':scope > .background-container'); const sheets=[...cmpC.querySelectorAll('.card')]; const cmpLink=cmpC.querySelector(':scope .background-container__content > .text a, .background-container__content > .text a');

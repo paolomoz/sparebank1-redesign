@@ -1,1 +1,52 @@
 /* styles — omoss family group section styles (closed-set additions only; imported by styles.css) */
+
+/* ===== om-oss ===== */
+/* contacts — the presse `nasjonale` head: h2 + lead (phone number in tabular medium) + a small muted note */
+main .section.contacts .default-content-wrapper :is(h1, h2) + p { font-size: var(--lead); line-height: 1.5; max-width: 60ch; font-variant-numeric: tabular-nums; }
+main .section.contacts .default-content-wrapper :is(h1, h2) + p + p { font-size: var(--body-sm); line-height: 1.45; color: var(--koksgraa); }
+
+/* hairline-none — a feedback band directly under a Sand paper: the paper edge marks the movement, no hairline (presse) */
+main .section.feedback-band.hairline-none { border-top: 0; }
+
+/* prose-run — long-form running text (selskapsinformasjon, generelle vilkår): heading rhythm on top of the 16px prose gap */
+main .section.prose-run .default-content-wrapper > h2 { margin-top: var(--spacing-xl); }
+main .section.prose-run .default-content-wrapper > :is(h3, h4) { margin-top: var(--spacing-sm); }
+main .section.prose-run .default-content-wrapper > h3 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
+main .section.prose-run .default-content-wrapper > h4 { font-size: var(--body); line-height: 1.4; }
+main .section.prose-run .default-content-wrapper > :is(h1, h2, h3, h4) + p { margin-top: calc(-1 * var(--spacing-sm)); }
+main .section.prose-run .default-content-wrapper > h1 + p { margin-top: 0; }
+main .section.prose-run .default-content-wrapper > :first-child { margin-top: 0; }
+main .section.prose-run .breadcrumbs-wrapper + .default-content-wrapper { margin-top: 0; }
+
+/* tabs — dynamics #11 interim: the tab buttons are a jump list of badges above the in-page panels */
+main .section.tabs .default-content-wrapper > ul { display: flex; flex-wrap: wrap; gap: var(--spacing-sm); list-style: none; padding: 0; }
+main .section.tabs .default-content-wrapper > ul li::marker { content: ""; }
+main .section.tabs .default-content-wrapper > ul a:any-link { display: inline-flex; align-items: center; min-height: 32px; padding: 4px 12px; border-radius: var(--radius-pill); background: var(--frost-30); color: var(--fjell); font-family: var(--title-font-family); font-size: var(--label); letter-spacing: 0.01em; text-decoration: none; transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease); }
+main .section.tabs .default-content-wrapper > ul a:hover { background: var(--vann); color: #fff; }
+
+/* ===== markedsnytt-listing ===== */
+/* head-xl — the markedsnytt section title sits 48px above its block */
+main .section.head-xl .default-content-wrapper + div { margin-top: var(--spacing-xl); }
+
+/* video-row — one webinar row: running text left, the auto-blocked embed right (equal columns, tops aligned);
+   the row follows its section head (48px) or the previous row (64px) on the same paper */
+main .section.video-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: var(--spacing-xl); align-items: start; padding-inline: max(var(--gutter), (100% - var(--max-width)) / 2); padding-top: var(--spacing-xl); }
+main .section.video-row + .section.video-row { padding-top: var(--spacing-2xl); }
+main .section.video-row > div { width: auto; margin: 0; }
+main .section.video-row .default-content-wrapper h3 { max-width: 24ch; }
+main .section.video-row .default-content-wrapper h3 + h3 { margin-top: calc(-1 * var(--spacing-sm)); }
+main .section.video-row .default-content-wrapper h2 { font-size: var(--t-title); line-height: 1.2; max-width: 24ch; }
+main .section.video-row .default-content-wrapper :is(ul, ol) { padding-left: 1.2em; }
+main .section.video-row .default-content-wrapper p.button-wrapper { margin-top: var(--spacing-sm); }
+main .section.video-row .default-content-wrapper p:has(> a:only-child):not(.button-wrapper) { margin-top: var(--spacing-sm); }
+main .section.video-row .default-content-wrapper p:has(> a:only-child):not(.button-wrapper) a:any-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; text-decoration: none; font: var(--body) / 1.2 var(--body-font-family); }
+main .section.video-row .default-content-wrapper p:has(> a:only-child):not(.button-wrapper) a:hover { text-decoration: underline; color: var(--fjell); }
+
+/* fineprint — the regulatory foot: a title-sm h2 above two running-text columns */
+main .section.fineprint .default-content-wrapper h2 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
+
+@media (width <= 1023px) {
+  main .section.video-row { grid-template-columns: 1fr; row-gap: var(--spacing-lg); }
+  main .section.video-row .embed-wrapper { order: -1; max-width: 640px; }
+  main .section.video-row + .section.video-row { padding-top: var(--spacing-xl); }
+}

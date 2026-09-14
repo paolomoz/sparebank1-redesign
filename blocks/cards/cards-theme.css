@@ -1,1 +1,21 @@
 /* cards — theme family group additions (additive variants only; imported by cards.css) */
+
+/* ===== theme: papers — three Sand-30 photo papers (recommended for the theme); 1023: photo 40 % left · 640: stacked ===== */
+.cards.papers ul.flat-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-lg); }
+.cards.papers li.card .card-media { margin-bottom: 4px; }
+
+@media (width <= 1023px) {
+  .cards.papers ul.flat-grid { grid-template-columns: 1fr; }
+  .cards.papers li.card { grid-template-columns: 40% 1fr; grid-template-rows: auto 1fr; grid-template-areas: "img title" "img text"; gap: 4px var(--spacing-lg); align-items: start; }
+  .cards.papers li.card .card-media { grid-area: img; margin: 0; }
+  .cards.papers li.card .card-title { grid-area: title; }
+  .cards.papers li.card .card-text { grid-area: text; }
+}
+
+@media (width <= 640px) {
+  .cards.papers li.card { grid-template-columns: 1fr; grid-template-rows: auto; grid-template-areas: "img" "title" "text"; }
+  .cards.papers li.card .card-media { margin-bottom: 4px; }
+}
+
+/* ===== market landing: tiles — the tile title is a canon h2 (line-height 1.15, not 1.2; 2 px per tile row) — see eds-requests.md ===== */
+.cards.tiles li.tile .card-title :is(h2, h3) { line-height: 1.15; }

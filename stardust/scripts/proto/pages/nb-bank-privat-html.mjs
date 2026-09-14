@@ -1,8 +1,14 @@
 // Market landing (Privat) — canon author. Composition per stardust/prototypes/nb-bank-privat-html-shape.md; content verbatim from the captured DOM.
 import { esc, asset, icons } from '../chrome.mjs';
+import { renderSibling } from './nb-bank-privat-lan-boliglan-html.mjs';
+export const ARCHETYPE='nb-bank-privat-html';
+/** Family renderer (market-landing): the canon archetype keeps its approved composition; the bedrift / om-oss landings render through the shared Path A′ component walker (campaign · tiles · promos · news · index · compare become optional and count-driven). */
+export function render(d){ return (!d.slug||d.slug===ARCHETYPE)?renderLanding(d):renderSibling(d,{family:'market-landing',archetype:ARCHETYPE}); }
+// Siblings only (canon gap #1: footerData() reads img[src]; some captures carry data-lazy-src only). The archetype output is untouched.
+export function patchData(d){ if(!d.slug||d.slug===ARCHETYPE||!d.footer) return; const f=d.doc.querySelector('footer'); if(!f) return; for(const col of d.footer.columns) for(const l of col.links){ if(l.icon) continue; const a=[...f.querySelectorAll('.footer-bottom__column-links li a')].find(x=>x.getAttribute('href')===l.href); const i=a?.querySelector('img'); if(i) l.icon=i.getAttribute('data-lazy-src')||i.getAttribute('src')||null; } }
 const norm=s=>(s||'').replace(/\s+/g,' ').trim();
 const linkList=(el)=>[...el.querySelectorAll('p a')].map(a=>`<li><a href="${esc(a.getAttribute('href'))}">${esc(norm(a.textContent))}</a></li>`).join('');
-export function render({doc,pj}){
+function renderLanding({doc,pj}){
   const main=doc.querySelector('main');
   const camp=main.querySelector('.campaign-carousel__element');
   const cImg=camp.querySelector('img'); const cH=camp.querySelector('h2'); const cPs=[...camp.querySelectorAll('.text-wrapper p')]; const cBtn=camp.querySelector('.button a');

@@ -1,0 +1,1854 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-14T21:48:59.499Z",
+    "readArtifacts": [
+      "stardust/migrated"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-14T21:48:59.499Z",
+  "pages": [
+    {
+      "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+      "path": "/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie",
+      "title": "Borettslag og sameie | Forsikringer | SpareBank 1",
+      "templateId": "theme",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie._meta.json",
+        "sourceHash": "sha256:ad202467a812b6a585fbbfcbad60440a6963d1004c9c17436e194a410b45b469"
+      },
+      "blocks": [
+        "page-title",
+        "content-columns",
+        "callout",
+        "split-media",
+        "cta-row",
+        "card-rail",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+      "path": "/nb/bank/bedrift/bedriftskort/kredittkort",
+      "title": "Kredittkort bedrift | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/bedriftskort/kredittkort.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/bedriftskort/kredittkort._meta.json",
+        "sourceHash": "sha256:716d318f6774b44b4acafbe526395669eeefb9d3a5ff63f1a5b301ad23b07e78"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "usp",
+        "content-columns",
+        "card-rail",
+        "price-terms",
+        "rich-text",
+        "split-media",
+        "callout",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+      "path": "/nb/bank/bedrift/betaling/utenlandsbetaling",
+      "title": "Utenlandsbetaling bedrift | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/betaling/utenlandsbetaling.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/betaling/utenlandsbetaling._meta.json",
+        "sourceHash": "sha256:493596c1d7f5b77d35cac9eca9151c5af22fdb8fc649b50a232d40e550664b5b"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "card-rail",
+        "steps",
+        "callout",
+        "accordion",
+        "split-media",
+        "content-columns",
+        "faq",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-konto-bedriftskonto-html",
+      "path": "/nb/bank/bedrift/konto/bedriftskonto",
+      "title": "Bedriftskonto | Bedriftens brukskonto | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/konto/bedriftskonto.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/konto/bedriftskonto._meta.json",
+        "sourceHash": "sha256:be040cbc3eaa146ae6929f99c03b04223c7e4b564151f911a083b22ae8428e8f"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "usp",
+        "price-terms",
+        "split-media",
+        "callout",
+        "card-rail",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+      "path": "/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler",
+      "title": "Administrere prisavtaler i SpareBank 1 Regnskap | SpareBank 1",
+      "templateId": "faq",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler._meta.json",
+        "sourceHash": "sha256:acf3a5e18eac686ddac25726770b5e8b52e41fb5ae572407af9b1127f93a4998"
+      },
+      "blocks": [
+        "bank-router",
+        "faq-question",
+        "background-container",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+      "path": "/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf",
+      "title": "Aktivere EHF i SpareBank 1 Regnskap | SpareBank 1",
+      "templateId": "faq",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf._meta.json",
+        "sourceHash": "sha256:c6d145108e8e7715ec280093bf2acb58f1bd670b3d78fe1d45b11d8b74fc2e15"
+      },
+      "blocks": [
+        "bank-router",
+        "faq-question",
+        "background-container",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+      "path": "/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse",
+      "title": "Hva betyr begunstigelse? | Velg begunstiget | SpareBank 1",
+      "templateId": "faq",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse._meta.json",
+        "sourceHash": "sha256:ff57d43f09953302ad5c5de959b69f5631fd2f017d3d51e2921a4743ea5fef5f"
+      },
+      "blocks": [
+        "faq-question",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+      "path": "/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg",
+      "title": "Rabatt på forsikringen ved sprinkleranlegg | SpareBank 1",
+      "templateId": "faq",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg._meta.json",
+        "sourceHash": "sha256:9b855abf15c6337b7e2946e0b40376f3b4b02ef90d28edf3ed26b46786927606"
+      },
+      "blocks": [
+        "faq-question",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+      "path": "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-blir-jeg-bedriftskunde",
+      "title": "BLI KUNDE Hvordan blir jeg bedriftskunde? | SpareBank 1",
+      "templateId": "faq",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-blir-jeg-bedriftskunde.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-blir-jeg-bedriftskunde._meta.json",
+        "sourceHash": "sha256:8e4e1563894c2a1979b6ac4fdd6b09501aca29ef01bc5e5ae28cb0656ea216d6"
+      },
+      "blocks": [
+        "bank-router",
+        "faq-question",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+      "path": "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf",
+      "title": "Flytte avtalegiro, eFaktura og EHF | SpareBank 1",
+      "templateId": "faq",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf._meta.json",
+        "sourceHash": "sha256:5446ac89e62b5eb34aeca586a4962e20cdae579154309cd6da557418ed959407"
+      },
+      "blocks": [
+        "bank-router",
+        "faq-question",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+      "path": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankaxept",
+      "title": "Hva er BankAxept? | SpareBank 1",
+      "templateId": "faq",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankaxept.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankaxept._meta.json",
+        "sourceHash": "sha256:abf4535f05b6b327d1cfff14040c6fdc286465514822af80a5066d153e4a9007"
+      },
+      "blocks": [
+        "bank-router",
+        "faq-question",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+      "path": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode",
+      "title": "Hva er bankkode? | SpareBank 1",
+      "templateId": "faq",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode._meta.json",
+        "sourceHash": "sha256:99d80a1a1a95b6f44367ede88be17c41716f0bb57f6c1acf61f168b4a5678eea"
+      },
+      "blocks": [
+        "bank-router",
+        "faq-question",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+      "path": "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan",
+      "title": "Bør bedriften velge fast eller flytende rente på lånet? | SpareBank 1",
+      "templateId": "faq",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan._meta.json",
+        "sourceHash": "sha256:b0df8d68fad2e70e25f5bb3fb7864693c8b51788f84bdd41eb1e29ad4668a9ae"
+      },
+      "blocks": [
+        "bank-router",
+        "faq-question",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+      "path": "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd",
+      "title": "Kan jeg lease uten innskudd? | SpareBank 1",
+      "templateId": "faq",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd._meta.json",
+        "sourceHash": "sha256:e42020e82222e1157f71edf82ed26a9f2ed0f05d215671cab640d8914b7e2a06"
+      },
+      "blocks": [
+        "bank-router",
+        "faq-question",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+      "path": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift",
+      "title": "Hvordan endrer jeg kasserer i Nettbank bedrift? | SpareBank 1",
+      "templateId": "faq",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift._meta.json",
+        "sourceHash": "sha256:4bd5dab7012834cacb3225fe69b36093bfb54cb5786fa9651fad85351ffbf429"
+      },
+      "blocks": [
+        "bank-router",
+        "faq-question",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html",
+      "path": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura",
+      "title": "Hvordan sender jeg eFaktura fra Nettbank bedrift? | SpareBank 1",
+      "templateId": "faq",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura._meta.json",
+        "sourceHash": "sha256:2321cf7e650da1b48209795d31d2f4d8216c49b448418732a3a63590ee45f95c"
+      },
+      "blocks": [
+        "bank-router",
+        "faq-question",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+      "path": "/nb/bank/bedrift/lan-finansiering/bedriftslan",
+      "title": "Bedriftslån – langsiktig finansiering for din bedrift | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/lan-finansiering/bedriftslan.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/lan-finansiering/bedriftslan._meta.json",
+        "sourceHash": "sha256:7b275dbef953c63e0fefafa36df39be7866251f8af4924145a0a88ececa5ab51"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "usp",
+        "split-media",
+        "price-terms",
+        "rich-text",
+        "callout",
+        "faq",
+        "card-rail",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+      "path": "/nb/bank/bedrift/lan-finansiering/kassekreditt",
+      "title": "Kassekreditt – kortsiktig finansiering for din bedrift | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/lan-finansiering/kassekreditt.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/lan-finansiering/kassekreditt._meta.json",
+        "sourceHash": "sha256:66ba1fbcfc63512a637752d0fbee1ed42280dafc8b94f3edc41a731133f4d37d"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "usp",
+        "split-media",
+        "price-terms",
+        "faq",
+        "card-rail",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-lan-finansiering-leasing-html",
+      "path": "/nb/bank/bedrift/lan-finansiering/leasing",
+      "title": "Leasing | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/lan-finansiering/leasing.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/lan-finansiering/leasing._meta.json",
+        "sourceHash": "sha256:9ecc5398ad79c92d777d53b8a60e62be83640f73ce8db373e3aeb392ebe0fc1e"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "usp",
+        "price-terms",
+        "split-media",
+        "content-columns",
+        "faq",
+        "card-rail",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-open-api-html",
+      "path": "/nb/bank/bedrift/open-api",
+      "title": "Open APIs | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/open-api.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/open-api._meta.json",
+        "sourceHash": "sha256:642ebaaf80a466ae6b8322db52f2377474ff7ccc47fd3c7e8752bde8fa4d37d5"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "card-rail",
+        "rich-text",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+      "path": "/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk",
+      "title": "Aksjeselskap vs enkeltpersonforetak | Forskjellen mellom AS og ENK | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+        "metaJson": "stardust/migrated/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk._meta.json",
+        "sourceHash": "sha256:de69b256b5ee3cc32fd03558e725ba80d377d11de563390d3ecfe47bc630e171"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "card-rail",
+        "split-media",
+        "rich-text",
+        "faq",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-hjemme-html",
+      "path": "/nb/bank/om-oss/hjemme",
+      "title": "Der du føler deg hjemme | SpareBank 1",
+      "templateId": "campaign-landing",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/hjemme.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/hjemme._meta.json",
+        "sourceHash": "sha256:534eefe39a8ed6c78cdf0b6e65607625ac61e0aa2de6868d83962b2667e17210"
+      },
+      "blocks": [
+        "video-hero",
+        "story-text",
+        "split-media",
+        "video"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-investor-html",
+      "path": "/nb/bank/om-oss/investor",
+      "title": "Investor | SpareBank 1",
+      "templateId": "om-oss",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/investor.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/investor._meta.json",
+        "sourceHash": "sha256:1c1f03650d5701a6f1cebbc3437cd864c67d71f771f05c69cb49b8758011cfba"
+      },
+      "blocks": [
+        "campaign",
+        "background-container",
+        "columns-grid",
+        "cards",
+        "tabs",
+        "faq",
+        "feedback"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-jobb-og-karriere-html",
+      "path": "/nb/bank/om-oss/jobb-og-karriere",
+      "title": "Jobb og karriere | SpareBank 1",
+      "templateId": "om-oss",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/jobb-og-karriere.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/jobb-og-karriere._meta.json",
+        "sourceHash": "sha256:c1d52a274862061cd7dd3202be3c9f9b6c4c0d55e5480953432cb7e1b26bc051"
+      },
+      "blocks": [
+        "campaign",
+        "columns-grid",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+      "path": "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-",
+      "title": "Kredittkort - 5 smarte tips til julehandel med kredittkort | SpareBank 1",
+      "templateId": "news-article",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-._meta.json",
+        "sourceHash": "sha256:9a3cf980d74bf485b6b3db4d32ca74e9db6b1e72853d9b87c11bd6744b95fbad"
+      },
+      "blocks": [
+        "article-header",
+        "article-body",
+        "card-rail"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+      "path": "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-",
+      "title": "Advarer mot ny svindelbølge: – Eldre og enslige kvinner særlig utsatt | SpareBank 1",
+      "templateId": "news-article",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-._meta.json",
+        "sourceHash": "sha256:b4008d402fc98351f86fa107a6c7617b7750b6103b2d01685a1dc60f588ddbc4"
+      },
+      "blocks": [
+        "article-header",
+        "article-body",
+        "quote",
+        "card-rail"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+      "path": "/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken",
+      "title": "“Det kunne gått mye verre” – Bamses historie fra traktorulykken | SpareBank 1",
+      "templateId": "news-article",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken._meta.json",
+        "sourceHash": "sha256:a0c017587962537afb081ca3393c23503d7fe52a22e12fa7622f4f5de5dd2e6c"
+      },
+      "blocks": [
+        "article-header",
+        "article-body",
+        "card-rail"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+      "path": "/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket",
+      "title": "Regnskapet fikser jeg selv | SpareBank 1",
+      "templateId": "news-article",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket._meta.json",
+        "sourceHash": "sha256:c79420e855d605e6f5716ce3a1f0d4bda98d29fe01dbed51d53d315f7e2ab17d"
+      },
+      "blocks": [
+        "article-header",
+        "article-body",
+        "quote",
+        "story-block"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+      "path": "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast",
+      "title": "Ditt neste bankkort er laget av resirkulert plast | SpareBank 1",
+      "templateId": "news-article",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast._meta.json",
+        "sourceHash": "sha256:3fef5b4d0cac9b83dba20b9e1b9548f8d978e733515fb6bb062e4635129f3d7f"
+      },
+      "blocks": [
+        "article-header",
+        "article-body",
+        "card-rail"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+      "path": "/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien",
+      "title": "Bruk mobilbanken for å få kontroll på økonomien | SpareBank 1",
+      "templateId": "news-article",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien._meta.json",
+        "sourceHash": "sha256:a84bc9cf4aee07def756a35443ee2e2b5976347e6863e36c9c85865f1a79027c"
+      },
+      "blocks": [
+        "article-header",
+        "article-body",
+        "quote",
+        "card-rail"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-html",
+      "path": "/nb/bank/om-oss/nyheter",
+      "title": "Nyheter | SpareBank 1",
+      "templateId": "news-listing",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/nyheter.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/nyheter._meta.json",
+        "sourceHash": "sha256:6144552a75da74a81d957a2b52a71fde84b66ffccb1c5e1f21e6470b8ee87b26"
+      },
+      "blocks": [
+        "article-header",
+        "card-rail",
+        "button-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+      "path": "/nb/bank/om-oss/om-banken/selskapsinformasjon",
+      "title": "Selskapsinformasjon | SpareBank 1",
+      "templateId": "om-oss",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/om-banken/selskapsinformasjon.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/om-banken/selskapsinformasjon._meta.json",
+        "sourceHash": "sha256:9804ea7f2dec207820a3de01e36bb1e7e9a75937a3687f91fc2489faff0df5fb"
+      },
+      "blocks": [
+        "bank-router",
+        "text",
+        "table",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-personvern-generelle-vilkar-html",
+      "path": "/nb/bank/om-oss/personvern/generelle-vilkar",
+      "title": "Generelle vilkår | SpareBank 1",
+      "templateId": "om-oss",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/personvern/generelle-vilkar.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/personvern/generelle-vilkar._meta.json",
+        "sourceHash": "sha256:ac5f8391fa511b2714295bf2dd7ca8afb2e78a5a8dcfb081f43c2e9152e1a308"
+      },
+      "blocks": [
+        "bank-router",
+        "text",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-personvern-html",
+      "path": "/nb/bank/om-oss/personvern",
+      "title": "Personvern | SpareBank 1",
+      "templateId": "om-oss",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/personvern.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/personvern._meta.json",
+        "sourceHash": "sha256:5f59947fe47594ea7c9ce4b3df6efca8fa79875abe3fe15a8e2b5cb36320142d"
+      },
+      "blocks": [
+        "bank-router",
+        "columns-grid",
+        "background-container",
+        "cards",
+        "faq",
+        "section",
+        "table",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-presse-html",
+      "path": "/nb/bank/om-oss/presse",
+      "title": "Presse | SpareBank 1",
+      "templateId": "om-oss",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/presse.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/presse._meta.json",
+        "sourceHash": "sha256:54a97cd274f846d22c1bda7214ae6e8a2e6e0672de2e999b05fa019b628861b2"
+      },
+      "blocks": [
+        "campaign",
+        "adviser-list",
+        "promo-band",
+        "feedback"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-samfunnsansvar-html",
+      "path": "/nb/bank/om-oss/samfunnsansvar",
+      "title": "Samfunnsansvar | SpareBank 1",
+      "templateId": "om-oss",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/samfunnsansvar.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/samfunnsansvar._meta.json",
+        "sourceHash": "sha256:9f59d9e75b72580d5ea0882ff76a7f882b61f9d9577352b84dfcb5c4128d21fd"
+      },
+      "blocks": [
+        "campaign",
+        "cards",
+        "columns-grid",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-selskaper-html",
+      "path": "/nb/bank/om-oss/selskaper",
+      "title": "Selskaper | SpareBank 1",
+      "templateId": "om-oss",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/selskaper.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/selskaper._meta.json",
+        "sourceHash": "sha256:f313488720eec92b238f0031cee89100570f39e8c654e1869e7d1dacb9dd02ac"
+      },
+      "blocks": [
+        "bank-router",
+        "text",
+        "background-container",
+        "columns-grid",
+        "cards",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-om-oss-vare-eksperter-html",
+      "path": "/nb/bank/om-oss/vare-eksperter",
+      "title": "Våre eksperter | Få råd om økonomi, sparing og pensjon | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/om-oss/vare-eksperter.html",
+        "metaJson": "stardust/migrated/nb/bank/om-oss/vare-eksperter._meta.json",
+        "sourceHash": "sha256:5a2653656ede86ad7f4e154a5d1108a9e4fadf84bd5f5e616c8763a717b62620"
+      },
+      "blocks": [
+        "bank-router",
+        "page-title",
+        "people-cards",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-bankid-html",
+      "path": "/nb/bank/privat/daglig-bruk/bankid",
+      "title": "BankID (Bank ID) | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/daglig-bruk/bankid.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/daglig-bruk/bankid._meta.json",
+        "sourceHash": "sha256:6e1e32ad9c0ced8797d364aff26af0fc03f2dff248a4ab68de489841880e2fda"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "content-columns",
+        "promo-band",
+        "split-media",
+        "faq",
+        "card-rail",
+        "rich-text",
+        "feedback",
+        "cta-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-bankkonto-html",
+      "path": "/nb/bank/privat/daglig-bruk/bankkonto",
+      "title": "Bankkonto | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/daglig-bruk/bankkonto.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/daglig-bruk/bankkonto._meta.json",
+        "sourceHash": "sha256:2615af565f0b2a71e6db30eeab21767839c3bc56e2478f3a86b4b12638e4cd59"
+      },
+      "blocks": [
+        "bank-router",
+        "page-title",
+        "card-rail",
+        "shortcuts",
+        "feedback",
+        "cta-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-bankkort-html",
+      "path": "/nb/bank/privat/daglig-bruk/bankkort",
+      "title": "Bankkort | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/daglig-bruk/bankkort.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/daglig-bruk/bankkort._meta.json",
+        "sourceHash": "sha256:7ed42537caa4839ea88c5da07c4ee39cf3ed893470933e651a3f94f3bb41af0c"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "usp",
+        "card-rail",
+        "content-columns",
+        "rich-text",
+        "cobranding",
+        "shortcuts",
+        "split-media",
+        "faq",
+        "feedback",
+        "cta-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-kredittkort-html",
+      "path": "/nb/bank/privat/daglig-bruk/kredittkort",
+      "title": "Kredittkort | Mastercard | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/daglig-bruk/kredittkort.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/daglig-bruk/kredittkort._meta.json",
+        "sourceHash": "sha256:0de530b2cd9d0a9e37c7d38aa607b31f783284433008d44d4cd47a586ea61a0e"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "usp",
+        "card-rail",
+        "split-media",
+        "content-columns",
+        "faq",
+        "feedback",
+        "cta-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+      "path": "/nb/bank/privat/daglig-bruk/mobilbank",
+      "title": "Mobilbank | Nettbank på mobil | Enklere privatøkonomi | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/daglig-bruk/mobilbank.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/daglig-bruk/mobilbank._meta.json",
+        "sourceHash": "sha256:3e0110737f18304f98ccc1bf22655c2d6e73f4212c6fc30fefab32377db5311e"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "promo-band",
+        "content-columns",
+        "guide-list",
+        "split-media",
+        "topic-list",
+        "faq",
+        "card-rail",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-barneforsikring-html",
+      "path": "/nb/bank/privat/forsikring/barneforsikring",
+      "title": "Barneforsikring | Kåret til Norges beste i 2025 | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/forsikring/barneforsikring.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/forsikring/barneforsikring._meta.json",
+        "sourceHash": "sha256:00891bc8022aa1c40827ee4b15ff86c1ce66211ef991e59aa9687903eb4894ad"
+      },
+      "blocks": [
+        "product-hero",
+        "cobranding",
+        "split-media",
+        "table",
+        "topic-list",
+        "rich-text",
+        "callout",
+        "card-rail",
+        "faq",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-bilforsikring-html",
+      "path": "/nb/bank/privat/forsikring/bilforsikring",
+      "title": "Bilforsikring | Fremtind | Best på skadeoppgjør | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/forsikring/bilforsikring.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/forsikring/bilforsikring._meta.json",
+        "sourceHash": "sha256:242103115c09f70369fd01d19d4047d6d3b5c7af96907a3b9513092de7005135"
+      },
+      "blocks": [
+        "product-hero",
+        "cobranding",
+        "split-media",
+        "table",
+        "rich-text",
+        "card-rail",
+        "faq",
+        "feedback",
+        "cta-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-innboforsikring-html",
+      "path": "/nb/bank/privat/forsikring/innboforsikring",
+      "title": "Innboforsikring | Norges beste | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/forsikring/innboforsikring.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/forsikring/innboforsikring._meta.json",
+        "sourceHash": "sha256:95a185a25d49a6647d0abf2a10c883b4b002f45d41ed56cafebb173f92061afa"
+      },
+      "blocks": [
+        "product-hero",
+        "usp",
+        "cobranding",
+        "split-media",
+        "table",
+        "rich-text",
+        "card-rail",
+        "content-columns",
+        "faq",
+        "feedback",
+        "cta-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-kundehistorier-html",
+      "path": "/nb/bank/privat/forsikring/kundehistorier",
+      "title": "Kundehistorier | Hvordan lykkes med egen bedrift | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/forsikring/kundehistorier.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/forsikring/kundehistorier._meta.json",
+        "sourceHash": "sha256:6948cbe6949aaba2eb40aa53bdeef0828f1b0ca3bcdfff7d111f7f2125cac3c6"
+      },
+      "blocks": [
+        "product-hero",
+        "card-rail",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+      "path": "/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade",
+      "title": "Sikrer seg mot vannlekkasje - klok av skade | SpareBank 1",
+      "templateId": "news-article",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade._meta.json",
+        "sourceHash": "sha256:107f0c59af08bf62c0b4feb0c47d23f64b289913eb5e4ecb619a11cfddea54e3"
+      },
+      "blocks": [
+        "article-header",
+        "article-body",
+        "story-block"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-reiseforsikring-html",
+      "path": "/nb/bank/privat/forsikring/reiseforsikring",
+      "title": "Reiseforsikring | Blant Norges beste | Sjekk pris | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/forsikring/reiseforsikring.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/forsikring/reiseforsikring._meta.json",
+        "sourceHash": "sha256:da86b19bf410024eac1a9edb2fe7059e20016ec21a78a756f83dc3594fcccd77"
+      },
+      "blocks": [
+        "product-hero",
+        "cobranding",
+        "callout",
+        "rich-text",
+        "split-media",
+        "table",
+        "card-rail",
+        "faq",
+        "feedback",
+        "cta-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-html",
+      "path": "/nb/bank/privat",
+      "title": "Privat | SpareBank 1",
+      "templateId": "market-landing",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat.html",
+        "metaJson": "stardust/migrated/nb/bank/privat._meta.json",
+        "sourceHash": "sha256:6cf2359816b98dc77467339612dd9946c074c87cac9a66c20644d90b54bd65ab"
+      },
+      "blocks": [
+        "bank-router",
+        "campaign-carousel",
+        "content-columns",
+        "promo-band",
+        "card-rail",
+        "cta-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+      "path": "/nb/bank/privat/kundeservice/bestill/bli-kunde",
+      "title": "Bli kunde | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/kundeservice/bestill/bli-kunde._meta.json",
+        "sourceHash": "sha256:052725cfd030a682da54ead4282b74551155a1363550e018714afea2b4470bb1"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "split-media",
+        "promo-band",
+        "card-rail",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-html",
+      "path": "/nb/bank/privat/kundeservice",
+      "title": "Kundeservice | SpareBank 1",
+      "templateId": "kundeservice-hub",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/kundeservice.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/kundeservice._meta.json",
+        "sourceHash": "sha256:00a9084470b6e5cd68763874819938c934e7d1fe5611caf33d0416934f9057a0"
+      },
+      "blocks": [
+        "bank-router",
+        "hero-ask",
+        "chat-field",
+        "faq",
+        "topic-tiles",
+        "promo-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-kontakt-html",
+      "path": "/nb/bank/privat/kundeservice/kontakt",
+      "title": "Kontakt oss | SpareBank 1",
+      "templateId": "utility",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/kundeservice/kontakt.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/kundeservice/kontakt._meta.json",
+        "sourceHash": "sha256:a64e33c1ee598ae031b5e7f0385b5a95eb190d79b047d42666a296b5c3373e33"
+      },
+      "blocks": [
+        "hero-portrait",
+        "bank-table",
+        "callout",
+        "address-block",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+      "path": "/nb/bank/privat/kundeservice/verktoy/sperre-kort",
+      "title": "Sperre kort | Åpne sperret kort | SpareBank 1",
+      "templateId": "tool",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/kundeservice/verktoy/sperre-kort.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/kundeservice/verktoy/sperre-kort._meta.json",
+        "sourceHash": "sha256:b633d4f4ef0a9c76da4544e2e654fe2aa3116a36955caa2b6c56533e8448b1af"
+      },
+      "blocks": [
+        "bank-router",
+        "page-title",
+        "steps",
+        "callout",
+        "split-media",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-lan-billan-html",
+      "path": "/nb/bank/privat/lan/billan",
+      "title": "Billån | Søk lån til både ny og brukt bil | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/lan/billan.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/lan/billan._meta.json",
+        "sourceHash": "sha256:698ad209a0333f7fad21d0d8f9f8cff900c2b6baa2386c58be5af12ea36b9233"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "usp",
+        "price-terms",
+        "cobranding",
+        "card-rail",
+        "shortcuts",
+        "split-media",
+        "faq",
+        "feedback",
+        "cta-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-lan-boliglan-html",
+      "path": "/nb/bank/privat/lan/boliglan",
+      "title": "Boliglån | Få tilbud på boliglån | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/lan/boliglan.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/lan/boliglan._meta.json",
+        "sourceHash": "sha256:eef731d18aa77947e182ceeafd39f36f0a146e32e3cb51d754bbd030253f5e08"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "card-rail",
+        "promo-band",
+        "split-media",
+        "price-cards",
+        "calculator",
+        "faq",
+        "feedback",
+        "cta-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-lan-forbrukslan-html",
+      "path": "/nb/bank/privat/lan/forbrukslan",
+      "title": "Forbrukslån | Lån uten sikkerhet | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/lan/forbrukslan.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/lan/forbrukslan._meta.json",
+        "sourceHash": "sha256:5a757bc9d575b4142a4aa59e881a239323cb5bb221906a6b17366dcadbba35ab"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "split-media",
+        "price-terms",
+        "rich-text",
+        "callout",
+        "topic-list",
+        "content-columns",
+        "card-rail",
+        "faq",
+        "feedback",
+        "cta-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-lan-gronne-lan-html",
+      "path": "/nb/bank/privat/lan/gronne-lan",
+      "title": "Grønne lån | Lån til miljøvennlige løsninger | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/lan/gronne-lan.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/lan/gronne-lan._meta.json",
+        "sourceHash": "sha256:f763717daec505d50802fe459ef2ead347c78f806aaa41fcf18c9321bfadb646"
+      },
+      "blocks": [
+        "bank-router",
+        "page-title",
+        "card-rail",
+        "promo-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-lan-html",
+      "path": "/nb/bank/privat/lan",
+      "title": "Søk lån til bolig, bil eller andre ting | SpareBank 1",
+      "templateId": "category-hub",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/lan.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/lan._meta.json",
+        "sourceHash": "sha256:8bab5162856f4a99b832e058eaef36be8af1179eef47ba27455e0c863585885a"
+      },
+      "blocks": [
+        "bank-router",
+        "page-title",
+        "visual-nav",
+        "shortcut-row",
+        "cobranding",
+        "split-media",
+        "promo-band",
+        "related-products",
+        "callout",
+        "feedback",
+        "cta-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-lan-lanekalkulator-html",
+      "path": "/nb/bank/privat/lan/lanekalkulator",
+      "title": "Lånekalkulator | Hvor mye koster lånet? | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/lan/lanekalkulator.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/lan/lanekalkulator._meta.json",
+        "sourceHash": "sha256:213a0b663e0328012bb45ba70a524aff9f1b930a7621c251e3d50652a0dc582c"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "card-rail",
+        "calculator",
+        "content-columns",
+        "feedback",
+        "cta-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-lan-refinansiering-html",
+      "path": "/nb/bank/privat/lan/refinansiering",
+      "title": "Refinansiering | Refinansiere boliglån og forbruksgjeld | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/lan/refinansiering.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/lan/refinansiering._meta.json",
+        "sourceHash": "sha256:e84cf35a7aacc2eb076d7aaee73b2806fed6dc3ee053a5ba9e570149a677f992"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "card-rail",
+        "split-media",
+        "faq",
+        "promo-band",
+        "feedback",
+        "cta-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+      "path": "/nb/bank/privat/pensjon/egen-pensjonskonto",
+      "title": "Egen pensjonskonto | Din pensjonsoversikt | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/pensjon/egen-pensjonskonto.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/pensjon/egen-pensjonskonto._meta.json",
+        "sourceHash": "sha256:1d50da18236dc8dcfb681da603c67878cb8335e68e2853499e6ddb2062d5603b"
+      },
+      "blocks": [
+        "bank-router",
+        "product-hero",
+        "usp",
+        "split-media",
+        "price-terms",
+        "rich-text",
+        "faq",
+        "card-rail",
+        "feedback",
+        "cta-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+      "path": "/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon",
+      "title": "Hvor mye får jeg i pensjon? | SpareBank 1",
+      "templateId": "news-article",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon._meta.json",
+        "sourceHash": "sha256:8224c67fcd8a1200446397e760c34a0b1b1008c42fd590e0a3717b2e6ab695ec"
+      },
+      "blocks": [
+        "article-header",
+        "article-body",
+        "quote",
+        "text-and-image",
+        "card-rail"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+      "path": "/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon",
+      "title": "Går du glipp av millioner i pensjon? – Mange får seg en overraskelse | SpareBank 1",
+      "templateId": "news-article",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon._meta.json",
+        "sourceHash": "sha256:1a20a52c95068db37e4b7cd66039a0fb5c200c0c0390b65571b6f0f797931874"
+      },
+      "blocks": [
+        "article-header",
+        "article-body",
+        "card-rail"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html",
+      "path": "/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo",
+      "title": "Teknologifond: Kan festen fortsette? | SpareBank 1",
+      "templateId": "news-article",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo._meta.json",
+        "sourceHash": "sha256:b9e241c85ecb59369d949546f52271f9f608fa3e931bacd6146d5fc950a28c30"
+      },
+      "blocks": [
+        "article-header",
+        "article-body",
+        "quote"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-sparing-markedsnytt-html",
+      "path": "/nb/bank/privat/sparing/markedsnytt",
+      "title": "Markedsnytt | SpareBank 1",
+      "templateId": "markedsnytt-listing",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/sparing/markedsnytt.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/sparing/markedsnytt._meta.json",
+        "sourceHash": "sha256:c5215fb762633e83a233fc521fd71982aa7afbc7b7f3423d742da2d9fa4e561c"
+      },
+      "blocks": [
+        "bank-router",
+        "campaign",
+        "card-rail",
+        "content-columns",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-sparing-spare-i-fond-html",
+      "path": "/nb/bank/privat/sparing/spare-i-fond",
+      "title": "Fond | Spare i fond | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/sparing/spare-i-fond.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/sparing/spare-i-fond._meta.json",
+        "sourceHash": "sha256:a5fa072ba7912df2b770c8f9448b64fc162a4d1c63f6e28e2e027452e0b89fac"
+      },
+      "blocks": [
+        "bank-router",
+        "page-title",
+        "card-rail",
+        "split-media",
+        "rich-text",
+        "faq",
+        "content-columns",
+        "feedback",
+        "cta-band",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-sparing-spare-pa-konto-html",
+      "path": "/nb/bank/privat/sparing/spare-pa-konto",
+      "title": "Spare på konto | God rente og fleksibel sparing | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/sparing/spare-pa-konto.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/sparing/spare-pa-konto._meta.json",
+        "sourceHash": "sha256:eb66be94e81b3d00386c9399e2c5da00039426f33820983dd79d2a926d5c044b"
+      },
+      "blocks": [
+        "bank-router",
+        "page-title",
+        "card-rail",
+        "cobranding",
+        "split-media",
+        "content-columns",
+        "rich-text",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "nb-bank-privat-sparing-spare-til-barn-html",
+      "path": "/nb/bank/privat/sparing/spare-til-barn",
+      "title": "Spare til barn | SpareBank 1",
+      "templateId": "product",
+      "source": {
+        "migratedHtml": "stardust/migrated/nb/bank/privat/sparing/spare-til-barn.html",
+        "metaJson": "stardust/migrated/nb/bank/privat/sparing/spare-til-barn._meta.json",
+        "sourceHash": "sha256:27896172a4e453b884face92f3adfcf9bc25a6ce690a760d08d2bb2eda2d12f4"
+      },
+      "blocks": [
+        "bank-router",
+        "page-title",
+        "card-rail",
+        "rich-text",
+        "feedback",
+        "contact-row"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    }
+  ]
+}

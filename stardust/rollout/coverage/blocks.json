@@ -1,0 +1,1555 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/blocks",
+    "writtenAt": "2026-09-14T21:48:59.527Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage/pages.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-14T21:48:59.527Z",
+  "blocks": [
+    {
+      "id": "accordion",
+      "label": "accordion",
+      "kind": "module",
+      "signature": "module:accordion",
+      "source": null,
+      "usedByTemplates": [
+        "product"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "accordion",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "address-block",
+      "label": "address-block",
+      "kind": "module",
+      "signature": "module:address-block",
+      "source": null,
+      "usedByTemplates": [
+        "utility"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-kundeservice-kontakt-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "address-block",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "adviser-list",
+      "label": "adviser-list",
+      "kind": "module",
+      "signature": "module:adviser-list",
+      "source": null,
+      "usedByTemplates": [
+        "om-oss"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-presse-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "adviser-list",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "article-body",
+      "label": "article-body",
+      "kind": "module",
+      "signature": "module:article-body",
+      "source": null,
+      "usedByTemplates": [
+        "news-article"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+        "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+        "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+        "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+        "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+        "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+        "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+        "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+        "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+        "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html"
+      ],
+      "instanceCount": 10,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "article-body",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "article-header",
+      "label": "article-header",
+      "kind": "module",
+      "signature": "module:article-header",
+      "source": null,
+      "usedByTemplates": [
+        "news-article",
+        "news-listing"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+        "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+        "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+        "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+        "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+        "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+        "nb-bank-om-oss-nyheter-html",
+        "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+        "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+        "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+        "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html"
+      ],
+      "instanceCount": 11,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "article-header",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "background-container",
+      "label": "background-container",
+      "kind": "module",
+      "signature": "module:background-container",
+      "source": null,
+      "usedByTemplates": [
+        "faq",
+        "om-oss"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+        "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+        "nb-bank-om-oss-investor-html",
+        "nb-bank-om-oss-personvern-html",
+        "nb-bank-om-oss-selskaper-html"
+      ],
+      "instanceCount": 5,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "background-container-block",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "bank-router",
+      "label": "bank-router",
+      "kind": "module",
+      "signature": "module:bank-router",
+      "source": null,
+      "usedByTemplates": [
+        "category-hub",
+        "faq",
+        "kundeservice-hub",
+        "markedsnytt-listing",
+        "market-landing",
+        "om-oss",
+        "product",
+        "tool"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-konto-bedriftskonto-html",
+        "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+        "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+        "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+        "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+        "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+        "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+        "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+        "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+        "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+        "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html",
+        "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+        "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+        "nb-bank-bedrift-lan-finansiering-leasing-html",
+        "nb-bank-bedrift-open-api-html",
+        "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+        "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+        "nb-bank-om-oss-personvern-generelle-vilkar-html",
+        "nb-bank-om-oss-personvern-html",
+        "nb-bank-om-oss-selskaper-html",
+        "nb-bank-om-oss-vare-eksperter-html",
+        "nb-bank-privat-daglig-bruk-bankid-html",
+        "nb-bank-privat-daglig-bruk-bankkonto-html",
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-daglig-bruk-kredittkort-html",
+        "nb-bank-privat-daglig-bruk-mobilbank-html",
+        "nb-bank-privat-html",
+        "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+        "nb-bank-privat-kundeservice-html",
+        "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+        "nb-bank-privat-lan-billan-html",
+        "nb-bank-privat-lan-boliglan-html",
+        "nb-bank-privat-lan-forbrukslan-html",
+        "nb-bank-privat-lan-gronne-lan-html",
+        "nb-bank-privat-lan-html",
+        "nb-bank-privat-lan-lanekalkulator-html",
+        "nb-bank-privat-lan-refinansiering-html",
+        "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+        "nb-bank-privat-sparing-markedsnytt-html",
+        "nb-bank-privat-sparing-spare-i-fond-html",
+        "nb-bank-privat-sparing-spare-pa-konto-html",
+        "nb-bank-privat-sparing-spare-til-barn-html"
+      ],
+      "instanceCount": 44,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "bank-router",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "bank-table",
+      "label": "bank-table",
+      "kind": "module",
+      "signature": "module:bank-table",
+      "source": null,
+      "usedByTemplates": [
+        "utility"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-kundeservice-kontakt-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "bank-table",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "button-row",
+      "label": "button-row",
+      "kind": "module",
+      "signature": "module:button-row",
+      "source": null,
+      "usedByTemplates": [
+        "news-listing"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-nyheter-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "button-row",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "calculator",
+      "label": "calculator",
+      "kind": "module",
+      "signature": "module:calculator",
+      "source": null,
+      "usedByTemplates": [
+        "product"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-lan-boliglan-html",
+        "nb-bank-privat-lan-lanekalkulator-html"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "calculator",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "callout",
+      "label": "callout",
+      "kind": "module",
+      "signature": "module:callout",
+      "source": null,
+      "usedByTemplates": [
+        "category-hub",
+        "product",
+        "theme",
+        "tool",
+        "utility"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-konto-bedriftskonto-html",
+        "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+        "nb-bank-privat-forsikring-barneforsikring-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html",
+        "nb-bank-privat-kundeservice-kontakt-html",
+        "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+        "nb-bank-privat-lan-forbrukslan-html",
+        "nb-bank-privat-lan-html"
+      ],
+      "instanceCount": 11,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "callout",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "campaign",
+      "label": "campaign",
+      "kind": "module",
+      "signature": "module:campaign",
+      "source": null,
+      "usedByTemplates": [
+        "markedsnytt-listing",
+        "om-oss"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-investor-html",
+        "nb-bank-om-oss-jobb-og-karriere-html",
+        "nb-bank-om-oss-presse-html",
+        "nb-bank-om-oss-samfunnsansvar-html",
+        "nb-bank-privat-sparing-markedsnytt-html"
+      ],
+      "instanceCount": 5,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "campaign",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "campaign-carousel",
+      "label": "campaign-carousel",
+      "kind": "module",
+      "signature": "module:campaign-carousel",
+      "source": null,
+      "usedByTemplates": [
+        "market-landing"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "campaign-carousel",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "card-rail",
+      "label": "card-rail",
+      "kind": "module",
+      "signature": "module:card-rail",
+      "source": null,
+      "usedByTemplates": [
+        "markedsnytt-listing",
+        "market-landing",
+        "news-article",
+        "news-listing",
+        "product",
+        "theme"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-konto-bedriftskonto-html",
+        "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+        "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+        "nb-bank-bedrift-lan-finansiering-leasing-html",
+        "nb-bank-bedrift-open-api-html",
+        "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+        "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+        "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+        "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+        "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+        "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+        "nb-bank-om-oss-nyheter-html",
+        "nb-bank-privat-daglig-bruk-bankid-html",
+        "nb-bank-privat-daglig-bruk-bankkonto-html",
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-daglig-bruk-kredittkort-html",
+        "nb-bank-privat-daglig-bruk-mobilbank-html",
+        "nb-bank-privat-forsikring-barneforsikring-html",
+        "nb-bank-privat-forsikring-bilforsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-forsikring-kundehistorier-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html",
+        "nb-bank-privat-html",
+        "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+        "nb-bank-privat-lan-billan-html",
+        "nb-bank-privat-lan-boliglan-html",
+        "nb-bank-privat-lan-forbrukslan-html",
+        "nb-bank-privat-lan-gronne-lan-html",
+        "nb-bank-privat-lan-lanekalkulator-html",
+        "nb-bank-privat-lan-refinansiering-html",
+        "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+        "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+        "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+        "nb-bank-privat-sparing-markedsnytt-html",
+        "nb-bank-privat-sparing-spare-i-fond-html",
+        "nb-bank-privat-sparing-spare-pa-konto-html",
+        "nb-bank-privat-sparing-spare-til-barn-html"
+      ],
+      "instanceCount": 40,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "card-rail",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "cards",
+      "label": "cards",
+      "kind": "module",
+      "signature": "module:cards",
+      "source": null,
+      "usedByTemplates": [
+        "om-oss"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-investor-html",
+        "nb-bank-om-oss-personvern-html",
+        "nb-bank-om-oss-samfunnsansvar-html",
+        "nb-bank-om-oss-selskaper-html"
+      ],
+      "instanceCount": 4,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "cards",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "chat-field",
+      "label": "chat-field",
+      "kind": "module",
+      "signature": "module:chat-field",
+      "source": null,
+      "usedByTemplates": [
+        "kundeservice-hub"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-kundeservice-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "chat-field",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "cobranding",
+      "label": "cobranding",
+      "kind": "module",
+      "signature": "module:cobranding",
+      "source": null,
+      "usedByTemplates": [
+        "category-hub",
+        "product"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-forsikring-barneforsikring-html",
+        "nb-bank-privat-forsikring-bilforsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html",
+        "nb-bank-privat-lan-billan-html",
+        "nb-bank-privat-lan-html",
+        "nb-bank-privat-sparing-spare-pa-konto-html"
+      ],
+      "instanceCount": 8,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "cobranding",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "columns-grid",
+      "label": "columns-grid",
+      "kind": "module",
+      "signature": "module:columns-grid",
+      "source": null,
+      "usedByTemplates": [
+        "om-oss"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-investor-html",
+        "nb-bank-om-oss-jobb-og-karriere-html",
+        "nb-bank-om-oss-personvern-html",
+        "nb-bank-om-oss-samfunnsansvar-html",
+        "nb-bank-om-oss-selskaper-html"
+      ],
+      "instanceCount": 5,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "columns-grid",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "contact-row",
+      "label": "contact-row",
+      "kind": "module",
+      "signature": "module:contact-row",
+      "source": null,
+      "usedByTemplates": [
+        "category-hub",
+        "faq",
+        "kundeservice-hub",
+        "markedsnytt-listing",
+        "market-landing",
+        "om-oss",
+        "product",
+        "theme",
+        "tool",
+        "utility"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-konto-bedriftskonto-html",
+        "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+        "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+        "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+        "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+        "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+        "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+        "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+        "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+        "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+        "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+        "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+        "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html",
+        "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+        "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+        "nb-bank-bedrift-lan-finansiering-leasing-html",
+        "nb-bank-bedrift-open-api-html",
+        "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+        "nb-bank-om-oss-jobb-og-karriere-html",
+        "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+        "nb-bank-om-oss-personvern-generelle-vilkar-html",
+        "nb-bank-om-oss-personvern-html",
+        "nb-bank-om-oss-samfunnsansvar-html",
+        "nb-bank-om-oss-selskaper-html",
+        "nb-bank-om-oss-vare-eksperter-html",
+        "nb-bank-privat-daglig-bruk-bankid-html",
+        "nb-bank-privat-daglig-bruk-bankkonto-html",
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-daglig-bruk-kredittkort-html",
+        "nb-bank-privat-daglig-bruk-mobilbank-html",
+        "nb-bank-privat-forsikring-barneforsikring-html",
+        "nb-bank-privat-forsikring-bilforsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-forsikring-kundehistorier-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html",
+        "nb-bank-privat-html",
+        "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+        "nb-bank-privat-kundeservice-html",
+        "nb-bank-privat-kundeservice-kontakt-html",
+        "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+        "nb-bank-privat-lan-billan-html",
+        "nb-bank-privat-lan-boliglan-html",
+        "nb-bank-privat-lan-forbrukslan-html",
+        "nb-bank-privat-lan-gronne-lan-html",
+        "nb-bank-privat-lan-html",
+        "nb-bank-privat-lan-lanekalkulator-html",
+        "nb-bank-privat-lan-refinansiering-html",
+        "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+        "nb-bank-privat-sparing-markedsnytt-html",
+        "nb-bank-privat-sparing-spare-i-fond-html",
+        "nb-bank-privat-sparing-spare-pa-konto-html",
+        "nb-bank-privat-sparing-spare-til-barn-html"
+      ],
+      "instanceCount": 55,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "contact-row",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "content-columns",
+      "label": "content-columns",
+      "kind": "module",
+      "signature": "module:content-columns",
+      "source": null,
+      "usedByTemplates": [
+        "markedsnytt-listing",
+        "market-landing",
+        "product",
+        "theme"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-lan-finansiering-leasing-html",
+        "nb-bank-privat-daglig-bruk-bankid-html",
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-daglig-bruk-kredittkort-html",
+        "nb-bank-privat-daglig-bruk-mobilbank-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-html",
+        "nb-bank-privat-lan-forbrukslan-html",
+        "nb-bank-privat-lan-lanekalkulator-html",
+        "nb-bank-privat-sparing-markedsnytt-html",
+        "nb-bank-privat-sparing-spare-i-fond-html",
+        "nb-bank-privat-sparing-spare-pa-konto-html"
+      ],
+      "instanceCount": 15,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "content-columns",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "cta-band",
+      "label": "cta-band",
+      "kind": "module",
+      "signature": "module:cta-band",
+      "source": null,
+      "usedByTemplates": [
+        "category-hub",
+        "market-landing",
+        "product"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-daglig-bruk-bankid-html",
+        "nb-bank-privat-daglig-bruk-bankkonto-html",
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-daglig-bruk-kredittkort-html",
+        "nb-bank-privat-forsikring-bilforsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html",
+        "nb-bank-privat-html",
+        "nb-bank-privat-lan-billan-html",
+        "nb-bank-privat-lan-boliglan-html",
+        "nb-bank-privat-lan-forbrukslan-html",
+        "nb-bank-privat-lan-html",
+        "nb-bank-privat-lan-lanekalkulator-html",
+        "nb-bank-privat-lan-refinansiering-html",
+        "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+        "nb-bank-privat-sparing-spare-i-fond-html"
+      ],
+      "instanceCount": 16,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "cta-band",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "cta-row",
+      "label": "cta-row",
+      "kind": "module",
+      "signature": "module:cta-row",
+      "source": null,
+      "usedByTemplates": [
+        "theme"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "cta-row",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "faq",
+      "label": "faq",
+      "kind": "module",
+      "signature": "module:faq",
+      "source": null,
+      "usedByTemplates": [
+        "kundeservice-hub",
+        "om-oss",
+        "product"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+        "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+        "nb-bank-bedrift-lan-finansiering-leasing-html",
+        "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+        "nb-bank-om-oss-investor-html",
+        "nb-bank-om-oss-personvern-html",
+        "nb-bank-privat-daglig-bruk-bankid-html",
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-daglig-bruk-kredittkort-html",
+        "nb-bank-privat-daglig-bruk-mobilbank-html",
+        "nb-bank-privat-forsikring-barneforsikring-html",
+        "nb-bank-privat-forsikring-bilforsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html",
+        "nb-bank-privat-kundeservice-html",
+        "nb-bank-privat-lan-billan-html",
+        "nb-bank-privat-lan-boliglan-html",
+        "nb-bank-privat-lan-forbrukslan-html",
+        "nb-bank-privat-lan-refinansiering-html",
+        "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+        "nb-bank-privat-sparing-spare-i-fond-html"
+      ],
+      "instanceCount": 22,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "faq",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "faq-question",
+      "label": "faq-question",
+      "kind": "module",
+      "signature": "module:faq-question",
+      "source": null,
+      "usedByTemplates": [
+        "faq"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+        "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+        "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+        "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+        "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+        "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+        "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+        "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+        "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+        "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+        "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+        "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html"
+      ],
+      "instanceCount": 12,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "faq-question",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "feedback",
+      "label": "feedback",
+      "kind": "module",
+      "signature": "module:feedback",
+      "source": null,
+      "usedByTemplates": [
+        "category-hub",
+        "faq",
+        "markedsnytt-listing",
+        "om-oss",
+        "product",
+        "theme",
+        "tool"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-konto-bedriftskonto-html",
+        "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+        "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+        "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+        "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+        "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+        "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+        "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+        "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+        "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+        "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+        "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+        "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html",
+        "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+        "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+        "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+        "nb-bank-om-oss-investor-html",
+        "nb-bank-om-oss-jobb-og-karriere-html",
+        "nb-bank-om-oss-presse-html",
+        "nb-bank-om-oss-samfunnsansvar-html",
+        "nb-bank-privat-daglig-bruk-bankid-html",
+        "nb-bank-privat-daglig-bruk-bankkonto-html",
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-daglig-bruk-kredittkort-html",
+        "nb-bank-privat-daglig-bruk-mobilbank-html",
+        "nb-bank-privat-forsikring-barneforsikring-html",
+        "nb-bank-privat-forsikring-bilforsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-forsikring-kundehistorier-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html",
+        "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+        "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+        "nb-bank-privat-lan-billan-html",
+        "nb-bank-privat-lan-boliglan-html",
+        "nb-bank-privat-lan-forbrukslan-html",
+        "nb-bank-privat-lan-html",
+        "nb-bank-privat-lan-lanekalkulator-html",
+        "nb-bank-privat-lan-refinansiering-html",
+        "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+        "nb-bank-privat-sparing-markedsnytt-html",
+        "nb-bank-privat-sparing-spare-i-fond-html",
+        "nb-bank-privat-sparing-spare-pa-konto-html",
+        "nb-bank-privat-sparing-spare-til-barn-html"
+      ],
+      "instanceCount": 46,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "feedback",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "guide-list",
+      "label": "guide-list",
+      "kind": "module",
+      "signature": "module:guide-list",
+      "source": null,
+      "usedByTemplates": [
+        "product"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-daglig-bruk-mobilbank-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "guide-list",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "hero-ask",
+      "label": "hero-ask",
+      "kind": "module",
+      "signature": "module:hero-ask",
+      "source": null,
+      "usedByTemplates": [
+        "kundeservice-hub"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-kundeservice-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "hero-ask",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "hero-portrait",
+      "label": "hero-portrait",
+      "kind": "module",
+      "signature": "module:hero-portrait",
+      "source": null,
+      "usedByTemplates": [
+        "utility"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-kundeservice-kontakt-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "hero-portrait",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "page-title",
+      "label": "page-title",
+      "kind": "module",
+      "signature": "module:page-title",
+      "source": null,
+      "usedByTemplates": [
+        "category-hub",
+        "product",
+        "theme",
+        "tool"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "nb-bank-om-oss-vare-eksperter-html",
+        "nb-bank-privat-daglig-bruk-bankkonto-html",
+        "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+        "nb-bank-privat-lan-gronne-lan-html",
+        "nb-bank-privat-lan-html",
+        "nb-bank-privat-sparing-spare-i-fond-html",
+        "nb-bank-privat-sparing-spare-pa-konto-html",
+        "nb-bank-privat-sparing-spare-til-barn-html"
+      ],
+      "instanceCount": 9,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "page-title",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "people-cards",
+      "label": "people-cards",
+      "kind": "module",
+      "signature": "module:people-cards",
+      "source": null,
+      "usedByTemplates": [
+        "product"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-vare-eksperter-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "people-cards",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "price-cards",
+      "label": "price-cards",
+      "kind": "module",
+      "signature": "module:price-cards",
+      "source": null,
+      "usedByTemplates": [
+        "product"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-lan-boliglan-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "price-cards",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "price-terms",
+      "label": "price-terms",
+      "kind": "module",
+      "signature": "module:price-terms",
+      "source": null,
+      "usedByTemplates": [
+        "product"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-konto-bedriftskonto-html",
+        "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+        "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+        "nb-bank-bedrift-lan-finansiering-leasing-html",
+        "nb-bank-privat-lan-billan-html",
+        "nb-bank-privat-lan-forbrukslan-html",
+        "nb-bank-privat-pensjon-egen-pensjonskonto-html"
+      ],
+      "instanceCount": 8,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "price-terms",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "product-hero",
+      "label": "product-hero",
+      "kind": "module",
+      "signature": "module:product-hero",
+      "source": null,
+      "usedByTemplates": [
+        "product"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-konto-bedriftskonto-html",
+        "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+        "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+        "nb-bank-bedrift-lan-finansiering-leasing-html",
+        "nb-bank-bedrift-open-api-html",
+        "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+        "nb-bank-privat-daglig-bruk-bankid-html",
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-daglig-bruk-kredittkort-html",
+        "nb-bank-privat-daglig-bruk-mobilbank-html",
+        "nb-bank-privat-forsikring-barneforsikring-html",
+        "nb-bank-privat-forsikring-bilforsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-forsikring-kundehistorier-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html",
+        "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+        "nb-bank-privat-lan-billan-html",
+        "nb-bank-privat-lan-boliglan-html",
+        "nb-bank-privat-lan-forbrukslan-html",
+        "nb-bank-privat-lan-lanekalkulator-html",
+        "nb-bank-privat-lan-refinansiering-html",
+        "nb-bank-privat-pensjon-egen-pensjonskonto-html"
+      ],
+      "instanceCount": 24,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "product-hero",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "promo-band",
+      "label": "promo-band",
+      "kind": "module",
+      "signature": "module:promo-band",
+      "source": null,
+      "usedByTemplates": [
+        "category-hub",
+        "kundeservice-hub",
+        "market-landing",
+        "om-oss",
+        "product"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-presse-html",
+        "nb-bank-privat-daglig-bruk-bankid-html",
+        "nb-bank-privat-daglig-bruk-mobilbank-html",
+        "nb-bank-privat-html",
+        "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+        "nb-bank-privat-kundeservice-html",
+        "nb-bank-privat-lan-boliglan-html",
+        "nb-bank-privat-lan-gronne-lan-html",
+        "nb-bank-privat-lan-html",
+        "nb-bank-privat-lan-refinansiering-html"
+      ],
+      "instanceCount": 10,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "promo-band",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "quote",
+      "label": "quote",
+      "kind": "module",
+      "signature": "module:quote",
+      "source": null,
+      "usedByTemplates": [
+        "news-article"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+        "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+        "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+        "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+        "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html"
+      ],
+      "instanceCount": 5,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "quote",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "related-products",
+      "label": "related-products",
+      "kind": "module",
+      "signature": "module:related-products",
+      "source": null,
+      "usedByTemplates": [
+        "category-hub"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-lan-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "related-products",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "rich-text",
+      "label": "rich-text",
+      "kind": "module",
+      "signature": "module:rich-text",
+      "source": null,
+      "usedByTemplates": [
+        "product"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+        "nb-bank-bedrift-open-api-html",
+        "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+        "nb-bank-privat-daglig-bruk-bankid-html",
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-forsikring-barneforsikring-html",
+        "nb-bank-privat-forsikring-bilforsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html",
+        "nb-bank-privat-lan-forbrukslan-html",
+        "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+        "nb-bank-privat-sparing-spare-i-fond-html",
+        "nb-bank-privat-sparing-spare-pa-konto-html",
+        "nb-bank-privat-sparing-spare-til-barn-html"
+      ],
+      "instanceCount": 15,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "rich-text",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "section",
+      "label": "section",
+      "kind": "module",
+      "signature": "module:section",
+      "source": null,
+      "usedByTemplates": [
+        "om-oss"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-personvern-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "blk-section",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "shortcut-row",
+      "label": "shortcut-row",
+      "kind": "module",
+      "signature": "module:shortcut-row",
+      "source": null,
+      "usedByTemplates": [
+        "category-hub"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-lan-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "shortcut-row",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "shortcuts",
+      "label": "shortcuts",
+      "kind": "module",
+      "signature": "module:shortcuts",
+      "source": null,
+      "usedByTemplates": [
+        "product"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-daglig-bruk-bankkonto-html",
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-lan-billan-html"
+      ],
+      "instanceCount": 3,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "shortcuts",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "split-media",
+      "label": "split-media",
+      "kind": "module",
+      "signature": "module:split-media",
+      "source": null,
+      "usedByTemplates": [
+        "campaign-landing",
+        "category-hub",
+        "product",
+        "theme",
+        "tool"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-konto-bedriftskonto-html",
+        "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+        "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+        "nb-bank-bedrift-lan-finansiering-leasing-html",
+        "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+        "nb-bank-om-oss-hjemme-html",
+        "nb-bank-privat-daglig-bruk-bankid-html",
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-daglig-bruk-kredittkort-html",
+        "nb-bank-privat-daglig-bruk-mobilbank-html",
+        "nb-bank-privat-forsikring-barneforsikring-html",
+        "nb-bank-privat-forsikring-bilforsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html",
+        "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+        "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+        "nb-bank-privat-lan-billan-html",
+        "nb-bank-privat-lan-boliglan-html",
+        "nb-bank-privat-lan-forbrukslan-html",
+        "nb-bank-privat-lan-html",
+        "nb-bank-privat-lan-refinansiering-html",
+        "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+        "nb-bank-privat-sparing-spare-i-fond-html",
+        "nb-bank-privat-sparing-spare-pa-konto-html"
+      ],
+      "instanceCount": 27,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "split-media",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "steps",
+      "label": "steps",
+      "kind": "module",
+      "signature": "module:steps",
+      "source": null,
+      "usedByTemplates": [
+        "product",
+        "tool"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-privat-kundeservice-verktoy-sperre-kort-html"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "steps",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "story-block",
+      "label": "story-block",
+      "kind": "module",
+      "signature": "module:story-block",
+      "source": null,
+      "usedByTemplates": [
+        "news-article"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+        "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "story-block",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "story-text",
+      "label": "story-text",
+      "kind": "module",
+      "signature": "module:story-text",
+      "source": null,
+      "usedByTemplates": [
+        "campaign-landing"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-hjemme-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "story-text",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "table",
+      "label": "table",
+      "kind": "module",
+      "signature": "module:table",
+      "source": null,
+      "usedByTemplates": [
+        "om-oss",
+        "product"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+        "nb-bank-om-oss-personvern-html",
+        "nb-bank-privat-forsikring-barneforsikring-html",
+        "nb-bank-privat-forsikring-bilforsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html"
+      ],
+      "instanceCount": 6,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "table",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "tabs",
+      "label": "tabs",
+      "kind": "module",
+      "signature": "module:tabs",
+      "source": null,
+      "usedByTemplates": [
+        "om-oss"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-investor-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "tabs",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "text",
+      "label": "text",
+      "kind": "module",
+      "signature": "module:text",
+      "source": null,
+      "usedByTemplates": [
+        "om-oss"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+        "nb-bank-om-oss-personvern-generelle-vilkar-html",
+        "nb-bank-om-oss-selskaper-html"
+      ],
+      "instanceCount": 3,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "text",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "text-and-image",
+      "label": "text-and-image",
+      "kind": "module",
+      "signature": "module:text-and-image",
+      "source": null,
+      "usedByTemplates": [
+        "news-article"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "text-and-image",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "topic-list",
+      "label": "topic-list",
+      "kind": "module",
+      "signature": "module:topic-list",
+      "source": null,
+      "usedByTemplates": [
+        "product"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-daglig-bruk-mobilbank-html",
+        "nb-bank-privat-forsikring-barneforsikring-html",
+        "nb-bank-privat-lan-forbrukslan-html"
+      ],
+      "instanceCount": 3,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "topic-list",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "topic-tiles",
+      "label": "topic-tiles",
+      "kind": "module",
+      "signature": "module:topic-tiles",
+      "source": null,
+      "usedByTemplates": [
+        "kundeservice-hub"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-kundeservice-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "topic-tiles",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "usp",
+      "label": "usp",
+      "kind": "module",
+      "signature": "module:usp",
+      "source": null,
+      "usedByTemplates": [
+        "product"
+      ],
+      "usedByPages": [
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-konto-bedriftskonto-html",
+        "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+        "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+        "nb-bank-bedrift-lan-finansiering-leasing-html",
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-daglig-bruk-kredittkort-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-lan-billan-html",
+        "nb-bank-privat-pensjon-egen-pensjonskonto-html"
+      ],
+      "instanceCount": 10,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "usp",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "video",
+      "label": "video",
+      "kind": "module",
+      "signature": "module:video",
+      "source": null,
+      "usedByTemplates": [
+        "campaign-landing"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-hjemme-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "video",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "video-hero",
+      "label": "video-hero",
+      "kind": "module",
+      "signature": "module:video-hero",
+      "source": null,
+      "usedByTemplates": [
+        "campaign-landing"
+      ],
+      "usedByPages": [
+        "nb-bank-om-oss-hjemme-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "video-hero",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "visual-nav",
+      "label": "visual-nav",
+      "kind": "module",
+      "signature": "module:visual-nav",
+      "source": null,
+      "usedByTemplates": [
+        "category-hub"
+      ],
+      "usedByPages": [
+        "nb-bank-privat-lan-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "visual-nav",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    }
+  ]
+}

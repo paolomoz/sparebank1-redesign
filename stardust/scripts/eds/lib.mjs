@@ -73,7 +73,8 @@ export function href(h = '', ctx) {
   if (!/^(www\.)?sparebank1\.no$/i.test(u.hostname)) return s;
   const p = u.pathname.replace(/^\/content\/sites\/sb1(?=\/)/i, '');
   const hit = BY_SOURCE.get(p.toLowerCase()) || BY_SOURCE.get(p.toLowerCase().replace(/\/$/, ''));
-  if (hit) return hit.deliveredPath + u.search + u.hash;
+  const search = u.search.replace(/([?&])icid=[^&#]*&?/g, '$1').replace(/[?&]$/, ''); // strip SB1 campaign tracking params on internal links
+  if (hit) return hit.deliveredPath + search + u.hash;
   return `${SOURCE_ORIGIN}${p}${u.search}${u.hash}`;
 }
 

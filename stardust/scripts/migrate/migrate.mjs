@@ -61,7 +61,8 @@ function rewriteLinks(html, outputPath) {
   const broken = []; let rewritten = 0;
   const out = html.replace(/<a\b([^>]*?)\shref="([^"]*)"([^>]*)>/g, (m, pre, href, post) => {
     const sp = sitePath(href); if (sp === null) return m;
-    const [p, rest = ''] = sp.split(/(?=[?#])/);
+    const [p, rest0 = ''] = sp.split(/(?=[?#])/);
+    const rest = rest0.replace(/([?&])icid=[^&#]*&?/g, '$1').replace(/\?(#|$)/, '$1').replace(/&$/, ''); // SB1 campaign tracking (icid) is a tracking param — stripped per content-preservation § Internal link rewriting
     const hit = byPath.get(p.toLowerCase()) || byPath.get(p.toLowerCase().replace(/\/$/, ''));
     if (hit) { rewritten += 1; return `<a${pre} href="${relTo(outputPath, hit.outputPath)}${esc(rest)}"${post}>`; }
     // known-site page outside the roster: keep resolvable on the source origin (a bounce beats a 404), flagged
@@ -132,6 +133,7 @@ async function migrateOne(p, log) {
   const prefix = depthOf(m.outputPath) ? '../'.repeat(depthOf(m.outputPath)) : './';
   const lr = rewriteLinks(html, m.outputPath); html = lr.html;
   html = html.replace(/url\("fonts\//g, `url("${prefix}assets/fonts/`);
+  html = html.replace(/href="\?search="/g, 'href="https://www.sparebank1.no/nb/bank/privat/kundeservice.html?search="'); // dynamics #20 interim: site search stays on the source host (a relative ?search= is meaningless in the static bundle)
   // head: migrate provenance first, metadata + JSON-LD before </head>
   const modules = [...html.matchAll(/data-module="([^"]+)"/g)].map((x) => x[1]).filter((v, i, a) => a.indexOf(v) === i);
   const mig = `<!-- stardust:migrate

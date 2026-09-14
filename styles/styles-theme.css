@@ -1,1 +1,20 @@
 /* styles — theme family group section styles (closed-set additions only; imported by styles.css) */
+
+/* ===== theme ===== */
+/* intro-backlink: the theme page title — canon .intro-text gap 16 + .backlink-row margin 4 = 20 between the back link and the h1 */
+main .section.intro-backlink .breadcrumbs-wrapper + .default-content-wrapper { margin-top: calc(var(--spacing-md) + var(--spacing-xs)); }
+
+/* claim: the "report a claim" row — icon · title line · one pill between hairlines (default content: image p, text p, CTA p) */
+main .section.claim .default-content-wrapper { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: var(--spacing-lg); padding-block: var(--spacing-lg); border-top: 1px solid var(--lysgraa); border-bottom: 1px solid var(--lysgraa); }
+main .section.claim .default-content-wrapper p:has(> img:only-child, > picture:only-child) { line-height: 0; }
+main .section.claim .default-content-wrapper img { width: 56px; height: 56px; object-fit: contain; border-radius: 0; }
+main .section.claim .default-content-wrapper p:not(.button-wrapper, :has(> img, > picture)) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; color: var(--fjell); }
+main .section.claim .default-content-wrapper p.button-wrapper { margin-top: var(--spacing-md); } /* canon p + p before the pill (row = 44 + 16 → 110 with the 24 px paddings) */
+
+@media (width <= 640px) {
+  main .section.claim .default-content-wrapper { grid-template-columns: 56px 1fr; grid-template-areas: "icon text" "btn btn"; gap: var(--spacing-md); }
+  main .section.claim .default-content-wrapper p:has(> img, > picture) { grid-area: icon; }
+  main .section.claim .default-content-wrapper p:not(.button-wrapper, :has(> img, > picture)) { grid-area: text; }
+  main .section.claim .default-content-wrapper p.button-wrapper { grid-area: btn; }
+  main .section.claim .default-content-wrapper p.button-wrapper a.button { width: auto; }
+}

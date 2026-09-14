@@ -1,51 +1,42 @@
-// Contact page "Kontakt oss" — archetype utility, mode operate, no router (captured page carries no .bank-choice).
-// Composition per stardust/prototypes/nb-bank-privat-kundeservice-kontakt-html-shape.md; content verbatim from the captured DOM.
-import { esc, asset, icons } from '../chrome.mjs';
-const norm=s=>(s||'').replace(/\s+/g,' ').replace(/ /g,' ').trim();
-const EMPTY=/^[\s ]*$/;
-function rich(el,{demote=0}={}){
-  if(!el) return '';
-  const c=el.cloneNode(true);
-  for(const x of c.querySelectorAll('link,svg,dialog,script,style')) x.remove();
-  for(const x of c.querySelectorAll('*')){ for(const a of ['style','data-rte-editelement','adhocenable','onclick','fetchpriority','itemprop','rel','target','id','role','aria-hidden','class']){ if(x.tagName!=='IMG'||a!=='class') x.removeAttribute(a); } }
-  for(const s of [...c.querySelectorAll('span')]){ s.replaceWith(...s.childNodes); }
-  for(const b of [...c.querySelectorAll('b')]){ if(EMPTY.test(b.textContent)){ b.replaceWith(c.ownerDocument.createTextNode(' ')); continue; } const st=c.ownerDocument.createElement('strong'); st.innerHTML=b.innerHTML; b.replaceWith(st); }
-  for(const x of [...c.querySelectorAll('p,h1,h2,h3,h4,h5,h6,li')]){ if(EMPTY.test(x.textContent)&&!x.querySelector('img')) x.remove(); }
-  if(demote){ for(const h of [...c.querySelectorAll('h1,h2,h3,h4,h5,h6')]){ const lvl=Math.min(6,+h.tagName[1]+demote); const n=c.ownerDocument.createElement('h'+lvl); n.innerHTML=h.innerHTML; h.replaceWith(n); } }
-  for(const a of c.querySelectorAll('a')){ a.innerHTML=a.innerHTML.replace(/^(\s|&nbsp;|&#160;| )+|(\s|&nbsp;|&#160;| )+$/g,''); }
-  for(const a of c.querySelectorAll('a[href^="http"]')){ if(!/sparebank1\.no/.test(a.getAttribute('href'))) a.setAttribute('rel','noopener'); }
-  return c.innerHTML.replace(/(<br>\s*)+<\/p>/g,'</p>').replace(/<p>(<br>\s*)+/g,'<p>').replace(/\n\s*/g,'\n').trim();
-}
+// Contact page "Kontakt oss" — archetype utility, mode operate; family renderer for the utility siblings (Path A′).
+// No router when the captured page carries no .bank-choice. Composition per stardust/prototypes/nb-bank-privat-kundeservice-kontakt-html-shape.md;
+// content verbatim from the captured DOM. Built on the shared component walker (nb-bank-privat-lan-html.mjs): this archetype's own
+// shapes (circle-portrait hero, bank directory table + partners, hours callout, address definition list) are handler overrides;
+// the sibling (prisliste: h1 · lead · bank-choice CTA · illustration · prose) renders through the library's generic handlers.
+import { esc, asset, icons, norm, hasText, imgSrc, btn, btnKind, rich, renderMain, H, EMPTY, SIBLING_CSS, patchData as libPatch, inline } from './nb-bank-privat-lan-html.mjs';
+export const patchData=libPatch;
+const ARCH='nb-bank-privat-kundeservice-kontakt-html';
+const richU=(el,o={})=>rich(el,{legacyImg:true,...o});
 // "<b>Term</b> line<br>line<br>line" paragraphs → <dt>Term</dt><dd>line<br>line</dd> pairs (text order preserved verbatim).
 function addressPairs(p){
   const html=p.innerHTML.replace(/&#160;|&nbsp;/g,' ').replace(/<b(?:\s[^>]*)?>\s*<\/b>/g,'').replace(/\s+/g,' ');
   const parts=html.split(/<b(?:\s[^>]*)?>/).slice(1);
   return parts.map(seg=>{ const [term,rest='']=seg.split(/<\/b>/); const dd=rest.replace(/^(\s*<br>\s*)+/,'').replace(/(\s*<br>\s*)+$/,'').trim(); return `<div class="addr-pair">\n<dt>${norm(term.replace(/<br>/g,' '))}</dt>\n<dd>${dd.split(/<br>/).map(x=>norm(x)).filter(Boolean).join('<br>\n')}</dd>\n</div>`; }).join('\n');
 }
-export function render({doc,pj}){
-  const main=doc.querySelector('main');
-  const hero=main.querySelector(':scope > .columns-grid'); const hImg=hero.querySelector('img'); const h1=hero.querySelector('h1'); const hPs=[...hero.querySelectorAll('.text-wrapper p')]; const hBtn=hero.querySelector('a.ffe-button');
-  const table=main.querySelector('table'); const caption=norm(table.querySelector('caption')?.textContent);
-  const headCells=[...table.querySelectorAll('thead td, thead th')].map(td=>norm(td.textContent));
-  const rows=[...table.querySelectorAll('tbody tr')].map(tr=>[...tr.querySelectorAll('td')]);
-  const partnersWrap=main.querySelector('.background-container .text .text-wrapper'); const partnerPs=[...partnersWrap.querySelectorAll('p')].filter(p=>!EMPTY.test(p.textContent));
-  const tip=main.querySelector('.tip .text-wrapper');
-  const utv=[...main.querySelectorAll(':scope > .columns-grid')].pop(); const utvH=utv.querySelector('h3'); const utvPs=[...utv.querySelectorAll('.text-wrapper.max-width p')];
-  const cell=(td,i)=>{ const a=td.querySelector('a'); const t=norm(td.textContent); if(a) return `<a href="${esc(a.getAttribute('href'))}">${esc(norm(a.textContent))}</a>`; if(i===1&&/^\+?[\d\s]+$/.test(t)) return `<a class="num tel" href="tel:${t.replace(/\s+/g,'')}">${esc(t)}</a>`; return esc(t); };
-  const trs=rows.map(tds=>`<tr>${tds.map((td,i)=>i===0?`<th scope="row">${cell(td,i)}</th>`:`<td>${cell(td,i)}</td>`).join('')}</tr>`).join('\n');
-  const partners=partnerPs.map((p,i)=>i===0?`<h3 class="title-sm">${esc(norm(p.textContent))}</h3>`:`<p>${rich(p)}</p>`).join('');
-  const mainHtml=`
+/** A bare captured <table> (prose item) becomes the directory; the prose that follows it (partners) rides along. */
+function pre(items){
+  const out=[]; for(let i=0;i<items.length;i++){ const it=items[i]; const t=it.kind==='table'?it.t:(it.kind==='prose'&&it.w?.querySelector('table')); if(t){ const dir={kind:'directory',t,partners:null}; if(items[i+1]?.kind==='prose'&&!items[i+1].w?.querySelector('table')){ dir.partners=items[i+1].w; i++; } out.push(dir); continue; } out.push(it); }
+  return out;
+}
+const OV={
+  intro(it,c){ if(!it.img){ return H.intro(it,c); } const i=it.img.img; c.lcp=true; const ctas=it.ctas;
+    return {raw:`
 <section class="movement hero" data-section="hero" data-intent="who we are, where to find us; route businesses" data-layout="split-media" data-media="image" data-module="hero-portrait">
   <div class="container hero-grid">
-    <figure class="hero-media" data-slot="image"><img class="portrait" src="${asset(hImg.getAttribute('data-lazy-src')||hImg.getAttribute('src'))}" alt="${esc(hImg.getAttribute('alt')||'')}" width="498" height="498" loading="eager" fetchpriority="high" decoding="async"></figure>
+    <figure class="hero-media" data-slot="image"><img class="portrait" src="${asset(imgSrc(i))}" alt="${esc(i.getAttribute('alt')||'')}" width="498" height="498" loading="eager" fetchpriority="high" decoding="async"></figure>
     <div class="hero-text">
-      <h1 data-slot="heading">${esc(norm(h1.textContent))}</h1>
-      <p class="lead" data-slot="text">${esc(norm(hPs[0].textContent))}</p>
-      <p class="lead" data-slot="text">${esc(norm(hPs[1].textContent))}</p>
-      <p class="hero-cta"><a class="btn btn-secondary" data-slot="cta" href="${esc(hBtn.getAttribute('href'))}">${esc(norm(hBtn.textContent))}</a></p>
+      <h1 data-slot="heading">${esc(norm(it.h1.textContent))}</h1>${it.leads.filter(hasText).map(p=>`
+      <p class="lead" data-slot="text">${inline(p)}</p>`).join('')}${ctas.length?`
+      <p class="hero-cta">${ctas.map((a,k)=>`<a class="btn ${btnKind(a.getAttribute('class')||'')}"${k===0?' data-slot="cta"':''} href="${esc(a.getAttribute('href'))}">${esc(norm(a.textContent))}</a>`).join('')}</p>`:''}
     </div>
   </div>
-</section>
+</section>`}; },
+  directory(it){ const table=it.t; const caption=norm(table.querySelector('caption')?.textContent); const headCells=[...table.querySelectorAll('thead td, thead th')].map(td=>norm(td.textContent)); const rows=[...table.querySelectorAll('tbody tr')].map(tr=>[...tr.querySelectorAll('td, th')]);
+    const cell=(td,i)=>{ const a=td.querySelector('a'); const t=norm(td.textContent); if(a) return `<a href="${esc(a.getAttribute('href'))}">${esc(norm(a.textContent))}</a>`; if(i===1&&/^\+?[\d\s]+$/.test(t)) return `<a class="num tel" href="tel:${t.replace(/\s+/g,'')}">${esc(t)}</a>`; return esc(t); };
+    const trs=rows.map(tds=>`<tr>${tds.map((td,i)=>i===0?`<th scope="row">${cell(td,i)}</th>`:`<td>${cell(td,i)}</td>`).join('')}</tr>`).join('\n');
+    const partnerPs=it.partners?[...it.partners.querySelectorAll('p')].filter(p=>!EMPTY.test(p.textContent)):[];
+    const partners=partnerPs.map((p,i)=>i===0&&!p.querySelector('a')?`<h3 class="title-sm">${esc(norm(p.textContent))}</h3>`:`<p>${richU(p)}</p>`).join('');
+    return {raw:`
 <section class="movement paper-frost directory" data-section="directory" data-intent="find your bank: office page, phone, contact channel" data-layout="contained" data-module="bank-table" data-items="${rows.length}">
   <div class="container directory-grid">
     <div class="directory-head">
@@ -58,21 +49,37 @@ export function render({doc,pj}){
         <tbody>
 ${trs}
         </tbody>
-      </table>
-      <div class="partners prose" data-slot="partners">${partners}</div>
+      </table>${it.partners?`
+      <div class="partners prose" data-slot="partners">${partners}</div>`:''}
     </div>
   </div>
-</section>
+</section>`}; },
+  tip(it){ return {raw:`
 <section class="movement quick" data-section="quick-help" data-intent="opening hours for a fast answer" data-layout="contained" data-module="callout">
-  <div class="container"><div class="callout callout-rich" data-slot="tip">${icons.bulb}<div class="prose callout-body">${rich(tip)}</div></div></div>
-</section>
-<section class="movement utvikling" data-section="utvikling" data-intent="contact the alliance's shared company" data-layout="contained" data-module="address-block" data-items="${utvPs.length}">
+  <div class="container"><div class="callout callout-rich" data-slot="tip">${icons.bulb}<div class="prose callout-body">${richU(it.w)}${it.as.length?`<p class="cta-row">${it.as.map(a=>btn(a)).join('')}</p>`:''}</div></div></div>
+</section>`}; },
+  columns(it,c){ // text-only columns: one heading + "<b>Term</b> lines" paragraphs → address definition list
+    if(!it.cards.length&&!it.navs.length&&!it.chat&&it.cols.every(col=>col.parts.every(p=>p.type==='text'))){ const texts=it.cols.flatMap(col=>col.texts); const hs=texts.flatMap(t=>t.hs); const h=hs[0]; const ps=texts.flatMap(t=>t.blocks.filter(b=>b.tagName==='P'&&hasText(b)));
+      if(hs.length===1&&h&&ps.length&&ps.every(p=>p.querySelector('b')&&p.querySelector('br'))) return {raw:`
+<section class="movement utvikling" data-section="utvikling" data-intent="contact the alliance's shared company" data-layout="contained" data-module="address-block" data-items="${ps.length}">
   <div class="container">
-    <h2 class="title" data-slot="heading">${esc(norm(utvH.textContent))}</h2>
-    <dl class="addr" data-slot="address">${utvPs.map(addressPairs).join('')}</dl>
+    <h2 class="title" data-slot="heading">${esc(norm(h.textContent))}</h2>
+    <dl class="addr" data-slot="address">${ps.map(addressPairs).join('')}</dl>
   </div>
-</section>`;
-  const css=`
+</section>`}; }
+    return H.columns(it,c); },
+};
+export function render({doc,pj,slug=ARCH,archetype=ARCH}){
+  const main=doc.querySelector('main'); const isArch=slug===archetype;
+  const r=renderMain(main,{slug,archetype,handlers:OV,pre});
+  const css=UTIL_CSS+(isArch?'':SIBLING_CSS);
+  const provenance=isArch
+    ? { shapeBrief:'stardust/prototypes/nb-bank-privat-kundeservice-kontakt-html-shape.md', dominantDimension:'composition/directory-page', conceptSeed:'surface 1876b3a6 (mode operate; dealt 7,2,1; 7 built)', unsourcedContent:[], signatureElements:['circle portrait (captured radgiver-sirkel) as the page photograph','Frost-30 help paper for the alliance directory'], improvementsApplied:['#3 1.25 scale','#4 no card chrome: directory as a table, addresses as a definition list','#5 Koksgrå secondary on tints','#7 movements on paper, captured dividers dropped'], enhancements:['bank phone numbers in the directory are tel: links (text verbatim; A4 scene: on a phone, mid-task)'] }
+    : { shapeBrief:'stardust/prototypes/nb-bank-privat-kundeservice-kontakt-html-shape.md', familyRenderer:'utility (component walker)', componentsMapped:r.used, richTextFallbacks:r.fallbacks, unsourcedContent:[], canonDeviations:[], dynamicsInterim:['#2 bank-choice CTAs keep their captured href (dialog at rollout)'] };
+  const hasRouter=!!doc.querySelector('.bank-choice--inline');
+  return { template:'static', title:pj.title, description:pj.metaDescription, ...(hasRouter?{}:{router:false}), main:r.html, css, provenance };
+}
+const UTIL_CSS=`
 .title{font-family:var(--heading-font-family);font-size:var(--t-title);line-height:1.2}
 .hero-grid{display:grid;grid-template-columns:340px minmax(0,1fr);gap:var(--spacing-xl);align-items:center}
 .hero-media{margin:0;width:100%}.portrait{display:block;width:100%;height:auto;aspect-ratio:1;border-radius:50%;object-fit:cover;background:var(--frost-30)}
@@ -98,6 +105,3 @@ ${trs}
   .bank-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%)}.bank-table tr{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:12px 0;border-bottom:1px solid var(--frost)}.bank-table th,.bank-table td{display:block;padding:0;border:0}.bank-table tbody th{grid-column:1/-1}.bank-table td:nth-child(3){grid-column:1/-1}.bank-table td:nth-child(3) a{display:inline-block;padding-block:4px}
   .addr{grid-template-columns:1fr;gap:var(--spacing-md)}}
 `;
-  return { template:'static', title:pj.title, description:pj.metaDescription, router:false, main:mainHtml, css,
-    provenance:{ shapeBrief:'stardust/prototypes/nb-bank-privat-kundeservice-kontakt-html-shape.md', dominantDimension:'composition/directory-page', conceptSeed:'surface 1876b3a6 (mode operate; dealt 7,2,1; 7 built)', unsourcedContent:[], signatureElements:['circle portrait (captured radgiver-sirkel) as the page photograph','Frost-30 help paper for the alliance directory'], improvementsApplied:['#3 1.25 scale','#4 no card chrome: directory as a table, addresses as a definition list','#5 Koksgrå secondary on tints','#7 movements on paper, captured dividers dropped'], enhancements:['bank phone numbers in the directory are tel: links (text verbatim; A4 scene: on a phone, mid-task)'] } };
-}

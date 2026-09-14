@@ -1,1 +1,42 @@
 /* callout — story family group additions (additive variants only; imported by callout.css) */
+
+/* step (faq answer): a tinted step of the answer — text + screenshot, no glyph */
+.callout.step .callout { display: grid; gap: var(--spacing-lg); padding: var(--spacing-lg); max-width: none; background: transparent; }
+.callout.step > .callout > svg { display: none; }
+.callout.step.sand .callout { background: var(--sand-30); }
+.callout.step.syrin .callout { background: var(--syrin-30); }
+.callout.step.frost .callout { background: var(--frost-30); }
+.callout.step .callout-text { gap: var(--spacing-lg); font-size: var(--lead); line-height: 1.55; }
+.callout.step .callout-text :is(ul, ol) { list-style: disc; padding-left: 1.25em; display: grid; gap: var(--spacing-md); }
+.callout.step .callout-text img { display: block; width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--lysgraa); background: #fff; }
+.callout.step .callout-text p:has(> img:only-child) { line-height: 0; }
+
+/* fact (news article): the canon fact box — Sand-30, h2 at title size, disc list with Vann markers, no glyph */
+.callout.fact .callout { display: grid; gap: var(--spacing-md); padding: var(--spacing-lg); max-width: none; background: var(--sand-30); }
+.callout.fact > .callout > svg { display: none; }
+.callout.fact .callout-text { gap: var(--spacing-md); }
+.callout.fact .callout-text h2 { margin: 0; font-family: var(--heading-font-family); font-size: var(--t-title); line-height: 1.2; }
+.callout.fact .callout-text :is(ul, ol) { display: grid; gap: var(--spacing-sm); margin: 0; padding-left: 1.2em; list-style: disc; }
+.callout.fact .callout-text li::marker { color: var(--vann); }
+.callout.fact .callout-text p.button-wrapper { margin-top: var(--spacing-xs); }
+
+/* quote (news article): portrait + pull quote on Frost-30 */
+.callout.quote .callout { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--spacing-xs) var(--spacing-lg); align-items: center; padding: var(--spacing-lg); max-width: none; background: var(--frost-30); }
+.callout.quote > .callout > svg { display: none; }
+.callout.quote .callout-text { display: contents; }
+.callout.quote .callout img { width: 120px; height: 120px; aspect-ratio: 1; border-radius: 50%; object-fit: cover; background: var(--frost); grid-row: 1 / span 2; }
+.callout.quote .callout p:has(> img:only-child) { line-height: 0; grid-row: 1 / span 2; }
+.callout.quote .callout blockquote { margin: 0; }
+.callout.quote .callout blockquote p { font-family: var(--title-font-family); font-size: var(--lead); line-height: 1.4; color: var(--fjell); }
+.callout.quote .callout p:has(> em:only-child) { color: var(--koksgraa); font-size: var(--body-sm); }
+.callout.quote .callout p em { font-style: normal; }
+.callout.quote.no-portrait .callout { grid-template-columns: minmax(0, 1fr); }
+
+@media (width <= 640px) {
+  .callout.step .callout,
+  .callout.fact .callout { padding: 20px; }
+  .callout.step .callout-text { font-size: var(--body); line-height: var(--line-height-body); }
+  .callout.quote .callout { grid-template-columns: 1fr; padding: 20px; }
+  .callout.quote .callout img { width: 96px; height: 96px; grid-row: auto; }
+  .callout.quote .callout p:has(> img:only-child) { grid-row: auto; }
+}
