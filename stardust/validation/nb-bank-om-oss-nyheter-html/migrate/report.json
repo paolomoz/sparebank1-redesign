@@ -1,0 +1,145 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-html",
+ "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/migrated/nb/bank/om-oss/nyheter.html",
+ "at": "2026-09-14T22:18:10.299Z",
+ "contract": {
+  "rootFirst": true,
+  "tokensMissing": [],
+  "inlineScripts": 2
+ },
+ "viewports": {
+  "390": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 28,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 35,
+   "sectionsNoAttr": [],
+   "btnSmall": 0,
+   "btnSmallList": [],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "bm_startup_enk275.jpg.thumb.1280.2276.jpg",
+    "area": 81665
+   },
+   "focusRing": true,
+   "docHeight": 5136,
+   "smoke": {
+    "navOpen": true,
+    "ariaExpanded": "true",
+    "navClosedByEsc": true,
+    "ctaReachableByKeyboard": "no-primary-cta",
+    "hovered": true
+   }
+  },
+  "768": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 16,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 35,
+   "sectionsNoAttr": [],
+   "btnSmall": 3,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.@36px \"Bedrift\"",
+    "a.is-active@36px \"Om oss\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "bm_startup_enk275.jpg.thumb.1280.2276.jpg",
+    "area": 345600
+   },
+   "focusRing": true,
+   "docHeight": 7149,
+   "smoke": {
+    "ctaReachableByKeyboard": "no-primary-cta",
+    "hovered": true
+   }
+  },
+  "1440": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 25,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 35,
+   "sectionsNoAttr": [],
+   "btnSmall": 3,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.@36px \"Bedrift\"",
+    "a.is-active@36px \"Om oss\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "bm_startup_enk275.jpg.thumb.1280.2276.jpg",
+    "area": 344304
+   },
+   "focusRing": true,
+   "docHeight": 5286,
+   "smoke": {
+    "ctaReachableByKeyboard": "no-primary-cta",
+    "hovered": true
+   }
+  }
+ },
+ "mobileNav": {
+  "over": 0,
+  "minFont": 14,
+  "minGap": 0,
+  "collapse": "hamburger"
+ },
+ "pass": true,
+ "issues": [
+  {
+   "sev": "P2",
+   "where": "self-contained",
+   "msg": "2 inline scripts (only the nav a11y script is permitted)"
+  }
+ ]
+}

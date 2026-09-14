@@ -1,0 +1,160 @@
+{
+ "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+ "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/migrated/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+ "at": "2026-09-14T22:17:48.089Z",
+ "contract": {
+  "rootFirst": true,
+  "tokensMissing": [],
+  "inlineScripts": 2
+ },
+ "viewports": {
+  "390": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 8,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 17,
+   "sectionsNoAttr": [],
+   "btnSmall": 1,
+   "btnSmallList": [
+    "label.@25px \"Søk etter et kontor\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "bygg-tilpasset.svg",
+    "area": 122500
+   },
+   "focusRing": true,
+   "docHeight": 8130,
+   "smoke": {
+    "navOpen": true,
+    "ariaExpanded": "true",
+    "navClosedByEsc": true,
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  },
+  "768": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 8,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [
+    "li@771",
+    "li@771",
+    "li@771",
+    "li@771",
+    "li@771"
+   ],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 17,
+   "sectionsNoAttr": [],
+   "btnSmall": 4,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.is-active@36px \"Bedrift\"",
+    "a.@36px \"Om oss\"",
+    "label.@25px \"Søk etter et kontor\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "bygg-tilpasset.svg",
+    "area": 112896
+   },
+   "focusRing": true,
+   "docHeight": 5599,
+   "smoke": {
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  },
+  "1440": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 10,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 17,
+   "sectionsNoAttr": [],
+   "btnSmall": 4,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.is-active@36px \"Bedrift\"",
+    "a.@36px \"Om oss\"",
+    "label.@25px \"Søk etter et kontor\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "bygg-tilpasset.svg",
+    "area": 129600
+   },
+   "focusRing": true,
+   "docHeight": 4664,
+   "smoke": {
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  }
+ },
+ "mobileNav": {
+  "over": 0,
+  "minFont": 14,
+  "minGap": 0,
+  "collapse": "hamburger"
+ },
+ "pass": true,
+ "issues": [
+  {
+   "sev": "P2",
+   "where": "self-contained",
+   "msg": "2 inline scripts (only the nav a11y script is permitted)"
+  },
+  {
+   "sev": "P2",
+   "where": "390",
+   "msg": "1 interactive elements < 40px tall: label.@25px \"Søk etter et kontor\""
+  }
+ ]
+}

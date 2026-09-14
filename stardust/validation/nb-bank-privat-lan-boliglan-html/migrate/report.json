@@ -1,0 +1,172 @@
+{
+ "slug": "nb-bank-privat-lan-boliglan-html",
+ "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/migrated/nb/bank/privat/lan/boliglan.html",
+ "at": "2026-09-14T22:18:45.349Z",
+ "contract": {
+  "rootFirst": true,
+  "tokensMissing": [],
+  "inlineScripts": 2
+ },
+ "viewports": {
+  "390": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 8,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 53,
+   "sectionsNoAttr": [],
+   "btnSmall": 6,
+   "btnSmallList": [
+    "label.router-label@1px \"Ditt postnummer\"",
+    "summary.btn-inline@38px \"Se alle banker\"",
+    "label.label@18px \"Samlet inntekt før s\"",
+    "label.label@18px \"Samlet lån og gjeld\"",
+    "a.link-more@25px \"Finansportalen.no\"",
+    "label.@25px \"Søk etter et kontor\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "bortskjemt-hund-familie-i-sofa.jpg.thumb.1280.1280.jpg",
+    "area": 68906
+   },
+   "focusRing": true,
+   "docHeight": 9722,
+   "smoke": {
+    "detailsOpen": true,
+    "navOpen": true,
+    "ariaExpanded": "true",
+    "navClosedByEsc": true,
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  },
+  "768": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 8,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [
+    "li@823",
+    "a@823",
+    "strong@823",
+    "span.bank-tagline@823",
+    "li@823"
+   ],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 53,
+   "sectionsNoAttr": [],
+   "btnSmall": 8,
+   "btnSmallList": [
+    "a.is-active@36px \"Privat\"",
+    "a.@36px \"Bedrift\"",
+    "a.@36px \"Om oss\"",
+    "label.router-label@20px \"Ditt postnummer\"",
+    "label.label@18px \"Samlet inntekt før s\"",
+    "label.label@18px \"Samlet lån og gjeld\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "bortskjemt-hund-familie-i-sofa.jpg.thumb.1280.1280.jpg",
+    "area": 291600
+   },
+   "focusRing": true,
+   "docHeight": 7674,
+   "smoke": {
+    "detailsOpen": true,
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  },
+  "1440": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 8,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 53,
+   "sectionsNoAttr": [],
+   "btnSmall": 8,
+   "btnSmallList": [
+    "a.is-active@36px \"Privat\"",
+    "a.@36px \"Bedrift\"",
+    "a.@36px \"Om oss\"",
+    "label.router-label@20px \"Ditt postnummer\"",
+    "label.label@18px \"Samlet inntekt før s\"",
+    "label.label@18px \"Samlet lån og gjeld\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "bortskjemt-hund-familie-i-sofa.jpg.thumb.1280.1280.jpg",
+    "area": 344304
+   },
+   "focusRing": true,
+   "docHeight": 5984,
+   "smoke": {
+    "detailsOpen": true,
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  }
+ },
+ "mobileNav": {
+  "over": 0,
+  "minFont": 14,
+  "minGap": 0,
+  "collapse": "hamburger"
+ },
+ "pass": true,
+ "issues": [
+  {
+   "sev": "P2",
+   "where": "self-contained",
+   "msg": "2 inline scripts (only the nav a11y script is permitted)"
+  },
+  {
+   "sev": "P2",
+   "where": "390",
+   "msg": "6 interactive elements < 40px tall: label.router-label@1px \"Ditt postnummer\", summary.btn-inline@38px \"Se alle banker\", label.label@18px \"Samlet inntekt før s\", label.label@18px \"Samlet lån og gjeld\", a.link-more@25px \"Finansportalen.no\", label.@25px \"Søk etter et kontor\""
+  }
+ ]
+}

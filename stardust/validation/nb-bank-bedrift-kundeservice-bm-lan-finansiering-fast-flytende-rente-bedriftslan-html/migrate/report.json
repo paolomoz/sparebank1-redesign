@@ -1,0 +1,164 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+ "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/migrated/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan.html",
+ "at": "2026-09-14T22:17:57.106Z",
+ "contract": {
+  "rootFirst": true,
+  "tokensMissing": [],
+  "inlineScripts": 3
+ },
+ "viewports": {
+  "390": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 3,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 7,
+   "sectionsNoAttr": [],
+   "btnSmall": 3,
+   "btnSmallList": [
+    "label.router-label@1px \"Ditt postnummer\"",
+    "summary.btn-inline@38px \"Se alle banker\"",
+    "label.@25px \"Søk etter et kontor\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "bankchoice_bg.svg",
+    "area": 11200
+   },
+   "focusRing": true,
+   "docHeight": 3519,
+   "smoke": {
+    "navOpen": true,
+    "ariaExpanded": "true",
+    "navClosedByEsc": true,
+    "ctaReachableByKeyboard": "no-primary-cta",
+    "hovered": true
+   }
+  },
+  "768": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 3,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [
+    "li@823",
+    "a@823",
+    "strong@823",
+    "span.bank-tagline@823",
+    "li@823"
+   ],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 7,
+   "sectionsNoAttr": [],
+   "btnSmall": 5,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.is-active@36px \"Bedrift\"",
+    "a.@36px \"Om oss\"",
+    "label.router-label@20px \"Ditt postnummer\"",
+    "label.@25px \"Søk etter et kontor\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "bankchoice_bg.svg",
+    "area": 40320
+   },
+   "focusRing": true,
+   "docHeight": 2686,
+   "smoke": {
+    "ctaReachableByKeyboard": "no-primary-cta",
+    "hovered": true
+   }
+  },
+  "1440": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 3,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 7,
+   "sectionsNoAttr": [],
+   "btnSmall": 5,
+   "btnSmallList": [
+    "a.@36px \"Privat\"",
+    "a.is-active@36px \"Bedrift\"",
+    "a.@36px \"Om oss\"",
+    "label.router-label@20px \"Ditt postnummer\"",
+    "label.@25px \"Søk etter et kontor\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "bankchoice_bg.svg",
+    "area": 69645
+   },
+   "focusRing": true,
+   "docHeight": 2336,
+   "smoke": {
+    "ctaReachableByKeyboard": "no-primary-cta",
+    "hovered": true
+   }
+  }
+ },
+ "mobileNav": {
+  "over": 0,
+  "minFont": 14,
+  "minGap": 0,
+  "collapse": "hamburger"
+ },
+ "pass": true,
+ "issues": [
+  {
+   "sev": "P2",
+   "where": "self-contained",
+   "msg": "3 inline scripts (only the nav a11y script is permitted)"
+  },
+  {
+   "sev": "P2",
+   "where": "390",
+   "msg": "3 interactive elements < 40px tall: label.router-label@1px \"Ditt postnummer\", summary.btn-inline@38px \"Se alle banker\", label.@25px \"Søk etter et kontor\""
+  }
+ ]
+}
