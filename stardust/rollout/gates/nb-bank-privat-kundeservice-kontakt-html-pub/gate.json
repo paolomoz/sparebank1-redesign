@@ -2,24 +2,24 @@
   "slug": "nb-bank-privat-kundeservice-kontakt-html",
   "edsUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/kontakt",
   "protoUrl": "http://localhost:8820/nb-bank-privat-kundeservice-kontakt-html-proposed.html",
-  "at": "2026-09-14T23:17:30.262Z",
+  "at": "2026-09-15T15:20:06.376Z",
   "pixel": {
     "360": {
-      "pct": 0,
-      "heightDelta": 0,
+      "pct": 3.49,
+      "heightDelta": 2,
       "compared": {
         "width": 360,
-        "height": 4904
+        "height": 5706
       },
       "pass": true,
       "hot": []
     },
     "1440": {
-      "pct": 0.26,
+      "pct": 1.9,
       "heightDelta": 0,
       "compared": {
         "width": 1440,
-        "height": 2910
+        "height": 2887
       },
       "pass": true,
       "hot": []
@@ -27,54 +27,54 @@
   },
   "chrome": {
     "360": {
-      "header": 99.66,
+      "header": 100,
       "footer": 100,
       "headerH": {
-        "proto": 61,
-        "eds": 61
+        "proto": 68,
+        "eds": 68
       },
       "footerH": {
-        "proto": 1884,
-        "eds": 1884
+        "proto": 1536,
+        "eds": 1536
       },
       "footerY": {
-        "proto": 3019,
-        "eds": 3019
+        "proto": 4172,
+        "eds": 4169
       },
       "doc": {
-        "proto": 4904,
-        "eds": 4904
+        "proto": 5708,
+        "eds": 5706
       }
     },
     "1440": {
-      "header": 99.96,
-      "footer": 99.89,
+      "header": 99.84,
+      "footer": 100,
       "headerH": {
-        "proto": 110,
-        "eds": 110
+        "proto": 112,
+        "eds": 112
       },
       "footerH": {
-        "proto": 917,
-        "eds": 917
+        "proto": 800,
+        "eds": 800
       },
       "footerY": {
-        "proto": 1993,
-        "eds": 1993
+        "proto": 2086,
+        "eds": 2086
       },
       "doc": {
-        "proto": 2910,
-        "eds": 2910
+        "proto": 2887,
+        "eds": 2887
       }
     }
   },
   "content": {
     "red": 0,
-    "justified": 0,
-    "amber": 1,
+    "justified": 6,
+    "amber": 22,
     "orange": 0,
     "summary": [
-      "  EDS: 58 text nodes — 5 headings, 0 eyebrows, 39 CTAs, 14 body; 1 img",
-      "  editable texts (outermost h*/p/ul/ol): proto 11 / EDS 54"
+      "  EDS: 56 text nodes — 9 headings, 0 eyebrows, 39 CTAs, 8 body; 1 img",
+      "  editable texts (outermost h*/p/ul/ol): proto 13 / EDS 12"
     ]
   },
   "pass": true

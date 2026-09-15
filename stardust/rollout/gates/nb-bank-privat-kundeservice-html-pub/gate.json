@@ -2,24 +2,24 @@
   "slug": "nb-bank-privat-kundeservice-html",
   "edsUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice",
   "protoUrl": "http://localhost:8820/nb-bank-privat-kundeservice-html-proposed.html",
-  "at": "2026-09-14T23:19:36.999Z",
+  "at": "2026-09-15T15:18:27.233Z",
   "pixel": {
     "360": {
-      "pct": 0.08,
-      "heightDelta": 0,
+      "pct": 2.3,
+      "heightDelta": -2,
       "compared": {
         "width": 360,
-        "height": 5009
+        "height": 5304
       },
       "pass": true,
       "hot": []
     },
     "1440": {
-      "pct": 0.04,
+      "pct": 0.36,
       "heightDelta": 0,
       "compared": {
         "width": 1440,
-        "height": 2999
+        "height": 2936
       },
       "pass": true,
       "hot": []
@@ -27,43 +27,43 @@
   },
   "chrome": {
     "360": {
-      "header": 99.66,
-      "footer": 99.83,
+      "header": 97.1,
+      "footer": 99.59,
       "headerH": {
-        "proto": 61,
-        "eds": 61
+        "proto": 68,
+        "eds": 68
       },
       "footerH": {
-        "proto": 1883,
-        "eds": 1883
+        "proto": 1462,
+        "eds": 1462
       },
       "footerY": {
-        "proto": 3126,
-        "eds": 3126
+        "proto": 3842,
+        "eds": 3844
       },
       "doc": {
-        "proto": 5009,
-        "eds": 5009
+        "proto": 5304,
+        "eds": 5306
       }
     },
     "1440": {
-      "header": 99.96,
-      "footer": 99.89,
+      "header": 99.37,
+      "footer": 99.66,
       "headerH": {
-        "proto": 110,
-        "eds": 110
+        "proto": 112,
+        "eds": 112
       },
       "footerH": {
-        "proto": 917,
-        "eds": 917
+        "proto": 792,
+        "eds": 792
       },
       "footerY": {
-        "proto": 2082,
-        "eds": 2082
+        "proto": 2143,
+        "eds": 2144
       },
       "doc": {
-        "proto": 2999,
-        "eds": 2999
+        "proto": 2936,
+        "eds": 2936
       }
     }
   },
@@ -74,8 +74,8 @@
     "orange": 12,
     "summary": [
       "  EDS: 135 text nodes — 22 headings, 0 eyebrows, 41 CTAs, 72 body; 15 img",
-      "  editable texts (outermost h*/p/ul/ol): proto 59 / EDS 65"
+      "  editable texts (outermost h*/p/ul/ol): proto 54 / EDS 60"
     ]
   },
-  "pass": true
+  "pass": false
 }

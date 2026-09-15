@@ -2,7 +2,7 @@
 Content diff @ 1440px (profile "eds", root "main")
   proto: 25 text nodes — 7 headings, 0 eyebrows, 6 CTAs, 12 body; 5 img
   EDS: 25 text nodes — 7 headings, 0 eyebrows, 8 CTAs, 10 body; 5 img
-  editable texts (outermost h*/p/ul/ol): proto 20 / EDS 25
+  editable texts (outermost h*/p/ul/ol): proto 12 / EDS 15
 
 Findings: 4 (0 structural 🔴)
   🟠 EXTRA: EDS cta "https://www.sparebank1.no/content/dam/sb1-video/" has no proto source — Unexpected node with no proto source.

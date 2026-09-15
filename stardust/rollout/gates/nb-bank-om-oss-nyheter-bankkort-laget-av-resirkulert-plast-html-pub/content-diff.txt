@@ -4,4 +4,5 @@ Content diff @ 1440px (profile "eds", root "main")
   EDS: 33 text nodes — 6 headings, 0 eyebrows, 7 CTAs, 20 body; 7 img
   editable texts (outermost h*/p/ul/ol): proto 22 / EDS 24
 
-Findings: none — content + roles match
+Findings: 1 (0 structural 🔴)
+  🟠 FONT FORK: 1 matched line(s) render a DIFFERENT face: heading "KORT OM KORT:": proto SpareBank1-title-medium vs EDS SpareBank1-medium (14%). A "→sys" on the proto side means it named a font it never loaded and fell back — EDS self-hosting the intended fallback is then CORRECT (#77); confirm the fork is intended, else ship the missing @font-face.

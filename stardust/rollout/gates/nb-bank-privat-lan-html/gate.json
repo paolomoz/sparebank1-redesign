@@ -2,7 +2,7 @@
   "slug": "nb-bank-privat-lan-html",
   "edsUrl": "http://localhost:3020/nb/bank/privat/lan",
   "protoUrl": "http://localhost:8820/nb-bank-privat-lan-html-proposed.html",
-  "at": "2026-09-15T15:08:08.342Z",
+  "at": "2026-09-15T15:44:42.634Z",
   "pixel": {
     "360": {
       "pct": 0.77,
@@ -10,6 +10,16 @@
       "compared": {
         "width": 360,
         "height": 8377
+      },
+      "pass": true,
+      "hot": []
+    },
+    "1440": {
+      "pct": 0.26,
+      "heightDelta": 0,
+      "compared": {
+        "width": 1440,
+        "height": 4769
       },
       "pass": true,
       "hot": []
@@ -34,6 +44,26 @@
       "doc": {
         "proto": 8377,
         "eds": 8377
+      }
+    },
+    "1440": {
+      "header": 99.84,
+      "footer": 100,
+      "headerH": {
+        "proto": 112,
+        "eds": 112
+      },
+      "footerH": {
+        "proto": 800,
+        "eds": 800
+      },
+      "footerY": {
+        "proto": 3969,
+        "eds": 3969
+      },
+      "doc": {
+        "proto": 4769,
+        "eds": 4769
       }
     }
   },

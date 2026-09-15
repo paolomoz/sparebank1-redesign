@@ -2,7 +2,7 @@
   "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
   "edsUrl": "http://localhost:3020/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan",
   "protoUrl": "http://localhost:8820/nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html-proposed.html",
-  "at": "2026-09-15T14:24:06.381Z",
+  "at": "2026-09-15T15:53:51.021Z",
   "pixel": {
     "360": {
       "pct": 0.15,
@@ -10,16 +10,6 @@
       "compared": {
         "width": 360,
         "height": 3322
-      },
-      "pass": true,
-      "hot": []
-    },
-    "1440": {
-      "pct": 0.13,
-      "heightDelta": 0,
-      "compared": {
-        "width": 1440,
-        "height": 2292
       },
       "pass": true,
       "hot": []
@@ -44,26 +34,6 @@
       "doc": {
         "proto": 3322,
         "eds": 3322
-      }
-    },
-    "1440": {
-      "header": 99.74,
-      "footer": 100,
-      "headerH": {
-        "proto": 112,
-        "eds": 112
-      },
-      "footerH": {
-        "proto": 792,
-        "eds": 792
-      },
-      "footerY": {
-        "proto": 1500,
-        "eds": 1500
-      },
-      "doc": {
-        "proto": 2292,
-        "eds": 2292
       }
     }
   },

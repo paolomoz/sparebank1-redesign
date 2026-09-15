@@ -1,8 +1,35 @@
 
 Content diff @ 1440px (profile "eds", root "main")
-  proto: 59 text nodes — 5 headings, 0 eyebrows, 39 CTAs, 15 body; 1 img
-  EDS: 58 text nodes — 5 headings, 0 eyebrows, 39 CTAs, 14 body; 1 img
-  editable texts (outermost h*/p/ul/ol): proto 11 / EDS 54
+  proto: 80 text nodes — 9 headings, 0 eyebrows, 39 CTAs, 32 body; 1 img
+  EDS: 56 text nodes — 9 headings, 0 eyebrows, 39 CTAs, 8 body; 1 img
+  editable texts (outermost h*/p/ul/ol): proto 13 / EDS 12
 
-Findings: 1 (0 structural 🔴)
-  🟡 MISSING BODY: proto body "Finn din bank"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+Findings: 28 (6 structural 🔴)
+  🔴 ROLE SWAP: "Telefon:" is a body in the proto but a heading in EDS — Mis-classified slot (the #76 class: body painted as eyebrow, eyebrow folded into a teaser). Fix the block node segmentation.
+  🔴 ROLE SWAP: "Kontakt oss:" is a body in the proto but a cta in EDS — Mis-classified slot (the #76 class: body painted as eyebrow, eyebrow folded into a teaser). Fix the block node segmentation.
+  🔴 ROLE SWAP: "Kontakt oss:" is a body in the proto but a cta in EDS — Mis-classified slot (the #76 class: body painted as eyebrow, eyebrow folded into a teaser). Fix the block node segmentation.
+  🔴 MISSING CTA: proto cta "Kontakt oss" → https://www.sparebank1.no/nb/helgeland/privat/kundeservice.html#contact-tab1 has no EDS link. A dropped call-to-action — author the CTA row + render it in the owning block.
+  🔴 MISSING CTA: proto cta "Kontakt oss" → https://www.sparebank1.no/nb/ostlandet/privat/kundeservice.html#contact-tab1 has no EDS link. A dropped call-to-action — author the CTA row + render it in the owning block.
+  🔴 MISSING HEADING: proto heading "Telefon" has no EDS heading of the same text. A dropped/renamed section title.
+  🟡 MISSING BODY: proto body "Telefon:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Telefon:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Kontakt oss:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Telefon:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Kontakt oss:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Telefon:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Kontakt oss:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Telefon:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Kontakt oss:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Telefon:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Kontakt oss:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Telefon:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Kontakt oss:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Telefon:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Kontakt oss:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Telefon:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Kontakt oss:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Telefon:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Kontakt oss:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Telefon:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Kontakt oss:"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 EDITABLE COUNT: EDS has 12 outermost editable element(s) vs 13 in the proto — fewer outermost editable elements after decoration usually means authored elements were rebuilt/merged — see deploy SKILL.md § Experience Workspace editability contract (run ew-editability-probe.mjs on the build URL for the per-block verdict).

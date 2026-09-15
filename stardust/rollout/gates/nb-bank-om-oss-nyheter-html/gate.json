@@ -2,7 +2,7 @@
   "slug": "nb-bank-om-oss-nyheter-html",
   "edsUrl": "http://localhost:3020/nb/bank/om-oss/nyheter",
   "protoUrl": "http://localhost:8820/nb-bank-om-oss-nyheter-html-proposed.html",
-  "at": "2026-09-15T14:52:59.054Z",
+  "at": "2026-09-15T15:52:03.396Z",
   "pixel": {
     "360": {
       "pct": 2.48,
@@ -10,16 +10,6 @@
       "compared": {
         "width": 360,
         "height": 12064
-      },
-      "pass": true,
-      "hot": []
-    },
-    "1440": {
-      "pct": 0.01,
-      "heightDelta": 0,
-      "compared": {
-        "width": 1440,
-        "height": 5473
       },
       "pass": true,
       "hot": []
@@ -44,26 +34,6 @@
       "doc": {
         "proto": 12064,
         "eds": 12065
-      }
-    },
-    "1440": {
-      "header": 99.84,
-      "footer": 100,
-      "headerH": {
-        "proto": 112,
-        "eds": 112
-      },
-      "footerH": {
-        "proto": 422,
-        "eds": 422
-      },
-      "footerY": {
-        "proto": 5051,
-        "eds": 5051
-      },
-      "doc": {
-        "proto": 5473,
-        "eds": 5473
       }
     }
   },

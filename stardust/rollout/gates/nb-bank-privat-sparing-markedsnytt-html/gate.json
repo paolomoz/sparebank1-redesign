@@ -2,10 +2,10 @@
   "slug": "nb-bank-privat-sparing-markedsnytt-html",
   "edsUrl": "http://localhost:3020/nb/bank/privat/sparing/markedsnytt",
   "protoUrl": "http://localhost:8820/nb-bank-privat-sparing-markedsnytt-html-proposed.html",
-  "at": "2026-09-15T14:35:19.803Z",
+  "at": "2026-09-15T15:38:07.456Z",
   "pixel": {
     "360": {
-      "pct": 1.66,
+      "pct": 2.79,
       "heightDelta": 3,
       "compared": {
         "width": 360,

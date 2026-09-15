@@ -79,3 +79,9 @@ archetype + shared sibling card helpers), `extract-canon.mjs` (pinned/moves data
 Backups of the round-0 home prototype and chrome: `_round0-home-proposed.html`, `_round0-chrome.mjs`.
 Status: home + boliglån approved in the new language; the other 11 archetypes build and pass content-check on the new chrome but keep
 their round-0 page CSS until re-crafted (borettslag has a 360 px overflow in that legacy CSS).
+
+## Rollout (2026-09-15, afternoon)
+All 13 archetypes re-crafted (`recraft-*.md`), approved, and delivered through EDS: foundation + chrome + base blocks by the lead, family encoders +
+scoped group CSS by three workers (`stardust/rollout/journal/<family>.md`, `eds-progress/<family>.json`). Emulation gates PASS on all 13 at 1440 and 360
+(pixel ≤ 8 %, |Δh| ≤ 3, content-diff 0 🔴). 100 pages re-migrated and re-converted (0 gaps), 116 DA documents republished, code pushed (`d36fbac`).
+Live: https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat . Published-origin gate results: `stardust/rollout/gates/<slug>-pub/`.

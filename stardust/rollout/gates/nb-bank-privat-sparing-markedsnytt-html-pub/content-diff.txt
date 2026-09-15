@@ -2,7 +2,7 @@
 Content diff @ 1440px (profile "eds", root "main")
   proto: 74 text nodes — 18 headings, 0 eyebrows, 21 CTAs, 35 body; 10 img
   EDS: 100 text nodes — 18 headings, 0 eyebrows, 33 CTAs, 49 body; 11 img
-  editable texts (outermost h*/p/ul/ol): proto 43 / EDS 55
+  editable texts (outermost h*/p/ul/ol): proto 38 / EDS 50
 
 Findings: 38 (0 structural 🔴)
   🟠 EXTRA: EDS cta "SpareBank 1 Gudbrandsdal" has no proto source — Unexpected node with no proto source.
@@ -40,6 +40,6 @@ Findings: 38 (0 structural 🔴)
   🟡 EXTRA: EDS body "Hjelper driftige folk og bedrifter dit de vil." has no proto source — Invented / placeholder-filled copy; confirm it is intended.
   🟡 EXTRA: EDS body "Sammen får vi ting til å skje." has no proto source — Invented / placeholder-filled copy; confirm it is intended.
   🟡 EXTRA: EDS body "Banken med kundeutbytte." has no proto source — Invented / placeholder-filled copy; confirm it is intended.
-  🟡 EXTRA: EDS body "Nyheter 29. juni 2026" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
-  🟡 EXTRA: EDS body "Nyheter 29. juni 2026" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
-  🟡 EXTRA: EDS body "Nyheter 19. mai 2026" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Nyheter29. juni 2026" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Nyheter29. juni 2026" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Nyheter19. mai 2026" has no proto source — Invented / placeholder-filled copy; confirm it is intended.

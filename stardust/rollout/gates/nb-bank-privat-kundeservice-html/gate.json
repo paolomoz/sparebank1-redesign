@@ -2,7 +2,7 @@
   "slug": "nb-bank-privat-kundeservice-html",
   "edsUrl": "http://localhost:3020/nb/bank/privat/kundeservice",
   "protoUrl": "http://localhost:8820/nb-bank-privat-kundeservice-html-proposed.html",
-  "at": "2026-09-15T15:09:06.626Z",
+  "at": "2026-09-15T15:46:14.624Z",
   "pixel": {
     "360": {
       "pct": 2.3,
@@ -10,6 +10,16 @@
       "compared": {
         "width": 360,
         "height": 5304
+      },
+      "pass": true,
+      "hot": []
+    },
+    "1440": {
+      "pct": 0.36,
+      "heightDelta": 0,
+      "compared": {
+        "width": 1440,
+        "height": 2936
       },
       "pass": true,
       "hot": []
@@ -34,6 +44,26 @@
       "doc": {
         "proto": 5304,
         "eds": 5306
+      }
+    },
+    "1440": {
+      "header": 99.37,
+      "footer": 99.66,
+      "headerH": {
+        "proto": 112,
+        "eds": 112
+      },
+      "footerH": {
+        "proto": 792,
+        "eds": 792
+      },
+      "footerY": {
+        "proto": 2143,
+        "eds": 2144
+      },
+      "doc": {
+        "proto": 2936,
+        "eds": 2936
       }
     }
   },

@@ -2,24 +2,24 @@
   "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
   "edsUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast",
   "protoUrl": "http://localhost:8820/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html-proposed.html",
-  "at": "2026-09-14T23:29:52.828Z",
+  "at": "2026-09-15T16:00:23.313Z",
   "pixel": {
     "360": {
-      "pct": 0.17,
+      "pct": 0.09,
       "heightDelta": 0,
       "compared": {
         "width": 360,
-        "height": 5668
+        "height": 6105
       },
       "pass": true,
       "hot": []
     },
     "1440": {
-      "pct": 0.29,
+      "pct": 0.03,
       "heightDelta": 0,
       "compared": {
         "width": 1440,
-        "height": 3402
+        "height": 4219
       },
       "pass": true,
       "hot": []
@@ -27,43 +27,43 @@
   },
   "chrome": {
     "360": {
-      "header": 99.66,
+      "header": 100,
       "footer": 100,
       "headerH": {
-        "proto": 61,
-        "eds": 61
+        "proto": 68,
+        "eds": 68
       },
       "footerH": {
-        "proto": 970,
-        "eds": 970
+        "proto": 790,
+        "eds": 790
       },
       "footerY": {
-        "proto": 4698,
-        "eds": 4698
+        "proto": 5315,
+        "eds": 5315
       },
       "doc": {
-        "proto": 5668,
-        "eds": 5668
+        "proto": 6105,
+        "eds": 6105
       }
     },
     "1440": {
-      "header": 99.96,
-      "footer": 99.8,
+      "header": 99.84,
+      "footer": 100,
       "headerH": {
-        "proto": 110,
-        "eds": 110
+        "proto": 112,
+        "eds": 112
       },
       "footerH": {
-        "proto": 481,
-        "eds": 481
+        "proto": 422,
+        "eds": 422
       },
       "footerY": {
-        "proto": 2922,
-        "eds": 2922
+        "proto": 3797,
+        "eds": 3797
       },
       "doc": {
-        "proto": 3402,
-        "eds": 3402
+        "proto": 4219,
+        "eds": 4219
       }
     }
   },
@@ -71,7 +71,7 @@
     "red": 0,
     "justified": 0,
     "amber": 0,
-    "orange": 0,
+    "orange": 1,
     "summary": [
       "  EDS: 33 text nodes — 6 headings, 0 eyebrows, 7 CTAs, 20 body; 7 img",
       "  editable texts (outermost h*/p/ul/ol): proto 22 / EDS 24"

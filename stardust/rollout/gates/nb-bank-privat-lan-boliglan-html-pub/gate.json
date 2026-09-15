@@ -2,24 +2,29 @@
   "slug": "nb-bank-privat-lan-boliglan-html",
   "edsUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan/boliglan",
   "protoUrl": "http://localhost:8820/nb-bank-privat-lan-boliglan-html-proposed.html",
-  "at": "2026-09-14T23:20:59.681Z",
+  "at": "2026-09-15T15:23:11.468Z",
   "pixel": {
     "360": {
-      "pct": 1.46,
-      "heightDelta": -1,
+      "pct": 7.82,
+      "heightDelta": -2,
       "compared": {
         "width": 360,
-        "height": 9893
+        "height": 10683
       },
       "pass": true,
-      "hot": []
+      "hot": [
+        "2500-3000:17%",
+        "5500-6000:20.7%",
+        "7000-7500:20.4%",
+        "7500-8000:17.3%"
+      ]
     },
     "1440": {
-      "pct": 0.73,
-      "heightDelta": -1,
+      "pct": 1.43,
+      "heightDelta": 3,
       "compared": {
         "width": 1440,
-        "height": 5967
+        "height": 5857
       },
       "pass": true,
       "hot": []
@@ -27,43 +32,43 @@
   },
   "chrome": {
     "360": {
-      "header": 99.66,
+      "header": 100,
       "footer": 100,
       "headerH": {
-        "proto": 61,
-        "eds": 61
+        "proto": 68,
+        "eds": 68
       },
       "footerH": {
-        "proto": 1884,
-        "eds": 1884
+        "proto": 1536,
+        "eds": 1536
       },
       "footerY": {
-        "proto": 8008,
-        "eds": 8009
+        "proto": 9147,
+        "eds": 9148
       },
       "doc": {
-        "proto": 9893,
-        "eds": 9894
+        "proto": 10683,
+        "eds": 10685
       }
     },
     "1440": {
-      "header": 99.96,
-      "footer": 99.9,
+      "header": 99.84,
+      "footer": 99.99,
       "headerH": {
-        "proto": 110,
-        "eds": 110
+        "proto": 112,
+        "eds": 112
       },
       "footerH": {
-        "proto": 917,
-        "eds": 917
+        "proto": 800,
+        "eds": 800
       },
       "footerY": {
-        "proto": 5051,
-        "eds": 5052
+        "proto": 5059,
+        "eds": 5056
       },
       "doc": {
-        "proto": 5967,
-        "eds": 5968
+        "proto": 5860,
+        "eds": 5857
       }
     }
   },

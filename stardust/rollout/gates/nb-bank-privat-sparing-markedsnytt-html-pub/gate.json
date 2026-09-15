@@ -2,24 +2,24 @@
   "slug": "nb-bank-privat-sparing-markedsnytt-html",
   "edsUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/sparing/markedsnytt",
   "protoUrl": "http://localhost:8820/nb-bank-privat-sparing-markedsnytt-html-proposed.html",
-  "at": "2026-09-14T23:18:58.678Z",
+  "at": "2026-09-15T16:06:04.662Z",
   "pixel": {
     "360": {
-      "pct": 0.72,
-      "heightDelta": 0,
+      "pct": 2.86,
+      "heightDelta": 3,
       "compared": {
         "width": 360,
-        "height": 10351
+        "height": 10153
       },
       "pass": true,
       "hot": []
     },
     "1440": {
-      "pct": 0.33,
+      "pct": 0.04,
       "heightDelta": 0,
       "compared": {
         "width": 1440,
-        "height": 6704
+        "height": 6368
       },
       "pass": true,
       "hot": []
@@ -27,43 +27,43 @@
   },
   "chrome": {
     "360": {
-      "header": 99.66,
+      "header": 100,
       "footer": 100,
       "headerH": {
-        "proto": 61,
-        "eds": 61
+        "proto": 68,
+        "eds": 68
       },
       "footerH": {
-        "proto": 1884,
-        "eds": 1884
+        "proto": 1536,
+        "eds": 1536
       },
       "footerY": {
-        "proto": 8466,
-        "eds": 8466
+        "proto": 8620,
+        "eds": 8617
       },
       "doc": {
-        "proto": 10351,
-        "eds": 10351
+        "proto": 10156,
+        "eds": 10153
       }
     },
     "1440": {
-      "header": 99.96,
-      "footer": 99.89,
+      "header": 99.84,
+      "footer": 100,
       "headerH": {
-        "proto": 110,
-        "eds": 110
+        "proto": 112,
+        "eds": 112
       },
       "footerH": {
-        "proto": 917,
-        "eds": 917
+        "proto": 800,
+        "eds": 800
       },
       "footerY": {
-        "proto": 5787,
-        "eds": 5787
+        "proto": 5568,
+        "eds": 5568
       },
       "doc": {
-        "proto": 6704,
-        "eds": 6704
+        "proto": 6368,
+        "eds": 6368
       }
     }
   },
@@ -74,7 +74,7 @@
     "orange": 12,
     "summary": [
       "  EDS: 100 text nodes — 18 headings, 0 eyebrows, 33 CTAs, 49 body; 11 img",
-      "  editable texts (outermost h*/p/ul/ol): proto 43 / EDS 55"
+      "  editable texts (outermost h*/p/ul/ol): proto 38 / EDS 50"
     ]
   },
   "pass": true

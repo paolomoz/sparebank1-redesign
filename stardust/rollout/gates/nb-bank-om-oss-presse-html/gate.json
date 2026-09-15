@@ -2,10 +2,10 @@
   "slug": "nb-bank-om-oss-presse-html",
   "edsUrl": "http://localhost:3020/nb/bank/om-oss/presse",
   "protoUrl": "http://localhost:8820/nb-bank-om-oss-presse-html-proposed.html",
-  "at": "2026-09-15T14:47:00.847Z",
+  "at": "2026-09-15T15:48:37.701Z",
   "pixel": {
     "360": {
-      "pct": 0.08,
+      "pct": 0.15,
       "heightDelta": 0,
       "compared": {
         "width": 360,
@@ -28,7 +28,7 @@
   "chrome": {
     "360": {
       "header": 100,
-      "footer": 100,
+      "footer": 99.64,
       "headerH": {
         "proto": 68,
         "eds": 68

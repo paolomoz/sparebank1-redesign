@@ -7,7 +7,7 @@
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-09-14T23:44:55.996Z",
+  "generatedAt": "2026-09-15T15:17:21.177Z",
   "pages": [
     {
       "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
@@ -33,7 +33,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie",
         "deployedAt": "2026-09-14T23:10:04.426Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "archetype"
@@ -63,7 +63,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/bedriftsforsikring",
         "deployedAt": "2026-09-14T23:10:04.551Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -90,7 +90,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/bedriftskort",
         "deployedAt": "2026-09-14T23:10:10.506Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -122,7 +122,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/bedriftskort/kredittkort",
         "deployedAt": "2026-09-14T23:10:08.868Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -150,7 +150,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/betaling",
         "deployedAt": "2026-09-14T23:10:13.493Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -182,7 +182,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/betaling/utenlandsbetaling",
         "deployedAt": "2026-09-14T23:10:10.555Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -211,7 +211,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/daglig-drift",
         "deployedAt": "2026-09-14T23:10:15.246Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -241,7 +241,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift",
         "deployedAt": "2026-09-14T23:10:55.667Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -271,7 +271,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/konto/bedriftskonto",
         "deployedAt": "2026-09-14T23:10:15.489Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -297,7 +297,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/konto",
         "deployedAt": "2026-09-14T23:10:18.073Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -323,7 +323,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler",
         "deployedAt": "2026-09-14T23:10:19.720Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -349,7 +349,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf",
         "deployedAt": "2026-09-14T23:10:20.786Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -373,7 +373,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse",
         "deployedAt": "2026-09-14T23:10:22.519Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -397,7 +397,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg",
         "deployedAt": "2026-09-14T23:10:23.949Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -422,7 +422,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-blir-jeg-bedriftskunde",
         "deployedAt": "2026-09-14T23:10:26.183Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -447,7 +447,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf",
         "deployedAt": "2026-09-14T23:10:27.444Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -472,7 +472,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankaxept",
         "deployedAt": "2026-09-14T23:10:28.400Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -497,7 +497,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode",
         "deployedAt": "2026-09-14T23:10:31.296Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -522,7 +522,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan",
         "deployedAt": "2026-09-14T23:10:32.227Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "archetype"
@@ -547,7 +547,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd",
         "deployedAt": "2026-09-14T23:10:32.741Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -572,7 +572,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/endre-kasserer-i-nettbank-bedrift",
         "deployedAt": "2026-09-14T23:10:35.666Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -597,7 +597,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura",
         "deployedAt": "2026-09-14T23:10:36.787Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -627,7 +627,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/kundeservice",
         "deployedAt": "2026-09-14T23:10:37.121Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -659,7 +659,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/lan-finansiering/bedriftslan",
         "deployedAt": "2026-09-14T23:10:39.847Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -686,7 +686,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/lan-finansiering",
         "deployedAt": "2026-09-14T23:10:44.627Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -716,7 +716,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/lan-finansiering/kassekreditt",
         "deployedAt": "2026-09-14T23:10:41.457Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -746,7 +746,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/lan-finansiering/leasing",
         "deployedAt": "2026-09-14T23:10:41.729Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -772,7 +772,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/open-api",
         "deployedAt": "2026-09-14T23:10:46.345Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -800,7 +800,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/pensjon",
         "deployedAt": "2026-09-14T23:10:46.636Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -829,7 +829,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/regnskap",
         "deployedAt": "2026-09-14T23:10:49.422Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -856,7 +856,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/sparing-investering",
         "deployedAt": "2026-09-14T23:10:50.969Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -883,7 +883,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/starte-bedrift",
         "deployedAt": "2026-09-14T23:10:54.190Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -912,7 +912,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk",
         "deployedAt": "2026-09-14T23:10:51.184Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -937,7 +937,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/tips-og-rad",
         "deployedAt": "2026-09-14T23:10:55.329Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -962,7 +962,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/hjemme",
         "deployedAt": "2026-09-14T23:10:59.451Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "archetype"
@@ -990,7 +990,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss",
         "deployedAt": "2026-09-14T23:11:25.572Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1018,7 +1018,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/investor",
         "deployedAt": "2026-09-14T23:10:59.748Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1043,7 +1043,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/jobb-og-karriere",
         "deployedAt": "2026-09-14T23:11:00.927Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1067,7 +1067,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen",
         "deployedAt": "2026-09-14T23:11:04.446Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1092,7 +1092,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig",
         "deployedAt": "2026-09-14T23:11:04.974Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1116,7 +1116,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken",
         "deployedAt": "2026-09-14T23:11:05.851Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1141,7 +1141,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket",
         "deployedAt": "2026-09-14T23:11:09.610Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1165,7 +1165,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast",
         "deployedAt": "2026-09-14T23:11:10.064Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "archetype"
@@ -1190,7 +1190,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter/bruk-mobilbanken-fa-kontroll-pa-okonomien",
         "deployedAt": "2026-09-14T23:11:10.530Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1214,7 +1214,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/nyheter",
         "deployedAt": "2026-09-14T23:11:14.461Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "archetype"
@@ -1239,7 +1239,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/om-banken/selskapsinformasjon",
         "deployedAt": "2026-09-14T23:11:14.797Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1263,7 +1263,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/personvern/generelle-vilkar",
         "deployedAt": "2026-09-14T23:11:15.237Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1292,7 +1292,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/personvern",
         "deployedAt": "2026-09-14T23:11:18.864Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1317,7 +1317,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/presse",
         "deployedAt": "2026-09-14T23:11:19.627Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "archetype"
@@ -1343,7 +1343,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/samfunnsansvar",
         "deployedAt": "2026-09-14T23:11:19.903Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1370,7 +1370,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/selskaper",
         "deployedAt": "2026-09-14T23:11:24.597Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1395,7 +1395,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/vare-eksperter",
         "deployedAt": "2026-09-14T23:11:24.750Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1427,7 +1427,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/daglig-bruk/bankid",
         "deployedAt": "2026-09-14T23:11:29.208Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1455,7 +1455,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/daglig-bruk/bankkonto",
         "deployedAt": "2026-09-14T23:11:29.231Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1489,7 +1489,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/daglig-bruk/bankkort",
         "deployedAt": "2026-09-14T23:11:30.074Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1517,7 +1517,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/daglig-bruk",
         "deployedAt": "2026-09-14T23:11:39.963Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1548,7 +1548,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/daglig-bruk/kredittkort",
         "deployedAt": "2026-09-14T23:11:34.530Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1575,7 +1575,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort",
         "deployedAt": "2026-09-14T23:11:34.480Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1607,7 +1607,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/daglig-bruk/mobilbank",
         "deployedAt": "2026-09-14T23:11:35.096Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1634,7 +1634,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/eiendom",
         "deployedAt": "2026-09-14T23:11:40.128Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1667,7 +1667,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/barneforsikring",
         "deployedAt": "2026-09-14T23:11:40.543Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1699,7 +1699,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/bilforsikring",
         "deployedAt": "2026-09-14T23:11:44.416Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1732,7 +1732,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring",
         "deployedAt": "2026-09-14T23:11:55.486Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1758,7 +1758,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man",
         "deployedAt": "2026-09-14T23:11:44.830Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1791,7 +1791,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/innboforsikring",
         "deployedAt": "2026-09-14T23:11:46.111Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1816,7 +1816,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/kundehistorier",
         "deployedAt": "2026-09-14T23:11:51.100Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1840,7 +1840,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade",
         "deployedAt": "2026-09-14T23:11:49.608Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1866,7 +1866,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/meld-skade",
         "deployedAt": "2026-09-14T23:11:52.144Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1899,7 +1899,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/forsikring/reiseforsikring",
         "deployedAt": "2026-09-14T23:11:54.316Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1927,7 +1927,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat",
         "deployedAt": "2026-09-14T23:12:49.424Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "archetype"
@@ -1956,7 +1956,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/bestill/bli-kunde",
         "deployedAt": "2026-09-14T23:11:56.929Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -1979,7 +1979,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/bestill/prisliste",
         "deployedAt": "2026-09-14T23:12:01.118Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2007,7 +2007,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice",
         "deployedAt": "2026-09-14T23:12:11.662Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "archetype"
@@ -2033,7 +2033,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/kontakt",
         "deployedAt": "2026-09-14T23:12:01.519Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "archetype"
@@ -2062,7 +2062,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/verktoy/iban-og-swift",
         "deployedAt": "2026-09-14T23:12:01.571Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2089,7 +2089,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/verktoy/klager",
         "deployedAt": "2026-09-14T23:12:06.475Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2117,7 +2117,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/verktoy/sparekalkulator",
         "deployedAt": "2026-09-14T23:12:06.558Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2145,7 +2145,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/verktoy/sperre-kort",
         "deployedAt": "2026-09-14T23:12:07.247Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "archetype"
@@ -2173,7 +2173,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/kundeservice/verktoy/valutakalkulator",
         "deployedAt": "2026-09-14T23:12:10.808Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2206,7 +2206,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan/billan",
         "deployedAt": "2026-09-14T23:12:12.287Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2238,7 +2238,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan/boliglan",
         "deployedAt": "2026-09-14T23:12:15.653Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "archetype"
@@ -2272,7 +2272,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan/forbrukslan",
         "deployedAt": "2026-09-14T23:12:16.597Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2298,7 +2298,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan/gronne-lan",
         "deployedAt": "2026-09-14T23:12:17.365Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2331,7 +2331,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan",
         "deployedAt": "2026-09-14T23:12:22.003Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "archetype"
@@ -2360,7 +2360,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan/lanekalkulator",
         "deployedAt": "2026-09-14T23:12:21.480Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2390,7 +2390,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lan/refinansiering",
         "deployedAt": "2026-09-14T23:12:21.634Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2421,7 +2421,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/lofavor",
         "deployedAt": "2026-09-14T23:12:26.862Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2453,7 +2453,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/pensjon/egen-pensjonskonto",
         "deployedAt": "2026-09-14T23:12:27.035Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2488,7 +2488,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/pensjon",
         "deployedAt": "2026-09-14T23:12:31.904Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2514,7 +2514,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon",
         "deployedAt": "2026-09-14T23:12:27.667Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2544,7 +2544,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/private-banking",
         "deployedAt": "2026-09-14T23:12:32.606Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2574,7 +2574,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/sparing",
         "deployedAt": "2026-09-14T23:12:44.998Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2598,7 +2598,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon",
         "deployedAt": "2026-09-14T23:12:32.904Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2622,7 +2622,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo",
         "deployedAt": "2026-09-14T23:12:37.632Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2649,7 +2649,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/sparing/markedsnytt",
         "deployedAt": "2026-09-14T23:12:37.801Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "archetype"
@@ -2680,7 +2680,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/sparing/spare-i-fond",
         "deployedAt": "2026-09-14T23:12:39.721Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2710,7 +2710,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/sparing/spare-pa-konto",
         "deployedAt": "2026-09-14T23:12:43.178Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2737,7 +2737,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/sparing/spare-til-barn",
         "deployedAt": "2026-09-14T23:12:44.035Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2765,7 +2765,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/svindel",
         "deployedAt": "2026-09-14T23:12:48.288Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2794,7 +2794,7 @@
         "status": "verified",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat/tips-og-rad",
         "deployedAt": "2026-09-14T23:12:49.116Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       },
       "fidelityTier": "sibling"
@@ -2816,7 +2816,7 @@
         "type": "fragment",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/footer-bedrift",
         "deployedAt": "2026-09-14T23:09:38.513Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       }
     },
@@ -2837,7 +2837,7 @@
         "type": "fragment",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/footer-frontend-2",
         "deployedAt": "2026-09-14T23:09:38.514Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       }
     },
@@ -2858,7 +2858,7 @@
         "type": "fragment",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/footer-frontend-om-oss-2",
         "deployedAt": "2026-09-14T23:09:38.514Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       }
     },
@@ -2879,7 +2879,7 @@
         "type": "fragment",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/footer-frontend-om-oss",
         "deployedAt": "2026-09-14T23:09:43.708Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       }
     },
@@ -2900,7 +2900,7 @@
         "type": "fragment",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/footer-frontend",
         "deployedAt": "2026-09-14T23:09:43.920Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       }
     },
@@ -2921,7 +2921,7 @@
         "type": "fragment",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/footer-kundeservice",
         "deployedAt": "2026-09-14T23:09:44.578Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       }
     },
@@ -2942,7 +2942,7 @@
         "type": "fragment",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/footer-om-oss",
         "deployedAt": "2026-09-14T23:09:48.670Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       }
     },
@@ -2963,7 +2963,7 @@
         "type": "fragment",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/footer",
         "deployedAt": "2026-09-14T23:09:48.721Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       }
     },
@@ -2984,7 +2984,7 @@
         "type": "fragment",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/fragments/bank-router-bedrift",
         "deployedAt": "2026-09-14T23:09:49.359Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       }
     },
@@ -3005,7 +3005,7 @@
         "type": "fragment",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/fragments/bank-router-om-oss",
         "deployedAt": "2026-09-14T23:09:54.245Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       }
     },
@@ -3026,7 +3026,7 @@
         "type": "fragment",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/fragments/bank-router",
         "deployedAt": "2026-09-14T23:09:54.313Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       }
     },
@@ -3047,7 +3047,7 @@
         "type": "fragment",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nav-bedrift",
         "deployedAt": "2026-09-14T23:09:54.560Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       }
     },
@@ -3068,7 +3068,7 @@
         "type": "fragment",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nav-minimal-om-oss",
         "deployedAt": "2026-09-14T23:09:58.973Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       }
     },
@@ -3089,7 +3089,7 @@
         "type": "fragment",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nav-minimal",
         "deployedAt": "2026-09-14T23:09:59.077Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       }
     },
@@ -3110,7 +3110,7 @@
         "type": "fragment",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nav-om-oss",
         "deployedAt": "2026-09-14T23:09:59.161Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       }
     },
@@ -3131,7 +3131,7 @@
         "type": "fragment",
         "deployedUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nav",
         "deployedAt": "2026-09-14T23:10:04.129Z",
-        "verifiedAt": "2026-09-14T23:44:55.996Z",
+        "verifiedAt": "2026-09-15T15:17:21.177Z",
         "error": null
       }
     }

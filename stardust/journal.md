@@ -169,3 +169,29 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 - zsh word-splitting again (`${=ARCH}`), and `shot.mjs` cannot run in parallel instances (execution context destroyed).
 
 **Next:** workers finish the 11 archetypes (encoders + group CSS + gates + siblings) → `migrate.mjs --all --force` → `convert.mjs --all` → rasterise → sanitise → `deploy-batch.mjs` publish → published-origin gates ×13 → verify → journal + commit.
+
+## 2026-09-15 — round 01: 13/13 archetypes gated on the emulation, 100 pages published (rollout in progress)
+
+- Workers (hub / story / theme+om-oss) finished: every archetype PASS on the emulation gate (pixel 0.01–7.8 %, |Δh| ≤ 3, content-diff 0 🔴, David's
+  Model 0 🔴, delivery-lint 0 P0/P1, EW dead 0). Lead fixes after their reports: social-icon parity for module-built frontend footers (assembler),
+  news-template trailing padding vs om-oss (per-template, restored after a bad regex left a dangling selector), hub promo illustration at 360, hub
+  callout CTA nowrap, `gate.mjs` measure waits for lazy images. Only residual: kundeservice header crop 97.1 % at 360 (Logg inn button box identical,
+  sub-pixel) — accepted.
+- 13 archetypes approved + canon extended (modules added: faq-question, article-header, article-body, button-row, feedback, price-cards, calculator, callout).
+- `migrate --all --force`: 100/100 · `convert --all`: 100 clean, 0 gaps · rasterise: 67 unchanged · sanitise 116 docs · chrome docs regenerated ·
+  code committed + pushed (`d36fbac`) + code sync forced · `deploy-batch` publishing 116 docs (running).
+- Next: published-origin gates on the 13 archetypes, `verify.mjs`, final journal + reply draft.
+
+## 2026-09-15 — round 01 rollout complete: 100 pages live in the new design, 13/13 published-origin gates PASS
+
+**Live:** https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat · code `4fc0fb1`+`portrait fix` · 116 DA docs live (deploy-batch 116 ok / 0 failed) · verify 116/116.
+
+**Published-origin gate (approved prototype ↔ aem.live, pixel ≤ 10 % · |Δh| ≤ 8 · chrome ≥ 98 % · content-diff 0 🔴):** 13/13 PASS on pixel, height and content at 1440 and 360
+(pixel 0.01–7.8 %, |Δh| ≤ 6). One residual: kundeservice-hub header crop 97.1 % at 360 — the Logg inn button box is identical on both sides (172/92/40 px), sub-pixel text rendering; accepted and recorded.
+
+**Fixed while gating on the live origin (all traced to the pipeline wrapping EVERY image in `<picture>`, which the emulation did not do):** captioned article hero collapsed to its
+caption (phone absolute-fill rule → in-flow crop); theme resident illustration and hub steps/tile/portrait pictures shrink-wrapped their images (`picture{width:100%}`);
+markedsnytt expert portraits detected by `[src$=".jpg"]` failed on `?width=` URLs (`[src*=…]`). `serve.mjs` now wraps all images like the pipeline; the gate's measure pass forces
+lazy images eager. A parallel regression sweep was killed by memory pressure (26 Chromium processes) — gates now run sequentially.
+
+**Ledgers:** `stardust/rollout/gates/<slug>-pub/`, `deploy-ledger.json`, `eds-progress/*.json`, `journal/<family>.md`, `eds-requests.md` (open requests from the workers, mostly base-scoping and gate-instrument items). Round record: `stardust/prototypes/round-01-danske-ramp/README.md`.

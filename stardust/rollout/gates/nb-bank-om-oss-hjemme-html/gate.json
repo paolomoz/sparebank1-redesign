@@ -2,24 +2,14 @@
   "slug": "nb-bank-om-oss-hjemme-html",
   "edsUrl": "http://localhost:3020/nb/bank/om-oss/hjemme",
   "protoUrl": "http://localhost:8820/nb-bank-om-oss-hjemme-html-proposed.html",
-  "at": "2026-09-15T14:55:51.297Z",
+  "at": "2026-09-15T15:53:05.745Z",
   "pixel": {
     "360": {
-      "pct": 0.01,
+      "pct": 0,
       "heightDelta": 0,
       "compared": {
         "width": 360,
         "height": 5919
-      },
-      "pass": true,
-      "hot": []
-    },
-    "1440": {
-      "pct": 0.01,
-      "heightDelta": 0,
-      "compared": {
-        "width": 1440,
-        "height": 3948
       },
       "pass": true,
       "hot": []
@@ -44,26 +34,6 @@
       "doc": {
         "proto": 5919,
         "eds": 5919
-      }
-    },
-    "1440": {
-      "header": 99.84,
-      "footer": 100,
-      "headerH": {
-        "proto": 112,
-        "eds": 112
-      },
-      "footerH": {
-        "proto": 422,
-        "eds": 422
-      },
-      "footerY": {
-        "proto": 3526,
-        "eds": 3526
-      },
-      "doc": {
-        "proto": 3948,
-        "eds": 3948
       }
     }
   },

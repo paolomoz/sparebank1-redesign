@@ -2,24 +2,24 @@
   "slug": "nb-bank-om-oss-hjemme-html",
   "edsUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/om-oss/hjemme",
   "protoUrl": "http://localhost:8820/nb-bank-om-oss-hjemme-html-proposed.html",
-  "at": "2026-09-14T23:19:03.734Z",
+  "at": "2026-09-15T15:18:01.117Z",
   "pixel": {
     "360": {
-      "pct": 0.25,
+      "pct": 0.02,
       "heightDelta": 0,
       "compared": {
         "width": 360,
-        "height": 5867
+        "height": 5919
       },
       "pass": true,
       "hot": []
     },
     "1440": {
-      "pct": 0.04,
+      "pct": 0.01,
       "heightDelta": 0,
       "compared": {
         "width": 1440,
-        "height": 5097
+        "height": 3948
       },
       "pass": true,
       "hot": []
@@ -27,43 +27,43 @@
   },
   "chrome": {
     "360": {
-      "header": 99.66,
-      "footer": 99.8,
+      "header": 100,
+      "footer": 100,
       "headerH": {
-        "proto": 61,
-        "eds": 61
+        "proto": 68,
+        "eds": 68
       },
       "footerH": {
-        "proto": 970,
-        "eds": 970
+        "proto": 790,
+        "eds": 790
       },
       "footerY": {
-        "proto": 4898,
-        "eds": 4898
+        "proto": 5129,
+        "eds": 5129
       },
       "doc": {
-        "proto": 5867,
-        "eds": 5867
+        "proto": 5919,
+        "eds": 5919
       }
     },
     "1440": {
-      "header": 99.96,
-      "footer": 99.7,
+      "header": 99.84,
+      "footer": 100,
       "headerH": {
-        "proto": 110,
-        "eds": 110
+        "proto": 112,
+        "eds": 112
       },
       "footerH": {
-        "proto": 481,
-        "eds": 481
+        "proto": 422,
+        "eds": 422
       },
       "footerY": {
-        "proto": 4616,
-        "eds": 4616
+        "proto": 3526,
+        "eds": 3526
       },
       "doc": {
-        "proto": 5097,
-        "eds": 5097
+        "proto": 3948,
+        "eds": 3948
       }
     }
   },
@@ -74,7 +74,7 @@
     "orange": 2,
     "summary": [
       "  EDS: 25 text nodes — 7 headings, 0 eyebrows, 8 CTAs, 10 body; 5 img",
-      "  editable texts (outermost h*/p/ul/ol): proto 20 / EDS 25"
+      "  editable texts (outermost h*/p/ul/ol): proto 12 / EDS 15"
     ]
   },
   "pass": true

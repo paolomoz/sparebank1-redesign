@@ -2,24 +2,24 @@
   "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
   "edsUrl": "https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie",
   "protoUrl": "http://localhost:8820/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html-proposed.html",
-  "at": "2026-09-14T23:14:19.941Z",
+  "at": "2026-09-15T15:54:57.581Z",
   "pixel": {
     "360": {
-      "pct": 0.36,
+      "pct": 0.01,
       "heightDelta": 0,
       "compared": {
         "width": 360,
-        "height": 8061
+        "height": 7410
       },
       "pass": true,
       "hot": []
     },
     "1440": {
-      "pct": 0.04,
+      "pct": 0.01,
       "heightDelta": 0,
       "compared": {
         "width": 1440,
-        "height": 4525
+        "height": 4506
       },
       "pass": true,
       "hot": []
@@ -27,43 +27,43 @@
   },
   "chrome": {
     "360": {
-      "header": 99.66,
+      "header": 100,
       "footer": 100,
       "headerH": {
-        "proto": 61,
-        "eds": 61
+        "proto": 68,
+        "eds": 68
       },
       "footerH": {
-        "proto": 1861,
-        "eds": 1861
+        "proto": 1462,
+        "eds": 1462
       },
       "footerY": {
-        "proto": 6200,
-        "eds": 6200
+        "proto": 5948,
+        "eds": 5948
       },
       "doc": {
-        "proto": 8061,
-        "eds": 8061
+        "proto": 7410,
+        "eds": 7410
       }
     },
     "1440": {
-      "header": 99.96,
-      "footer": 99.89,
+      "header": 99.74,
+      "footer": 100,
       "headerH": {
-        "proto": 110,
-        "eds": 110
+        "proto": 112,
+        "eds": 112
       },
       "footerH": {
-        "proto": 917,
-        "eds": 917
+        "proto": 792,
+        "eds": 792
       },
       "footerY": {
-        "proto": 3608,
-        "eds": 3608
+        "proto": 3714,
+        "eds": 3714
       },
       "doc": {
-        "proto": 4525,
-        "eds": 4525
+        "proto": 4506,
+        "eds": 4506
       }
     }
   },
@@ -74,7 +74,7 @@
     "orange": 0,
     "summary": [
       "  EDS: 49 text nodes — 8 headings, 0 eyebrows, 19 CTAs, 22 body; 8 img",
-      "  editable texts (outermost h*/p/ul/ol): proto 27 / EDS 30"
+      "  editable texts (outermost h*/p/ul/ol): proto 20 / EDS 23"
     ]
   },
   "pass": true
