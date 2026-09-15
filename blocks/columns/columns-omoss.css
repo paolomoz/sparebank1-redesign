@@ -60,7 +60,7 @@ body.markedsnytt-listing .columns.split.expert .col-media.card { grid-column: 1 
 body.markedsnytt-listing .columns.split.expert .col-text.card { grid-column: 4 / -1; }
 body.markedsnytt-listing .columns.split.expert .col-media.card picture { width: 100%; height: auto; display: flex; justify-content: center; }
 body.markedsnytt-listing .columns.split.expert .col-media.card img.photo { width: 160px; height: 160px; aspect-ratio: 1; border-radius: 50%; object-fit: cover; background: var(--frost-30); transition: transform 0.5s var(--spring); }
-body.markedsnytt-listing .columns.split.expert .col-media.card img.photo:not([src$=".jpg"]):not([src$=".jpeg"]) { width: 150px; height: 150px; border-radius: 0; object-fit: contain; background: transparent; }
+body.markedsnytt-listing .columns.split.expert .col-media.card img.photo:not([src*=".jpg"]):not([src*=".jpeg"]) { width: 150px; height: 150px; border-radius: 0; object-fit: contain; background: transparent; }
 body.markedsnytt-listing .columns.split.expert .split-row:has(.col-text:hover) .col-media img { transform: scale(1.04); }
 body.markedsnytt-listing .columns.split.expert .col-caption { font-size: var(--body); line-height: 1.45; color: var(--koksgraa); }
 body.markedsnytt-listing .columns.split.expert .col-caption p { margin: 0; }
@@ -72,7 +72,7 @@ body.markedsnytt-listing .columns.split.expert .col-caption p + p { font-size: v
   body.markedsnytt-listing .columns.split.expert .col-text.card { grid-column: 1 / -1; }
   body.markedsnytt-listing .columns.split.expert .col-text.card .card-body { padding: 40px 32px; }
   body.markedsnytt-listing .columns.split.expert .col-media.card img.photo,
-  body.markedsnytt-listing .columns.split.expert .col-media.card img.photo:not([src$=".jpg"]):not([src$=".jpeg"]) { width: 120px; height: 120px; }
+  body.markedsnytt-listing .columns.split.expert .col-media.card img.photo:not([src*=".jpg"]):not([src*=".jpeg"]) { width: 120px; height: 120px; }
 }
 
 @media (width <= 767px) {
