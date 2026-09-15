@@ -12,7 +12,7 @@ body.theme .columns.split:is(.resident, .prevention) .col-text.card .cta-row { m
 body.theme .columns.split.resident .split-row { grid-template-rows: minmax(360px, auto); }
 body.theme .columns.split.resident.text-first .col-text.card { grid-column: 1 / span 7; }
 body.theme .columns.split.resident.text-first .col-media.card { grid-column: 8 / -1; min-height: 0; background: var(--syrin-30); display: flex; align-items: center; justify-content: center; padding: 32px; }
-body.theme .columns.split.resident .col-media.card picture { height: auto; width: auto; display: flex; align-items: center; justify-content: center; }
+body.theme .columns.split.resident .col-media.card picture { height: auto; width: 100%; display: flex; align-items: center; justify-content: center; }
 body.theme .columns.split.resident .col-media.card img.photo { width: min(100%, 360px); height: auto; aspect-ratio: auto; object-fit: contain; background: transparent; border-radius: 0; transition: transform 0.5s var(--spring); }
 body.theme .columns.split.resident .split-row:has(.col-text:hover) .col-media img,
 body.theme .columns.split.resident .split-row:has(.col-text:focus-within) .col-media img { transform: translateY(-6px) rotate(-2deg); }

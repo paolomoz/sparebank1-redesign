@@ -54,8 +54,12 @@ main .section .breadcrumbs-wrapper:empty { display: none; }
   .hero.campaign .hero-grid { grid-template-rows: auto; }
   .hero .hero-text { grid-column: 1 / -1; grid-row: 2; }
   .hero .hero-media { grid-column: 1 / -1; grid-row: 1; aspect-ratio: 16 / 9; min-height: 0; }
-  .hero .hero-media picture,
-  .hero .hero-media img { position: absolute; inset: 0; width: 100%; height: 100%; }
+  /* photo-only cells fill their 16:9 box; a captioned figure (article) keeps the photo in flow above its caption strip */
+  .hero .hero-media:not(:has(.caption-wrap)) picture,
+  .hero .hero-media:not(:has(.caption-wrap)) img { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .hero .hero-media:has(.caption-wrap) { aspect-ratio: auto; }
+  .hero .hero-media:has(.caption-wrap) picture { position: static; display: block; }
+  .hero .hero-media:has(.caption-wrap) img { position: static; width: 100%; height: auto; aspect-ratio: 16 / 9; }
   .hero .hero-text .card-body { padding: 40px 32px; }
   .hero.campaign .hero-media { grid-column: 1 / span 6; grid-row: 1; aspect-ratio: 4 / 3; }
   .hero.campaign .hero-text { grid-column: 7 / -1; grid-row: 1; }
