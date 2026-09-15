@@ -1,69 +1,68 @@
-/* cards — omoss family group additions (additive variants only; imported by cards.css) */
+/* cards-omoss.css — round 01: reset on 2026-09-15. The round-0 group variants conflicted with the bento card language now painted by the base block CSS; family variants are re-added here only when a re-crafted archetype needs them (additive, measured against its prototype). */
 
-/* ===== om-oss: `advisers` — circle portraits, centred name/role/phone/mail; 3-up (60rem) or 2-up (40rem) centred rails,
-   48px above the first rail and between rails (the presse `nasjonale` movement) ===== */
-.cards ul.advisers { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-xl) var(--spacing-lg); max-width: 60rem; margin-inline: auto; }
-.cards ul.advisers[data-items="2"] { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 40rem; }
-.cards li.adviser { gap: var(--spacing-xs); justify-items: center; text-align: center; }
-.cards li.adviser .card-media { margin-bottom: var(--spacing-sm); }
-.cards li.adviser .card-media img { width: 128px; height: 128px; aspect-ratio: 1; border-radius: 50%; object-fit: cover; background: var(--frost); }
-.cards li.adviser .card-title :is(h2, h3) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
-.cards ul.advisers[data-items="3"] .card-title :is(h2, h3) { min-height: 2.5em; }
-.cards li.adviser .card-text + .card-text,
-.cards li.adviser .card-text + .card-link { margin-top: var(--spacing-md); } /* canon p + p */
-.cards li.adviser .card-text + .card-text p { color: var(--color-fg); font-family: var(--title-font-family); font-variant-numeric: tabular-nums; }
-main .section .default-content-wrapper + .cards-wrapper:has(.cards.advisers),
-main .section .cards-wrapper:has(.cards.advisers) + .cards-wrapper { margin-top: var(--spacing-xl); }
+/* ===== om-oss ===== */
+/* advisers: a horizontal card — 112 px round portrait · name (h3) · role · phone · "e-post" (the cover link) */
+body.om-oss .cards.advisers li.card .card-body { display: grid; grid-template-columns: 112px minmax(0, 1fr); column-gap: 24px; row-gap: 4px; align-items: center; align-content: center; padding: 32px; }
+body.om-oss .cards.advisers li.card .card-body > * + * { margin-top: 0; }
+body.om-oss .cards.advisers .card-media.card-portrait { grid-column: 1; grid-row: 1 / span 4; margin: 0; line-height: 0; }
+body.om-oss .cards.advisers .card-media.card-portrait img { width: 112px; height: 112px; aspect-ratio: auto; border-radius: 50%; object-fit: cover; background: var(--frost); transition: transform 0.5s var(--spring); }
+body.om-oss .cards.advisers li.card:hover .card-media.card-portrait img,
+body.om-oss .cards.advisers li.card:focus-within .card-media.card-portrait img { transform: scale(1.04); }
+body.om-oss .cards.advisers .card-body > :not(.card-media) { grid-column: 2; }
+body.om-oss .cards.advisers .card-text p { color: var(--koksgraa); }
+body.om-oss .cards.advisers li.card .card-body > .card-text + .card-text { margin-top: 8px; }
+body.om-oss .cards.advisers .card-text + .card-text p { font-family: var(--title-font-family); color: var(--color-fg); font-variant-numeric: tabular-nums; }
+body.om-oss .cards.advisers li.card .card-body > .card-link { margin-top: 8px; }
+body.om-oss .cards.advisers .card-link a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+body.om-oss .cards.advisers li.card:hover,
+body.om-oss .cards.advisers li.card:focus-within { background: var(--sand); }
 
-/* ===== om-oss: `om-oss` — the walker's Sand-30 papers (56px spot icon + title link + text), auto-fill 16rem or `cols-3` ===== */
-.cards.om-oss ul.cards-list { grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr)); }
-.cards.om-oss.cols-3 ul.cards-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.cards.om-oss li.card { gap: var(--spacing-sm); }
-.cards.om-oss li.card .card-media img { width: 56px; height: 56px; aspect-ratio: auto; object-fit: contain; border-radius: 0; background: transparent; }
-.cards.om-oss.plain li.card { background: #fff; border: 1px solid var(--lysgraa); }
-.cards.om-oss li.card .card-text p + p { margin-top: var(--spacing-sm); }
-
-/* ===== markedsnytt-listing: `articles` — 3 flat photo cards, title without link, "Les saken her" chevron link as the whole-card click ===== */
-.cards ul.art-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.cards li.card.art-card { padding: 0; background: transparent; border-radius: 0; gap: var(--spacing-sm); }
-.cards li.card.art-card:hover,
-.cards li.card.art-card:focus-within { box-shadow: none; }
-.cards li.card.art-card .card-media { margin-bottom: var(--spacing-sm); }
-.cards li.card.art-card .card-title :is(h2, h3) { overflow-wrap: anywhere; }
-.cards li.card.art-card .card-link a:any-link { display: inline-flex; align-items: center; gap: 4px; min-height: 44px; text-decoration: none; }
-.cards li.card.art-card .card-link a::before { content: ""; order: 1; width: 18px; height: 18px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23005aa4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 6 6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat; transition: transform var(--dur) var(--ease); }
-.cards li.card.art-card .card-link a::after { content: ""; position: absolute; inset: 0; }
-.cards li.card.art-card:hover .card-link a,
-.cards li.card.art-card:focus-within .card-link a { text-decoration: underline; }
-.cards li.card.art-card:hover .card-link a::before { transform: translateX(3px); }
-main .section .cards-wrapper:has(.cards.articles) + .default-content-wrapper { margin-top: var(--spacing-xl); }
-
-/* ===== markedsnytt-listing: `news cols-3` — the 3-up news rail ===== */
-.cards.cols-3 ul.news-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.cards.cols-3 li.news-card .card-title :is(h2, h3) { overflow-wrap: anywhere; }
-
-@media (width <= 1023px) {
-  .cards ul.advisers,
-  .cards ul.advisers[data-items="2"] { grid-template-columns: 1fr 1fr; max-width: none; }
-  .cards ul.advisers[data-items="3"] li.adviser:last-child { grid-column: 1 / -1; }
-  .cards ul.art-grid,
-  .cards.cols-3 ul.news-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-md); }
-  .cards li.card.art-card .card-title :is(h2, h3),
-  .cards.cols-3 li.news-card .card-title :is(h2, h3) { font-size: var(--lead); }
+@media (width <= 1024px) {
+  body.om-oss .cards.advisers.grid-3 ul.cards-list > li,
+  body.om-oss .cards.advisers.grid-2 ul.cards-list > li { grid-column: span 6; }
+  body.om-oss .cards.advisers li.card .card-body { padding: 28px; }
 }
 
-@media (width <= 640px) {
-  main .section.flush-top:has(.cards.articles) { padding-top: var(--spacing-lg); } /* proto .articles keeps 24px at ≤640 */
-  .cards ul.advisers,
-  .cards ul.advisers[data-items="2"] { grid-template-columns: 1fr; gap: var(--spacing-lg); }
-  .cards ul.advisers[data-items="3"] li.adviser:last-child { grid-column: auto; }
-  .cards ul.advisers[data-items="3"] .card-title :is(h2, h3) { min-height: 0; }
-  .cards li.adviser { grid-template-columns: 96px 1fr; column-gap: var(--spacing-md); justify-items: start; text-align: left; align-content: center; }
-  .cards li.adviser .card-media { grid-column: 1; grid-row: 1 / span 4; align-self: center; margin: 0; }
-  .cards li.adviser .card-media img { width: 96px; height: 96px; }
-  .cards li.adviser > :not(.card-media) { grid-column: 2; }
-  .cards.om-oss ul.cards-list,
-  .cards.om-oss.cols-3 ul.cards-list { grid-template-columns: 1fr; }
-  .cards ul.art-grid,
-  .cards.cols-3 ul.news-grid { grid-template-columns: 1fr; gap: var(--spacing-lg); }
+@media (width <= 767px) {
+  body.om-oss .cards.advisers.grid-3 ul.cards-list > li,
+  body.om-oss .cards.advisers.grid-2 ul.cards-list > li { grid-column: 1 / -1; }
+  body.om-oss .cards.advisers li.card .card-body { padding: 24px 20px; column-gap: 16px; grid-template-columns: 88px minmax(0, 1fr); }
+  body.om-oss .cards.advisers .card-media.card-portrait img { width: 88px; height: 88px; }
 }
+
+/* ===== markedsnytt-listing ===== */
+/* articles + news: 16:9 photo, 32/28/40 body, wrap-anywhere titles */
+body.markedsnytt-listing .cards:is(.articles, .news) li.card .card-body { padding: 32px 28px 40px; }
+body.markedsnytt-listing .cards:is(.articles, .news) .card-title :is(h2, h3) { overflow-wrap: anywhere; }
+body.markedsnytt-listing .cards.articles .card-link { margin-top: 14px; }
+body.markedsnytt-listing .cards.articles .card-link a:any-link { display: inline-flex; align-items: center; gap: 4px; text-decoration: none; font-family: var(--title-font-family); color: var(--vann); }
+body.markedsnytt-listing .cards.articles .card-link a::after { content: ""; width: 16px; height: 16px; flex: none; background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23005aa4' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='m9 6 6 6-6 6'/></svg>") center / contain no-repeat; transition: transform var(--dur) var(--ease); }
+body.markedsnytt-listing .cards.articles .card-link a::before { content: ""; position: absolute; inset: 0; z-index: 1; }
+body.markedsnytt-listing .cards.articles li.card:hover,
+body.markedsnytt-listing .cards.articles li.card:focus-within { background: var(--sand); }
+body.markedsnytt-listing .cards.articles li.card:hover .card-link a { color: var(--fjell); }
+body.markedsnytt-listing .cards.articles li.card:hover .card-link a::after { transform: translateX(3px); }
+
+/* regulatory: two Sand text cards 6 + 6 — bold run-in labels as block lines, document links 8 px under their paragraph */
+body.markedsnytt-listing .cards.regulatory li.card .card-body { padding: 40px 48px; }
+body.markedsnytt-listing .cards.regulatory li.card.is-link:hover,
+body.markedsnytt-listing .cards.regulatory li.card.is-link:focus-within { background: var(--card-tint); }
+body.markedsnytt-listing .cards.regulatory .card-body > * { max-width: 60ch; }
+body.markedsnytt-listing .cards.regulatory .card-body > * + * { margin-top: 24px; }
+body.markedsnytt-listing .cards.regulatory .card-body > .card-text + .card-link { margin-top: 8px; }
+body.markedsnytt-listing .cards.regulatory .card-text p { color: var(--color-fg); }
+body.markedsnytt-listing .cards.regulatory .card-text strong { display: block; color: var(--fjell); }
+
+@media (width <= 1024px) {
+  body.markedsnytt-listing .cards:is(.articles, .news) li.card .card-body { padding: 24px 20px 32px; }
+  body.markedsnytt-listing .cards:is(.articles, .news) .card-title :is(h2, h3) { font-size: var(--lead); }
+  body.markedsnytt-listing .cards.regulatory.grid-2 ul.cards-list > li { grid-column: 1 / -1; }
+  body.markedsnytt-listing .cards.regulatory li.card .card-body { padding: 32px 28px; }
+}
+
+@media (width <= 767px) {
+  body.markedsnytt-listing .cards:is(.articles, .news) li.card .card-body { padding: 28px 20px 32px; }
+  body.markedsnytt-listing .cards.regulatory li.card .card-body { padding: 32px 20px; }
+}
+
+body.markedsnytt-listing .cards.news .meta p { line-height: 1.43; } /* the canon .small leading */

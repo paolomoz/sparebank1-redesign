@@ -1,103 +1,51 @@
-/* columns — theme family group additions (additive variants only; imported by columns.css) */
+/* columns-theme.css — round 01: reset on 2026-09-15. The round-0 group variants conflicted with the bento card language now painted by the base block CSS; family variants are re-added here only when a re-crafted archetype needs them (additive, measured against its prototype). */
 
-/* ===== theme: sheets — two illustrated comparison sheets [illustration, h2, prose, link list] on Sand-30; rows subgrid-aligned across the sheets ===== */
-.columns.sheets .split-row { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(4, auto); gap: var(--spacing-2xl); align-items: start; }
-.columns.sheets .col-text { grid-row: span 4; grid-template-rows: subgrid; row-gap: var(--spacing-md); align-content: start; max-width: none; }
-.columns.sheets .col-text p:has(> img:only-child, > picture:only-child) { line-height: 0; margin-bottom: var(--spacing-sm); }
-.columns.sheets .col-text p img { width: min(100%, 360px); height: auto; }
-.columns.sheets .col-text h2 u { text-decoration-thickness: 3px; text-underline-offset: 0.12em; text-decoration-color: var(--vann); }
-.columns.sheets .prose-wrap { max-width: 68ch; }
-.columns.sheets .prose-wrap p + p { margin-top: var(--spacing-md); }
-.columns.sheets .col-text :is(ul, ol) { list-style: none; padding: 0; gap: var(--spacing-md); align-content: start; margin-top: var(--spacing-sm); padding-top: var(--spacing-md); border-top: 1px solid var(--lysgraa); }
-.columns.sheets .col-text li { display: grid; gap: 2px; margin: 0; color: var(--koksgraa); }
-.columns.sheets .col-text li a:any-link { display: inline-block; padding-block: 6px; margin-block: -6px 0; font-family: var(--title-font-family); font-size: var(--lead); text-decoration: none; }
-.columns.sheets .col-text li a:hover { text-decoration: underline; }
+/* ===== theme ===== */
+/* the theme's split cards carry body copy (not a lead) after the heading: prose rhythm 16, CTAs 28 below */
+body.theme .columns.split:is(.resident, .prevention) .col-text.card .card-body > * + * { margin-top: 16px; }
+body.theme .columns.split:is(.resident, .prevention) .col-text.card .lead-wrap { margin-top: 16px; }
+body.theme .columns.split:is(.resident, .prevention) .col-text.card .lead-wrap p { font-size: var(--body); line-height: var(--line-height-body); max-width: 68ch; }
+body.theme .columns.split:is(.resident, .prevention) .col-text.card p:not(.button-wrapper) { max-width: 68ch; }
+body.theme .columns.split:is(.resident, .prevention) .col-text.card .cta-row { margin-top: 28px; }
 
-/* the trailing compare link (default content after the sheets): canon .compare-link 48 above, .btn-inline without side padding, chevron */
-main .section .columns-wrapper:has(.columns.sheets) + .default-content-wrapper { margin-top: var(--spacing-xl); }
-main .section .columns-wrapper:has(.columns.sheets) + .default-content-wrapper p:not(.button-wrapper) > a:any-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 8px 0; color: var(--vann); text-decoration: none; font: var(--body) / 1.2 var(--body-font-family); }
-main .section .columns-wrapper:has(.columns.sheets) + .default-content-wrapper p:not(.button-wrapper) > a:any-link::after { content: ""; width: 18px; height: 18px; background: currentcolor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 6 6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat; }
-main .section .columns-wrapper:has(.columns.sheets) + .default-content-wrapper p:not(.button-wrapper) > a:hover { text-decoration: underline; color: var(--fjell); }
+/* resident: text card 7 + Syrin illustration tile 5 (the illustration springs when the text card is hovered) */
+body.theme .columns.split.resident .split-row { grid-template-rows: minmax(360px, auto); }
+body.theme .columns.split.resident.text-first .col-text.card { grid-column: 1 / span 7; }
+body.theme .columns.split.resident.text-first .col-media.card { grid-column: 8 / -1; min-height: 0; background: var(--syrin-30); display: flex; align-items: center; justify-content: center; padding: 32px; }
+body.theme .columns.split.resident .col-media.card picture { height: auto; width: auto; display: flex; align-items: center; justify-content: center; }
+body.theme .columns.split.resident .col-media.card img.photo { width: min(100%, 360px); height: auto; aspect-ratio: auto; object-fit: contain; background: transparent; border-radius: 0; transition: transform 0.5s var(--spring); }
+body.theme .columns.split.resident .split-row:has(.col-text:hover) .col-media img,
+body.theme .columns.split.resident .split-row:has(.col-text:focus-within) .col-media img { transform: translateY(-6px) rotate(-2deg); }
 
-/* ===== theme: split resident (text 7 / illustration 5, two secondary pills) · prevention (1fr 1fr, photo right) ===== */
-.columns.split.resident .col-text,
-.columns.split.prevention .col-text { max-width: none; }
-.columns.split.resident .lead-wrap p,
-.columns.split.prevention .lead-wrap p { font-size: var(--body); line-height: var(--line-height-body); max-width: 68ch; }
-.columns.split.resident .col-text > p,
-.columns.split.prevention .col-text > p { max-width: 68ch; }
-.columns.split.resident .col-text .cta-row { margin-top: var(--spacing-xs); }
-.columns.split.prevention .col-text .cta-row { margin-top: 0; }
-.columns.split.resident .col-media { display: flex; justify-content: center; }
-.columns.split.resident .col-media img { width: min(100%, 400px); aspect-ratio: auto; object-fit: contain; border-radius: 0; background: transparent; }
-main .columns.split.prevention .split-row { grid-template-columns: 1fr 1fr; } /* main prefix: outranks the core text-first rule (group file is @imported first) */
+/* prevention: text card 5 + bleeding photo card 7 */
+body.theme .columns.split.prevention .split-row { grid-template-rows: minmax(420px, auto); }
+body.theme .columns.split.prevention .col-media.card { min-height: 0; }
 
-/* ===== market landing: promo-2 — two promos side by side with a vertical hairline (membership band on Sand-30) ===== */
-.columns.promo.promo-2 .container { grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); }
-.columns.promo.promo-2 .split-row { padding: 0 var(--spacing-xl) 0 0; }
-.columns.promo.promo-2 .split-row + .split-row { padding: 0 0 0 var(--spacing-xl); border-left: 1px solid var(--lysgraa); }
-.columns.promo.promo-2 .col-media img { width: 140px; }
-.columns.promo.promo-2 .col-text { max-width: none; }
-
-/* ===== market landing: index — two link columns (OM OSS · SNARVEIER) ===== */
-.columns.index .split-row { grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); align-items: start; }
-.columns.index .col-text { gap: var(--spacing-md); }
-.columns.index .col-text h2 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; color: var(--koksgraa); }
-.columns.index .col-text :is(ul, ol) { list-style: none; padding: 0; gap: var(--spacing-sm); }
-.columns.index .col-text li { margin: 0; }
-.columns.index .col-text a:any-link { font-family: var(--title-font-family); font-size: var(--lead); text-decoration: none; color: var(--fjell); }
-.columns.index .col-text a:hover { color: var(--vann); text-decoration: underline; }
-
-@media (width <= 1023px) {
-  .columns.sheets .split-row { gap: var(--spacing-xl); }
-  .columns.split.resident .col-media { justify-content: flex-start; }
-  main .columns.split.resident .col-media img { width: min(100%, 300px); } /* main prefix: outranks the later .illustration width */
-  .columns.split.prevention .col-media { max-width: 36rem; }
-  main .columns.split.prevention .split-row { grid-template-columns: 1fr; } /* stacks like the core split (the main-prefixed desktop rule would otherwise win here) */
+@media (width <= 1024px) {
+  body.theme .columns.split.resident .split-row,
+  body.theme .columns.split.prevention .split-row { grid-template-rows: auto; }
+  body.theme .columns.split.resident.text-first .col-text.card,
+  body.theme .columns.split.resident.text-first .col-media.card { grid-column: 1 / -1; }
+  body.theme .columns.split.resident.text-first .col-media.card { order: -1; min-height: 260px; aspect-ratio: auto; }
+  body.theme .columns.split.resident .col-media.card img.photo { width: min(60%, 300px); }
+  body.theme .columns.split.prevention.text-first .col-media.card { order: -1; }
 }
 
 @media (width <= 767px) {
-  /* PROTOTYPE PARITY: the approved prototype keeps its 4 explicit rows when the sheets stack (2 empty tracks × 48 px gap = 96 px of blank
-     paper before the compare link) — filed in eds-requests.md; drop `grid-template-rows` here once the renderer resets it at 767 */
-  .columns.sheets .split-row { grid-template-columns: 1fr; }
-  .columns.sheets .col-text { grid-row: auto; grid-template-rows: none; }
+  body.theme .columns.split.resident.text-first .col-media.card { min-height: 0; padding: 24px; }
+  body.theme .columns.split.resident .col-media.card img.photo { width: min(60%, 240px); }
+  body.theme .columns.split:is(.resident,
+  body.theme .prevention) .cta-row p.button-wrapper,
+  body.theme .columns.split:is(.resident, .prevention) .cta-row a.button { flex: 1 1 100%; width: 100%; white-space: normal; text-align: center; }
 }
 
-@media (width <= 640px) {
-  .columns.split.resident .cta-row p.button-wrapper { flex: 1 1 100%; }
-  .columns.split.resident .cta-row a.button { width: 100%; }
-  .columns.promo.promo-2 .container { grid-template-columns: 1fr; }
-  .columns.promo.promo-2 .split-row { padding: 0; grid-template-columns: 1fr; gap: var(--spacing-lg); } /* canon .promo keeps gap 24 at 640 */
-  .columns.promo.promo-2 .split-row + .split-row { padding: var(--spacing-lg) 0 0; border-left: 0; border-top: 1px solid var(--lysgraa); }
-  .columns.promo.promo-2 .col-media img { width: 110px; }
-  .columns.index .split-row { grid-template-columns: 1fr; }
+@media (width <= 767px) {
+  body.theme .columns.split:is(.resident, .prevention) .col-text.card :is(h2, h3) { line-height: 1.14; } /* the canon .h2-m mobile leading */
+  body.theme .columns.split.resident .col-media.card img.photo { position: static; inset: auto; width: min(60%, 240px); height: auto; } /* the illustration stays in flow (the base fills the photo cell absolutely at ≤ 767) */
 }
 
-/* ===== theme + market landing siblings (migrated vocabulary): split illustration · cols cols-N ===== */
-/* illustration: the split media is an SVG illustration — its own ratio, no 3:2 crop, no Frost paper, no corner mask (NOT `illu`: canon compound class) */
-.columns.split.illustration .col-media img { aspect-ratio: auto; object-fit: contain; border-radius: 0; background: transparent; width: min(100%, 400px); margin-inline: auto; }
-
-/* cols: the migrate workers' editorial columns — one prose cell per column (canon .cols / .cols-3 / .cols-4) */
-.columns.cols .split-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--spacing-xl); align-items: start; }
-.columns.cols.cols-3 .split-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.columns.cols.cols-4 .split-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.columns.cols .col-text { max-width: none; min-width: 0; }
-.columns.cols .col-text :is(h3, h4) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
-.columns.cols .col-text p:has(> img:only-child, > picture:only-child) { line-height: 0; }
-.columns.cols .col-text p img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: var(--frost-30); border-radius: var(--radius-img-sm) 0 var(--radius-img-sm) 0; }
-.columns.cols .col-text p img[src$=".svg"],
-.columns.cols .col-text p img[src*=".svg?"] { width: 72px; height: 72px; aspect-ratio: auto; object-fit: contain; background: transparent; border-radius: 0; }
-.columns.cols .col-text :is(ul, ol) { list-style: none; padding: 0; }
-.columns.cols .col-text .cta-row { margin-top: var(--spacing-xs); }
-
-@media (width <= 1023px) {
-  .columns.cols .split-row,
-  .columns.cols.cols-3 .split-row,
-  .columns.cols.cols-4 .split-row { grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); }
-}
-
-@media (width <= 640px) {
-  .columns.cols .split-row,
-  .columns.cols.cols-3 .split-row,
-  .columns.cols.cols-4 .split-row { grid-template-columns: 1fr; }
+@media (width <= 767px) {
+  /* walker siblings: a long primary pill in the kontakt promo card was clipped at the card edge (base pills keep white-space: nowrap) */
+  body.theme .columns.promo .cta-row p.button-wrapper,
+  body.theme .columns.promo .cta-row a.button { flex: 1 1 100%; width: 100%; white-space: normal; text-align: center; }
 }

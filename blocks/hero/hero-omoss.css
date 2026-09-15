@@ -1,32 +1,20 @@
-/* hero — omoss family group additions (additive variants only; imported by hero.css) */
+/* hero-omoss.css — round 01: reset on 2026-09-15. The round-0 group variants conflicted with the bento card language now painted by the base block CSS; family variants are re-added here only when a re-crafted archetype needs them (additive, measured against its prototype). */
 
-/* ===== om-oss: `om-oss` — the presse composition: photo LEFT 7/5 at content scale, display h1 + lead right, movement padding (no tight-top);
-   a hero without a photo (`hero-noimg` in the walker) runs the text at prose width ===== */
-.hero.om-oss .hero-grid { grid-template-columns: 7fr 5fr; align-items: center; }
-.hero.om-oss .hero-grid:not(:has(.hero-media)) { grid-template-columns: minmax(0, 68ch); }
-.hero.om-oss .hero-text h1 { font-size: var(--t-display); line-height: 1.1; letter-spacing: -0.01em; }
-.hero.om-oss .cta-row { margin-top: var(--spacing-sm); }
+/* ===== om-oss ===== */
+/* om-oss (presse): the photo card leads (7 cols), the Frost text card follows (5 cols) */
+body.om-oss .hero.om-oss .hero-media { grid-column: 1 / span 7; order: 0; }
+body.om-oss .hero.om-oss .hero-text { grid-column: 8 / -1; order: 1; }
 
-/* ===== markedsnytt-listing: `listing` — text LEFT 5/7 (h1 at 14ch), photo right, tops aligned, backlink 24px above ===== */
-.hero.listing .hero-grid { grid-template-columns: 5fr 7fr; align-items: start; }
-.hero.listing .hero-text { grid-column: 1; max-width: none; }
-.hero.listing .hero-media { grid-column: 2; }
-.hero.listing .hero-text h1 { max-width: 14ch; }
-main .section .breadcrumbs-wrapper + .hero-wrapper:has(.hero.listing) { margin-top: var(--spacing-lg); }
-
-@media (width <= 1023px) {
-  .hero.om-oss .hero-grid,
-  .hero.listing .hero-grid { grid-template-columns: 1fr; gap: var(--spacing-lg); }
-  .hero.listing .hero-media { grid-column: 1; grid-row: 2; max-width: 600px; }
-  .hero.listing .hero-text { grid-column: 1; grid-row: 1; }
-  .hero.om-oss .hero-media { grid-column: 1; grid-row: 1; max-width: 600px; } /* om-oss keeps DOM order: photo above the text */
-  .hero.om-oss .hero-text { grid-column: 1; grid-row: 2; }
-  .hero.om-oss .hero-media img,
-  .hero.listing .hero-media img { aspect-ratio: 3 / 2; }
-  .hero.listing .hero-text h1 { max-width: none; }
+@media (width <= 1024px) {
+  body.om-oss .hero.om-oss .hero-media { grid-column: 1 / -1; grid-row: 1; }
+  body.om-oss .hero.om-oss .hero-text { grid-column: 1 / -1; grid-row: 2; }
 }
 
-@media (width <= 640px) {
-  .hero.om-oss .hero-media,
-  .hero.listing .hero-media { max-width: none; }
+/* ===== markedsnytt-listing ===== */
+body.markedsnytt-listing .hero.listing .hero-media img { object-position: 50% 30%; }
+body.markedsnytt-listing .hero.listing .hero-text .lead-wrap p { max-width: none; }
+
+@media (width <= 767px) {
+  body.om-oss .hero .hero-text h1,
+  body.markedsnytt-listing .hero .hero-text h1 { line-height: 1.12; } /* the canon .h2-l mobile leading */
 }

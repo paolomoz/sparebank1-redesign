@@ -1,0 +1,146 @@
+.leading-trim { --trim-text-height: calc(((var(--lausanne-ascent) + var(--lausanne-descent)) / var(--lausanne-units-per-em)) * var(--tw-font-size)); --trim-space: calc((var(--tw-leading) - var(--trim-text-height)) / 2); --tw-font-size: 1rem; --tw-leading: calc(var(--tw-font-size) * 1.5); }
+.leading-trim::before { content: ""; margin-bottom: calc(-1 * var(--trim-space)); display: table; }
+.leading-trim::after { content: ""; margin-top: calc(-1 * var(--trim-space)); display: table; }
+.leading-trim { --trim-text-height: round(calc(((var(--lausanne-ascent) + var(--lausanne-descent)) / var(--lausanne-units-per-em)) * var(--tw-font-size)), 1px); }
+.container { max-width: 100%; margin-left: auto; margin-right: auto; padding-left: 0.75rem; padding-right: 0.75rem; }
+@media (min-width: 768px) .container { padding-left: 1.5rem; padding-right: 1.5rem; }
+@media (min-width: 1280px) .container { max-width: 1440px; }
+.container { width: 100%; }
+@media (min-width: 480px) .container { max-width: 480px; }
+@media (min-width: 768px) .container { max-width: 768px; }
+@media (min-width: 992px) .container { max-width: 992px; }
+@media (min-width: 1280px) .container { max-width: 1280px; }
+@media (min-width: 1360px) .container { max-width: 1360px; }
+@media (min-width: 1440px) .container { max-width: 1440px; }
+.spacer-t-l { margin-top: var(--spacer-l); }
+.spacer-t-m { margin-top: var(--spacer-m); }
+.spacer-b-l { margin-bottom: var(--spacer-l); }
+.spacer-b-m { margin-bottom: var(--spacer-m); }
+.max-w-screen-2xl { max-width: var(--breakpoint-2xl); }
+.rounded-md { border-radius: var(--radius-md); }
+.px-16 { padding-inline: calc(var(--spacing) * 16); }
+.spacer-p-t-l { padding-top: var(--spacer-l); }
+.spacer-p-t-m { padding-top: var(--spacer-m); }
+.spacer-p-b-l { padding-bottom: var(--spacer-l); }
+.spacer-p-b-m { padding-bottom: var(--spacer-m); }
+.body-xl { font-size: var(--tw-font-size); line-height: var(--tw-leading); letter-spacing: var(--tw-tracking); --tw-font-size: 18px; --tw-leading: 22px; --tw-tracking: 0px; }
+@media (min-width: 768px) .body-xl { --tw-font-size: 19px; --tw-leading: 24px; --tw-tracking: 0px; }
+@media (min-width: 992px) .body-xl { --tw-font-size: 20px; --tw-leading: 26px; --tw-tracking: 0px; }
+.headline-l { font-size: var(--tw-font-size); line-height: var(--tw-leading); letter-spacing: var(--tw-tracking); --tw-font-size: 34px; --tw-leading: 38px; --tw-tracking: 0px; }
+@media (min-width: 768px) .headline-l { --tw-font-size: 40px; --tw-leading: 42px; --tw-tracking: -.01px; }
+@media (min-width: 992px) .headline-l { --tw-font-size: 48px; --tw-leading: 50px; --tw-tracking: -.01px; }
+.headline-m { font-size: var(--tw-font-size); line-height: var(--tw-leading); letter-spacing: var(--tw-tracking); --tw-font-size: 28px; --tw-leading: 32px; --tw-tracking: 0px; }
+@media (min-width: 768px) .headline-m { --tw-font-size: 32px; --tw-leading: 35px; --tw-tracking: 0px; }
+@media (min-width: 992px) .headline-m { --tw-font-size: 40px; --tw-leading: 42px; --tw-tracking: -.005px; }
+.headline-s { font-size: var(--tw-font-size); line-height: var(--tw-leading); letter-spacing: var(--tw-tracking); --tw-font-size: 22px; --tw-leading: 26px; --tw-tracking: 0px; }
+@media (min-width: 768px) .headline-s { --tw-font-size: 25px; --tw-leading: 30px; --tw-tracking: 0px; }
+@media (min-width: 992px) .headline-s { --tw-font-size: 28px; --tw-leading: 32px; --tw-tracking: 0px; }
+.headline-xl { font-size: var(--tw-font-size); line-height: var(--tw-leading); letter-spacing: var(--tw-tracking); --tw-font-size: 40px; --tw-leading: 42px; --tw-tracking: -.01px; }
+@media (min-width: 768px) .headline-xl { --tw-font-size: 48px; --tw-leading: 50px; --tw-tracking: -.01px; }
+@media (min-width: 992px) .headline-xl { --tw-font-size: 64px; --tw-leading: 64px; --tw-tracking: -.01px; }
+.headline-xs { font-size: var(--tw-font-size); line-height: var(--tw-leading); letter-spacing: var(--tw-tracking); --tw-font-size: 20px; --tw-leading: 24px; --tw-tracking: 0px; }
+@media (min-width: 768px) .headline-xs { --tw-font-size: 22px; --tw-leading: 26px; --tw-tracking: 0px; }
+@media (min-width: 992px) .headline-xs { --tw-font-size: 24px; --tw-leading: 28px; --tw-tracking: 0px; }
+.body-l { font-size: var(--tw-font-size); line-height: var(--tw-leading); letter-spacing: var(--tw-tracking); --tw-font-size: 17px; --tw-leading: 23px; --tw-tracking: 0px; }
+@media (min-width: 992px) .body-l { --tw-font-size: 18px; --tw-leading: 24px; --tw-tracking: 0px; }
+.body-m { font-size: var(--tw-font-size); line-height: var(--tw-leading); letter-spacing: var(--tw-tracking); --tw-font-size: 15px; --tw-leading: 21px; --tw-tracking: 0px; }
+@media (min-width: 992px) .body-m { --tw-font-size: 16px; --tw-leading: 22px; --tw-tracking: 0px; }
+.body-xs { font-size: var(--tw-font-size); line-height: var(--tw-leading); letter-spacing: var(--tw-tracking); --tw-font-size: 12px; --tw-leading: 18px; --tw-tracking: 0px; }
+@media (min-width: 992px) .body-xs { --tw-font-size: 13px; --tw-leading: 19px; --tw-tracking: 0px; }
+.body-s { font-size: var(--tw-font-size); line-height: var(--tw-leading); letter-spacing: var(--tw-tracking); --tw-font-size: 14px; --tw-leading: 20px; --tw-tracking: 0px; }
+.text-hushed { color: var(--text-color-hushed); }
+.text-primary { color: var(--text-color-primary); }
+--- :root vars (font/size related)
+--lausanne-ascent: 1866; --lausanne-descent: -410; --lausanne-units-per-em: 2048; --white-rgb: 255, 255, 255; --white-0: rgba(var(--white-rgb), 0); --white-25: rgba(var(--white-rgb), .025); --white-50: rgba(var(--white-rgb), .05); --white-100: rgba(var(--white-rgb), .1); --white-200: rgba(var(--white-rgb), .2); --white-300: rgba(var(--white-rgb), .3); --white-400: rgba(var(--white-rgb), .4); --white-500: rgba(var(--white-rgb), .5); --white-600: rgba(var(--white-rgb), .6); --white-700: rgba(var(--white-rgb), .7); --white-800: rgba(var(--white-rgb), .8); --white-900: rgba(var(--white-rgb), .9); --black-rgb: 33, 33, 33; --black-0: rgba(var(--black-rgb), 0); --black-25: rgba(var(--black-rgb), .025); --black-50: rgba(var(--black-rgb), .05); --black-100: rgba(var(--black-rgb), .1); --black-200: rgba(var(--black-rgb), .2); --black-300: rgba(var(--black-rgb), .3); --black-400: rgba(var(--black-rgb), .4); --black-500: rgba(var(--black-rgb), .5); --black-600: rgba(var(--black-rgb), .6); --black-700: rgba(var(--black-rgb), .7); --black-800: rgba(var(--black-rgb), .8); --black-900: rgba(var(--black-rgb), .9); --black: #1a1919; --dusk: linear-gradient(in oklab to top, #e4ebf6 8%, #c3d3ef 20%, #5683d2 48%, #001b4a 100%); --midnight: linear-gradient(in oklab to bottom, #000 0%, #112d5b 100%); --daylight: linear-gradient(in oklab to bottom, #d2dff3 22%, #f2f5f9 93%); --solar: #e4f222; --solarLight: #f5ff78; --smolder: #17332d; --grayLight: #f4f2f0; --grayMedium: #d2cecb; --grayDark: #6e6a68; --white: #fff; --text-primary: #0c0a08; --text-primaryReverse: #fff; --text-hushed: #0c0a0899; --text-hushedReverse: #fff9; --blaze: #e96516; --border-primary: #d2cecb; --springLight: #e4ebf6; --spring: #5683d2; --z-header: 300; --z-overlay: 400; --z-modal: 500; --z-popover: 600; --z-tooltip: 700; --z-toast: 800; --z-navmenu: 900; --spacer-m: 40px; --spacer-l: 80px;
+text-rendering: optimizelegibility; font-feature-settings: "ss01"; --page-theme: var(--white);
+--nav-banner-height: 0px; --nav-height: calc(62px + var(--nav-banner-height));
+--fides-overlay-primary-color: #2b2e35; --fides-overlay-background-color: #f7fafc; --fides-overlay-embed-background-color: transparent; --fides-overlay-font-color: #4a5568; --fides-overlay-font-color-dark: #2d3748; --fides-overlay-hover-color: #edf2f7; --fides-overlay-gpc-applied-background-color: #38a169; --fides-overlay-gpc-applied-text-color: #fff; --fides-overlay-gpc-overridden-background-color: #e53e3e; --fides-overlay-gpc-overridden-text-color: #fff; --fides-overlay-brand-link-logo-color: #2b2e35; --fides-overlay-background-dark-color: #e2e8f0; --fides-overlay-background-error-color: #f7c2c2; --fides-overlay-skeleton-gradient-from-color: rgba(0,0,0,.06); --fides-overlay-skeleton-gradient-to-color: rgba(0,0,0,.15); --fides-overlay-inactive-font-color: #a0aec0; --fides-overlay-primary-button-background-color: var(
+    --fides-overlay-primary-color
+  ); --fides-overlay-primary-button-background-hover-color: #4f525b; --fides-overlay-primary-button-text-color: #fff; --fides-overlay-primary-button-border-color: transparent; --fides-overlay-secondary-button-background-color: var(
+    --fides-overlay-background-color
+  ); --fides-overlay-secondary-button-background-hover-color: var(
+    --fides-overlay-hover-color
+  ); --fides-overlay-neutral-background-color: #edf2f7; --fides-overlay-secondary-button-text-color: #2d3748; --fides-overlay-secondary-button-border-color: var(
+    --fides-overlay-primary-color
+  ); --fides-overlay-secondary-button-border-color-disabled: #a0aec0; --fides-overlay-title-font-color: var(--fides-overlay-font-color); --fides-overlay-body-font-color: var(--fides-overlay-font-color); --fides-overlay-link-font-color: var(--fides-overlay-font-color-dark); --fides-overlay-line-height: 1.4em; --fides-overlay-primary-active-color: var(--fides-overlay-primary-color); --fides-overlay-inactive-color: #e2e8f0; --fides-overlay-disabled-color: #e1e7ee; --fides-overlay-row-divider-color: #e2e8f0; --fides-overlay-row-hover-color: var(--fides-overlay-hover-color); --fides-overlay-badge-background-color: #718096; --fides-overlay-badge-border-radius: 4px; --fides-overlay-select-border-color: #e2e8f0; --fides-overlay-language-button-border-radius: 4px; --fides-overlay-width: 680px; --fides-overlay-font-family: Inter,sans-serif; --fides-base-font-size: 16px; --8px: calc(var(--fides-base-font-size)*0.5); --11px: calc(var(--fides-base-font-size)*0.6875); --12px: calc(var(--fides-base-font-size)*0.75); --14px: calc(var(--fides-base-font-size)*0.875); --16px: calc(var(--fides-base-font-size)*1); --fides-overlay-font-size-body-xs: var(--8px); --fides-overlay-font-size-body-small: var(--12px); --fides-overlay-font-size-body: var(--14px); --fides-overlay-font-size-title: var(--16px); --fides-overlay-font-size-buttons: var(--14px); --fides-overlay-padding: 24px; --fides-overlay-button-border-radius: 6px; --fides-overlay-button-padding: 8px 16px; --fides-overlay-link-v-padding: 4px; --fides-overlay-link-h-padding: 4px; --fides-overlay-link-padding: var(--fides-overlay-link-v-padding) var(--fides-overlay-link-h-padding); --fides-overlay-container-border-radius: 12px; --fides-overlay-container-border-width: 1px; --fides-overlay-component-border-radius: 4px; --fides-overlay-banner-offset: 48px; --fides-banner-font-size-title: var(--16px); --fides-overlay-language-loading-indicator-speed: 5s; --fides-overlay-modal-secondary-button-group-height: calc(var(--fides-overlay-font-size-body) + var(--fides-overlay-link-v-padding)*2); --fides-overlay-toggle-width: 50px;
+--nav-banner-height: 40px;
+--- eyebrow element
+--- hero section children
+div cls="pointer-events-none absolute bottom-0 left-0 z-10 h-[200px] w-full bg-[linear-gradient(0deg,#FFF_10.91%,rgba(255,255,255,0.00)_45%)]" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=0 w=1440 y=
+div cls="pointer-events-none absolute inset-0 z-0" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=0 w=1440 y=102 h=1013 | mt=0px mb=0px | ""
+  canvas cls="block h-full w-full" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=0 w=1440 y=102 h=1013 | mt=0px mb=0px | ""
+div cls="mx-auto w-full max-w-screen-2xl px-4 md:px-8 lg:px-12 xl:px-16" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=0 w=1440 y=102 h=1013 | mt=0px mb=0px | "US corporate payments processed by Ramp:
+  div cls="relative z-20 py-8 md:py-16" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=64 w=1312 y=102 h=1013 | mt=0px mb=0px | "US corporate payments processed by Ramp:0.8792919%"
+    span cls="inline-flex items-center gap-1.5 uppercase tracking-wider text-[10px]" | 10px/15px 400 ls=0.5px tt=uppercase ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=64 w=327 y=178 h=19 | mt=0px mb=0px | "US corporate payments processe
+      span cls="leading-trim body-m text-hushed text-[10px] tracking-[0.18px]" | 10px/22px 400 ls=0.18px tt=uppercase ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091 / 0.6) | x=64 w=246 y=184 h=7 | mt=0px mb=0px | "US corporate payments processed 
+      span cls="bg-grayLight rounded-sm px-1.5 py-1.5" | 10px/15px 400 ls=0.5px tt=uppercase ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=316 w=75 y=178 h=19 | mt=0px mb=0px | "0.8792919%"
+        span cls="leading-trim body-m text-primary text-[10px] tracking-[0.18px] tabular-nums" | 10px/22px 400 ls=0.18px tt=uppercase ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=322 w=63 y=182 h=11 | mt=0px mb=0px | "0.8792919%"
+          number-flow-react cls="[&::part(suffix)]:relative [&::part(suffix)]:top-[0.65px] [&::part(percentSign)]:relative [&::part(percentSign)]:top-[0.65px]" | 10px/10px 400 ls=0.18px tt=uppercase ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x
+    div cls="mt-8" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=64 w=1312 y=229 h=94 | mt=32px mb=0px | "Time is money. Save both.Cards, expenses, bill pay"
+      h1 cls="leading-trim headline-xl text-primary max-w-[1050px] text-balance" | 64px/64px 400 ls=-0.01px tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=64 w=1050 y=229 h=46 | mt=0px mb=0px | "Time is money. Save both."
+      div cls="body-l text-hushed mt-6 max-w-[531px] text-pretty" | 18px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091 / 0.6) | x=64 w=531 y=299 h=24 | mt=24px mb=0px | "Cards, expenses, bill payments, and banking* – i
+        button cls="" | 18px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091 / 0.6) | x=359 w=72 y=299 h=24 | mt=0px mb=0px | "banking*"
+          span cls="" | 18px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091 / 0.6) | x=359 w=72 y=301 h=20 | mt=0px mb=0px | "banking*"
+    div cls="mt-8 lg:w-[450px] [&_[data-testid=email-form-container]>div]:backdrop-blur-md" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=64 w=450 y=355 h=62 | mt=32px mb=0px | "EmailGet started for free"
+      form cls="flex w-full max-w-[500px] flex-col space-y-2" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=64 w=450 y=355 h=62 | mt=0px mb=0px | "EmailGet started for free"
+        div cls="relative inline-flex w-full max-w-[500px] items-center gap-x-1 border-primary rounded-xl lg:flex-row flex-col lg:bg-black-25 lg:border lg:border-black-100 lg:fo" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.3672
+          label cls="sr-only" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=64 w=1 y=386 h=1 | mt=-1px mb=-1px | "Email"
+          div cls="right-1 min-w-[144px] shrink-0 whitespace-nowrap lg:relative w-full lg:w-auto lg:mt-0 mt-2" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=333 w=176 y=361 h=51 | mt=0px mb=0px | "Get started f
+    div cls="mt-8 md:mt-12 relative z-[12] border border-black-100 rounded-xl overflow-hidden" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=64 w=1312 y=465 h=586 | mt=48px mb=0px | ""
+      video cls="hidden w-full aspect-[1312/585] object-cover rounded-xl lg:block" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=65 w=1310 y=466 h=584 | mt=0px mb=0px | ""
+--- card inner (first PlatformCard)
+div cls="relative z-10 flex items-start justify-between gap-2 py-8 pl-6 lg:pl-8 pr-6" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=65 w=642 y=2104 h=109 | mt=0px mb=0px | "Cards & Expenses that handl
+  h3 cls="leading-trim headline-xs max-w-[300px] text-primary" | 24px/28px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=97 w=300 y=2136 h=45 | mt=0px mb=0px | "Cards & Expenses that handle themselves"
+    span cls="text-hushed" | 24px/28px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091 / 0.6) | x=97 w=245 y=2130 h=55 | mt=0px mb=0px | "that handle themselves"
+  div cls="flex size-9 shrink-0 items-center justify-center rounded-md bg-white border border-black-100" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=647 w=36 y=2136 h=36 | mt=0px mb=0px | ""
+    span cls="PlatformCard-module__MXf3fW__arrowIcon" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=657 w=16 y=2146 h=16 | mt=0px mb=0px | ""
+      i cls="box-content block font-icon size-4 shrink-0" | 16px/16px 400 ls=normal tt=none ff="Material Icons Outlined" col=lab(2.83994 0.367254 0.969091) | x=657 w=16 y=2146 h=16 | mt=0px mb=0px | ""
+canvas cls="pointer-events-none absolute size-full" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=65 w=642 y=2104 h=481 | mt=0px mb=0px | ""
+div cls="overflow-hidden rounded-xl pointer-events-none absolute inset-0 size-full flex items-end" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=65 w=642 y=2104 h=481 | mt=0px mb=0px | ""
+  div cls="aspect-(--ar) justify-self-start opacity-100 relative w-full h-auto self-center lg:self-end" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=65 w=642 y=2103 h=482 | mt=0px mb=0px | ""
+    canvas cls="" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=65 w=642 y=2103 h=482 | mt=0px mb=0px | ""
+--- stats section (second child of main > div) top
+div cls="mx-auto w-full max-w-screen-2xl px-4 md:px-8 lg:px-12 xl:px-16" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=0 w=1440 y=1115 h=637 | mt=0px mb=0px | "AGENTS AT WORK TODAY:Receipts processed:
+  div cls="mx-auto max-w-[1312px]" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=64 w=1312 y=1115 h=637 | mt=0px mb=0px | "AGENTS AT WORK TODAY:Receipts processed:Accounting"
+    div cls="relative mb-8" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=64 w=1312 y=1115 h=40 | mt=0px mb=32px | "AGENTS AT WORK TODAY:Receipts processed:Accounting"
+      div cls="" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=0 w=1440 y=861 h=39 | mt=0px mb=0px | "AGENTS AT WORK TODAY:Receipts processed:Accounting"
+    div cls="mb-12 mt-20" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=64 w=1312 y=1235 h=140 | mt=80px mb=48px | "Join 70,000 of the world’s most ambitious companie"
+      h2 cls="leading-trim headline-s text-primary max-w-[656px] text-balance mb-8" | 28px/32px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=64 w=656 y=1235 h=84 | mt=0px mb=32px | "Join 70,000 of the world’s most amb
+      a cls="group/link text-hushed hover:text-primary flex items-center gap-2" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091 / 0.6) | x=64 w=1312 y=1351 h=24 | mt=0px mb=0px | "Read the report"
+    div cls="grid gap-px overflow-hidden rounded-[12px] bg-grayLight p-px" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=64 w=1312 y=1423 h=329 | mt=0px mb=0px | "$1M+saved on global spend"
+      div cls="group relative overflow-hidden rounded-[12px] text-left text-primary CustomerSection-module__6IGf6q__tile" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=65 w=163 y=1424 h=163 | mt=0px mb=0px 
+      div cls="group relative overflow-hidden rounded-[12px] text-left text-primary CustomerSection-module__6IGf6q__tile" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=229 w=163 y=1424 h=163 | mt=0px mb=0px
+      div cls="group relative overflow-hidden rounded-[12px] text-left text-primary CustomerSection-module__6IGf6q__tile" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=393 w=163 y=1424 h=163 | mt=0px mb=0px
+      div cls="group relative overflow-hidden rounded-[12px] text-left text-primary CustomerSection-module__6IGf6q__tile" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=557 w=163 y=1424 h=163 | mt=0px mb=0px
+      div cls="group relative overflow-hidden rounded-[12px] text-left text-primary CustomerSection-module__6IGf6q__tile" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=721 w=163 y=1424 h=163 | mt=0px mb=0px
+      div cls="group relative overflow-hidden rounded-[12px] text-left text-primary CustomerSection-module__6IGf6q__tile" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=884 w=163 y=1424 h=163 | mt=0px mb=0px
+      div cls="group relative overflow-hidden rounded-[12px] text-left text-primary CustomerSection-module__6IGf6q__tile" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=65 w=163 y=1588 h=163 | mt=0px mb=0px 
+      div cls="group relative overflow-hidden rounded-[12px] text-left text-primary CustomerSection-module__6IGf6q__tile" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=229 w=163 y=1588 h=163 | mt=0px mb=0px
+      div cls="group relative overflow-hidden rounded-[12px] text-left text-primary CustomerSection-module__6IGf6q__tile" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=393 w=163 y=1588 h=163 | mt=0px mb=0px
+      div cls="group relative overflow-hidden rounded-[12px] text-left text-primary CustomerSection-module__6IGf6q__tile" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=557 w=163 y=1588 h=163 | mt=0px mb=0px
+      div cls="group relative overflow-hidden rounded-[12px] text-left text-primary CustomerSection-module__6IGf6q__tile" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=721 w=163 y=1588 h=163 | mt=0px mb=0px
+      div cls="group relative overflow-hidden rounded-[12px] text-left text-primary CustomerSection-module__6IGf6q__tile" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=884 w=163 y=1588 h=163 | mt=0px mb=0px
+      div cls="group relative overflow-hidden rounded-[12px] text-left text-white CustomerSection-module__6IGf6q__featured" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(100 0 0) | x=1048 w=327 y=1424 h=327 | mt=0px mb=0px | "$1M+saved o
+--- header
+header cls="fixed inset-x-0 top-0 z-header h-(--nav-height)" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=0 w=1440 y=0 h=102 | mt=0px mb=0px | ":root { --nav-banner-height: 40px; } @media "
+div cls="absolute inset-0 backdrop-blur-[25px] transition duration-0 delay-100" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=0 w=1440 y=0 h=102 | mt=0px mb=0px | ""
+div cls="fixed top-0 flex h-(--nav-height) w-full flex-col justify-between backdrop-opacity-100 transition-colors duration-100 border-b border-b-black-50 bg-white-500 te" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.3672
+  div cls="body-s relative flex h-[var(--nav-banner-height)] w-full shrink-0 items-center justify-center text-center bg-black text-primaryReverse" | 14px/20px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(100 0 0) | x=0 w=1440 y=0 h=40 | mt=0px 
+    button cls="absolute right-2 mt-1 focus:outline-none flex items-center justify-center lg:right-7" | 14px/20px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(100 0 0) | x=1392 w=20 y=12 h=20 | mt=4px mb=0px | ""
+      i cls="box-content block font-icon size-4 lg:size-5" | 16px/16px 400 ls=normal tt=none ff="Material Icons Outlined" col=lab(100 0 0) | x=1392 w=20 y=12 h=20 | mt=0px mb=0px | ""
+    div cls="mx-8 flex w-full items-center justify-center text-center md:mx-8 lg:mx-16" | 14px/20px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(100 0 0) | x=64 w=1312 y=10 h=20 | mt=0px mb=0px | "New: AI Token Spend Management — see, understand,
+      div cls="flex flex-col md:flex-row items-center gap-2" | 14px/20px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(100 0 0) | x=433 w=574 y=10 h=20 | mt=0px mb=0px | "New: AI Token Spend Management — see, understand, "
+  div cls="relative mx-auto flex size-full max-w-screen-2xl items-center px-4 transition-colors duration-150 md:px-8 lg:px-6 xl:px-16" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=0 w=1440 y=40 h=61 | 
+    div cls="hidden w-full items-center justify-between lg:flex" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=64 w=1312 y=49 h=44 | mt=0px mb=0px | "ProductsPartnersSolutionsResourcesCustomersPricing"
+      div cls="flex min-w-0 items-center gap-2 xl:gap-4" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=64 w=680 y=49 h=44 | mt=0px mb=0px | "ProductsPartnersSolutionsResourcesCustomersPricing"
+      div cls="flex items-center gap-4" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=1059 w=317 y=53 h=34 | mt=0px mb=0px | "Sign inSee a demoGet started"
+--- footer container
+footer cls="relative" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=0 w=1440 y=12414 h=1493 | mt=0px mb=0px | "About usCareersEmerging talentCustomersHelp center"
+div cls="absolute inset-x-0 top-[-24px] flex justify-between overflow-hidden" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=0 w=1440 y=12390 h=24 | mt=0px mb=0px | ""
+  svg cls="" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=0 w=24 y=12390 h=24 | mt=0px mb=0px | ""
+    path cls="" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=0 w=24 y=12390 h=24 | mt=0px mb=0px | ""
+  svg cls="" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=1416 w=24 y=12390 h=24 | mt=0px mb=0px | ""
+    path cls="" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(2.83994 0.367254 0.969091) | x=1416 w=24 y=12390 h=24 | mt=0px mb=0px | ""
+div cls="flex flex-col py-20 bg-(--bg-color) md:py-24 lg:py-32 text-primaryReverse KbFooter-module__5rIYbW__footer" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(100 0 0) | x=0 w=1440 y=12414 h=1493 | mt=0px mb=0px | "About usCaree
+  div cls="mx-auto w-full max-w-screen-2xl px-4 md:px-8 lg:px-12 xl:px-16" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(100 0 0) | x=0 w=1440 y=12542 h=1237 | mt=0px mb=0px | "About usCareersEmerging talentCustomersHelp center"
+    div cls="grid grid-cols-1 md:grid-cols-3 md:gap-x-6 md:gap-y-12 xl:grid-cols-6" | 16px/24px 400 ls=normal tt=none ff=lausanne, "lausanne Fallback" col=lab(100 0 0) | x=64 w=1312 y=12542 h=1237 | mt=0px mb=0px | "About usCareersEmerging talentCustomersHelp cent

@@ -1,72 +1,35 @@
-/* cards — theme family group additions (additive variants only; imported by cards.css) */
+/* cards-theme.css — round 01: reset on 2026-09-15. The round-0 group variants conflicted with the bento card language now painted by the base block CSS; family variants are re-added here only when a re-crafted archetype needs them (additive, measured against its prototype). */
 
-/* ===== theme: papers — three Sand-30 photo papers (recommended for the theme); 1023: photo 40 % left · 640: stacked ===== */
-.cards.papers ul.flat-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-lg); }
-.cards.papers li.card .card-media { margin-bottom: 4px; }
+/* ===== theme ===== */
+/* sheets: two comparison sheets 6 + 6 — illustration on the fill, h2 (headline-sm), prose, arrow-link list with descriptions */
+body.theme .cards.sheets li.card .card-body { padding: 40px 48px 48px; }
+body.theme .cards.sheets .card-media.card-illu { margin-bottom: 22px; }
+body.theme .cards.sheets .card-media.card-illu img { width: min(100%, 300px); height: auto; }
+body.theme .cards.sheets .card-title :is(h2, h3) { font-family: var(--heading-font-family); font-size: var(--t-headline-sm); line-height: 1.05; text-wrap: balance; }
+body.theme .cards.sheets .card-title h2 u { text-decoration-thickness: 3px; text-underline-offset: 0.12em; text-decoration-color: var(--vann); }
+body.theme .cards.sheets .card-title + .card-text,
+body.theme .cards.sheets .card-text + .card-text { margin-top: 16px; }
+body.theme .cards.sheets .card-text p { color: var(--color-fg); max-width: 68ch; }
+body.theme .cards.sheets .card-links { margin-top: 28px; }
+body.theme .cards.sheets .card-links ul { gap: 18px; align-content: start; }
+body.theme .cards.sheets .card-links li { display: grid; gap: 2px; justify-items: start; color: var(--koksgraa); }
+body.theme .cards.sheets .card-links a.arrow:any-link { font-family: var(--title-font-family); font-size: var(--lead); line-height: 1.33; min-height: 40px; margin-block: -8px; color: var(--vann); }
+body.theme .cards.sheets .card-links a.arrow:hover { color: var(--fjell); }
 
-@media (width <= 1023px) {
-  .cards.papers ul.flat-grid { grid-template-columns: 1fr; }
-  .cards.papers li.card { grid-template-columns: 40% 1fr; grid-template-rows: auto 1fr; grid-template-areas: "img title" "img text"; gap: 4px var(--spacing-lg); align-items: start; }
-  .cards.papers li.card .card-media { grid-area: img; margin: 0; }
-  .cards.papers li.card .card-title { grid-area: title; }
-  .cards.papers li.card .card-text { grid-area: text; }
+/* recommended (news grid-3): body copy in Koksgrå, 3-up */
+body.theme .cards.news.grid-3 .card-text p { color: var(--koksgraa); }
+
+@media (width <= 1024px) {
+  body.theme .cards.sheets li.card .card-body { padding: 32px 28px 40px; }
+  body.theme .cards.news.grid-3 ul.cards-list > li { grid-column: span 4; }
+  body.theme .cards.news.grid-3 li.card .card-body { padding: 24px 20px 32px; }
 }
 
-@media (width <= 640px) {
-  .cards.papers li.card { grid-template-columns: 1fr; grid-template-rows: auto; grid-template-areas: "img" "title" "text"; }
-  .cards.papers li.card .card-media { margin-bottom: 4px; }
+@media (width <= 767px) {
+  body.theme .cards.sheets li.card .card-body { padding: 32px 20px 36px; }
+  body.theme .cards.news.grid-3 ul.cards-list > li { grid-column: 1 / -1; }
 }
 
-/* ===== market landing: tiles — the tile title is a canon h2 (line-height 1.15, not 1.2; 2 px per tile row) — see eds-requests.md ===== */
-.cards.tiles li.tile .card-title :is(h2, h3) { line-height: 1.15; }
-
-/* ===== theme + market landing siblings (migrated vocabulary): grid-N column modifiers · link-cards · quick-links ===== */
-.cards.grid-1 ul.cards-list { grid-template-columns: minmax(0, 1fr); max-width: 36rem; }
-.cards.grid-2 ul.cards-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.cards.grid-3 ul.cards-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.cards.grid-4 ul.cards-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.cards.choices .card-link p.button-wrapper { margin-top: var(--spacing-xs); }
-
-/* link-cards: Sand paper, 48 px icon left, lead-size title (canon .link-card) */
-.cards.link-cards ul.cards-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-md); }
-.cards.link-cards.grid-2 ul.cards-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.cards.link-cards.grid-4 ul.cards-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.cards.link-cards li.card { grid-template-columns: 48px minmax(0, 1fr); gap: var(--spacing-sm) var(--spacing-md); align-items: center; padding: var(--spacing-md) var(--spacing-lg); }
-.cards.link-cards li.card .card-media img { width: 48px; height: 48px; aspect-ratio: auto; object-fit: contain; border-radius: 0; background: transparent; }
-.cards.link-cards li.card > :not(.card-media) { grid-column: 2; }
-.cards.link-cards li.card .card-title :is(h2, h3) { font-size: var(--lead); line-height: 1.3; }
-
-/* quick-links: white bordered rows, 40 px icon + one link (canon .quick-links) */
-.cards.quick-links ul.cards-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-md); }
-.cards.quick-links li.card { grid-template-columns: 40px minmax(0, 1fr); gap: var(--spacing-md); align-items: center; padding: var(--spacing-md) var(--spacing-lg); background: #fff; border: 1px solid var(--lysgraa); border-radius: var(--radius-sm); }
-.cards.quick-links li.card:hover,
-.cards.quick-links li.card:focus-within { box-shadow: none; border-color: var(--vann); }
-.cards.quick-links li.card .card-media img { width: 40px; height: 40px; aspect-ratio: auto; object-fit: contain; border-radius: 0; background: transparent; }
-.cards.quick-links li.card .card-link p { margin: 0; }
-.cards.quick-links li.card .card-link a:any-link { display: block; padding: 10px 0; font-family: var(--title-font-family); text-decoration: none; color: var(--vann); }
-.cards.quick-links li.card .card-link a:hover { text-decoration: underline; }
-
-@media (width <= 1023px) {
-  .cards.grid-3 ul.cards-list,
-  .cards.grid-4 ul.cards-list,
-  .cards.link-cards ul.cards-list,
-  .cards.link-cards.grid-4 ul.cards-list,
-  .cards.quick-links ul.cards-list { grid-template-columns: 1fr 1fr; }
-}
-
-@media (width <= 640px) {
-  .cards.grid-2 ul.cards-list,
-  .cards.grid-3 ul.cards-list,
-  .cards.grid-4 ul.cards-list,
-  .cards.link-cards ul.cards-list,
-  .cards.link-cards.grid-2 ul.cards-list,
-  .cards.link-cards.grid-4 ul.cards-list,
-  .cards.quick-links ul.cards-list { grid-template-columns: 1fr; }
-  .cards.link-cards li.card { grid-template-columns: 40px minmax(0, 1fr); }
-  .cards.link-cards li.card .card-media img { width: 40px; height: 40px; }
-}
-
-/* tiles with a description paragraph (theme sibling): at 640 the text spans under the icon + title row (core tiles have no text) */
-@media (width <= 640px) {
-  .cards.tiles li.tile .card-text { grid-column: 1 / -1; }
+@media (width <= 767px) {
+  body.theme .cards.sheets .card-title :is(h2, h3) { line-height: 1.14; } /* the canon .h2-m mobile leading */
 }

@@ -83,12 +83,14 @@
  ],
  "notes": [
   "media: illustrasjon-usymmetrisk-samboer-dame-mann-high-five-lys-bakgrunn.svg is 70275 B of SVG (> 40000) — authored as DA media illustrasjon-usymmetrisk-samboer-dame-mann-high-five-lys-bakgrunn.png",
+  "card-rail (product): choices cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
   "lint D1 calculator: bespoke widget (dynamics #7 interim static shell — controls disabled, captured strings; labels/values are control config, @ew-exempt in the block)",
+  "card-rail (product): tips cols-4 — one row per card [media?][headings, text, lists, CTAs] in authored order; head and trailing prose are default content",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
  "gaps": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/graferogillustrasjoner/illustrasjon-usymmetrisk-samboer-dame-mann-high-five-lys-bakgrunn.svg"
  ],
- "writtenAt": "2026-09-14T23:40:48.702Z"
+ "writtenAt": "2026-09-15T15:02:43.371Z"
 }

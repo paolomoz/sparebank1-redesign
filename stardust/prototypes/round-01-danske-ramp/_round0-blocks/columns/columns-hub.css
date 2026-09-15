@@ -1,0 +1,82 @@
+/* columns — hub family group additions (additive variants only; imported by columns.css) */
+
+/* ===== category-hub: help (two stacked photo columns side by side) · promo `switch` (flush under the help columns, own hairline, 140px spot) ===== */
+.columns.split.help .container { grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); }
+.columns.split.help .split-row { grid-template-columns: 1fr; gap: var(--spacing-md); align-items: start; }
+.columns.split.help .col-media img.photo { margin-bottom: var(--spacing-sm); }
+.columns.split.help .col-text { max-width: none; }
+.columns.split.help .lead-wrap p { font-size: var(--body); line-height: var(--line-height-body); max-width: 44rem; }
+.columns.split.help .col-text .cta-row { margin-top: var(--spacing-md); }
+.columns.split.help .col-text :is(ul, ol) { list-style: none; padding: 0; gap: var(--spacing-xs); }
+.columns.split.help .col-text :is(h2, h3) a:any-link { color: var(--fjell); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.15em; }
+.columns.split.help .col-text :is(h2, h3) a:hover { color: var(--vann); }
+.columns.promo.switch .split-row { gap: var(--spacing-xl); padding-top: var(--spacing-xl); border-top: 1px solid var(--lysgraa); }
+.columns.promo.switch .col-media img { width: 140px; }
+
+/* ===== kundeservice-hub: promo `invites` (two promos side by side, hairline between) ===== */
+.columns.promo.invites .container { grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); }
+.columns.promo.invites .split-row { padding: 0 var(--spacing-xl) 0 0; }
+.columns.promo.invites .split-row + .split-row { border-left: 1px solid var(--lysgraa); padding: 0 0 0 var(--spacing-xl); }
+.columns.promo.invites .col-media img { width: 150px; }
+
+/* ===== tool: steps (h2 + numbered ledger + pill + note, illustration beside) · reopen (body copy, 96px photo radius) ===== */
+.columns.split.steps .split-row { grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); gap: var(--spacing-md) var(--spacing-xl); align-items: start; }
+.columns.split.steps .col-text { max-width: none; gap: 0; counter-reset: step; }
+.columns.split.steps .col-text h2 { margin-bottom: var(--spacing-md); }
+.columns.split.steps .col-text ol { list-style: none; counter-reset: step; padding: 0; margin-top: var(--spacing-sm); display: grid; gap: 0; }
+.columns.split.steps .col-text ol li { counter-increment: step; position: relative; display: block; min-height: 61px; padding: 18px 0 12px 52px; border-top: 1px solid var(--frost); margin: 0; }
+.columns.split.steps .col-text ol li::before { content: counter(step); position: absolute; left: 0; top: 12px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--vann); color: #fff; font-family: var(--title-font-family); font-size: var(--body); font-variant-numeric: tabular-nums; }
+.columns.split.steps .col-text ol li::marker { content: none; }
+.columns.split.steps .col-text ol li:last-child { border-bottom: 1px solid var(--frost); }
+.columns.split.steps .col-text ol + :is(p, .lead-wrap) { margin-top: 0; }
+.columns.split.steps .lead-wrap p { font-size: var(--body); line-height: var(--line-height-body); max-width: 68ch; }
+.columns.split.steps .col-text p + p,
+.columns.split.steps .col-text .lead-wrap + p { margin-top: var(--spacing-md); }
+.columns.split.steps .col-text .cta-row { margin-top: var(--spacing-md); }
+/* steps whose bodies are rich (heading + paragraphs per step, e.g. klager, utenlandsbetaling) arrive as default content (D2): the h3 carries the numbered badge, the body sits in the ledger column */
+.columns.split.steps .col-text h3 { counter-increment: step; position: relative; min-height: 36px; padding: 18px 0 0 52px; margin: var(--spacing-md) 0 0; border-top: 1px solid var(--frost); }
+.columns.split.steps .col-text h3::before { content: counter(step); position: absolute; left: 0; top: 12px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--vann); color: #fff; font-size: var(--body-sm); font-weight: 700; }
+.columns.split.steps .col-text h3 a { color: inherit; text-decoration: none; }
+.columns.split.steps .col-text h3 ~ :is(p, ul, ol, .cta-row, .lead-wrap) { padding-left: 52px; }
+.columns.split.steps .col-text h3 ~ ol li { padding-left: 52px; }
+.columns.split.steps .col-text h3 + p { margin-top: var(--spacing-sm); }
+.columns.split.steps .col-text .cta-row + p { margin-top: var(--spacing-md); font-size: var(--body-sm); line-height: 1.45; color: var(--koksgraa); max-width: 48ch; }
+.columns.split.steps .col-media { align-self: start; display: flex; justify-content: center; }
+.columns.split.steps .col-media img.photo { width: 320px; max-width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; border-radius: 0; background: transparent; }
+.columns.split.reopen .col-text { max-width: 68ch; }
+.columns.split.reopen .lead-wrap p { font-size: var(--body); line-height: var(--line-height-body); max-width: none; }
+.columns.split.reopen .col-text .cta-row { margin-top: 0; }
+.columns.split.reopen .col-media img.photo { border-radius: var(--radius-img) 0 var(--radius-img) 0; }
+
+@media (width <= 1023px) {
+  .columns.split.help .container { grid-template-columns: 1fr; }
+  .columns.split.help .col-media { max-width: 36rem; }
+  .columns.promo.invites .container { grid-template-columns: 1fr; gap: var(--spacing-lg); }
+  .columns.promo.invites .split-row { padding: 0; }
+  .columns.promo.invites .split-row + .split-row { border-left: 0; border-top: 1px solid var(--lysgraa); padding: var(--spacing-lg) 0 0; }
+  .columns.split.steps .split-row { grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: var(--spacing-md) var(--spacing-lg); }
+  .columns.split.steps .col-media img.photo { width: 240px; }
+  .columns.split.reopen .col-media img.photo { aspect-ratio: 2 / 1; }
+}
+
+@media (width <= 640px) {
+  .columns.promo.switch .split-row { grid-template-columns: 1fr; gap: var(--spacing-md); }
+  .columns.promo.switch .col-media img { width: 110px; }
+  .columns.promo.invites .col-media img { width: 120px; }
+  .columns.split.steps .split-row { grid-template-columns: minmax(0, 1fr) 120px; grid-template-areas: "h2 media" "text text"; gap: 0 var(--spacing-md); align-items: center; }
+  .columns.split.steps .col-text { display: contents; }
+  .columns.split.steps .col-text h2 { grid-area: h2; margin: 0; }
+  .columns.split.steps .col-media { grid-area: media; align-self: center; }
+  .columns.split.steps .col-media img.photo { width: 120px; }
+  .columns.split.steps .col-text ol { grid-column: 1 / -1; margin-top: var(--spacing-lg); }
+  .columns.split.steps .col-text > :is(p, .lead-wrap, .cta-row) { grid-column: 1 / -1; }
+  .columns.split.reopen .col-media img.photo { aspect-ratio: 3 / 2; border-radius: var(--radius-img-sm) 0 var(--radius-img-sm) 0; }
+}
+
+/* ===== hub siblings: illu — an illustration stack (logo + spot) beside h2/lead/pill ===== */
+.columns.split.illu .col-media { display: grid; gap: var(--spacing-md); justify-items: start; }
+.columns.split.illu .col-media img.photo { width: min(100%, 320px); max-height: 320px; height: auto; aspect-ratio: auto; object-fit: contain; border-radius: 0; background: transparent; }
+.columns.split.illu .col-caption { display: grid; gap: var(--spacing-md); }
+.columns.split.illu .col-caption p { margin: 0; line-height: 0; }
+.columns.split.illu .col-caption img { width: 112px; height: 112px; object-fit: contain; }
+.columns.split.illu .lead-wrap p { font-size: var(--body); line-height: var(--line-height-body); max-width: 68ch; }

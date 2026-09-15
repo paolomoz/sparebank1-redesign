@@ -1,21 +1,20 @@
 {
   "archetype": "nb-bank-privat-sparing-markedsnytt-html",
   "document": "content/nb/bank/privat/sparing/markedsnytt.html",
+  "round": "01 (bento card language)",
   "blocks": {
-    "new": ["embed"],
-    "reused": ["breadcrumbs", "hero (listing)", "cards (articles)", "cards (news cols-3)", "columns (expert)", "columns (text)", "feedback (labels)", "fragment (bank-router)"]
+    "new": [],
+    "reused": ["fragment (bank-router)", "breadcrumbs", "hero (listing: Frost text card 5 + photo card 7)", "cards (articles grid-3; news grid-3; regulatory grid-2)", "embed (auto-blocked from the bare YouTube link inside a video-row section)", "columns (split expert: Syrin portrait tile 3 + text card 9)", "feedback (labels)"],
+    "sectionStyles": ["tight-top", "bento-join", "flush-bottom", "video-row", "feedback-band", "fineprint"]
   },
-  "sectionStyles": ["head-xl", "video-row", "fineprint"],
-  "sharedJs": ["columns.js: media-cell caption slot (col-caption) + `text` variant keeps link paragraphs in place — additive", "scripts.js buildMediaAutoBlocks: moves the authored paragraph (EW fix)"],
-  "iterations": 3,
+  "iterations": 6,
   "breakpoints": {
-    "1440": { "pixelPct": 0.08, "heightDelta": 0, "header": 99.96, "footer": 99.89, "pass": true },
-    "360": { "pixelPct": 0.32, "heightDelta": 0, "header": 99.66, "footer": 100, "pass": true }
+    "1440": { "pixelPct": 0.04, "heightDelta": 0, "header": 99.84, "footer": 100, "pass": true },
+    "360": { "pixelPct": 1.66, "heightDelta": 3, "header": 100, "footer": 100, "pass": true }
   },
-  "contentDiff": { "red": 0, "justified": [], "amber": 26, "orange": 12 },
-  "ew": { "editable": 62, "dead": 0, "exempt": 1, "authored": 63 },
-  "lint": { "davidsModel": "0 🔴 / 3 🟡 (fragment + breadcrumbs single-row blocks, D4 SVG batch-verify)", "delivery": "0 P0 · 0 P1 · 5 P2 (cross-origin-optimize advisories)" },
-  "productRegression": { "slug": "nb-bank-privat-lan-boliglan-html", "pixelPct": 0.74, "heightDelta": -1, "pass": true },
-  "siblings": { "converted": [], "gaps": {}, "lintRed": {}, "contentDiffSampled": null },
-  "requests": ["lib inline() span+time spacing (worked around)"]
+  "contentDiff": { "red": 0, "justified": [] },
+  "ew": { "editable": 62, "dead": 0, "exempt": 1, "duplicated": 0, "exemptNote": "the /fragments/bank-router reference paragraph" },
+  "lint": { "davidsModel": "0 red, 4 yellow (D1 fragment/breadcrumbs single-cell, D1 regulatory cards prose-only — justified: two Sand text cards are the designed repeating unit)", "delivery": "0 P0, 0 P1, 4 P2 (cross-origin img in optimizing blocks)" },
+  "siblings": { "converted": [], "gaps": {}, "lintRed": {}, "sampled": null, "contentDiffRed": 0, "note": "single-page family" },
+  "requests": []
 }

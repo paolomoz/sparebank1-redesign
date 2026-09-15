@@ -2,24 +2,24 @@
   "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
   "edsUrl": "http://localhost:3020/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan",
   "protoUrl": "http://localhost:8820/nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html-proposed.html",
-  "at": "2026-09-14T22:04:42.379Z",
+  "at": "2026-09-15T14:24:06.381Z",
   "pixel": {
     "360": {
-      "pct": 0.12,
+      "pct": 0.15,
       "heightDelta": 0,
       "compared": {
         "width": 360,
-        "height": 3620
+        "height": 3322
       },
       "pass": true,
       "hot": []
     },
     "1440": {
-      "pct": 0.15,
+      "pct": 0.13,
       "heightDelta": 0,
       "compared": {
         "width": 1440,
-        "height": 2336
+        "height": 2292
       },
       "pass": true,
       "hot": []
@@ -27,43 +27,43 @@
   },
   "chrome": {
     "360": {
-      "header": 99.66,
+      "header": 100,
       "footer": 100,
       "headerH": {
-        "proto": 61,
-        "eds": 61
+        "proto": 68,
+        "eds": 68
       },
       "footerH": {
-        "proto": 1861,
-        "eds": 1861
+        "proto": 1462,
+        "eds": 1462
       },
       "footerY": {
-        "proto": 1759,
-        "eds": 1759
+        "proto": 1859,
+        "eds": 1859
       },
       "doc": {
-        "proto": 3620,
-        "eds": 3620
+        "proto": 3322,
+        "eds": 3322
       }
     },
     "1440": {
-      "header": 99.96,
-      "footer": 99.89,
+      "header": 99.74,
+      "footer": 100,
       "headerH": {
-        "proto": 110,
-        "eds": 110
+        "proto": 112,
+        "eds": 112
       },
       "footerH": {
-        "proto": 917,
-        "eds": 917
+        "proto": 792,
+        "eds": 792
       },
       "footerY": {
-        "proto": 1419,
-        "eds": 1419
+        "proto": 1500,
+        "eds": 1500
       },
       "doc": {
-        "proto": 2336,
-        "eds": 2336
+        "proto": 2292,
+        "eds": 2292
       }
     }
   },
@@ -73,8 +73,8 @@
     "amber": 17,
     "orange": 12,
     "summary": [
-      "  EDS: 44 text nodes — 1 headings, 0 eyebrows, 13 CTAs, 30 body; 1 img",
-      "  editable texts (outermost h*/p/ul/ol): proto 6 / EDS 12"
+      "  EDS: 44 text nodes — 2 headings, 0 eyebrows, 13 CTAs, 29 body; 1 img",
+      "  editable texts (outermost h*/p/ul/ol): proto 7 / EDS 12"
     ]
   },
   "pass": true

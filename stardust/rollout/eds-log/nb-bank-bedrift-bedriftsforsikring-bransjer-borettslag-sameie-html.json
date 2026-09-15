@@ -13,13 +13,14 @@
   {
    "module": "page-title",
    "blocks": [
+    "hero",
     "breadcrumbs"
    ]
   },
   {
    "module": "content-columns",
    "blocks": [
-    "columns"
+    "cards"
    ]
   },
   {
@@ -58,20 +59,22 @@
   }
  ],
  "blocks": [
+  "hero",
   "breadcrumbs",
-  "columns",
-  "callout",
   "cards",
+  "callout",
+  "columns",
   "feedback"
  ],
  "notes": [
-  "content-columns (sheets): columns (sheets) — one row, one cell per sheet [illustration, h2, paragraphs, link list]; the trailing compare link is default content",
-  "callout (offer): variant `offer` = callout with a CTA pill (callout-theme.css restores the canon p + p 16 px before the pill)",
+  "page-title (bento hero card): breadcrumbs + hero (theme) — one text cell [h1, lead]; the block moves the back link into the Frost card spanning 12",
+  "content-columns (bento sheets): cards (sheets spot grid-2) — one row per sheet [illustration][h2, paragraphs, arrow-link list with descriptions]; the trailing compare link is default content (style compare-link)",
+  "callout (band card): callout (band) — one cell [h2, paragraph, action pill]; the block paints icon · text · action in one row spanning 12 (the bulb is block chrome)",
   "split-media (illustration): variant illustration — SVG media kept at its own ratio (no 3:2 crop / paper)",
-  "cta-row (claim): default content (icon, title line, primary pill) with the `claim` section style (styles-theme.css) — a prose composition, not a block (D1)",
+  "cta-row (claim): default content (icon, title line, primary pill) with the `claim` section style (styles-theme.css paints the Frost band card) — a prose composition, not a block (D1)",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T23:40:48.259Z"
+ "writtenAt": "2026-09-15T15:02:42.464Z"
 }

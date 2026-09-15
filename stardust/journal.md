@@ -150,3 +150,22 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Blocks:** 17 (11 Block Collection names reused: header, footer, fragment, hero, cards, columns, accordion, table, breadcrumbs, video, embed; 6 bespoke: bank-router, feedback, callout, calculator, cobranding, converter). David's-Model lint 0 🔴 on 100/100 documents.
 
 **Open (owner batch, dynamics/parity.json):** bank lookup API (#1), calculator/converter APIs (#7–#9), feedback endpoint (#5), boost.ai chat, Launch/CMP, site search (#20), currency rates, regional/nynorsk trees. **Customer configuration:** tools.aem.live site config (auto-created from fstab, review before production), font licence (A5) for the self-hosted SpareBank1 woff2, favicon vector source, calculator API CORS, image rehosting decision (public DAM URLs today), the four nettsider-frontend pages' minimal nav (E2).
+
+## 2026-09-15 — round 01 redesign: prototypes re-crafted, canon promoted, EDS delivery layer ported (in progress)
+
+**Prompt (Paolo):** the redesign was "too similar to the original". Round 01 = a reference-composition brief (Danske Bank `danskebank.dk/privat` → card design, bento, 6 px gutters, 2 px corners, header/footer layout; Ramp `ramp.com` → type scale, page width, 6 px borderless buttons; SpareBank 1 fonts, colours and verbatim IA kept). Variant C of the home prototype chosen; "re-craft the remaining eleven archetypes, then run migrate and roll out".
+
+**Done so far**
+- Direction rewritten as reference→aspects tuples (`stardust/direction.md` § Active direction 2026-09-15); DESIGN.md / DESIGN.json rewritten to the round-01 system; measured reference specs in `stardust/prototypes/round-01-danske-ramp/refs/`.
+- Canon source `stardust/scripts/proto/chrome.mjs` ported (tokens, base CSS, two-tier sticky header, router band/tile, Sand-70 contact band inside `<footer>`, Fjell footer grid, hover system); `extract-canon.mjs` now refreshes renderings on re-approval (pinned/moves still data-in-script — see the sparebank1 notes file).
+- 13/13 archetype modules re-crafted (home + boliglån by the lead; hub / story / theme+om-oss by three workers — reports `stardust/prototypes/round-01-danske-ramp/recraft-*.md`). All 13 PASS `validate-prototype` (0 P0/P1) and `content-check` (verbatim). Home + boliglån approved and canon regenerated; the other 11 await approval after their EDS gates.
+- EDS foundation ported: `styles/styles.css`, `blocks/{header,footer,bank-router}` (JS + CSS), base `blocks/{hero,cards,columns}` (JS + CSS), `feedback`, `accordion`, `calculator` CSS; all 45 round-0 group variant stylesheets reset to comments (re-added additively per family). Core encoders adapted to bento markup (`hero-bento`, nested `.card-body` lists, `.promo-art` sibling images, `.bento` split cells, `full-bleed` section style, hero back-link dedupe); product encoder handles `.promo-row`.
+- Local emulation gates (prototype ↔ `localhost:3020`): **home PASS** 1440 0.92 % / Δh 6 · 360 3.7 % / Δh 2, chrome ≥ 99.5 %; **boliglån PASS** 1440 1.43 % / Δh 3 · 360 7.81 % / Δh −2, chrome 100 %.
+
+**Traps met (for the plugin notes)**
+- The prototype footer landmark had to absorb the contact band so the gate's footer crop compares like with like (EDS footer block = contact + Fjell).
+- The `<img height>` attribute beats CSS `aspect-ratio` unless `height:auto` is set; the landscape SVG became the LCP when the router went full width (eager required).
+- Group CSS from round 0 overrode the new base (`cols-N` column templates vs the 12-col bento; `.card-body` paddings); resetting the group files and scoping every family rule to the template body class is the working discipline.
+- zsh word-splitting again (`${=ARCH}`), and `shot.mjs` cannot run in parallel instances (execution context destroyed).
+
+**Next:** workers finish the 11 archetypes (encoders + group CSS + gates + siblings) → `migrate.mjs --all --force` → `convert.mjs --all` → rasterise → sanitise → `deploy-batch.mjs` publish → published-origin gates ×13 → verify → journal + commit.

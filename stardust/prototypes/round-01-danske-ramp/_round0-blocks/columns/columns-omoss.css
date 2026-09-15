@@ -1,0 +1,75 @@
+/* columns — omoss family group additions (additive variants only; imported by columns.css) */
+
+/* ===== om-oss: `promo lokale` — 200px spot illustration beside prose-width text (the presse `lokale` movement) ===== */
+.columns.promo.lokale .split-row { grid-template-columns: 200px minmax(0, 68ch); justify-content: start; gap: var(--spacing-xl); align-items: center; }
+.columns.promo.lokale .col-media img { width: 200px; height: 200px; }
+.columns.promo.lokale .col-text { gap: var(--spacing-md); max-width: none; }
+.columns.promo.lokale .col-text :is(h2, h3) { font-family: var(--heading-font-family); font-size: var(--t-headline-sm); line-height: 1.15; }
+.columns.promo.lokale .col-text .cta-row { margin-top: 0; } /* proto: .lok-text p+p{margin-top:0} wins over .lok-cta */
+
+/* ===== om-oss: `split text-first presserom` — text 5 / photo 7, body-size lead, pill + inline link 8px below ===== */
+.columns.split.text-first.presserom .split-row { grid-template-columns: 5fr 7fr; }
+.columns.split.presserom .col-text { max-width: 68ch; }
+.columns.split.presserom .lead-wrap p { font-size: var(--body); line-height: var(--line-height-body); max-width: none; }
+.columns.split.presserom .col-text .cta-row { margin-top: var(--spacing-sm); gap: var(--spacing-sm); }
+
+/* ===== om-oss: `om-oss` — the walker's two-up (.cols): equal columns, 48/64 gaps, centred; `spot` = 320px spot illustration,
+   photo = one-corner-pair 96px mask; `panel` = the second column is a Sand-30 paper (`plain` = white with hairline) ===== */
+.columns.om-oss .split-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--spacing-xl) var(--spacing-2xl); align-items: center; }
+.columns.om-oss .col-text { gap: var(--spacing-md); max-width: 68ch; }
+.columns.om-oss .col-text :is(h1, h2, h3) + p { margin-top: calc(-1 * var(--spacing-sm)); }
+.columns.om-oss .col-text h1 + p { margin-top: 0; font-size: var(--lead); line-height: 1.5; }
+.columns.om-oss .col-text .cta-row { margin-top: var(--spacing-sm); }
+.columns.om-oss .col-media img.photo { border-radius: var(--radius-img) 0 var(--radius-img) 0; }
+.columns.om-oss.spot .col-media { display: grid; justify-items: center; }
+.columns.om-oss.spot .col-media img.photo { width: min(100%, 320px); height: auto; aspect-ratio: 1; object-fit: contain; border-radius: 0; background: transparent; }
+.columns.om-oss.panel .col-text:last-child { padding: var(--spacing-lg); background: var(--sand-30); border-radius: var(--radius); align-self: start; }
+.columns.om-oss.panel.plain .col-text:last-child { background: #fff; border: 1px solid var(--lysgraa); }
+.columns.om-oss.panel .col-text:last-child p:has(> picture:only-child) { line-height: 0; }
+.columns.om-oss.panel .col-text:last-child img { width: min(100%, 320px); height: auto; margin-inline: auto; }
+.columns.om-oss .col-text :is(h2, h3) { text-wrap: balance; }
+
+/* ===== markedsnytt-listing: `expert` — 260px portrait column (200px circle, or a 160px spot illustration) with caption, text beside ===== */
+.columns.expert .container { gap: var(--spacing-2xl); }
+.columns.expert .split-row { grid-template-columns: 260px minmax(0, 1fr); gap: var(--spacing-xl); align-items: start; }
+.columns.expert .col-media { display: grid; gap: var(--spacing-md); justify-items: start; }
+.columns.expert .col-media img.photo { width: 200px; height: 200px; aspect-ratio: 1; border-radius: 50%; object-fit: cover; background: var(--frost-30); }
+.columns.expert .col-media img.photo[src$=".svg"] { width: 160px; height: 160px; border-radius: 0; background: transparent; object-fit: contain; }
+.columns.expert .col-caption p { margin: 0; font-size: var(--body); line-height: 1.45; color: var(--koksgraa); }
+.columns.expert .col-caption p + p { margin-top: var(--spacing-xs); font-size: var(--body-sm); }
+.columns.expert .col-caption strong { display: block; color: var(--fjell); }
+.columns.expert .col-text { max-width: 68ch; }
+.columns.expert .col-text h3 { max-width: 24ch; }
+.columns.expert .col-text .cta-row { margin-top: var(--spacing-sm); gap: var(--spacing-sm); }
+.columns.expert .cta-row p:not(.button-wrapper) a:any-link { padding-inline: 0; }
+
+/* canon external-link glyph on off-site CTAs (presserom, expert rows) */
+.columns.presserom .cta-row a.button[href^="http"]:not([href*="sparebank1.no"]),
+.columns.expert .cta-row a.button[href^="http"]:not([href*="sparebank1.no"])::after { content: ""; flex: 0 0 auto; width: 20px; height: 20px; background: currentcolor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5'/%3E%3C/svg%3E") center / contain no-repeat; }
+.columns.expert .cta-row p:not(.button-wrapper) a[href^="http"]:not([href*="sparebank1.no"])::after { content: ""; flex: 0 0 auto; width: 20px; height: 20px; background: currentcolor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5'/%3E%3C/svg%3E") center / contain no-repeat; }
+
+/* ===== markedsnytt-listing: `text` — two running-text columns (the regulatory fine print): block-lead strongs, links in place ===== */
+.columns.text .split-row { grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); align-items: start; }
+.columns.text .col-text { gap: 0; max-width: 60ch; }
+.columns.text .col-text p + p { margin-top: var(--spacing-lg); }
+.columns.text .col-text p + p:has(> a:only-child) { margin-top: var(--spacing-sm); }
+.columns.text .col-text strong { display: block; color: var(--fjell); }
+
+@media (width <= 1023px) {
+  .columns.split.text-first.presserom .split-row { grid-template-columns: 1fr; gap: var(--spacing-lg); }
+  .columns.split.presserom .col-media { order: -1; max-width: none; }
+  .columns.om-oss .split-row { grid-template-columns: 1fr; gap: var(--spacing-xl); }
+  .columns.om-oss .col-media { max-width: 600px; }
+  .columns.expert .container { gap: var(--spacing-xl); }
+  .columns.expert .split-row { grid-template-columns: 1fr; gap: var(--spacing-lg); }
+  .columns.expert .col-media { grid-template-columns: auto 1fr; align-items: center; }
+}
+
+@media (width <= 640px) {
+  .columns.promo.lokale .split-row { grid-template-columns: 1fr; gap: var(--spacing-lg); }
+  .columns.promo.lokale .col-media img { width: 140px; height: 140px; }
+  .columns.expert .col-media { grid-template-columns: 1fr; }
+  .columns.expert .col-media img.photo { width: 120px; height: 120px; }
+  .columns.expert .col-media img.photo[src$=".svg"] { width: 120px; height: 120px; }
+  .columns.text .split-row { grid-template-columns: 1fr; }
+}

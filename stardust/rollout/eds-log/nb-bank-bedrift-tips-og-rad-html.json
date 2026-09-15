@@ -20,7 +20,8 @@
   {
    "module": "page-title",
    "blocks": [
-    "breadcrumbs"
+    "breadcrumbs",
+    "hero"
    ]
   },
   {
@@ -38,10 +39,13 @@
  ],
  "blocks": [
   "breadcrumbs",
+  "hero",
   "cards"
  ],
- "notes": [],
+ "notes": [
+  "page-title: hero (hub text-only) — one text card across 12; h1, leads and CTAs are the text cell, the back link rides the breadcrumbs block (moved into the card by hero.js)"
+ ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T23:40:48.407Z"
+ "writtenAt": "2026-09-15T15:02:42.857Z"
 }

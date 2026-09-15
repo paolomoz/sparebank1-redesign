@@ -1,0 +1,7 @@
+/* feedback — story family group additions (additive variants only; imported by feedback.css) */
+
+/* inline (faq question): the strip lives inside the answer column — hairline top, question label in the title face, small pills with labels */
+.feedback.inline .feedback-row { width: min(100%, 85ch); padding-top: var(--spacing-lg); border-top: 1px solid var(--lysgraa); gap: 8px 16px; justify-content: flex-start; }
+.feedback.inline .feedback-q p { font-family: var(--title-font-family); font-size: var(--body); line-height: var(--line-height-body); color: var(--fjell); letter-spacing: normal; }
+.feedback.inline button.thumb { min-height: 40px; min-width: 0; padding: 8px 18px; font-size: var(--body-sm); gap: 8px; }
+.feedback.inline button.thumb svg { width: 20px; height: 20px; }

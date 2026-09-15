@@ -20,26 +20,23 @@
   "clientlib": "frontend"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "713a71886ff8ef65",
-  "sourceProposedSha": "6f7480c7673ef9db",
+  "sourceProposedSha": "0446e51a97c72be6",
   "archetypeSha": null,
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
- "deviations": [
-  "a.badge ×2 (now canon .badge)",
-  "ul.rail-list 24px mask on 120px thumbs"
- ],
+ "deviations": [],
  "migrationDecisions": [
   {
    "kind": "media-reuse",
@@ -62,7 +59,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 26,
+ "linksRewritten": 27,
  "metadata": {
   "title": "Ditt neste bankkort er laget av resirkulert plast | SpareBank 1",
   "description": "Det produseres om lag 10 millioner debet- og kredittkort i Norge hvert år, og alle kortene bruker nyprodusert plast. Ny teknologi åpner nå for bruk av resirkulert plast. SpareBank 1 har allerede sendt ut de første, resirkulerte kortene til våre kunder.&nbsp;\n",
@@ -73,7 +70,7 @@
   "adapt": {
    "viewport": true,
    "media": 11,
-   "narrowest": 400
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -84,11 +81,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:17.500Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:11.678Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "713a71886ff8ef65",
- "sourceProposedSha": "6f7480c7673ef9db",
+ "sourceProposedSha": "0446e51a97c72be6",
  "archetypeSha": null,
  "assetsBundled": 3
 }

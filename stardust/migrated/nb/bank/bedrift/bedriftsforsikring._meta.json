@@ -26,20 +26,20 @@
   "clientlib": "base"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "82b115cdaef17238",
   "sourceProposedSha": null,
-  "archetypeSha": "bc66c28729377c77",
+  "archetypeSha": "bdeea1e22750ac01",
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
  "deviations": [],
@@ -168,7 +168,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 27,
+ "linksRewritten": 28,
  "metadata": {
   "title": "Bedriftsforsikring | Næringslivsforsikring | SpareBank 1",
   "description": "Bedriftsforsikringer trygger bedriftens og de ansattes fremtid. Få tilbud og pris på skreddersydde næringsforsikringer.",
@@ -178,8 +178,8 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 16,
-   "narrowest": 400
+   "media": 15,
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -190,11 +190,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:12.244Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:05.904Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "82b115cdaef17238",
  "sourceProposedSha": null,
- "archetypeSha": "bc66c28729377c77",
+ "archetypeSha": "bdeea1e22750ac01",
  "assetsBundled": 3
 }

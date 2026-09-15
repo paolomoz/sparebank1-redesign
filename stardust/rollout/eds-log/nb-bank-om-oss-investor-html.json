@@ -43,6 +43,7 @@
   "feedback"
  ],
  "notes": [
+  "campaign (hero bento): hero (om-oss) — [photo][h1, lead]; variant om-oss puts the photo card left (7) and the Frost text card right (5)",
   "media: lyspare-og-mobilskjerm-med-data-mobil-grafer-lys-mork-bakgrunn.svg is 273127 B of SVG (> 40000) — authored as DA media lyspare-og-mobilskjerm-med-data-mobil-grafer-lys-mork-bakgrunn.png",
   "lint D1 tabs: dynamics #11 interim — the tab buttons are a jump list of badges (default content, style tabs); each panel is a following section (h2 + accordion)",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
@@ -51,5 +52,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2024/lyspare-og-mobilskjerm-med-data-mobil-grafer-lys-mork-bakgrunn.svg"
  ],
- "writtenAt": "2026-09-14T23:40:48.434Z"
+ "writtenAt": "2026-09-15T15:02:42.915Z"
 }

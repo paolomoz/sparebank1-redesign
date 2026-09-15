@@ -1,56 +1,64 @@
-/* styles — omoss family group section styles (closed-set additions only; imported by styles.css) */
+/* styles-omoss.css — round 01: reset on 2026-09-15. The round-0 group variants conflicted with the bento card language now painted by the base block CSS; family variants are re-added here only when a re-crafted archetype needs them (additive, measured against its prototype). */
 
 /* ===== om-oss ===== */
-/* contacts — the presse `nasjonale` head: h2 + lead (phone number in tabular medium) + a small muted note */
-main .section.contacts .default-content-wrapper :is(h1, h2) + p { font-size: var(--lead); line-height: 1.5; max-width: 60ch; font-variant-numeric: tabular-nums; }
-main .section.contacts .default-content-wrapper :is(h1, h2) + p + p { margin-top: var(--spacing-md); font-size: var(--body-sm); line-height: 1.45; color: var(--koksgraa); } /* canon p + p on top of the prose gap */
-
-/* hairline-none — a feedback band directly under a Sand paper: the paper edge marks the movement, no hairline (presse) */
-main .section.feedback-band.hairline-none { border-top: 0; }
-
-/* prose-run — long-form running text (selskapsinformasjon, generelle vilkår): heading rhythm on top of the 16px prose gap */
-main .section.prose-run .default-content-wrapper > h2 { margin-top: var(--spacing-xl); }
-main .section.prose-run .default-content-wrapper > :is(h3, h4) { margin-top: var(--spacing-sm); }
-main .section.prose-run .default-content-wrapper > h3 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
-main .section.prose-run .default-content-wrapper > h4 { font-size: var(--body); line-height: 1.4; }
-main .section.prose-run .default-content-wrapper > :is(h1, h2, h3, h4) + p { margin-top: calc(-1 * var(--spacing-sm)); }
-main .section.prose-run .default-content-wrapper > h1 + p { margin-top: 0; }
-main .section.prose-run .default-content-wrapper > :first-child { margin-top: 0; }
-
-/* tabs — dynamics #11 interim: the tab buttons are a jump list of badges above the in-page panels */
-main .section.tabs .default-content-wrapper > ul { display: flex; flex-wrap: wrap; gap: var(--spacing-sm); list-style: none; padding: 0; }
-main .section.tabs .default-content-wrapper > ul li::marker { content: ""; }
-main .section.tabs .default-content-wrapper > ul a:any-link { display: inline-flex; align-items: center; min-height: 32px; padding: 4px 12px; border-radius: var(--radius-pill); background: var(--frost-30); color: var(--fjell); font-family: var(--title-font-family); font-size: var(--label); letter-spacing: 0.01em; text-decoration: none; transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease); }
-main .section.tabs .default-content-wrapper > ul a:hover { background: var(--vann); color: #fff; }
+/* contacts (presse): h2-l · lead with the phone number · small muted note, then the adviser rails 6 px apart */
+body.om-oss .section.contacts .default-content-wrapper > h2:first-child { font-size: var(--t-headline); line-height: 1.04; }
+body.om-oss .section.contacts .default-content-wrapper > h2 + p { font-size: var(--lead); line-height: 1.33; max-width: 60ch; margin-top: 4px; font-variant-numeric: tabular-nums; }
+body.om-oss .section.contacts .default-content-wrapper > h2 + p strong { font-family: var(--title-font-family); font-weight: 400; }
+body.om-oss .section.contacts .default-content-wrapper > h2 + p + p { font-size: var(--body-sm); line-height: 1.43; color: var(--moerkgraa); margin-top: var(--spacing-md); } /* the canon p + p 16 px on top of the 16 px grid gap */
+body.om-oss .section.contacts .cards-wrapper + .cards-wrapper { margin-top: var(--card-gap); }
 
 /* ===== markedsnytt-listing ===== */
-/* head-xl — the markedsnytt section title sits 48px above its block */
-main .section.head-xl .default-content-wrapper + div { margin-top: var(--spacing-xl); }
+/* bento-join: the article rail continues the hero bento (6 px, not a movement gap) */
+body.markedsnytt-listing .section.bento-join { padding-top: var(--card-gap); }
+/* video-row (webinar rows): the section is the bento — text card 5 (default content on Sand-70) + the auto-blocked embed as the Frost video card 7 */
+body.markedsnytt-listing .section.video-row { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--card-gap); align-items: stretch; width: min(100% - 2 * var(--gutter), var(--max-width) - 2 * var(--gutter)); margin-inline: auto; padding-top: var(--card-gap); }
+body.markedsnytt-listing .section.video-row + .section.video-row { padding-top: calc(2 * var(--card-gap)); } /* the canon .rows gap + .bento + .bento = 12 px */
+body.markedsnytt-listing .section.flush-bottom + .section.video-row { padding-top: var(--spacing-lg); } /* the section title's 24 px */
+body.markedsnytt-listing .section.video-row > div { width: 100%; margin: 0; }
+body.markedsnytt-listing .section.video-row > .default-content-wrapper { grid-column: 1 / span 5; grid-row: 1; align-content: center; gap: var(--spacing-md); padding: 48px; background: var(--card-tint); border-radius: var(--radius); }
+body.markedsnytt-listing .section.video-row > .default-content-wrapper h3 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.17; max-width: 24ch; }
+body.markedsnytt-listing .section.video-row > .default-content-wrapper h2 { font-family: var(--heading-font-family); font-size: var(--t-title); line-height: 1.14; max-width: 24ch; text-align: left; margin: 0; }
+body.markedsnytt-listing .section.video-row > .default-content-wrapper h3 + h3 { margin-top: calc(-1 * var(--spacing-sm)); }
+body.markedsnytt-listing .section.video-row > .default-content-wrapper :is(ul, ol) { padding-left: 1.2em; }
+body.markedsnytt-listing .section.video-row > .default-content-wrapper li + li { margin-top: var(--spacing-sm); }
+body.markedsnytt-listing .section.video-row > .default-content-wrapper p.button-wrapper,
+body.markedsnytt-listing .section.video-row > .default-content-wrapper p:has(> a:only-child):not(.button-wrapper) { margin-top: var(--spacing-sm); }
+body.markedsnytt-listing .section.video-row > .default-content-wrapper p:has(> a:only-child):not(.button-wrapper) a:any-link { display: inline-flex; align-items: center; gap: 10px; min-height: 40px; padding: 8px 0; text-decoration: none; color: var(--vann); line-height: 1.5; }
+body.markedsnytt-listing .section.video-row > .default-content-wrapper p:has(> a:only-child):not(.button-wrapper) a:hover { color: var(--fjell); }
+body.markedsnytt-listing .section.video-row > .default-content-wrapper a.button[href^="http"]:not([href*="sparebank1.no"])::after { content: ""; width: 18px; height: 18px; flex: none; background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5'/></svg>") center / contain no-repeat; }
+body.markedsnytt-listing .section.video-row > .embed-wrapper { grid-column: 6 / -1; grid-row: 1; display: flex; min-height: 380px; background: var(--frost-30); border-radius: var(--radius); overflow: hidden; transition: background-color 0.35s var(--ease); }
+body.markedsnytt-listing .section.video-row > .embed-wrapper:hover,
+body.markedsnytt-listing .section.video-row > .embed-wrapper:focus-within { background: #cbe1ee; }
+body.markedsnytt-listing .section.video-row .embed { width: 100%; display: flex; }
+body.markedsnytt-listing .section.video-row .embed .video-frame { flex: 1 1 auto; aspect-ratio: 16 / 9; display: grid; background: transparent; border: 0; border-radius: 0; }
+body.markedsnytt-listing .section.video-row .embed .video-link { gap: var(--spacing-md); padding: var(--spacing-lg); }
+body.markedsnytt-listing .section.video-row .embed .video-link > svg { width: 64px; height: 64px; stroke-width: 1.5; transition: transform 0.5s var(--spring); }
+body.markedsnytt-listing .section.video-row .embed .video-title p { line-height: var(--line-height-body); }
+body.markedsnytt-listing .section.video-row .embed .video-frame:hover .video-link { background: transparent; }
+body.markedsnytt-listing .section.video-row .embed .video-frame:hover .video-link > svg { transform: scale(1.08); }
+/* fineprint: the regulatory heading is a left-aligned h2-s */
+body.markedsnytt-listing .section.fineprint .default-content-wrapper > h2:only-child { font-family: var(--title-font-family); font-size: var(--t-title); line-height: 1.14; text-align: left; margin-inline: 0; max-width: none; }
 
-/* video-row — one webinar row: running text left, the auto-blocked embed right (equal columns, tops aligned);
-   the row follows its section head (48px) or the previous row (64px) on the same paper */
-main .section.video-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: var(--spacing-xl); align-items: start; padding-inline: max(var(--gutter), (100% - var(--max-width)) / 2); padding-top: var(--spacing-xl); }
-main .section.video-row + .section.video-row { padding-top: var(--spacing-2xl); }
-main .section.video-row > div { width: auto; margin: 0; }
-main .section.video-row .default-content-wrapper h3 { max-width: 24ch; }
-main .section.video-row .default-content-wrapper h3 + h3 { margin-top: calc(-1 * var(--spacing-sm)); }
-main .section.video-row .default-content-wrapper h2 { font-size: var(--t-title); line-height: 1.2; max-width: 24ch; }
-main .section.video-row .default-content-wrapper :is(ul, ol) { padding-left: 1.2em; }
-main .section.video-row .default-content-wrapper li + li { margin-top: var(--spacing-sm); } /* canon .prose li + li on top of the list gap */
-main .section.video-row .default-content-wrapper p.button-wrapper { margin-top: var(--spacing-sm); }
-main .section.video-row .default-content-wrapper p:has(> a:only-child):not(.button-wrapper) { margin-top: var(--spacing-sm); }
-main .section.video-row .default-content-wrapper p:has(> a:only-child):not(.button-wrapper) a:any-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; text-decoration: none; font: var(--body) / 1.2 var(--body-font-family); }
-main .section.video-row .default-content-wrapper p:has(> a:only-child):not(.button-wrapper) a:hover { text-decoration: underline; color: var(--fjell); }
+@media (width <= 1024px) {
+  body.markedsnytt-listing .section.video-row > .default-content-wrapper { grid-column: 1 / -1; grid-row: 2; padding: 40px 32px; }
+  body.markedsnytt-listing .section.video-row > .embed-wrapper { grid-column: 1 / -1; grid-row: 1; min-height: 0; }
+}
 
-/* canon external-link glyph on the webinar CTAs (pill and inline link) — off-site hrefs only */
-main .section.video-row .default-content-wrapper a.button[href^="http"]:not([href*="sparebank1.no"])::after { content: ""; flex: 0 0 auto; width: 20px; height: 20px; background: currentcolor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5'/%3E%3C/svg%3E") center / contain no-repeat; }
-main .section.video-row .default-content-wrapper p:has(> a:only-child):not(.button-wrapper) a[href^="http"]:not([href*="sparebank1.no"])::after { content: ""; flex: 0 0 auto; width: 20px; height: 20px; background: currentcolor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5'/%3E%3C/svg%3E") center / contain no-repeat; }
+@media (width <= 767px) {
+  body.markedsnytt-listing .section.video-row > .default-content-wrapper { padding: 36px 20px; }
+  body.markedsnytt-listing .section .default-content-wrapper p.button-wrapper a.button { white-space: normal; }
+}
 
-/* fineprint — the regulatory foot: a title-sm h2 above two running-text columns */
-main .section.fineprint .default-content-wrapper h2 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
+/* WORKAROUND (chrome, see stardust/rollout/eds-requests.md § om-oss — presse): the om-oss footer (/footer-frontend-om-oss, no contact band) has no
+   top margin, while the prototype's footer sits --section-padding below the last movement (the privat footer gets it from .contact's margin-top).
+   Until the footer variant carries that margin, the last om-oss section pays it. Remove both rules when the footer is fixed. */
+/* (footer seam now carried by blocks/footer/footer.css: `.site-footer:first-child` margin) */
+body.om-oss main > .section.feedback-band:last-child { padding-bottom: calc(var(--spacing-xl) + var(--section-padding)); }
 
-@media (width <= 1023px) {
-  main .section.video-row { grid-template-columns: 1fr; row-gap: var(--spacing-lg); }
-  main .section.video-row .embed-wrapper { order: -1; max-width: 640px; }
-  main .section.video-row + .section.video-row { padding-top: var(--spacing-xl); }
+@media (width <= 767px) {
+  /* the canon .h2-l mobile leading on section titles and the contacts head */
+  body.om-oss .section .default-content-wrapper > h2:only-child,
+  body.markedsnytt-listing .section .default-content-wrapper > h2:only-child,
+  body.om-oss .section.contacts .default-content-wrapper > h2:first-child { line-height: 1.12; }
 }

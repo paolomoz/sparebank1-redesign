@@ -1,55 +1,65 @@
-/* cards — story family group additions (additive variants only; imported by cards.css) */
+/* cards-story.css — story group variants (round 01): news (listing grid + article rail) · slides (campaign offers).
+   Every rule is scoped to the family's template body class (`cards news` is shared with the market landing, which keeps the base
+   padding) and carries the variant class; desktop spans live in a min-width query so the base tablet/phone collapse rules stay in charge. */
 
-/* featured (news listing): one story, photo 7 / text 5 */
-.cards.featured ul.feat-grid { grid-template-columns: 1fr; }
-.cards.featured li.feat { grid-template-columns: 7fr 5fr; grid-template-rows: auto auto; gap: var(--spacing-md) var(--spacing-xl); align-items: center; }
-.cards.featured li.feat .card-media { grid-column: 1; grid-row: 1 / span 2; }
-.cards.featured li.feat .card-media img { aspect-ratio: 3 / 2; border-radius: var(--radius-img) 0 var(--radius-img) 0; }
-.cards.featured li.feat .card-title { grid-column: 2; grid-row: 1; align-self: end; }
-.cards.featured li.feat .card-title :is(h2, h3) { font-family: var(--heading-font-family); font-size: var(--t-title); line-height: 1.2; max-width: 22ch; letter-spacing: -0.005em; }
-.cards.featured li.feat .meta { grid-column: 2; grid-row: 2; align-self: start; }
+/* ===== news-article · news-listing (news cards) ===== */
+body.news-listing .cards.news .meta em + em::before,
+body.news-article .cards.news .meta em + em::before { content: "·"; margin-right: 14px; color: var(--graa); }
+body.news-listing .cards.news .meta em + em { font-variant-numeric: tabular-nums; }
 
-/* listing (news listing): 3 flat stories per row, title-font titles, meta line */
-.cards.listing ul.listing-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-xl); }
-.cards.listing li.news-item { gap: var(--spacing-md); }
-.cards.listing li.news-item .card-title :is(h2, h3) { font-family: var(--title-font-family); font-size: var(--lead); line-height: 1.3; letter-spacing: 0; text-wrap: pretty; }
-.cards.listing li.news-item .card-title + .meta { margin-top: calc(var(--spacing-sm) - var(--spacing-md)); }
-.cards.listing .meta p,
-.cards.featured .meta p { color: var(--moerkgraa); }
-.cards.listing .meta em + em::before,
-.cards.featured .meta em + em::before { content: "·"; margin-right: 12px; }
-
-/* rail (news article): one block = related stories (120px thumbs, 24px mask) + related tema pills */
-.cards.rail .rail { display: grid; gap: var(--spacing-xl); }
-.cards.rail .rail-group { display: grid; gap: var(--spacing-md); }
-.cards.rail .rail-head :is(h2, h3) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
-.cards.rail ul.rail-list { display: grid; gap: var(--spacing-md); list-style: none; margin: 0; padding: 0; }
-.cards.rail li.rail-item { position: relative; display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: var(--spacing-md); align-items: center; margin: 0; }
-.cards.rail li.rail-item .card-media img { width: 120px; aspect-ratio: 3 / 2; border-radius: 24px 0 24px 0; }
-.cards.rail li.rail-item .card-title :is(h2, h3) { font-family: var(--title-font-family); font-size: var(--body); line-height: 1.35; letter-spacing: 0; text-wrap: pretty; }
-.cards.rail li.rail-item .card-title a::after { content: ""; position: absolute; inset: 0; }
-.cards.rail .tema ul { display: flex; flex-wrap: wrap; gap: var(--spacing-sm); list-style: none; margin: 0; padding: 0; }
-.cards.rail .tema li { margin: 0; }
-.cards.rail .tema a:any-link { display: inline-flex; align-items: center; min-height: 32px; padding: 4px 12px; border-radius: var(--radius-pill); background: var(--frost-30); color: var(--fjell); font-family: var(--title-font-family); font-size: var(--label); letter-spacing: 0.01em; text-decoration: none; transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease); }
-.cards.rail .tema a:hover { background: var(--vann); color: #fff; }
-
-@media (width <= 1023px) {
-  .cards.featured li.feat { grid-template-columns: 1fr; grid-template-rows: auto auto auto; gap: var(--spacing-md); align-items: start; }
-  .cards.featured li.feat .card-media { grid-row: 1; margin-bottom: var(--spacing-sm); }
-  .cards.featured li.feat .card-title { grid-column: 1; grid-row: 2; }
-  .cards.featured li.feat .meta { grid-column: 1; grid-row: 3; }
-  .cards.listing ul.listing-grid { grid-template-columns: 1fr 1fr; }
-  .cards.rail ul.rail-list { grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); }
+@media (width > 1024px) {
+  /* related rail spans (the prototype's railSpans(n)): ≤ 4 share the row, multiples of 4 run 4-up, else rows of 3 + wide remainder */
+  body.news-article .cards.news.rail ul.cards-list > li { grid-column: span 4; }
+  body.news-article .cards.news.rail ul[data-items="1"] > li { grid-column: 1 / -1; }
+  body.news-article .cards.news.rail ul[data-items="2"] > li { grid-column: span 6; }
+  body.news-article .cards.news.rail ul[data-items="4"] > li,
+  body.news-article .cards.news.rail ul[data-items="8"] > li,
+  body.news-article .cards.news.rail ul[data-items="12"] > li { grid-column: span 3; }
+  body.news-article .cards.news.rail ul[data-items="5"] > li:nth-child(n+4),
+  body.news-article .cards.news.rail ul[data-items="11"] > li:nth-child(n+10) { grid-column: span 6; }
+  body.news-article .cards.news.rail ul[data-items="7"] > li:nth-child(n+7),
+  body.news-article .cards.news.rail ul[data-items="10"] > li:nth-child(n+10) { grid-column: 1 / -1; }
+  /* wide = photo-left card */
+  body.news-article .cards.news.rail ul[data-items="1"] > li,
+  body.news-article .cards.news.rail ul[data-items="2"] > li,
+  body.news-article .cards.news.rail ul[data-items="5"] > li:nth-child(n+4),
+  body.news-article .cards.news.rail ul[data-items="7"] > li:nth-child(n+7),
+  body.news-article .cards.news.rail ul[data-items="10"] > li:nth-child(n+10),
+  body.news-article .cards.news.rail ul[data-items="11"] > li:nth-child(n+10) { flex-direction: row; }
+  body.news-article .cards.news.rail ul[data-items="1"] > li > .card-media,
+  body.news-article .cards.news.rail ul[data-items="2"] > li > .card-media,
+  body.news-article .cards.news.rail ul[data-items="5"] > li:nth-child(n+4) > .card-media,
+  body.news-article .cards.news.rail ul[data-items="7"] > li:nth-child(n+7) > .card-media,
+  body.news-article .cards.news.rail ul[data-items="10"] > li:nth-child(n+10) > .card-media,
+  body.news-article .cards.news.rail ul[data-items="11"] > li:nth-child(n+10) > .card-media { width: 46%; flex: none; align-self: stretch; aspect-ratio: 16 / 9; }
+  body.news-article .cards.news.rail ul[data-items="1"] > li > .card-body,
+  body.news-article .cards.news.rail ul[data-items="2"] > li > .card-body,
+  body.news-article .cards.news.rail ul[data-items="5"] > li:nth-child(n+4) > .card-body,
+  body.news-article .cards.news.rail ul[data-items="7"] > li:nth-child(n+7) > .card-body,
+  body.news-article .cards.news.rail ul[data-items="10"] > li:nth-child(n+10) > .card-body,
+  body.news-article .cards.news.rail ul[data-items="11"] > li:nth-child(n+10) > .card-body { justify-content: center; }
+  body.news-article .cards.news.rail .card-media picture { height: 100%; }
+  body.news-article .cards.news.rail .card-media img.card-image { height: 100%; }
 }
 
-@media (width <= 640px) {
-  .cards.listing ul.listing-grid { grid-template-columns: 1fr; gap: var(--spacing-lg); }
-  .cards.listing li.news-item { grid-template-columns: 120px minmax(0, 1fr); grid-template-areas: "img title" "img meta"; gap: 0 var(--spacing-md); align-items: start; }
-  .cards.listing li.news-item .card-media { grid-area: img; }
-  .cards.listing li.news-item .card-media img { width: 120px; border-radius: 24px 0 24px 0; }
-  .cards.listing li.news-item .card-title { grid-area: title; }
-  .cards.listing li.news-item .card-title :is(h2, h3) { font-size: var(--body); line-height: 1.35; }
-  .cards.listing li.news-item .meta,
-  .cards.listing li.news-item .card-title + .meta { grid-area: meta; margin-top: var(--spacing-sm); }
-  .cards.rail ul.rail-list { grid-template-columns: 1fr; }
+/* ===== campaign-landing (offer slides): the two CTAs wrap like the prototype's flex .actions row ===== */
+body.campaign-landing .cards.slides ul.cards-list > li .card-body { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; align-content: flex-start; column-gap: var(--spacing-lg); padding: 32px 28px 40px; }
+body.campaign-landing .cards.slides .card-body > * { flex: 0 0 100%; }
+body.campaign-landing .cards.slides .card-body > .card-link { flex: 0 0 auto; max-width: 100%; margin-top: var(--spacing-lg); }
+body.campaign-landing .cards.slides .card-body > .card-link + .card-link { margin-top: 12px; }
+body.campaign-landing .cards.slides .card-text p { color: inherit; }
+body.campaign-landing .cards.slides .card-media img.card-image { aspect-ratio: 1 / 1; object-position: 50% 25%; }
+body.campaign-landing .cards.slides .card-link p { margin: 0; }
+body.campaign-landing .cards.slides .card-link p:not(.button-wrapper) a:any-link { display: inline-flex; align-items: center; gap: 10px; min-height: 40px; color: var(--vann); text-decoration: none; line-height: 1.5; }
+body.campaign-landing .cards.slides .card-link p:not(.button-wrapper) a::after { content: ""; width: 7px; height: 7px; border-top: 1.5px solid currentcolor; border-right: 1.5px solid currentcolor; transform: rotate(45deg); transition: transform 0.2s var(--ease); flex: none; }
+body.campaign-landing .cards.slides .card-link p:not(.button-wrapper) a:hover { color: var(--fjell); }
+body.campaign-landing .cards.slides .card-link p:not(.button-wrapper) a:hover::after { transform: translateX(4px) rotate(45deg); }
+
+@media (width <= 767px) {
+  body.news-listing .cards.news ul.news-grid li.card .card-body,
+  body.news-article .cards.news ul.news-grid li.card .card-body { padding: 28px 20px 32px; }
+  body.campaign-landing .cards.slides ul.cards-list > li .card-body { padding: 28px 20px 32px; }
+  body.campaign-landing .cards.slides .card-body > .card-link:has(a.button) { flex: 0 0 100%; }
+  body.campaign-landing .cards.slides .card-link p.button-wrapper,
+  body.campaign-landing .cards.slides .card-link a.button { width: 100%; }
 }

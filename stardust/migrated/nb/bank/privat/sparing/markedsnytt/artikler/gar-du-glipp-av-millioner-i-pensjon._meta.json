@@ -20,25 +20,23 @@
   "clientlib": "frontend"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "572aa6d580f2e7df",
   "sourceProposedSha": null,
-  "archetypeSha": "39e8754190ab4f72",
+  "archetypeSha": "1cccd5bb5f833697",
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
- "deviations": [
-  ".badge (local pill; canon lacks DESIGN.md § Badges)"
- ],
+ "deviations": [],
  "migrationDecisions": [
   {
    "kind": "media-reuse",
@@ -61,7 +59,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 35,
+ "linksRewritten": 36,
  "metadata": {
   "title": "Går du glipp av millioner i pensjon? – Mange får seg en overraskelse | SpareBank 1",
   "description": "De færreste av oss vet hvor mye arbeidsgiveren vår sparer for oss til pensjon. Forskjellen på de beste og dårligste tjenestepensjonsordningene kan faktisk utgjøre mange millioner kroner den dagen du slutter å jobbe. Har du råd til å la være å sjekke tallene dine?",
@@ -72,7 +70,7 @@
   "adapt": {
    "viewport": true,
    "media": 13,
-   "narrowest": 400
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -83,11 +81,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:31.950Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:28.190Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "572aa6d580f2e7df",
  "sourceProposedSha": null,
- "archetypeSha": "39e8754190ab4f72",
+ "archetypeSha": "1cccd5bb5f833697",
  "assetsBundled": 3
 }

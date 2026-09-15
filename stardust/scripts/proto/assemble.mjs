@@ -2,7 +2,7 @@
 // Renders a page module (stardust/scripts/proto/pages/<archetype>.mjs) against a captured page's DOM and wraps it in the
 // canon chrome. The module is the family renderer: `render({doc,pj,header,router,footer,slug,archetype})` → { main, css, … }.
 import path from 'node:path';
-import { loadDoc, pageJson, headerData, routerData, footerData, frontendFooter } from './data.mjs';
+import { loadDoc, pageJson, headerData, routerData, footerData, frontendFooter, withSocialIcons } from './data.mjs';
 import { favicon, skipLinks, headerHtml, routerHtml, footerHtml, navScript, cssBase, rootTokens, esc } from './chrome.mjs';
 
 export const yaml = (o, ind = '  ') => Object.entries(o).map(([k, v]) => Array.isArray(v) ? (v.length ? `${ind}${k}:\n${v.map((x) => `${ind}  - ${typeof x === 'string' ? x : JSON.stringify(x)}`).join('\n')}` : `${ind}${k}: []`) : (typeof v === 'object' && v !== null ? `${ind}${k}:\n${yaml(v, ind + '  ')}` : `${ind}${k}: ${v}`)).join('\n');
@@ -12,6 +12,7 @@ export async function loadModule(archetypeSlug) {
   return import(path.resolve(`stardust/scripts/proto/pages/${archetypeSlug}.mjs`));
 }
 
+const withFooterIcons = (f) => { if (f && f.columns) withSocialIcons(f.columns); return f; }; // module-built frontend footers get the same social-icon parity as the shared extractor
 /** Render `slug` through `mod` (the family renderer). Returns { html, page, data }. */
 export function assemble(slug, mod, { archetype = slug, provenanceHeader } = {}) {
   const doc = loadDoc(slug); const pj = pageJson(slug);
@@ -31,7 +32,7 @@ export function assemble(slug, mod, { archetype = slug, provenanceHeader } = {})
   writtenAt:         ${now}
   page:              ${slug}
   pageUrl:           ${pj.url}
-  againstDirection:  stardust/direction.md (Active 2026-09-14T21:10:00Z)
+  againstDirection:  stardust/direction.md (Active 2026-09-15T12:00:00Z — round 01 reference composition)
   readArtifacts:
     - stardust/current/pages/${slug}.json
     - stardust/current/pages/${slug}.html
@@ -43,7 +44,7 @@ export function assemble(slug, mod, { archetype = slug, provenanceHeader } = {})
   paletteSource:     inherited (_ffe-tokens.json), Mode A
   fidelity:          refined
   iaFidelity:        verbatim
-  surprise:          low
+  surprise:          medium
   reflexRejectAudit: { bypassed: true, reason: "Mode A pinned families" }
   copyCadenceBypass: { rules: [em-dash-overuse, marketing-buzzword, exclamation], basis: "all copy captured-verbatim" }
 ${yaml(prov)}
@@ -73,7 +74,7 @@ ${data.router && page.router !== false ? routerHtml(data.router) : ''}
 <main id="main-content" tabindex="-1">
 ${page.main}
 </main>
-${footerHtml(page.footer || data.footer)}
+${footerHtml(withFooterIcons(page.footer || data.footer))}
 ${navScript()}
 </body>
 </html>

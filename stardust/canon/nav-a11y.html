@@ -1,6 +1,6 @@
 <!-- stardust:canon
   writtenBy:        stardust:prototype --prep
-  writtenAt:        2026-09-14T20:36:44.364Z
+  writtenAt:        2026-09-15T11:32:59.473Z
   sourceSlug:       nb-bank-privat-html
   sourcePrototype:  stardust/prototypes/nb-bank-privat-html-proposed.html
   region:           nav-a11y script
@@ -8,12 +8,16 @@
 -->
 <script>
 (() => {
-  const t = document.getElementById('ds-nav-toggle');
-  const b = document.querySelector('.ds-nav-burger');
-  if (!t || !b) return;
-  const sync = () => b.setAttribute('aria-expanded', t.checked);
-  t.addEventListener('change', sync); sync();
-  b.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); t.checked = !t.checked; sync(); } });
-  addEventListener('keydown', e => { if (e.key === 'Escape' && t.checked) { t.checked = false; sync(); b.focus(); } });
+  const hdr = document.querySelector('.site-header'); if (!hdr) return;
+  const btn = hdr.querySelector('.menu-toggle'); const nav = document.getElementById('main-menu');
+  const setOpen = (o) => { hdr.classList.toggle('is-open', o); btn.setAttribute('aria-expanded', String(o)); document.documentElement.classList.toggle('no-scroll', o); };
+  btn.addEventListener('click', () => setOpen(!hdr.classList.contains('is-open')));
+  addEventListener('keydown', (ev) => { if (ev.key === 'Escape' && hdr.classList.contains('is-open')) { setOpen(false); btn.focus(); } });
+  nav.addEventListener('click', (ev) => { if (ev.target.closest('a') && hdr.classList.contains('is-open')) setOpen(false); });
+  // Sticky: hide on scroll-down, reveal only the main bar on scroll-up (settings bar stays hidden until the top).
+  let last = scrollY; const settings = () => hdr.querySelector('.settings-bar').getBoundingClientRect().height;
+  addEventListener('scroll', () => { const y = scrollY; if (hdr.classList.contains('is-open')) return;
+    if (y <= 0) hdr.style.transform = ''; else if (y > last && y > hdr.offsetHeight) hdr.style.transform = 'translateY(-100%)'; else if (y < last) hdr.style.transform = 'translateY(-' + settings() + 'px)';
+    last = y; }, { passive: true });
 })();
 </script>

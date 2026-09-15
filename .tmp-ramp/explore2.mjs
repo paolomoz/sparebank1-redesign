@@ -1,0 +1,42 @@
+import { chromium } from 'playwright';
+const browser = await chromium.launch();
+const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36', locale: 'en-US' });
+const page = await ctx.newPage();
+await page.goto('https://ramp.com/', { waitUntil: 'domcontentloaded', timeout: 90000 });
+await page.waitForTimeout(6000);
+// cookie banner (HubSpot)
+for (const s of ['#hs-eu-confirmation-button','#hs-eu-cookie-confirmation button','button:has-text("Accept")']) { const b = page.locator(s).first(); if (await b.count() && await b.isVisible().catch(()=>false)) { console.log('cookie click', s); await b.click().catch(()=>{}); await page.waitForTimeout(800); break; } }
+console.log('cookie banner still visible?', await page.locator('#hs-eu-cookie-confirmation').isVisible().catch(()=>'n/a'));
+const out = await page.evaluate(() => {
+  const all = [];
+  const walk = (root) => { root.querySelectorAll('*').forEach(el => { all.push(el); if (el.shadowRoot) walk(el.shadowRoot); }); };
+  walk(document);
+  const shadowHosts = all.filter(e=>e.shadowRoot).length;
+  const r = [`total=${all.length} shadowHosts=${shadowHosts} h1s=${all.filter(e=>e.tagName==='H1').length}`];
+  const vis = el => { const b = el.getBoundingClientRect(); return b.width>0 && b.height>0; };
+  const desc = el => { const cs = getComputedStyle(el); const b = el.getBoundingClientRect(); return `${el.tagName.toLowerCase()}.${[...el.classList].slice(0,3).join('.')} | ${cs.fontSize}/${cs.lineHeight} ${cs.fontWeight} ls=${cs.letterSpacing} tt=${cs.textTransform} ff=${cs.fontFamily.split(',')[0]} | x=${Math.round(b.x)} w=${Math.round(b.width)} y=${Math.round(b.y+scrollY)} h=${Math.round(b.height)} col=${cs.color} | "${(el.textContent||'').trim().slice(0,50).replace(/\s+/g,' ')}"`; };
+  r.push('--- HEADINGS');
+  all.filter(e=>/^H[1-6]$/.test(e.tagName) && vis(e)).forEach(el => r.push(desc(el)));
+  r.push('--- BUTTONS/LINKS styled');
+  all.filter(e=>(e.tagName==='A'||e.tagName==='BUTTON') && vis(e)).forEach(el => { const cs=getComputedStyle(el); if (cs.backgroundColor!=='rgba(0, 0, 0, 0)' || cs.borderTopWidth!=='0px' || parseFloat(cs.paddingLeft)>8) r.push(desc(el)+` bg=${cs.backgroundColor} br=${cs.borderTopLeftRadius} bw=${cs.borderTopWidth} bc=${cs.borderTopColor} pad=${cs.padding} cls=${[...el.classList].join(' ').slice(0,200)}`); });
+  r.push('--- NAV links');
+  all.filter(e=>e.tagName==='A' && vis(e) && e.closest('header,nav')).slice(0,20).forEach(el => r.push(desc(el)));
+  r.push('--- FOOTER links');
+  all.filter(e=>e.tagName==='A' && vis(e) && e.closest('footer')).slice(0,8).forEach(el => r.push(desc(el)));
+  r.push('--- P');
+  all.filter(e=>e.tagName==='P' && vis(e)).slice(0,50).forEach(el => r.push(desc(el)));
+  r.push('--- SECTIONS');
+  all.filter(e=>e.tagName==='SECTION' && vis(e)).forEach(el => { const b=el.getBoundingClientRect(); const cs=getComputedStyle(el); r.push(`section.${[...el.classList].slice(0,4).join('.')} x=${Math.round(b.x)} w=${Math.round(b.width)} y=${Math.round(b.y+scrollY)} h=${Math.round(b.height)} pad=${cs.paddingTop}/${cs.paddingBottom} bg=${cs.backgroundColor}`); });
+  r.push('--- main children');
+  const main = document.querySelector('main') || document.body;
+  [...main.children].forEach(el => { const b=el.getBoundingClientRect(); const cs=getComputedStyle(el); r.push(`${el.tagName.toLowerCase()}.${[...el.classList].slice(0,4).join('.')} x=${Math.round(b.x)} w=${Math.round(b.width)} y=${Math.round(b.y+scrollY)} h=${Math.round(b.height)} pad=${cs.paddingTop}/${cs.paddingBottom} pl=${cs.paddingLeft}`); });
+  r.push('--- containers w/ maxWidth');
+  const seen = new Set();
+  all.filter(e=>vis(e) && e.getBoundingClientRect().width>500).forEach(el => { const cs=getComputedStyle(el); const b=el.getBoundingClientRect(); const key = `${Math.round(b.width)}|${cs.maxWidth}|${cs.paddingLeft}`; if ((cs.maxWidth!=='none' || (parseFloat(cs.paddingLeft)>=16 && b.width>1000)) && !seen.has(key)) { seen.add(key); r.push(`${el.tagName.toLowerCase()}.${[...el.classList].slice(0,5).join('.')} x=${Math.round(b.x)} w=${Math.round(b.width)} maxw=${cs.maxWidth} pl=${cs.paddingLeft} pr=${cs.paddingRight} y=${Math.round(b.y+scrollY)}`); } });
+  r.push('--- fonts: ' + [...document.fonts].map(f=>f.family+' '+f.weight+' '+f.status).filter((v,i,a)=>a.indexOf(v)===i).join('; '));
+  r.push('docH=' + document.documentElement.scrollHeight);
+  return r.join('\n');
+});
+console.log(out);
+await page.screenshot({ path: '.tmp-ramp/explore-1440.png' });
+await browser.close();

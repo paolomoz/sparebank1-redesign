@@ -48,10 +48,13 @@
   "feedback"
  ],
  "notes": [
-  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels",
-  "presse: the feedback band under the Sand paper drops its hairline (proto .paper-sand+.feedback{border-top:0}) → style hairline-none"
+  "campaign (hero bento): hero (om-oss) — [photo][h1, lead]; variant om-oss puts the photo card left (7) and the Frost text card right (5)",
+  "adviser-list (bento): prose head [h2, lead, note] + one cards (advisers grid-N) block per captured list — horizontal cards with round portraits; the section style contacts paints the h2-l / lead / small rhythm and the 6 px gap between the two rails",
+  "promo-band (lokale bento): columns (promo lokale) — [illustration tile (Syrin)][h2, paragraph, primary pill]",
+  "campaign (presserom bento): columns (split text-first presserom) — one row [h2, paragraph, CTAs][photo]; the photo card takes its natural height",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T23:40:48.476Z"
+ "writtenAt": "2026-09-15T15:02:43.012Z"
 }

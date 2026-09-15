@@ -1,0 +1,5 @@
+import { chromium } from 'playwright';
+const b=await chromium.launch(); const p=await b.newPage({viewport:{width:1440,height:900}});
+await p.goto('file://'+process.cwd()+'/stardust/prototypes/nb-bank-privat-lan-boliglan-html-proposed.html',{waitUntil:'networkidle'});
+const r=await p.evaluate(()=>{const a=document.querySelector('.router--band .router-art'); const cs=getComputedStyle(a); const bb=a.getBoundingClientRect(); const card=document.querySelector('.router-card').getBoundingClientRect(); const body=getComputedStyle(document.querySelector('.router--band .router-body')); return {left:cs.left,right:cs.right,width:cs.width,opacity:cs.opacity,pos:cs.position,x:bb.x,w:bb.width,cardX:card.x,cardW:card.width,cardH:card.height,bodyZ:body.zIndex,bodyPos:body.position,matched:[...document.styleSheets[0].cssRules].filter(x=>x.selectorText&&x.selectorText.includes('router-art')).map(x=>x.cssText.slice(0,160))};});
+console.log(JSON.stringify(r,null,1)); await p.screenshot({path:'stardust/prototypes/round-01-danske-ramp/shots/dbg-band.png',clip:{x:0,y:100,width:1440,height:180}}); await b.close();

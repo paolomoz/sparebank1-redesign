@@ -1,0 +1,15 @@
+import { chromium } from 'playwright';
+const browser = await chromium.launch();
+const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36', locale: 'en-US' });
+const page = await ctx.newPage();
+const resp = await page.goto('https://ramp.com/', { waitUntil: 'domcontentloaded', timeout: 90000 });
+console.log('status', resp.status(), resp.headers()['server'], resp.headers()['cf-mitigated']);
+await page.waitForTimeout(6000);
+console.log('title', await page.title(), 'url', page.url());
+const html = await page.content();
+console.log('len', html.length);
+console.log(html.slice(0, 3000));
+console.log('...');
+console.log(await page.evaluate(() => document.body.innerText.slice(0, 1500)));
+await page.screenshot({ path: '.tmp-ramp/probe.png' });
+await browser.close();

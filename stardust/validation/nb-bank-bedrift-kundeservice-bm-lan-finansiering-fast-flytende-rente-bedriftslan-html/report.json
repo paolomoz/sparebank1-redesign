@@ -1,7 +1,7 @@
 {
  "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
  "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/prototypes/nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html-proposed.html",
- "at": "2026-09-14T23:08:01.341Z",
+ "at": "2026-09-15T14:38:52.480Z",
  "contract": {
   "rootFirst": true,
   "tokensMissing": [],
@@ -25,28 +25,23 @@
    "imgsNoAlt": 0,
    "inputsNoLabel": 0,
    "headingSkips": 0,
-   "headings": 7,
+   "headings": 8,
    "sectionsNoAttr": [],
-   "btnSmall": 3,
+   "btnSmall": 6,
    "btnSmallList": [
-    "label.router-label@1px \"Ditt postnummer\"",
-    "summary.btn-inline@38px \"Se alle banker\"",
-    "label.@25px \"Søk etter et kontor\""
+    "a.logo@30px \"\"",
+    "label.field-label@1px \"Ditt postnummer\"",
+    "label.field-label@20px \"Søk etter et kontor\"",
+    "a.footer-logo@30px \"\"",
+    "a.with-icon@20px \"Linkedin\"",
+    "a.with-icon@20px \"YouTube\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
-   "lazyLCP": {
-    "loading": "eager",
-    "fp": "high",
-    "src": "bankchoice_bg.svg",
-    "area": 11200
-   },
+   "lazyLCP": null,
    "focusRing": true,
-   "docHeight": 3519,
+   "docHeight": 3149,
    "smoke": {
-    "navOpen": true,
-    "ariaExpanded": "true",
-    "navClosedByEsc": true,
     "ctaReachableByKeyboard": "no-primary-cta",
     "hovered": true
    }
@@ -58,11 +53,11 @@
    "exceptions": [],
    "overflowX": 0,
    "wide": [
-    "li@823",
-    "a@823",
-    "strong@823",
-    "span.bank-tagline@823",
-    "li@823"
+    "li@800",
+    "span.bank-tagline@800",
+    "li@800",
+    "span.bank-tagline@800",
+    "li@800"
    ],
    "lm": {
     "header": true,
@@ -74,26 +69,22 @@
    "imgsNoAlt": 0,
    "inputsNoLabel": 0,
    "headingSkips": 0,
-   "headings": 7,
+   "headings": 8,
    "sectionsNoAttr": [],
-   "btnSmall": 5,
+   "btnSmall": 7,
    "btnSmallList": [
-    "a.@36px \"Privat\"",
-    "a.is-active@36px \"Bedrift\"",
-    "a.@36px \"Om oss\"",
-    "label.router-label@20px \"Ditt postnummer\"",
-    "label.@25px \"Søk etter et kontor\""
+    "a.logo@30px \"\"",
+    "a.btn@34px \"Logg inn\"",
+    "label.field-label@1px \"Ditt postnummer\"",
+    "label.field-label@20px \"Søk etter et kontor\"",
+    "a.footer-logo@30px \"\"",
+    "a.with-icon@20px \"Linkedin\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
-   "lazyLCP": {
-    "loading": "eager",
-    "fp": "high",
-    "src": "bankchoice_bg.svg",
-    "area": 40320
-   },
+   "lazyLCP": null,
    "focusRing": true,
-   "docHeight": 2686,
+   "docHeight": 2315,
    "smoke": {
     "ctaReachableByKeyboard": "no-primary-cta",
     "hovered": true
@@ -105,7 +96,13 @@
    "externalFulfilled": 3,
    "exceptions": [],
    "overflowX": 0,
-   "wide": [],
+   "wide": [
+    "li@1456",
+    "span.bank-tagline@1456",
+    "li@1456",
+    "span.bank-tagline@1456",
+    "li@1456"
+   ],
    "lm": {
     "header": true,
     "main": true,
@@ -116,15 +113,16 @@
    "imgsNoAlt": 0,
    "inputsNoLabel": 0,
    "headingSkips": 0,
-   "headings": 7,
+   "headings": 8,
    "sectionsNoAttr": [],
-   "btnSmall": 5,
+   "btnSmall": 12,
    "btnSmallList": [
-    "a.@36px \"Privat\"",
-    "a.is-active@36px \"Bedrift\"",
-    "a.@36px \"Om oss\"",
-    "label.router-label@20px \"Ditt postnummer\"",
-    "label.@25px \"Søk etter et kontor\""
+    "a.@32px \"Privat\"",
+    "a.is-active@32px \"Bedrift\"",
+    "a.@32px \"Om oss\"",
+    "a.logo@36px \"\"",
+    "a.tool-text@19px \"Bli bedriftskunde\"",
+    "a.tool-search@22px \"Søk\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
@@ -132,10 +130,10 @@
     "loading": "eager",
     "fp": "high",
     "src": "bankchoice_bg.svg",
-    "area": 69645
+    "area": 158917
    },
    "focusRing": true,
-   "docHeight": 2336,
+   "docHeight": 2292,
    "smoke": {
     "ctaReachableByKeyboard": "no-primary-cta",
     "hovered": true
@@ -144,8 +142,8 @@
  },
  "mobileNav": {
   "over": 0,
-  "minFont": 14,
-  "minGap": 0,
+  "minFont": 12,
+  "minGap": null,
   "collapse": "hamburger"
  },
  "pass": true,
@@ -153,7 +151,7 @@
   {
    "sev": "P2",
    "where": "390",
-   "msg": "3 interactive elements < 40px tall: label.router-label@1px \"Ditt postnummer\", summary.btn-inline@38px \"Se alle banker\", label.@25px \"Søk etter et kontor\""
+   "msg": "6 interactive elements < 40px tall: a.logo@30px \"\", label.field-label@1px \"Ditt postnummer\", label.field-label@20px \"Søk etter et kontor\", a.footer-logo@30px \"\", a.with-icon@20px \"Linkedin\", a.with-icon@20px \"YouTube\""
   }
  ]
 }

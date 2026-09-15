@@ -16,45 +16,47 @@
  },
  "schemaVersion": 2,
  "generatedAt": "2026-09-14T21:18:00Z",
- "title": "Design System: SpareBank 1 — Rolig og tydelig",
+ "title": "Design System: SpareBank 1 — Rolig og tydelig (round 01: cards, bentos, Ramp type)",
  "narrative": {
-  "northStar": "The Quiet Reading Room of a Local Bank",
-  "overview": "White paper, the bank's own title face on a 1.25 scale, Fjell words, Vann links, one Skog action per module, Sand/Frost paper fields instead of cards and dividers, photography at content scale, the alliance router as a compact first-viewport signature.",
+  "northStar": "A Nordic bank set like a modern product site: quiet tinted cards with 2 px corners and 6 px gutters in asymmetric bento rows, Ramp-scale single-weight type on the brand faces, 6 px borderless buttons, a sticky two-tier header, and a hover system as the distinctive layer.",
+  "overview": "The page is a grid of quiet cards: tinted sheets with 2 px corners, no borders and no shadows, separated by 6 px gutters and composed in 12-column bento rows with asymmetric spans. Photographs bleed to the card edge at 16:9; spot illustrations sit on the tint. Type is one weight on the bank's own three faces at a product-site scale — 64 / 48 / 40 / 28 / 24 — with tight display leading and hierarchy carried by size and a two-tone ink/hushed split. Buttons are small, borderless 6 px rectangles whose height comes from padding. Colour is the alliance's own: Fjell and Vann do the talking, Skog acts once per module, Sand-70 / Frost-30 / Syrin-30 fill the cards, Fjell holds the footer and Vann holds the router card. The header is a two-tier Danske-style bar that hides on scroll-down and comes back on scroll-up.",
   "keyCharacteristics": [
-   "white ground with tinted paper fields",
-   "1.25 modular scale on three single-weight brand faces",
-   "photography as content, one-corner-pair mask",
-   "one action per module, Skog reserved",
-   "flat at rest, no dividers",
-   "compact alliance router in every first viewport"
+   "White page; cards on Sand-70 (default), Frost-30 (cool / tools), Syrin-30 (quiet), Fjell or Vann (dark); 2 px corners, 6 px gutters, no border, no shadow.",
+   "12-column bento rows with asymmetric spans (hero 12 then 5/7; 2+4+2+4; 3×4; 4-up); photos bleed 16:9.",
+   "Ramp type scale on SpareBank1 Title-Medium / Medium / Regular; one weight; display leading 1.0–1.05, body 1.375; two-tone headlines.",
+   "6 px borderless buttons; Skog reserved to the one relationship-starting action.",
+   "Sticky two-tier header (32 + 80 px) with hide/reveal; router as a Vann card; Sand-70 contact band; Fjell footer grid.",
+   "Hover system: fill step, underline draw-in, spring, breathe, drift; focus-within mirrors hover."
   ],
   "rules": [
-   "The One Action Rule",
-   "The Paper Rule",
-   "The No-Overlay Rule",
-   "The 1.25 Rule",
-   "The Sentence-Case Rule",
+   "The Fill Rule",
+   "The Hover-Step Rule",
+   "The Ramp-Scale Rule",
+   "The Two-Tone Rule",
    "The Single-Weight Rule",
-   "The Flat-At-Rest Rule",
-   "House 7.1: no marketing adjectives in direction-authorised chrome copy",
-   "House 7.2: no exclamation points added (captured copy stays verbatim)"
+   "The Sentence-Case Rule",
+   "The One Action Rule",
+   "The Paper Rule (fills)",
+   "The No-Overlay Rule",
+   "The Disabled Rule",
+   "Full-width budget ≤ 30 % of sections, minor rows only"
   ],
   "dos": [
-   "Set headings in SpareBank1-title-medium at 1.25 steps",
-   "Change paper to mark a movement",
-   "One action per module; Skog only for log-in / become-customer / apply",
-   "Photographs at content scale with the one-corner-pair mask",
-   "Keep the alliance router in the first viewport, compact, with its landscape",
-   "Keep every captured word, link, image, FAQ verbatim",
-   "Theme browser surfaces (selection, focus, tabular numerals)"
+   "**Do** compose every content section as a bento row of cards with explicit spans and 6 px gutters; keep the 1312 px column; go full width only for minor rows and never for more than 30 % of the sections.",
+   "**Do** set headings on the Ramp scale (64 / 48 / 40 / 28 / 24) in the title face at 1.0–1.14 leading; body 16/1.375 at ≤ 68ch; use the two-tone split for long headlines.",
+   "**Do** give every card one fill (Sand-70 default), 2 px corners, no border, no shadow; bleed photos to the edge at 16:9; keep illustrations flat on the fill.",
+   "**Do** give every module one action in a 6 px borderless button; Skog only for Logg inn / Bli kunde / apply flows; arrow links for lists.",
+   "**Do** keep the router as a Vann card in the first viewport (tile on home, band elsewhere) with its landscape.",
+   "**Do** make hover mean something: fill step, underline draw-in, spring, breathe, drift — and mirror it on focus-within, off under reduced motion.",
+   "**Do** keep every captured word, link, image and FAQ verbatim."
   ],
   "donts": [
-   "No shadows at rest, no <hr>, no card chrome, no nested cards",
-   "No eyebrow/kicker above headings",
-   "No type over photographs, gradients, glass, dark ground",
-   "No font-weight other than 400, no uppercase beyond captured acronyms",
-   "No colours outside the FFE palette; Skog/Bær/Sol only in reserved roles",
-   "No centered two-button hero"
+   "**Don't** use shadows, borders, `<hr>` dividers, pills or radii above 6 px; **don't** nest cards.",
+   "**Don't** set type over a photograph, use gradients, glass, or a dark page ground; dark is a card, never the page.",
+   "**Don't** use any `font-weight` other than 400, uppercase beyond the eyebrow and captured strings, or letter-spacing beyond the eyebrow.",
+   "**Don't** introduce colours outside the FFE palette or use Skog / Bær / Sol outside their reserved roles.",
+   "**Don't** let more than one cell per row be dark or photographic; **don't** put the main content in a full-width row.",
+   "**Don't** transform buttons on hover; the fill darkens, nothing moves."
   ]
  },
  "extensions": {
@@ -342,31 +344,34 @@
     "file": "stardust/current/assets/fonts/SpareBank1-Regular-Web.woff2",
     "static": true
    },
-   "scale": {
-    "ratio": 1.25,
-    "base": 16,
-    "steps": [
-     13,
-     16,
-     20,
-     25,
-     31,
-     39,
-     49,
-     61
-    ]
-   },
+   "scale": "ramp: 64/48/40/28/24 headings · 18 lead · 16/14/13 body · 10 eyebrow",
    "measure": {
     "prose": "68ch",
     "lead": "60ch"
    },
    "numerals": "tabular-nums on prices, rates, tables, phone numbers",
-   "fontDisplay": "swap"
+   "fontDisplay": "swap",
+   "mobile": "40/34/28/22/20 · 17 · 15/14/13",
+   "leading": {
+    "display": 1,
+    "headlineL": 1.04,
+    "headlineM": 1.05,
+    "headlineS": 1.14,
+    "title": 1.17,
+    "lead": 1.33,
+    "body": 1.375,
+    "small": 1.43
+   },
+   "weights": [
+    400
+   ],
+   "letterSpacing": "0 (eyebrow +0.05em)",
+   "twoTone": "ink + 60% hushed span inside one headline"
   },
   "shadows": {
-   "lift": "0 8px 24px -12px rgba(0, 39, 118, 0.25)",
-   "dialog": "0 24px 48px -16px rgba(0, 16, 50, 0.35)",
-   "rest": "none"
+   "rest": "none",
+   "hover": "none (fill step instead)",
+   "dialog": "0 24px 48px -16px rgba(0, 16, 50, 0.35)"
   },
   "motion": {
    "register": "arrival",
@@ -387,24 +392,33 @@
     "rangeStart": 0,
     "range": 100
    },
-   "reducedMotion": "all transitions and entrances disabled; end states shown"
+   "reducedMotion": "all transitions off",
+   "hoverSystem": {
+    "fillStep": "350ms",
+    "underlineDrawIn": "400ms",
+    "illustrationSpring": "500ms cubic-bezier(.34,1.56,.64,1)",
+    "photoBreathe": "700ms scale 1.03–1.04",
+    "landscapeDrift": "900ms translateX(-12px)",
+    "stickyHeader": "350ms translateY"
+   }
   },
   "breakpoints": {
    "values": [
-    480,
     640,
-    768,
+    767,
     1024,
-    1280
+    1140,
+    1320
    ],
-   "containerMaxWidth": "1280px",
+   "containerMaxWidth": "1440px (1312 content)",
    "sideMargins": {
-    "390": "20px",
-    "768": "24px",
-    "1024": "48px",
-    "1440": "80px"
+    "390": "16px",
+    "768": "32px",
+    "1024": "32px",
+    "1440": "64px"
    },
-   "navCollapse": 640
+   "navCollapse": 1140,
+   "cardGap": "6px"
   },
   "divergence": {
    "toolkit_version": "v1.0 (stardust v2)",
@@ -568,38 +582,54 @@
      "line": "6em pill buttons retained (--ffe-v-buttons-border-radius); the 8–12px radius reflex is inverted for buttons only."
     }
    ],
-   "brand_adjacent_refinements": []
+   "brand_adjacent_refinements": [],
+   "round01": {
+    "at": "2026-09-15T12:00:00Z",
+    "basis": "reference composition (Danske structure × Ramp type/width/buttons) chosen by Paolo; variant C",
+    "surprise": "medium",
+    "supersedes": "2026-09-14 Mode A brand-faithful direction (look-alike)",
+    "refs": [
+     "stardust/prototypes/round-01-danske-ramp/refs/danske/SPEC.md",
+     "stardust/prototypes/round-01-danske-ramp/refs/ramp/SPEC.md"
+    ]
+   }
   },
   "componentStyle": {
    "buttons": {
-    "shape": "pill 6em, min-height 44px",
-    "primary": "Vann fill / Hvit text; hover Fjell",
-    "action": "Skog fill / Hvit text; hover #095139; reserved, one per module",
-    "secondary": "Hvit fill / Vann text / 2px Vann border; hover Frost-30 + Fjell",
-    "inline": "transparent / Vann; hover underline",
-    "focus": "2px Sol ring, 2px offset"
+    "shape": "6px radius, no border, padding-driven height (nav 34 / standard 44 / large 50), SpareBank1-medium 16, line-height 1",
+    "primary": "Vann fill / Hvit; hover Fjell",
+    "action": "Skog fill / Hvit; hover #095139; reserved, one per module",
+    "secondary": "Frost-30 fill / Fjell, no outline; hover Frost-70",
+    "onDark": "Hvit fill / Fjell; hover Frost-30",
+    "arrowLink": "Vann, no underline, 7px chevron slides 4px on hover",
+    "focus": "2px Vann ring, 2px offset",
+    "transition": "300ms cubic-bezier(.4,0,.2,1); no transform"
    },
    "cards": {
-    "ground": "Sand-30 default, Frost-30 help/tools, Hvit + 1px Lysgrå on tinted movements",
-    "radius": "16px",
-    "shadow": "none at rest; lift on hover/focus-within",
-    "content": "image or illustration → title (title-sm) → one line → meta label under title → whole card is the link",
-    "photoLed": "never boxed: photo + title + meta flat on the movement paper; whole item is the link",
-    "textOnly": "Hvit + 1px Lysgrå hairline paper on tinted movements; Sand-30 / Frost-30 paper on Hvit"
+    "construction": "fill + 2px radius + overflow hidden; .card-body 48/36 (40/28, 36/20); optional .card-image bleeding 16:9",
+    "fills": "Sand-70 default · Frost-30 · Syrin-30 · Fjell/Vann dark · Hvit only on tinted bands",
+    "gutter": "6px",
+    "shadow": "none at rest, none on hover",
+    "hover": "fill steps one tint; title underline draws in 1px/400ms and turns Vann; .illu springs (-6px, -3deg, overshoot); .card-image scales 1.04/700ms",
+    "link": "title covers the card (.cover-link); secondary links above the cover"
    },
    "inputs": {
-    "ground": "Hvit",
-    "border": "1px Lysgrå, 8px radius",
-    "focus": "2px Vann border + 2px Sol ring",
-    "error": "Bær border + Bær icon; helper text Svart"
+    "style": "6px radius, no border, 48px, Hvit (Sand-30 + 1px Lysgrå inset on tints)",
+    "focus": "2px Vann ring (Frost on Vann)"
    },
-   "dualCTAPattern": "forbidden as a centered pair; when a module carries two CTAs they sit left-aligned in one row: one action/primary + one inline text pill",
-   "links": "Vann underlined (2px offset), hover Fjell, visited Lyng",
-   "photo": "native 3:2, object-fit cover centred, one-corner-pair mask (96px hero / 48px card), alt verbatim",
-   "video": "16:9 .video-frame Frost-30 + Vann play glyph; <video controls> masks top-left corner only; 4:5 portrait sources keep 4:5 (deviation logged)",
-   "disabled": "Lysgrå ground, Koksgrå text, not-allowed cursor",
-   "badge": "pill Frost-30 / Fjell, label 13 medium, min-height 32; linked badge hover Vann / Hvit",
-   "feedback": "title-sm question + two .btn-secondary with thumb glyphs and captured labels, type=button (dynamics #5)"
+   "header": {
+    "tiers": "32px Sand-70 settings bar (audience tabs, active = white block) + 80px white main bar",
+    "sticky": "hide on scroll-down, reveal main bar on scroll-up",
+    "collapse": "≤1140px: 68px bar + Meny toggle → fixed panel"
+   },
+   "router": {
+    "home": "router--tile: full bento row, centred content, landscape behind",
+    "elsewhere": "router--band: contained Vann card under the header, landscape 55% right"
+   },
+   "footer": {
+    "contactBand": "Sand-70, heading + primary large button, 5 white channel cards",
+    "footer": "Fjell, 64px padding, 230px logo column + 5-col link grid + legal row in-grid"
+   }
   },
   "systemComponentRoles": {
    "header": {
@@ -743,7 +773,7 @@
     ],
     "canonicalRendering": {
      "path": "stardust/canon/modules/bank-router.html",
-     "sha": "d9c495a34baa73b2"
+     "sha": "14c7e5859ac66327"
     },
     "note": "complementary landmark on 70/100 pages (missed by the main-child scan); signature § 8b; dynamics #1"
    },
@@ -821,7 +851,7 @@
     ],
     "canonicalRendering": {
      "path": "stardust/canon/modules/campaign-carousel.html",
-     "sha": "318189d62f72c853"
+     "sha": "79a6add5a859bec1"
     },
     "note": "market landings; one campaign visible, rotation as dynamics interim"
    },
@@ -894,7 +924,7 @@
     ],
     "canonicalRendering": {
      "path": "stardust/canon/modules/content-columns.html",
-     "sha": "f9948ae92f6b0440"
+     "sha": "ab7e92715d86a375"
     }
    },
    {
@@ -988,7 +1018,7 @@
     ],
     "canonicalRendering": {
      "path": "stardust/canon/modules/card-rail.html",
-     "sha": "64a2cc5547bc9bac"
+     "sha": "aa908ded7a31eca4"
     }
    },
    {
@@ -1083,7 +1113,7 @@
     ],
     "canonicalRendering": {
      "path": "stardust/canon/modules/feedback.html",
-     "sha": "e055c4fe465f009c"
+     "sha": "a7da243e2951a552"
     },
     "note": "dynamics #5 interim"
    },
@@ -1128,7 +1158,7 @@
     ],
     "canonicalRendering": {
      "path": "stardust/canon/modules/contact-row.html",
-     "sha": "479fa460c6d32e04"
+     "sha": "251bdecd20b8aca3"
     },
     "note": "footer-top contact-section on 84/100 pages; dynamics #6"
    },
@@ -1154,7 +1184,7 @@
     ],
     "canonicalRendering": {
      "path": "stardust/canon/modules/callout.html",
-     "sha": "37058871c13992c9"
+     "sha": "06f292f460544437"
     }
    },
    {
@@ -1189,7 +1219,7 @@
     ],
     "canonicalRendering": {
      "path": "stardust/canon/modules/promo-band.html",
-     "sha": "927752d55bcec7e6"
+     "sha": "9be39a6f768506ce"
     }
    },
    {
@@ -1219,7 +1249,7 @@
     ],
     "canonicalRendering": {
      "path": "stardust/canon/modules/cta-band.html",
-     "sha": "ae3b14266d52f25d"
+     "sha": "f97ef7f38f4f06ab"
     }
    },
    {
@@ -1297,7 +1327,7 @@
     ],
     "canonicalRendering": {
      "path": "stardust/canon/modules/price-cards.html",
-     "sha": "d41af17f81d5b462"
+     "sha": "70aad34088a2be79"
     },
     "note": "rate copy verbatim; dynamics #10"
    },
@@ -1324,7 +1354,7 @@
     ],
     "canonicalRendering": {
      "path": "stardust/canon/modules/calculator.html",
-     "sha": "1c44f083c46d38cd"
+     "sha": "4d4dafd23e084c14"
     },
     "note": "dynamics #7 / #9 interim static shell"
    },
@@ -1368,7 +1398,7 @@
     ],
     "canonicalRendering": {
      "path": "stardust/canon/modules/button-row.html",
-     "sha": "35402f230be37aff"
+     "sha": "8176ee40893931af"
     },
     "note": "variant action|primary|secondary|inline per captured class"
    },
@@ -1525,7 +1555,7 @@
     ],
     "canonicalRendering": {
      "path": "stardust/canon/modules/article-header.html",
-     "sha": "75d8c2160b311984"
+     "sha": "ae114650268fc9b3"
     },
     "note": "news / story pages (nettsider-frontend clientlib); photo beside/below headline, never behind"
    },
@@ -1552,7 +1582,7 @@
     ],
     "canonicalRendering": {
      "path": "stardust/canon/modules/article-body.html",
-     "sha": "16060901f5d3b2cc"
+     "sha": "54664ae7d98e8bfd"
     }
    },
    {
@@ -1625,7 +1655,7 @@
     ],
     "canonicalRendering": {
      "path": "stardust/canon/modules/faq-question.html",
-     "sha": "c7b204e5bf207aa2"
+     "sha": "a2753ffa8a850a40"
     }
    },
    {
@@ -1850,7 +1880,9 @@
    "keyFacts": [
     "Priseksempel: Nominell rente … Effektiv rente … (rate examples, verbatim, server-rendered)",
     "Vi er flere banker i hele Norge"
-   ]
+   ],
+   "designRound": "01 (2026-09-15)",
+   "fullWidthSectionBudget": "<=30% of sections, minor rows only"
   },
   "pageTypes": {
    "catalog": [
@@ -1871,53 +1903,58 @@
    "files": {
     "header": {
      "path": "stardust/canon/header.html",
-     "sha": "7b575d4a8a06908b"
+     "sha": "71b072617ac2b28f"
     },
     "footer": {
      "path": "stardust/canon/footer.html",
-     "sha": "a71bffa1aee4b031"
+     "sha": "64df50828f31a507"
     },
     "router": {
      "path": "stardust/canon/bank-router.html",
-     "sha": "8f62133723d404e0"
+     "sha": "a8e20bb908ebc387"
     },
     "skip": {
      "path": "stardust/canon/skip-links.html",
-     "sha": "ac8169c14dd38d8f"
+     "sha": "a9f55745d1480590"
     },
     "navScript": {
      "path": "stardust/canon/nav-a11y.html",
-     "sha": "b21d429c7538e7db"
+     "sha": "7ede3408094b551a"
     },
     "css": {
      "path": "stardust/canon/canon.css",
-     "sha": "b128d5c2de6ce444"
+     "sha": "d4e05403e5a6ba6f"
     }
    },
    "pinned": {
     "sectionPadding.desktop": "64px",
     "sectionPadding.tablet": "48px",
-    "sectionPadding.mobile": "32px",
+    "sectionPadding.mobile": "48px",
     "densityTier": "balanced",
-    "typeScale": 1.25,
-    "lineHeights.display": 1.1,
-    "lineHeights.headline": 1.12,
-    "lineHeights.body": 1.55,
-    "containerMaxWidth": "1280px",
-    "gutters": "80/48/24/20",
-    "radius.card": "16px",
-    "radius.photo": "96px / 48px one-corner-pair",
-    "radius.button": "6em",
-    "navCollapse": "640px hamburger"
+    "typeScale": "ramp 64/48/40/28/24 · 18 · 16/14/13",
+    "lineHeights.display": 1,
+    "lineHeights.headline": 1.04,
+    "lineHeights.body": 1.375,
+    "containerMaxWidth": "1440px (1312 content)",
+    "gutters": "64/32/16",
+    "cardGap": "6px",
+    "cardPadding": "48/36 (40/28 tablet, 36/20 mobile)",
+    "radius.card": "2px",
+    "radius.photo": "2px (bleeds to card edge, 16:9)",
+    "radius.button": "6px",
+    "header": "32px settings bar + 80px main bar; sticky hide/reveal; 68px + Meny toggle below 1140px",
+    "fullWidthSectionBudget": "≤30% of sections, minor rows only",
+    "navCollapse": "1140px hamburger"
    },
    "compositionalMoves": [
-    "Chrome is two calm tiers on white (audience switch + one Skog action above; logo + market nav below) that collapse to one row and a hamburger at 640px; the header is never sticky on desktop.",
-    "The alliance router is a compact Vann band in every first viewport it was captured on: heading, postcode field, one secondary action, the 12-bank list behind a details disclosure, the landscape illustration at reduced scale on the right.",
-    "A page is 3–6 movements separated by paper changes (Hvit → Sand-30 / Frost-30 / Syrin-30) and space; dividers, card shadows at rest and eyebrow labels are not used.",
-    "Photographs are content: one per module, native 3:2, one-corner-pair mask (96px hero, 48px card); type never sits on a photograph.",
-    "Hierarchy is the 1.25 scale on the three single-weight brand faces; Fjell for headlines, Vann for every link, Skog reserved to the single relationship-starting action per module.",
-    "Repeated content (product columns, news, promos) is set as flat tinted papers or hairline-topped tiles with the whole tile as the link and category/date as a meta line under the title.",
-    "Contact channels and long verbatim lists (bank numbers, bank links) live behind native details disclosures inside the Hvit contact section above the Fjell footer."
+    "Chrome is a Danske-style two-tier header: a 32 px Sand-70 settings bar with the audience tabs (active tab = white block) over an 80 px white bar with the logo, nine 14 px market links and the tools (Bli kunde text, search glyph, Skog Logg inn); sticky, it hides on scroll-down and reveals only the main bar on scroll-up; below 1140 px it is one 68 px bar with a Meny toggle opening a fixed panel.",
+    "Every repeated or promotional unit is a card: a tinted fill (Sand-70 default, Frost-30 cool, Syrin-30 quiet, Fjell/Vann dark) with 2 px corners, no border, no shadow, 6 px gutters, 48/36 padding; photos bleed to the card edge at 16:9; rows are 12-column bentos with asymmetric spans (5/7, 2+4+2+4, 3×4).",
+    "The page keeps a 1312 px content column (1440 max, 64 px gutters); at most 30 % of a page's sections may go full width, and those are minor rows (promo bands), never the primary content.",
+    "Type is the Ramp scale on the three single-weight brand faces — 64 / 48 / 40 / 28 / 24 headings at 1.0–1.14 leading, 18 lead, 16 / 14 / 13 body at 1.375 — with hierarchy carried by size, leading and a two-tone (ink + 60 % hushed) split, never by weight or uppercase; the only tracked style is a 10 px uppercase eyebrow.",
+    "Buttons are Ramp geometry: 6 px radius, no border, padding-driven height (nav 34, standard 44, large 50), Skog for the one relationship-starting action, Vann primary, Frost-30 fill (no outline) secondary, white on dark; hover darkens the fill over 300 ms, nothing moves.",
+    "The alliance router is a Vann card: on the home page a tall centred tile with the landscape illustration behind the postcode form; on every other page a compact contained band directly under the header with the landscape at reduced opacity on the right.",
+    "Hover is the distinctive layer: the card fill deepens one brand tint step, the title underline draws in and turns Vann, spot illustrations spring up 6 px with a tilt, photos breathe 3–4 %, the router landscape drifts; every effect also fires on focus-within and is off under reduced motion.",
+    "Contact channels are five white cards on a Sand-70 pre-footer band with Frost-30 icon circles that invert to Vann on hover/open; the footer is a Fjell block with a 230 px logo column beside the link columns and the legal row in the same grid."
    ],
    "history": [
     {
@@ -2015,6 +2052,109 @@
      "from": "nb-bank-privat-html",
      "kind": "canon-update",
      "reason": "canon update after the 12-archetype fan-out: router art eager/high, .title, disabled vocabulary, .callout.info, .badge, .video-frame, #kontakt, router open-state at ≤1023, footer top tel links, duplicate panel-heading guard, Bli kunde fallback on frontend-clientlib headers"
+    },
+    {
+     "at": "2026-09-15T11:17:54.471Z",
+     "from": "nb-bank-privat-html",
+     "kind": "canon-update",
+     "reason": "round-01 redesign (variant C) promoted to canon"
+    },
+    {
+     "at": "2026-09-15T11:27:20.863Z",
+     "from": "nb-bank-privat-lan-boliglan-html",
+     "kind": "extension",
+     "added": []
+    },
+    {
+     "at": "2026-09-15T11:32:41.222Z",
+     "from": "nb-bank-privat-lan-boliglan-html",
+     "kind": "extension",
+     "added": [
+      "module:feedback",
+      "module:price-cards",
+      "module:calculator"
+     ]
+    },
+    {
+     "at": "2026-09-15T11:32:59.473Z",
+     "from": "nb-bank-privat-html",
+     "kind": "canon-update",
+     "reason": "chrome contrast fix (dark card text)"
+    },
+    {
+     "at": "2026-09-15T14:38:55.098Z",
+     "from": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+     "kind": "extension",
+     "added": [
+      "module:faq-question"
+     ]
+    },
+    {
+     "at": "2026-09-15T14:38:57.938Z",
+     "from": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+     "kind": "extension",
+     "added": [
+      "module:article-header",
+      "module:article-body"
+     ]
+    },
+    {
+     "at": "2026-09-15T14:39:00.743Z",
+     "from": "nb-bank-om-oss-nyheter-html",
+     "kind": "extension",
+     "added": [
+      "module:button-row"
+     ]
+    },
+    {
+     "at": "2026-09-15T14:39:05.373Z",
+     "from": "nb-bank-om-oss-hjemme-html",
+     "kind": "extension",
+     "added": []
+    },
+    {
+     "at": "2026-09-15T14:42:56.118Z",
+     "from": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+     "kind": "extension",
+     "added": []
+    },
+    {
+     "at": "2026-09-15T14:43:03.908Z",
+     "from": "nb-bank-om-oss-presse-html",
+     "kind": "extension",
+     "added": []
+    },
+    {
+     "at": "2026-09-15T14:43:12.781Z",
+     "from": "nb-bank-privat-sparing-markedsnytt-html",
+     "kind": "extension",
+     "added": []
+    },
+    {
+     "at": "2026-09-15T14:57:15.574Z",
+     "from": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+     "kind": "extension",
+     "added": []
+    },
+    {
+     "at": "2026-09-15T14:57:18.475Z",
+     "from": "nb-bank-privat-kundeservice-kontakt-html",
+     "kind": "extension",
+     "added": []
+    },
+    {
+     "at": "2026-09-15T15:10:27.959Z",
+     "from": "nb-bank-privat-lan-html",
+     "kind": "extension",
+     "added": [
+      "module:callout"
+     ]
+    },
+    {
+     "at": "2026-09-15T15:11:28.344Z",
+     "from": "nb-bank-privat-kundeservice-html",
+     "kind": "extension",
+     "added": []
     }
    ],
    "notes": "Canon source of truth is stardust/scripts/proto/chrome.mjs; the files here are lifted verbatim from the approved canon-author render. Header/footer link SETS vary per audience (privat/bedrift/om-oss) and are injected from each page's captured data — structure and style are canon, link sets are content."

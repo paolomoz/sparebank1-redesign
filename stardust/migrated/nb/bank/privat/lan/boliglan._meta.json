@@ -28,20 +28,20 @@
   "clientlib": "base"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "6ee9c139c6f6b86c",
-  "sourceProposedSha": "8b3eaba505a32ff9",
+  "sourceProposedSha": "cf9377b85d66792d",
   "archetypeSha": null,
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
  "deviations": [],
@@ -136,7 +136,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 36,
+ "linksRewritten": 37,
  "metadata": {
   "title": "Boliglån | Få tilbud på boliglån | SpareBank 1",
   "description": "Skal du kjøpe hus eller leilighet, pusse opp eller flytte boliglånet ditt? Prøv vår lånekalkulator, søk lån, eller snakk med en av våre rådgivere i dag.",
@@ -146,8 +146,8 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 12,
-   "narrowest": 400
+   "media": 11,
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -158,11 +158,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:27.556Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:22.591Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "6ee9c139c6f6b86c",
- "sourceProposedSha": "8b3eaba505a32ff9",
+ "sourceProposedSha": "cf9377b85d66792d",
  "archetypeSha": null,
  "assetsBundled": 3
 }

@@ -62,6 +62,8 @@ function block(b,st,{eager=false}={}){
   const html=rich(b); if(!html) return ''; st.fallbacks++; return `<div class="prose-fallback" data-module="rich-text">${html}</div>`;
 }
 const walk=(root,st)=>[...root.children].map(c=>block(c,st)).join('');
+// Bento spans for n related cards: ≤ 4 share one row; multiples of 4 run 4-up; otherwise rows of 3 with the remainder as wide (photo-left) cards.
+function railSpans(n){ if(n<=0) return []; if(n<=4) return Array.from({length:n},()=>({span:12/n,wide:n<=2})); if(n%4===0) return Array.from({length:n},()=>({span:3})); const full=Math.floor(n/3)*3, r=n-full; return Array.from({length:n},(_,i)=>i<full?{span:4}:{span:12/r,wide:true}); }
 export function render({doc,pj}){
   const main=doc.querySelector('main'); const art=main.querySelector('.sb1-article'); const story=main.querySelector('.sb1-story__body');
   const st={fallbacks:0};
@@ -71,23 +73,24 @@ export function render({doc,pj}){
     const hero=head?.querySelector('.sb1-article__header-image img'); const heroCap=norm(head?.querySelector('.sb1-article__header-image figcaption')?.textContent);
     tag=norm(head?.querySelector('.tag__item')?.textContent); h1=norm((head?.querySelector('h1')||main.querySelector('h1'))?.textContent); date=norm(head?.querySelector('.author-text__date')?.textContent);
     share=[...(head?.querySelectorAll('.some__item-button')||[])].map(b=>{ const svg=b.querySelector('svg').outerHTML.replace(/\s(width|height|class)="[^"]*"/g,'').replace(/#005aa4/g,'currentColor').replace(/<svg/,'<svg aria-hidden="true" focusable="false"'); return `<li><button type="button" class="share-btn" aria-label="${esc(b.getAttribute('aria-label'))}">${svg}</button></li>`; }).join('');
-    heroHtml=hero?`<figure class="art-media" data-slot="image">
-      <img class="photo" src="${asset(hero.getAttribute('data-lazy-src')||hero.getAttribute('src'))}" alt="${esc(hero.getAttribute('alt')||'')}" width="1280" height="853" loading="eager" fetchpriority="high" decoding="async">
+    heroHtml=hero?`<figure class="card art-photo" data-slot="image">
+      <img src="${asset(hero.getAttribute('data-lazy-src')||hero.getAttribute('src'))}" alt="${esc(hero.getAttribute('alt')||'')}" width="1280" height="853" loading="eager" fetchpriority="high" decoding="async">
       ${heroCap?`<figcaption class="small muted">${esc(heroCap)}</figcaption>`:''}
     </figure>`:'';
     const blocks=[...art.querySelectorAll('.sb1-article__content > *')];
     const teaser=blocks.find(b=>b.classList.contains('sb1-article__content-teaser')); lead=norm(teaser?.querySelector('.text-content p')?.textContent);
     for(const b of blocks){ if(b===teaser) continue; items++; body+=block(b,st,{eager:items<=2&&b.classList.contains('image')&&!/content--(right|left)-adjust/.test(b.className)&&!st.eagerBody&&(st.eagerBody=true)}); } // a full-width .image among the first two body blocks out-sizes the hero at 1440 (it is the LCP): eager + high; floated (right/left-adjust) figures are half-width and stay lazy
     relH=norm(art.querySelector('.related-list h2')?.textContent);
-    rel=[...art.querySelectorAll('.related-list__item a')].map(a=>{ const img=a.querySelector('img'); const src=img?(img.getAttribute('data-lazy-src')||img.getAttribute('src')):null; return `<li class="rail-item">${src?`<img class="photo photo-sm" src="${asset(src)}" alt="${esc(img.getAttribute('alt')||'')}" width="768" height="512" loading="lazy" decoding="async">`:''}<h3 class="rail-title"><a href="${esc(a.getAttribute('href'))}">${esc(norm(a.querySelector('.related-list__text')?.textContent||a.textContent))}</a></h3></li>`; }).join('');
+    const relAs=[...art.querySelectorAll('.related-list__item a')]; const spans=railSpans(relAs.length);
+    rel=relAs.map((a,i)=>{ const img=a.querySelector('img'); const src=img?(img.getAttribute('data-lazy-src')||img.getAttribute('src')):null; return `<li class="card card--tint news-card is-link${spans[i].wide?' news-card--wide':''}" style="--span:${spans[i].span}">${src?`<img class="card-image" src="${asset(src)}" alt="${esc(img.getAttribute('alt')||'')}" width="768" height="432" loading="lazy" decoding="async">`:''}<div class="card-body"><h3 class="h3"><a class="cover-link" href="${esc(a.getAttribute('href'))}">${esc(norm(a.querySelector('.related-list__text')?.textContent||a.textContent))}</a></h3></div></li>`; }).join('');
     temaH=norm(art.querySelector('.tags h2')?.textContent);
-    tema=[...art.querySelectorAll('.tags a')].map(a=>`<li><a class="badge" href="${esc(a.getAttribute('href'))}" data-deviation="canon lacks .badge (DESIGN.md § Badges); local pill">${esc(norm(a.textContent))}</a></li>`).join('');
+    tema=[...art.querySelectorAll('.tags a')].map(a=>`<li><a class="badge" href="${esc(a.getAttribute('href'))}">${esc(norm(a.textContent))}</a></li>`).join('');
   } else if(story){
     // Story layout: the H1 lives inside the first full-bleed block; that block's media is the hero.
     const kids=[...story.children]; const first=kids.find(k=>k.querySelector('h1'))||kids[0];
     const h1El=first?.querySelector('h1')||main.querySelector('h1'); h1=norm(h1El?.textContent);
     const m=first&&first.classList.contains('block')?mediaOf(first.querySelector('.block-media')||first):null;
-    if(m) heroHtml=m.kind==='video'?`<div class="art-media" data-slot="image" data-media="video">${videoHtml(m,'hero-video')}</div>`:`<figure class="art-media" data-slot="image"><img class="photo" src="${asset(m.src)}" alt="${esc(m.alt||'')}" width="1280" height="853" loading="eager" fetchpriority="high" decoding="async"></figure>`;
+    if(m) heroHtml=m.kind==='video'?`<div class="card art-photo art-photo--video" data-slot="image" data-media="video">${videoHtml(m,'hero-video')}</div>`:`<figure class="card art-photo" data-slot="image"><img src="${asset(m.src)}" alt="${esc(m.alt||'')}" width="1280" height="853" loading="eager" fetchpriority="high" decoding="async"></figure>`;
     for(const k of kids){ if(k===first){ if(h1El) h1El.remove(); const rest=first.classList.contains('block')?walk(first.querySelector('.block-content')||first,st):block(first,st); if(rest){ items++; body+=rest; } continue; } const html=block(k,st); if(html){ items++; body+=html; } }
   } else {
     // Unknown frontend shape: promote the first heading, walk everything verbatim.
@@ -95,100 +98,96 @@ export function render({doc,pj}){
     for(const k of [...main.children].filter(k=>!/^(HEADER|FOOTER)$/.test(k.tagName)&&!k.classList.contains('header')&&!k.classList.contains('footer'))){ const html=block(k,st); if(html){ items++; body+=html; } }
   }
   const hasRail=!!(rel||tema);
+  // Round 01: related articles are a card bento below the story (16:9 bleeding photos, whole card is the link); themes are 6 px badges.
   const railHtml=hasRail?`
-    <aside class="rail" data-section="related" data-intent="cross-link: related articles and themes" data-layout="rail" data-module="card-rail" data-items="${rel.split('<li').length-1}" data-media="image" aria-labelledby="rel-h">
-      ${rel?`<div class="rail-group"><h2 class="title-sm" id="rel-h" data-slot="heading">${esc(relH)}</h2><ul class="rail-list" data-slot="cards" data-deviation="photo mask 24px on 120px thumbnails (canon .photo-sm 48px would consume the image)">${rel}</ul></div>`:''}
-      ${tema?`<div class="rail-group"><h2 class="title-sm"${rel?'':' id="rel-h"'} data-slot="heading">${esc(temaH)}</h2><ul class="tema" data-slot="tags">${tema}</ul></div>`:''}
-    </aside>`:'';
+<section class="movement related" data-section="related" data-intent="cross-link: related articles and themes" data-layout="grid" data-module="card-rail" data-items="${rel.split('<li').length-1}" data-media="image" aria-labelledby="rel-h">
+  <div class="container">
+    ${rel?`<h2 class="h2-l section-title" id="rel-h" data-slot="heading">${esc(relH)}</h2><ul class="bento news-rail" data-slot="cards">${rel}</ul>`:''}
+    ${tema?`<div class="tema-row"><h2 class="h2-s"${rel?'':' id="rel-h"'} data-slot="heading">${esc(temaH)}</h2><ul class="tema" data-slot="tags">${tema}</ul></div>`:''}
+  </div>
+</section>`:'';
+  // Round 01 hero bento: text card 5 cols (H1 at Headline-L, meta, lead, share) + photo card 7 cols; no photo → the text card spans 12.
   let mainHtml=`
 <article class="article">
-<section class="movement art-head" data-section="article-header" data-intent="headline, meta, lead; the photo as content" data-layout="split-media" data-media="image" data-module="article-header">
-  <div class="container art-head-grid${heroHtml?'':' no-media'}">
-    <div class="art-title">
-      <h1 data-slot="heading">${esc(h1)}</h1>
-      ${tag||date?`<p class="byline" data-slot="meta">${tag?`<span>${esc(tag)}</span>`:''}${date?`<time>${esc(date)}</time>`:''}</p>`:''}
-    </div>
-    ${heroHtml}
-    ${lead||share?`<div class="art-lead">
+<section class="hero-movement art-head container" data-section="article-header" data-intent="headline, meta, lead; the photo as content" data-layout="bento-cells" data-media="image" data-module="article-header">
+  <div class="bento art-hero${heroHtml?'':' no-media'}">
+    <div class="card card--tint art-title-card"><div class="card-body">
+      <h1 class="h2-l" data-slot="heading">${esc(h1)}</h1>
+      ${tag||date?`<p class="meta small byline" data-slot="meta">${tag?`<span>${esc(tag)}</span>`:''}${date?`<time>${esc(date)}</time>`:''}</p>`:''}
       ${lead?`<p class="lead" data-slot="text">${esc(lead)}</p>`:''}
       ${share?`<ul class="share" aria-label="Del artikkelen" data-slot="share">${share}</ul>`:''}
-    </div>`:''}
+    </div></div>
+    ${heroHtml}
   </div>
 </section>
-<section class="movement art-body" data-section="article-body" data-intent="read the story" data-layout="${hasRail?'prose-aside':'prose'}" data-module="article-body" data-items="${items}">
-  <div class="container body-grid${hasRail?'':' no-rail'}">
-    <div class="prose" data-slot="body">${body}</div>${railHtml}
+<section class="movement art-body" data-section="article-body" data-intent="read the story" data-layout="prose" data-module="article-body" data-items="${items}">
+  <div class="container body-grid">
+    <div class="prose" data-slot="body">${body}</div>
   </div>
-</section>
+</section>${railHtml}
 </article>`;
   // exactly one <h1>: demote extras when several
   const h1s=(mainHtml.match(/<h1[\s>]/g)||[]).length;
   if(h1s>1){ let n=0; mainHtml=mainHtml.replace(/<h1(\s[^>]*)?>([\s\S]*?)<\/h1>/g,(m,a,t)=>(++n===1?m:`<h2${a||''}>${t}</h2>`)); }
   const css=`
-.art-head{padding-bottom:var(--spacing-lg)}
-.art-head-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"title media" "lead media";gap:var(--spacing-md) var(--spacing-xl);align-items:start}
-.art-title{grid-area:title;display:grid;gap:var(--spacing-sm);align-content:start}.art-title h1{max-width:22ch}
-.byline{display:flex;flex-wrap:wrap;gap:4px 12px;color:var(--moerkgraa);font-size:var(--body-sm);line-height:1.45}
-.byline span+time::before{content:"·";margin-right:12px;color:var(--graa)}
-.art-media{grid-area:media;margin:0;display:grid;gap:var(--spacing-sm)}
-.art-lead{grid-area:lead;display:grid;gap:var(--spacing-lg);align-content:start;align-self:start}.art-lead .lead{max-width:60ch}
+/* article — round 01: hero bento (text 5 + photo 7), prose column, related cards */
+.hero-movement{padding-top:24px}
+.art-hero{grid-template-rows:minmax(440px,auto)}
+.art-title-card{grid-column:1/span 5}.art-title-card .card-body{justify-content:center;padding:56px 48px}
+.art-title-card h1{max-width:18ch}.art-title-card .byline{margin-top:16px}.art-title-card .lead{margin-top:20px;max-width:none}.art-title-card .share{margin-top:28px}
+.byline span+time::before{content:"·";margin-right:14px;color:var(--graa)}
+.art-photo{grid-column:6/-1;margin:0;background:var(--frost-30)}
+.art-photo img{width:100%;height:100%;flex:1 1 auto;min-height:0;object-fit:cover;transition:transform .7s var(--ease)}
+.art-photo figcaption{padding:12px 20px;background:var(--sand-70);color:var(--koksgraa)}
+.art-hero.no-media .art-title-card{grid-column:1/-1;min-height:0}.art-hero.no-media .art-title-card h1{max-width:24ch}
 .share{display:flex;gap:var(--spacing-sm)}
-.share-btn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;border-radius:50%;border:1px solid var(--lysgraa);background:#fff;color:var(--vann);cursor:pointer;transition:background-color var(--dur) var(--ease),border-color var(--dur) var(--ease)}
-.share-btn svg{width:22px;height:22px}.share-btn:hover{background:var(--frost-30);border-color:var(--vann)}
-.art-body{padding-top:var(--spacing-lg)}
-.body-grid{display:grid;grid-template-columns:minmax(0,68ch) minmax(0,1fr);gap:var(--spacing-3xl);align-items:start}
+.share-btn{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;padding:0;border:0;border-radius:50%;background:#fff;color:var(--vann);cursor:pointer;transition:background-color var(--dur) var(--ease),color var(--dur) var(--ease)}
+.share-btn svg{width:22px;height:22px}.share-btn:hover{background:var(--vann);color:#fff}
+.body-grid{display:grid;grid-template-columns:minmax(0,68ch)}
 .prose h2{margin:var(--spacing-xl) 0 var(--spacing-md);max-width:24ch}.prose>p:first-child{margin-top:0}
 .prose p+h2{margin-top:var(--spacing-xl)}
 .art-figure{margin:var(--spacing-xl) 0;display:grid;gap:var(--spacing-sm)}
-.art-figure .photo{object-position:50% 25%}
-.factbox{display:grid;gap:var(--spacing-md);margin-top:var(--spacing-xl);padding:var(--spacing-lg);background:var(--sand-30);border-radius:var(--radius)}
+.art-figure .photo{object-position:50% 25%;border-radius:var(--radius)}
+.factbox{display:grid;gap:var(--spacing-md);margin-top:var(--spacing-xl);padding:36px;background:var(--sand-70);border-radius:var(--radius)}
 .factbox h2{margin:0;font-size:var(--t-title)}.factbox ul{display:grid;gap:var(--spacing-sm);margin:0;padding-left:1.2em;list-style:disc}.factbox li{margin:0}.factbox li::marker{color:var(--vann)}
-.rail{display:grid;gap:var(--spacing-xl);position:sticky;top:var(--spacing-lg)}
-.rail-group{display:grid;gap:var(--spacing-md)}
-.rail-list{display:grid;gap:var(--spacing-md)}
-.rail-item{position:relative;display:grid;grid-template-columns:120px minmax(0,1fr);gap:var(--spacing-md);align-items:center}
-.rail-item .photo{margin:0;width:120px;background:var(--frost-30);border-radius:24px 0 24px 0}/* 48px mask would consume a 120px thumb — see data-deviation on .rail-list */
-.rail-title{font-family:var(--title-font-family);font-size:var(--body);line-height:1.35;letter-spacing:0}
-.rail-title a{color:var(--fjell);text-decoration:none}.rail-title a::after{content:"";position:absolute;inset:0}.rail-item:hover .rail-title a,.rail-item:focus-within .rail-title a{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.12em}
-.tema{display:flex;flex-wrap:wrap;gap:var(--spacing-sm)}
-.badge{display:inline-flex;align-items:center;min-height:40px;padding:6px 16px;border-radius:var(--radius-pill);background:var(--frost-30);color:var(--fjell);font-family:var(--title-font-family);font-size:var(--label);letter-spacing:.01em;text-decoration:none;transition:background-color var(--dur) var(--ease),color var(--dur) var(--ease)}
-.badge:hover{background:var(--vann);color:#fff}.badge:visited{color:var(--fjell)}
-@media (max-width:1023px){
-  .art-head-grid{grid-template-columns:1fr;grid-template-areas:"title" "media" "lead";gap:var(--spacing-lg)}.art-media{max-width:600px}
-  .body-grid{grid-template-columns:1fr;gap:var(--spacing-2xl)}
-  .rail{position:static}.rail-list{grid-template-columns:1fr 1fr;gap:var(--spacing-lg)}
+.news-rail>.card{grid-column:span var(--span,3)}
+.news-card .card-body{padding:32px 28px 40px}
+.news-card--wide{flex-direction:row}.news-card--wide .card-image{width:46%;flex:none;height:auto;aspect-ratio:16/9;align-self:stretch}.news-card--wide .card-body{justify-content:center}
+.tema-row{margin-top:var(--section-padding);display:grid;gap:var(--spacing-md)}
+.tema{display:flex;flex-wrap:wrap;gap:var(--card-gap)}
+@media (max-width:1024px){
+  .art-hero{grid-template-rows:auto}.art-title-card{grid-column:1/-1}.art-title-card .card-body{padding:40px 32px}.art-title-card h1{max-width:none}
+  .art-photo{grid-column:1/-1;order:-1}.art-photo img{aspect-ratio:16/9;height:auto;flex:none}
+  .news-rail>.card{grid-column:span 6}.news-card--wide{flex-direction:column}.news-card--wide .card-image{width:100%}
 }
-@media (max-width:640px){
-  .art-media{max-width:none}
+@media (max-width:767px){
+  .art-title-card .card-body{padding:36px 20px}
   .art-figure{margin:var(--spacing-lg) 0}
-  .rail-list{grid-template-columns:1fr}
+  .news-rail>.card{grid-column:1/-1}.news-card .card-body{padding:28px 20px 32px}
   .factbox{padding:20px}
 }
 `;
   // Sibling-only shapes (emitted only when present so the archetype's output stays byte-identical).
   const siblingCss=(!hasRail||!heroHtml||st.eagerBody||/art-cta|fact-cta|pull-quote|art-split|art-video|hero-video|story-block|art-cols|art-illu|art-caption|prose-fallback|hide-phone|hide-desktop|<ol|<h3/.test(body))?`
-.art-head-grid.no-media{grid-template-columns:minmax(0,68ch);grid-template-areas:"title" "lead"}
-.body-grid.no-rail{grid-template-columns:minmax(0,68ch)}
 .prose h3{margin:var(--spacing-lg) 0 var(--spacing-sm);font-size:var(--title)}.prose ol{list-style:decimal;padding-left:1.25em}.prose strong{font-family:var(--title-font-family);font-weight:400}
 .art-cta,.fact-cta{display:flex;flex-wrap:wrap;gap:var(--spacing-sm);margin-top:var(--spacing-lg)}.fact-cta{margin-top:0}
 .art-caption{margin-top:var(--spacing-md)}
 .art-illu{justify-items:center}.illu-lg{width:min(100%,320px);height:auto;aspect-ratio:1;object-fit:contain}
-.pull-quote{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-areas:"img quote" "img who";gap:var(--spacing-xs) var(--spacing-lg);align-items:center;margin:var(--spacing-xl) 0;padding:var(--spacing-lg);background:var(--frost-30);border-radius:var(--radius)}
+.pull-quote{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-areas:"img quote" "img who";gap:var(--spacing-xs) var(--spacing-lg);align-items:center;margin:var(--spacing-xl) 0;padding:36px;background:var(--frost-30);border-radius:var(--radius)}
 .pull-quote:not([data-media]){grid-template-columns:minmax(0,1fr);grid-template-areas:"quote" "who"}
 .quote-portrait{grid-area:img;width:120px;height:120px;border-radius:50%;object-fit:cover;background:var(--frost)}
 .pull-quote blockquote{grid-area:quote;margin:0}.pull-quote blockquote p{margin:0;font-family:var(--title-font-family);font-size:var(--lead);line-height:1.4;color:var(--fjell)}.pull-quote figcaption{grid-area:who;color:var(--koksgraa)}
-.art-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:var(--spacing-xl);align-items:center;margin:var(--spacing-xl) 0;padding:var(--spacing-lg);background:var(--sand-30);border-radius:var(--radius)}
+.art-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:var(--spacing-xl);align-items:center;margin:var(--spacing-xl) 0;padding:36px;background:var(--sand-70);border-radius:var(--radius)}
 .art-split .art-figure{margin:0}.art-split h2{margin-top:0}.art-split .art-cta{margin-top:var(--spacing-md)}
-.art-video,.story-video,.hero-video{margin:var(--spacing-xl) 0;width:100%;aspect-ratio:16/9}.hero-video{margin:0}.art-video video,.story-video video,.hero-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:var(--fjell)}
+.art-video,.story-video,.hero-video{margin:var(--spacing-xl) 0;width:100%;aspect-ratio:16/9}.hero-video{margin:0;flex:1 1 auto;aspect-ratio:auto;min-height:320px;border-radius:0}.art-photo--video{background:var(--frost-30)}.art-video video,.story-video video,.hero-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:var(--fjell)}
 .video-icon{position:relative;width:64px;height:64px;pointer-events:none}
-.story-block{display:grid;gap:var(--spacing-lg);margin:var(--spacing-xl) 0}.story-photo{aspect-ratio:16/9}.story-block-text>p:first-child{margin-top:0}
+.story-block{display:grid;gap:var(--spacing-lg);margin:var(--spacing-xl) 0}.story-photo{aspect-ratio:16/9;border-radius:var(--radius)}.story-block-text>p:first-child{margin-top:0}
 .art-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr));gap:var(--spacing-xl);margin:var(--spacing-xl) 0}.art-col>:first-child{margin-top:0}.art-col .factbox,.art-col .art-figure{margin-top:0}
 .art-col .art-figure+.art-figure,.art-col .art-figure+.factbox,.art-col .factbox+.art-figure{margin-top:var(--spacing-lg)}
 .hide-phone{display:inline-flex}.hide-desktop{display:none}
-a.badge{min-height:40px;padding:6px 16px}
-@media (max-width:1023px){.art-split{grid-template-columns:1fr}}
-@media (max-width:640px){.pull-quote,.pull-quote:not([data-media]){grid-template-columns:1fr;grid-template-areas:"img" "quote" "who";padding:20px}.quote-portrait{width:96px;height:96px}.art-split{padding:20px}.hide-phone{display:none}.hide-desktop{display:inline-flex}}
+@media (max-width:1024px){.art-split{grid-template-columns:1fr}}
+@media (max-width:767px){.pull-quote,.pull-quote:not([data-media]){grid-template-columns:1fr;grid-template-areas:"img" "quote" "who";padding:20px}.quote-portrait{width:96px;height:96px}.art-split{padding:20px}.hide-phone{display:none}.hide-desktop{display:inline-flex}}
 `:'';
   return { template:'article', title:pj.title, description:norm(pj.metaDescription), main:mainHtml, css:css+siblingCss, footer:frontendFooter(main),
-    provenance:{ shapeBrief:'stardust/prototypes/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html-shape.md', dominantDimension:'composition/reading-room-spread', conceptSeed:'surface adc00a6a read (dealt 4,5,7; 4 built)', unsourcedContent:[], ...(st.fallbacks?{richTextFallbacks:st.fallbacks}:{}), signatureElements:['one-corner-pair photo mask (hero 96px, portrait + rail 48px)'], improvementsApplied:['#3 1.25 scale headline','#4 flat related rail, kicker → meta line','#5 photo beside the headline, never behind it','#6 hero photo at content scale'], dynamicsInterim:['share buttons static type=button (captured JS share handlers, no href)'], canonDeviations:['.badge (local pill; canon lacks DESIGN.md § Badges)'] } };
+    provenance:{ shapeBrief:'stardust/prototypes/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html-shape.md', dominantDimension:'composition/reading-room-spread', conceptSeed:'surface adc00a6a read (dealt 4,5,7; 4 built)', unsourcedContent:[], ...(st.fallbacks?{richTextFallbacks:st.fallbacks}:{}), signatureElements:['hero bento: Sand-70 text card 5 + bleeding photo card 7','related stories as 16:9 news cards'], improvementsApplied:['round 01: hero bento, prose reading column at 68ch, related rail → card bento, themes as 6 px badges, share as Frost-30 icon circles','#5 photo beside the headline, never behind it'], dynamicsInterim:['share buttons static type=button (captured JS share handlers, no href)'], canonDeviations:[] } };
 }

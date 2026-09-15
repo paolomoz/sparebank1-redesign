@@ -1,0 +1,18 @@
+/* callout — hub family group additions (additive variants only; imported by callout.css) */
+
+/* ===== category-hub: cta — a pill after the callout paragraph keeps the canon p + p 16 + .btn 4 rhythm (grid gap 8 + 20) ===== */
+.callout.cta .callout-text p.button-wrapper { margin-top: 20px; }
+
+/* ===== tool · utility: rich — a 28px-glyph grid with h2 + several paragraphs + h3 sub-heading (canon .callout-rich) ===== */
+.callout.rich .callout { display: grid; grid-template-columns: 28px minmax(0, 1fr); align-items: start; gap: var(--spacing-md); padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-lg) var(--spacing-md); max-width: calc(68ch + 84px); }
+.callout.rich .callout-text { gap: 0; max-width: 68ch; }
+.callout.rich .callout-text :is(h2, h3) + p { margin-top: var(--spacing-sm); }
+.callout.rich .callout-text p + p { margin-top: var(--spacing-md); }
+.callout.rich .callout-text h3 { font-family: var(--title-font-family); font-size: var(--lead); line-height: 1.3; margin-top: var(--spacing-lg); }
+
+@media (width <= 640px) {
+  .callout.rich .callout { grid-template-columns: 24px 1fr; padding: var(--spacing-md); }
+  .callout.rich .callout > svg { width: 24px; height: 24px; }
+  main .section.quick .callout.rich .callout { grid-template-columns: 28px minmax(0, 1fr); padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-lg) var(--spacing-md); } /* kontakt prototype: the quick callout keeps its desktop padding on phones */
+  main .section.quick .callout.rich .callout > svg { width: 28px; height: 28px; }
+}

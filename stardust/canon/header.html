@@ -1,24 +1,17 @@
 <!-- stardust:canon
   writtenBy:        stardust:prototype --prep
-  writtenAt:        2026-09-14T20:36:44.364Z
+  writtenAt:        2026-09-15T11:32:59.473Z
   sourceSlug:       nb-bank-privat-html
   sourcePrototype:  stardust/prototypes/nb-bank-privat-html-proposed.html
   region:           header
   stardustVersion:  0.20.0
 -->
-<header data-section="header" data-intent="site navigation, audience switch, one action" data-layout="contained" data-canon="" data-nav-collapse="hamburger">
-  <div class="hdr-utility">
-    <div class="container hdr-utility-row">
-      <nav class="audience" aria-label="Målgruppe"><ul><li><a href="/nb/bank/privat.html" aria-current="page" class="is-active">Privat</a></li><li><a href="/nb/bank/bedrift.html">Bedrift</a></li><li><a href="/nb/bank/om-oss.html">Om oss</a></li></ul></nav>
-      <div class="hdr-actions">
-        <a class="btn-icon" href="?search="><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m20 20-4.8-4.8" /></svg><span>Søk</span></a>
-        <a class="btn btn-secondary btn-sm" href="/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat">Bli kunde</a>
-        <a class="btn btn-action btn-sm" href="https://login.sparebank1.no/" data-slot="login">Logg inn</a>
-      </div>
-    </div>
+<header class="site-header" data-section="header" data-intent="site navigation, audience switch, one action" data-layout="contained" data-canon="" data-nav-collapse="hamburger">
+  <div class="settings-bar">
+    <div class="container"><nav class="audience" aria-label="Målgruppe"><ul><li><a href="/nb/bank/privat.html" aria-current="page" class="is-active">Privat</a></li><li><a href="/nb/bank/bedrift.html">Bedrift</a></li><li><a href="/nb/bank/om-oss.html">Om oss</a></li></ul></nav></div>
   </div>
-  <div class="hdr-main">
-    <div class="container hdr-main-row">
+  <div class="main-bar">
+    <div class="container main-row">
       <a class="logo" href="/nb/bank/privat.html"><svg version="1.1" id="SpareBank_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 281.633 78.197" class="logo-svg" role="img" aria-label="Tilbake til forsiden for privat for - SpareBank 1" focusable="false">
 <g>
 	<rect x="0.009" y="0.011" fill="none" width="281.633" height="78.208" />
@@ -91,16 +84,18 @@
 	</g>
 </g>
 </svg></a>
-      <div class="hdr-mobile-actions"><a class="btn btn-action btn-sm" href="https://login.sparebank1.no/">Logg inn</a></div>
-      <input type="checkbox" id="ds-nav-toggle" class="ds-nav-toggle" tabindex="-1" aria-hidden="true">
-      <label class="ds-nav-burger" for="ds-nav-toggle" role="button" tabindex="0" aria-controls="main-menu" aria-expanded="false"><span class="ds-nav-burger-icon" aria-hidden="true"></span><span class="ds-nav-burger-label">Meny</span></label>
-      <nav id="main-menu" class="ds-nav" aria-label="Hovedmeny">
+      <nav id="main-menu" class="primary" aria-label="Hovedmeny">
+        <div class="panel-top"><a class="panel-search" href="?search="><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m20 20-4.8-4.8" /></svg><span>Søk</span></a></div>
+        <ul class="audience-m" aria-label="Målgruppe"><li><a href="/nb/bank/privat.html" aria-current="page" class="is-active">Privat</a></li><li><a href="/nb/bank/bedrift.html">Bedrift</a></li><li><a href="/nb/bank/om-oss.html">Om oss</a></li></ul>
         <ul class="market"><li><a href="/nb/bank/privat/daglig-bruk.html">Daglig bruk</a></li><li><a href="/nb/bank/privat/lan.html">Låne</a></li><li><a href="/nb/bank/privat/sparing.html">Spare</a></li><li><a href="/nb/bank/privat/pensjon.html">Pensjon</a></li><li><a href="/nb/bank/privat/forsikring.html">Forsikring</a></li><li><a href="/nb/bank/privat/eiendom.html">Eiendom</a></li><li><a href="/nb/bank/privat/tips-og-rad.html">Tips og råd</a></li><li><a href="/nb/bank/privat/kundeservice.html">Kundeservice</a></li><li><a href="/nb/bank/privat/lofavor.html">LOfavør-fordeler</a></li></ul>
-        <div class="nav-extra">
-          <ul class="audience-mobile" aria-label="Målgruppe"><li><a href="/nb/bank/privat.html" aria-current="page" class="is-active">Privat</a></li><li><a href="/nb/bank/bedrift.html">Bedrift</a></li><li><a href="/nb/bank/om-oss.html">Om oss</a></li></ul>
-          <div class="nav-extra-actions"><a class="btn-icon" href="?search="><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m20 20-4.8-4.8" /></svg><span>Søk</span></a><a class="btn btn-secondary btn-sm" href="/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat">Bli kunde</a></div>
-        </div>
+        <ul class="service"><li><a href="/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat">Bli kunde</a></li></ul>
       </nav>
+      <div class="tools">
+        <a class="tool-text" href="/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat">Bli kunde</a>
+        <a class="tool-search" href="?search=" aria-label="Søk"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m20 20-4.8-4.8" /></svg><span class="visually-hidden">Søk</span></a>
+        <a class="btn btn-action btn-nav" href="https://login.sparebank1.no/" data-slot="login">Logg inn</a>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span><span class="menu-label">Meny</span></button>
     </div>
   </div>
 </header>

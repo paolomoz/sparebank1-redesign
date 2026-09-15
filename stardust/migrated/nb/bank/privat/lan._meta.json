@@ -29,20 +29,20 @@
   "clientlib": "base"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "bcf41360dd6c0295",
-  "sourceProposedSha": "c3690e249d09279a",
+  "sourceProposedSha": "8b34f40715691540",
   "archetypeSha": null,
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
  "deviations": [],
@@ -95,7 +95,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 39,
+ "linksRewritten": 40,
  "metadata": {
   "title": "Søk lån til bolig, bil eller andre ting | SpareBank 1",
   "description": "Skal du kjøpe bolig, bil eller andre ting? Eller kanskje du vil samle alle smålån på en plass? Finn ut hvor mye du kan låne og få et uforpliktende tilbud her.",
@@ -106,7 +106,7 @@
   "adapt": {
    "viewport": true,
    "media": 11,
-   "narrowest": 400
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -117,11 +117,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:27.918Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:23.005Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "bcf41360dd6c0295",
- "sourceProposedSha": "c3690e249d09279a",
+ "sourceProposedSha": "8b34f40715691540",
  "archetypeSha": null,
  "assetsBundled": 3
 }

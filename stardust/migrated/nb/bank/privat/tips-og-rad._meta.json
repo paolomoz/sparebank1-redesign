@@ -25,20 +25,20 @@
   "clientlib": "base"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "7822606873a761d9",
   "sourceProposedSha": null,
-  "archetypeSha": "e41164c76355e828",
+  "archetypeSha": "50ca7f6e18521db0",
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
  "deviations": [],
@@ -136,7 +136,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 33,
+ "linksRewritten": 34,
  "metadata": {
   "title": "Tips og råd | SpareBank 1",
   "description": null,
@@ -146,8 +146,8 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 14,
-   "narrowest": 400
+   "media": 12,
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -158,11 +158,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:32.731Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:29.163Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "7822606873a761d9",
  "sourceProposedSha": null,
- "archetypeSha": "e41164c76355e828",
+ "archetypeSha": "50ca7f6e18521db0",
  "assetsBundled": 3
 }

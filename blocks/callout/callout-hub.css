@@ -1,18 +1,24 @@
-/* callout — hub family group additions (additive variants only; imported by callout.css) */
-
-/* ===== category-hub: cta — a pill after the callout paragraph keeps the canon p + p 16 + .btn 4 rhythm (grid gap 8 + 20) ===== */
-.callout.cta .callout-text p.button-wrapper { margin-top: 20px; }
-
-/* ===== tool · utility: rich — a 28px-glyph grid with h2 + several paragraphs + h3 sub-heading (canon .callout-rich) ===== */
-.callout.rich .callout { display: grid; grid-template-columns: 28px minmax(0, 1fr); align-items: start; gap: var(--spacing-md); padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-lg) var(--spacing-md); max-width: calc(68ch + 84px); }
-.callout.rich .callout-text { gap: 0; max-width: 68ch; }
-.callout.rich .callout-text :is(h2, h3) + p { margin-top: var(--spacing-sm); }
-.callout.rich .callout-text p + p { margin-top: var(--spacing-md); }
-.callout.rich .callout-text h3 { font-family: var(--title-font-family); font-size: var(--lead); line-height: 1.3; margin-top: var(--spacing-lg); }
+/* callout-hub.css — hub group, round 01. `hub` = the canon .callout sheet (Sand-70, 24/28 padding); `rich` = prose body (grid, h2 + h3 + p);
+   `cta` = a pill after the text keeps the canon p + p + .btn rhythm (28 px). */
+/* ===== hub (shared) ===== */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .callout.hub .callout { background: var(--sand-70); padding: 24px 28px; align-items: flex-start; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .callout.hub .callout-text :is(h2, h3) { line-height: 1.17; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .callout.hub.cta .callout-text p + p.button-wrapper { margin-top: 20px; }
+/* ===== tool · utility: rich body ===== */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .callout.hub.rich .callout { display: grid; grid-template-columns: 28px minmax(0, 1fr); align-items: start; gap: 16px; padding: 24px 24px 24px 16px; max-width: calc(68ch + 84px); }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .callout.hub.rich .callout-text { display: block; max-width: 68ch; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .callout.hub.rich .callout-text p + p,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .callout.hub.rich .callout-text ul,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .callout.hub.rich .callout-text ol { margin-top: var(--spacing-md); }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .callout.hub.rich .callout-text h2 { font-size: var(--title); line-height: 1.25; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .callout.hub.rich .callout-text :is(h3, h4) { font-family: var(--title-font-family); font-size: var(--lead); line-height: 1.3; margin-top: var(--spacing-md); }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .callout.hub.rich .callout-text :is(h2, h3, h4) + p { margin-top: var(--spacing-sm); }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .callout.hub.rich .callout-text p.button-wrapper { margin-top: var(--spacing-md); }
 
 @media (width <= 640px) {
-  .callout.rich .callout { grid-template-columns: 24px 1fr; padding: var(--spacing-md); }
-  .callout.rich .callout > svg { width: 24px; height: 24px; }
-  main .section.quick .callout.rich .callout { grid-template-columns: 28px minmax(0, 1fr); padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-lg) var(--spacing-md); } /* kontakt prototype: the quick callout keeps its desktop padding on phones */
-  main .section.quick .callout.rich .callout > svg { width: 28px; height: 28px; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .callout.hub .callout { flex-direction: column; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .callout.hub.rich .callout { grid-template-columns: 28px minmax(0, 1fr); }
 }
+
+/* the CTA keeps the canon single-line pill on phones (the prototype's .btn is nowrap; a wrapped 60 px pill was +16 px per callout) */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .callout.hub.cta a.button { white-space: nowrap; }

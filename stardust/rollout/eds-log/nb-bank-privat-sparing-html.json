@@ -19,7 +19,9 @@
   },
   {
    "module": "page-title",
-   "blocks": []
+   "blocks": [
+    "hero"
+   ]
   },
   {
    "module": "visual-nav",
@@ -55,15 +57,18 @@
   }
  ],
  "blocks": [
+  "hero",
   "cards",
   "columns",
   "feedback"
  ],
  "notes": [
+  "page-title: hero (hub text-only) — one text card across 12; h1, leads and CTAs are the text cell",
+  "visual-nav: cards (doors cols-4) + cards (small cols-4) — one row per door [photo | icon][h2 link, line]; section `bento-top, stack` keeps the 6 px bento gutters under the hero",
   "lint D1 calculator: bespoke widget (dynamics #7 interim static shell — controls disabled, captured strings; labels/values are control config, @ew-exempt in the block)",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T23:40:48.756Z"
+ "writtenAt": "2026-09-15T15:02:43.461Z"
 }

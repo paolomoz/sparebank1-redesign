@@ -1,7 +1,7 @@
 {
  "slug": "nb-bank-privat-kundeservice-kontakt-html",
  "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/prototypes/nb-bank-privat-kundeservice-kontakt-html-proposed.html",
- "at": "2026-09-14T23:08:42.491Z",
+ "at": "2026-09-15T14:57:15.822Z",
  "contract": {
   "rootFirst": true,
   "tokensMissing": [],
@@ -25,16 +25,16 @@
    "imgsNoAlt": 0,
    "inputsNoLabel": 0,
    "headingSkips": 0,
-   "headings": 11,
+   "headings": 27,
    "sectionsNoAttr": [],
-   "btnSmall": 13,
+   "btnSmall": 31,
    "btnSmallList": [
-    "a.@30px \"bankpost@s1g.no\"",
-    "a.@30px \"post@sb1.no\"",
-    "a.@30px \"Kontakt oss\"",
-    "a.@30px \"bankpost@fjellbanken\"",
-    "a.@30px \"privat@snn.no\"",
-    "a.@30px \"nordvest@snv.no\""
+    "a.logo@30px \"\"",
+    "a.arrow@23px \"+47 915 02095\"",
+    "a.arrow@23px \"bankpost@s1g.no\"",
+    "a.arrow@23px \"+47 915 03 202\"",
+    "a.arrow@23px \"post@sb1.no\"",
+    "a.arrow@23px \"+47 75 11 90 00\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
@@ -42,14 +42,11 @@
     "loading": "eager",
     "fp": "high",
     "src": "radgiver-sirkel-3.png",
-    "area": 17689
+    "area": 24025
    },
    "focusRing": true,
-   "docHeight": 4758,
+   "docHeight": 5620,
    "smoke": {
-    "navOpen": true,
-    "ariaExpanded": "true",
-    "navClosedByEsc": true,
     "ctaReachableByKeyboard": "no-primary-cta",
     "hovered": true
    }
@@ -60,13 +57,7 @@
    "externalFulfilled": 3,
    "exceptions": [],
    "overflowX": 0,
-   "wide": [
-    "li@771",
-    "li@771",
-    "li@771",
-    "li@771",
-    "li@771"
-   ],
+   "wide": [],
    "lm": {
     "header": true,
     "main": true,
@@ -77,14 +68,16 @@
    "imgsNoAlt": 0,
    "inputsNoLabel": 0,
    "headingSkips": 0,
-   "headings": 11,
+   "headings": 27,
    "sectionsNoAttr": [],
-   "btnSmall": 4,
+   "btnSmall": 32,
    "btnSmallList": [
-    "a.is-active@36px \"Privat\"",
-    "a.@36px \"Bedrift\"",
-    "a.@36px \"Om oss\"",
-    "label.@25px \"Søk etter et kontor\""
+    "a.logo@30px \"\"",
+    "a.btn@34px \"Logg inn\"",
+    "a.arrow@24px \"+47 915 02095\"",
+    "a.arrow@24px \"bankpost@s1g.no\"",
+    "a.arrow@24px \"+47 915 03 202\"",
+    "a.arrow@24px \"post@sb1.no\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
@@ -92,10 +85,10 @@
     "loading": "eager",
     "fp": "high",
     "src": "radgiver-sirkel-3.png",
-    "area": 57600
+    "area": 115600
    },
    "focusRing": true,
-   "docHeight": 3179,
+   "docHeight": 3734,
    "smoke": {
     "ctaReachableByKeyboard": "no-primary-cta",
     "hovered": true
@@ -118,14 +111,16 @@
    "imgsNoAlt": 0,
    "inputsNoLabel": 0,
    "headingSkips": 0,
-   "headings": 11,
+   "headings": 27,
    "sectionsNoAttr": [],
-   "btnSmall": 4,
+   "btnSmall": 37,
    "btnSmallList": [
-    "a.is-active@36px \"Privat\"",
-    "a.@36px \"Bedrift\"",
-    "a.@36px \"Om oss\"",
-    "label.@25px \"Søk etter et kontor\""
+    "a.is-active@32px \"Privat\"",
+    "a.@32px \"Bedrift\"",
+    "a.@32px \"Om oss\"",
+    "a.logo@36px \"\"",
+    "a.tool-text@19px \"Bli kunde\"",
+    "a.tool-search@22px \"Søk\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
@@ -136,7 +131,7 @@
     "area": 115600
    },
    "focusRing": true,
-   "docHeight": 2910,
+   "docHeight": 2887,
    "smoke": {
     "ctaReachableByKeyboard": "no-primary-cta",
     "hovered": true
@@ -145,8 +140,8 @@
  },
  "mobileNav": {
   "over": 0,
-  "minFont": 14,
-  "minGap": 0,
+  "minFont": 12,
+  "minGap": null,
   "collapse": "hamburger"
  },
  "pass": true,
@@ -154,7 +149,7 @@
   {
    "sev": "P2",
    "where": "390",
-   "msg": "13 interactive elements < 40px tall: a.@30px \"bankpost@s1g.no\", a.@30px \"post@sb1.no\", a.@30px \"Kontakt oss\", a.@30px \"bankpost@fjellbanken\", a.@30px \"privat@snn.no\", a.@30px \"nordvest@snv.no\""
+   "msg": "31 interactive elements < 40px tall: a.logo@30px \"\", a.arrow@23px \"+47 915 02095\", a.arrow@23px \"bankpost@s1g.no\", a.arrow@23px \"+47 915 03 202\", a.arrow@23px \"post@sb1.no\", a.arrow@23px \"+47 75 11 90 00\""
   }
  ]
 }

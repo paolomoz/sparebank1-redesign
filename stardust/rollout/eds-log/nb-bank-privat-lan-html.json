@@ -19,7 +19,9 @@
   },
   {
    "module": "page-title",
-   "blocks": []
+   "blocks": [
+    "hero"
+   ]
   },
   {
    "module": "visual-nav",
@@ -40,13 +42,13 @@
   {
    "module": "split-media",
    "blocks": [
-    "columns"
+    "cards"
    ]
   },
   {
    "module": "promo-band",
    "blocks": [
-    "columns"
+    "cards"
    ]
   },
   {
@@ -73,22 +75,25 @@
   }
  ],
  "blocks": [
+  "hero",
   "cards",
   "cobranding",
-  "columns",
   "callout",
   "feedback"
  ],
  "notes": [
-  "shortcut-row: prose h2 + ul of links (David's Model D5 simple list); section style `shortcuts` paints the hairline, the inline-link row and the chevrons",
-  "cobranding: bespoke disclosure block (details/summary → head row + hidden panel, accordion.js pattern); the toggle label is authored text outside the <button>",
+  "page-title: hero (hub text-only) — one text card across 12; h1, leads and CTAs are the text cell",
+  "visual-nav: cards (doors cols-4) + cards (small cols-4) — one row per door [photo | icon][h2 link, line]; section `bento-top, stack` keeps the 6 px bento gutters under the hero",
+  "shortcut-row: prose h2 + ul of links (David's Model D5 simple list); section style `shortcuts` paints the Syrin card, the four-column link grid and the chevrons",
+  "cobranding: bespoke disclosure block (details/summary → head row + hidden panel, accordion.js pattern) painted as one Sand card (styles-hub.css); the toggle label is authored text outside the <button>",
   "media: dame-gar-smiler.svg is 51371 B of SVG (> 40000) — authored as DA media dame-gar-smiler.png",
-  "lint D1 callout: designed compound (canon icon + tinted paper), Block Collection-shaped single cell of prose — kept as a block like the product archetype",
+  "promo-band: cards (promo) — one row per promo [spot illustration][h2, line, CTA]; the illustration sits beside the teaser on the card tint (cards-hub.css)",
+  "lint D1 callout: designed compound (canon icon + Sand sheet), Block Collection-shaped single cell of prose — kept as a block like the product archetype",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
  "gaps": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-gar-smiler.svg"
  ],
- "writtenAt": "2026-09-14T23:40:48.722Z"
+ "writtenAt": "2026-09-15T15:02:43.394Z"
 }

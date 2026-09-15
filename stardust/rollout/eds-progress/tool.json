@@ -1,79 +1,71 @@
 {
-  "archetype": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
-  "document": "content/nb/bank/privat/kundeservice/verktoy/sperre-kort.html",
-  "blocks": {
-    "new": [],
-    "reused": [
-      "breadcrumbs",
-      "columns (split steps · split reopen)",
-      "callout (tip rich)",
-      "feedback (labels)",
-      "fragment"
-    ]
+ "archetype": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+ "document": "content/nb/bank/privat/kundeservice/verktoy/sperre-kort.html",
+ "blocks": {
+  "new": [],
+  "reused": [
+   "breadcrumbs",
+   "hero (hub text-only sand)",
+   "columns (split steps · split frost reopen)",
+   "callout (tip hub rich)",
+   "feedback (labels tool)",
+   "fragment (bank-router)"
+  ]
+ },
+ "iterations": 7,
+ "breakpoints": {
+  "360": {
+   "pixelPct": 3.09,
+   "heightDelta": 1,
+   "header": 100,
+   "footer": 100,
+   "pass": true
   },
-  "iterations": 3,
-  "breakpoints": {
-    "360": {
-      "pixelPct": 2.15,
-      "heightDelta": 1,
-      "header": 99.66,
-      "footer": 100,
-      "pass": true
-    },
-    "1440": {
-      "pixelPct": 1.07,
-      "heightDelta": 1,
-      "header": 99.96,
-      "footer": 99.89,
-      "pass": true
-    }
-  },
-  "contentDiff": {
-    "red": 0,
-    "justified": []
-  },
-  "ew": {
-    "editable": 23,
-    "dead": 0,
-    "exempt": 1
-  },
-  "lint": {
-    "davidsModelRed": 0,
-    "deliveryP0": 0,
-    "deliveryP1": 0
-  },
-  "siblings": {
-    "converted": [
-      "nb-bank-privat-forsikring-meld-skade-html",
-      "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
-      "nb-bank-privat-kundeservice-verktoy-klager-html",
-      "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
-      "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html"
-    ],
-    "gaps": {
-      "nb-bank-privat-forsikring-meld-skade-html": 0,
-      "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html": 0,
-      "nb-bank-privat-kundeservice-verktoy-klager-html": 0,
-      "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html": 0,
-      "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html": 0
-    },
-    "lintRed": {
-      "nb-bank-privat-forsikring-meld-skade-html": 0,
-      "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html": 0,
-      "nb-bank-privat-kundeservice-verktoy-klager-html": 0,
-      "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html": 0,
-      "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html": 0
-    },
-    "contentDiffSampled": {
-      "slug": "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html",
-      "red": 0
-    }
-  },
-  "productRegression": {
-    "slug": "nb-bank-privat-lan-boliglan-html",
-    "pixelPct1440": 0.74,
-    "heightDelta": -1,
-    "pass": true
-  },
-  "gatedAt": "2026-09-14T22:42:32.437Z"
+  "1440": {
+   "pixelPct": 0.98,
+   "heightDelta": 1,
+   "header": 99.84,
+   "footer": 100,
+   "pass": true
+  }
+ },
+ "contentDiff": {
+  "red": 0,
+  "justified": []
+ },
+ "ew": {
+  "editable": 23,
+  "dead": 0,
+  "exempt": 1
+ },
+ "lint": "davids 0 🔴 / 5 🟡 · delivery 0 P0 · 0 P1 · 1 P2",
+ "siblings": {
+  "converted": [
+   "nb-bank-privat-forsikring-meld-skade-html",
+   "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+   "nb-bank-privat-kundeservice-verktoy-klager-html",
+   "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
+   "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html"
+  ],
+  "gaps": {},
+  "lintRed": {},
+  "sampled": "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+  "contentDiffRed": 0,
+  "contentDiffSampled": {
+   "slug": "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+   "red": 0
+  }
+ },
+ "requests": [
+  "gate measure pass vs lazy proto SVG (footer crop, lan 360)",
+  "/nav header 360 on kundeservice 97.1 % (chrome)",
+  "aspect-ratio: auto discards UA attribute ratio → revert-layer",
+  "variant tokens colliding with canon compounds (title, small)",
+  "group CSS import order",
+  "hero.js split-h1 opt-in (edited)",
+  "lib.inline nbsp (keepNbsp workaround)",
+  "FAQ summary lead size ≤767 scope"
+ ],
+ "roundOne": true,
+ "at": "2026-09-15T14:46:20.670Z"
 }

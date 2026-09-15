@@ -1,82 +1,59 @@
-/* columns — hub family group additions (additive variants only; imported by columns.css) */
+/* columns-hub.css — hub group, round 01. `split steps` (tool: Frost steps card 7 + illustration tile 5, numbered ledger) ·
+   `split frost` (tool reopen: Frost text card). Rules carry `main` for specificity over the base split rules (group files import first). */
+/* ===== tool: steps ===== */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card { grid-column: 1 / span 7; grid-row: 1; background: var(--frost-30); }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-media.card { grid-column: 8 / -1; grid-row: 1; min-height: 0; background: var(--card-tint); display: flex; align-items: center; justify-content: center; padding: 32px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-media.card picture { height: auto; width: auto; display: flex; justify-content: center; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-media.card img.photo { width: min(70%, 320px); height: auto; max-height: 320px; aspect-ratio: 1; object-fit: contain; background: transparent; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .split-row:has(.col-text:hover) .col-media img { transform: none; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card .card-body { justify-content: flex-start; padding: 48px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card :is(h2, h3) { margin-bottom: 8px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card ol { list-style: none; counter-reset: step; padding: 0; margin-top: 26px; display: grid; gap: 0; max-width: 68ch; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card ol li { counter-increment: step; position: relative; padding: 18px 0 12px 52px; min-height: 61px; margin: 0; border-top: 1px solid rgb(0 39 118 / 12%); }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card ol li::before { content: counter(step); position: absolute; left: 0; top: 13px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--vann); color: #fff; font-family: var(--title-font-family); font-size: var(--body); font-variant-numeric: tabular-nums; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card ol li:last-child { border-bottom: 1px solid rgb(0 39 118 / 12%); }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card .lead-wrap { margin-top: 0; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card .lead-wrap p { font-size: var(--body); line-height: var(--line-height-body); max-width: 60ch; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card .cta-row { margin-top: 16px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card .cta-row + p { margin-top: 16px; font-size: var(--body-sm); line-height: 1.43; color: var(--koksgraa); max-width: 60ch; }
+/* ===== tool: reopen split (Frost text card) ===== */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.frost .col-text.card { background: var(--frost-30); }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.frost .col-media.card { position: relative; min-height: 380px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.frost .col-media.card picture,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.frost .col-media.card img.photo { position: absolute; inset: 0; width: 100%; height: 100%; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.frost .col-text.card .lead-wrap p { font-size: var(--body); line-height: var(--line-height-body); max-width: 68ch; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.frost .col-text.card .lead-wrap + p { margin-top: 16px; max-width: 68ch; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.frost .col-text.card .cta-row { margin-top: 10px; }
 
-/* ===== category-hub: help (two stacked photo columns side by side) · promo `switch` (flush under the help columns, own hairline, 140px spot) ===== */
-.columns.split.help .container { grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); }
-.columns.split.help .split-row { grid-template-columns: 1fr; gap: var(--spacing-md); align-items: start; }
-.columns.split.help .col-media img.photo { margin-bottom: var(--spacing-sm); }
-.columns.split.help .col-text { max-width: none; }
-.columns.split.help .lead-wrap p { font-size: var(--body); line-height: var(--line-height-body); max-width: 44rem; }
-.columns.split.help .col-text .cta-row { margin-top: var(--spacing-md); }
-.columns.split.help .col-text :is(ul, ol) { list-style: none; padding: 0; gap: var(--spacing-xs); }
-.columns.split.help .col-text :is(h2, h3) a:any-link { color: var(--fjell); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.15em; }
-.columns.split.help .col-text :is(h2, h3) a:hover { color: var(--vann); }
-.columns.promo.switch .split-row { gap: var(--spacing-xl); padding-top: var(--spacing-xl); border-top: 1px solid var(--lysgraa); }
-.columns.promo.switch .col-media img { width: 140px; }
-
-/* ===== kundeservice-hub: promo `invites` (two promos side by side, hairline between) ===== */
-.columns.promo.invites .container { grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); }
-.columns.promo.invites .split-row { padding: 0 var(--spacing-xl) 0 0; }
-.columns.promo.invites .split-row + .split-row { border-left: 1px solid var(--lysgraa); padding: 0 0 0 var(--spacing-xl); }
-.columns.promo.invites .col-media img { width: 150px; }
-
-/* ===== tool: steps (h2 + numbered ledger + pill + note, illustration beside) · reopen (body copy, 96px photo radius) ===== */
-.columns.split.steps .split-row { grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); gap: var(--spacing-md) var(--spacing-xl); align-items: start; }
-.columns.split.steps .col-text { max-width: none; gap: 0; counter-reset: step; }
-.columns.split.steps .col-text h2 { margin-bottom: var(--spacing-md); }
-.columns.split.steps .col-text ol { list-style: none; counter-reset: step; padding: 0; margin-top: var(--spacing-sm); display: grid; gap: 0; }
-.columns.split.steps .col-text ol li { counter-increment: step; position: relative; display: block; min-height: 61px; padding: 18px 0 12px 52px; border-top: 1px solid var(--frost); margin: 0; }
-.columns.split.steps .col-text ol li::before { content: counter(step); position: absolute; left: 0; top: 12px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--vann); color: #fff; font-family: var(--title-font-family); font-size: var(--body); font-variant-numeric: tabular-nums; }
-.columns.split.steps .col-text ol li::marker { content: none; }
-.columns.split.steps .col-text ol li:last-child { border-bottom: 1px solid var(--frost); }
-.columns.split.steps .col-text ol + :is(p, .lead-wrap) { margin-top: 0; }
-.columns.split.steps .lead-wrap p { font-size: var(--body); line-height: var(--line-height-body); max-width: 68ch; }
-.columns.split.steps .col-text p + p,
-.columns.split.steps .col-text .lead-wrap + p { margin-top: var(--spacing-md); }
-.columns.split.steps .col-text .cta-row { margin-top: var(--spacing-md); }
-/* steps whose bodies are rich (heading + paragraphs per step, e.g. klager, utenlandsbetaling) arrive as default content (D2): the h3 carries the numbered badge, the body sits in the ledger column */
-.columns.split.steps .col-text h3 { counter-increment: step; position: relative; min-height: 36px; padding: 18px 0 0 52px; margin: var(--spacing-md) 0 0; border-top: 1px solid var(--frost); }
-.columns.split.steps .col-text h3::before { content: counter(step); position: absolute; left: 0; top: 12px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--vann); color: #fff; font-size: var(--body-sm); font-weight: 700; }
-.columns.split.steps .col-text h3 a { color: inherit; text-decoration: none; }
-.columns.split.steps .col-text h3 ~ :is(p, ul, ol, .cta-row, .lead-wrap) { padding-left: 52px; }
-.columns.split.steps .col-text h3 ~ ol li { padding-left: 52px; }
-.columns.split.steps .col-text h3 + p { margin-top: var(--spacing-sm); }
-.columns.split.steps .col-text .cta-row + p { margin-top: var(--spacing-md); font-size: var(--body-sm); line-height: 1.45; color: var(--koksgraa); max-width: 48ch; }
-.columns.split.steps .col-media { align-self: start; display: flex; justify-content: center; }
-.columns.split.steps .col-media img.photo { width: 320px; max-width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; border-radius: 0; background: transparent; }
-.columns.split.reopen .col-text { max-width: 68ch; }
-.columns.split.reopen .lead-wrap p { font-size: var(--body); line-height: var(--line-height-body); max-width: none; }
-.columns.split.reopen .col-text .cta-row { margin-top: 0; }
-.columns.split.reopen .col-media img.photo { border-radius: var(--radius-img) 0 var(--radius-img) 0; }
-
-@media (width <= 1023px) {
-  .columns.split.help .container { grid-template-columns: 1fr; }
-  .columns.split.help .col-media { max-width: 36rem; }
-  .columns.promo.invites .container { grid-template-columns: 1fr; gap: var(--spacing-lg); }
-  .columns.promo.invites .split-row { padding: 0; }
-  .columns.promo.invites .split-row + .split-row { border-left: 0; border-top: 1px solid var(--lysgraa); padding: var(--spacing-lg) 0 0; }
-  .columns.split.steps .split-row { grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: var(--spacing-md) var(--spacing-lg); }
-  .columns.split.steps .col-media img.photo { width: 240px; }
-  .columns.split.reopen .col-media img.photo { aspect-ratio: 2 / 1; }
+@media (width <= 1024px) {
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.frost .col-media.card { min-height: 0; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.frost .col-media.card picture,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.frost .col-media.card img.photo { position: absolute; inset: 0; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-media.card { grid-column: 1 / -1; grid-row: auto; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-media.card { order: -1; padding: 24px; aspect-ratio: auto; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-media.card img.photo { width: min(50%, 200px); max-height: 200px; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card .card-body { padding: 40px 32px; }
 }
 
-@media (width <= 640px) {
-  .columns.promo.switch .split-row { grid-template-columns: 1fr; gap: var(--spacing-md); }
-  .columns.promo.switch .col-media img { width: 110px; }
-  .columns.promo.invites .col-media img { width: 120px; }
-  .columns.split.steps .split-row { grid-template-columns: minmax(0, 1fr) 120px; grid-template-areas: "h2 media" "text text"; gap: 0 var(--spacing-md); align-items: center; }
-  .columns.split.steps .col-text { display: contents; }
-  .columns.split.steps .col-text h2 { grid-area: h2; margin: 0; }
-  .columns.split.steps .col-media { grid-area: media; align-self: center; }
-  .columns.split.steps .col-media img.photo { width: 120px; }
-  .columns.split.steps .col-text ol { grid-column: 1 / -1; margin-top: var(--spacing-lg); }
-  .columns.split.steps .col-text > :is(p, .lead-wrap, .cta-row) { grid-column: 1 / -1; }
-  .columns.split.reopen .col-media img.photo { aspect-ratio: 3 / 2; border-radius: var(--radius-img-sm) 0 var(--radius-img-sm) 0; }
+@media (width <= 767px) {
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card .card-body { padding: 36px 20px; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card ol li { counter-increment: step; position: relative; padding: 18px 0 12px 52px; min-height: 61px; margin: 0; border-top: 1px solid rgb(0 39 118 / 12%); }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card ol li::before { content: counter(step); position: absolute; left: 0; top: 13px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--vann); color: #fff; font-family: var(--title-font-family); font-size: var(--body); font-variant-numeric: tabular-nums; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-media.card img.photo { width: min(45%, 160px); max-height: 160px; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .cta-row a.button,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.frost .cta-row a.button { width: 100%; padding: 17px 20px; }
 }
 
-/* ===== hub siblings: illu — an illustration stack (logo + spot) beside h2/lead/pill ===== */
-.columns.split.illu .col-media { display: grid; gap: var(--spacing-md); justify-items: start; }
-.columns.split.illu .col-media img.photo { width: min(100%, 320px); max-height: 320px; height: auto; aspect-ratio: auto; object-fit: contain; border-radius: 0; background: transparent; }
-.columns.split.illu .col-caption { display: grid; gap: var(--spacing-md); }
-.columns.split.illu .col-caption p { margin: 0; line-height: 0; }
-.columns.split.illu .col-caption img { width: 112px; height: 112px; object-fit: contain; }
-.columns.split.illu .lead-wrap p { font-size: var(--body); line-height: var(--line-height-body); max-width: 68ch; }
+/* steps tile at tablet / phone stays in flow (the base fills split photo cells absolutely ≤ 767); reopen CTA keeps the canon 24 px */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.frost .col-text.card .cta-row { margin-top: 24px; }
+@media (width <= 1024px) {
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-media.card picture { position: static; inset: auto; width: auto; height: auto; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-media.card img.photo { position: static; inset: auto; width: min(50%, 200px); height: auto; max-height: 200px; }
+}
+@media (width <= 767px) {
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-media.card img.photo { width: min(45%, 160px); max-height: 160px; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card ol li { padding-left: 46px; min-height: 57px; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card ol li::before { width: 32px; height: 32px; top: 15px; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .columns.split.steps .col-text.card :is(h2, h3) { line-height: 1.14; }
+}

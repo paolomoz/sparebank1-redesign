@@ -4,10 +4,10 @@
 @import url("styles-story.css");
 @import url("styles-omoss.css");
 /*
- * sparebank1-redesign — EDS foundation (stardust:deploy Step 3, Flow B redesign).
- * Every token and compound rule is lifted from the approved canon (stardust/canon/canon.css = DESIGN.json.extensions.canon,
- * authored in stardust/scripts/proto/chrome.mjs); the runtime's structural layer (body gate, header reservation, section
- * scaffold) is kept intact. Blocks paint their own modules; default-content sections use the small closed `style` set below.
+ * sparebank1-redesign — EDS foundation (round 01, 2026-09-15: Danske Bank card/bento structure × Ramp type/width/buttons on the
+ * SpareBank 1 brand). Every token and compound rule is lifted from the canon (stardust/canon/canon.css = DESIGN.json.extensions.canon,
+ * authored in stardust/scripts/proto/chrome.mjs); the runtime's structural layer (body gate, header reservation, section scaffold)
+ * is kept intact. Blocks paint their own modules; default-content sections use the small closed `style` set below.
  *
  * ⚠️ FONT LICENSING REQUIRED BEFORE GOING LIVE (stardust:deploy #80) — the SpareBank1 faces in styles/fonts.css are the
  * bank's proprietary web fonts, self-hosted for the customer pilot. See fonts/LICENSING.md for the remove path.
@@ -17,21 +17,23 @@
   --heading-font-family: "SpareBank1-title-medium", sparebank1-title-fallback, arial, sans-serif;
   --title-font-family: "SpareBank1-medium", sparebank1-medium-fallback, arial, sans-serif;
   --body-font-family: "SpareBank1-regular", sparebank1-regular-fallback, arial, sans-serif;
-  --heading-xxl: 61px;
-  --heading-xl: 49px;
-  --heading-lg: 39px;
-  --heading-md: 31px;
-  --title: 25px;
-  --lead: 20px;
+
+  /* type scale (Ramp): 64 / 48 / 40 / 28 / 24 · 18 lead · 16 / 14 / 13 body · 10 eyebrow; one weight */
+  --heading-xxl: 64px;
+  --heading-xl: 48px;
+  --heading-lg: 40px;
+  --heading-md: 28px;
+  --title: 24px;
+  --lead: 18px;
   --body: 16px;
   --body-sm: 14px;
   --label: 13px;
-  --t-display: clamp(2.5rem, 1.6rem + 2.4vw, 3.8125rem);
-  --t-headline: clamp(2.125rem, 1.5rem + 1.7vw, 3.0625rem);
-  --t-headline-sm: clamp(1.75rem, 1.4rem + 1vw, 2.4375rem);
-  --t-title: clamp(1.5rem, 1.3rem + 0.6vw, 1.9375rem);
-  --line-height-heading: 1.12;
-  --line-height-body: 1.55;
+  --t-display: clamp(2.5rem, 1.94rem + 2.29vw, 4rem);
+  --t-headline: clamp(2.125rem, 1.8rem + 1.34vw, 3rem);
+  --t-headline-sm: clamp(1.75rem, 1.47rem + 1.15vw, 2.5rem);
+  --t-title: clamp(1.375rem, 1.24rem + 0.58vw, 1.75rem);
+  --line-height-heading: 1.05;
+  --line-height-body: 1.375;
 
   /* Hvit / Svart / Vann */
   --color-bg: #fff;
@@ -43,38 +45,50 @@
   --skog: #00754e;
   --skog-hover: #095139;
   --frost: #7eb5d2;
+  --frost-70: #a5cbe0;
   --frost-30: #d8e9f2;
   --sand: #f8e9dd;
   --sand-70: #faf0e7;
   --sand-30: #fdf8f5;
+  --syrin: #d3d3ea;
+  --syrin-70: #e0e0f0;
   --syrin-30: #f2f2f9;
   --multe: #f8b181;
   --lyng: #873953;
   --baer: #e44244;
   --nordlys: #33af85;
   --sol: #dc8000;
+  --svart: #020a0a;
+  --hvit: #fff;
   --koksgraa: #323232;
   --moerkgraa: #676767;
   --graa: #adadad;
   --lysgraa: #d8d8d8;
+  --card-tint: var(--sand-70);
   --spacing-xs: 4px;
   --spacing-sm: 8px;
   --spacing-md: 16px;
   --spacing-lg: 24px;
   --spacing-xl: 48px;
   --spacing-2xl: 64px;
-  --spacing-3xl: 96px;
+  --spacing-3xl: 128px;
   --section-padding: 64px;
-  --max-width: 1280px;
-  --gutter: 80px;
-  --radius: 16px;
-  --radius-sm: 8px;
-  --radius-img: 96px;
-  --radius-img-sm: 48px;
-  --radius-pill: 6em;
-  --shadow-lift: 0 8px 24px -12px rgb(0 39 118 / 25%);
-  --dur: 160ms;
-  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --max-width: 1440px;
+  --gutter: 64px;
+  --card-gap: 6px;
+  --card-pad-y: 48px;
+  --card-pad-x: 36px;
+  --radius: 2px;
+  --radius-sm: 6px;
+  --radius-img: 2px;
+  --radius-img-sm: 2px;
+  --radius-pill: 6px;
+  --shadow-lift: none;
+  --settings-h: 32px;
+  --mainbar-h: 80px;
+  --dur: 300ms;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 
   /* boilerplate-compatible aliases */
   --background-color: var(--color-bg);
@@ -82,13 +96,14 @@
   --link-color: var(--vann);
   --link-hover-color: var(--fjell);
 
-  /* the header reserves its real rendered height so the late chrome load shifts nothing (#81): utility 44+1 · main 64+1 */
-  --nav-height: 110px;
+  /* the header reserves its real rendered height so the late chrome load shifts nothing (#81): settings 32 + main 80 */
+  --nav-height: 112px;
 }
 
-@media (width <= 1439px) { :root { --gutter: 48px; } }
-@media (width <= 1023px) { :root { --section-padding: 48px; --gutter: 24px; --nav-height: 106px; } }
-@media (width <= 640px) { :root { --section-padding: 32px; --gutter: 20px; --nav-height: 61px; } }
+@media (width <= 1320px) { :root { --gutter: 32px; } }
+@media (width <= 1140px) { :root { --mainbar-h: 68px; --nav-height: 68px; } }
+@media (width <= 1024px) { :root { --section-padding: 48px; --card-pad-x: 28px; --card-pad-y: 40px; } }
+@media (width <= 767px) { :root { --section-padding: 48px; --gutter: 16px; --card-pad-x: 20px; --card-pad-y: 36px; --lead: 17px; --body: 15px; } }
 
 /* metric-matched local fallbacks (computed from the woff2 files with fontTools, Arial reference — Flow A calibration, same files) */
 @font-face {
@@ -124,10 +139,11 @@
 *::after { box-sizing: border-box; }
 
 html {
-  hanging-punctuation: first;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
 }
+
+html.no-scroll { overflow: hidden; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -149,9 +165,14 @@ body {
 
 body.appear { display: block; }
 
-header {
+/* the header is sticky (Danske: hides on scroll-down, reveals the main bar on scroll-up — blocks/header) */
+body > header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
   height: var(--nav-height);
   background: #fff;
+  transition: transform 0.35s var(--ease);
 }
 
 body > header .header,
@@ -164,7 +185,7 @@ body > header:has(.header[data-block-status="loaded"]) { height: auto; }
 
 ::selection { background: var(--frost-30); color: var(--fjell); }
 
-:focus-visible { outline: 2px solid var(--sol); outline-offset: 2px; border-radius: 4px; }
+:focus-visible { outline: 2px solid var(--vann); outline-offset: 2px; }
 
 img,
 svg { display: block; max-width: 100%; }
@@ -175,13 +196,12 @@ a:any-link {
   color: var(--vann);
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
+  text-underline-offset: 0.14em;
   transition: color var(--dur) var(--ease);
   overflow-wrap: break-word;
 }
 
 a:hover { color: var(--fjell); }
-a:visited { color: var(--lyng); }
 
 h1,
 h2,
@@ -194,32 +214,41 @@ h6 {
   font-weight: 400;
   color: var(--fjell);
   text-wrap: balance;
-  letter-spacing: -0.005em;
-  scroll-margin: 40px;
+  letter-spacing: 0;
+  scroll-margin: 120px;
 }
 
-h1 { font-size: var(--t-headline); line-height: var(--line-height-heading); }
-h2 { font-size: var(--t-headline-sm); line-height: 1.15; }
-h3 { font-size: var(--t-title); line-height: 1.2; }
-h4 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
+h1 { font-size: var(--t-headline); line-height: 1.04; }
+h2 { font-size: var(--t-headline-sm); line-height: 1.05; }
+h3 { font-family: var(--title-font-family); font-size: var(--t-title); line-height: 1.14; }
+h4 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.17; }
 h5 { font-family: var(--title-font-family); font-size: var(--lead); line-height: 1.3; }
 h6 { font-family: var(--title-font-family); font-size: var(--body); line-height: 1.4; }
 
-.display { font-size: var(--t-display); line-height: 1.1; letter-spacing: -0.01em; }
-.title { font-family: var(--heading-font-family); font-size: var(--t-title); line-height: 1.2; color: var(--fjell); }
-.title-sm { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
+/* type roles */
+.display,
+.h1 { font-family: var(--heading-font-family); font-size: var(--t-display); line-height: 1; }
+.h2-l { font-family: var(--heading-font-family); font-size: var(--t-headline); line-height: 1.04; }
+.h2-m { font-family: var(--heading-font-family); font-size: var(--t-headline-sm); line-height: 1.05; }
+.title,
+.h2-s { font-family: var(--title-font-family); font-size: var(--t-title); line-height: 1.14; color: var(--fjell); }
+.title-sm,
+.h3 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.17; color: var(--fjell); }
+.hushed { opacity: 0.6; }
 
 p { margin: 0; }
 p + p { margin-top: var(--spacing-md); }
 
-.lead { font-size: var(--lead); line-height: 1.5; max-width: 60ch; }
-.small { font-size: var(--body-sm); line-height: 1.45; }
-.label { font-family: var(--title-font-family); font-size: var(--label); line-height: 1.4; letter-spacing: 0.01em; }
+.lead { font-size: var(--lead); line-height: 1.33; max-width: 60ch; }
+.small { font-size: var(--body-sm); line-height: 1.43; }
+.label { font-family: var(--title-font-family); font-size: var(--label); line-height: 1.4; }
+.eyebrow { font-family: var(--title-font-family); font-size: 10px; line-height: 1.5; letter-spacing: 0.05em; text-transform: uppercase; }
 .muted { color: var(--moerkgraa); }
 
 .paper-sand .muted,
 .paper-frost .muted,
-.paper-syrin .muted { color: var(--koksgraa); }
+.paper-syrin .muted,
+.card .muted { color: var(--koksgraa); }
 
 .prose { max-width: 68ch; }
 
@@ -268,55 +297,60 @@ hr { margin: 0; border: 0; height: 0; }
   height: 100%;
   fill: none;
   stroke: currentcolor;
-  stroke-width: 1.75;
+  stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-/* ---------------------------------------------------------------- buttons (canon pills via the EDS emphasis convention)
-   <strong><a>       primary   — Hvit on Vann          (canon .btn-primary)
-   <em><a>           secondary — Vann on Hvit, 2px Vann (canon .btn-secondary)
-   <em><strong><a>   accent    — the Skog action pill   (canon .btn-action; reserved to relationship-starting CTAs)
-   A plain <a> in a <p> stays an inline link (canon .btn-inline is block-owned). */
+/* ---------------------------------------------------------------- buttons (Ramp geometry via the EDS emphasis convention)
+   <strong><a>       primary   — Hvit on Vann fill               (canon .btn-primary)
+   <em><a>           secondary — Fjell on Frost-30 fill, no outline (canon .btn-secondary)
+   <em><strong><a>   accent    — the Skog action                  (canon .btn-action; reserved to relationship-starting CTAs)
+   6 px radius, no border, padding-driven height, darken on hover, nothing moves. A plain <a> in a <p> stays an inline link. */
 a.button:any-link,
 button.button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  min-height: 44px;
   margin: 0;
-  padding: 10px 24px;
-  border-radius: var(--radius-pill);
-  border: 2px solid transparent;
-  font: var(--body) / 1.2 var(--body-font-family);
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  border: 0;
+  font: 16px / 1 var(--title-font-family);
+  letter-spacing: 0;
   text-decoration: none;
+  white-space: nowrap;
   cursor: pointer;
   background: var(--vann);
   color: #fff;
-  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
 }
 
 a.button:hover,
 button.button:hover { background: var(--fjell); color: #fff; }
 
 a.button.secondary,
-button.button.secondary { background: #fff; color: var(--vann); border-color: var(--vann); }
+button.button.secondary { background: var(--frost-30); color: var(--fjell); }
 
 a.button.secondary:hover,
-button.button.secondary:hover { background: var(--frost-30); color: var(--fjell); border-color: var(--fjell); }
+button.button.secondary:hover { background: var(--frost-70); color: var(--fjell); }
 
 a.button.accent,
-button.button.accent { background: var(--skog); color: #fff; border-color: transparent; }
+button.button.accent { background: var(--skog); color: #fff; }
 
 a.button.accent:hover,
 button.button.accent:hover { background: var(--skog-hover); color: #fff; }
 
 a.button:visited { color: #fff; }
-a.button.secondary:visited { color: var(--vann); }
+a.button.secondary:visited { color: var(--fjell); }
+a.button.large,
+button.button.large { padding: 17px 20px; }
+a.button.nav,
+button.button.nav { font-size: 14px; padding: 10px 16px; }
 
 a.button svg,
-button.button svg { width: 20px; height: 20px; fill: none; stroke: currentcolor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+button.button svg { width: 18px; height: 18px; fill: none; stroke: currentcolor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 
 .btn:disabled,
 button:disabled,
@@ -328,17 +362,16 @@ textarea:disabled,
 input:disabled::placeholder { color: var(--koksgraa); }
 
 p.button-wrapper { margin: 0; display: inline-flex; flex-wrap: wrap; gap: var(--spacing-sm) var(--spacing-md); align-items: center; }
-p + p.button-wrapper { margin-top: var(--spacing-md); }
+p + p.button-wrapper { margin-top: var(--spacing-lg); }
 
 /* Experience Workspace edit mode: repaint CTAs from their authored marks (EW3); the card-as-link inner anchor (EW6) */
 .prosemirror-editor p > :is(strong, em) > a:any-link,
 .prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
   display: inline-flex;
   align-items: center;
-  min-height: 44px;
-  padding: 10px 24px;
-  border-radius: var(--radius-pill);
-  border: 2px solid transparent;
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  border: 0;
   background: var(--vann);
   color: #fff;
   text-decoration: none;
@@ -347,83 +380,132 @@ p + p.button-wrapper { margin-top: var(--spacing-md); }
 .prosemirror-editor p > a:any-link > :is(strong, em) { font-weight: inherit; font-style: inherit; }
 
 .prosemirror-editor p > em > a:any-link,
-.prosemirror-editor p > a:any-link:has(> em:only-child) { background: #fff; color: var(--vann); border-color: var(--vann); }
+.prosemirror-editor p > a:any-link:has(> em:only-child) { background: var(--frost-30); color: var(--fjell); }
 
 .prosemirror-editor p > em > strong > a:any-link,
-.prosemirror-editor p > strong > em > a:any-link { background: var(--skog); color: #fff; border-color: transparent; }
+.prosemirror-editor p > strong > em > a:any-link { background: var(--skog); color: #fff; }
 
 a .prosemirror-editor a:any-link { color: inherit; text-decoration: none; }
 
+/* arrow link (Danske: no underline, chevron slides on hover) */
+.arrow,
+a.arrow:any-link { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--vann); line-height: 1.5; }
+.arrow::after { content: ""; width: 7px; height: 7px; border-top: 1.5px solid currentcolor; border-right: 1.5px solid currentcolor; transform: rotate(45deg); transition: transform 0.2s var(--ease); flex: none; }
+.arrow:hover { color: var(--fjell); }
+.arrow:hover::after { transform: translateX(4px) rotate(45deg); }
+
 /* ---------------------------------------------------------------- sections (the canon movement rhythm)
-   Every section is a `movement`: padding-block = --section-padding (64/48/32), content constrained to the canon container.
-   The closed `style` set: paper-sand · paper-frost · paper-syrin (tinted papers) · flush-top · flush-bottom · tight-bottom
-   · tight-top · hairline-top · feedback-band · intro · compare · router · prose-narrow · lead-first. */
+   Every section is a `movement`: padding-top = --section-padding (64/48), content constrained to the 1312 px column.
+   The closed `style` set: paper-sand · paper-frost · paper-syrin (tinted papers, legacy) · flush-top · flush-bottom · tight-bottom
+   · tight-top · hairline-top · feedback-band · intro · compare · router · prose-narrow · lead-first · full-bleed (minor bento rows). */
 main { display: flow-root; }
 
 main > .section {
   margin: 0;
-  padding-block: var(--section-padding);
+  padding-block: var(--section-padding) 0;
 }
 
+main > .section:last-child { padding-bottom: var(--section-padding); }
+
 main > .section > div {
-  width: min(100% - 2 * var(--gutter), var(--max-width));
+  width: min(100% - 2 * var(--gutter), var(--max-width) - 2 * var(--gutter));
   margin-inline: auto;
 }
 
 main > .section > div + div { margin-top: var(--spacing-lg); }
 main .section:empty { display: none; }
 
-main .section.paper-sand { background: var(--sand-30); }
+main .section.paper-sand { background: var(--sand-70); }
 main .section.paper-frost { background: var(--frost-30); }
 main .section.paper-syrin { background: var(--syrin-30); }
 main .section.paper-vann { background: var(--vann); color: #fff; }
+main .section:is(.paper-sand, .paper-frost, .paper-syrin, .paper-vann) { padding-bottom: var(--section-padding); }
 main .section.flush-top { padding-top: 0; }
 main .section.flush-bottom { padding-bottom: 0; }
 main .section.tight-bottom { padding-bottom: var(--spacing-lg); }
 main .section.tight-top { padding-top: var(--spacing-md); }
-main .section.hairline-top { border-top: 1px solid var(--lysgraa); }
-main .section.router { padding: 0; min-height: 159px; }
-main .section.router > div { width: 100%; }
+main .section.hairline-top { border-top: 1px solid rgb(0 39 118 / 12%); }
+main .section.router { padding: var(--card-gap) 0 0; }
+main .section.full-bleed > div { width: calc(100% - 2 * var(--card-gap)); }
+main .section.feedback-band { padding-block: var(--spacing-xl); }
+main .section.compare.flush-top { padding-top: var(--section-padding); }
 
-main .section.feedback-band {
-  border-top: 1px solid var(--lysgraa);
-  padding-block: var(--spacing-xl);
-}
-
-/* default-content prose: the section head (h2 + lede) above a block, intros, chapters */
+/* default-content prose: the section head (h2) above a block, intros, chapters */
 main .section .default-content-wrapper { display: grid; gap: var(--spacing-md); align-content: start; }
 main .section .default-content-wrapper p { margin: 0; }
 main .section .default-content-wrapper :is(ul, ol) { list-style: disc; padding-left: 1.25em; display: grid; gap: var(--spacing-sm); }
 main .section .default-content-wrapper :is(ul, ol) li::marker { color: var(--vann); }
-main .section .default-content-wrapper img { border-radius: var(--radius-img-sm) 0 var(--radius-img-sm) 0; }
+main .section .default-content-wrapper img { border-radius: var(--radius); }
 main .section .default-content-wrapper p:has(> picture:only-child) { line-height: 0; }
+main .section .default-content-wrapper > h2:only-child,
+main .section .default-content-wrapper > h2.section-title { font-size: var(--t-headline); line-height: 1.04; text-align: center; max-width: 960px; margin-inline: auto; }
 main .section.prose-narrow .default-content-wrapper { max-width: 68ch; }
-main .section.lead-first .default-content-wrapper :is(h1, h2) + p { font-size: var(--lead); line-height: 1.5; max-width: 60ch; }
-main .section.intro .default-content-wrapper h1 + p { font-size: var(--lead); line-height: 1.5; max-width: 60ch; }
-main .section.compare .default-content-wrapper { gap: 12px; max-width: 68ch; }
-main .section.compare .default-content-wrapper h2 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
+main .section.lead-first .default-content-wrapper :is(h1, h2) + p { font-size: var(--lead); line-height: 1.33; max-width: 60ch; }
+main .section.intro .default-content-wrapper h1 + p { font-size: var(--lead); line-height: 1.33; max-width: 60ch; }
+main .section.compare .default-content-wrapper { gap: 12px; max-width: calc(50% - var(--card-gap) / 2); margin-inline: 0; background: var(--frost-30); border-radius: var(--radius); padding: var(--card-pad-y) var(--card-pad-x); text-align: left; }
+main .section.compare .default-content-wrapper h2 { font-family: var(--title-font-family); font-size: var(--t-title); line-height: 1.14; text-align: left; margin: 0; max-width: none; }
+main .section.compare .default-content-wrapper p { max-width: 46ch; }
+@media (width <= 1024px) { main .section.compare .default-content-wrapper { max-width: none; } }
 
-/* ---------------------------------------------------------------- shared canon compounds used by several blocks */
+/* ---------------------------------------------------------------- shared canon compounds used by several blocks
+   cards: fill + 2 px corners, no border, no shadow; bento rows with 6 px gutters; hover = fill step + underline draw-in + spring. */
+.bento { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--card-gap); align-items: stretch; }
+.bento + .bento { margin-top: var(--card-gap); }
+
 .card {
   position: relative;
-  display: grid;
-  gap: 12px;
-  padding: var(--spacing-lg);
-  background: var(--sand-30);
+  display: flex;
+  flex-direction: column;
   border-radius: var(--radius);
-  transition: box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
+  overflow: hidden;
+  background: var(--card-tint);
+  min-width: 0;
+  transition: background-color 0.35s var(--ease);
 }
 
+.card--tint { background: var(--card-tint); }
+.card--dark { background: var(--fjell); color: #fff; }
+.card.card--dark :is(a, h2, h3, p) { color: #fff; }
+.card--frost,
 .card.frost { background: var(--frost-30); }
-.card.plain { background: #fff; border: 1px solid var(--lysgraa); }
+.card--syrin { background: var(--syrin-30); }
+.card--white,
+.card.plain { background: #fff; }
+.card-body { padding: var(--card-pad-y) var(--card-pad-x); display: flex; flex-direction: column; flex: 1 1 auto; min-width: 0; }
+.card-body > * + * { margin-top: 10px; }
+.card-body > p + p { margin-top: 16px; }
 
-.card:hover,
-.card:focus-within { box-shadow: var(--shadow-lift); }
+.card .card-title :is(h2, h3, h4) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.17; letter-spacing: 0; text-wrap: balance; }
 
-.card .card-title a { color: var(--fjell); text-decoration: none; }
-.card .card-title a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
-.card:hover .card-title a { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.15em; }
-.card .meta { display: flex; flex-wrap: wrap; gap: 4px 12px; color: var(--koksgraa); font-size: var(--label); font-family: var(--title-font-family); letter-spacing: 0.01em; }
+.card .card-title a:any-link {
+  color: var(--fjell);
+  text-decoration: none;
+  background-image: linear-gradient(currentcolor, currentcolor);
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: background-size 0.4s var(--ease), color var(--dur) var(--ease);
+}
+
+.card .card-title a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.card:hover .card-title a,
+.card:focus-within .card-title a { background-size: 100% 1px; color: var(--vann); }
+.card .card-links,
+.card .card-text,
+.card .meta,
+.card .cta-row { position: relative; z-index: 2; }
+.card.is-link:hover,
+.card.is-link:focus-within { background: var(--sand); }
+.card--frost.is-link:hover,
+.card--frost.is-link:focus-within { background: #cbe1ee; }
+.card--syrin.is-link:hover,
+.card--syrin.is-link:focus-within { background: var(--syrin-70); }
+.card .meta { display: flex; flex-wrap: wrap; gap: 6px 14px; color: var(--koksgraa); font-size: var(--body-sm); }
+.card-image { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; transition: transform 0.7s var(--ease); }
+.card:hover .card-image,
+.card:focus-within .card-image { transform: scale(1.04); }
 
 .photo {
   display: block;
@@ -432,64 +514,107 @@ main .section.compare .default-content-wrapper h2 { font-family: var(--title-fon
   aspect-ratio: 3 / 2;
   object-fit: cover;
   background: var(--frost-30);
-  border-radius: var(--radius-img) 0 var(--radius-img) 0;
+  border-radius: var(--radius);
 }
 
-.photo-sm { border-radius: var(--radius-img-sm) 0 var(--radius-img-sm) 0; }
+.photo-sm { border-radius: var(--radius); }
 picture.photo { display: block; }
 picture.photo img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: inherit; background: var(--frost-30); }
-.illu { width: 72px; height: 72px; object-fit: contain; }
+.illu { width: 72px; height: 72px; object-fit: contain; transition: transform 0.5s var(--spring); transform-origin: 50% 100%; }
+.card:hover .illu,
+.card:focus-within .illu { transform: translateY(-6px) rotate(-3deg); }
 .promo-illu { height: auto; }
 
 .link-more { display: inline-flex; align-items: center; gap: 4px; }
-.link-more svg { width: 18px; height: 18px; fill: none; stroke: currentcolor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform var(--dur) var(--ease); }
+.link-more svg { width: 16px; height: 16px; fill: none; stroke: currentcolor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: transform var(--dur) var(--ease); }
 .link-more:hover svg { transform: translateX(3px); }
 
-.backlink { display: inline-flex; align-items: center; gap: 4px; font-size: var(--body-sm); text-decoration: none; min-height: 44px; }
-.backlink svg { width: 18px; height: 18px; fill: none; stroke: currentcolor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.backlink,
+a.backlink:any-link { display: inline-flex; align-items: center; gap: 10px; font-size: var(--body-sm); text-decoration: none; min-height: 40px; color: var(--vann); }
+.backlink svg { display: none; }
+.backlink::after { content: ""; width: 7px; height: 7px; border-top: 1.5px solid currentcolor; border-right: 1.5px solid currentcolor; transform: rotate(45deg); transition: transform 0.2s var(--ease); }
+.backlink:hover::after { transform: translateX(4px) rotate(45deg); }
 
 .btn-inline {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  min-height: 44px;
-  padding: 8px 4px;
+  gap: 10px;
+  min-height: 40px;
+  padding: 8px 0;
   color: var(--vann);
   background: none;
   border: 0;
-  font: var(--body) / 1.2 var(--body-font-family);
+  font: 16px / 1.5 var(--body-font-family);
   cursor: pointer;
   text-decoration: none;
 }
 
-.btn-inline:hover { text-decoration: underline; color: var(--fjell); }
-.btn-inline svg { width: 20px; height: 20px; fill: none; stroke: currentcolor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+.btn-inline:hover { color: var(--fjell); }
+.btn-inline svg { width: 20px; height: 20px; fill: none; stroke: currentcolor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; transition: transform var(--dur) var(--ease); }
 
 .badge,
 a.badge {
   display: inline-flex;
   align-items: center;
-  min-height: 32px;
-  padding: 4px 12px;
-  border-radius: var(--radius-pill);
+  min-height: 28px;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
   background: var(--frost-30);
   color: var(--fjell);
   font-family: var(--title-font-family);
   font-size: var(--label);
-  letter-spacing: 0.01em;
   text-decoration: none;
   transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
 }
 
 a.badge:hover { background: var(--vann); color: #fff; }
 
-.section-title { margin-bottom: var(--spacing-lg); }
+.section-title { text-align: center; margin: 0 auto var(--spacing-lg); max-width: 960px; }
 .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--spacing-sm) var(--spacing-md); }
 
-@media (width <= 640px) {
+/* inputs */
+.input,
+.router-input {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  font: inherit;
+  font-size: 16px;
+  color: var(--svart);
+  background: #fff;
+}
+
+.field-label { display: block; font-family: var(--title-font-family); font-size: var(--body-sm); margin-bottom: 8px; }
+.field-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.field-row .input { flex: 1 1 140px; }
+
+@media (width <= 1024px) {
+  .grid-3 > *,
+  .grid-4 > * { grid-column: span 6; }
+}
+
+@media (width <= 767px) {
+  .h1,
+  .display { line-height: 1.05; }
+  .h2-l { line-height: 1.12; }
+  .h2-m { line-height: 1.14; }
+  .bento > * { grid-column: 1 / -1; }
+  main .section .default-content-wrapper > h2:only-child,
+  main .section .default-content-wrapper > h2.section-title { line-height: 1.12; }
   main .section .default-content-wrapper p.button-wrapper a.button { width: 100%; }
+  a.button.large,
+  button.button.large { width: 100%; }
+}
+
+@media (width <= 640px) {
+  a.button.nav,
+  button.button.nav { min-height: 40px; }
+  .field-row a.button,
+  .field-row button.button { width: 100%; }
 }
 
 /* trailing prose after a card rail (price example + its CTA): the canon .price-foot rhythm */
-main .section:has(.cards.price) .cards-wrapper + .default-content-wrapper { margin-top: var(--spacing-xl); gap: 32px; }
+main .section:has(.cards.price) .cards-wrapper + .default-content-wrapper { margin-top: var(--spacing-lg); gap: 32px; }
 main .section:has(.cards.price) .cards-wrapper + .default-content-wrapper p:not(.button-wrapper) { max-width: 68ch; }

@@ -19,20 +19,20 @@
   "clientlib": "base"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "82b1e4de2a32a026",
   "sourceProposedSha": null,
-  "archetypeSha": "2000d7c6dbc6fe9b",
+  "archetypeSha": "5661b903b4a5b29c",
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
  "deviations": [],
@@ -52,7 +52,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 31,
+ "linksRewritten": 32,
  "metadata": {
   "title": "Prisliste | SpareBank 1",
   "description": null,
@@ -62,8 +62,8 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 14,
-   "narrowest": 400
+   "media": 13,
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -74,11 +74,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:25.096Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:19.836Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "82b1e4de2a32a026",
  "sourceProposedSha": null,
- "archetypeSha": "2000d7c6dbc6fe9b",
+ "archetypeSha": "5661b903b4a5b29c",
  "assetsBundled": 3
 }

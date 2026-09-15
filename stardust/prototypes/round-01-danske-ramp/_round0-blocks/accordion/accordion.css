@@ -1,0 +1,40 @@
+@import url("accordion-product.css");
+@import url("accordion-theme.css");
+@import url("accordion-hub.css");
+@import url("accordion-story.css");
+@import url("accordion-omoss.css");
+/* accordion — canon .faq (details → head row + hidden answer, same metrics). */
+.accordion { max-width: 52rem; }
+.accordion .faq-item { border-top: 1px solid var(--lysgraa); }
+.accordion .faq > .faq-item:last-child { border-bottom: 1px solid var(--lysgraa); }
+.accordion .faq-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding: 20px 0; cursor: pointer; }
+.accordion .faq-q { flex: 1 1 auto; }
+.accordion .faq-q :is(p, h3, h4) { margin: 0; font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; color: var(--fjell); letter-spacing: normal; text-wrap: balance; }
+.accordion .faq-toggle { flex: 0 0 auto; width: 24px; height: 24px; margin-top: 4px; padding: 0; border: 0; background: none; color: var(--vann); cursor: pointer; }
+.accordion .faq-toggle svg { width: 24px; height: 24px; fill: none; stroke: currentcolor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform var(--dur) var(--ease); }
+.accordion .faq-item.is-open .faq-toggle svg { transform: rotate(180deg); }
+.accordion .answer { padding: 0 0 24px; max-width: 68ch; }
+.accordion .answer[hidden] { display: none; }
+.accordion .answer p + p,
+.accordion .answer ul,
+.accordion .answer ol { margin-top: var(--spacing-md); }
+.accordion .answer :is(h3, h4, h5) { font-family: var(--title-font-family); font-size: var(--lead); line-height: 1.3; color: var(--fjell); margin-top: var(--spacing-md); }
+.accordion .answer ul { list-style: disc; padding-left: 1.25rem; }
+.accordion .answer ol { list-style: decimal; padding-left: 1.4em; }
+.accordion .answer li + li { margin-top: var(--spacing-sm); }
+.accordion .answer p.button-wrapper { display: inline-flex; margin-top: var(--spacing-md); margin-right: var(--spacing-sm); }
+.accordion .answer picture,
+.accordion .answer img { display: block; width: 100%; height: auto; max-width: 360px; margin-top: var(--spacing-md); border-radius: 0; }
+
+/* `more`: the disclosure that hides the overflow questions */
+.accordion.more .faq-more-head { display: inline-flex; align-items: center; gap: 6px; padding: 16px 0 0; cursor: pointer; color: var(--vann); min-height: 44px; }
+.accordion.more .faq-more-label p { margin: 0; font: var(--body) / 1.2 var(--body-font-family); color: var(--vann); }
+.accordion.more .faq-more-head:hover .faq-more-label p { text-decoration: underline; color: var(--fjell); }
+.accordion.more .faq-more-toggle { width: 20px; height: 20px; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
+.accordion.more .faq-more-toggle svg { width: 20px; height: 20px; fill: none; stroke: currentcolor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; transition: transform var(--dur) var(--ease); }
+.accordion.more.is-open .faq-more-toggle svg { transform: rotate(180deg); }
+.accordion.more .faq-more-items { margin-top: var(--spacing-md); }
+.accordion.more .faq-more-items[hidden] { display: none; }
+main .section .accordion-wrapper + .accordion-wrapper { margin-top: 0; }
+main .section .accordion-wrapper + .accordion-wrapper .accordion.more { margin-top: 0; }
+main .section .accordion-wrapper:has(+ .accordion-wrapper .accordion.more) .faq > .faq-item:last-child { border-bottom: 1px solid var(--lysgraa); }

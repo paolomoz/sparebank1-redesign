@@ -12,16 +12,22 @@
  "modules": [
   {
    "module": "page-title",
-   "blocks": []
+   "blocks": [
+    "hero"
+   ]
   },
   {
    "module": "image",
    "blocks": []
   }
  ],
- "blocks": [],
- "notes": [],
+ "blocks": [
+  "hero"
+ ],
+ "notes": [
+  "page-title: hero (hub text-only) — one text card across 12; h1, leads and CTAs are the text cell"
+ ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T23:40:48.660Z"
+ "writtenAt": "2026-09-15T15:02:43.286Z"
 }

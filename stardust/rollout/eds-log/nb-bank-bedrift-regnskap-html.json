@@ -20,7 +20,8 @@
   {
    "module": "page-title",
    "blocks": [
-    "breadcrumbs"
+    "breadcrumbs",
+    "hero"
    ]
   },
   {
@@ -68,19 +69,22 @@
  ],
  "blocks": [
   "breadcrumbs",
+  "hero",
   "cards",
   "columns",
   "callout",
   "feedback"
  ],
  "notes": [
+  "page-title: hero (hub text-only) — one text card across 12; h1, leads and CTAs are the text cell, the back link rides the breadcrumbs block (moved into the card by hero.js)",
+  "visual-nav: cards (doors cols-4) + cards (small cols-4) — one row per door [photo | icon][h2 link, line]; section `bento-top, stack` keeps the 6 px bento gutters under the hero",
   "media: mann-viser-og-forklarer.svg is 77587 B of SVG (> 40000) — authored as DA media mann-viser-og-forklarer.png",
-  "lint D1 callout: designed compound (canon icon + tinted paper), Block Collection-shaped single cell of prose — kept as a block like the product archetype",
+  "lint D1 callout: designed compound (canon icon + Sand sheet), Block Collection-shaped single cell of prose — kept as a block like the product archetype",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
  "gaps": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/mann-viser-og-forklarer.svg"
  ],
- "writtenAt": "2026-09-14T23:40:48.393Z"
+ "writtenAt": "2026-09-15T15:02:42.783Z"
 }

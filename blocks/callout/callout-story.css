@@ -1,42 +1,53 @@
-/* callout — story family group additions (additive variants only; imported by callout.css) */
+/* callout-story.css — story group variants (round 01): step (faq answer steps) · fact (article fact box) · quote (article pull quote).
+   Borderless tinted sheets, 36 px padding, no icon. Group files are @imported before the base rules: overrides carry the variant class. */
 
-/* step (faq answer): a tinted step of the answer — text + screenshot, no glyph */
-.callout.step .callout { display: grid; gap: var(--spacing-lg); padding: var(--spacing-lg); max-width: none; background: transparent; }
-.callout.step > .callout > svg { display: none; }
-.callout.step.sand .callout { background: var(--sand-30); }
-.callout.step.syrin .callout { background: var(--syrin-30); }
-.callout.step.frost .callout { background: var(--frost-30); }
-.callout.step .callout-text { gap: var(--spacing-lg); font-size: var(--lead); line-height: 1.55; }
-.callout.step .callout-text :is(ul, ol) { list-style: disc; padding-left: 1.25em; display: grid; gap: var(--spacing-md); }
-.callout.step .callout-text img { display: block; width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--lysgraa); background: #fff; }
-.callout.step .callout-text p:has(> img:only-child) { line-height: 0; }
+/* ===== faq ===== */
+body.faq .callout.step .callout { display: block; max-width: none; padding: 36px; background: transparent; }
+body.faq .callout.step:not(.sand, .syrin, .frost) .callout { padding: 0; }
+body.faq .callout.step.sand .callout { background: var(--sand-70); }
+body.faq .callout.step.syrin .callout { background: var(--syrin-30); }
+body.faq .callout.step.frost .callout { background: var(--frost-30); }
+body.faq .callout.step .callout > svg { display: none; }
+body.faq .callout.step .callout-text { gap: var(--spacing-lg); font-size: var(--lead); line-height: 1.5; }
+body.faq .callout.step .callout-text :is(h2, h3, h4) { font-family: var(--title-font-family); font-size: var(--t-title); line-height: 1.14; }
+body.faq .callout.step .callout-text :is(h2, h3, h4) + p { margin-top: calc(var(--spacing-sm) - var(--spacing-lg)); }
+body.faq .callout.step .callout-text :is(ul, ol) { display: grid; gap: var(--spacing-md); padding-left: 1.25em; list-style: disc; }
+body.faq .callout.step .callout-text ol { list-style: decimal; }
+body.faq .callout.step .callout-text li::marker { color: var(--vann); }
+body.faq .callout.step .callout-text p:has(> :is(picture, img):only-child) { line-height: 0; }
+body.faq .callout.step .callout-text img { border-radius: var(--radius); background: var(--frost-30); }
+body.faq .callout.step .callout-text p:has(> :is(picture, img):only-child) + p { margin-top: calc(var(--spacing-sm) - var(--spacing-lg)); font-size: var(--body-sm); line-height: 1.43; color: var(--koksgraa); }
+body.faq .callout.step .callout-text p.button-wrapper { margin-top: 0; }
 
-/* fact (news article): the canon fact box — Sand-30, h2 at title size, disc list with Vann markers, no glyph */
-.callout.fact .callout { display: grid; gap: var(--spacing-md); padding: var(--spacing-lg); max-width: none; background: var(--sand-30); }
-.callout.fact > .callout > svg { display: none; }
-.callout.fact .callout-text { gap: var(--spacing-md); }
-.callout.fact .callout-text h2 { margin: 0; font-family: var(--heading-font-family); font-size: var(--t-title); line-height: 1.15; }
-.callout.fact .callout-text :is(ul, ol) { display: grid; gap: var(--spacing-md); margin: 0; padding-left: 1.2em; list-style: disc; } /* canon: .prose li + li 8 + grid gap 8 */
-.callout.fact .callout-text li::marker { color: var(--vann); }
-.callout.fact .callout-text p.button-wrapper { margin-top: var(--spacing-xs); }
+/* ===== news-article ===== */
+body.news-article .callout.fact .callout { display: block; max-width: none; padding: 36px; background: var(--sand-70); }
+body.news-article .callout.fact .callout > svg { display: none; }
+body.news-article .callout.fact .callout-text { gap: var(--spacing-md); }
+body.news-article .callout.fact .callout-text :is(h2, h3) { font-family: var(--title-font-family); font-size: var(--t-title); line-height: 1.05; margin: 0; }
+body.news-article .callout.fact .callout-text ul { display: grid; gap: var(--spacing-md); margin: 0; padding-left: 1.2em; list-style: disc; }
+body.news-article .callout.fact .callout-text li::marker { color: var(--vann); }
+body.news-article .callout.fact .callout-text p.button-wrapper { margin-top: 0; }
 
-/* quote (news article): portrait + pull quote on Frost-30 */
-.callout.quote .callout { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--spacing-xs) var(--spacing-lg); align-items: center; padding: var(--spacing-lg); max-width: none; background: var(--frost-30); }
-.callout.quote > .callout > svg { display: none; }
-.callout.quote .callout-text { display: contents; }
-.callout.quote .callout img { width: 120px; height: 120px; aspect-ratio: 1; border-radius: 50%; object-fit: cover; background: var(--frost); grid-row: 1 / span 2; }
-.callout.quote .callout p:has(> img:only-child) { line-height: 0; grid-row: 1 / span 2; }
-.callout.quote .callout blockquote { margin: 0; }
-.callout.quote .callout blockquote p { font-family: var(--title-font-family); font-size: var(--lead); line-height: 1.4; color: var(--fjell); }
-.callout.quote .callout p:has(> em:only-child) { color: var(--koksgraa); font-size: var(--body-sm); }
-.callout.quote .callout p em { font-style: normal; }
-.callout.quote.no-portrait .callout { grid-template-columns: minmax(0, 1fr); }
+body.news-article .callout.quote .callout { max-width: none; padding: 36px; background: var(--frost-30); }
+body.news-article .callout.quote .callout > svg { display: none; }
+body.news-article .callout.quote .callout-text { display: grid; grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "img quote" "img who"; gap: var(--spacing-xs) var(--spacing-lg); align-items: center; }
+body.news-article .callout.quote.no-portrait .callout-text { grid-template-columns: minmax(0, 1fr); grid-template-areas: "quote" "who"; }
+body.news-article .callout.quote .callout-text p:has(> :is(picture, img):only-child) { grid-area: img; line-height: 0; }
+body.news-article .callout.quote .callout-text img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; background: var(--frost); }
+body.news-article .callout.quote .callout-text blockquote { grid-area: quote; margin: 0; }
+body.news-article .callout.quote .callout-text blockquote p { margin: 0; font-family: var(--title-font-family); font-size: var(--lead); line-height: 1.4; color: var(--fjell); }
+body.news-article .callout.quote .callout-text blockquote p + p { margin-top: var(--spacing-sm); }
+body.news-article .callout.quote .callout-text > p:has(> em:only-child) { grid-area: who; color: var(--koksgraa); font-size: var(--body-sm); line-height: 1.43; }
+body.news-article .callout.quote .callout-text > p:has(> em:only-child) em { font-style: normal; }
 
-@media (width <= 640px) {
-  .callout.step .callout,
-  .callout.fact .callout { padding: 20px; }
-  .callout.step .callout-text { font-size: var(--body); line-height: var(--line-height-body); }
-  .callout.quote .callout { grid-template-columns: 1fr; padding: 20px; }
-  .callout.quote .callout img { width: 96px; height: 96px; grid-row: auto; }
-  .callout.quote .callout p:has(> img:only-child) { grid-row: auto; }
+@media (width <= 767px) {
+  body.faq .callout.step.sand .callout,
+  body.faq .callout.step.syrin .callout,
+  body.faq .callout.step.frost .callout,
+  body.news-article .callout.fact .callout,
+  body.news-article .callout.quote .callout { padding: 20px; }
+  body.faq .callout.step .callout-text { font-size: var(--body); }
+  body.news-article .callout.quote .callout-text,
+  body.news-article .callout.quote.no-portrait .callout-text { grid-template-columns: 1fr; grid-template-areas: "img" "quote" "who"; }
+  body.news-article .callout.quote .callout-text img { width: 96px; height: 96px; }
 }

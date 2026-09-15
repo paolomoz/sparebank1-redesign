@@ -1,0 +1,105 @@
+/* bank-router — canon (stardust/canon/canon.css § router). The band is full-bleed Vann; content sits in the canon container. */
+main .section.router > div { width: 100%; }
+.bank-router .router { background: var(--vann); color: #fff; }
+.bank-router .container { width: min(100% - 2 * var(--gutter), var(--max-width)); margin-inline: auto; }
+
+.bank-router .router-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 38%;
+  grid-template-areas: "text form art" "all form art";
+  align-items: center;
+  column-gap: 32px;
+  row-gap: 0;
+  min-height: 150px;
+  padding-block: 8px;
+}
+
+.bank-router .router-text { grid-area: text; align-self: end; }
+.bank-router .router-heading p { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.2; margin: 0; }
+.bank-router .router-lede p { font-size: var(--body-sm); opacity: 0.92; margin: 2px 0 0; }
+.bank-router .router-form { grid-area: form; align-self: center; display: grid; gap: 4px; }
+.bank-router .router-label { font-size: var(--label); font-family: var(--title-font-family); letter-spacing: 0.01em; }
+.bank-router .router-controls { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.bank-router .router-input {
+  min-height: 44px;
+  width: 9.5rem;
+  padding: 10px 14px;
+  border: 1px solid var(--lysgraa);
+  border-radius: var(--radius-sm);
+  font: var(--body) / 1.2 var(--body-font-family);
+  color: var(--color-fg);
+  background: #fff;
+}
+
+.bank-router .router-input:focus-visible { outline: 2px solid var(--sol); outline-offset: 2px; border-color: var(--vann); }
+
+.bank-router .btn-router-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 24px;
+  border-radius: var(--radius-pill);
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font: var(--body) / 1.2 var(--body-font-family);
+  cursor: pointer;
+  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+
+.bank-router .btn-router-secondary svg { width: 20px; height: 20px; fill: none; stroke: currentcolor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+.bank-router .btn-router-secondary:hover { background: #fff; color: var(--fjell); }
+.bank-router .router-all { grid-area: all; align-self: start; }
+.bank-router .router-all summary { list-style: none; justify-self: start; color: #fff; }
+.bank-router .router-all summary:hover { color: #fff; }
+.bank-router .router-all summary::-webkit-details-marker { display: none; }
+.bank-router .router-all[open] summary svg { transform: rotate(180deg); }
+.bank-router .bank-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px 24px; padding: 8px 0 20px; list-style: none; margin: 0; }
+.bank-router .bank-list li { padding: 10px 0; border-top: 1px solid rgb(255 255 255 / 35%); min-width: 0; overflow-wrap: anywhere; margin: 0; }
+.bank-router .bank-list p { margin: 0; }
+.bank-router .bank-list a:any-link { color: #fff; text-decoration: none; font-family: var(--title-font-family); }
+.bank-router .bank-list a:hover { text-decoration: underline; }
+.bank-router .bank-list strong { display: block; font-size: var(--lead); }
+.bank-router .bank-tagline { display: block; font-size: var(--body-sm); opacity: 0.9; }
+.bank-router .bank-tagline p { margin: 0; }
+
+.bank-router .router-art {
+  grid-area: art;
+  align-self: center;
+  justify-self: end;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  aspect-ratio: 1250 / 368;
+  max-height: 150px;
+  object-fit: contain;
+  object-position: right center;
+}
+
+@media (width <= 1279px) {
+  .bank-router .router-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 32%; }
+}
+
+@media (width <= 1023px) {
+  .bank-router .router-grid { grid-template-columns: 1fr 1fr; grid-template-areas: "text all" "form form" "art art"; row-gap: 8px; padding-block: 16px 0; min-height: 0; }
+  .bank-router .router-all { justify-self: end; align-self: center; }
+  .bank-router .router-all[open] { grid-column: 1 / -1; justify-self: stretch; }
+  .bank-router .router-all[open] summary { width: max-content; margin-left: auto; }
+  .bank-router .router-art { max-width: none; max-height: none; aspect-ratio: auto; justify-self: stretch; height: 56px; width: 100%; object-fit: cover; object-position: 50% 60%; margin-top: 8px; }
+}
+
+@media (width <= 640px) {
+  .bank-router .router-grid { grid-template-columns: 1fr; grid-template-areas: "text" "all" "form" "art"; row-gap: 0; padding-top: 10px; }
+  .bank-router .router-all { justify-self: start; align-self: auto; }
+  .bank-router .router-all summary { min-height: 38px; padding-block: 4px; }
+  .bank-router .router-text { align-self: auto; }
+  .bank-router .router-lede p { margin-top: 0; }
+  .bank-router .router-label { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .bank-router .router-form { position: relative; }
+  .bank-router .router-input { width: 9rem; }
+  .bank-router .router-art { height: 32px; margin-top: 6px; }
+  .bank-router .router-heading p { font-size: var(--lead); }
+}

@@ -69,7 +69,7 @@
   "feedback"
  ],
  "notes": [
-  "page-title (intro-media): text + photo intro → hero (intro) — photo right, h1 + leads + pills left",
+  "page-title: hero (hub) — text card 5 + media card 7; h1, leads and CTAs are the text cell, the back link rides the breadcrumbs block (moved into the card by hero.js)",
   "media: workshop-idemyldring-mennesker-rullestol-bord-lys.svg is 99251 B of SVG (> 40000) — authored as DA media workshop-idemyldring-mennesker-rullestol-bord-lys.png",
   "media: skattetrekkskonto-2.svg is 62210 B of SVG (> 40000) — authored as DA media skattetrekkskonto-2.png",
   "media: student-mann-pa-laptop.svg is 47068 B of SVG (> 40000) — authored as DA media student-mann-pa-laptop.png",
@@ -85,5 +85,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/bonde-ku-landbruk-mork.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/kakemakere-lys-bakgrunn.svg"
  ],
- "writtenAt": "2026-09-14T23:40:48.399Z"
+ "writtenAt": "2026-09-15T15:02:42.816Z"
 }

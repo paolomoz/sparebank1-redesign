@@ -1,100 +1,60 @@
 {
- "archetype": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
- "document": "content/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan.html",
- "blocks": {
-  "new": [],
-  "reused": [
-   "breadcrumbs",
-   "feedback (inline labels)",
-   "callout (step sand|syrin)"
-  ]
- },
- "iterations": 2,
- "breakpoints": {
-  "360": {
-   "pixelPct": 0.12,
-   "heightDelta": 0,
-   "header": 99.66,
-   "footer": 100,
-   "pass": true,
-   "bodyHeightDelta": 0
+  "archetype": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+  "document": "content/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan.html",
+  "blocks": {
+    "new": [],
+    "reused": [
+      "hero (question)",
+      "breadcrumbs",
+      "feedback (labels question)",
+      "callout (step sand|syrin|frost) — siblings"
+    ]
   },
-  "1440": {
-   "pixelPct": 0.15,
-   "heightDelta": 0,
-   "header": 99.96,
-   "footer": 99.89,
-   "pass": true,
-   "bodyHeightDelta": 0
-  }
- },
- "contentDiff": {
-  "red": 0,
-  "justified": []
- },
- "ew": {
-  "editable": 9,
-  "dead": 0,
-  "exempt": 1
- },
- "lint": {
-  "davidsModelRed": 0,
-  "deliveryP0P1": 0
- },
- "productRegression": {
-  "slug": "nb-bank-privat-lan-boliglan-html",
-  "pixelPct1440": 0.74,
-  "heightDelta": -1,
-  "pass": true
- },
- "siblings": {
-  "converted": [
-   "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
-   "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
-   "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
-   "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
-   "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
-   "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
-   "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
-   "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
-   "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
-   "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
-   "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html"
+  "iterations": 3,
+  "breakpoints": {
+    "360": {
+      "pixelPct": 0.15,
+      "heightDelta": 0,
+      "header": 100,
+      "footer": 100,
+      "pass": true
+    },
+    "1440": {
+      "pixelPct": 0.13,
+      "heightDelta": 0,
+      "header": 99.74,
+      "footer": 100,
+      "pass": true
+    }
+  },
+  "contentDiff": {
+    "red": 0,
+    "justified": [],
+    "amber": 17,
+    "orange": 12
+  },
+  "ew": {
+    "editable": 9,
+    "dead": 0,
+    "exempt": 1
+  },
+  "lint": {
+    "davids": "0 🔴 · 3 🟡 (D1 fragment/breadcrumbs/hero — justified in ctx.notes)",
+    "delivery": "0 P0 · 0 P1 · 0 P2"
+  },
+  "siblings": {
+    "converted": 11,
+    "gaps": 0,
+    "lintRed": 0,
+    "sampled": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html",
+    "contentDiffRed": 0,
+    "note": "🟠 extras = the bank-router fragment bank links (outside the migrated page)"
+  },
+  "requests": [
+    "/footer-bedrift 2 px at 360 on the first run (self-healed) — eds-requests.md § story — faq"
   ],
-  "gaps": {
-   "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html": 0,
-   "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html": 0,
-   "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html": 0,
-   "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html": 0,
-   "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html": 0,
-   "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html": 0,
-   "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html": 0,
-   "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html": 0,
-   "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html": 0,
-   "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html": 0,
-   "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html": 0
-  },
-  "lintRed": {
-   "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html": 0,
-   "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html": 0,
-   "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html": 0,
-   "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html": 0,
-   "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html": 0,
-   "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html": 0,
-   "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html": 0,
-   "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html": 0,
-   "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html": 0,
-   "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html": 0,
-   "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html": 0
-  },
-  "contentDiffSampled": {
-   "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
-   "red": 0
-  }
- },
- "requests": [
-  "stardust/rollout/eds-requests.md → story #1 (frontend footer 4th column), #2 (lib.inline collapses nbsp)"
- ],
- "gatePass": true,
- "writtenAt": "2026-09-14T22:31:17.948Z"
+  "gatePass": true,
+  "gateAt": "2026-09-15T14:24:06.381Z",
+  "round": "01",
+  "writtenAt": "2026-09-15T14:26:43.222Z"
 }

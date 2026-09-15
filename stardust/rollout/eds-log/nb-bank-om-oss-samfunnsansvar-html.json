@@ -48,6 +48,7 @@
   "feedback"
  ],
  "notes": [
+  "campaign (hero bento): hero (om-oss) — [photo][h1, lead]; variant om-oss puts the photo card left (7) and the Frost text card right (5)",
   "media: visning-familie-mork.svg is 83567 B of SVG (> 40000) — authored as DA media visning-familie-mork.png",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
@@ -55,5 +56,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/visning-familie-mork.svg"
  ],
- "writtenAt": "2026-09-14T23:40:48.478Z"
+ "writtenAt": "2026-09-15T15:02:43.016Z"
 }

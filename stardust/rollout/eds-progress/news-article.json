@@ -1,99 +1,62 @@
 {
- "archetype": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
- "document": "content/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
- "blocks": {
-  "new": [
-   "video (auto-blocked mp4 link; blocks/video)"
+  "archetype": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+  "document": "content/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+  "blocks": {
+    "new": [],
+    "reused": [
+      "hero (article)",
+      "cards (news rail)",
+      "callout (fact) · callout (quote) — siblings",
+      "columns (split article-split) · columns (article-cols) — siblings",
+      "video (auto-blocked mp4) — siblings"
+    ]
+  },
+  "iterations": 6,
+  "breakpoints": {
+    "360": {
+      "pixelPct": 0.05,
+      "heightDelta": 0,
+      "header": 100,
+      "footer": 100,
+      "pass": true
+    },
+    "1440": {
+      "pixelPct": 0.03,
+      "heightDelta": 0,
+      "header": 99.84,
+      "footer": 100,
+      "pass": true
+    }
+  },
+  "contentDiff": {
+    "red": 0,
+    "justified": [],
+    "amber": 0,
+    "orange": 1
+  },
+  "ew": {
+    "editable": 28,
+    "dead": 0,
+    "exempt": 0
+  },
+  "lint": {
+    "davids": "0 🔴 · 1 🟡 (D1 callout fact — justified in ctx.notes)",
+    "delivery": "0 P0 · 0 P1 · 7 P2 (cross-origin img)"
+  },
+  "siblings": {
+    "converted": 9,
+    "gaps": 0,
+    "lintRed": 0,
+    "sampled": "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+    "contentDiffRed": 0,
+    "note": "35/35 text nodes, 8/8 img"
+  },
+  "requests": [
+    "base hero.css phone rule positions the hero photo absolute (collapsed the captioned figure) — worked around",
+    "video.css `.video video` also matches the hero `video` variant — worked around"
   ],
-  "reused": [
-   "hero (article)",
-   "callout (fact|quote)",
-   "cards (rail)",
-   "columns (split article-split|article-cols)"
-  ]
- },
- "iterations": 5,
- "breakpoints": {
-  "360": {
-   "pixelPct": 4.01,
-   "heightDelta": -252,
-   "header": 99.66,
-   "footer": 77.42,
-   "pass": false,
-   "bodyHeightDelta": 0,
-   "note": "footer crop fails on the lead's frontend footer document (legal links rendered as a 4th column, +252 px) — body matches; see eds-requests.md story #1"
-  },
-  "1440": {
-   "pixelPct": 3.28,
-   "heightDelta": -252,
-   "header": 99.96,
-   "footer": 81.77,
-   "pass": false,
-   "bodyHeightDelta": 0,
-   "note": "footer crop fails on the lead's frontend footer document (legal links rendered as a 4th column, +252 px) — body matches; see eds-requests.md story #1"
-  }
- },
- "contentDiff": {
-  "red": 0,
-  "justified": []
- },
- "ew": {
-  "editable": 28,
-  "dead": 0,
-  "exempt": 0
- },
- "lint": {
-  "davidsModelRed": 0,
-  "deliveryP0P1": 0
- },
- "productRegression": {
-  "slug": "nb-bank-privat-lan-boliglan-html",
-  "pixelPct1440": 0.74,
-  "heightDelta": -1,
-  "pass": true
- },
- "siblings": {
-  "converted": [
-   "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
-   "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
-   "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
-   "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
-   "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
-   "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
-   "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
-   "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
-   "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html"
-  ],
-  "gaps": {
-   "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html": 0,
-   "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html": 0,
-   "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html": 0,
-   "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html": 0,
-   "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html": 0,
-   "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html": 0,
-   "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html": 0,
-   "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html": 0,
-   "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html": 0
-  },
-  "lintRed": {
-   "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html": 0,
-   "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html": 0,
-   "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html": 0,
-   "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html": 0,
-   "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html": 0,
-   "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html": 0,
-   "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html": 0,
-   "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html": 0,
-   "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html": 0
-  },
-  "contentDiffSampled": {
-   "slug": "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
-   "red": 0
-  }
- },
- "requests": [
-  "stardust/rollout/eds-requests.md → story #1 (frontend footer 4th column), #2 (lib.inline collapses nbsp)"
- ],
- "gatePass": false,
- "writtenAt": "2026-09-14T22:31:17.951Z"
+  "gatePass": true,
+  "gateAt": "2026-09-15T14:22:51.158Z",
+  "round": "01",
+  "writtenAt": "2026-09-15T14:26:43.225Z"
 }

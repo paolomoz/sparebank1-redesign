@@ -96,7 +96,7 @@
   "feedback"
  ],
  "notes": [
-  "page-title (intro-media): text + photo intro → hero (intro) — photo right, h1 + leads + pills left",
+  "page-title: hero (hub) — text card 5 + media card 7; h1, leads and CTAs are the text cell, the back link rides the breadcrumbs block (moved into the card by hero.js)",
   "media: mann-sofa-lese.svg is 43614 B of SVG (> 40000) — authored as DA media mann-sofa-lese.png",
   "media: sparing-2.svg is 44279 B of SVG (> 40000) — authored as DA media sparing-2.png",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
@@ -106,5 +106,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/mann-sofa-lese.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/sparing-2.svg"
  ],
- "writtenAt": "2026-09-14T23:40:48.735Z"
+ "writtenAt": "2026-09-15T15:02:43.420Z"
 }

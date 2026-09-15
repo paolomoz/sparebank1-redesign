@@ -1,44 +1,119 @@
 /**
  * encoders/category-hub.mjs — hub group (worker E4): category-hub family encoders + the helpers shared with
- * kundeservice-hub / tool / utility (they import from here). New keys (`shortcut-row`, `cobranding`) are shared by convert.mjs;
- * the core overrides below (`visual-nav`, `promo-band`) apply to category-hub pages only.
+ * kundeservice-hub / tool / utility (they import from here). Round 01 (2026-09-15): the prototypes speak the bento card language —
+ * every repeated unit is `ul.bento[data-slot="cards"] > li.card` (`.card-image` / `img.illu` then `.card-body`), heroes are a text card
+ * (+ a media card) inside `div.bento.hero-bento`, section titles are `h2.h2-l.section-title` (+ `p.section-lead`), promo rows are
+ * `li.card.promo` with the spot illustration beside the teaser. `bentoRows` / `hubCards` turn those into `cards (<variant> cols-N)`
+ * blocks — one row per card [media?][headings, text, lists, CTAs] in authored order — and `hubTitle` into the `hero` block
+ * (`text-only` = text card across 12 · `sand` fill · `tile` = illustration on a Sand tile · `portrait` = circle portrait on a tile).
+ * New keys (`shortcut-row`, `cobranding`) are shared by convert.mjs; the core overrides apply to category-hub pages only.
+ * Group CSS: blocks/{hero,cards,columns,callout,feedback}/<block>-hub.css · styles/styles-hub.css.
  */
 import * as L from '../lib.mjs';
-import { cardRows, splitMedia } from '../encoders.mjs';
+import { splitMedia, richText } from '../encoders.mjs';
 
 const { q, qa, cls, txt, inline, prose, ctas, pic, block, section, styleOf, paperOf, esc } = L;
 
-/** Section style: the movement's paper + explicit tokens (hub pages set their own rhythm tokens, never the core guesses). */
-export const hubStyle = (root, ...extra) => styleOf(paperOf(root), ...extra);
+/** Section style: the movement's paper + `full-bleed` (data-layout) + explicit tokens (hub pages set their own rhythm tokens). */
+export const hubStyle = (root, ...extra) => styleOf(paperOf(root), root.getAttribute && root.getAttribute('data-layout') === 'full-bleed-grid' ? 'full-bleed' : null, ...extra);
 
-/** The movement's h2 (`.section-title` or the first h2 directly in the container / its head column) as default content. */
-export function head(root, ctx) {
+/** The movement's h2 (`.section-title` or the first h2 directly in the container / its head column) [+ the section lead] as default content. */
+export function head(root, ctx, { lead = true } = {}) {
   const h = q(root, ':scope > .container > h2, :scope > .container > .directory-head > h2, :scope > .container > .faq-grid > h2, :scope > .container > .shortcut-row > h2');
-  return h ? `<h2>${inline(h, ctx)}</h2>` : '';
+  if (!h) return '';
+  let out = `<h2>${inline(h, ctx)}</h2>`;
+  if (lead) for (const p of qa(root, ':scope > .container > p.section-lead, :scope > .container > p.lead')) { const s = inline(p, ctx).trim(); if (s) out += `<p>${s}</p>`; }
+  return out;
+}
+export const hasLead = (root) => !!q(root, ':scope > .container > h2 ~ p.section-lead, :scope > .container > h2 ~ p.lead');
+
+/** lib.inline() collapses U+00A0 into a plain space (eds-requests: story/theme); keep the author's non-breaking spaces through a private-use placeholder. */
+export function keepNbsp(el, fn) {
+  const nodes = []; const walk = (n) => { for (const c of n.childNodes) { if (c.nodeType === 3 && c.textContent.includes('\u00a0')) nodes.push([c, c.textContent]); else if (c.nodeType === 1) walk(c); } }; walk(el);
+  for (const [n, t] of nodes) n.textContent = t.replace(/\u00a0/g, '\uE000');
+  const out = fn();
+  for (const [n, t] of nodes) n.textContent = t;
+  return out.replace(/\uE000/g, '&#160;');
 }
 
-/** A promo article → one `columns (promo …)` row [illustration][title + line + pill]. */
-export function promoCells(promo, ctx) {
-  const img = q(promo, 'img'); const text = q(promo, '.promo-text') || promo;
-  return [img ? pic(img, ctx) : '', prose(text, ctx)];
+/* ============================== bento cards (round 01) ============================== */
+const BENTO_VARIANT = { 'door-grid': 'doors', 'small-grid': 'icons', 'pop-grid': 'popular', 'card-grid': 'tips', 'help-grid': 'help', 'promo-grid': 'promo', topics: 'topics', tools: 'tools', 'bank-grid': 'directory', addr: 'address', 'usp-list': 'usp', tiles: 'tiles' };
+export const bentoVariant = (ul) => cls(ul).map((c) => BENTO_VARIANT[c]).find(Boolean) || 'flat';
+export const gridOf = (ul) => (cls(ul).find((c) => /^grid-[1-4]$/.test(c)) || '').replace('grid-', '');
+const CARD_MEDIA = ':scope > img, :scope > picture img, :scope > figure img, :scope > a > img, :scope > .card-image';
+const isBtnPara = (p) => /^\s*<a [^>]*class="[^"]*\bbtn\b/.test(p.innerHTML.trim()) || (q(p, 'a.btn') && qa(p, 'a').every((a) => cls(a).includes('btn')));
+/** Body of a bento card in authored order: headings keep their rank (link kept), <em>meta</em>, paragraphs, CTAs one per <p>, lists, prose. */
+export function cardBody(container, ctx, { skipImg = true } = {}) {
+  let body = '';
+  for (const n of container.children) {
+    const t = n.tagName.toLowerCase();
+    if (t === 'img' || t === 'picture' || t === 'figure') { if (!skipImg) body += pic(q(n, 'img') || n, ctx); continue; }
+    if (/^h[1-6]$/.test(t)) { const a = n.children.length === 1 && n.firstElementChild.tagName === 'A' ? n.firstElementChild : null; body += a ? `<${t}><a href="${esc(L.href(a.getAttribute('href') || '', ctx))}">${inline(a, ctx).trim()}</a></${t}>` : `<${t}>${inline(n, ctx).trim()}</${t}>`; continue; }
+    if (t === 'p' && cls(n).includes('meta')) { const s = inline(n, ctx).trim(); if (s) body += `<p><em>${s}</em></p>`; continue; }
+    if (t === 'p' && isBtnPara(n)) { body += ctas(n, ctx); continue; }
+    if (t === 'p') { const s = inline(n, ctx).trim(); if (s) body += `<p>${s}</p>`; continue; }
+    if (t === 'a' && cls(n).includes('btn')) { body += L.ctaHtml(n, ctx); continue; }
+    if (t === 'ul' || t === 'ol') { qa(n, '.visually-hidden').forEach((x) => x.remove()); body += L.isRichList(n) ? L.richList(n, ctx) : L.list(n, ctx); continue; }
+    if (t === 'details') continue; // never nested (D2) — the caller handles disclosures
+    body += tidyProse(linkListify(prose({ childNodes: [n] }, ctx)));
+  }
+  return body;
 }
-const CARD_VARIANT = { 'door-grid': 'doors', 'small-grid': 'small', 'pop-grid': 'popular', topics: 'topics', tools: 'tools', tiles: 'tiles' };
-export const cardVariant = (ul) => cls(ul).map((c) => CARD_VARIANT[c]).find(Boolean) || 'flat';
+/** One DA row per `li.card`: [media?][body]. The leading photo (`.card-image`) or the spot icon (`img.illu` inside the body) is the media cell. */
+export function bentoRows(items, ctx) {
+  return items.map((li) => {
+    const img = q(li, CARD_MEDIA) || q(li, ':scope > .card-body > img, :scope > .card-body > picture img, :scope > .card-body > figure img, :scope > .card-body > a > img');
+    const body = q(li, ':scope > .card-body') || li;
+    return [img ? pic(img, ctx) : '', keepNbsp(body, () => cardBody(body, ctx))];
+  });
+}
+/** cards block for a bento list: variant from the list class, `cols-N` from grid-N, `promo-N` for several promos. */
+export function bentoBlock(ul, ctx, variant = bentoVariant(ul)) {
+  const items = qa(ul, ':scope > li'); if (!items.length) return null;
+  const g = gridOf(ul); const rows = bentoRows(items, ctx);
+  const media = rows.some((r) => r[0]);
+  return block('cards', [variant, variant === 'icons' ? 'spot' : null, g ? `cols-${g}` : null, variant === 'promo' && items.length > 1 ? `promo-${items.length}` : null], media ? rows : rows.map((r) => ['', r[1]]));
+}
+/** A single card inside a `div.bento` (partners card, note card …) → cards block with one row. */
+export function singleCard(card, ctx, variant) {
+  const img = q(card, CARD_MEDIA); const body = q(card, ':scope > .card-body') || card;
+  return block('cards', [variant], [[img ? pic(img, ctx) : '', cardBody(body, ctx)]]);
+}
+/**
+ * hubCards: the generic round-01 card movement — [h2 + lead as default content] + one cards block per `ul.bento[data-slot]`, single
+ * cards in a `div.bento`, trailing paragraphs / CTAs as default content. `variantOf(ul)` may override the variant; `style` extra tokens.
+ */
+export function hubCards(root, ctx, { variantOf = bentoVariant, style = [], singles = {} } = {}) {
+  const c = q(root, ':scope > .container, :scope > .full-bleed') || root;
+  const parts = [head(root, ctx)]; const blocks = new Set();
+  let n = 0;
+  for (const el of c.children) {
+    if (el.matches('ul, ol') && el.hasAttribute('data-slot')) { const b = bentoBlock(el, ctx, variantOf(el)); if (b) { parts.push(b); blocks.add('cards'); n += 1; } continue; }
+    if (el.matches('.bento') && !el.querySelector('ul[data-slot]')) { for (const card of qa(el, ':scope > .card')) { parts.push(singleCard(card, ctx, singles[[...card.classList].find((k) => singles[k])] || 'note')); blocks.add('cards'); n += 1; } continue; }
+    if (el.matches('h2, .section-title') || el.matches('p.section-lead, p.lead')) continue;
+    if (el.matches('p')) { const s = isBtnPara(el) ? ctas(el, ctx) : `<p>${inline(el, ctx).trim()}</p>`; if (s.trim() && s !== '<p></p>') parts.push(s); continue; }
+    if (el.matches('ul, ol') && el.querySelector('li .card-body')) { const b = bentoBlock(el, ctx, variantOf(el)); if (b) { parts.push(b); blocks.add('cards'); n += 1; } continue; }
+    parts.push(tidyProse(linkListify(prose({ childNodes: [el] }, ctx))));
+  }
+  if (!blocks.size) return null;
+  return { html: section(parts, { style: hubStyle(root, hasLead(root) ? 'head-centered' : null, n > 1 ? 'stack' : null, ...style) }), blocks: [...blocks] };
+}
 
-/* ---- visual-nav: doors (4 photo doors) + small tiles (4 icon tiles) — two cards blocks, the movement sits 16px under the intro ---- */
+/* ---- visual-nav: the doors (photo cards) + the small doors (icon cards) — one bento 6 px under the hero ---- */
 function visualNav(root, ctx) {
-  const lists = qa(root, 'ul.door-grid, ul.small-grid, ul[data-slot="cards"], ul[data-slot="cards-small"]').filter((u, i, a) => a.indexOf(u) === i);
-  if (!lists.length) return null;
-  const parts = [head(root, ctx), ...lists.map((ul) => block('cards', [cardVariant(ul)], cardRows(qa(ul, ':scope > li'), ctx)))];
-  return { html: section(parts, { style: hubStyle(root, cls(root).includes('doors') ? 'tight-top' : null) }), blocks: ['cards'] };
+  const r = hubCards(root, ctx, { style: [q(root, ':scope > .container > h2') ? null : 'bento-top'] });
+  if (!r) return null;
+  ctx.notes.push('visual-nav: cards (doors cols-4) + cards (small cols-4) — one row per door [photo | icon][h2 link, line]; section `bento-top, stack` keeps the 6 px bento gutters under the hero');
+  return r;
 }
 
-/* ---- shortcut-row: h2 + a list of inline chevron links → DEFAULT CONTENT with the `shortcuts` section style (D1/D5) ---- */
+/* ---- shortcut-row: h2 + a list of arrow links → DEFAULT CONTENT with the `shortcuts` section style (D1/D5): one Syrin card, links in four columns ---- */
 function shortcutRow(root, ctx) {
   const ul = q(root, 'ul'); if (!ul) return null;
+  const h = q(root, 'h2');
   const items = qa(ul, ':scope > li').map((li) => { const a = q(li, 'a'); return a ? `<li><a href="${esc(L.href(a.getAttribute('href') || '', ctx))}">${inline(a, ctx).trim()}</a></li>` : ''; }).join('');
-  ctx.notes.push('shortcut-row: prose h2 + ul of links (David\'s Model D5 simple list); section style `shortcuts` paints the hairline, the inline-link row and the chevrons');
-  return { html: section([head(root, ctx), `<ul>${items}</ul>`], { style: hubStyle(root, 'shortcuts') }), blocks: [] };
+  ctx.notes.push('shortcut-row: prose h2 + ul of links (David\'s Model D5 simple list); section style `shortcuts` paints the Syrin card, the four-column link grid and the chevrons');
+  return { html: section([h ? `<h2>${inline(h, ctx)}</h2>` : '', `<ul>${items}</ul>`], { style: hubStyle(root, 'shortcuts') }), blocks: [] };
 }
 
 /* ---- cobranding: the LOfavør disclosure → bespoke `cobranding` block: [question][toggle label] · [logo][name + prose + CTAs] · [illustration][note] ---- */
@@ -52,32 +127,32 @@ function cobranding(root, ctx) {
   for (const p of qa(main, 'p')) if (q(p, 'a.btn')) body += ctas(p, ctx);
   const rows = [[`<p>${inline(qEl, ctx).trim()}</p>`, `<p>${inline(tEl, ctx).trim()}</p>`], [logo ? pic(logo, ctx) : '', body]];
   if (side) { const illu = q(side, 'img'); rows.push([illu ? pic(illu, ctx) : '', qa(side, 'p').map((p) => `<p>${inline(p, ctx).trim()}</p>`).join('')]); }
-  ctx.notes.push('cobranding: bespoke disclosure block (details/summary → head row + hidden panel, accordion.js pattern); the toggle label is authored text outside the <button>');
+  ctx.notes.push('cobranding: bespoke disclosure block (details/summary → head row + hidden panel, accordion.js pattern) painted as one Sand card (styles-hub.css); the toggle label is authored text outside the <button>');
   return { html: section([block('cobranding', [], rows)], { style: hubStyle(root) }), blocks: ['cobranding'] };
 }
 
-/* ---- split-media (hub): two stacked help columns [photo][h2 + line + pill] → columns (split help), one row per column ---- */
+/* ---- split-media (hub): a bento of cards (help columns) → cards (help cols-2); otherwise the core split (media card 5 + text card 7) ---- */
 export function hubSplit(root, ctx) {
-  const cols = qa(root, '.help-col'); if (!cols.length) return splitMedia(root, ctx);
-  const rows = cols.map((c) => { const img = q(c, 'img'); let body = ''; for (const n of c.children) { if (n === img) continue; body += prose({ childNodes: [n] }, ctx); } return [img ? pic(img, ctx) : '', tidyProse(linkListify(body))]; });
-  return { html: section([head(root, ctx), block('columns', ['split', 'help'], rows)], { style: hubStyle(root) }), blocks: ['columns'] };
+  if (q(root, 'ul[data-slot="cards"]')) return hubCards(root, ctx);
+  const r = splitMedia(root, ctx); if (!r) return null;
+  if (q(root, '.split-card.card--frost')) r.html = r.html.replace(/<div class="columns split([^"]*)">/, '<div class="columns split$1 frost">');
+  return r;
 }
 
-/* ---- promo-band: one or two promos; family class (`switch` flush under the help columns · `invites` two side by side) rides the block ---- */
+/* ---- promo-band: one or several `li.card.promo` → cards (promo [promo-N] cols-N); the kundeservice invites ride a full-bleed section ---- */
 export function hubPromo(root, ctx) {
-  const promos = qa(root, 'article.promo, .promo'); if (!promos.length) return null;
-  const fam = cls(root).find((c) => ['switch', 'invites'].includes(c));
-  const b = block('columns', ['promo', promos.length > 1 ? `promo-${promos.length}` : null, fam], promos.map((p) => promoCells(p, ctx)));
-  return { html: section([head(root, ctx), b], { style: hubStyle(root, fam === 'switch' ? 'flush-top' : null) }), blocks: ['columns'] };
+  const r = hubCards(root, ctx); if (!r) return null;
+  ctx.notes.push('promo-band: cards (promo) — one row per promo [spot illustration][h2, line, CTA]; the illustration sits beside the teaser on the card tint (cards-hub.css)');
+  return r;
 }
 
-/* ---- callout (hub group): canon .callout / .callout-rich → callout (tip|info|frost [rich]); `quick` = 48px top, flush bottom ---- */
+/* ---- callout (hub group): canon .callout / .callout-rich → callout (tip|info|frost hub [rich] [cta]) ---- */
 export function hubCallout(root, ctx) {
   const co = q(root, '.callout'); if (!co) return null;
   const variant = cls(co).includes('info') ? 'info' : cls(co).includes('callout-frost') ? 'frost' : 'tip';
   const body = q(co, '.callout-text, .callout-body') || co;
-  ctx.notes.push('lint D1 callout: designed compound (canon icon + tinted paper), Block Collection-shaped single cell of prose — kept as a block like the product archetype');
-  return { html: section([head(root, ctx), block('callout', [variant, cls(co).includes('callout-rich') ? 'rich' : null, q(body, 'a.btn') ? 'cta' : null], [[prose(body, ctx)]])], { style: hubStyle(root, cls(root).includes('quick') ? 'quick' : null) }), blocks: ['callout'] };
+  ctx.notes.push('lint D1 callout: designed compound (canon icon + Sand sheet), Block Collection-shaped single cell of prose — kept as a block like the product archetype');
+  return { html: section([head(root, ctx), block('callout', [variant, 'hub', cls(co).includes('callout-rich') ? 'rich' : null, q(body, 'a.btn') ? 'cta' : null], [[keepNbsp(body, () => tidyProse(linkListify(prose(body, ctx))))]])], { style: hubStyle(root) }), blocks: ['callout'] };
 }
 
 /* ============================== shared sibling modules (migrate workers' sibling-only vocabulary) ============================== */
@@ -102,7 +177,7 @@ export function linkListify(html) {
 export function tidyProse(html) {
   return html
     .replace(/<p><strong>([^<]+?)\s*(?:<br>\s*)+<\/strong>\s*(?=\S)/g, '<p><strong>$1</strong></p><p>')
-    .replace(/<strong>([^<]*)(<a [^>]*>[^<]*<\/a>)([^<]*)<\/strong>/g, (m, a, link, b) => `${a.trim() ? `<strong>${a}</strong>` : ''}${link}${b.trim() ? `<strong>${b}</strong>` : ''}`)
+    .replace(/(?<!<em>)<strong>([^<]*)(<a [^>]*>[^<]*<\/a>)([^<]*)<\/strong>(?!<\/em>)/g, (m, a, link, b) => `${a.trim() ? `<strong>${a}</strong>` : ''}${link}${b.trim() ? `<strong>${b}</strong>` : ''}`)
     // last resort: running text with a bold phrase AND several links → one paragraph per sentence group (verbatim text, delivery-lint P1 heuristic)
     .replace(/<p>((?:(?!<\/p>).)*?)<\/p>/g, (m, inner) => {
       if ((inner.match(/<a /g) || []).length < 2 || !/<(strong|em)\b/.test(inner) || /<br>/.test(inner)) return m;
@@ -114,27 +189,43 @@ export function tidyProse(html) {
     });
 }
 /** Prose of a container minus the back link (the intro's `p.back` or a wrapper that holds it). */
-function proseExcept(container, back, ctx) {
+export function proseExcept(container, back, ctx) {
   let out = '';
   for (const n of container.children) {
     if (n === back) continue;
     if (back && n.contains(back)) { if (n.children.length <= 1 && !n.textContent.replace(txt(back), '').trim()) continue; out += proseExcept(n, back, ctx); continue; }
-    out += prose({ childNodes: [n] }, ctx);
+    if (n.matches('form')) continue;
+    out += n.matches('p') && isBtnPara(n) ? ctas(n, ctx) : prose({ childNodes: [n] }, ctx);
   }
   return out;
 }
 /** A table cell → block-cell HTML (several paragraphs kept, else one paragraph). */
 const cellHtml = (cell, ctx) => (q(cell, 'p, ul, ol') ? prose(cell, ctx) : `<p>${inline(cell, ctx).trim()}</p>`);
 
-/* ---- page-title (hub): back link + h1 + lead(s) [+ CTAs]; the `intro-media` shape (text left, photo right) → hero (intro) ---- */
+/* ---- page-title (hub, round 01): the hero bento → hero block. Text-only card across 12 → `title` (+ `sand`); text card 5 + photo card 7 →
+ *      the base hero; illustration on a Sand tile → `tile`; the captured circle portrait → `portrait`. The back link is the breadcrumbs block. ---- */
+export function heroVariants(root) {
+  const card = q(root, '.hero-card'); const media = q(root, '.hero-media');
+  const v = ['hub'];
+  if (!media) v.push('text-only'); else if (media.matches('.hero-portrait')) v.push('portrait'); else if (media.matches('.media-illu')) v.push('tile');
+  if (card && card.matches('.card--tint')) v.push('sand');
+  return v;
+}
 export function hubTitle(root, ctx) {
   const back = q(root, 'a.backlink'); const parts = []; const blocks = [];
   if (back) { parts.push(block('breadcrumbs', [], [[`<p><a href="${esc(L.href(back.getAttribute('href') || '', ctx))}">${inline(back, ctx).trim()}</a></p>`]])); blocks.push('breadcrumbs'); }
+  const bento = q(root, '.hero-bento');
+  if (bento) {
+    const text = q(bento, '.hero-card > .card-body, .hero-card') || bento; const img = q(bento, '.hero-media img');
+    const v = heroVariants(root);
+    parts.push(block('hero', v, [img ? [pic(img, ctx), proseExcept(text, back, ctx)] : [proseExcept(text, back, ctx)]])); blocks.push('hero'); // one cell when there is no media (hero.js takes the first cell as the text cell)
+    ctx.notes.push(`page-title: hero (${v.join(' ')}) — ${img ? 'text card 5 + media card 7' : 'one text card across 12'}; h1, leads and CTAs are the text cell${back ? ', the back link rides the breadcrumbs block (moved into the card by hero.js)' : ''}`);
+    return { html: section(parts, { style: hubStyle(root) }), blocks };
+  }
   const grid = q(root, '.intro-grid');
   if (grid) {
     const img = q(grid, 'figure img, .intro-figure img'); const text = q(grid, '.intro-text') || grid;
-    parts.push(block('hero', ['intro'], [[proseExcept(text, back, ctx), img ? pic(img, ctx) : '']])); blocks.push('hero');
-    ctx.notes.push('page-title (intro-media): text + photo intro → hero (intro) — photo right, h1 + leads + pills left');
+    parts.push(block('hero', ['hub', 'intro'], [[proseExcept(text, back, ctx), img ? pic(img, ctx) : '']])); blocks.push('hero');
     return { html: section(parts, { style: hubStyle(root, back ? 'tight-top' : null, 'tight-bottom') }), blocks };
   }
   const c = q(root, ':scope > .container') || root;
@@ -142,33 +233,18 @@ export function hubTitle(root, ctx) {
   return { html: section(parts, { style: hubStyle(root, 'intro', 'tight-bottom') }), blocks };
 }
 
-/* ---- card-grid · related-topics · static-cards: photo tiles (h3 link, optional tag + prose) or text-only pop tiles → cards (photo-tiles | popular) ---- */
-function tileRow(li, ctx) {
-  const img = q(li, ':scope > img, :scope > picture img, :scope > figure img'); const title = q(li, '.card-title'); const titleLink = title ? (title.tagName === 'A' ? title : q(title, 'a')) : null;
-  const meta = q(li, ':scope > p.meta'); let body = '';
-  if (meta) body += `<p><em>${inline(meta, ctx).trim()}</em></p>`;
-  if (title) { const lvl = /^H[1-6]$/.test(title.tagName) ? title.tagName.toLowerCase() : 'h3'; body += titleLink ? `<${lvl}><a href="${esc(L.href(titleLink.getAttribute('href') || '', ctx))}">${inline(titleLink, ctx)}</a></${lvl}>` : `<${lvl}>${inline(title, ctx)}</${lvl}>`; }
-  for (const n of li.children) { if (n === title || n === meta || /^(IMG|PICTURE|FIGURE)$/.test(n.tagName)) continue; body += /class="btn/.test(n.innerHTML) ? ctas(n, ctx) : prose({ childNodes: [n] }, ctx); }
-  return [img ? pic(img, ctx) : '', body];
-}
+/* ---- card-grid · related-topics · static-cards · related-products: bento card rails → cards (tips | popular | …) ---- */
 export function tileGrid(root, ctx) {
+  if (q(root, 'ul[data-slot]')) return hubCards(root, ctx);
   const c = q(root, ':scope > .container') || root; const parts = [head(root, ctx)]; const blocks = [];
-  const lead = q(c, ':scope > p.lead, :scope > .cards-lead'); if (lead) parts.push(`<p>${inline(lead, ctx).trim()}</p>`);
-  for (const ul of qa(c, ':scope > ul')) {
-    const v = cls(ul).includes('card-grid') ? 'photo-tiles' : cardVariant(ul);
-    const rows = qa(ul, ':scope > li').map((li) => tileRow(li, ctx));
-    parts.push(block('cards', [v], rows.some((r) => r[0]) ? rows : rows.map((r) => [r[1]]))); blocks.push('cards');
-  }
-  for (const p of qa(c, ':scope > p:not(.lead):not(.cards-lead), :scope > .cta-row')) parts.push(/class="btn/.test(p.innerHTML) ? ctas(p, ctx) : `<p>${inline(p, ctx).trim()}</p>`);
-  return { html: section(parts, { style: hubStyle(root, lead ? 'lead-first' : null) }), blocks: [...new Set(blocks)] };
+  for (const ul of qa(c, ':scope > ul')) { const b = bentoBlock(ul, ctx, cls(ul).includes('card-grid') ? 'tips' : bentoVariant(ul)); if (b) { parts.push(b); blocks.push('cards'); } }
+  for (const p of qa(c, ':scope > p:not(.lead):not(.section-lead), :scope > .cta-row')) parts.push(isBtnPara(p) ? ctas(p, ctx) : `<p>${inline(p, ctx).trim()}</p>`);
+  if (!blocks.length) return null;
+  return { html: section(parts, { style: hubStyle(root, hasLead(root) ? 'head-centered' : null) }), blocks: [...new Set(blocks)] };
 }
 
-/* ---- usp: icon + title-sm + line, three across → cards (usp) ---- */
-function usp(root, ctx) {
-  const ul = q(root, 'ul'); if (!ul) return null;
-  const rows = qa(ul, ':scope > li').map((li) => { const img = q(li, 'img'); let body = ''; for (const n of li.children) { if (n === img) continue; body += prose({ childNodes: [n] }, ctx); } return [img ? pic(img, ctx) : '', body]; });
-  return { html: section([head(root, ctx), block('cards', ['usp'], rows)], { style: hubStyle(root) }), blocks: ['cards'] };
-}
+/* ---- usp: icon + title + line cards → cards (usp) ---- */
+function usp(root, ctx) { return hubCards(root, ctx, { variantOf: () => 'usp' }); }
 
 /* ---- image: a lone illustration movement → DEFAULT CONTENT image with the `figure` section style (D1) ---- */
 function image(root, ctx) {
@@ -176,13 +252,14 @@ function image(root, ctx) {
   return { html: section([pic(img, ctx)], { style: hubStyle(root, 'figure') }), blocks: [] };
 }
 
-/* ---- text-and-image: illustration stack + h2/lead/pill → columns (split illu) ---- */
+/* ---- text-and-image: split bento (media card + text card) → the core split; legacy figure + text → columns (split illu) ---- */
 function textAndImage(root, ctx) {
+  if (q(root, '.split-bento')) return hubSplit(root, ctx);
   const fig = q(root, 'figure, .split-media'); const text = q(root, '.split-text') || q(root, ':scope > .container');
   const media = qa(fig, 'img').map((i) => pic(i, ctx)).join('');
   const reverse = !!(fig && text && (fig.compareDocumentPosition(text) & 2));
   const cells = reverse ? [prose(text, ctx), media] : [media, prose(text, ctx)];
-  return { html: section([block('columns', ['split', 'illu', reverse ? 'text-first' : null], [cells])], { style: hubStyle(root) }), blocks: ['columns'] };
+  return { html: section([block('columns', ['split', 'spot', reverse ? 'text-first' : null], [cells])], { style: hubStyle(root) }), blocks: ['columns'] };
 }
 
 /* ---- disclosure: <details> behind a secondary pill — a data table → table (disclose); anything else → accordion (disclose), one row [label][prose] ---- */
@@ -195,21 +272,21 @@ function discloseTable(d, ctx) {
 }
 function disclosure(root, ctx) {
   const c = q(root, ':scope > .container') || root; const parts = [head(root, ctx)]; const blocks = [];
-  const lead = q(c, ':scope > p.lead'); if (lead) parts.push(`<p>${inline(lead, ctx).trim()}</p>`);
   for (const d of qa(c, ':scope > details')) {
     const body = q(d, '.disclose-body') || d;
     if (q(body, 'table') && !q(body, '.help-col')) { parts.push(discloseTable(d, ctx)); blocks.push('table'); ctx.notes.push('disclosure: data table behind a toggle → table (disclose): row 1 = toggle label, row 2 = heading, then header + rows'); continue; }
     unwrapLayoutTables(body);
-    const cols = qa(body, '.help-col'); let ans = '';
-    for (const part of [...body.children].length ? [...body.children] : [body]) { const pc = qa(part, '.help-col'); for (const piece of pc.length ? pc : [part]) ans += prose(piece, ctx); }
+    let ans = '';
+    for (const part of [...body.children].length ? [...body.children] : [body]) { const pc = qa(part, '.help-col, li.card'); for (const piece of pc.length ? pc : [part]) ans += prose(piece, ctx); }
     ans = tidyProse(linkListify(ans));
     parts.push(block('accordion', ['disclose'], [[`<p>${inline(q(d, 'summary'), ctx).trim()}</p>`, ans]])); blocks.push('accordion');
-    ctx.notes.push(`disclosure: toggle + ${cols.length ? `${cols.length} illustrated columns` : 'prose'} → accordion (disclose), one row [label][prose]${cols.length ? ' — the columns are flattened in reading order (D2), nested toggles become label + link list' : ''}`);
+    ctx.notes.push('disclosure: toggle + prose → accordion (disclose), one row [label][prose] — nested cards are flattened in reading order (D2)');
   }
-  return { html: section(parts, { style: hubStyle(root, lead ? 'lead-first' : null) }), blocks: [...new Set(blocks)] };
+  if (!blocks.length) return null;
+  return { html: section(parts, { style: hubStyle(root, hasLead(root) ? 'head-centered' : null) }), blocks: [...new Set(blocks)] };
 }
 
-/* ---- faq (hub, shared): h3 question rows; answers flattened (layout tables unwrapped, link lines → lists); `faq-grid` → sticky h2 beside a wide list ---- */
+/* ---- faq (hub, shared): h3 question rows; answers flattened (layout tables unwrapped, link lines → lists); the per-answer rating → `rate` chrome ---- */
 export function hubFaq(root, ctx, extra = []) {
   const wrap = q(root, '.faq[data-slot="items"], .faq, [data-slot="items"]'); if (!wrap) return null;
   const aside = !!q(root, '.faq-grid'); const rate = !!q(root, '.faq-foot-feedback');
@@ -224,7 +301,7 @@ export function hubFaq(root, ctx, extra = []) {
   const more = q(wrap, ':scope > details.faq-more');
   if (more) { const label = q(more, 'summary'); parts.push(block('accordion', ['faq', 'more'], [[`<p>${inline(label, ctx).trim()}</p>`], ...qa(more, '.faq-more-items > details').map(item)])); }
   if (rate) ctx.notes.push('faq: the "Var dette nyttig?" rating row is accordion `rate` chrome (@ew-exempt labels, dynamics #5 interim)');
-  return { html: section(parts, { style: hubStyle(root, aside ? 'faq-aside' : null) }), blocks: ['accordion'] };
+  return { html: section(parts, { style: hubStyle(root, aside ? 'faq-aside' : null, hasLead(root) ? 'head-centered' : null) }), blocks: ['accordion'] };
 }
 const accordionList = (root, ctx) => hubFaq(root, ctx, ['list']);
 
@@ -246,15 +323,26 @@ function currencyConverter(root, ctx) {
   return { html: section(parts, { style: hubStyle(root) }), blocks: [...new Set(blocks)] };
 }
 
+/* ---- rich-text (hub): the core prose, start-aligned in the container (canon .prose-wrap) instead of the centred `prose-narrow` ---- */
+export function hubRichText(root, ctx) {
+  const r = richText(root, ctx); if (!r) return r;
+  r.html = r.html.replace('<div>prose-narrow</div>', '<div>prose-hub</div>').replace(/<div>([^<]*), prose-narrow<\/div>/, '<div>$1, prose-hub</div>');
+  return r;
+}
+
+/* ---- cta-row (sibling): a lone row of pills → default content CTAs ---- */
+function ctaRow(root, ctx) { const c = q(root, ':scope > .container') || root; const html = qa(c, 'a').map((a) => L.ctaHtml(a, ctx)).join(''); return html ? { html: section([html], { style: hubStyle(root, 'flush-top') }), blocks: [] } : null; }
+
 export default {
   'page-title': hubTitle,
   faq: hubFaq,
-  'card-grid': tileGrid, 'related-topics': tileGrid, 'static-cards': tileGrid,
-  usp, image, 'text-and-image': textAndImage, disclosure, 'accordion-list': accordionList, 'currency-converter': currencyConverter,
+  'card-grid': tileGrid, 'related-topics': tileGrid, 'static-cards': tileGrid, 'related-products': tileGrid, card: tileGrid,
+  usp, image, 'text-and-image': textAndImage, disclosure, 'accordion-list': accordionList, tabs: accordionList, 'currency-converter': currencyConverter, 'cta-row': ctaRow,
   'visual-nav': visualNav,
   callout: hubCallout,
   'split-media': hubSplit,
   'shortcut-row': shortcutRow,
   cobranding,
   'promo-band': hubPromo,
+  'rich-text': hubRichText,
 };

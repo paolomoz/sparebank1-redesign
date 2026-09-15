@@ -2,24 +2,14 @@
   "slug": "nb-bank-privat-lan-html",
   "edsUrl": "http://localhost:3020/nb/bank/privat/lan",
   "protoUrl": "http://localhost:8820/nb-bank-privat-lan-html-proposed.html",
-  "at": "2026-09-14T22:54:05.434Z",
+  "at": "2026-09-15T15:08:08.342Z",
   "pixel": {
     "360": {
-      "pct": 0.63,
+      "pct": 0.77,
       "heightDelta": 0,
       "compared": {
         "width": 360,
-        "height": 7889
-      },
-      "pass": true,
-      "hot": []
-    },
-    "1440": {
-      "pct": 0.32,
-      "heightDelta": 0,
-      "compared": {
-        "width": 1440,
-        "height": 5220
+        "height": 8377
       },
       "pass": true,
       "hot": []
@@ -27,43 +17,23 @@
   },
   "chrome": {
     "360": {
-      "header": 99.66,
+      "header": 100,
       "footer": 100,
       "headerH": {
-        "proto": 61,
-        "eds": 61
+        "proto": 68,
+        "eds": 68
       },
       "footerH": {
-        "proto": 1884,
-        "eds": 1884
+        "proto": 1536,
+        "eds": 1536
       },
       "footerY": {
-        "proto": 6005,
-        "eds": 6005
+        "proto": 6841,
+        "eds": 6841
       },
       "doc": {
-        "proto": 7889,
-        "eds": 7889
-      }
-    },
-    "1440": {
-      "header": 99.96,
-      "footer": 99.89,
-      "headerH": {
-        "proto": 110,
-        "eds": 110
-      },
-      "footerH": {
-        "proto": 917,
-        "eds": 917
-      },
-      "footerY": {
-        "proto": 4303,
-        "eds": 4303
-      },
-      "doc": {
-        "proto": 5220,
-        "eds": 5220
+        "proto": 8377,
+        "eds": 8377
       }
     }
   },
@@ -74,7 +44,7 @@
     "orange": 12,
     "summary": [
       "  EDS: 94 text nodes — 10 headings, 0 eyebrows, 46 CTAs, 38 body; 26 img",
-      "  editable texts (outermost h*/p/ul/ol): proto 28 / EDS 36"
+      "  editable texts (outermost h*/p/ul/ol): proto 21 / EDS 29"
     ]
   },
   "pass": true

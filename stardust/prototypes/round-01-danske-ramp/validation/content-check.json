@@ -1,0 +1,28 @@
+{
+ "slug": "nb-bank-privat-html",
+ "file": "stardust/prototypes/round-01-danske-ramp/home.html",
+ "checked": {
+  "text": 98,
+  "href": 222,
+  "img": 15
+ },
+ "miss": {
+  "text": [
+   {
+    "r": "main",
+    "t": "Se hva du kan spare!"
+   },
+   {
+    "r": "main",
+    "t": "Refinansier forbrukslån og kredittkortgjeld."
+   }
+  ],
+  "href": [],
+  "img": [
+   {
+    "r": "main",
+    "s": "Refinansiering_Hand_med_skjerm.jpg.thumb.1280.1280.jpg"
+   }
+  ]
+ }
+}

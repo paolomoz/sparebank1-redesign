@@ -12,7 +12,9 @@
  "modules": [
   {
    "module": "page-title",
-   "blocks": []
+   "blocks": [
+    "hero"
+   ]
   },
   {
    "module": "rich-text",
@@ -21,13 +23,13 @@
   {
    "module": "split-media",
    "blocks": [
-    "columns"
+    "cards"
    ]
   },
   {
    "module": "split-media",
    "blocks": [
-    "columns"
+    "cards"
    ]
   },
   {
@@ -39,7 +41,7 @@
   {
    "module": "promo-band",
    "blocks": [
-    "columns"
+    "cards"
    ]
   },
   {
@@ -102,20 +104,23 @@
   }
  ],
  "blocks": [
-  "columns",
+  "hero",
   "cards",
+  "columns",
   "accordion",
   "feedback"
  ],
  "notes": [
+  "page-title: hero (hub text-only) — one text card across 12; h1, leads and CTAs are the text cell",
   "media: dame-koffert-reise-rosa.svg is 47074 B of SVG (> 40000) — authored as DA media dame-koffert-reise-rosa.png",
   "media: barekraft-skifte-sykkeldekk-lys-bakgrunn.svg is 52880 B of SVG (> 40000) — authored as DA media barekraft-skifte-sykkeldekk-lys-bakgrunn.png",
   "media: Mennesker_personer_voksen_forelder_barn.svg is 77637 B of SVG (> 40000) — authored as DA media Mennesker_personer_voksen_forelder_barn.png",
+  "promo-band: cards (promo) — one row per promo [spot illustration][h2, line, CTA]; the illustration sits beside the teaser on the card tint (cards-hub.css)",
   "media: barn_spiller_fotball.svg is 93129 B of SVG (> 40000) — authored as DA media barn_spiller_fotball.png",
   "media: bonde-ku-landbruk-mork.svg is 56362 B of SVG (> 40000) — authored as DA media bonde-ku-landbruk-mork.png",
-  "disclosure: toggle + 4 illustrated columns → accordion (disclose), one row [label][prose] — the columns are flattened in reading order (D2), nested toggles become label + link list",
+  "disclosure: toggle + prose → accordion (disclose), one row [label][prose] — nested cards are flattened in reading order (D2)",
   "faq: the \"Var dette nyttig?\" rating row is accordion `rate` chrome (@ew-exempt labels, dynamics #5 interim)",
-  "shortcut-row: prose h2 + ul of links (David's Model D5 simple list); section style `shortcuts` paints the hairline, the inline-link row and the chevrons",
+  "shortcut-row: prose h2 + ul of links (David's Model D5 simple list); section style `shortcuts` paints the Syrin card, the four-column link grid and the chevrons",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
  "gaps": [],
@@ -126,5 +131,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/barn_spiller_fotball.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/bonde-ku-landbruk-mork.svg"
  ],
- "writtenAt": "2026-09-14T23:40:48.610Z"
+ "writtenAt": "2026-09-15T15:02:43.209Z"
 }

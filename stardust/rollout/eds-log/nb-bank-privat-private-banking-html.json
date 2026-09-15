@@ -85,7 +85,7 @@
   "accordion"
  ],
  "notes": [
-  "page-title (intro-media): text + photo intro → hero (intro) — photo right, h1 + leads + pills left",
+  "page-title: hero (hub) — text card 5 + media card 7; h1, leads and CTAs are the text cell, the back link rides the breadcrumbs block (moved into the card by hero.js)",
   "media: Her_jobber_jeg_ja_usymmetrisk_multeskygge.svg is 625212 B of SVG (> 40000) — authored as DA media Her_jobber_jeg_ja_usymmetrisk_multeskygge.png",
   "faq: the \"Var dette nyttig?\" rating row is accordion `rate` chrome (@ew-exempt labels, dynamics #5 interim)"
  ],
@@ -93,5 +93,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/Her_jobber_jeg_ja_usymmetrisk_multeskygge.svg"
  ],
- "writtenAt": "2026-09-14T23:40:48.754Z"
+ "writtenAt": "2026-09-15T15:02:43.455Z"
 }

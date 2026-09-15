@@ -28,20 +28,20 @@
   "clientlib": "base"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "d79f31a3b22f8110",
   "sourceProposedSha": null,
-  "archetypeSha": "15844d1f8f97f38d",
+  "archetypeSha": "c5d3851540f1d798",
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
  "deviations": [],
@@ -103,7 +103,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 37,
+ "linksRewritten": 38,
  "metadata": {
   "title": "Mobilbank | Nettbank på mobil | Enklere privatøkonomi | SpareBank 1",
   "description": "Mobilbanken gjør det enkelt og raskt å sjekke saldo, betale regninger og få full oversikt over din økonomi. Du vil ha banken rett i lomma! ",
@@ -113,8 +113,8 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 16,
-   "narrowest": 400
+   "media": 15,
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -125,11 +125,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:19.333Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:13.779Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "d79f31a3b22f8110",
  "sourceProposedSha": null,
- "archetypeSha": "15844d1f8f97f38d",
+ "archetypeSha": "c5d3851540f1d798",
  "assetsBundled": 3
 }

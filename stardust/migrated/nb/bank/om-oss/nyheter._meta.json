@@ -20,20 +20,20 @@
   "clientlib": "frontend"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "a6f7652ede8b277b",
-  "sourceProposedSha": "78ae21cc12b28810",
+  "sourceProposedSha": "ecd0d9e0a13d7d33",
   "archetypeSha": null,
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
  "deviations": [],
@@ -83,7 +83,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 26,
+ "linksRewritten": 27,
  "metadata": {
   "title": "Nyheter | SpareBank 1",
   "description": null,
@@ -94,7 +94,7 @@
   "adapt": {
    "viewport": true,
    "media": 11,
-   "narrowest": 400
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -105,11 +105,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:17.673Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:11.938Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "a6f7652ede8b277b",
- "sourceProposedSha": "78ae21cc12b28810",
+ "sourceProposedSha": "ecd0d9e0a13d7d33",
  "archetypeSha": null,
  "assetsBundled": 3
 }

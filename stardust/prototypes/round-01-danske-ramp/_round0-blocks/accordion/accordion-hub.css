@@ -1,0 +1,48 @@
+/* accordion — hub family group additions (additive variants only; imported by accordion.css) */
+
+/* ===== kundeservice-hub: wide (frost hairlines, full-column answers, h4/h5 sub-headings) · rate (per-answer Ja/Nei row) ===== */
+.accordion.faq.wide { max-width: none; }
+main .section.paper-frost .accordion.faq.wide .faq-item { border-top-color: var(--frost); }
+main .section.paper-frost .accordion.faq.wide .faq > .faq-item:last-child { border-bottom-color: var(--frost); }
+.accordion.faq.wide .answer { max-width: none; }
+.accordion.faq.wide .answer > :is(p, ul, ol, h4, h5, h6) { max-width: 68ch; }
+.accordion.faq.wide .answer h4 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; color: var(--fjell); margin-top: var(--spacing-lg); }
+.accordion.faq.wide .answer h5 { font-family: var(--title-font-family); font-size: var(--lead); line-height: 1.3; color: var(--fjell); margin-top: var(--spacing-lg); }
+.accordion.faq.wide .answer h6 { font-family: var(--title-font-family); font-size: var(--body); line-height: 1.4; color: var(--fjell); margin-top: var(--spacing-md); }
+.accordion.faq.wide .answer :is(h4, h5, h6) + :is(p, ol) { margin-top: var(--spacing-sm); }
+.accordion.faq.wide .answer ol li + li { margin-top: 6px; }
+.accordion.faq.wide .answer picture,
+.accordion.faq.wide .answer img { width: 112px; height: 112px; max-width: none; object-fit: contain; margin-top: var(--spacing-lg); }
+.accordion.faq.rate .faq-foot-feedback { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: var(--spacing-lg); padding-top: var(--spacing-md); border-top: 1px solid var(--frost); }
+.accordion.faq.rate .feedback-q { font-family: var(--title-font-family); color: var(--fjell); margin-right: 4px; }
+.accordion.faq.rate button.thumb { min-height: 40px; padding: 8px 18px; font-size: var(--body-sm); gap: 6px; }
+.accordion.faq.rate button.thumb svg { width: 20px; height: 20px; }
+.accordion.faq.rate button.thumb.is-on { background: var(--frost-30); color: var(--fjell); border-color: var(--fjell); }
+.accordion.faq.rate .faq-foot-feedback + p { margin-top: var(--spacing-md); }
+.accordion.faq.rate .faq-foot-feedback + p a:any-link { font-family: var(--title-font-family); }
+
+@media (width <= 640px) {
+  .accordion.faq.wide .faq-q :is(p, h3, h4) { font-size: var(--lead); }
+}
+
+/* ===== hub siblings: disclose (secondary-pill toggle → hidden prose panel) · list (accordion-list: lead-size questions) ===== */
+.accordion.disclose { max-width: none; margin-top: var(--spacing-md); }
+.accordion.disclose .faq-item { border-top: 0; }
+.accordion.disclose .faq > .faq-item:last-child { border-bottom: 0; }
+.accordion.disclose .faq-head { display: inline-flex; width: max-content; max-width: 100%; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 10px 24px; border: 2px solid var(--vann); border-radius: var(--radius-pill); background: #fff; color: var(--vann); transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease), border-color var(--dur) var(--ease); }
+.accordion.disclose .faq-head:hover { background: var(--frost-30); color: var(--fjell); border-color: var(--fjell); }
+.accordion.disclose .faq-q :is(p, h3) { font: var(--body) / 1.2 var(--body-font-family); color: inherit; text-wrap: nowrap; }
+.accordion.disclose .faq-toggle { width: 20px; height: 20px; margin-top: 0; color: inherit; }
+.accordion.disclose .faq-toggle svg { width: 20px; height: 20px; stroke-width: 1.75; }
+.accordion.disclose .answer { max-width: none; padding: var(--spacing-lg) 0 0; display: grid; gap: var(--spacing-md); }
+.accordion.disclose .answer > * { margin-top: 0; }
+.accordion.disclose .answer :is(h2, h3) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; margin-top: var(--spacing-sm); }
+.accordion.disclose .answer h2 a:any-link { color: var(--fjell); text-decoration: none; }
+.accordion.disclose .answer h2 a:hover { text-decoration: underline; }
+.accordion.disclose .answer picture,
+.accordion.disclose .answer img { width: 100%; max-width: 200px; height: auto; margin-top: var(--spacing-md); }
+.accordion.disclose .answer ul { list-style: none; padding: 0; display: grid; gap: var(--spacing-sm); }
+.accordion.disclose .answer li + li { margin-top: 0; }
+.accordion.faq.list .faq-q :is(p, h3) { font-size: var(--lead); line-height: 1.3; }
+.accordion.faq.list .answer table { width: 100%; border-collapse: collapse; }
+.accordion.faq.list .answer td { padding: 8px 0; vertical-align: top; }

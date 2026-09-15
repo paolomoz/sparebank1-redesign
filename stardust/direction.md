@@ -161,3 +161,43 @@ Pages that will be marked stale: none (no prior prototypes).
 ### Refinement (2026-09-15T00:40:00Z) — prototype --prep system additions (canon-driven, no direction change)
 
 Approving 13 archetypes surfaced system-level gaps that DESIGN.md now carries (no axis moved; verbatim IA; fold-back is a no-op under `ia-fidelity: verbatim`): one door language (photo-led items flat on paper, text-only items on a Hvit hairline paper on tinted movements); the Disabled Rule; `.badge`, `.callout.info`, `.video-frame`, feedback-strip markup; video mask = top-left corner only; spacing frontmatter reconciled with the `:root` contract (xs 4 · sm 8 · md 16 · lg 24 · gutter 32 · xl 48 · 2xl 64 · 3xl 96). Named assumptions added: **A9** — authenticated-state header affordances (`Til nettbank`, `Til forsikring`, `Logg ut`, shown by the live site only after log-in) are not rendered for anonymous visitors and are excluded from the verbatim gate; the Logg inn action links to the captured login URL. **A10** — 12 `tel:` hrefs added on the kontakt directory's captured phone text (text verbatim; usability). **A11** — the boliglån calculator shell's visible strings come from the captured screenshot (`data-source="captured-screenshot"`; the DOM mount was empty at capture) — migrate must re-capture the settled widget or take owner copy before shipping. **A12** — the two-tinted-movement cap holds on story pages (hjemme keeps a long Hvit run rather than a third tint).
+
+
+---
+
+# Active direction (2026-09-15T12:00:00Z) — round 01 reference composition (supersedes 2026-09-14T21:10:00Z)
+
+## Why the previous direction was retired
+
+The 2026-09-14 direction produced a look-alike: surprise budget `low`, ground pinned to stark white, band padding floored at 64 px, pill buttons and the static desktop header all "brand-faithful" pins, and every dark / colour-block reference rejected. Only execution details moved, so the page silhouette stayed the captured one. Paolo's verdict on 2026-09-15: "too similar to the original". See `/Users/paolo/stardust/2026-08/sparebank1/NOTES-stardust-redesign-diversity.md`.
+
+## Phrase (Paolo, 2026-09-15)
+
+> From https://danskebank.dk/privat take card design, bento design, margin between cards, border corners, header and footer layout. From https://ramp.com take typography (but not fonts), page width, button styling (shape, borders, size, how the text fits). Keep SpareBank 1 fonts, colours, full content IA fidelity. Hover effects should be distinctive. At most 30 % of a page's sections may be full width, and only minor blocks.
+
+## Reference → aspects (the unit of this direction)
+
+| reference | borrowed aspects | measured spec | NOT borrowed |
+|---|---|---|---|
+| Danske Bank `danskebank.dk/privat` | card construction (fill only, 2 px corners, no border/shadow, images bleed 16:9, 48/36 padding), 6 px gutters, bento rows (4+8, 2+4+2+4, 3×4, offset split), two-tier header (32 + 80 px, sticky hide/reveal, 68 px + Meny panel on mobile), dark footer grid (230 px logo column + link columns, legal in-grid) | `stardust/prototypes/round-01-danske-ramp/refs/danske/SPEC.md` | colours, fonts, copy, Foundation float grid mechanics |
+| Ramp `ramp.com` | type scale 64/48/40/28/24 · 18 · 16/14/13 · 10 eyebrow, one weight, display leading 1.0–1.05, body 1.375, two-tone headlines; container 1440 with 64 px gutters (1312 content; 16 at 390); buttons 6 px radius, no border, padding-driven height, 300 ms darken on hover | `stardust/prototypes/round-01-danske-ramp/refs/ramp/SPEC.md` | Lausanne, black/solar palette, SaaS content patterns |
+| SpareBank 1 (brand, pinned) | SpareBank1 Title-Medium / Medium / Regular; Fjell, Vann, Skog (reserved action), Sand/Frost/Syrin tints; the alliance landscape illustration; spot illustrations; every text, href and image verbatim; section order verbatim | `stardust/current/_ffe-tokens.json`, `_brand-extraction.json` | — |
+
+## Resolved axes
+
+- **surprise:** medium (structure and chrome change; brand and IA do not)
+- **density:** balanced — 64 px between movements, 6 px between cards; whitespace lives inside cards (48/36 padding)
+- **ground:** white page, tinted card fills (Sand-70 / Frost-30 / Syrin-30 / Fjell / Vann); the previous "pure white everywhere" pin is released
+- **type:** Ramp scale on brand faces (replaces the 1.25 rule)
+- **chrome:** sticky Danske header (replaces "never sticky on desktop"); router as a Vann card (tile on home, band elsewhere)
+- **shapes:** cards 2 px, buttons 6 px (replaces 16 px cards / 6em pills); photos rectangular, bleeding, 16:9 (replaces the one-corner-pair mask)
+- **motion:** hover system (fill step, underline draw-in, spring, breathe, drift) — the distinctive layer; reduced-motion safe
+- **full-width budget:** ≤ 30 % of sections, minor rows only (home: membership row = 1 of 8)
+
+## Prototype round record
+
+`stardust/prototypes/round-01-danske-ramp/` — `home.html` (A), `home-b.html` (B), `home-c.html` (**C, chosen by Paolo**), `README.md`, `refs/`, `shots/`. Promotion into the pipeline on 2026-09-15: `stardust/scripts/proto/chrome.mjs` (canon source), `pages/nb-bank-privat-html.mjs` (canon author), `DESIGN.md` / `DESIGN.json`, `stardust/canon/` regenerated via `extract-canon.mjs --author`.
+
+## Known gap
+
+The personalised campaign slide Paolo saw live ("Noe som gnager litt? 🦫") is not in the server HTML or the capture; the pipeline renders the captured slide so `content-check` stays verbatim. The round-01 files carry the beaver slide as a prototype-only override.

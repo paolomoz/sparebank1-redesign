@@ -20,7 +20,8 @@
   {
    "module": "page-title",
    "blocks": [
-    "breadcrumbs"
+    "breadcrumbs",
+    "hero"
    ]
   },
   {
@@ -58,16 +59,18 @@
  ],
  "blocks": [
   "breadcrumbs",
+  "hero",
   "table",
   "cards",
   "feedback"
  ],
  "notes": [
+  "page-title: hero (hub text-only sand) — one text card across 12; h1, leads and CTAs are the text cell, the back link rides the breadcrumbs block (moved into the card by hero.js)",
   "disclosure: data table behind a toggle → table (disclose): row 1 = toggle label, row 2 = heading, then header + rows",
   "disclosure: data table behind a toggle → table (disclose): row 1 = toggle label, row 2 = heading, then header + rows",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T23:40:48.673Z"
+ "writtenAt": "2026-09-15T15:02:43.304Z"
 }

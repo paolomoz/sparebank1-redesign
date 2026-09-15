@@ -49,10 +49,7 @@
   },
   {
    "module": "background-container",
-   "blocks": [
-    "columns",
-    "accordion"
-   ]
+   "blocks": []
   },
   {
    "module": "background-container",
@@ -63,10 +60,7 @@
   },
   {
    "module": "background-container",
-   "blocks": [
-    "columns",
-    "accordion"
-   ]
+   "blocks": []
   },
   {
    "module": "background-container",
@@ -77,9 +71,7 @@
   },
   {
    "module": "background-container",
-   "blocks": [
-    "columns"
-   ]
+   "blocks": []
   },
   {
    "module": "section",
@@ -97,7 +89,6 @@
   "media: mote-spisebord-kaffe.svg is 61476 B of SVG (> 40000) — authored as DA media mote-spisebord-kaffe.png",
   "columns-grid: side-by-side FAQ columns are stacked accordions (one movement, two rails → two blocks)",
   "media: person-med-signert-papir-i-handa-lys-bakgrunn.svg is 55023 B of SVG (> 40000) — authored as DA media person-med-signert-papir-i-handa-lys-bakgrunn.png",
-  "columns-grid: side-by-side FAQ columns are stacked accordions (one movement, two rails → two blocks)",
   "media: menneske-person-voksen-med-hund-i-lenestol-sjekker-mobilen.svg is 41470 B of SVG (> 40000) — authored as DA media menneske-person-voksen-med-hund-i-lenestol-sjekker-mobilen.png"
  ],
  "gaps": [],
@@ -106,5 +97,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/person-med-signert-papir-i-handa-lys-bakgrunn.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/menneske-person-voksen-med-hund-i-lenestol-sjekker-mobilen.svg"
  ],
- "writtenAt": "2026-09-14T23:40:48.473Z"
+ "writtenAt": "2026-09-15T15:02:42.998Z"
 }

@@ -2,7 +2,7 @@
 Content diff @ 1440px (profile "eds", root "main")
   proto: 65 text nodes — 10 headings, 0 eyebrows, 34 CTAs, 21 body; 25 img
   EDS: 94 text nodes — 10 headings, 0 eyebrows, 46 CTAs, 38 body; 26 img
-  editable texts (outermost h*/p/ul/ol): proto 28 / EDS 36
+  editable texts (outermost h*/p/ul/ol): proto 21 / EDS 29
 
 Findings: 29 (0 structural 🔴)
   🟠 EXTRA: EDS cta "SpareBank 1 Gudbrandsdal" has no proto source — Unexpected node with no proto source.

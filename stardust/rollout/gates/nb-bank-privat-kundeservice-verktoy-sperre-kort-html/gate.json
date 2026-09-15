@@ -2,24 +2,24 @@
   "slug": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
   "edsUrl": "http://localhost:3020/nb/bank/privat/kundeservice/verktoy/sperre-kort",
   "protoUrl": "http://localhost:8820/nb-bank-privat-kundeservice-verktoy-sperre-kort-html-proposed.html",
-  "at": "2026-09-14T22:42:32.437Z",
+  "at": "2026-09-15T14:21:44.226Z",
   "pixel": {
     "360": {
-      "pct": 2.15,
+      "pct": 3.09,
       "heightDelta": 1,
       "compared": {
         "width": 360,
-        "height": 5118
+        "height": 4952
       },
       "pass": true,
       "hot": []
     },
     "1440": {
-      "pct": 1.07,
+      "pct": 0.98,
       "heightDelta": 1,
       "compared": {
         "width": 1440,
-        "height": 3366
+        "height": 3247
       },
       "pass": true,
       "hot": []
@@ -27,43 +27,43 @@
   },
   "chrome": {
     "360": {
-      "header": 99.66,
+      "header": 100,
       "footer": 100,
       "headerH": {
-        "proto": 61,
-        "eds": 61
+        "proto": 68,
+        "eds": 68
       },
       "footerH": {
-        "proto": 1884,
-        "eds": 1884
+        "proto": 1536,
+        "eds": 1536
       },
       "footerY": {
-        "proto": 3234,
-        "eds": 3233
+        "proto": 3416,
+        "eds": 3415
       },
       "doc": {
-        "proto": 5119,
-        "eds": 5118
+        "proto": 4953,
+        "eds": 4952
       }
     },
     "1440": {
-      "header": 99.96,
-      "footer": 99.89,
+      "header": 99.84,
+      "footer": 100,
       "headerH": {
-        "proto": 110,
-        "eds": 110
+        "proto": 112,
+        "eds": 112
       },
       "footerH": {
-        "proto": 917,
-        "eds": 917
+        "proto": 800,
+        "eds": 800
       },
       "footerY": {
-        "proto": 2450,
-        "eds": 2449
+        "proto": 2448,
+        "eds": 2447
       },
       "doc": {
-        "proto": 3367,
-        "eds": 3366
+        "proto": 3248,
+        "eds": 3247
       }
     }
   },

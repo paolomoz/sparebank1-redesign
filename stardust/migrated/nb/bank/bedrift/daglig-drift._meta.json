@@ -25,20 +25,20 @@
   "clientlib": "base"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "2997a8b32d7db7f1",
   "sourceProposedSha": null,
-  "archetypeSha": "e41164c76355e828",
+  "archetypeSha": "50ca7f6e18521db0",
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
  "deviations": [],
@@ -86,7 +86,7 @@
   "/nb/bank/bedrift/svindel.html",
   "/nb/bank/privat/innlogging.html"
  ],
- "linksRewritten": 29,
+ "linksRewritten": 30,
  "metadata": {
   "title": "Daglig drift | Nettbank og regnskapsprogram for bedrifter | SpareBank 1",
   "description": "For å ha kontroll på økonomien i bedriften, trenger du en nettbank som gir deg god oversikt, og er regnskapsprogram som er enkelt å bruke.",
@@ -96,8 +96,8 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 14,
-   "narrowest": 400
+   "media": 12,
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -108,11 +108,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:12.917Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:06.668Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "2997a8b32d7db7f1",
  "sourceProposedSha": null,
- "archetypeSha": "e41164c76355e828",
+ "archetypeSha": "50ca7f6e18521db0",
  "assetsBundled": 3
 }

@@ -1,1 +1,6 @@
-/* feedback — hub family group additions (additive variants only; imported by feedback.css) */
+/* feedback-hub.css — hub group, round 01. `tool` (sperre kort): the labelled thumbs sit at the far end of the Sand row. */
+/* ===== tool ===== */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .feedback.tool .feedback-row { justify-content: space-between; }
+
+/* ===== hub (shared): the canon feedback question line-height ===== */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .feedback .feedback-q :is(h2, h3, p) { line-height: 1.05; }

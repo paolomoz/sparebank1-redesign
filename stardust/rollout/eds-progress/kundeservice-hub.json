@@ -1,67 +1,66 @@
 {
-  "archetype": "nb-bank-privat-kundeservice-html",
-  "document": "content/nb/bank/privat/kundeservice.html",
-  "blocks": {
-    "new": [],
-    "reused": [
-      "hero (ask)",
-      "cards (tools · topics)",
-      "accordion (faq wide rate)",
-      "columns (promo promo-2 invites)",
-      "fragment"
-    ]
+ "archetype": "nb-bank-privat-kundeservice-html",
+ "document": "content/nb/bank/privat/kundeservice.html",
+ "blocks": {
+  "new": [],
+  "reused": [
+   "hero (hub ask) + form row",
+   "cards (tools cols-4 · topics cols-3 · promo promo-2 cols-2 in a full-bleed section)",
+   "accordion (faq rate)",
+   "fragment (bank-router)"
+  ]
+ },
+ "iterations": 6,
+ "breakpoints": {
+  "360": {
+   "pixelPct": 2.3,
+   "heightDelta": -2,
+   "header": 97.1,
+   "footer": 99.48,
+   "pass": false,
+   "note": "header crop 97.1 % at 360 is chrome (/nav \"Logg inn\" pill region); 100 % on the three other hub archetypes. See eds-requests.md."
   },
-  "iterations": 3,
-  "breakpoints": {
-    "360": {
-      "pixelPct": 0.01,
-      "heightDelta": 0,
-      "header": 99.66,
-      "footer": 100,
-      "pass": true
-    },
-    "1440": {
-      "pixelPct": 0.04,
-      "heightDelta": 0,
-      "header": 99.96,
-      "footer": 99.89,
-      "pass": true
-    }
-  },
-  "contentDiff": {
-    "red": 0,
-    "justified": []
-  },
-  "ew": {
-    "editable": 77,
-    "dead": 0,
-    "exempt": 1
-  },
-  "lint": {
-    "davidsModelRed": 0,
-    "deliveryP0": 0,
-    "deliveryP1": 0
-  },
-  "siblings": {
-    "converted": [
-      "nb-bank-bedrift-kundeservice-html"
-    ],
-    "gaps": {
-      "nb-bank-bedrift-kundeservice-html": 0
-    },
-    "lintRed": {
-      "nb-bank-bedrift-kundeservice-html": 0
-    },
-    "contentDiffSampled": {
-      "slug": "nb-bank-bedrift-kundeservice-html",
-      "red": 0
-    }
-  },
-  "productRegression": {
-    "slug": "nb-bank-privat-lan-boliglan-html",
-    "pixelPct1440": 0.74,
-    "heightDelta": -1,
-    "pass": true
-  },
-  "gatedAt": "2026-09-14T22:48:20.061Z"
+  "1440": {
+   "pixelPct": 0.36,
+   "heightDelta": 0,
+   "header": 99.37,
+   "footer": 99.66,
+   "pass": true
+  }
+ },
+ "contentDiff": {
+  "red": 0,
+  "justified": []
+ },
+ "ew": {
+  "editable": 77,
+  "dead": 0,
+  "exempt": 1
+ },
+ "lint": "davids 0 🔴 / 2 🟡 · delivery 0 P0 · 0 P1 · 1 P2",
+ "siblings": {
+  "converted": [
+   "nb-bank-bedrift-kundeservice-html"
+  ],
+  "gaps": {},
+  "lintRed": {},
+  "sampled": "nb-bank-bedrift-kundeservice-html",
+  "contentDiffRed": 0,
+  "contentDiffSampled": {
+   "slug": "nb-bank-bedrift-kundeservice-html",
+   "red": 0
+  }
+ },
+ "requests": [
+  "gate measure pass vs lazy proto SVG (footer crop, lan 360)",
+  "/nav header 360 on kundeservice 97.1 % (chrome)",
+  "aspect-ratio: auto discards UA attribute ratio → revert-layer",
+  "variant tokens colliding with canon compounds (title, small)",
+  "group CSS import order",
+  "hero.js split-h1 opt-in (edited)",
+  "lib.inline nbsp (keepNbsp workaround)",
+  "FAQ summary lead size ≤767 scope"
+ ],
+ "roundOne": true,
+ "at": "2026-09-15T14:46:20.669Z"
 }

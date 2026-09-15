@@ -69,7 +69,7 @@
   {
    "module": "content-columns",
    "blocks": [
-    "columns"
+    "cards"
    ]
   }
  ],
@@ -82,12 +82,17 @@
   "feedback"
  ],
  "notes": [
-  "lint D1 embed: each webinar row is its own section (style video-row) — running text + the bare YouTube link that buildMediaAutoBlocks() turns into the embed block (click-to-load player; dynamics #16 interim)",
-  "news meta: the canon <span>tag</span><time>date</time> is authored as one <em>tag date</em> (the two nodes flatten without a space in the core inline())",
-  "lint D1 embed: each webinar row is its own section (style video-row) — running text + the bare YouTube link that buildMediaAutoBlocks() turns into the embed block (click-to-load player; dynamics #16 interim)",
-  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
+  "campaign (hero bento): breadcrumbs + hero (listing) — [photo][h1, lead]; the block moves the back link into the text card",
+  "card-rail (articles): cards (articles grid-3) 6 px under the hero bento (style bento-join) — [photo][h2, \"Les saken her\" link]; the trailing secondary pill is default content",
+  "lint D1 embed: each webinar row is its own section (style video-row = the bento: default-content text card 5 + the embed card 7) — running text + the bare YouTube link that buildMediaAutoBlocks() turns into the embed block (click-to-load player, dynamics #16); the captured title is the link text",
+  "card-rail (news): cards (news grid-3) — [photo][h3 link, <em>tag</em><em>date</em> meta]",
+  "content-columns (expert rows): columns (split expert) — one row per comment [portrait or illustration, caption paragraphs][h3, paragraph, CTAs]; Syrin tile 3 + Sand text card 9",
+  "content-columns (expert rows): columns (split expert) — one row per comment [portrait or illustration, caption paragraphs][h3, paragraph, CTAs]; Syrin tile 3 + Sand text card 9",
+  "lint D1 embed: each webinar row is its own section (style video-row = the bento: default-content text card 5 + the embed card 7) — running text + the bare YouTube link that buildMediaAutoBlocks() turns into the embed block (click-to-load player, dynamics #16); the captured title is the link text",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels",
+  "content-columns (regulatory bento): cards (regulatory grid-2) — one row per text card [paragraphs with bold run-in labels, document links]; style fineprint paints the left-aligned h2-s"
  ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T23:40:48.765Z"
+ "writtenAt": "2026-09-15T15:02:43.481Z"
 }

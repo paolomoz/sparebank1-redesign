@@ -1,9 +1,10 @@
 /**
  * encoders/markedsnytt-listing.mjs — family encoders for `markedsnytt-listing` (one page: /nb/bank/privat/sparing/markedsnytt).
- * campaign → breadcrumbs + hero `listing` (text 5 / photo 7) · card-rail → cards `articles` (flat photo cards + chevron link, `flush-top`)
- * or cards `news cols-3` (meta = tag + date) · content-columns → webinar rows (one section per row: prose + the bare YouTube link that
- * scripts.js auto-blocks into `embed`, style `video-row`) · expert rows (columns `expert`: portrait + caption | text) · regulatory
- * (columns `text`, style `fineprint`). The section title is default content; `head-xl` gives it the page's 48px gap.
+ * Round 01 (bento): campaign → breadcrumbs + hero `listing` (Frost text card 5 / photo card 7) · card-rail → cards `articles grid-3`
+ * (continues the hero bento: style `bento-join`) or cards `news grid-3` (meta = <em>tag</em><em>date</em>) · content-columns → webinar rows
+ * (one `video-row` section per row: default-content text card 5 + the auto-blocked `embed` as the Frost video card 7) · expert rows (columns `split expert`:
+ * Syrin portrait tile 3 + text card 9) · regulatory (cards `regulatory grid-2`, style `fineprint` for the left-aligned h2-s).
+ * Group CSS: blocks/hero/hero-omoss.css · blocks/cards/cards-omoss.css · blocks/columns/columns-omoss.css · styles/styles-omoss.css.
  */
 import * as L from '../lib.mjs';
 import { productHero, cardRail as coreCardRail, splitMedia } from '../encoders.mjs';
@@ -13,6 +14,12 @@ const backlink = (a, ctx) => block('breadcrumbs', [], [[`<p><a href="${esc(L.hre
 const head = (c, ctx) => { const h = q(c, ':scope > h2'); return h ? `<h2>${inline(h, ctx)}</h2>` : ''; };
 
 function campaign(root, ctx) {
+  if (q(root, '.hero-bento')) { // round 01: Frost text card 5 (back link · h1 · lead) + bleeding photo card 7 — the core productHero shape, variant listing
+    const r = productHero(root, ctx); if (!r) return null;
+    r.html = r.html.replace('<div class="hero product">', '<div class="hero listing">');
+    ctx.notes.push('campaign (hero bento): breadcrumbs + hero (listing) — [photo][h1, lead]; the block moves the back link into the text card');
+    return r;
+  }
   const grid = q(root, '.hero-grid'); if (!grid) return productHero(root, ctx);
   const back = q(root, 'a.backlink'); const img = q(grid, '.hero-media img'); const text = q(grid, '.hero-text');
   const parts = []; if (back) parts.push(backlink(back, ctx));
@@ -29,16 +36,18 @@ function cardRail(root, ctx) {
     let body = title ? (link ? `<${tag}><a href="${esc(L.href(link.getAttribute('href') || '', ctx))}">${inline(link, ctx).trim()}</a></${tag}>` : `<${tag}>${inline(title, ctx).trim()}</${tag}>`) : '';
     for (const p of qa(li, 'p')) {
       if (title && title.contains(p)) continue;
-      if (cls(p).includes('meta')) { body += `<p><em>${[...p.childNodes].map((x) => inline({ childNodes: [x] }, ctx).trim()).filter(Boolean).join(' ')}</em></p>`; continue; } // tag + date as two words (the canon .meta is a flex row of two nodes)
+      if (cls(p).includes('meta')) { body += `<p>${[...p.childNodes].map((x) => inline({ childNodes: [x] }, ctx).trim()).filter(Boolean).map((x) => `<em>${x}</em>`).join('')}</p>`; continue; } // tag · date as two <em> runs (the block's meta row is a flex of the runs, 14 px gap — the canon .meta)
       if (/class="(btn|link-more)/.test(p.innerHTML)) { body += ctas(p, ctx); continue; }
       const s = inline(p, ctx).trim(); if (s) body += `<p>${s}</p>`;
     }
     return [img ? pic(img, ctx) : '', body];
   });
-  const h = head(c, ctx); const parts = [h, block('cards', articles ? ['articles'] : ['news', 'cols-3'], rows)];
+  const n = rows.length; const grid = n >= 2 && n <= 4 ? `grid-${n}` : null;
+  const h = head(c, ctx); const parts = [h, block('cards', articles ? ['articles', grid] : ['news', grid], rows)];
   for (const p of qa(c, ':scope > p')) parts.push(/class="btn/.test(p.innerHTML) ? ctas(p, ctx) : `<p>${inline(p, ctx).trim()}</p>`);
-  if (!articles) ctx.notes.push('news meta: the canon <span>tag</span><time>date</time> is authored as one <em>tag date</em> (the two nodes flatten without a space in the core inline())');
-  return { html: section(parts, { style: styleOf(paperOf(root), articles ? 'flush-top' : null, h ? 'head-xl' : null) }), blocks: ['cards'] };
+  if (articles) ctx.notes.push('card-rail (articles): cards (articles grid-3) 6 px under the hero bento (style bento-join) — [photo][h2, "Les saken her" link]; the trailing secondary pill is default content');
+  else ctx.notes.push('card-rail (news): cards (news grid-3) — [photo][h3 link, <em>tag</em><em>date</em> meta]');
+  return { html: section(parts, { style: styleOf(paperOf(root), articles ? 'bento-join' : null) }), blocks: ['cards'] };
 }
 
 function captionCells(fig, ctx) {
@@ -49,25 +58,26 @@ function captionCells(fig, ctx) {
 }
 function contentColumns(root, ctx) {
   const c = q(root, ':scope > .container') || root; const h = head(c, ctx); const paper = paperOf(root);
-  const hairline = ['wtf', 'regulatory'].some((k) => cls(root).includes(k)) ? 'hairline-top' : null;
   const reg = q(c, '.reg-grid');
-  if (reg) {
-    const cols = qa(reg, ':scope > .reg-col');
-    return { html: section([h, block('columns', ['text'], [cols.map((col) => prose(col, ctx))])], { style: styleOf(paper, hairline, 'fineprint') }), blocks: ['columns'] };
+  if (reg) { // regulatory: two Sand text cards 6 + 6 under a left-aligned h2-s
+    const cols = qa(reg, '.reg-col').length ? qa(reg, '.reg-col') : qa(reg, ':scope > li');
+    ctx.notes.push('content-columns (regulatory bento): cards (regulatory grid-2) — one row per text card [paragraphs with bold run-in labels, document links]; style fineprint paints the left-aligned h2-s');
+    return { html: section([h, block('cards', ['regulatory', `grid-${Math.min(4, cols.length)}`], cols.map((col) => [prose(col, ctx)]))], { style: styleOf(paper, 'fineprint') }), blocks: ['cards'] };
   }
   const rows = qa(c, '.rows > .split-row'); if (!rows.length) return splitMedia(root, ctx);
-  if (rows.some((r) => q(r, 'a.video-frame'))) {
-    const secs = [section([h], { style: styleOf(paper, hairline, 'flush-bottom') })];
-    rows.forEach((r, i) => {
-      const text = q(r, '.col-text'); const v = q(r, 'a.video-frame');
+  if (rows.some((r) => q(r, 'a.video-frame'))) { // webinar rows: Sand text card 5 + Frost video card 7 — one `video-row` section per row (the section IS the bento)
+    const secs = [section([h], { style: styleOf(paper, 'flush-bottom') })];
+    for (const r of rows) {
+      const text = q(r, '.col-text, .text-card > .card-body'); const v = q(r, 'a.video-frame');
       const link = v ? `<p><a href="${esc(v.getAttribute('href'))}">${inline(v, ctx).trim()}</a></p>` : '';
-      secs.push(section([prose(text, ctx), link], { style: styleOf(paper, 'video-row', i < rows.length - 1 ? 'flush-bottom' : null) }));
-    });
-    ctx.notes.push('lint D1 embed: each webinar row is its own section (style video-row) — running text + the bare YouTube link that buildMediaAutoBlocks() turns into the embed block (click-to-load player; dynamics #16 interim)');
+      secs.push(section([prose(text, ctx), link], { style: styleOf(paper, 'video-row') }));
+    }
+    ctx.notes.push('lint D1 embed: each webinar row is its own section (style video-row = the bento: default-content text card 5 + the embed card 7) — running text + the bare YouTube link that buildMediaAutoBlocks() turns into the embed block (click-to-load player, dynamics #16); the captured title is the link text');
     return { html: secs, blocks: ['embed'] };
   }
-  const cells = rows.map((r) => { const fig = q(r, 'figure.expert, figure'); const img = q(fig, 'img'); const text = q(r, '.col-text'); return [pic(img, ctx) + captionCells(fig, ctx), prose(text, ctx)]; });
-  return { html: section([h, block('columns', ['expert'], cells)], { style: styleOf(paper, hairline, h ? 'head-xl' : null) }), blocks: ['columns'] };
+  const cells = rows.map((r) => { const fig = q(r, 'figure.expert, figure'); const img = q(fig, 'img'); const text = q(r, '.col-text, .text-card > .card-body'); return [pic(img, ctx) + captionCells(fig, ctx), prose(text, ctx)]; });
+  ctx.notes.push('content-columns (expert rows): columns (split expert) — one row per comment [portrait or illustration, caption paragraphs][h3, paragraph, CTAs]; Syrin tile 3 + Sand text card 9');
+  return { html: section([h, block('columns', ['split', 'expert'], cells)], { style: styleOf(paper) }), blocks: ['columns'] };
 }
 
 export default { campaign, 'card-rail': cardRail, 'content-columns': contentColumns };

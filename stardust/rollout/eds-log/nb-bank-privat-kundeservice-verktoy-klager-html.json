@@ -20,7 +20,8 @@
   {
    "module": "page-title",
    "blocks": [
-    "breadcrumbs"
+    "breadcrumbs",
+    "hero"
    ]
   },
   {
@@ -38,13 +39,15 @@
  ],
  "blocks": [
   "breadcrumbs",
+  "hero",
   "columns",
   "accordion"
  ],
  "notes": [
-  "steps: columns (split steps) keeps the authored order (ol → paragraph → action pill → small note); the note is the trailing paragraph"
+  "page-title: hero (hub text-only sand) — one text card across 12; h1, leads and CTAs are the text cell, the back link rides the breadcrumbs block (moved into the card by hero.js)",
+  "steps: columns (split steps) — one row [h2, ol, note, Skog action, small note in authored order][spot illustration]; the numbered circles are block CSS counters (columns-hub.css)"
  ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T23:40:48.677Z"
+ "writtenAt": "2026-09-15T15:02:43.311Z"
 }

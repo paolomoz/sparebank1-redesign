@@ -24,20 +24,20 @@
   "clientlib": "base"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "131acb5b8c52d4f9",
-  "sourceProposedSha": "631928db47f8f4c2",
+  "sourceProposedSha": "fb3c439df7b94880",
   "archetypeSha": null,
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
  "deviations": [],
@@ -78,7 +78,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 31,
+ "linksRewritten": 32,
  "metadata": {
   "title": "Sperre kort | Åpne sperret kort | SpareBank 1",
   "description": "Har du mistet kortet eller tror andre kan ha fått tak i koden? Slik sperrer du/åpner du kortet raskt og enkelt i mobilbanken eller nettbanken din. ",
@@ -88,8 +88,8 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 11,
-   "narrowest": 400
+   "media": 13,
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -100,11 +100,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:27.195Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:22.167Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "131acb5b8c52d4f9",
- "sourceProposedSha": "631928db47f8f4c2",
+ "sourceProposedSha": "fb3c439df7b94880",
  "archetypeSha": null,
  "assetsBundled": 3
 }

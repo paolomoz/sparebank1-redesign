@@ -21,20 +21,20 @@
   "clientlib": "base"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "567c9155569db83f",
-  "sourceProposedSha": "a6740682a80c56ce",
+  "sourceProposedSha": "0e6a39e043ddc33c",
   "archetypeSha": null,
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
  "deviations": [],
@@ -55,7 +55,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 26,
+ "linksRewritten": 27,
  "metadata": {
   "title": "Presse | SpareBank 1",
   "description": null,
@@ -66,7 +66,7 @@
   "adapt": {
    "viewport": true,
    "media": 11,
-   "narrowest": 400
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -77,11 +77,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:18.121Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:12.441Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "567c9155569db83f",
- "sourceProposedSha": "a6740682a80c56ce",
+ "sourceProposedSha": "0e6a39e043ddc33c",
  "archetypeSha": null,
  "assetsBundled": 3
 }

@@ -19,7 +19,9 @@
   },
   {
    "module": "page-title",
-   "blocks": []
+   "blocks": [
+    "hero"
+   ]
   },
   {
    "module": "card-grid",
@@ -60,7 +62,7 @@
   {
    "module": "split-media",
    "blocks": [
-    "columns"
+    "cards"
    ]
   },
   {
@@ -97,6 +99,7 @@
   }
  ],
  "blocks": [
+  "hero",
   "cards",
   "cobranding",
   "columns",
@@ -104,13 +107,14 @@
   "feedback"
  ],
  "notes": [
+  "page-title: hero (hub text-only) — one text card across 12; h1, leads and CTAs are the text cell",
   "media: stable-penger-lys-hand.svg is 55566 B of SVG (> 40000) — authored as DA media stable-penger-lys-hand.png",
   "media: sparing-2.svg is 44279 B of SVG (> 40000) — authored as DA media sparing-2.png",
   "media: dame-tenker-okonomi-sammenlikner.svg is 51143 B of SVG (> 40000) — authored as DA media dame-tenker-okonomi-sammenlikner.png",
-  "cobranding: bespoke disclosure block (details/summary → head row + hidden panel, accordion.js pattern); the toggle label is authored text outside the <button>",
+  "cobranding: bespoke disclosure block (details/summary → head row + hidden panel, accordion.js pattern) painted as one Sand card (styles-hub.css); the toggle label is authored text outside the <button>",
   "lint D1 calculator: bespoke widget (dynamics #7 interim static shell — controls disabled, captured strings; labels/values are control config, @ew-exempt in the block)",
   "media: menneske_person_tenaaring_2-CZfMiezN.svg is 50135 B of SVG (> 40000) — authored as DA media menneske_person_tenaaring_2-CZfMiezN.png",
-  "shortcut-row: prose h2 + ul of links (David's Model D5 simple list); section style `shortcuts` paints the hairline, the inline-link row and the chevrons",
+  "shortcut-row: prose h2 + ul of links (David's Model D5 simple list); section style `shortcuts` paints the Syrin card, the four-column link grid and the chevrons",
   "media: illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg is 860616 B of SVG (> 40000) — authored as DA media illustrasjon-sporsmal-sand-sirkel-usymmetrisk.png",
   "faq: the \"Var dette nyttig?\" rating row is accordion `rate` chrome (@ew-exempt labels, dynamics #5 interim)",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
@@ -123,5 +127,5 @@
   "https://www.sparebank1.no/privat/forsikring/pensjon/assets/menneske_person_tenaaring_2-CZfMiezN.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg"
  ],
- "writtenAt": "2026-09-14T23:40:48.748Z"
+ "writtenAt": "2026-09-15T15:02:43.444Z"
 }

@@ -3,13 +3,13 @@
 @import url("feedback-hub.css");
 @import url("feedback-story.css");
 @import url("feedback-omoss.css");
-/* feedback — canon .feedback strip (the section carries `feedback-band`: hairline top, 48px padding). */
+/* feedback — round 01: the canon .feedback-row Sand-70 sheet (2 px corners), question + two secondary buttons. */
 .feedback .container { width: 100%; }
-.feedback .feedback-row { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; }
-.feedback .feedback-q :is(h2, h3, p) { margin: 0; font-family: var(--title-font-family); font-size: var(--title); line-height: 1.15; color: var(--fjell); letter-spacing: -0.005em; }
+.feedback .feedback-row { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; padding: 32px 36px; background: var(--sand-70); border-radius: var(--radius); }
+.feedback .feedback-q :is(h2, h3, p) { margin: 0; font-family: var(--title-font-family); font-size: var(--title); line-height: 1.17; color: var(--fjell); }
 .feedback .feedback-btns { display: flex; gap: 8px; }
-.feedback button.thumb { min-width: 56px; padding-inline: 14px; gap: 8px; }
-.feedback button.thumb svg { width: 22px; height: 22px; }
-.feedback .thumb-label p { margin: 0; }
-.feedback button.thumb.is-on { background: var(--frost-30); color: var(--fjell); border-color: var(--fjell); }
-.feedback.labels .feedback-row { justify-content: flex-start; }
+.feedback .feedback-btns button.button { min-width: 56px; padding-inline: 14px; }
+.feedback .feedback-btns button.button svg { width: 22px; height: 22px; }
+.feedback.labels .feedback-btns button.button span { margin-left: 4px; }
+
+@media (width <= 767px) { .feedback .feedback-row { padding: 24px 20px; } }

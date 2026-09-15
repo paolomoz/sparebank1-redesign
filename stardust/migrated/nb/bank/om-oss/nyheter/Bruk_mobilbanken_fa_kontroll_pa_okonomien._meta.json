@@ -21,25 +21,23 @@
   "clientlib": "frontend"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "fd64c208aa758a4a",
   "sourceProposedSha": null,
-  "archetypeSha": "39e8754190ab4f72",
+  "archetypeSha": "1cccd5bb5f833697",
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
- "deviations": [
-  ".badge (local pill; canon lacks DESIGN.md § Badges)"
- ],
+ "deviations": [],
  "migrationDecisions": [
   {
    "kind": "media-reuse",
@@ -62,7 +60,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 26,
+ "linksRewritten": 27,
  "metadata": {
   "title": "Bruk mobilbanken for å få kontroll på økonomien | SpareBank 1",
   "description": "SpareBank 1&nbsp;fikk&nbsp;sølvplass i Cicero sin kåring av Norges Beste mobilbank. For mobilbankfar Thomas Allan Nygaard trumfer enkelhet&nbsp;og oversikt,&nbsp;mange&nbsp;valg og funksjoner. Mobilbanken skal gi deg basiskunnskap og trygghet på egen økonomi.&nbsp;\n",
@@ -73,7 +71,7 @@
   "adapt": {
    "viewport": true,
    "media": 13,
-   "narrowest": 400
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -84,11 +82,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:17.586Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:11.772Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "fd64c208aa758a4a",
  "sourceProposedSha": null,
- "archetypeSha": "39e8754190ab4f72",
+ "archetypeSha": "1cccd5bb5f833697",
  "assetsBundled": 3
 }

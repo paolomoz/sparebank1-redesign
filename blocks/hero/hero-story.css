@@ -1,46 +1,82 @@
-/* hero — story family group additions (additive variants only; imported by hero.css) */
+/* hero-story.css — story group variants (round 01): question (faq) · article (news) · featured (news listing) · video (campaign landing).
+   Every rule is scoped to the family's template body class (the variant names could be reused by other groups) and carries the variant
+   class for specificity — group files are @imported before the base rules. */
 
-/* article (news): headline + meta + lead left, the photo (with caption) right; share buttons under the lead */
-.hero.article .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--spacing-md) var(--spacing-xl); align-items: start; }
-.hero.article .hero-media { grid-column: 2; grid-row: 1; display: grid; gap: var(--spacing-sm); }
-.hero.article .hero-media img { border-radius: var(--radius-img) 0 var(--radius-img) 0; }
-.hero.article .caption-wrap p { font-size: var(--body-sm); line-height: 1.45; color: var(--moerkgraa); }
-.hero.article .caption-wrap em { font-style: normal; }
-.hero.article .hero-text { grid-column: 1; grid-row: 1; max-width: none; gap: 0; }
-.hero.article .hero-text h1 { max-width: 22ch; }
-.hero.article .meta-wrap { margin-top: var(--spacing-sm); }
-.hero.article .meta-wrap p { display: flex; flex-wrap: wrap; gap: 4px 12px; color: var(--moerkgraa); font-size: var(--body-sm); line-height: 1.45; }
-.hero.article .meta-wrap em { font-style: normal; }
-.hero.article .meta-wrap em + em::before { content: "·"; margin-right: 12px; color: var(--graa); }
-.hero.article .lead-wrap { margin-top: var(--spacing-md); }
-.hero.article .share { display: flex; gap: var(--spacing-sm); margin-top: var(--spacing-lg); list-style: none; padding: 0; }
-.hero.article .share-btn { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 1px solid var(--lysgraa); background: #fff; color: var(--vann); cursor: pointer; transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease); }
-.hero.article .share-btn svg { width: 22px; height: 22px; fill: none; stroke: currentcolor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
-.hero.article .share-btn:hover { background: var(--frost-30); border-color: var(--vann); }
-.hero.article.no-media .hero-grid { grid-template-columns: minmax(0, 68ch); }
+/* ===== faq ===== */
+body.faq .hero.question .hero-grid { grid-template-rows: minmax(260px, auto); }
+body.faq .hero.question .hero-text h1 { max-width: 24ch; }
+/* back link rhythm: the breadcrumbs <nav> is itself a .backlink-row — only the outer wrapper carries the 20 px */
+body.faq .hero.question .hero-text .backlink-row .backlink-row { margin: 0; }
+body.faq .hero.question .hero-text .backlink-row + h1 { margin-top: 0; }
 
-/* video (campaign landing): the film left (7/5), the display h1 right */
-.hero.video .hero-grid { grid-template-columns: 7fr 5fr; }
-.hero.video .hero-media { grid-column: 1; grid-row: 1; }
-.hero.video .hero-text { grid-column: 2; grid-row: 1; max-width: none; }
-.hero.video .hero-text h1 { font-size: var(--t-display); line-height: 1.1; letter-spacing: -0.01em; max-width: 17ch; }
-.hero .hero-video video { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: var(--frost-30); border-radius: var(--radius-img) 0 0 0; }
+/* ===== news-article ===== */
+body.news-article .hero.article .hero-text { background: var(--sand-70); }
+body.news-article .hero.article .hero-text h1 { max-width: 18ch; }
+body.news-article .hero.article .hero-text.hero-text-only h1 { max-width: 24ch; }
+body.news-article .hero.article .hero-text .meta-wrap { margin-top: 16px; }
+body.news-article .hero.article .lead-wrap p { max-width: none; }
+body.news-article .hero.article .share { display: flex; gap: var(--spacing-sm); margin: 28px 0 0; padding: 0; list-style: none; }
+body.news-article .hero.article .share li { margin: 0; }
+body.news-article .hero.article .share-btn { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; padding: 0; border: 0; border-radius: 50%; background: #fff; color: var(--vann); cursor: pointer; transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease); }
+body.news-article .hero.article .share-btn svg { width: 22px; height: 22px; fill: none; stroke: currentcolor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+body.news-article .hero.article .share li:first-child .share-btn svg { fill: currentcolor; stroke: none; }
+body.news-article .hero.article .share-btn:hover { background: var(--vann); color: #fff; }
+body.news-article .hero.article .hero-media { display: flex; flex-direction: column; }
+body.news-article .hero.article .hero-media picture { flex: 1 1 auto; min-height: 0; height: auto; }
+body.news-article .hero.article .hero-media img { height: 100%; }
+body.news-article .hero.article .hero-media .caption-wrap { padding: 12px 20px; background: var(--sand-70); }
+body.news-article .hero.article .caption-wrap p { margin: 0; font-size: var(--body-sm); line-height: 1.43; color: var(--koksgraa); }
+body.news-article .hero.article .caption-wrap em { font-style: normal; }
 
-@media (width <= 1023px) {
-  .hero.article .hero-grid { display: grid; grid-template-columns: 1fr; gap: var(--spacing-lg); }
-  .hero.article .hero-text { display: contents; }
-  .hero.article .hero-text h1 { order: 1; max-width: none; }
-  .hero.article .meta-wrap { order: 2; margin-top: calc(var(--spacing-sm) - var(--spacing-lg)); }
-  .hero.article .hero-media { order: 3; grid-column: 1; grid-row: auto; max-width: 600px; }
-  .hero.article .hero-media img { aspect-ratio: 3 / 2; }
-  .hero.article .lead-wrap { order: 4; margin-top: 0; }
-  .hero.article .note-wrap { order: 5; }
-  .hero.article .share { order: 6; margin-top: 0; }
-  .hero.video .hero-grid { grid-template-columns: 1fr; }
-  .hero.video .hero-text { grid-column: 1; grid-row: 1; }
-  .hero.video .hero-media { grid-column: 1; grid-row: 2; }
-  .hero.video .hero-text h1 { max-width: none; }
-  .hero .hero-video video { aspect-ratio: 16 / 9; }
+/* meta line (tag · date) — article and featured */
+body.news-article .hero.article .meta-wrap p,
+body.news-listing .hero.featured .meta-wrap p { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 0; color: var(--koksgraa); font-size: var(--body-sm); line-height: 1.43; }
+body.news-article .hero.article .meta-wrap em,
+body.news-listing .hero.featured .meta-wrap em { font-style: normal; }
+body.news-article .hero.article .meta-wrap em + em::before,
+body.news-listing .hero.featured .meta-wrap em + em::before { content: "·"; margin-right: 14px; color: var(--graa); }
+body.news-listing .hero.featured .meta-wrap em + em { font-variant-numeric: tabular-nums; }
+
+/* ===== news-listing ===== */
+body.news-listing .hero.featured .hero-grid { grid-template-rows: minmax(420px, auto); }
+body.news-listing .hero.featured .hero-text { background: var(--sand-70); }
+body.news-listing .hero.featured .hero-text h2 { font-size: var(--t-headline-sm); line-height: 1.05; max-width: 18ch; }
+body.news-listing .hero.featured .hero-text.hero-text-only h2 { max-width: none; }
+body.news-listing .hero.featured .hero-text h2 a:any-link { color: var(--fjell); text-decoration: none; background-image: linear-gradient(currentcolor, currentcolor); background-size: 0 1px; background-repeat: no-repeat; background-position: 0 100%; -webkit-box-decoration-break: clone; box-decoration-break: clone; transition: background-size 0.4s var(--ease), color var(--dur) var(--ease); }
+body.news-listing .hero.featured .hero-text h2 a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+body.news-listing .hero.featured .hero-text:hover h2 a,
+body.news-listing .hero.featured .hero-text:focus-within h2 a { background-size: 100% 1px; color: var(--vann); }
+body.news-listing .hero.featured .hero-text:hover,
+body.news-listing .hero.featured .hero-text:focus-within { background: var(--sand); }
+body.news-listing .hero.featured .hero-text .meta-wrap { margin-top: 20px; }
+
+/* ===== campaign-landing ===== */
+body.campaign-landing .hero.video .hero-grid { grid-template-rows: minmax(480px, auto); }
+body.campaign-landing .hero.video .hero-text h1 { font-size: var(--t-display); line-height: 1; max-width: 12ch; }
+body.campaign-landing .hero.video .hero-media { display: flex; flex-direction: column; }
+/* the `video` block's `.video video { aspect-ratio: 3/2 }` also matches this variant's class — neutralised here */
+body.campaign-landing .hero.video .hero-media video { display: block; width: 100%; height: 100%; flex: 1 1 auto; min-height: 0; aspect-ratio: auto; border-radius: 0; object-fit: cover; background: var(--frost-30); }
+
+@media (width <= 1024px) {
+  body.faq .hero.question .hero-grid,
+  body.news-listing .hero.featured .hero-grid,
+  body.campaign-landing .hero.video .hero-grid { grid-template-rows: auto; }
+  body.news-article .hero.article .hero-text h1,
+  body.news-listing .hero.featured .hero-text h2,
+  body.campaign-landing .hero.video .hero-text h1 { max-width: none; }
+  body.news-article .hero.article .hero-media { aspect-ratio: auto; }
+  body.news-article .hero.article .hero-media picture { flex: none; }
+  body.news-article .hero.article .hero-media img { height: auto; aspect-ratio: 16 / 9; }
+  body.campaign-landing .hero.video .hero-media { aspect-ratio: auto; }
+  body.campaign-landing .hero.video .hero-media video { flex: none; height: auto; aspect-ratio: 16 / 9; }
 }
 
-@media (width <= 640px) { .hero.article .hero-media { max-width: none; } }
+@media (width <= 767px) {
+  /* another group's phone rule paints `.hero .hero-media img` absolute — the article photo must stay in flow above its caption strip */
+  body.news-article .hero.article .hero-media img { position: static; }
+  body.faq .hero.question .hero-text h1 { max-width: none; }
+  body.faq .hero.question .hero-text h1,
+  body.news-article .hero.article .hero-text h1 { line-height: 1.12; }
+  body.news-listing .hero.featured .hero-text h2 { line-height: 1.14; }
+  body.campaign-landing .hero.video .hero-text h1 { line-height: 1.05; }
+}

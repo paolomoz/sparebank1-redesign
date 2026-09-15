@@ -1,7 +1,7 @@
 {
  "slug": "nb-bank-privat-html",
  "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/prototypes/nb-bank-privat-html-proposed.html",
- "at": "2026-09-14T23:08:28.629Z",
+ "at": "2026-09-15T12:31:04.041Z",
  "contract": {
   "rootFirst": true,
   "tokensMissing": [],
@@ -11,7 +11,7 @@
   "390": {
    "console": [],
    "failed": [],
-   "externalFulfilled": 13,
+   "externalFulfilled": 12,
    "exceptions": [],
    "overflowX": 0,
    "wide": [],
@@ -27,12 +27,14 @@
    "headingSkips": 0,
    "headings": 24,
    "sectionsNoAttr": [],
-   "btnSmall": 4,
+   "btnSmall": 35,
    "btnSmallList": [
-    "label.router-label@1px \"Ditt postnummer\"",
-    "summary.btn-inline@38px \"Se alle banker\"",
-    "a.link-more@25px \"Finansportalen.no\"",
-    "label.@25px \"Søk etter et kontor\""
+    "a.logo@30px \"\"",
+    "label.field-label@21px \"Ditt postnummer\"",
+    "a.arrow@23px \"Boliglånskalkulator\"",
+    "a.arrow@23px \"Boliglån for unge\"",
+    "a.arrow@23px \"Finansieringsbevis t\"",
+    "a.arrow@23px \"Norges beste mobilba\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
@@ -40,14 +42,12 @@
     "loading": "eager",
     "fp": "high",
     "src": "Refinansiering_Hand_med_skjerm.jpg.thumb.1280.1280.jpg",
-    "area": 81665
+    "area": 72092
    },
    "focusRing": true,
-   "docHeight": 6992,
+   "docHeight": 7787,
    "smoke": {
-    "navOpen": true,
-    "ariaExpanded": "true",
-    "navClosedByEsc": true,
+    "detailsOpen": true,
     "ctaReachableByKeyboard": true,
     "hovered": true
    }
@@ -58,13 +58,7 @@
    "externalFulfilled": 14,
    "exceptions": [],
    "overflowX": 0,
-   "wide": [
-    "li@823",
-    "a@823",
-    "strong@823",
-    "span.bank-tagline@823",
-    "li@823"
-   ],
+   "wide": [],
    "lm": {
     "header": true,
     "main": true,
@@ -77,14 +71,14 @@
    "headingSkips": 0,
    "headings": 24,
    "sectionsNoAttr": [],
-   "btnSmall": 6,
+   "btnSmall": 36,
    "btnSmallList": [
-    "a.is-active@36px \"Privat\"",
-    "a.@36px \"Bedrift\"",
-    "a.@36px \"Om oss\"",
-    "label.router-label@20px \"Ditt postnummer\"",
-    "a.link-more@25px \"Finansportalen.no\"",
-    "label.@25px \"Søk etter et kontor\""
+    "a.logo@30px \"\"",
+    "a.btn@34px \"Logg inn\"",
+    "label.field-label@22px \"Ditt postnummer\"",
+    "a.arrow@24px \"Boliglånskalkulator\"",
+    "a.arrow@24px \"Boliglån for unge\"",
+    "a.arrow@24px \"Finansieringsbevis t\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
@@ -92,11 +86,12 @@
     "loading": "eager",
     "fp": "high",
     "src": "Refinansiering_Hand_med_skjerm.jpg.thumb.1280.1280.jpg",
-    "area": 345600
+    "area": 172049
    },
    "focusRing": true,
-   "docHeight": 5058,
+   "docHeight": 4954,
    "smoke": {
+    "detailsOpen": true,
     "ctaReachableByKeyboard": true,
     "hovered": true
    }
@@ -120,26 +115,27 @@
    "headingSkips": 0,
    "headings": 24,
    "sectionsNoAttr": [],
-   "btnSmall": 6,
+   "btnSmall": 41,
    "btnSmallList": [
-    "a.is-active@36px \"Privat\"",
-    "a.@36px \"Bedrift\"",
-    "a.@36px \"Om oss\"",
-    "label.router-label@20px \"Ditt postnummer\"",
-    "a.link-more@25px \"Finansportalen.no\"",
-    "label.@25px \"Søk etter et kontor\""
+    "a.is-active@32px \"Privat\"",
+    "a.@32px \"Bedrift\"",
+    "a.@32px \"Om oss\"",
+    "a.logo@36px \"\"",
+    "a.tool-text@19px \"Bli kunde\"",
+    "a.tool-search@22px \"Søk\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
    "lazyLCP": {
     "loading": "eager",
     "fp": "high",
-    "src": "Refinansiering_Hand_med_skjerm.jpg.thumb.1280.1280.jpg",
-    "area": 344304
+    "src": "bankchoice_bg.svg",
+    "area": 506760
    },
    "focusRing": true,
-   "docHeight": 3770,
+   "docHeight": 3997,
    "smoke": {
+    "detailsOpen": true,
     "ctaReachableByKeyboard": true,
     "hovered": true
    }
@@ -147,8 +143,8 @@
  },
  "mobileNav": {
   "over": 0,
-  "minFont": 14,
-  "minGap": 0,
+  "minFont": 12,
+  "minGap": null,
   "collapse": "hamburger"
  },
  "pass": true,
@@ -156,7 +152,7 @@
   {
    "sev": "P2",
    "where": "390",
-   "msg": "4 interactive elements < 40px tall: label.router-label@1px \"Ditt postnummer\", summary.btn-inline@38px \"Se alle banker\", a.link-more@25px \"Finansportalen.no\", label.@25px \"Søk etter et kontor\""
+   "msg": "35 interactive elements < 40px tall: a.logo@30px \"\", label.field-label@21px \"Ditt postnummer\", a.arrow@23px \"Boliglånskalkulator\", a.arrow@23px \"Boliglån for unge\", a.arrow@23px \"Finansieringsbevis t\", a.arrow@23px \"Norges beste mobilba\""
   }
  ]
 }

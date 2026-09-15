@@ -30,12 +30,15 @@ export function footerData(doc){
     return {name:norm(li.querySelector('.btn-name')?.textContent),sub:norm(li.querySelector('.sub-info')?.textContent),panel};});
   const columns=[...f.querySelectorAll('.footer-bottom__column-links')].filter(c=>c.querySelector('h2')).map(c=>({heading:norm(c.querySelector('h2')?.textContent),links:[...c.querySelectorAll('li a')].map(a=>({t:norm(a.textContent)||norm(a.getAttribute('title'))||norm(a.getAttribute('aria-label')),href:a.getAttribute('href'),icon:(i=>i?(i.getAttribute('src')||i.getAttribute('data-lazy-src')||i.getAttribute('data-lazy-largesrc')):null)(a.querySelector('img'))}))}));
   const small=[...f.querySelectorAll('.footer-bottom__small-links li a')].map(a=>({t:norm(a.textContent),href:a.getAttribute('href')}));
-  return {contactHeading:norm(contact?.querySelector('h2')?.textContent),contactLink:(()=>{const a=contact?.querySelector('.text-wrapper a'); return a?{t:norm(a.textContent),href:a.getAttribute('href')}:null;})(),tabs,columns,small,address:norm(f.querySelector('.footer-bottom__address')?.textContent)};
+  return {contactHeading:norm(contact?.querySelector('h2')?.textContent),contactLink:(()=>{const a=contact?.querySelector('.text-wrapper a'); return a?{t:norm(a.textContent),href:a.getAttribute('href')}:null;})(),tabs,columns:withSocialIcons(columns),small,address:norm(f.querySelector('.footer-bottom__address')?.textContent)};
 }
+const SOCIAL_ICONS={linkedin:'/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg',youtube:'/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg',facebook:'/content/dam/SB1/ikoner/SoMe/facebook-hvit.svg',instagram:'/content/dam/SB1/ikoner/SoMe/instagram-hvit.svg'};
+/** Social links whose capture carries no <img> (some frontend-clientlib footers) get the brand's white SoMe icon by host — parity with the site-wide footer (canon gap #1). */
+export const withSocialIcons=(cols)=>{ for(const c of cols) for(const l of c.links){ if(l.icon) continue; const k=Object.keys(SOCIAL_ICONS).find(k=>new RegExp(k,'i').test(l.href||'')); if(k) l.icon=SOCIAL_ICONS[k]; } return cols; };
 export function frontendFooter(doc){
   const f=doc.querySelector('main footer.footer, main .footer'); if(!f) return null;
   const columns=[...f.querySelectorAll('.footer-columns__column')].map(c=>({heading:norm(c.querySelector('h2,h3')?.textContent),links:[...c.querySelectorAll('li a, p a')].map(a=>({t:norm(a.textContent)||norm(a.getAttribute('title'))||norm(a.getAttribute('aria-label')),href:a.getAttribute('href'),icon:(i=>i?(i.getAttribute('src')||i.getAttribute('data-lazy-src')):null)(a.querySelector('img'))}))})).filter(c=>c.heading||c.links.length);
   const small=[...f.querySelectorAll('.footer-columns__bottom li a, .footer-bottom li a')].map(a=>({t:norm(a.textContent),href:a.getAttribute('href')}));
-  return {contactHeading:'',contactLink:null,tabs:[],columns,small,address:norm(f.querySelector('.footer-info, .footer-columns__address, address')?.textContent)};
+  return {contactHeading:'',contactLink:null,tabs:[],columns:withSocialIcons(columns),small,address:norm(f.querySelector('.footer-info, .footer-columns__address, address')?.textContent)};
 }
 if (process.argv[1]===new URL(import.meta.url).pathname){ const slug=process.argv[2]||'nb-bank-privat-html'; const d=loadDoc(slug); console.log(JSON.stringify({header:headerData(d),router:routerData(d),footer:footerData(d)},null,1)); }

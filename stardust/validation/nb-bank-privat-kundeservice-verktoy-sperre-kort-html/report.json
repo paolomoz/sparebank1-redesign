@@ -1,7 +1,7 @@
 {
  "slug": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
  "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/prototypes/nb-bank-privat-kundeservice-verktoy-sperre-kort-html-proposed.html",
- "at": "2026-09-14T23:08:45.793Z",
+ "at": "2026-09-15T14:57:08.002Z",
  "contract": {
   "rootFirst": true,
   "tokensMissing": [],
@@ -11,7 +11,7 @@
   "390": {
    "console": [],
    "failed": [],
-   "externalFulfilled": 3,
+   "externalFulfilled": 5,
    "exceptions": [],
    "overflowX": 0,
    "wide": [],
@@ -27,11 +27,14 @@
    "headingSkips": 0,
    "headings": 12,
    "sectionsNoAttr": [],
-   "btnSmall": 3,
+   "btnSmall": 6,
    "btnSmallList": [
-    "label.router-label@1px \"Ditt postnummer\"",
-    "summary.btn-inline@38px \"Se alle banker\"",
-    "label.@25px \"Søk etter et kontor\""
+    "a.logo@30px \"\"",
+    "label.field-label@1px \"Ditt postnummer\"",
+    "label.field-label@20px \"Søk etter et kontor\"",
+    "a.footer-logo@30px \"\"",
+    "a.with-icon@20px \"Linkedin\"",
+    "a.with-icon@20px \"YouTube\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
@@ -39,14 +42,11 @@
     "loading": "eager",
     "fp": "high",
     "src": "mobilbruker-dame-lys-bakgrunn-mobil.svg",
-    "area": 14400
+    "area": 19460
    },
    "focusRing": true,
-   "docHeight": 4809,
+   "docHeight": 4777,
    "smoke": {
-    "navOpen": true,
-    "ariaExpanded": "true",
-    "navClosedByEsc": true,
     "ctaReachableByKeyboard": true,
     "hovered": true
    }
@@ -58,11 +58,11 @@
    "exceptions": [],
    "overflowX": 0,
    "wide": [
-    "li@823",
-    "a@823",
-    "strong@823",
-    "span.bank-tagline@823",
-    "li@823"
+    "li@800",
+    "span.bank-tagline@800",
+    "li@800",
+    "span.bank-tagline@800",
+    "li@800"
    ],
    "lm": {
     "header": true,
@@ -76,13 +76,14 @@
    "headingSkips": 0,
    "headings": 12,
    "sectionsNoAttr": [],
-   "btnSmall": 5,
+   "btnSmall": 7,
    "btnSmallList": [
-    "a.is-active@36px \"Privat\"",
-    "a.@36px \"Bedrift\"",
-    "a.@36px \"Om oss\"",
-    "label.router-label@20px \"Ditt postnummer\"",
-    "label.@25px \"Søk etter et kontor\""
+    "a.logo@30px \"\"",
+    "a.btn@34px \"Logg inn\"",
+    "label.field-label@1px \"Ditt postnummer\"",
+    "label.field-label@20px \"Søk etter et kontor\"",
+    "a.footer-logo@30px \"\"",
+    "a.with-icon@20px \"Linkedin\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
@@ -90,10 +91,10 @@
     "loading": "eager",
     "fp": "high",
     "src": "mobilbruker-dame-lys-bakgrunn-mobil.svg",
-    "area": 57600
+    "area": 40000
    },
    "focusRing": true,
-   "docHeight": 3962,
+   "docHeight": 3832,
    "smoke": {
     "ctaReachableByKeyboard": true,
     "hovered": true
@@ -105,7 +106,13 @@
    "externalFulfilled": 5,
    "exceptions": [],
    "overflowX": 0,
-   "wide": [],
+   "wide": [
+    "li@1456",
+    "span.bank-tagline@1456",
+    "li@1456",
+    "span.bank-tagline@1456",
+    "li@1456"
+   ],
    "lm": {
     "header": true,
     "main": true,
@@ -118,24 +125,25 @@
    "headingSkips": 0,
    "headings": 12,
    "sectionsNoAttr": [],
-   "btnSmall": 5,
+   "btnSmall": 12,
    "btnSmallList": [
-    "a.is-active@36px \"Privat\"",
-    "a.@36px \"Bedrift\"",
-    "a.@36px \"Om oss\"",
-    "label.router-label@20px \"Ditt postnummer\"",
-    "label.@25px \"Søk etter et kontor\""
+    "a.is-active@32px \"Privat\"",
+    "a.@32px \"Bedrift\"",
+    "a.@32px \"Om oss\"",
+    "a.logo@36px \"\"",
+    "a.tool-text@19px \"Bli kunde\"",
+    "a.tool-search@22px \"Søk\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
    "lazyLCP": {
     "loading": "eager",
     "fp": "high",
-    "src": "mobilbruker-dame-lys-bakgrunn-mobil.svg",
-    "area": 102400
+    "src": "bankchoice_bg.svg",
+    "area": 158917
    },
    "focusRing": true,
-   "docHeight": 3367,
+   "docHeight": 3248,
    "smoke": {
     "ctaReachableByKeyboard": true,
     "hovered": true
@@ -144,8 +152,8 @@
  },
  "mobileNav": {
   "over": 0,
-  "minFont": 14,
-  "minGap": 0,
+  "minFont": 12,
+  "minGap": null,
   "collapse": "hamburger"
  },
  "pass": true,
@@ -153,7 +161,7 @@
   {
    "sev": "P2",
    "where": "390",
-   "msg": "3 interactive elements < 40px tall: label.router-label@1px \"Ditt postnummer\", summary.btn-inline@38px \"Se alle banker\", label.@25px \"Søk etter et kontor\""
+   "msg": "6 interactive elements < 40px tall: a.logo@30px \"\", label.field-label@1px \"Ditt postnummer\", label.field-label@20px \"Søk etter et kontor\", a.footer-logo@30px \"\", a.with-icon@20px \"Linkedin\", a.with-icon@20px \"YouTube\""
   }
  ]
 }

@@ -2,72 +2,68 @@
   "slug": "nb-bank-om-oss-nyheter-html",
   "edsUrl": "http://localhost:3020/nb/bank/om-oss/nyheter",
   "protoUrl": "http://localhost:8820/nb-bank-om-oss-nyheter-html-proposed.html",
-  "at": "2026-09-14T22:19:48.659Z",
+  "at": "2026-09-15T14:52:59.054Z",
   "pixel": {
     "360": {
-      "pct": 5.63,
-      "heightDelta": -252,
+      "pct": 2.48,
+      "heightDelta": -1,
       "compared": {
         "width": 360,
-        "height": 5419
+        "height": 12064
       },
-      "pass": false,
-      "hot": [
-        "5000-5419:52.9%"
-      ]
+      "pass": true,
+      "hot": []
     },
     "1440": {
-      "pct": 2.23,
-      "heightDelta": -252,
+      "pct": 0.01,
+      "heightDelta": 0,
       "compared": {
         "width": 1440,
-        "height": 5286
+        "height": 5473
       },
-      "pass": false,
-      "hot": [
-        "5000-5286:31.2%"
-      ]
+      "pass": true,
+      "hot": []
     }
   },
   "chrome": {
     "360": {
-      "header": 99.66,
-      "footer": 77.29,
+      "header": 100,
+      "footer": 98.48,
       "headerH": {
-        "proto": 61,
-        "eds": 61
+        "proto": 68,
+        "eds": 68
       },
       "footerH": {
-        "proto": 970,
-        "eds": 1222
+        "proto": 790,
+        "eds": 790
       },
       "footerY": {
-        "proto": 4450,
-        "eds": 4450
+        "proto": 11273,
+        "eds": 11274
       },
       "doc": {
-        "proto": 5419,
-        "eds": 5671
+        "proto": 12064,
+        "eds": 12065
       }
     },
     "1440": {
-      "header": 99.96,
-      "footer": 81.71,
+      "header": 99.84,
+      "footer": 100,
       "headerH": {
-        "proto": 110,
-        "eds": 110
+        "proto": 112,
+        "eds": 112
       },
       "footerH": {
-        "proto": 481,
-        "eds": 733
+        "proto": 422,
+        "eds": 422
       },
       "footerY": {
-        "proto": 4805,
-        "eds": 4805
+        "proto": 5051,
+        "eds": 5051
       },
       "doc": {
-        "proto": 5286,
-        "eds": 5538
+        "proto": 5473,
+        "eds": 5473
       }
     }
   },
@@ -78,8 +74,8 @@
     "orange": 0,
     "summary": [
       "  EDS: 95 text nodes — 1 headings, 0 eyebrows, 32 CTAs, 62 body; 28 img",
-      "  editable texts (outermost h*/p/ul/ol): proto 4 / EDS 4"
+      "  editable texts (outermost h*/p/ul/ol): proto 4 / EDS 5"
     ]
   },
-  "pass": false
+  "pass": true
 }

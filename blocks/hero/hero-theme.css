@@ -1,4 +1,21 @@
-/* hero — theme family group additions (additive variants only; imported by hero.css) */
+/* hero-theme.css — round 01: reset on 2026-09-15. The round-0 group variants conflicted with the bento card language now painted by the base block CSS; family variants are re-added here only when a re-crafted archetype needs them (additive, measured against its prototype). */
 
-/* ===== market landing: campaign — the small price note under the lead keeps the canon p + p 16 px (the core hero-text p { margin: 0 } drops it) ===== */
-.hero.campaign .lead-wrap + .note-wrap { margin-top: var(--spacing-md); }
+/* ===== theme ===== */
+/* theme: the text-only hero is ONE Frost card spanning 12 (back link · h1 · lead), no reserved row height */
+body.theme .hero.theme .hero-grid { grid-template-rows: auto; }
+body.theme .hero.theme .hero-text.hero-text-only .card-body { justify-content: flex-start; padding: 48px 48px 56px; }
+body.theme .hero.theme .hero-text h1 { max-width: 20ch; }
+body.theme .hero.theme .hero-text .lead-wrap { margin-top: 16px; }
+
+@media (width <= 1024px) {
+  body.theme .hero.theme .hero-text.hero-text-only .card-body { padding: 40px 32px 44px; }
+}
+
+@media (width <= 767px) {
+  body.theme .hero.theme .hero-text.hero-text-only .card-body { padding: 36px 20px; }
+}
+body.theme .hero.theme .hero-text .backlink-row .backlink-row { margin: 0; }
+
+@media (width <= 767px) {
+  body.theme .hero.theme .hero-text h1 { line-height: 1.12; } /* the canon .h2-l mobile leading */
+}

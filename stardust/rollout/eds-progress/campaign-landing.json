@@ -1,64 +1,61 @@
 {
- "archetype": "nb-bank-om-oss-hjemme-html",
- "document": "content/nb/bank/om-oss/hjemme.html",
- "blocks": {
-  "new": [
-   "video"
-  ],
-  "reused": [
-   "hero (video)",
-   "columns (split slides|closing)"
-  ]
- },
- "iterations": 4,
- "breakpoints": {
-  "360": {
-   "pixelPct": 3.97,
-   "heightDelta": -252,
-   "header": 99.66,
-   "footer": 77.29,
-   "pass": false,
-   "bodyHeightDelta": 0,
-   "note": "footer crop fails on the lead's frontend footer document (legal links rendered as a 4th column, +252 px) — body matches; see eds-requests.md story #1"
+  "archetype": "nb-bank-om-oss-hjemme-html",
+  "document": "content/nb/bank/om-oss/hjemme.html",
+  "blocks": {
+    "new": [],
+    "reused": [
+      "hero (video)",
+      "columns (split chapter dark|frost [reverse] [lead-first])",
+      "cards (slides grid-3)",
+      "video (film) — additive caption cell in video.js",
+      "columns (split closing)"
+    ]
   },
-  "1440": {
-   "pixelPct": 1.77,
-   "heightDelta": -252,
-   "header": 99.96,
-   "footer": 81.71,
-   "pass": false,
-   "bodyHeightDelta": 0,
-   "note": "footer crop fails on the lead's frontend footer document (legal links rendered as a 4th column, +252 px) — body matches; see eds-requests.md story #1"
-  }
- },
- "contentDiff": {
-  "red": 0,
-  "justified": []
- },
- "ew": {
-  "editable": 25,
-  "dead": 0,
-  "exempt": 0
- },
- "lint": {
-  "davidsModelRed": 0,
-  "deliveryP0P1": 0
- },
- "productRegression": {
-  "slug": "nb-bank-privat-lan-boliglan-html",
-  "pixelPct1440": 0.74,
-  "heightDelta": -1,
-  "pass": true
- },
- "siblings": {
-  "converted": [],
-  "gaps": {},
-  "lintRed": {},
-  "contentDiffSampled": null
- },
- "requests": [
-  "stardust/rollout/eds-requests.md → story #1 (frontend footer 4th column), #2 (lib.inline collapses nbsp)"
- ],
- "gatePass": false,
- "writtenAt": "2026-09-14T22:31:17.951Z"
+  "iterations": 5,
+  "breakpoints": {
+    "360": {
+      "pixelPct": 0.23,
+      "heightDelta": -12,
+      "header": 100,
+      "footer": 98.23,
+      "pass": false
+    },
+    "1440": {
+      "pixelPct": 0.03,
+      "heightDelta": 0,
+      "header": 99.84,
+      "footer": 99.89,
+      "pass": true
+    }
+  },
+  "contentDiff": {
+    "red": 0,
+    "justified": [],
+    "amber": 2,
+    "orange": 2
+  },
+  "ew": {
+    "editable": 25,
+    "dead": 0,
+    "exempt": 0
+  },
+  "lint": {
+    "davids": "0 🔴 · 1 🟡 (D4 video-ikon.svg — verify pure vector)",
+    "delivery": "0 P0 · 0 P1 · 3 P2 (cross-origin img)"
+  },
+  "siblings": {
+    "converted": 0,
+    "gaps": 0,
+    "lintRed": 0,
+    "sampled": null,
+    "contentDiffRed": null,
+    "note": "archetype only"
+  },
+  "requests": [
+    "/footer-frontend-om-oss-2 12 px taller than the hjemme prototype footer at 360 (778/790) → Δh −12 — chrome; body identical (footer y 5129/5129)"
+  ],
+  "gatePass": false,
+  "gateAt": "2026-09-15T14:16:48.885Z",
+  "round": "01",
+  "writtenAt": "2026-09-15T14:26:43.226Z"
 }

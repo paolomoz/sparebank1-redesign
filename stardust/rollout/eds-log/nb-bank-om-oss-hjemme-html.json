@@ -18,17 +18,21 @@
   },
   {
    "module": "story-text",
-   "blocks": []
-  },
-  {
-   "module": "split-media",
    "blocks": [
     "columns"
    ]
   },
   {
+   "module": "split-media",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
    "module": "story-text",
-   "blocks": []
+   "blocks": [
+    "columns"
+   ]
   },
   {
    "module": "video",
@@ -46,14 +50,16 @@
  "blocks": [
   "hero",
   "columns",
+  "cards",
   "video"
  ],
  "notes": [
   "hero (video): the campaign loop stays on the source origin (never content.da.live); the block renders <video controls muted loop preload=metadata> from the authored link",
-  "slides: captured in-page anchors (#kontakt, #blikunde) live on the individual slides; the section carries id=slides (dynamics: anchor targets per row are not authorable in one block)",
-  "lint D1 video: authored as a plain mp4 link (auto-blocked to `video` by scripts.js); the film stays on the source origin"
+  "slides: captured in-page anchors (#kontakt, #blikunde) live on the individual cards; the section carries id=slides (dynamics: anchor targets per row are not authorable in one block)",
+  "cards (slides): portrait sources (1280×2276) framed 1:1 (prototype data-deviation) — the CSS variant, not the document",
+  "lint D1 video (film): the campaign film as the video block with a caption cell (video card 8 + Syrin-30 caption card 4); the film stays on the source origin"
  ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T23:40:48.415Z"
+ "writtenAt": "2026-09-15T15:02:42.884Z"
 }

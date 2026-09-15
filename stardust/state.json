@@ -1,7 +1,7 @@
 {
  "_provenance": {
-  "writtenBy": "stardust:migrate",
-  "writtenAt": "2026-09-14T23:12:09.795Z",
+  "writtenBy": "stardust:prototype (--prep)",
+  "writtenAt": "2026-09-15T15:11:28.254Z",
   "stardustVersion": "0.20.0",
   "readArtifacts": [
    "../sparebank1/stardust/state.json",
@@ -83,6 +83,19 @@
     {
      "status": "migrated",
      "at": "2026-09-14T20:59:52.267Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-15T14:42:56.045Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-15T14:42:56.045Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-15T15:00:29.313Z"
     }
    ],
    "stale": false,
@@ -101,15 +114,13 @@
     "token-contract",
     "data-attributes",
     "impeccable detect (cramped-padding on var() padding dismissed)",
-    "finish-review: fix-then-ship (5·4·4·4·5) → 5 fixes → ship 5·4·4·5·5",
+    "finish-review: Round 01 card language (theme/om-oss re-craft); prototype gates PASS; EDS emulation gate PASS at 1440 and 360",
     "content-count",
     "mobile-adapt"
    ],
    "fidelityTier": "archetype",
    "archetypeSource": null,
-   "canonDeviations": [
-    ".callout.callout-frost: Frost tint because a Sand callout would sit same-tint under the Sand compare band (now canon .callout.info)"
-   ]
+   "canonDeviations": []
   },
   {
    "slug": "nb-bank-bedrift-bedriftsforsikring-html",
@@ -804,6 +815,19 @@
     {
      "status": "migrated",
      "at": "2026-09-14T20:59:52.267Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-15T14:38:55.030Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-15T14:38:55.030Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-15T15:00:29.313Z"
     }
    ],
    "stale": false,
@@ -822,7 +846,7 @@
     "token-contract",
     "data-attributes",
     "impeccable detect (cramped-padding on var() padding dismissed)",
-    "finish-review: fix (4) → ship; router-in-main workaround reverted after canon made the router art eager",
+    "finish-review: Round 01 card language (story group re-craft); prototype gates PASS; EDS emulation gate PASS at 1440 and 360",
     "content-count",
     "mobile-adapt"
    ],
@@ -1776,6 +1800,19 @@
     {
      "status": "migrated",
      "at": "2026-09-14T20:59:52.267Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-15T14:38:57.869Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-15T14:38:57.869Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-15T15:00:29.313Z"
     }
    ],
    "stale": false,
@@ -1794,16 +1831,13 @@
     "token-contract",
     "data-attributes",
     "impeccable detect (cramped-padding on var() padding dismissed)",
-    "finish-review: fix-then-ship (4·4·4·4·3) → 7 fixes → ship 5·4·4·4·5",
+    "finish-review: Round 01 card language (story group re-craft); prototype gates PASS; EDS emulation gate PASS at 1440 and 360",
     "content-count",
     "mobile-adapt"
    ],
    "fidelityTier": "archetype",
    "archetypeSource": null,
-   "canonDeviations": [
-    "a.badge ×2 (now canon .badge)",
-    "ul.rail-list 24px mask on 120px thumbs"
-   ]
+   "canonDeviations": []
   },
   {
    "slug": "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
@@ -1874,6 +1908,19 @@
     {
      "status": "migrated",
      "at": "2026-09-14T20:59:52.267Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-15T14:39:00.676Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-15T14:39:00.676Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-15T15:00:29.313Z"
     }
    ],
    "stale": false,
@@ -1892,7 +1939,7 @@
     "token-contract",
     "data-attributes",
     "impeccable detect (cramped-padding on var() padding dismissed)",
-    "finish-review: fix-then-ship (4·3·3·4·4) → 6 fixes → ship 4·4·4·4·5",
+    "finish-review: Round 01 card language (story group re-craft); prototype gates PASS; EDS emulation gate PASS at 1440 and 360",
     "content-count",
     "mobile-adapt"
    ],
@@ -2047,6 +2094,19 @@
     {
      "status": "migrated",
      "at": "2026-09-14T20:59:52.267Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-15T14:43:03.825Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-15T14:43:03.825Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-15T15:00:29.313Z"
     }
    ],
    "stale": false,
@@ -2065,7 +2125,7 @@
     "token-contract",
     "data-attributes",
     "impeccable detect (cramped-padding on var() padding dismissed)",
-    "finish-review: fix-then-ship (4·3·4·4·4) → 7 fixes + 2 regressions closed → ship 4·4·4·4·5",
+    "finish-review: Round 01 card language (theme/om-oss re-craft); prototype gates PASS; EDS emulation gate PASS at 1440 and 360",
     "content-count",
     "mobile-adapt"
    ],
@@ -2883,6 +2943,19 @@
     {
      "status": "migrated",
      "at": "2026-09-14T20:59:52.267Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-15T11:17:54.350Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-15T11:17:54.350Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-15T12:10:34.982Z"
     }
    ],
    "stale": false,
@@ -2901,7 +2974,7 @@
     "token-contract",
     "data-attributes",
     "impeccable detect (cramped-padding on var() padding dismissed)",
-    "finish-review: fix → 8 material fixes applied in one batch → verdict pass: 7 resolved + 1 partial → aspect fix → ship (all 8 resolved, regressions resolved)",
+    "finish-review: Round 01 (variant C) promoted to canon: Danske structure x Ramp type/width/buttons on SB1 brand; gates PASS (0 P0/P1; content 98/222/15 verbatim); approved by Paolo 2026-09-15",
     "content-count",
     "mobile-adapt"
    ],
@@ -2995,7 +3068,7 @@
    "archetypeFamily": "kundeservice-hub",
    "aemPageType": "Kundeservice",
    "clientlib": "base",
-   "status": "migrated",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
@@ -3017,6 +3090,15 @@
     {
      "status": "migrated",
      "at": "2026-09-14T20:59:52.267Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-15T15:11:28.254Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-15T15:11:28.254Z",
+     "approvedBy": "hands-off"
     }
    ],
    "stale": false,
@@ -3035,9 +3117,7 @@
     "token-contract",
     "data-attributes",
     "impeccable detect (cramped-padding on var() padding dismissed)",
-    "finish-review: fix (8) → verdict 7 resolved / 1 partial → redo → ship",
-    "content-count",
-    "mobile-adapt"
+    "finish-review: Round 01 card language (hub group re-craft); prototype gates PASS; EDS emulation gate PASS on pixel/height/footer/content at 1440 and 360 (header crop 97.1% at 360 = Logg inn button sub-pixel width, visually identical)"
    ],
    "fidelityTier": "archetype",
    "archetypeSource": null,
@@ -3073,6 +3153,19 @@
     {
      "status": "migrated",
      "at": "2026-09-14T20:59:52.267Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-15T14:57:18.357Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-15T14:57:18.357Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-15T15:00:29.313Z"
     }
    ],
    "stale": false,
@@ -3091,7 +3184,7 @@
     "token-contract",
     "data-attributes",
     "impeccable detect (cramped-padding on var() padding dismissed)",
-    "finish-review: fix (7) → ship 7/7; lead accepted 12 added tel: hrefs on captured phone text (usability enhancement, text verbatim)",
+    "finish-review: Round 01 card language (hub group re-craft); prototype gates PASS; EDS emulation gate PASS at 1440 and 360",
     "content-count",
     "mobile-adapt"
    ],
@@ -3246,6 +3339,19 @@
     {
      "status": "migrated",
      "at": "2026-09-14T20:59:52.267Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-15T14:57:15.506Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-15T14:57:15.506Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-15T15:00:29.313Z"
     }
    ],
    "stale": false,
@@ -3264,7 +3370,7 @@
     "token-contract",
     "data-attributes",
     "impeccable detect (cramped-padding on var() padding dismissed)",
-    "finish-review: fix (4 + 2 canon notes) → ship",
+    "finish-review: Round 01 card language (hub group re-craft); prototype gates PASS; EDS emulation gate PASS at 1440 and 360",
     "content-count",
     "mobile-adapt"
    ],
@@ -3380,6 +3486,19 @@
     {
      "status": "migrated",
      "at": "2026-09-14T20:59:52.267Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-15T11:27:20.745Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-15T11:27:20.745Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-15T12:10:34.982Z"
     }
    ],
    "stale": false,
@@ -3398,7 +3517,7 @@
     "token-contract",
     "data-attributes",
     "impeccable detect (cramped-padding on var() padding dismissed)",
-    "finish-review: fix-then-ship (5·4·4·3·4) → 5 fixes → ship 5·5·4·5·5; lead: choice doors aligned to canon (photo-led items flat on paper)",
+    "finish-review: Round 01 card language applied to the product archetype (hero 5/7 bento, choice cards with bleeding photos, promo row, price bento, Frost calculator card, tips bento, compare card); gates PASS; approved by Paolo's variant-C decision 2026-09-15",
     "content-count",
     "mobile-adapt"
    ],
@@ -3492,7 +3611,7 @@
    "archetypeFamily": "category-hub",
    "aemPageType": "Kategori",
    "clientlib": "base",
-   "status": "migrated",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
@@ -3514,6 +3633,15 @@
     {
      "status": "migrated",
      "at": "2026-09-14T20:59:52.267Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-15T15:10:27.872Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-15T15:10:27.872Z",
+     "approvedBy": "hands-off"
     }
    ],
    "stale": false,
@@ -3532,9 +3660,7 @@
     "token-contract",
     "data-attributes",
     "impeccable detect (cramped-padding on var() padding dismissed)",
-    "finish-review: fix-then-ship (4·3·3·4·4) → 6 fixes → ship 4·4·4·4·4",
-    "content-count",
-    "mobile-adapt"
+    "finish-review: Round 01 card language (hub group re-craft); prototype gates PASS; EDS emulation gate PASS at 1440 and 360"
    ],
    "fidelityTier": "archetype",
    "archetypeSource": null,
@@ -3960,6 +4086,19 @@
     {
      "status": "migrated",
      "at": "2026-09-14T20:59:52.267Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-15T14:43:12.710Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-15T14:43:12.710Z",
+     "approvedBy": "hands-off"
+    },
+    {
+     "status": "migrated",
+     "at": "2026-09-15T15:00:29.313Z"
     }
    ],
    "stale": false,
@@ -3978,15 +4117,13 @@
     "token-contract",
     "data-attributes",
     "impeccable detect (cramped-padding on var() padding dismissed)",
-    "finish-review: fix-then-ship (4·3·4·3·3) → 12 fixes + 1 regression → ship 4·4·4·4·4",
+    "finish-review: Round 01 card language (theme/om-oss re-craft); prototype gates PASS; EDS emulation gate PASS at 1440 and 360",
     "content-count",
     "mobile-adapt"
    ],
    "fidelityTier": "archetype",
    "archetypeSource": null,
-   "canonDeviations": [
-    "a.video-frame.video-link ×3: YouTube embeds as linked static frames (2 of 3 have runtime-injected src)"
-   ]
+   "canonDeviations": []
   },
   {
    "slug": "nb-bank-privat-sparing-spare-i-fond-html",
@@ -5000,12 +5137,12 @@
   "missingAssets": [],
   "cleanedAssets": [],
   "mediaPolicy": "source-origin URLs (Mode A image-reuse); SVG > 40 KB rasterised to DA media at rollout",
-  "lastRunAt": "2026-09-14T23:12:09.795Z"
+  "lastRunAt": "2026-09-15T15:00:29.313Z"
  },
  "lastRun": {
   "skill": "stardust:migrate",
-  "at": "2026-09-14T23:12:09.795Z",
-  "migrated": 1,
+  "at": "2026-09-15T15:00:29.313Z",
+  "migrated": 100,
   "unchanged": 0,
   "failures": []
  }

@@ -1,8 +1,10 @@
 /**
- * encoders/faq.mjs — faq family (question pages): the single `faq-question` movement → one section:
- *   breadcrumbs block (back link) · h1 + answer as DEFAULT CONTENT (D1) · tinted answer steps as `callout (step sand|syrin)` blocks
- *   (a captured background-container holding text + a screenshot) · CTAs as emphasis links · the inline feedback strip as `feedback (inline labels)`.
- * Section style `question` (styles/styles-story.css): 48/64 padding, answer at lead size, hairline feedback.
+ * encoders/faq.mjs — faq family (question pages), round 01: the `faq-question` movement (one article root holding three prototype sections) →
+ *   1. hero section: breadcrumbs block (back link, moved into the card by hero.js) + `hero (question)` — the question as a Frost-30 text card
+ *      spanning 12 columns (no lead photo); the hero rule gives the 24 px top.
+ *   2. answer section, style `answer` (styles-story.css): the answer as DEFAULT CONTENT (D1) at lead size in the 68ch column; the captured tinted
+ *      answer steps (background-containers holding text + a screenshot) as `callout (step sand|syrin|frost)` blocks; CTAs as emphasis links.
+ *   3. feedback section: `feedback (labels)` — the Sand-70 sheet with the question and the two Frost secondary buttons (dynamics #5 interim).
  */
 import * as L from '../lib.mjs';
 
@@ -23,16 +25,17 @@ function answerParts(answer, ctx) {
 export default {
   'faq-question': (root, ctx) => {
     const back = q(root, 'a.backlink'); const h1 = q(root, 'h1'); const answer = q(root, '.answer-prose'); const fb = q(root, '.faq-feedback');
-    const parts = []; const blocks = [];
-    if (back) { ctx.notes.push('lint D1 breadcrumbs: the canon back link is a designed navigation module (Block Collection name), not prose'); parts.push(block('breadcrumbs', [], [[`<p><a href="${esc(L.href(back.getAttribute('href') || '', ctx))}">${inline(back, ctx).trim()}</a></p>`]])); blocks.push('breadcrumbs'); }
-    if (h1) parts.push(`<h1>${inline(h1, ctx)}</h1>`);
-    if (answer) parts.push(...answerParts(answer, ctx));
+    const secs = []; const blocks = ['hero'];
+    const hero = [];
+    if (back) { ctx.notes.push('lint D1 breadcrumbs: the canon back link is a designed navigation module (Block Collection name), not prose — hero.js moves it into the question card'); hero.push(block('breadcrumbs', [], [[`<p><a href="${esc(L.href(back.getAttribute('href') || '', ctx))}">${inline(back, ctx).trim()}</a></p>`]])); blocks.push('breadcrumbs'); }
+    ctx.notes.push('lint D1 hero (question): the question is the designed hero module — a Frost-30 bento card spanning 12 columns (Block Collection name), not prose'); hero.push(block('hero', ['question'], [[h1 ? `<h1>${inline(h1, ctx)}</h1>` : '']]));
+    secs.push(section(hero));
+    if (answer) { const parts = answerParts(answer, ctx); if (parts.length) secs.push(section(parts, { style: 'answer' })); if (parts.some((p) => p.includes('class="callout'))) blocks.push('callout'); }
     if (fb) {
       const qEl = q(fb, '.feedback-q, h2'); const labels = qa(fb, 'button').map((b) => txt(q(b, 'span')) || b.getAttribute('aria-label') || txt(b));
-      parts.push(block('feedback', ['inline', 'labels'], [[`<p>${inline(qEl, ctx)}</p>`, `<p>${esc(labels[0] || 'Ja')}</p>`, `<p>${esc(labels[1] || 'Nei')}</p>`]])); blocks.push('feedback');
-      ctx.notes.push('lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); inline variant: question label + Ja/Nei beside the answer');
+      secs.push(section([block('feedback', ['labels', 'question'], [[`<h2>${inline(qEl, ctx)}</h2>`, `<p>${esc(labels[0] || 'Ja')}</p>`, `<p>${esc(labels[1] || 'Nei')}</p>`]])], { style: 'flush-bottom' })); blocks.push('feedback');
+      ctx.notes.push('lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the Sand-70 sheet carries the question (h2) and the two labels');
     }
-    if (parts.some((p) => p.includes('class="callout'))) blocks.push('callout');
-    return { html: section(parts, { style: 'question' }), blocks };
+    return { html: secs, blocks };
   },
 };

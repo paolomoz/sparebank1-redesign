@@ -1,68 +1,48 @@
-/* styles — hub family group section styles (closed-set additions only; imported by styles.css) */
+/* styles-hub.css — hub group (category-hub · kundeservice-hub · tool · utility), round 01. Section-style tokens for the hub prose
+   compositions + the cobranding card. Tokens: `stack` (6 px bento gutter between blocks in one section) · `bento-top` (a bento that continues
+   the hero: 6 px section top) · `head-centered` (centred h2 + lead above a bento) · `shortcuts` (one Syrin card, links in four columns). */
+/* ===== hub (shared) ===== */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.stack > div:not(.default-content-wrapper) + div:not(.default-content-wrapper) { margin-top: var(--card-gap); }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.bento-top { padding-top: var(--card-gap); }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.head-centered .default-content-wrapper > h2 { font-size: var(--t-headline); line-height: 1.04; text-align: center; max-width: 960px; margin-inline: auto; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.head-centered .default-content-wrapper > h2 + p { font-size: var(--lead); line-height: 1.33; color: var(--koksgraa); text-align: center; max-width: 60ch; margin-inline: auto; }
+/* ===== category-hub: shortcuts (one Syrin card) ===== */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.shortcuts .default-content-wrapper { gap: 20px; padding: 36px 48px 40px; background: var(--syrin-30); border-radius: var(--radius); }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.shortcuts .default-content-wrapper h2 { font-family: var(--title-font-family); font-size: var(--t-title); line-height: 1.14; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.shortcuts .default-content-wrapper ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px 24px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.shortcuts .default-content-wrapper ul li::marker { content: none; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.shortcuts .default-content-wrapper ul a:any-link { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--vann); line-height: 1.5; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.shortcuts .default-content-wrapper ul a::after { content: ""; width: 7px; height: 7px; border-top: 1.5px solid currentcolor; border-right: 1.5px solid currentcolor; transform: rotate(45deg); transition: transform 0.2s var(--ease); flex: none; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.shortcuts .default-content-wrapper ul a:hover { color: var(--fjell); }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.shortcuts .default-content-wrapper ul a:hover::after { transform: translateX(4px) rotate(45deg); }
+/* ===== category-hub: cobranding as one Sand card ===== */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .cobranding { background: var(--card-tint); border-radius: var(--radius); padding: 36px 48px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .cobranding .cobrand-panel { border-top: 0; padding-top: 0; }
 
-/* ===== category-hub ===== */
-/* shortcuts: h2 (title-sm) + a flat list of inline chevron links under a hairline, 48px movement */
-main .section.shortcuts { padding-block: var(--spacing-xl); }
-main .section.shortcuts .default-content-wrapper { gap: var(--spacing-xs); padding-top: var(--spacing-lg); border-top: 1px solid var(--lysgraa); }
-main .section.shortcuts .default-content-wrapper h2 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
-main .section.shortcuts .default-content-wrapper ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0 var(--spacing-lg); }
-main .section.shortcuts .default-content-wrapper ul li::marker { content: none; }
-main .section.shortcuts .default-content-wrapper ul a:any-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 8px 0; color: var(--vann); text-decoration: none; font: var(--body) / 1.2 var(--body-font-family); }
-main .section.shortcuts .default-content-wrapper ul a::after { content: ""; width: 18px; height: 18px; flex: 0 0 auto; background: currentcolor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 6 6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat; }
-main .section.shortcuts .default-content-wrapper ul a:hover { text-decoration: underline; color: var(--fjell); }
-
-/* figure (siblings): a lone illustration movement */
-main .section.figure .default-content-wrapper p { line-height: 0; }
-main .section.figure .default-content-wrapper img { width: min(100%, 320px); max-height: 240px; height: auto; object-fit: contain; object-position: left; border-radius: 0; }
-
-/* ===== kundeservice-hub ===== */
-/* faq-aside: the movement h2 sits (sticky) in a 4/12 column beside the 8/12 accordion */
-main .section.faq-aside { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: var(--spacing-xl); align-items: start; padding-inline: max(var(--gutter), calc((100% - var(--max-width)) / 2)); }
-main .section.faq-aside > div { width: 100%; margin: 0; }
-main .section.faq-aside > div + div { margin-top: 0; }
-main .section.faq-aside > .default-content-wrapper { position: sticky; top: var(--spacing-lg); }
-
-/* ===== tool ===== */
-/* tool-intro: back link, then h1 (20ch) + lead (52ch); 48px under the lead */
-main .section.tool-intro { padding-bottom: var(--spacing-xl); }
-main .section.tool-intro .breadcrumbs-wrapper + .default-content-wrapper { margin-top: var(--spacing-md); }
-main .section.tool-intro .default-content-wrapper h1 { max-width: 20ch; }
-main .section.intro.tool-intro .default-content-wrapper h1 + p { max-width: 52ch; }
-
-/* ===== utility ===== */
-/* directory: h2 in a sticky 3/12 column, the table + partners prose in 9/12 */
-main .section.directory { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: 0 var(--spacing-xl); align-items: start; padding-inline: max(var(--gutter), calc((100% - var(--max-width)) / 2)); }
-main .section.directory > div { width: 100%; margin: 0; }
-main .section.directory > div + div { margin-top: 0; }
-main .section.directory > .default-content-wrapper:first-child { position: sticky; top: var(--spacing-lg); grid-column: 1; }
-main .section.directory > .table-wrapper { grid-column: 2; }
-main .section.directory > .table-wrapper + .default-content-wrapper { grid-column: 2; margin-top: var(--spacing-xl); gap: var(--spacing-sm); max-width: 68ch; }
-main .section.directory > .table-wrapper + .default-content-wrapper h3 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
-
-/* quick: the rich callout hangs 48px under the directory, flush to the next movement */
-main .section.quick { padding-block: var(--spacing-xl) 0; }
-
-/* address: h2 (title) over a 4-column ledger of <strong>Term</strong><br>value paragraphs */
-main .section.address .default-content-wrapper { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--spacing-lg) var(--spacing-xl); }
-main .section.address .default-content-wrapper h2 { grid-column: 1 / -1; font-size: var(--t-title); line-height: 1.2; }
-main .section.address .default-content-wrapper p { padding-top: var(--spacing-md); border-top: 1px solid var(--lysgraa); font-variant-numeric: tabular-nums; }
-main .section.address .default-content-wrapper p > strong:first-child { display: block; color: var(--fjell); margin-bottom: 4px; }
-main .section.address .default-content-wrapper p > strong:first-child + br { display: none; }
-
-@media (width <= 1023px) {
-  main .section.faq-aside { grid-template-columns: 1fr; gap: var(--spacing-md); }
-  main .section.faq-aside > .default-content-wrapper { position: static; }
-  main .section.directory { grid-template-columns: 1fr; gap: 0; }
-  main .section.directory > .default-content-wrapper:first-child { position: static; }
-  main .section.directory > .table-wrapper { grid-column: 1; margin-top: var(--spacing-md); }
-  main .section.directory > .table-wrapper + .default-content-wrapper { grid-column: 1; }
-  main .section.address .default-content-wrapper { grid-template-columns: 1fr 1fr; }
+@media (width <= 1024px) {
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.shortcuts .default-content-wrapper ul { grid-template-columns: 1fr 1fr; }
 }
 
-@media (width <= 640px) {
-  main .section.shortcuts .default-content-wrapper ul { display: grid; gap: 0; }
-  main .section.shortcuts .default-content-wrapper ul a:any-link { width: 100%; justify-content: space-between; }
-  main .section.tool-intro { padding-bottom: var(--spacing-md); }
-  main .section.address .default-content-wrapper { grid-template-columns: 1fr; gap: var(--spacing-md); }
-  main .section.address .default-content-wrapper h2 { margin-bottom: var(--spacing-sm); }
+@media (width <= 767px) {
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.shortcuts .default-content-wrapper { padding: 32px 20px; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.shortcuts .default-content-wrapper ul { grid-template-columns: 1fr; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .cobranding { padding: 32px 20px; }
+}
+
+/* cobranding summary metrics (canon: title-sm 1.17 · btn-inline 40 px) */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .cobranding .cobrand-q p { line-height: 1.17; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .cobranding .cobrand-toggle { min-height: 40px; }
+
+/* ===== hub siblings: lone illustration movement (`figure`) and start-aligned prose (`prose-hub`, canon .prose-wrap) ===== */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.figure { padding-bottom: 0; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.figure .default-content-wrapper p:has(> picture:only-child) { display: flex; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.figure .default-content-wrapper img { width: min(100%, 320px); height: auto; max-height: 240px; object-fit: contain; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.prose-hub .default-content-wrapper { max-width: none; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.prose-hub .default-content-wrapper > :not(.button-wrapper) { max-width: 68ch; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.prose-hub .default-content-wrapper > h2 { font-size: var(--t-headline-sm); line-height: 1.05; text-align: left; margin-inline: 0; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main .section.prose-hub .default-content-wrapper > h3 { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
+
+/* phones: long CTA labels wrap inside their full-width pill instead of clipping */
+@media (width <= 767px) {
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) main a.button { white-space: normal; text-align: center; }
 }

@@ -1,11 +1,27 @@
-/* callout — theme family group additions (additive variants only; imported by callout.css) */
+/* callout-theme.css — round 01: reset on 2026-09-15. The round-0 group variants conflicted with the bento card language now painted by the base block CSS; family variants are re-added here only when a re-crafted archetype needs them (additive, measured against its prototype). */
 
-/* ===== theme: offer — the canon callout that ends in an action pill (h2, line, CTA) keeps the canon paragraph rhythm:
-   p + p 16 px; the CTA paragraph 16 + the pill's 4 px (the core `.callout-text p { margin: 0 }` drops it) ===== */
-.callout.offer .callout-text p + p { margin-top: var(--spacing-md); }
-.callout.offer .callout-text p + p.button-wrapper { margin-top: calc(var(--spacing-md) + var(--spacing-xs)); }
+/* ===== theme ===== */
+/* band: a card spanning 12 — icon · text (h2 + paragraph, ≤ 68ch) · one action pill hugging the right; Sand-70 (default) or Frost-30 */
+body.theme .callout.band .callout { position: relative; align-items: center; gap: 28px; padding: 36px 48px; max-width: none; background: var(--sand-70); transition: background-color 0.35s var(--ease); }
+body.theme .callout.band.frost .callout { background: var(--frost-30); }
+body.theme .callout.band .callout > svg { flex: none; width: 48px; height: 48px; padding: 8px; stroke-width: 1.75; }
+body.theme .callout.band .callout-text { flex: 1 1 auto; min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "head action" "body action"; align-items: center; gap: 0 28px; }
+body.theme .callout.band .callout-text > :is(h2, h3) { grid-area: head; font-family: var(--title-font-family); font-size: var(--title); line-height: 1.17; max-width: 68ch; align-self: end; }
+body.theme .callout.band .callout-text > p:not(.button-wrapper) { grid-area: body; max-width: 68ch; margin-top: 8px; align-self: start; }
+body.theme .callout.band .callout-text > p.button-wrapper { grid-area: action; margin: 0; justify-self: end; }
+body.theme .callout.band .callout-text > p.button-wrapper a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+body.theme .callout.band .callout:hover,
+body.theme .callout.band .callout:focus-within { background: var(--sand); }
+body.theme .callout.band.frost .callout:hover,
+body.theme .callout.band.frost .callout:focus-within { background: #cbe1ee; }
 
-/* the canon callout stays a row (icon beside the text) at every width — the core flips to a column at 640 */
-@media (width <= 640px) {
-  .callout.offer .callout { flex-direction: row; }
+@media (width <= 1024px) {
+  body.theme .callout.band .callout { padding: 28px; }
+}
+
+@media (width <= 767px) {
+  body.theme .callout.band .callout { flex-direction: column; align-items: flex-start; gap: 16px; padding: 32px 20px; }
+  body.theme .callout.band .callout-text { grid-template-columns: minmax(0, 1fr); grid-template-areas: "head" "body" "action"; gap: 0; width: 100%; }
+  body.theme .callout.band .callout-text > p.button-wrapper { justify-self: stretch; margin-top: 16px; width: 100%; display: flex; }
+  body.theme .callout.band .callout-text > p.button-wrapper a.button { width: 100%; white-space: normal; text-align: center; }
 }

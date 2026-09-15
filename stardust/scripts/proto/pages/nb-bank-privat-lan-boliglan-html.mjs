@@ -30,44 +30,45 @@ function faqBody(body,doc){
 export function patchData(d){ if(!d.footer) return; const f=d.doc.querySelector('footer'); for(const col of d.footer.columns) for(const l of col.links){ if(l.icon) continue; const a=[...f.querySelectorAll('.footer-bottom__column-links li a')].find(x=>x.getAttribute('href')===l.href); const i=a?.querySelector('img'); if(i) l.icon=i.getAttribute('data-lazy-src')||i.getAttribute('src')||null; } }
 
 const CSS=`
-.hero{padding-top:var(--spacing-md)}
-.backlink-row{margin:0 0 var(--spacing-sm)}
-.hero-grid{display:grid;grid-template-columns:7fr 5fr;gap:var(--spacing-xl);align-items:center}
-.hero-media{margin:0;grid-column:1;grid-row:1}.hero-text{grid-column:2;grid-row:1;display:grid;gap:var(--spacing-md);max-width:34rem}
-.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:var(--spacing-sm) var(--spacing-md);margin-top:var(--spacing-sm)}
-.section-title{margin-bottom:var(--spacing-lg)}.section-title.centered{text-align:center}
-.choice-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--spacing-lg)}
-.choice{background:transparent;padding:0;border-radius:0}.choice:hover,.choice:focus-within{box-shadow:none}.choice .photo{margin-bottom:8px}
-.card-title{font-family:var(--title-font-family);font-size:var(--title)}.card p{color:var(--koksgraa)}
-.promo{display:grid;grid-template-columns:auto 1fr;gap:var(--spacing-lg);align-items:center;margin-top:var(--spacing-xl);padding-top:var(--spacing-xl);border-top:1px solid var(--lysgraa)}
-.promo-illu{width:180px;height:auto}.promo-text{display:grid;gap:var(--spacing-sm);max-width:44rem}.promo-text .btn{margin-top:var(--spacing-xs)}
-.q-grid{display:grid;grid-template-columns:5fr 7fr;gap:var(--spacing-xl);align-items:center}
-.q-media{margin:0}.q-text{display:grid;gap:var(--spacing-md);max-width:38rem}.q-text .btn{margin-top:var(--spacing-xs)}
-.price-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--spacing-lg)}
-.price-card{gap:8px;align-content:start;padding:var(--spacing-md) var(--spacing-lg)}.price-card .card-title{font-size:var(--lead);line-height:1.25;overflow-wrap:anywhere;hyphens:auto}
-.price-foot{display:grid;gap:var(--spacing-md);justify-items:start;margin-top:var(--spacing-xl)}
-.price-example{max-width:68ch}
+/* product archetype — round 01 card language */
+.hero{padding-top:24px}
+.hero-bento{grid-template-rows:minmax(440px,auto)}
+.hero-card{grid-column:1/span 5}.hero-card .card-body{justify-content:center;padding:56px 48px}
+.hero-card .backlink-row{margin:0 0 20px}.hero-card h1{font-size:var(--t-headline);line-height:1.04}.hero-card .lead{margin-top:20px}.hero-card .cta-row{margin-top:28px}
+.hero-photo{grid-column:6/-1;margin:0;background:var(--frost-30)}.hero-photo img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.hero-bento:has(.hero-card:hover) .hero-photo img{transform:scale(1.03)}
+.choice-grid .card-body{padding:28px 28px 32px}.choice p{color:var(--koksgraa)}
+.promo-row{margin-top:var(--card-gap)}
+.promo-art{grid-column:span 3;align-items:center;justify-content:center;padding:24px;transition:background-color .35s var(--ease)}
+.promo-art img{max-height:180px;width:auto;max-width:100%;transition:transform .5s var(--spring)}
+.promo-art:has(+.promo:hover) img{transform:scale(1.06) rotate(-2deg)}.promo-art:has(+.promo:hover){background:var(--frost-70)}
+.promo{grid-column:span 9;min-height:240px}.promo .card-body{justify-content:center;padding-inline:48px}.promo p{max-width:60ch}
+.q-photo{grid-column:1/span 5;margin:0;min-height:380px;background:var(--frost-30)}.q-photo img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.q-card{grid-column:6/-1}.q-card .card-body{justify-content:center;padding:56px 48px}.q-card .lead{margin-top:16px}.q-card .actions{margin-top:28px}
+.q-bento:has(.q-card:hover) .q-photo img{transform:scale(1.03)}
+.price-grid{grid-template-columns:repeat(5,minmax(0,1fr))}.price-card{grid-column:auto}.price-card .card-body{padding:28px 24px 32px}.price-card .card-title,.price-card h3{font-size:18px;line-height:1.2}.price-card p{color:var(--koksgraa);font-size:var(--body-sm);margin-top:8px}
+.price-foot{display:grid;gap:var(--spacing-md);justify-items:start;margin-top:var(--spacing-lg)}.price-example{max-width:68ch}
+.calc-card{grid-column:1/-1}.calc-card .card-body{padding:56px 48px;align-items:center}
+.calc-card .section-title{margin-bottom:24px}
 /* calculator — static shell (dynamics #7 interim): controls disabled, captured strings */
 .calc{display:grid;gap:var(--spacing-lg);width:min(100%,44rem);justify-items:start;text-align:left}
-.calc-tabs{display:inline-flex;padding:4px;background:#fff;border:1px solid var(--graa);border-radius:var(--radius-pill)}
-.calc-tab{min-height:40px;padding:8px 20px;border:0;border-radius:var(--radius-pill);background:transparent;color:var(--fjell);font:var(--body)/1.2 var(--body-font-family);cursor:not-allowed}
-.calc-tab{color:var(--moerkgraa)}.calc-tab.is-on{background:var(--lysgraa);color:var(--koksgraa)}
+.calc-tabs{display:inline-flex;padding:4px;background:#fff;border-radius:var(--radius-sm)}
+.calc-tab{min-height:40px;padding:8px 20px;border:0;border-radius:var(--radius-sm);background:transparent;color:var(--moerkgraa);font:var(--body)/1.2 var(--title-font-family);cursor:not-allowed}.calc-tab.is-on{background:var(--frost-30);color:var(--fjell)}
 .calc-groups{display:flex;flex-wrap:wrap;gap:var(--spacing-md) var(--spacing-xl)}
-.calc-pills{margin:0;padding:0;border:0;display:grid;gap:8px;justify-items:start}
-.calc-pills legend{padding:0;margin-bottom:8px;color:var(--fjell)}
-.pill-row{display:flex;flex-wrap:wrap;gap:8px}
-.pill{position:relative;display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:0 12px;border:1px solid var(--graa);border-radius:var(--radius-pill);background:#fff;color:var(--moerkgraa);font-family:var(--title-font-family);cursor:not-allowed}
-.pill input{position:absolute;opacity:0;width:1px;height:1px;margin:0}.pill.is-on{background:var(--lysgraa);border-color:var(--graa);color:var(--koksgraa)}
+.calc-pills{margin:0;padding:0;border:0;display:grid;gap:8px;justify-items:start}.calc-pills legend{padding:0;margin-bottom:8px;color:var(--fjell)}
+.pill-row{display:flex;flex-wrap:wrap;gap:6px}
+.pill{position:relative;display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:0 12px;border:0;border-radius:var(--radius-sm);background:#fff;color:var(--moerkgraa);font-family:var(--title-font-family);cursor:not-allowed}
+.pill input{position:absolute;opacity:0;width:1px;height:1px;margin:0}.pill.is-on{background:var(--fjell);color:#fff}
 .calc-fields{display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-md);width:min(100%,32rem)}
 .field{display:grid;gap:6px;text-align:left}.field .label{color:var(--fjell)}
-.input{min-height:44px;width:100%;padding:10px 14px;border:1px solid var(--lysgraa);border-radius:var(--radius-sm);font:var(--body)/1.2 var(--body-font-family);color:var(--koksgraa);background:#fff;text-align:right}
-.input:disabled{background:var(--lysgraa);border-color:var(--graa);color:var(--koksgraa);-webkit-text-fill-color:var(--koksgraa);opacity:1;cursor:not-allowed}
+.calc .input{text-align:right;color:var(--koksgraa)}
+.calc .input:disabled{background:#fff;color:var(--koksgraa);-webkit-text-fill-color:var(--koksgraa);opacity:1;cursor:not-allowed}
 .calc-result{display:grid;gap:4px;padding-top:var(--spacing-sm)}
-.calc-result-label{color:var(--koksgraa)}.calc-result-value{font-family:var(--heading-font-family);font-size:var(--t-headline-sm);line-height:1.15;color:var(--fjell)}
+.calc-result-label{color:var(--koksgraa)}.calc-result-value{font-family:var(--heading-font-family);font-size:var(--t-display);line-height:1;color:var(--fjell)}
 .calc-ctas{display:flex;flex-wrap:wrap;gap:var(--spacing-sm) var(--spacing-md)}
 .calc-note{max-width:60ch;color:var(--koksgraa)}.calc-note+.calc-note{margin-top:0}
 /* faq */
-.faq-wrap .faq{max-width:52rem}
+.faq-wrap .faq{max-width:52rem;margin-inline:auto}
 .faq-q{flex:1 1 auto;font:inherit;color:inherit;letter-spacing:inherit}
 .faq .answer :is(h4){font-family:var(--title-font-family);font-size:var(--lead);color:var(--fjell);margin-top:var(--spacing-md)}
 .faq .answer ul{list-style:disc;padding-left:1.25rem}.faq .answer ul{margin-top:var(--spacing-md)}
@@ -78,30 +79,24 @@ const CSS=`
 .only-phone{display:none}
 .faq-more{border:0!important}.faq-more>summary{list-style:none;justify-content:flex-start;padding:16px 0 0;font:var(--body)/1.2 var(--body-font-family);color:var(--vann)}.faq-more>summary::-webkit-details-marker{display:none}
 .faq-more>summary svg{stroke:currentColor}.faq-more[open]>summary svg{transform:rotate(180deg)}
-.faq-more-items{margin-top:var(--spacing-md)}.faq-more-items details:first-of-type{border-top:1px solid var(--lysgraa)}
-.faq details:last-of-type{border-bottom:1px solid var(--lysgraa)}.faq > details.faq-more{border-bottom:0!important}
+.faq-more-items{margin-top:var(--spacing-md)}.faq-more-items details:first-of-type{border-top:1px solid rgba(0,39,118,.12)}
+.faq > details.faq-more{border-bottom:0!important}
 /* tips */
-.tips-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--spacing-lg)}
-.tips-grid .card{padding:0;background:transparent;border-radius:0}.tips-grid .card:hover,.tips-grid .card:focus-within{box-shadow:none}.tips-grid .photo{margin-bottom:8px}
+.tips-grid .card-body{padding:28px 28px 36px}.tips-grid .meta{margin-top:10px}
 .feedback-btns{display:flex;gap:8px}.feedback .btn{min-width:56px;padding-inline:14px}
-.compare{padding-top:0}
-.link-more svg{width:16px;height:16px;margin-left:2px;vertical-align:-2px;display:inline-block}
-@media (max-width:1023px){
-  .hero-grid{grid-template-columns:1fr;gap:var(--spacing-lg)}.hero-text{grid-column:1;grid-row:1;max-width:none}.hero-media{grid-column:1;grid-row:2}.hero-media .photo{aspect-ratio:16/9}
-  .choice-grid{grid-template-columns:1fr 1fr}
-  .q-grid{grid-template-columns:1fr;gap:var(--spacing-lg)}.q-media{max-width:36rem}.q-text{max-width:none}
-  .price-grid{grid-template-columns:1fr 1fr}
-  .tips-grid{grid-template-columns:1fr 1fr}
+.compare-card{grid-column:1/span 6}.compare-card p{margin-top:12px;max-width:52ch}
+@media (max-width:1024px){
+  .hero-bento{grid-template-rows:auto}.hero-card{grid-column:1/-1}.hero-photo{grid-column:1/-1;aspect-ratio:16/9;order:-1}
+  .promo-art{grid-column:span 4}.promo{grid-column:span 8}
+  .q-photo{grid-column:1/-1;min-height:0;aspect-ratio:16/9}.q-card{grid-column:1/-1}
+  .price-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .compare-card{grid-column:1/-1}
 }
-@media (max-width:767px){.only-phone{display:inline-flex}.only-desktop{display:none}}
-@media (max-width:640px){
-  .choice-grid{grid-template-columns:1fr;gap:var(--spacing-md)}.choice{grid-template-columns:38% 1fr;grid-template-areas:"img title" "img text";gap:4px 16px;align-items:start;padding:0}.choice .photo{grid-area:img;margin:0;align-self:center;border-radius:var(--spacing-lg) 0 var(--spacing-lg) 0}.choice .card-title{grid-area:title}.choice p{grid-area:text}
-  .promo{grid-template-columns:1fr;gap:var(--spacing-md)}.promo-illu{width:140px}
-  .price-grid{grid-template-columns:1fr;gap:var(--spacing-sm)}.price-card{padding:var(--spacing-md) var(--spacing-lg)}
-  .calc{justify-items:stretch}.calc-tabs{display:grid;grid-template-columns:1fr 1fr}
-  .calc-fields{grid-template-columns:1fr}.calc-ctas .btn{flex:1 1 100%}
+@media (max-width:767px){.only-phone{display:inline-flex}.only-desktop{display:none}
+  .hero-card .card-body,.q-card .card-body,.calc-card .card-body{padding:36px 20px}.promo .card-body{padding-inline:20px}.promo,.promo-art{grid-column:1/-1}.promo{min-height:0}.promo-art img{max-height:140px;max-width:60%}
+  .price-grid{grid-template-columns:1fr}
+  .calc{justify-items:stretch}.calc-tabs{display:grid;grid-template-columns:1fr 1fr}.calc-fields{grid-template-columns:1fr}.calc-ctas .btn{flex:1 1 100%}
   .faq .answer .faq-cols{grid-template-columns:1fr}
-  .tips-grid{grid-template-columns:1fr}
 }
 `;
 
@@ -131,11 +126,11 @@ function renderArchetype({doc,pj}){
   const cmp=main.querySelector(':scope > .referance, :scope > .reference'); const cmpH=cmp.querySelector('h2'); const cmpP=cmp.querySelector('p');
 
   const heroCtas=heroBtns.map((a,i)=>`<a class="btn ${btnKind(a.getAttribute('class'))}"${i===0?' data-cta="primary"':''} data-slot="cta" href="${esc(a.getAttribute('href'))}">${esc(norm(a.textContent))}</a>`).join('');
-  const choices=choiceCards.map(c=>{const img=c.querySelector('img'); const a=c.querySelector('a.card__title'); const p=c.querySelector('p'); return `<li class="card choice"><img class="photo photo-sm" src="${asset(imgSrc(img))}" alt="${esc(img.getAttribute('alt')||'')}" width="1280" height="853" loading="lazy" decoding="async"><h3 class="card-title title-sm"><a href="${esc(a.getAttribute('href'))}">${esc(norm(a.textContent))}</a></h3><p>${esc(norm(p.textContent))}</p></li>`;}).join('');
-  const prices=priceCards.map(c=>{const a=c.querySelector('a.card__title'); const p=c.querySelector('p'); return `<li class="card price-card"><h3 class="card-title title-sm"><a href="${esc(a.getAttribute('href'))}">${esc(norm(a.textContent))}</a></h3><p>${esc(norm(p.textContent))}</p></li>`;}).join('');
+  const choices=choiceCards.map(c=>{const img=c.querySelector('img'); const a=c.querySelector('a.card__title'); const p=c.querySelector('p'); return `<li class="card card--tint choice is-link"><img class="card-image" src="${asset(imgSrc(img))}" alt="${esc(img.getAttribute('alt')||'')}" width="1280" height="720" loading="lazy" decoding="async"><div class="card-body"><h3 class="card-title h3"><a class="cover-link" href="${esc(a.getAttribute('href'))}">${esc(norm(a.textContent))}</a></h3><p>${esc(norm(p.textContent))}</p></div></li>`;}).join('');
+  const prices=priceCards.map(c=>{const a=c.querySelector('a.card__title'); const p=c.querySelector('p'); return `<li class="card card--tint price-card is-link"><div class="card-body"><h3 class="card-title h3"><a class="cover-link" href="${esc(a.getAttribute('href'))}">${esc(norm(a.textContent))}</a></h3><p>${esc(norm(p.textContent))}</p></div></li>`;}).join('');
   const faqItem=(it)=>{const h=norm(it.querySelector('h3').textContent); const body=it.querySelector('.ffe-accordion-item__body'); return `<details><summary><h3 class="faq-q">${esc(h)}</h3>${icons.down}</summary><div class="answer prose">${faqBody(body,doc)}</div></details>`;};
   const shown=faqItems.filter(i=>!/non-highlighted/.test(i.getAttribute('class'))); const hiddenItems=faqItems.filter(i=>/non-highlighted/.test(i.getAttribute('class')));
-  const tips=relCards.map(c=>{const img=c.querySelector('img'); const a=c.querySelector('a.card__title'); const tag=norm(c.querySelector('.card__tag')?.textContent); return `<li class="card"><img class="photo photo-sm" src="${asset(imgSrc(img))}" alt="${esc(img.getAttribute('alt')||'')}"${img.getAttribute('aria-hidden')==='true'?' aria-hidden="true"':''} width="1280" height="853" loading="lazy" decoding="async"><h3 class="card-title title-sm"><a href="${esc(a.getAttribute('href'))}">${esc(norm(a.textContent))}</a></h3>${tag?`<p class="meta"><span>${esc(tag)}</span></p>`:''}</li>`;}).join('');
+  const tips=relCards.map(c=>{const img=c.querySelector('img'); const a=c.querySelector('a.card__title'); const tag=norm(c.querySelector('.card__tag')?.textContent); return `<li class="card card--tint news-card is-link"><img class="card-image" src="${asset(imgSrc(img))}" alt="${esc(img.getAttribute('alt')||'')}"${img.getAttribute('aria-hidden')==='true'?' aria-hidden="true"':''} width="1280" height="720" loading="lazy" decoding="async"><div class="card-body"><h3 class="card-title h3"><a class="cover-link" href="${esc(a.getAttribute('href'))}">${esc(norm(a.textContent))}</a></h3>${tag?`<p class="meta small"><span>${esc(tag)}</span></p>`:''}</div></li>`;}).join('');
   const cmpHtml=cmpP.innerHTML.replace(/<a\s([^>]*)>/g,'<a $1 class="link-more" rel="noopener">').replace(/<\/a>/g,`${icons.external}</a>`).replace(/\s+/g,' ').trim();
 
   // Calculator static shell (dynamics #7 interim). Config-script strings lifted by selector; the remaining visible strings are transcribed from the captured screenshot (see shape brief § Unsourced / excluded).
@@ -154,51 +149,47 @@ function renderArchetype({doc,pj}){
     </div>`;
 
   const mainHtml=`
-<section class="movement hero" data-section="hero" data-intent="name the product, one action" data-layout="split-media" data-media="image" data-module="product-hero">
+<section class="movement hero" data-section="hero" data-intent="name the product, one action" data-layout="bento-cells" data-media="image" data-module="product-hero">
+  <div class="container"><div class="bento hero-bento">
+    <div class="card card--frost hero-card"><div class="card-body">
+      <p class="backlink-row"><a class="arrow backlink" href="${esc(back.getAttribute('href'))}"><span>${esc(norm(back.textContent))}</span></a></p>
+      <h1 data-slot="heading">${esc(norm(h1.textContent))}</h1>
+      <p class="lead" data-slot="text">${esc(norm(lead.textContent))}</p>
+      <p class="cta-row">${heroCtas}</p>
+    </div></div>
+    <figure class="card hero-photo" data-slot="image"><img src="${asset(imgSrc(heroImg))}" alt="${esc(heroImg.getAttribute('alt')||'')}" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async"></figure>
+  </div></div>
+</section>
+<section class="movement choices" data-section="choices" data-intent="route by task" data-layout="grid" data-items="${choiceCards.length}" data-module="card-rail" data-media="image">
   <div class="container">
-    <p class="backlink-row"><a class="backlink" href="${esc(back.getAttribute('href'))}">${icons.back}<span>${esc(norm(back.textContent))}</span></a></p>
-    <div class="hero-grid">
-      <div class="hero-text">
-        <h1 data-slot="heading">${esc(norm(h1.textContent))}</h1>
-        <p class="lead" data-slot="text">${esc(norm(lead.textContent))}</p>
-        <p class="cta-row">${heroCtas}</p>
-      </div>
-      <figure class="hero-media" data-slot="image"><img class="photo" src="${asset(imgSrc(heroImg))}" alt="${esc(heroImg.getAttribute('alt')||'')}" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async"></figure>
-    </div>
+    <h2 class="h2-l section-title" data-slot="heading">${esc(norm(choicesH.textContent))}</h2>
+    <ul class="bento choice-grid grid-${Math.min(choiceCards.length,4)}" data-slot="cards">${choices}</ul>
+    <div class="bento promo-row"><div class="card card--frost promo-art"><img class="promo-illu" src="${asset(imgSrc(bImg))}" alt="" aria-hidden="true" width="200" height="150" loading="lazy" decoding="async"></div>
+    <article class="card card--tint promo is-link" data-module="promo-band"><div class="card-body"><h2 class="h3" data-slot="heading">${esc(norm(bH.textContent))}</h2><p data-slot="text">${esc(norm(bP.textContent))}</p><p class="actions"><a class="btn ${btnKind(bA.getAttribute('class'))} cover-link" data-slot="cta" href="${esc(bA.getAttribute('href'))}">${esc(norm(bA.textContent))}</a></p></div></article></div>
   </div>
 </section>
-<section class="movement paper-sand choices" data-section="choices" data-intent="route by task" data-layout="grid" data-items="${choiceCards.length}" data-module="card-rail" data-media="image">
-  <div class="container">
-    <h2 class="section-title" data-slot="heading">${esc(norm(choicesH.textContent))}</h2>
-    <ul class="choice-grid" data-slot="cards">${choices}</ul>
-    <article class="promo" data-module="promo-band">
-      <img class="promo-illu" src="${asset(imgSrc(bImg))}" alt="" aria-hidden="true" width="200" height="150" loading="lazy" decoding="async">
-      <div class="promo-text"><h2 class="title-sm" data-slot="heading">${esc(norm(bH.textContent))}</h2><p data-slot="text">${esc(norm(bP.textContent))}</p><p><a class="btn ${btnKind(bA.getAttribute('class'))}" data-slot="cta" href="${esc(bA.getAttribute('href'))}">${esc(norm(bA.textContent))}</a></p></div>
-    </article>
-  </div>
-</section>
-<section class="movement questions" data-section="questions" data-intent="offer adviser contact" data-layout="split-media" data-media="image" data-module="split-media">
-  <div class="container q-grid">
-    <figure class="q-media" data-slot="image"><img class="photo photo-sm" src="${asset(imgSrc(qImg))}" alt="${esc(qImg.getAttribute('alt')||'')}"${qImg.getAttribute('aria-hidden')==='true'?' aria-hidden="true"':''} width="1200" height="800" loading="lazy" decoding="async"></figure>
-    <div class="q-text"><h2 data-slot="heading">${esc(norm(qH.textContent))}</h2><p class="lead" data-slot="text">${esc(norm(qP.textContent))}</p><p><a class="btn ${btnKind(qA.getAttribute('class'))}" data-slot="cta" href="${esc(qA.getAttribute('href'))}">${esc(norm(qA.textContent))}</a></p></div>
-  </div>
+<section class="movement questions" data-section="questions" data-intent="offer adviser contact" data-layout="bento-cells" data-media="image" data-module="split-media">
+  <div class="container"><div class="bento q-bento">
+    <figure class="card q-photo" data-slot="image"><img src="${asset(imgSrc(qImg))}" alt="${esc(qImg.getAttribute('alt')||'')}"${qImg.getAttribute('aria-hidden')==='true'?' aria-hidden="true"':''} width="1200" height="800" loading="lazy" decoding="async"></figure>
+    <div class="card card--tint q-card is-link"><div class="card-body"><h2 class="h2-m" data-slot="heading">${esc(norm(qH.textContent))}</h2><p class="lead" data-slot="text">${esc(norm(qP.textContent))}</p><p class="actions"><a class="btn ${btnKind(qA.getAttribute('class'))} cover-link" data-slot="cta" href="${esc(qA.getAttribute('href'))}">${esc(norm(qA.textContent))}</a></p></div></div>
+  </div></div>
 </section>
 <section class="movement prices" data-section="prices" data-intent="choose a loan variant; regulatory price example" data-layout="grid" data-items="${priceCards.length}" data-module="price-cards">
   <div class="container">
-    <h2 class="section-title" data-slot="heading">${esc(norm(prH.textContent))}</h2>
-    <ul class="price-grid" data-slot="cards">${prices}</ul>
+    <h2 class="h2-l section-title" data-slot="heading">${esc(norm(prH.textContent))}</h2>
+    <ul class="bento price-grid" data-slot="cards">${prices}</ul>
     <div class="price-foot"><p><a class="btn ${btnKind(prA.getAttribute('class'))}" data-slot="cta" href="${esc(prA.getAttribute('href'))}">${esc(norm(prA.textContent))}</a></p><p class="num price-example" data-slot="text">${esc(norm(prP.textContent))}</p></div>
   </div>
 </section>
-<section class="movement paper-frost calculator" data-section="calculator" data-intent="estimate borrowing capacity (interim static shell)" data-layout="contained" data-module="calculator" data-dynamics="7">
-  <div class="container calc-wrap">
-    <h2 class="section-title" data-slot="heading">${esc(norm(calcH.textContent))}</h2>
+<section class="movement calculator" data-section="calculator" data-intent="estimate borrowing capacity (interim static shell)" data-layout="bento-cell" data-module="calculator" data-dynamics="7">
+  <div class="container"><div class="bento"><div class="card card--frost calc-card"><div class="card-body">
+    <h2 class="h2-l section-title" data-slot="heading">${esc(norm(calcH.textContent))}</h2>
     ${calc}
-  </div>
+  </div></div></div></div>
 </section>
 <section class="movement faq-section" data-section="faq" data-intent="answer common questions" data-layout="contained" data-items="${faqItems.length}" data-module="faq">
   <div class="container faq-wrap">
-    <h2 class="section-title" data-slot="heading">${esc(norm(faqH.textContent))}</h2>
+    <h2 class="h2-l section-title" data-slot="heading">${esc(norm(faqH.textContent))}</h2>
     <div class="faq" data-slot="items">
       ${shown.map(faqItem).join('\n      ')}
       <details class="faq-more"><summary class="btn-inline">${esc(norm(moreBtn.textContent))}${icons.down}</summary><div class="faq faq-more-items">${hiddenItems.map(faqItem).join('\n      ')}</div></details>
@@ -207,15 +198,15 @@ function renderArchetype({doc,pj}){
 </section>
 <section class="movement related" data-section="related" data-intent="cross-link: advice" data-layout="grid" data-items="${relCards.length}" data-module="card-rail" data-media="image">
   <div class="container">
-    <h2 class="section-title" data-slot="heading">${esc(norm(relH.textContent))}</h2>
-    <ul class="tips-grid" data-slot="cards">${tips}</ul>
+    <h2 class="h2-l section-title" data-slot="heading">${esc(norm(relH.textContent))}</h2>
+    <ul class="bento tips-grid grid-${Math.min(relCards.length,4)}" data-slot="cards">${tips}</ul>
   </div>
 </section>
 <section class="feedback" data-section="feedback" data-intent="page feedback (static)" data-layout="contained" data-module="feedback" data-dynamics="5">
   <div class="container feedback-row"><h2 data-slot="heading">${esc(norm(fbH.textContent))}</h2><div class="feedback-btns"><button class="btn btn-secondary" type="button">${icons.thumbUp}<span class="visually-hidden">Ja</span></button><button class="btn btn-secondary" type="button">${icons.thumbDown}<span class="visually-hidden">Nei</span></button></div></div>
 </section>
-<section class="movement compare" data-section="compare" data-intent="regulatory: compare prices" data-layout="contained" data-module="cta-band">
-  <div class="container"><div class="cta-band"><h2 class="title-sm" data-slot="heading">${esc(norm(cmpH.textContent))}</h2><p data-slot="text">${cmpHtml}</p></div></div>
+<section class="movement compare" data-section="compare" data-intent="regulatory: compare prices" data-layout="bento-cell" data-module="cta-band">
+  <div class="container"><div class="bento"><div class="card card--frost compare-card"><div class="card-body"><h2 class="h2-s" data-slot="heading">${esc(norm(cmpH.textContent))}</h2><p data-slot="text">${cmpHtml}</p></div></div></div></div>
 </section>`;
 
   const css=CSS;
@@ -242,7 +233,7 @@ function kindOf(e){ const t=e.tagName; if(/^(HR|SCRIPT|STYLE|LINK|NOSCRIPT|TEMPL
 function collect(root,out=[]){ for(const ch of root.children){ const k=kindOf(ch); if(k==='skip') continue; if(k==='container'){ collect(ch,out); continue; } out.push({k,el:ch}); } return out; }
 const imgTag=(i,{cls,eager=false,alt}={})=>{ if(!i) return ''; const s=imgSrc(i); const hid=i.getAttribute('aria-hidden')==='true'||i.getAttribute('role')==='presentation'; const a=alt!==undefined?alt:(hid?'':(i.getAttribute('alt')||'')); return `<img class="${cls||(isSvg(s)?'illu':'photo photo-sm')}" src="${asset(s)}" alt="${esc(a)}"${hid?' aria-hidden="true"':''}${eager?' loading="eager" fetchpriority="high"':' loading="lazy"'} decoding="async">`; };
 const btnA=(a,extra='',cls)=>`<a class="btn ${cls||btnKind(cl(a))}"${extra} href="${hrefOf(a)}">${esc(txt(a))}</a>`;
-const grid=(items,cls)=>`<ul class="${cls} grid-${Math.min(items.length,4)}" data-slot="cards">${items.join('')}</ul>`;
+const grid=(items,cls)=>`<ul class="bento ${cls} grid-${Math.min(items.length,4)}" data-slot="cards">${items.join('')}</ul>`;
 /** Verbatim rich text: strip editor wrappers/attrs, keep p/h/ul/ol/li/a/strong/em/img/table/br; captured buttons → .btn; h1 → h2. */
 function rte(el,doc,{inner=false,imgClass}={}){
   const w=doc.createElement('div'); if(inner){ for(const n of el.childNodes) w.appendChild(n.cloneNode(true)); } else w.appendChild(el.cloneNode(true));
@@ -274,10 +265,10 @@ function cardLi(c,doc,{icon=false}={}){
   const title=a?`<h3 class="card-title title-sm"><a href="${hrefOf(a)}">${esc(txt(a))}</a></h3>`:(hEl&&!textC?`<h3 class="card-title title-sm">${esc(txt(hEl))}</h3>`:'');
   const meta=tag||date?`<p class="meta">${tag?`<span>${esc(tag)}</span>`:''}${date?`<time class="num">${esc(date)}</time>`:''}</p>`:'';
   const btns=A(c,'a.ffe-button,a.ffe-inline-button').filter(b=>!textC||!textC.contains(b));
-  return `<li class="card ${icon?'link-card':'choice'}">${img?imgTag(img,{cls:icon?'illu card-icon':(isSvg(s)?'illu card-illu':'photo photo-sm')}):''}${title}${meta}${ps.map(p=>`<p>${rte(p,doc,{inner:true})}</p>`).join('')}${body}${btns.length?`<p class="cta-row">${btns.map(b=>btnA(b)).join('')}</p>`:''}</li>`;
+  const photo=img&&!icon&&!isSvg(s); return `<li class="card card--tint is-link ${icon?'link-card':'choice'}">${photo?imgTag(img,{cls:'card-image'}):''}<div class="card-body">${img&&!photo?imgTag(img,{cls:icon?'illu card-icon':'illu card-illu'}):''}${title}${meta}${ps.map(p=>`<p>${rte(p,doc,{inner:true})}</p>`).join('')}${body}${btns.length?`<p class="cta-row">${btns.map(b=>btnA(b)).join('')}</p>`:''}</div></li>`;
 }
-function navLi(el,doc){ const a=el.querySelector('a.nav--wrapper')||el.querySelector('a'); const bg=(A(el,'[style*="background-image"]').map(x=>x.getAttribute('style')).join(' ').match(/url\("?([^")]+)"?\)/)); const icon=A(el,'img').find(i=>!/chevron|arrow|material-icons/.test(imgSrc(i))); const h=el.querySelector('h2,h3,h4'); const p=el.querySelector('p'); return `<li class="card choice${icon&&!bg?' link-card':''}">${bg?`<img class="photo photo-sm" src="${asset(bg[1])}" alt="" loading="lazy" decoding="async">`:''}${icon?imgTag(icon,{cls:'illu card-icon'}):''}<h3 class="card-title title-sm"><a href="${hrefOf(a)}">${esc(txt(h))}</a></h3>${p?`<p>${esc(txt(p))}</p>`:''}</li>`; }
-function tipsLi(c,doc){ const img=c.querySelector('img:not(.arrow-right):not(.arrow-left)'); const a=c.querySelector('a.card__title')||c.querySelector('a.ffe-text-link')||c.querySelector('a'); const tag=txt(c.querySelector('.card__tag')); const date=txt(c.querySelector('.card__date')); const p=A(c,'p').find(x=>!has(x,'card__tag')); return `<li class="card">${img?imgTag(img,{cls:'photo photo-sm'}):''}<h3 class="card-title title-sm"><a href="${hrefOf(a)}">${esc(txt(a))}</a></h3>${tag||date?`<p class="meta">${tag?`<span>${esc(tag)}</span>`:''}${date?`<time class="num">${esc(date)}</time>`:''}</p>`:''}${p?`<p>${rte(p,doc,{inner:true})}</p>`:''}</li>`; }
+function navLi(el,doc){ const a=el.querySelector('a.nav--wrapper')||el.querySelector('a'); const bg=(A(el,'[style*="background-image"]').map(x=>x.getAttribute('style')).join(' ').match(/url\("?([^")]+)"?\)/)); const icon=A(el,'img').find(i=>!/chevron|arrow|material-icons/.test(imgSrc(i))); const h=el.querySelector('h2,h3,h4'); const p=el.querySelector('p'); return `<li class="card card--tint is-link choice${icon&&!bg?' link-card':''}">${bg?`<img class="card-image" src="${asset(bg[1])}" alt="" loading="lazy" decoding="async">`:''}<div class="card-body">${icon?imgTag(icon,{cls:'illu card-icon'}):''}<h3 class="card-title h3"><a class="cover-link" href="${hrefOf(a)}">${esc(txt(h))}</a></h3>${p?`<p>${esc(txt(p))}</p>`:''}</div></li>`; }
+function tipsLi(c,doc){ const img=c.querySelector('img:not(.arrow-right):not(.arrow-left)'); const a=c.querySelector('a.card__title')||c.querySelector('a.ffe-text-link')||c.querySelector('a'); const tag=txt(c.querySelector('.card__tag')); const date=txt(c.querySelector('.card__date')); const p=A(c,'p').find(x=>!has(x,'card__tag')); return `<li class="card card--tint news-card is-link">${img?imgTag(img,{cls:'card-image'}):''}<div class="card-body"><h3 class="card-title h3"><a class="cover-link" href="${hrefOf(a)}">${esc(txt(a))}</a></h3>${tag||date?`<p class="meta">${tag?`<span>${esc(tag)}</span>`:''}${date?`<time class="num">${esc(date)}</time>`:''}</p>`:''}${p?`<p>${rte(p,doc,{inner:true})}</p>`:''}</div></li>`; }
 const uspList=(el,doc)=>{ const items=A(el,'.icon-list__item'); if(items.length) return `<ul class="usp-list usp-icons" data-module="usp" data-items="${items.length}">${items.map(it=>{const img=it.querySelector('img'); const t=it.querySelector('.icon-list__item-text')||it; return `<li>${img?imgTag(img,{cls:'illu usp-icon'}):''}<div class="usp-text">${rte(t,doc)}</div></li>`;}).join('')}</ul>`; const plain=A(el,'.usp-item__text').map(txt).filter(Boolean); return plain.length?`<ul class="usp-list" data-module="usp" data-items="${plain.length}">${plain.map(u=>`<li>${esc(u)}</li>`).join('')}</ul>`:''; };
 const videoHtml=el=>{ const f=el.querySelector('iframe'); const url=f?.getAttribute('data-video-url')||f?.getAttribute('src'); if(!url) return ''; const t=f.getAttribute('title')||url; return `<p class="video-link" data-dynamics="video"><a class="btn btn-secondary" href="${esc(url)}" rel="noopener">${icons.play}<span>${esc(t)}</span></a></p>`; };
 function calloutHtml(el,doc){ const w=el.querySelector('.tip-content')||el.querySelector('.text-wrapper')||el; const h=w.querySelector('h2,h3,h4'); const rest=rte(w,doc).replace(/<h[2-6]>[^<]*<\/h[2-6]>/,''); return `<div class="callout">${icons.bulb}<div class="callout-text">${h?`<h2 class="title-sm" data-slot="heading">${esc(txt(h))}</h2>`:''}<div class="prose" data-slot="text">${rest}</div></div></div>`; }

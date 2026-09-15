@@ -25,20 +25,20 @@
   "clientlib": "base"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "a109695087f33899",
   "sourceProposedSha": null,
-  "archetypeSha": "576d693d893a5387",
+  "archetypeSha": "d7dffebf597945a6",
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
  "deviations": [],
@@ -75,7 +75,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 33,
+ "linksRewritten": 34,
  "metadata": {
   "title": "IBAN | Finn ditt IBAN | SpareBank 1",
   "description": "Her får du IBAN-nummeret ditt kjapt uten å logge inn. Du kan også sjekke om et IBAN-nummer stemmer.",
@@ -86,7 +86,7 @@
   "adapt": {
    "viewport": true,
    "media": 14,
-   "narrowest": 400
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -97,11 +97,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:25.392Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:20.150Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "a109695087f33899",
  "sourceProposedSha": null,
- "archetypeSha": "576d693d893a5387",
+ "archetypeSha": "d7dffebf597945a6",
  "assetsBundled": 3
 }

@@ -1,51 +1,56 @@
-/* columns — story family group additions (additive variants only; imported by columns.css) */
+/* columns-story.css — story group variants (round 01): chapter (campaign: title tile + prose card) · closing (campaign: photo + Fjell tile)
+   · article-split / article-cols (news article body sheets). Group files are @imported before the base rules: overrides carry the variant class. */
 
-/* slides (campaign landing): portrait 4:5 photos at 26rem, alternating sides, lead + CTAs */
-.columns.split.slides .split-row { grid-template-columns: 26rem minmax(0, 1fr); gap: var(--spacing-xl); }
-.columns.split.slides .split-row:nth-child(even) { grid-template-columns: minmax(0, 1fr) 26rem; }
-.columns.split.slides .split-row:nth-child(even) .col-media { grid-column: 2; grid-row: 1; }
-.columns.split.slides .split-row:nth-child(even) .col-text { grid-column: 1; grid-row: 1; justify-self: end; }
-.columns.split.slides .col-media img.photo { aspect-ratio: 4 / 5; max-width: 26rem; }
-.columns.split.slides .col-text { max-width: 38rem; gap: var(--spacing-md); }
-.columns.split.slides .col-text .cta-row { margin-top: var(--spacing-sm); }
+/* ===== campaign-landing ===== */
+body.campaign-landing .columns.chapter .split-row { grid-template-rows: minmax(360px, auto); }
+body.campaign-landing .columns.split.chapter .col-text.card:first-child { grid-column: 1 / span 5; grid-row: 1; }
+body.campaign-landing .columns.split.chapter .col-text.card:last-child { grid-column: 6 / -1; grid-row: 1; }
+body.campaign-landing .columns.split.chapter.reverse .col-text.card:first-child { grid-column: 8 / -1; }
+body.campaign-landing .columns.split.chapter.reverse .col-text.card:last-child { grid-column: 1 / span 7; }
+body.campaign-landing .columns.chapter.dark .col-text.card:first-child { background: var(--fjell); }
+body.campaign-landing .columns.chapter.dark .col-text.card:first-child h2 { color: #fff; }
+body.campaign-landing .columns.chapter.frost .col-text.card:first-child { background: var(--frost-30); }
+body.campaign-landing .columns.chapter .col-text.card:first-child h2 { max-width: 14ch; }
+body.campaign-landing .columns.chapter .col-text.card .card-body > p + p { margin-top: var(--spacing-md); }
+body.campaign-landing .columns.chapter .col-text.card .cta-row { margin-top: var(--spacing-md); } /* the prototype's .prose > p + p (16) outranks its .actions (24) */
+body.campaign-landing .columns.chapter.lead-first .col-text.card:last-child .card-body > p:first-child { font-size: var(--lead); line-height: 1.33; }
+body.campaign-landing .columns.chapter .col-text.card.is-link:hover,
+body.campaign-landing .columns.chapter .col-text.card.is-link:focus-within { background: var(--card-tint); }
 
-/* closing (campaign landing): portrait photo + closing statement at headline size */
-.columns.split.closing .split-row { grid-template-columns: 26rem minmax(0, 1fr); gap: var(--spacing-xl); }
-.columns.split.closing .col-media img.photo { aspect-ratio: 4 / 5; max-width: 26rem; }
-.columns.split.closing .col-text { max-width: none; }
-.columns.split.closing .col-text h2 { font-size: var(--t-headline); line-height: var(--line-height-heading); max-width: 18ch; }
+body.campaign-landing .columns.closing .split-row { grid-template-rows: minmax(520px, auto); }
+body.campaign-landing .columns.split.closing .col-media.card { min-height: 0; background: var(--frost-30); }
+body.campaign-landing .columns.split.closing .col-media.card img.photo { object-position: 50% 20%; }
+body.campaign-landing .columns.split.closing .col-text.card { background: var(--fjell); }
+body.campaign-landing .columns.split.closing .col-text.card h2 { color: #fff; font-size: var(--t-headline); line-height: 1.04; max-width: 14ch; }
 
-/* article-split (news article: text-and-image on Sand-30) · article-cols (story columns) */
-.columns.split.article-split .split-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); padding: var(--spacing-lg); background: var(--sand-30); border-radius: var(--radius); }
-.columns.split.article-split .col-text { max-width: none; }
-.columns.article-cols .split-row { grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); align-items: start; }
-.columns.article-cols .col-text p + p { margin-top: var(--spacing-md); }
+/* ===== news-article (body sheets, siblings) ===== */
+body.news-article .columns.article-split .split-row.bento { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: var(--spacing-xl); align-items: center; padding: 36px; background: var(--sand-70); border-radius: var(--radius); }
+body.news-article .columns.split.article-split .col-media.card,
+body.news-article .columns.split.article-split .col-text.card { grid-column: auto; grid-row: auto; min-height: 0; background: transparent; }
+body.news-article .columns.split.article-split .col-media.card img.photo { height: auto; aspect-ratio: 3 / 2; object-position: 50% 25%; border-radius: var(--radius); }
+body.news-article .columns.split.article-split .col-text.card .card-body { padding: 0; }
+body.news-article .columns.split.article-split .col-text.card .card-body > * + * { margin-top: var(--spacing-md); }
+body.news-article .columns.split.article-split .col-text.card .cta-row { margin-top: var(--spacing-md); }
+body.news-article .columns.split.article-split .col-text.card.is-link:hover { background: transparent; }
+body.news-article .columns.article-cols .split-row { grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); align-items: start; }
+body.news-article .columns.article-cols .col-text > :first-child { margin-top: 0; }
 
-@media (width <= 1023px) {
-  .columns.split.slides .split-row,
-  .columns.split.slides .split-row:nth-child(even) { grid-template-columns: 20rem minmax(0, 1fr); }
-  .columns.split.slides .split-row:nth-child(even) { grid-template-columns: minmax(0, 1fr) 20rem; }
-  .columns.split.slides .col-media img.photo,
-  .columns.split.closing .col-media img.photo { max-width: 22rem; }
-  .columns.split.slides .col-text,
-  .columns.split.slides .split-row:nth-child(even) .col-text { max-width: none; }
-  .columns.split.closing .split-row { grid-template-columns: 20rem minmax(0, 1fr); }
-  .columns.split.closing .col-text h2 { max-width: none; }
-  .columns.split.article-split .split-row { grid-template-columns: 1fr; }
+@media (width <= 1024px) {
+  body.campaign-landing .columns.chapter .split-row,
+  body.campaign-landing .columns.closing .split-row { grid-template-rows: auto; }
+  body.campaign-landing .columns.split.chapter .col-text.card:first-child,
+  body.campaign-landing .columns.split.chapter .col-text.card:last-child,
+  body.campaign-landing .columns.split.chapter.reverse .col-text.card:first-child,
+  body.campaign-landing .columns.split.chapter.reverse .col-text.card:last-child { grid-column: 1 / -1; grid-row: auto; }
+  body.campaign-landing .columns.chapter .col-text.card:first-child h2,
+  body.campaign-landing .columns.split.closing .col-text.card h2 { max-width: none; }
+  body.campaign-landing .columns.split.closing .col-media.card img.photo { object-position: 50% 30%; }
+  body.news-article .columns.article-split .split-row.bento { grid-template-columns: 1fr; }
 }
 
-@media (width <= 640px) {
-  .columns.split.slides .container { gap: var(--spacing-xl); }
-  .columns.split.slides .split-row,
-  .columns.split.slides .split-row:nth-child(even),
-  .columns.split.closing .split-row { grid-template-columns: 1fr; gap: var(--spacing-lg); }
-  .columns.split.slides .split-row:nth-child(even) .col-media,
-  .columns.split.slides .col-media,
-  .columns.split.closing .col-media { grid-column: 1; grid-row: 2; }
-  .columns.split.slides .split-row:nth-child(even) .col-text,
-  .columns.split.slides .col-text,
-  .columns.split.closing .col-text { grid-column: 1; grid-row: 1; justify-self: start; }
-  .columns.split.slides .col-media img.photo,
-  .columns.split.closing .col-media img.photo { max-width: none; aspect-ratio: 1; }
-  .columns.split.article-split .split-row { padding: 20px; }
+@media (width <= 767px) {
+  body.campaign-landing .columns.split.closing .col-media.card { aspect-ratio: 4 / 5; }
+  body.campaign-landing .columns.split.closing .col-text.card h2 { line-height: 1.12; }
+  body.campaign-landing .columns.chapter .col-text.card:first-child h2 { line-height: 1.14; }
+  body.news-article .columns.article-split .split-row.bento { padding: 20px; }
 }

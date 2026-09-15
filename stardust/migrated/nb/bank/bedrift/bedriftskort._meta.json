@@ -23,20 +23,20 @@
   "clientlib": "base"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "1370de8d751eeef9",
   "sourceProposedSha": null,
-  "archetypeSha": "e41164c76355e828",
+  "archetypeSha": "50ca7f6e18521db0",
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
  "deviations": [],
@@ -80,7 +80,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 26,
+ "linksRewritten": 27,
  "metadata": {
   "title": "Bedriftskort | Bankkort og kredittkort bedrift | SpareBank 1",
   "description": "Det er mange fordeler med å ha bankkort og kredittkort bedrift. Du slipper å legge ut, får bedre oversikt. I mastercard bedrift er reiseforsikring inkludert.",
@@ -90,8 +90,8 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 14,
-   "narrowest": 400
+   "media": 12,
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -102,11 +102,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:12.414Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:06.101Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "1370de8d751eeef9",
  "sourceProposedSha": null,
- "archetypeSha": "e41164c76355e828",
+ "archetypeSha": "50ca7f6e18521db0",
  "assetsBundled": 3
 }

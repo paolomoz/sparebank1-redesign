@@ -1,0 +1,158 @@
+{
+ "slug": "nb-bank-privat-html",
+ "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/prototypes/round-01-danske-ramp/home-b.html",
+ "at": "2026-09-15T09:44:06.563Z",
+ "contract": {
+  "rootFirst": true,
+  "tokensMissing": [],
+  "inlineScripts": 1
+ },
+ "viewports": {
+  "390": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 11,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 25,
+   "sectionsNoAttr": [],
+   "btnSmall": 37,
+   "btnSmallList": [
+    "a.@37px \"Til hovedmeny\"",
+    "a.@37px \"Til hovedinnhold\"",
+    "a.logo@30px \"\"",
+    "label.field-label@21px \"Ditt postnummer\"",
+    "a.arrow@23px \"Boliglånskalkulator\"",
+    "a.arrow@23px \"Boliglån for unge\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "campaign-beaver-from-screenshot.jpg",
+    "area": 80372
+   },
+   "focusRing": true,
+   "docHeight": 7711,
+   "smoke": {
+    "detailsOpen": true,
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  },
+  "768": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 13,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 25,
+   "sectionsNoAttr": [],
+   "btnSmall": 38,
+   "btnSmallList": [
+    "a.@38px \"Til hovedmeny\"",
+    "a.@38px \"Til hovedinnhold\"",
+    "a.logo@30px \"\"",
+    "a.btn@34px \"Logg inn\"",
+    "label.field-label@22px \"Ditt postnummer\"",
+    "a.arrow@24px \"Boliglånskalkulator\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "campaign-beaver-from-screenshot.jpg",
+    "area": 182254
+   },
+   "focusRing": true,
+   "docHeight": 5106,
+   "smoke": {
+    "detailsOpen": true,
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  },
+  "1440": {
+   "console": [],
+   "failed": [],
+   "externalFulfilled": 15,
+   "exceptions": [],
+   "overflowX": 0,
+   "wide": [],
+   "lm": {
+    "header": true,
+    "main": true,
+    "footer": true,
+    "nav": true,
+    "h1": 1
+   },
+   "imgsNoAlt": 0,
+   "inputsNoLabel": 0,
+   "headingSkips": 0,
+   "headings": 25,
+   "sectionsNoAttr": [],
+   "btnSmall": 43,
+   "btnSmallList": [
+    "a.@38px \"Til hovedmeny\"",
+    "a.@38px \"Til hovedinnhold\"",
+    "a.is-active@32px \"Privat\"",
+    "a.@32px \"Bedrift\"",
+    "a.@32px \"Om oss\"",
+    "a.logo@36px \"\""
+   ],
+   "lowContrast": [],
+   "lowContrastCount": 0,
+   "lazyLCP": {
+    "loading": "eager",
+    "fp": "high",
+    "src": "bankchoice_bg.svg",
+    "area": 600318
+   },
+   "focusRing": true,
+   "docHeight": 3900,
+   "smoke": {
+    "detailsOpen": true,
+    "ctaReachableByKeyboard": true,
+    "hovered": true
+   }
+  }
+ },
+ "mobileNav": {
+  "over": 0,
+  "minFont": 12,
+  "minGap": null,
+  "collapse": "hamburger"
+ },
+ "pass": true,
+ "issues": [
+  {
+   "sev": "P2",
+   "where": "390",
+   "msg": "37 interactive elements < 40px tall: a.@37px \"Til hovedmeny\", a.@37px \"Til hovedinnhold\", a.logo@30px \"\", label.field-label@21px \"Ditt postnummer\", a.arrow@23px \"Boliglånskalkulator\", a.arrow@23px \"Boliglån for unge\""
+  }
+ ]
+}

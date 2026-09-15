@@ -1,18 +1,1 @@
-/* accordion — product family sibling additions (additive variants only; imported by accordion.css) */
-
-/* ===== product siblings (worker E5): `disclosure` — the canon <details class="disclosure"> ("Se detaljerte vilkår"):
-   one row [label][body]; the label reads as the canon .btn-inline (Vann, chevron), no hairlines, body 68ch ===== */
-main .accordion.disclosure { max-width: 68ch; }
-main .accordion.disclosure .faq-item,
-main .accordion.disclosure .faq > .faq-item:last-child { border-top: 0; border-bottom: 0; }
-main .accordion.disclosure .faq-head { justify-content: flex-start; align-items: center; gap: 6px; padding: var(--spacing-sm) 0; min-height: 44px; }
-main .accordion.disclosure .faq-q { flex: 0 1 auto; }
-main .accordion.disclosure .faq-q :is(p, h3, h4) { font: var(--body) / 1.2 var(--body-font-family); color: var(--vann); text-wrap: pretty; }
-main .accordion.disclosure .faq-head:hover .faq-q p { text-decoration: underline; color: var(--fjell); }
-main .accordion.disclosure .faq-toggle { width: 20px; height: 20px; margin-top: 0; }
-main .accordion.disclosure .faq-toggle svg { width: 20px; height: 20px; stroke-width: 1.75; }
-main .accordion.disclosure .answer { padding: var(--spacing-xs) 0 var(--spacing-lg); }
-main .accordion.disclosure .answer > :first-child { margin-top: 0; }
-main .accordion.disclosure .answer p.button-wrapper { margin-right: var(--spacing-sm); }
-main .section .default-content-wrapper + .accordion-wrapper:has(.accordion.disclosure) { margin-top: var(--spacing-sm); }
-main .section .accordion-wrapper:has(.accordion.disclosure) + .default-content-wrapper { margin-top: var(--spacing-md); }
+/* accordion-product.css — round 01: reset on 2026-09-15. The round-0 group variants conflicted with the bento card language now painted by the base block CSS; family variants are re-added here only when a re-crafted archetype needs them (additive, measured against its prototype). */

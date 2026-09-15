@@ -2,24 +2,24 @@
   "slug": "nb-bank-privat-html",
   "edsUrl": "http://localhost:3020/nb/bank/privat",
   "protoUrl": "http://localhost:8820/nb-bank-privat-html-proposed.html",
-  "at": "2026-09-14T22:26:57.311Z",
+  "at": "2026-09-15T14:39:27.415Z",
   "pixel": {
     "360": {
-      "pct": 0.15,
-      "heightDelta": 0,
+      "pct": 3.7,
+      "heightDelta": 2,
       "compared": {
         "width": 360,
-        "height": 6915
+        "height": 7716
       },
       "pass": true,
       "hot": []
     },
     "1440": {
-      "pct": 0.12,
-      "heightDelta": 0,
+      "pct": 0.92,
+      "heightDelta": 6,
       "compared": {
         "width": 1440,
-        "height": 3770
+        "height": 3991
       },
       "pass": true,
       "hot": []
@@ -27,54 +27,54 @@
   },
   "chrome": {
     "360": {
-      "header": 99.66,
-      "footer": 98.91,
+      "header": 100,
+      "footer": 100,
       "headerH": {
-        "proto": 61,
-        "eds": 61
+        "proto": 68,
+        "eds": 68
       },
       "footerH": {
-        "proto": 1884,
-        "eds": 1884
+        "proto": 1536,
+        "eds": 1536
       },
       "footerY": {
-        "proto": 5030,
-        "eds": 5031
+        "proto": 6181,
+        "eds": 6179
       },
       "doc": {
-        "proto": 6915,
-        "eds": 6915
+        "proto": 7718,
+        "eds": 7716
       }
     },
     "1440": {
-      "header": 99.96,
-      "footer": 99.89,
+      "header": 99.84,
+      "footer": 99.48,
       "headerH": {
-        "proto": 110,
-        "eds": 110
+        "proto": 112,
+        "eds": 112
       },
       "footerH": {
-        "proto": 917,
-        "eds": 917
+        "proto": 800,
+        "eds": 800
       },
       "footerY": {
-        "proto": 2853,
-        "eds": 2853
+        "proto": 3196,
+        "eds": 3191
       },
       "doc": {
-        "proto": 3770,
-        "eds": 3770
+        "proto": 3997,
+        "eds": 3991
       }
     }
   },
   "content": {
     "red": 0,
     "justified": 0,
-    "amber": 17,
-    "orange": 12,
+    "amber": 6,
+    "orange": 0,
     "summary": [
-      "  EDS: 90 text nodes — 8 headings, 0 eyebrows, 54 CTAs, 28 body; 14 img",
-      "  editable texts (outermost h*/p/ul/ol): proto 20 / EDS 23"
+      "  EDS: 88 text nodes — 8 headings, 0 eyebrows, 54 CTAs, 26 body; 14 img",
+      "  editable texts (outermost h*/p/ul/ol): proto 18 / EDS 18"
     ]
   },
   "pass": true

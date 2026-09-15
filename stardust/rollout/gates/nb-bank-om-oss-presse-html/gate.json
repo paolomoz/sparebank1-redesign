@@ -2,24 +2,24 @@
   "slug": "nb-bank-om-oss-presse-html",
   "edsUrl": "http://localhost:3020/nb/bank/om-oss/presse",
   "protoUrl": "http://localhost:8820/nb-bank-om-oss-presse-html-proposed.html",
-  "at": "2026-09-14T22:16:03.007Z",
+  "at": "2026-09-15T14:47:00.847Z",
   "pixel": {
     "360": {
-      "pct": 0.33,
+      "pct": 0.08,
       "heightDelta": 0,
       "compared": {
         "width": 360,
-        "height": 3963
+        "height": 3918
       },
       "pass": true,
       "hot": []
     },
     "1440": {
-      "pct": 2.14,
+      "pct": 0.53,
       "heightDelta": 0,
       "compared": {
         "width": 1440,
-        "height": 3270
+        "height": 2949
       },
       "pass": true,
       "hot": []
@@ -27,43 +27,43 @@
   },
   "chrome": {
     "360": {
-      "header": 99.66,
+      "header": 100,
       "footer": 100,
       "headerH": {
-        "proto": 61,
-        "eds": 61
+        "proto": 68,
+        "eds": 68
       },
       "footerH": {
-        "proto": 970,
-        "eds": 970
+        "proto": 790,
+        "eds": 790
       },
       "footerY": {
-        "proto": 2993,
-        "eds": 2993
+        "proto": 3127,
+        "eds": 3127
       },
       "doc": {
-        "proto": 3963,
-        "eds": 3963
+        "proto": 3918,
+        "eds": 3918
       }
     },
     "1440": {
-      "header": 99.96,
-      "footer": 99.8,
+      "header": 99.84,
+      "footer": 100,
       "headerH": {
-        "proto": 110,
-        "eds": 110
+        "proto": 112,
+        "eds": 112
       },
       "footerH": {
-        "proto": 481,
-        "eds": 481
+        "proto": 422,
+        "eds": 422
       },
       "footerY": {
-        "proto": 2790,
-        "eds": 2790
+        "proto": 2527,
+        "eds": 2527
       },
       "doc": {
-        "proto": 3270,
-        "eds": 3270
+        "proto": 2949,
+        "eds": 2949
       }
     }
   },

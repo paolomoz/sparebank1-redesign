@@ -1,0 +1,15 @@
+/* hero — product family sibling additions (additive variants only; imported by hero.css) */
+
+/* ===== product siblings (worker E5) =====
+   spot : the hero media is an SVG illustration (walker .hero-illu) — contained at ≤ 420px, no 3:2 crop, no paper
+   usp  : the canon USP list authored as a <ul> in the text cell — check marks, or 56px icon + line (usp-icons) */
+main .hero.spot .hero-media img.photo { width: min(100%, 420px); height: auto; aspect-ratio: auto; object-fit: contain; margin-inline: auto; border-radius: 0; background: transparent; }
+main .hero.usp .hero-text ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--spacing-sm); }
+main .hero.usp .hero-text li { position: relative; padding-left: 1.75rem; color: var(--koksgraa); }
+main .hero.usp .hero-text li::before { content: ""; position: absolute; left: 0.25rem; top: 0.2em; width: 0.45rem; height: 0.85rem; border: solid var(--vann); border-width: 0 2px 2px 0; transform: rotate(45deg); }
+main .hero.usp .hero-text li:has(> img, > picture) { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: var(--spacing-md); align-items: center; padding-left: 0; }
+main .hero.usp .hero-text li:has(> img, > picture)::before { display: none; }
+main .hero.usp .hero-text li > img,
+main .hero.usp .hero-text li > picture img { width: 56px; height: 56px; object-fit: contain; border-radius: 0; background: transparent; }
+main .hero.usp .hero-text li a:any-link { color: var(--vann); }
+main .hero.usp .hero-text .cta-row + ul { margin-top: var(--spacing-sm); }

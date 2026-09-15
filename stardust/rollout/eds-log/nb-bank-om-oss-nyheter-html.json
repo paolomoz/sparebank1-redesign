@@ -13,7 +13,7 @@
   {
    "module": "article-header",
    "blocks": [
-    "cards"
+    "hero"
    ]
   },
   {
@@ -28,6 +28,7 @@
   }
  ],
  "blocks": [
+  "hero",
   "cards"
  ],
  "notes": [
@@ -35,5 +36,5 @@
  ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T23:40:48.458Z"
+ "writtenAt": "2026-09-15T15:02:42.981Z"
 }

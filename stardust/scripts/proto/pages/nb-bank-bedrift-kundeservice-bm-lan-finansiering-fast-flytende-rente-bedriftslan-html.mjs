@@ -51,36 +51,51 @@ export function render({doc,pj,router}){
   const fb=main.querySelector('.faq__feedback-box, .feedback'); const fbQ=norm(fb?.querySelector('.feedback-question, h2')?.textContent)||fb?.querySelector('.component-root')?.getAttribute('data-question-faq')||''; const [yes,no]=fb?[...fb.querySelectorAll('button')].map(b=>norm(b.querySelector('title')?.textContent||b.textContent)):[];
   const paras=answer.querySelectorAll('p').length; const items=answer.querySelectorAll('li').length;
   const body=answerBody(answer);
-  const feedback=fb&&yes&&no?`<div class="faq-feedback" data-module="feedback" data-dynamics="5 (static thumbs, interim)"><span class="feedback-q" id="fb-q">${esc(fbQ)}</span><div class="feedback-btns" role="group" aria-labelledby="fb-q"><button class="btn btn-secondary btn-sm" type="button" aria-label="${esc(yes)}">${icons.thumbUp}<span>${esc(yes)}</span></button><button class="btn btn-secondary btn-sm" type="button" aria-label="${esc(no)}">${icons.thumbDown}<span>${esc(no)}</span></button></div></div>`:'';
+  const feedback=fb&&yes&&no?`<div class="feedback-row faq-feedback" data-module="feedback" data-dynamics="5 (static thumbs, interim)"><h2 class="feedback-q" id="fb-q">${esc(fbQ)}</h2><div class="feedback-btns" role="group" aria-labelledby="fb-q"><button class="btn btn-secondary" type="button" aria-label="${esc(yes)}">${icons.thumbUp}<span>${esc(yes)}</span></button><button class="btn btn-secondary" type="button" aria-label="${esc(no)}">${icons.thumbDown}<span>${esc(no)}</span></button></div></div>`:'';
+  // Round 01: the question is the hero card (Frost-30 — kundeservice/help paper; no lead photo → one text card spanning 12), the answer stays prose
+  // in the reading column (≤ 68ch, white), the feedback strip is the Sand-70 sheet (.feedback-row from the base CSS).
   const mainHtml=`${routerBlock}
-<article class="movement question" data-section="question" data-intent="answer one question plainly" data-layout="contained" data-module="faq-question" data-items="${paras+items}">
-  <div class="container question-grid">
-    ${back?`<p class="back"><a class="backlink" href="${esc(back.getAttribute('href'))}">${icons.back}<span>${esc(norm(back.textContent))}</span></a></p>`:''}
-    <h1 data-slot="heading">${esc(norm(h1.textContent))}</h1>
-    <div class="prose answer-prose" data-slot="answer">${body.html}</div>
-    ${feedback}
-  </div>
+<article class="question" data-section="question" data-intent="answer one question plainly" data-layout="bento-cells" data-module="faq-question" data-items="${paras+items}">
+  <section class="hero-movement container" data-section="question-hero" data-intent="name the question" data-layout="bento-cells">
+    <div class="bento q-hero">
+      <div class="card card--frost q-hero-card"><div class="card-body">
+        ${back?`<p class="back"><a class="arrow backlink" href="${esc(back.getAttribute('href'))}"><span>${esc(norm(back.textContent))}</span></a></p>`:''}
+        <h1 class="h2-l" data-slot="heading">${esc(norm(h1.textContent))}</h1>
+      </div></div>
+    </div>
+  </section>
+  <section class="movement answer" data-section="answer" data-intent="read the answer" data-layout="prose">
+    <div class="container question-grid">
+      <div class="prose answer-prose" data-slot="answer">${body.html}</div>
+    </div>
+  </section>
+  ${feedback?`<section class="feedback" data-section="feedback" data-intent="page feedback (static)" data-layout="bento-cell" data-module="feedback" data-dynamics="5"><div class="container">${feedback}</div></section>`:''}
 </article>`;
   const css=`
-.question{padding-block:var(--spacing-xl) var(--spacing-2xl)}
+/* faq question — round 01: hero card, prose column, Sand-70 feedback sheet */
+.hero-movement{padding-top:24px}
+.q-hero-card{grid-column:1/-1;min-height:260px}
+.q-hero-card .card-body{justify-content:center;padding:56px 48px}
+.q-hero-card .back{margin:0 0 20px}
+.q-hero-card h1{max-width:24ch;margin:0}
+.answer{padding-top:var(--section-padding)}
 .question-grid{display:grid;grid-template-columns:minmax(0,1fr);justify-items:start}
-.back{margin-bottom:var(--spacing-lg)}
-.question h1{max-width:30ch;margin-bottom:var(--spacing-lg)}
-.answer-prose{font-size:var(--lead);line-height:1.55}
+.answer-prose{font-size:var(--lead);line-height:1.5}
 .answer-prose p+p{margin-top:var(--spacing-lg)}
 .answer-prose ul{list-style:disc;padding-left:1.25em;margin-top:var(--spacing-lg)}.answer-prose li{padding-left:.25em}.answer-prose li+li{margin-top:var(--spacing-md)}
 .answer-prose ul+p{margin-top:var(--spacing-lg)}
-.faq-feedback{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin-top:var(--spacing-2xl);padding-top:var(--spacing-lg);border-top:1px solid var(--lysgraa);width:min(100%,85ch)}
-.feedback-q{font-family:var(--title-font-family);color:var(--fjell)}.feedback-btns{display:flex;gap:8px}.faq-feedback .btn svg{width:20px;height:20px}
-@media (max-width:1023px){.question{padding-block:var(--spacing-lg) var(--spacing-xl)}}
-@media (max-width:640px){.answer-prose{font-size:var(--body)}.question h1{max-width:none}}
+.feedback{padding-block:var(--section-padding) 0}
+.faq-feedback{justify-content:space-between}
+.feedback-q{font-family:var(--title-font-family);font-size:var(--title);color:var(--fjell);margin:0}.feedback-btns{display:flex;gap:8px}.faq-feedback .btn svg{width:20px;height:20px}
+@media (max-width:1024px){.q-hero-card{min-height:0}.q-hero-card .card-body{padding:40px 32px}}
+@media (max-width:767px){.q-hero-card .card-body{padding:36px 20px}.q-hero-card h1{max-width:none}.answer-prose{font-size:var(--body)}.feedback-btns{width:100%}.feedback-btns .btn{flex:1 1 0}}
 `;
   const siblingCss=/answer-cta|answer-step|answer-figure|answer-rte|<ol|<table|<h[234]/.test(body.html)?`.answer-cta{display:flex;flex-wrap:wrap;gap:var(--spacing-sm);margin-top:var(--spacing-lg)}.answer-prose p+.answer-cta,.answer-prose ul+.answer-cta{margin-top:var(--spacing-lg)}
-.answer-step{margin-top:var(--spacing-xl);padding:var(--spacing-lg);border-radius:var(--radius)}.answer-step>p:first-child,.answer-step>figure:first-child{margin-top:0}.answer-step+.answer-step{margin-top:var(--spacing-lg)}.answer-step:not(.paper-sand):not(.paper-syrin):not(.paper-frost){padding:0}
-.answer-figure{margin:var(--spacing-lg) 0 0;display:grid;gap:var(--spacing-sm)}.answer-figure .shot{display:block;width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--lysgraa);background:#fff}
+.answer-step{margin-top:var(--spacing-xl);padding:36px;border-radius:var(--radius)}.answer-step>p:first-child,.answer-step>figure:first-child{margin-top:0}.answer-step+.answer-step{margin-top:var(--card-gap)}.answer-step:not(.paper-sand):not(.paper-syrin):not(.paper-frost){padding:0}
+.answer-figure{margin:var(--spacing-lg) 0 0;display:grid;gap:var(--spacing-sm)}.answer-figure .shot{display:block;width:100%;height:auto;border-radius:var(--radius);background:var(--frost-30)}
 .answer-prose ol{list-style:decimal;padding-left:1.25em;margin-top:var(--spacing-lg)}.answer-prose h2,.answer-prose h3,.answer-prose h4{margin-top:var(--spacing-xl)}.answer-prose h2+p,.answer-prose h3+p,.answer-prose h4+p{margin-top:var(--spacing-sm)}.answer-prose table{width:100%;border-collapse:collapse;margin-top:var(--spacing-lg)}.answer-prose td,.answer-prose th{padding:8px 12px;border-bottom:1px solid var(--lysgraa);text-align:left;vertical-align:top}
-@media (max-width:640px){.answer-step.paper-sand,.answer-step.paper-syrin,.answer-step.paper-frost{padding:20px}}
+@media (max-width:767px){.answer-step.paper-sand,.answer-step.paper-syrin,.answer-step.paper-frost{padding:20px}}
 `:'';
   return { template:'article', title:pj.title, description:pj.metaDescription, main:mainHtml, css:css+siblingCss,
-    provenance:{ shapeBrief:'stardust/prototypes/nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html-shape.md', dominantDimension:'composition/single-answer-column', conceptSeed:'surface f4dcd196 (mode read; dealt 6,7,2; 6 built)', unsourcedContent:[], ...(body.fallbacks?{richTextFallbacks:body.fallbacks}:{}), signatureElements:['bankchoice_bg.svg in the router band (bedrift variant header injected from the captured page)'], improvementsApplied:['#1 compact router','#3 1.25 scale (H1 headline, answer at lead size 20/1.55 for reading)','#7 one movement, captured divider dropped'], dynamicsInterim:['#5 feedback thumbs static (type=button)'] } };
+    provenance:{ shapeBrief:'stardust/prototypes/nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html-shape.md', dominantDimension:'composition/single-answer-column', conceptSeed:'surface f4dcd196 (mode read; dealt 6,7,2; 6 built)', unsourcedContent:[], ...(body.fallbacks?{richTextFallbacks:body.fallbacks}:{}), signatureElements:['bankchoice_bg.svg in the router band (bedrift variant header injected from the captured page)'], improvementsApplied:['round 01: question as a Frost-30 hero card (bento, 12 cols), answer as prose in the 68ch reading column, feedback as the Sand-70 sheet','#1 compact router','#7 captured divider dropped'], dynamicsInterim:['#5 feedback thumbs static (type=button)'] } };
 }

@@ -19,7 +19,12 @@
   {
    "module": "article-body",
    "blocks": [
-    "callout",
+    "callout"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
     "cards"
    ]
   }
@@ -30,10 +35,9 @@
   "cards"
  ],
  "notes": [
-  "hero (article): the three share buttons are block chrome (captured JS handlers, no href; aria-labels @ew-exempt)",
-  "lint D3 cards (rail): one-cell rows are the two rail group headings (\"Relaterte artikler\", \"Relaterte tema\") and the tag list; two-cell rows are the stories — one block so the sticky rail stays one authored unit beside the body"
+  "hero (article): the three share buttons are block chrome (captured JS handlers, no href; aria-labels @ew-exempt)"
  ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T23:40:48.455Z"
+ "writtenAt": "2026-09-15T15:02:42.963Z"
 }

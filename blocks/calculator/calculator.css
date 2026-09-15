@@ -8,7 +8,7 @@
 .calculator .calc { display: grid; gap: var(--spacing-lg); width: min(100%, 44rem); justify-items: start; text-align: left; }
 .calculator .calc p { margin: 0; }
 .calculator .calc ul { list-style: none; margin: 0; padding: 0; }
-.calculator .calc-tabs-wrap { display: inline-flex; padding: 4px; background: #fff; border: 1px solid var(--graa); border-radius: var(--radius-pill); }
+.calculator .calc-tabs-wrap { display: inline-flex; padding: 4px; background: #fff; border: 0; border-radius: var(--radius-sm); }
 .calculator .calc-tabs { display: inline-flex; }
 .calculator .calc-tab { min-height: 40px; display: inline-flex; align-items: center; padding: 8px 20px; border-radius: var(--radius-pill); background: transparent; color: var(--moerkgraa); font: var(--body) / 1.2 var(--body-font-family); cursor: not-allowed; margin: 0; }
 .calculator .calc-tab.is-on { background: var(--lysgraa); color: var(--koksgraa); }
@@ -25,7 +25,7 @@
 .calculator .calc-result { display: grid; gap: 4px; padding-top: var(--spacing-sm); }
 .calculator .calc-result-label p { color: var(--koksgraa); }
 .calculator .calc-result-value { margin-top: var(--spacing-md); }
-.calculator .calc-result-value p { font-family: var(--heading-font-family); font-size: var(--t-headline-sm); line-height: 1.15; color: var(--fjell); font-variant-numeric: tabular-nums; }
+.calculator .calc-result-value p { font-family: var(--heading-font-family); font-size: var(--t-display); line-height: 1; color: var(--fjell); font-variant-numeric: tabular-nums; }
 .calculator .calc-ctas { display: flex; flex-wrap: wrap; gap: var(--spacing-sm) var(--spacing-md); }
 .calculator .calc-ctas p.button-wrapper { margin: 0; }
 .calculator .calc-note p { max-width: 60ch; color: var(--koksgraa); font-variant-numeric: tabular-nums; }
@@ -42,3 +42,9 @@
   .calculator .calc-ctas p.button-wrapper,
   .calculator .calc-ctas a.button { flex: 1 1 100%; width: 100%; }
 }
+/* round 01: the calculator movement is ONE Frost-30 card — the section head (default content) and the widget share the fill */
+main .section:has(> .calculator-wrapper) > .default-content-wrapper { background: var(--frost-30); border-radius: var(--radius) var(--radius) 0 0; padding: 56px 48px 0; margin-bottom: 0; }
+main .section:has(> .calculator-wrapper) > .default-content-wrapper + .calculator-wrapper { margin-top: 0; background: var(--frost-30); border-radius: 0 0 var(--radius) var(--radius); padding: 34px 48px 56px; }
+main .section:has(> .calculator-wrapper) > .calculator-wrapper:first-child { background: var(--frost-30); border-radius: var(--radius); padding: 56px 48px; }
+main .section:has(> .calculator-wrapper) .calculator { max-width: 44rem; margin-inline: auto; }
+@media (width <= 767px) { main .section:has(> .calculator-wrapper) > .default-content-wrapper { padding: 36px 20px 0; } main .section:has(> .calculator-wrapper) > .default-content-wrapper + .calculator-wrapper { padding: 39px 20px 36px; } }

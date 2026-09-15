@@ -27,77 +27,88 @@ export function render({doc,pj}){
   const closingImg=bgUrl(closing.querySelector('.image__background')); const closingH=closing.querySelector('h2');
   const footer=footerFromMain(doc);
 
-  const slideRows=slides.map((s,i)=>{ const ctas=s.btns.map((a,j)=>`<a class="btn ${j===0?'btn-primary':'btn-secondary'}"${j===0?' data-slot="cta"':''} href="${esc(a.getAttribute('href'))}">${esc(norm(a.textContent))}</a>`).join('');
-    const id=i===0?' id="kontakt"':i===2?' id="blikunde"':''; return `<article class="slide${i%2?' slide-rev':''}"${id} data-module="split-media" data-media="image">
-      <figure class="slide-media"><img class="photo photo-sm photo-portrait" src="${asset(s.img)}" alt="" width="1280" height="1600" loading="lazy" decoding="async" data-deviation="portrait source 1280x2276 — 4:5 frame instead of canon 3:2"></figure>
-      <div class="slide-text"><h2 data-slot="heading">${esc(norm(s.h.textContent))}</h2><p class="lead" data-slot="text">${esc(norm(s.p.textContent))}</p><p class="cta-row">${ctas}</p></div>
-    </article>`; }).join('');
+  // Round 01: every row is a bento of cards. Hero = Frost-30 statement card 5 + video card 7; chapters = title tile (Fjell / Frost) + Sand-70 prose
+  // card; the three offers = a 3-up card bento (portrait photo bleeding on top, one primary button, the second action as an arrow link);
+  // film = video card 8 + Syrin-30 caption card 4; closing = portrait photo card 5 + Fjell statement tile 7. No section tints, no dividers.
+  const slideCards=slides.map((s,i)=>{ const ctas=s.btns.map((a,j)=>j===0?`<a class="btn btn-primary" data-slot="cta" href="${esc(a.getAttribute('href'))}">${esc(norm(a.textContent))}</a>`:`<a class="arrow" href="${esc(a.getAttribute('href'))}">${esc(norm(a.textContent))}</a>`).join('');
+    const id=i===0?' id="kontakt"':i===2?' id="blikunde"':''; return `<li class="card card--tint slide"${id} data-module="split-media" data-media="image">
+      <img class="card-image card-image--tall" src="${asset(s.img)}" alt="" width="1280" height="1280" loading="lazy" decoding="async" data-deviation="portrait source 1280x2276 — 1:1 frame instead of the 16:9 card image">
+      <div class="card-body"><h2 class="h3" data-slot="heading">${esc(norm(s.h.textContent))}</h2><p data-slot="text">${esc(norm(s.p.textContent))}</p><p class="actions">${ctas}</p></div>
+    </li>`; }).join('');
+  const filmVid=videoBlocks[1].querySelector('video'); const filmSrc=filmVid.querySelector('source'); const filmIcon=videoBlocks[1].querySelector('img.video__placeholder'); const filmTitle=filmVid.getAttribute('title')||'';
 
   const mainHtml=`
-<section class="movement hero" data-section="hero" data-intent="campaign statement, video as content" data-layout="split-media" data-media="video" data-module="video-hero">
-  <div class="container hero-grid">
-    <div class="hero-text"><h1 class="display" data-slot="heading">${esc(norm(h1.textContent))}</h1></div>
-    <div class="hero-media" data-slot="video">${video(hero,0,false)}</div>
+<section class="hero-movement container hero" data-section="hero" data-intent="campaign statement, video as content" data-layout="bento-cells" data-media="video" data-module="video-hero">
+  <div class="bento hero-bento">
+    <div class="card card--frost hero-text"><div class="card-body"><h1 class="h1" data-slot="heading">${esc(norm(h1.textContent))}</h1></div></div>
+    <div class="card hero-media" data-slot="video">${video(hero,0,false)}</div>
   </div>
 </section>
-<section class="movement paper-sand chapter" data-section="chapter-1" data-intent="story: local advisers" data-layout="contained" data-module="story-text">
-  <div class="container chapter-grid">
-    <h2 class="chapter-title" data-slot="heading">${esc(norm(ch1H.textContent))}</h2>
-    <div class="prose" data-slot="text">${ch1Ps.map((p,i)=>`<p${i===0?' class="lead"':''}>${esc(norm(p.textContent))}</p>`).join('')}</div>
-  </div>
+<section class="movement chapter" data-section="chapter-1" data-intent="story: local advisers" data-layout="bento-cells" data-module="story-text">
+  <div class="container"><div class="bento chapter-bento">
+    <div class="card card--dark chapter-tile"><div class="card-body"><h2 class="h2-m chapter-title" data-slot="heading">${esc(norm(ch1H.textContent))}</h2></div></div>
+    <div class="card card--tint chapter-text"><div class="card-body prose" data-slot="text">${ch1Ps.map((p,i)=>`<p${i===0?' class="lead"':''}>${esc(norm(p.textContent))}</p>`).join('')}</div></div>
+  </div></div>
 </section>
-<section class="movement paper-frost slides" data-section="slides" data-intent="offers: adviser, business, switch" data-layout="grid" data-items="${slides.length}" data-module="split-media" data-media="image">
-  <div class="container slide-list">${slideRows}</div>
+<section class="movement slides" data-section="slides" data-intent="offers: adviser, business, switch" data-layout="grid" data-items="${slides.length}" data-module="split-media" data-media="image">
+  <div class="container"><ul class="bento slide-list grid-${Math.min(slides.length,4)}" data-slot="cards">${slideCards}</ul></div>
 </section>
-<section class="movement chapter" id="samfunn" data-section="chapter-2" data-intent="story: sport and culture sponsorship" data-layout="contained" data-module="story-text">
-  <div class="container chapter-grid">
-    <h2 class="chapter-title" data-slot="heading">${esc(norm(ch2H.textContent))}</h2>
-    <div class="prose" data-slot="text">${[...ch2Body.querySelectorAll('.text-content p')].map(p=>`<p>${esc(norm(p.textContent))}</p>`).join('')}<p class="cta-row"><a class="btn btn-primary" data-slot="cta" data-cta="primary" href="${esc(ch2Btn.getAttribute('href'))}">${esc(norm(ch2Btn.textContent))}</a></p></div>
-  </div>
+<section class="movement chapter" id="samfunn" data-section="chapter-2" data-intent="story: sport and culture sponsorship" data-layout="bento-cells" data-module="story-text">
+  <div class="container"><div class="bento chapter-bento chapter-bento--rev">
+    <div class="card card--frost chapter-tile"><div class="card-body"><h2 class="h2-m chapter-title" data-slot="heading">${esc(norm(ch2H.textContent))}</h2></div></div>
+    <div class="card card--tint chapter-text"><div class="card-body prose" data-slot="text">${[...ch2Body.querySelectorAll('.text-content p')].map(p=>`<p>${esc(norm(p.textContent))}</p>`).join('')}<p class="actions"><a class="btn btn-primary" data-slot="cta" data-cta="primary" href="${esc(ch2Btn.getAttribute('href'))}">${esc(norm(ch2Btn.textContent))}</a></p></div></div>
+  </div></div>
 </section>
-<section class="movement film" data-section="closing-video" data-intent="campaign film" data-layout="contained" data-media="video" data-module="video">
-  <div class="container film-grid" data-slot="video">${video(videoBlocks[1],1)}</div>
+<section class="movement film" data-section="closing-video" data-intent="campaign film" data-layout="bento-cells" data-media="video" data-module="video">
+  <div class="container"><figure class="bento film-bento" data-slot="video">
+    <div class="card film-media"><video class="video" controls playsinline muted loop preload="metadata" title="${esc(filmTitle)}" width="1200" height="800"><source src="${asset(filmSrc.getAttribute('src'))}" type="${esc(filmSrc.getAttribute('type')||'video/mp4')}">${esc(norm(filmVid.textContent))}</video></div>
+    <figcaption class="card card--syrin film-cap"><div class="card-body">${filmIcon?`<img class="film-icon" src="${asset(filmIcon.getAttribute('src'))}" alt="" aria-hidden="true" width="48" height="48" loading="lazy" decoding="async">`:''}<span class="h2-s">${esc(filmTitle)}</span></div></figcaption>
+  </figure></div>
 </section>
-<section class="movement closing" data-section="closing" data-intent="closing statement" data-layout="split-media" data-media="image" data-module="split-media">
-  <div class="container closing-grid">
-    <figure class="closing-media"><img class="photo photo-sm photo-portrait" src="${asset(closingImg)}" alt="" width="1280" height="1600" loading="lazy" decoding="async" data-deviation="portrait source 1280x2276 — 4:5 frame instead of canon 3:2"></figure>
-    <h2 class="closing-title" data-slot="heading">${esc(norm(closingH.textContent))}</h2>
-  </div>
+<section class="movement closing" data-section="closing" data-intent="closing statement" data-layout="bento-cells" data-media="image" data-module="split-media">
+  <div class="container"><div class="bento closing-bento">
+    <figure class="card closing-media"><img src="${asset(closingImg)}" alt="" width="1280" height="1600" loading="lazy" decoding="async" data-deviation="portrait source 1280x2276 — fills the photo cell (object-fit cover)"></figure>
+    <div class="card card--dark closing-card"><div class="card-body"><h2 class="h2-l closing-title" data-slot="heading">${esc(norm(closingH.textContent))}</h2></div></div>
+  </div></div>
 </section>`;
 
   const css=`
-.hero{padding-top:var(--spacing-xl)}
-.hero-grid{display:grid;grid-template-columns:7fr 5fr;gap:var(--spacing-xl);align-items:center}
-.hero-media{grid-column:1;grid-row:1}.hero-text{grid-column:2;grid-row:1}
-.hero-text .display{max-width:17ch}
-.video-fig{margin:0;display:grid;gap:var(--spacing-sm)}
-.video{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;background:var(--frost-30);border-radius:var(--radius-img) 0 0 0}
-.film .video{border-radius:var(--radius-img-sm) 0 0 0}
-.video-cap{display:flex;align-items:center;gap:8px}.video-cap img{width:24px;height:24px}
-.chapter-grid{display:grid;grid-template-columns:5fr 7fr;gap:var(--spacing-xl);align-items:start}
-.chapter-title{font-size:var(--t-headline);line-height:var(--line-height-heading);max-width:16ch}
-.prose .lead{max-width:none}
-.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:var(--spacing-sm) var(--spacing-md);margin-top:var(--spacing-sm)}
-.slide-list{display:grid;gap:var(--spacing-2xl)}
-.slide{display:grid;grid-template-columns:26rem minmax(0,1fr);gap:var(--spacing-xl);align-items:center}
-.slide-media{margin:0;grid-column:1;grid-row:1}.slide-text{grid-column:2;grid-row:1;display:grid;gap:var(--spacing-md);max-width:38rem}
-.slide-rev{grid-template-columns:minmax(0,1fr) 26rem}.slide-rev .slide-media{grid-column:2}.slide-rev .slide-text{grid-column:1;justify-self:end}
-
-.photo-portrait{aspect-ratio:4/5;max-width:26rem}
-.film-grid{display:grid;grid-template-columns:7fr 5fr}
-.closing{border-top:1px solid var(--lysgraa)}
-.closing-grid{display:grid;grid-template-columns:26rem minmax(0,1fr);gap:var(--spacing-xl);align-items:center}
-.closing-media{margin:0}.closing-title{font-size:var(--t-headline);line-height:var(--line-height-heading);max-width:18ch}
-@media (max-width:1023px){
-  .hero-grid{grid-template-columns:1fr;gap:var(--spacing-lg)}.hero-text{grid-column:1;grid-row:1}.hero-media{grid-column:1;grid-row:2}.hero-text .display{max-width:none}.video{aspect-ratio:16/9}
-  .chapter-grid{grid-template-columns:1fr;gap:var(--spacing-lg)}.chapter-title{max-width:none}
-  .slide{grid-template-columns:20rem minmax(0,1fr)}.slide-rev{grid-template-columns:minmax(0,1fr) 20rem}.slide-text,.slide-rev .slide-text{max-width:none}
-  .photo-portrait{max-width:22rem}
-  .film-grid{grid-template-columns:1fr}
-  .closing-grid{grid-template-columns:20rem minmax(0,1fr)}.closing-title{max-width:none}
+/* campaign landing — round 01: every row a bento of cards */
+.hero-movement{padding-top:24px}
+.hero-bento{grid-template-rows:minmax(480px,auto)}
+.hero-text{grid-column:1/span 5}.hero-text .card-body{justify-content:center;padding:56px 48px}.hero-text .h1{max-width:12ch}
+.hero-media{grid-column:6/-1;background:var(--frost-30)}
+.video-fig{margin:0;display:flex;flex:1 1 auto;min-height:0}
+.hero-media .video,.film-media .video{display:block;width:100%;height:100%;flex:1 1 auto;min-height:0;object-fit:cover;background:var(--frost-30)}
+.chapter-bento{grid-template-rows:minmax(360px,auto)}
+.chapter-tile{grid-column:1/span 5}.chapter-tile .card-body{justify-content:center;padding:56px 48px}.chapter-title{max-width:14ch}
+.chapter-text{grid-column:6/-1}.chapter-text .card-body{justify-content:center;padding:56px 48px;max-width:none}
+.chapter-text .prose>p+p{margin-top:var(--spacing-md)}.chapter-text .lead{max-width:none}.chapter-text .actions{margin-top:var(--spacing-lg)}
+.chapter-bento--rev .chapter-tile{grid-column:8/-1;grid-row:1}.chapter-bento--rev .chapter-text{grid-column:1/span 7;grid-row:1}
+.card-image--tall{aspect-ratio:1/1;object-position:50% 25%}
+.slide .card-body{padding:32px 28px 40px}.slide .actions{align-items:center;gap:12px 24px;margin-top:var(--spacing-lg)}.slide .actions .arrow{min-height:40px}
+.film-bento{margin:0;grid-template-rows:minmax(420px,auto)}
+.film-media{grid-column:1/span 8;display:flex}
+.film-cap{grid-column:9/-1}.film-cap .card-body{justify-content:center;align-items:flex-start}.film-icon{width:48px;height:48px}.film-cap .h2-s{display:block;margin-top:16px}
+.closing-bento{grid-template-rows:minmax(520px,auto)}
+.closing-media{grid-column:1/span 5;margin:0;background:var(--frost-30)}.closing-media img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.closing-card{grid-column:6/-1}.closing-card .card-body{justify-content:center;padding:56px 48px}.closing-title{max-width:14ch}
+@media (max-width:1024px){
+  .hero-bento,.chapter-bento,.film-bento,.closing-bento{grid-template-rows:auto}
+  .hero-text{grid-column:1/-1}.hero-text .card-body{padding:40px 32px}.hero-text .h1{max-width:none}
+  .hero-media{grid-column:1/-1;order:-1}.hero-media .video{aspect-ratio:16/9;height:auto;flex:none}
+  .chapter-tile,.chapter-bento--rev .chapter-tile{grid-column:1/-1;grid-row:auto;min-height:0}.chapter-tile .card-body{padding:40px 32px}.chapter-title{max-width:none}
+  .chapter-text,.chapter-bento--rev .chapter-text{grid-column:1/-1;grid-row:auto}.chapter-text .card-body{padding:40px 32px}
+  .slide-list>.card{grid-column:span 6}
+  .film-media{grid-column:1/-1}.film-media .video{aspect-ratio:16/9;height:auto;flex:none}.film-cap{grid-column:1/-1}.film-cap .card-body{padding:28px 32px}
+  .closing-media{grid-column:1/-1;aspect-ratio:16/9}.closing-media img{object-position:50% 30%}.closing-card{grid-column:1/-1}.closing-card .card-body{padding:40px 32px}.closing-title{max-width:none}
 }
-@media (max-width:640px){.hero{padding-top:var(--spacing-lg)}.slide-list{gap:var(--spacing-xl)}.slide,.slide-rev{grid-template-columns:1fr;gap:var(--spacing-lg)}.slide .slide-text,.slide-rev .slide-text{grid-column:1;grid-row:1}.slide .slide-media,.slide-rev .slide-media{grid-column:1;grid-row:2}.closing-grid{grid-template-columns:1fr;gap:var(--spacing-lg)}.closing-media{grid-row:2}.photo-portrait{max-width:none;aspect-ratio:1/1}}
+@media (max-width:767px){
+  .hero-text .card-body,.chapter-tile .card-body,.chapter-text .card-body,.closing-card .card-body{padding:36px 20px}
+  .slide-list>.card{grid-column:1/-1}.slide .card-body{padding:28px 20px 32px}.slide .actions .btn{width:100%}
+  .film-cap .card-body{padding:24px 20px}.closing-media{aspect-ratio:4/5}
+}
 `;
   return { template:'landing', title:pj.title, description:pj.metaDescription, main:mainHtml, css, router:false, footer,
-    provenance:{ shapeBrief:'stardust/prototypes/nb-bank-om-oss-hjemme-html-shape.md', dominantDimension:'composition/split-media-story', conceptSeed:'surface d445fcf7 (dealt 7,6,2; 7 built)', unsourcedContent:[], clientlib:'nettsider-frontend — header/footer inside <main>; footer built from main > footer', signatureElements:['one-corner-pair mask on video frame (96px) and portrait photos (48px)','campaign videos at content scale'], improvementsApplied:['#2 calm header (om-oss variant)','#3 1.25 scale: one display H1, chapter h2 at headline','#4 no floating cards','#5 no type over video/photo — media beside text','#6 photos as content at 4:5','#7 movements on paper, anchors kept as ids'] } };
+    provenance:{ shapeBrief:'stardust/prototypes/nb-bank-om-oss-hjemme-html-shape.md', dominantDimension:'composition/split-media-story', conceptSeed:'surface d445fcf7 (dealt 7,6,2; 7 built)', unsourcedContent:[], clientlib:'nettsider-frontend — header/footer inside <main>; footer built from main > footer', signatureElements:['hero bento: Frost-30 statement card 5 + video card 7','Fjell statement tiles (chapter 1, closing)','3-up offer cards with bleeding portrait photos'], improvementsApplied:['round 01: every row a bento of 2 px cards with 6 px gutters; section tints and dividers removed; Ramp display H1','#2 calm header (om-oss variant)','#5 no type over video/photo — media beside text','#7 anchors kept as ids'] } };
 }

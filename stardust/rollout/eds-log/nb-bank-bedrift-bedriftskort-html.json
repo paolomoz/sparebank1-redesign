@@ -20,7 +20,8 @@
   {
    "module": "page-title",
    "blocks": [
-    "breadcrumbs"
+    "breadcrumbs",
+    "hero"
    ]
   },
   {
@@ -50,15 +51,17 @@
  ],
  "blocks": [
   "breadcrumbs",
+  "hero",
   "cards",
   "callout",
   "feedback"
  ],
  "notes": [
-  "lint D1 callout: designed compound (canon icon + tinted paper), Block Collection-shaped single cell of prose — kept as a block like the product archetype",
+  "page-title: hero (hub text-only) — one text card across 12; h1, leads and CTAs are the text cell, the back link rides the breadcrumbs block (moved into the card by hero.js)",
+  "lint D1 callout: designed compound (canon icon + Sand sheet), Block Collection-shaped single cell of prose — kept as a block like the product archetype",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T23:40:48.283Z"
+ "writtenAt": "2026-09-15T15:02:42.491Z"
 }

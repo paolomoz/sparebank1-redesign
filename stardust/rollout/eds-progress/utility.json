@@ -1,66 +1,69 @@
 {
-  "archetype": "nb-bank-privat-kundeservice-kontakt-html",
-  "document": "content/nb/bank/privat/kundeservice/kontakt.html",
-  "blocks": {
-    "new": [
-      "table"
-    ],
-    "reused": [
-      "hero (portrait)",
-      "callout (tip rich)"
-    ]
+ "archetype": "nb-bank-privat-kundeservice-kontakt-html",
+ "document": "content/nb/bank/privat/kundeservice/kontakt.html",
+ "blocks": {
+  "new": [],
+  "reused": [
+   "hero (hub portrait)",
+   "cards (directory cols-4 · partners · address cols-4)",
+   "callout (tip hub rich)"
+  ]
+ },
+ "iterations": 5,
+ "breakpoints": {
+  "360": {
+   "pixelPct": 3.15,
+   "heightDelta": 2,
+   "header": 100,
+   "footer": 100,
+   "pass": true
   },
-  "iterations": 3,
-  "breakpoints": {
-    "360": {
-      "pixelPct": 0,
-      "heightDelta": 0,
-      "header": 99.66,
-      "footer": 100,
-      "pass": true
-    },
-    "1440": {
-      "pixelPct": 0.26,
-      "heightDelta": 0,
-      "header": 99.96,
-      "footer": 99.89,
-      "pass": true
-    }
-  },
-  "contentDiff": {
-    "red": 0,
-    "justified": []
-  },
-  "ew": {
-    "editable": 54,
-    "dead": 0,
-    "exempt": 0
-  },
-  "lint": {
-    "davidsModelRed": 0,
-    "deliveryP0": 0,
-    "deliveryP1": 0
-  },
-  "siblings": {
-    "converted": [
-      "nb-bank-privat-kundeservice-bestill-prisliste-html"
-    ],
-    "gaps": {
-      "nb-bank-privat-kundeservice-bestill-prisliste-html": 0
-    },
-    "lintRed": {
-      "nb-bank-privat-kundeservice-bestill-prisliste-html": 0
-    },
-    "contentDiffSampled": {
-      "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
-      "red": 0
-    }
-  },
-  "productRegression": {
-    "slug": "nb-bank-privat-lan-boliglan-html",
-    "pixelPct1440": 0.74,
-    "heightDelta": -1,
-    "pass": true
-  },
-  "gatedAt": "2026-09-14T22:43:39.485Z"
+  "1440": {
+   "pixelPct": 0.12,
+   "heightDelta": 0,
+   "header": 99.84,
+   "footer": 100,
+   "pass": true
+  }
+ },
+ "contentDiff": {
+  "red": 0,
+  "justified": [
+   {
+    "pattern": "ROLE SWAP: \"Telefon:\" is a body in the proto · ROLE SWAP: \"Kontakt oss:\" is a body in the proto · MISSING CTA: proto cta \"Kontakt oss\" → …/privat/kundeservice.html#contact-tab1 · MISSING HEADING: proto heading \"Telefon\"",
+    "reason": "the prototype keeps the captured table head cells as visually-hidden \"Telefon: \" / \"Kontakt oss: \" prefixes on every bank card link; EDS authors the tel:/mailto:/contact links without the hidden prefix (not authorable in David's Model) — the prefixes then shadow the real \"Telefon\" address heading and the \"Kontakt oss\" links, both present in the EDS document"
+   }
+  ]
+ },
+ "ew": {
+  "editable": 43,
+  "dead": 0,
+  "exempt": 0
+ },
+ "lint": "davids 0 🔴 / 1 🟡 · delivery 0 P0 · 0 P1 · 1 P2",
+ "siblings": {
+  "converted": [
+   "nb-bank-privat-kundeservice-bestill-prisliste-html"
+  ],
+  "gaps": {},
+  "lintRed": {},
+  "sampled": "nb-bank-privat-kundeservice-bestill-prisliste-html",
+  "contentDiffRed": 0,
+  "contentDiffSampled": {
+   "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
+   "red": 0
+  }
+ },
+ "requests": [
+  "gate measure pass vs lazy proto SVG (footer crop, lan 360)",
+  "/nav header 360 on kundeservice 97.1 % (chrome)",
+  "aspect-ratio: auto discards UA attribute ratio → revert-layer",
+  "variant tokens colliding with canon compounds (title, small)",
+  "group CSS import order",
+  "hero.js split-h1 opt-in (edited)",
+  "lib.inline nbsp (keepNbsp workaround)",
+  "FAQ summary lead size ≤767 scope"
+ ],
+ "roundOne": true,
+ "at": "2026-09-15T14:46:20.670Z"
 }

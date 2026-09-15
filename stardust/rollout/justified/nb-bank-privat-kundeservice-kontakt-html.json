@@ -1,0 +1,9 @@
+{
+  "patterns": [
+    "ROLE SWAP: \"Telefon:\" is a body in the proto",
+    "ROLE SWAP: \"Kontakt oss:\" is a body in the proto",
+    "MISSING CTA: proto cta \"Kontakt oss\" → https://www\\.sparebank1\\.no/nb/[a-z-]+/privat/kundeservice\\.html#contact-tab1",
+    "MISSING HEADING: proto heading \"Telefon\" has no EDS heading"
+  ],
+  "reason": "The prototype's bank cards keep the captured table head cells as visually-hidden prefixes (\"Telefon: \", \"Kontakt oss: \") before every phone / contact link; the diff reads them as body text. EDS authors the links without the hidden prefix (the tel:/mailto:/contact links carry the meaning — a hidden label cannot be authored in David's Model). Those prefixes then shadow the real \"Telefon\" address-card heading and the \"Kontakt oss\" links, which ARE in the EDS document (content/nb/bank/privat/kundeservice/kontakt.html: <h3>Telefon</h3>, the helgeland / ostlandet #contact-tab1 anchors)."
+}

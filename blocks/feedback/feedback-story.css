@@ -1,7 +1,11 @@
-/* feedback — story family group additions (additive variants only; imported by feedback.css) */
+/* feedback-story.css — story group variant (round 01): question (faq) — the Sand-70 sheet spreads question and buttons apart; full-width pair on phones. */
 
-/* inline (faq question): the strip lives inside the answer column — hairline top, question label in the title face, small pills with labels */
-.feedback.inline .feedback-row { width: min(100%, 85ch); padding-top: var(--spacing-lg); border-top: 1px solid var(--lysgraa); gap: 8px 16px; justify-content: flex-start; }
-.feedback.inline .feedback-q p { font-family: var(--title-font-family); font-size: var(--body); line-height: var(--line-height-body); color: var(--fjell); letter-spacing: normal; }
-.feedback.inline button.thumb { min-height: 40px; min-width: 0; padding: 8px 18px; font-size: var(--body-sm); gap: 8px; }
-.feedback.inline button.thumb svg { width: 20px; height: 20px; }
+/* ===== faq ===== */
+body.faq .feedback.question .feedback-row { justify-content: space-between; }
+body.faq .feedback.question .feedback-btns button.button svg { width: 20px; height: 20px; }
+
+@media (width <= 767px) {
+  body.faq .feedback.question .feedback-btns { width: 100%; }
+  body.faq .feedback.question .feedback-btns button.button { flex: 1 1 0; }
+}
+body.faq .feedback.question .feedback-q h2 { line-height: 1.05; }

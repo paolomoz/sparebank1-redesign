@@ -25,20 +25,20 @@
   "clientlib": "base"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "b45d47f4b3ed1e96",
   "sourceProposedSha": null,
-  "archetypeSha": "15844d1f8f97f38d",
+  "archetypeSha": "c5d3851540f1d798",
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
  "deviations": [],
@@ -75,7 +75,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 34,
+ "linksRewritten": 35,
  "metadata": {
   "title": "Bli kunde | SpareBank 1",
   "description": null,
@@ -85,8 +85,8 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 16,
-   "narrowest": 400
+   "media": 15,
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -97,11 +97,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:24.978Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:19.714Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "b45d47f4b3ed1e96",
  "sourceProposedSha": null,
- "archetypeSha": "15844d1f8f97f38d",
+ "archetypeSha": "c5d3851540f1d798",
  "assetsBundled": 3
 }

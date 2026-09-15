@@ -19,7 +19,9 @@
   },
   {
    "module": "page-title",
-   "blocks": []
+   "blocks": [
+    "hero"
+   ]
   },
   {
    "module": "card-grid",
@@ -47,18 +49,20 @@
   }
  ],
  "blocks": [
+  "hero",
   "cards",
   "callout",
   "feedback"
  ],
  "notes": [
+  "page-title: hero (hub text-only) — one text card across 12; h1, leads and CTAs are the text cell",
   "media: kunden-i-fokus-dame-med-kikkert-lys-bakgrunn.svg is 54394 B of SVG (> 40000) — authored as DA media kunden-i-fokus-dame-med-kikkert-lys-bakgrunn.png",
-  "lint D1 callout: designed compound (canon icon + tinted paper), Block Collection-shaped single cell of prose — kept as a block like the product archetype",
+  "lint D1 callout: designed compound (canon icon + Sand sheet), Block Collection-shaped single cell of prose — kept as a block like the product archetype",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
  ],
  "gaps": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/kunden-i-fokus-dame-med-kikkert-lys-bakgrunn.svg"
  ],
- "writtenAt": "2026-09-14T23:40:48.789Z"
+ "writtenAt": "2026-09-15T15:02:43.508Z"
 }

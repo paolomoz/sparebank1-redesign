@@ -1,102 +1,87 @@
-/* styles — story family group section styles (closed-set additions only; imported by styles.css) */
+/* styles-story.css — story group section styles (round 01): answer (faq) · article · related (news article) · featured · more-link
+   (news listing) · closing (campaign) · the `video (film)` bento. Imported before the base section rules: every rule carries the style class. */
 
-/* ===== story: faq question · news article · news listing · campaign landing ===== */
+/* ===== faq ===== */
+body.faq main .section.answer .default-content-wrapper { gap: var(--spacing-lg); font-size: var(--lead); line-height: 1.5; }
+body.faq main .section.answer .default-content-wrapper :is(ul, ol) { gap: var(--spacing-md); }
+body.faq main .section.answer .default-content-wrapper ol { list-style: decimal; }
+body.faq main .section.answer .default-content-wrapper li { padding-left: 0.25em; }
+body.faq main .section.answer .default-content-wrapper :is(h2, h3, h4) { margin-top: var(--spacing-lg); font-family: var(--title-font-family); font-size: var(--t-title); line-height: 1.14; }
+body.faq main .section.answer .default-content-wrapper :is(h2, h3, h4):first-child { margin-top: 0; }
+body.faq main .section.answer .default-content-wrapper :is(h2, h3, h4) + p { margin-top: calc(var(--spacing-sm) - var(--spacing-lg)); }
+body.faq main .section.answer .default-content-wrapper p.button-wrapper { margin-top: 0; }
+body.faq main .section.answer .default-content-wrapper img { border-radius: var(--radius); background: var(--frost-30); }
+body.faq main .section.answer .default-content-wrapper p:has(> :is(picture, img):only-child) + p { margin-top: calc(var(--spacing-sm) - var(--spacing-lg)); font-size: var(--body-sm); line-height: 1.43; color: var(--koksgraa); }
+body.faq main .section.answer .default-content-wrapper table { width: 100%; border-collapse: collapse; }
+body.faq main .section.answer .default-content-wrapper :is(td, th) { padding: 8px 12px; border-bottom: 1px solid var(--lysgraa); text-align: left; vertical-align: top; }
+body.faq main .section.answer .callout-wrapper { margin-top: var(--spacing-xl); }
+body.faq main .section.answer .callout-wrapper + .callout-wrapper { margin-top: var(--card-gap); }
 
-/* question (faq): 48/64 padding, h1 ≤ 30ch, the answer at lead size (20/1.55, 68ch), steps and CTAs in the answer rhythm, hairline feedback */
-main .section.question { padding-block: var(--spacing-xl) var(--spacing-2xl); }
-main .section.question .default-content-wrapper { gap: var(--spacing-lg); justify-items: start; }
-main .section.question .default-content-wrapper h1 { max-width: 30ch; }
-main .section.question .default-content-wrapper > :not(h1, p.button-wrapper) { font-size: var(--lead); line-height: 1.55; max-width: 68ch; }
-main .section.question .default-content-wrapper :is(ul, ol) { gap: var(--spacing-md); padding-left: 1.25em; }
-main .section.question .default-content-wrapper li { padding-left: 0.25em; }
-main .section.question .default-content-wrapper p.button-wrapper { margin: 0; }
-main .section.question .default-content-wrapper img { max-width: 100%; border-radius: var(--radius); border: 1px solid var(--lysgraa); background: #fff; }
-main .section.question .callout-wrapper { margin-top: var(--spacing-xl); }
-main .section.question .callout-wrapper + .callout-wrapper { margin-top: var(--spacing-lg); }
-main .section.question .callout-wrapper + .default-content-wrapper { margin-top: var(--spacing-xl); }
-main .section.question .feedback-wrapper { margin-top: var(--spacing-2xl); }
+/* ===== news-article ===== */
+/* the 68ch reading column sits at the container's LEFT edge (prototype .body-grid / .question-grid), not centred */
+body.news-article main .section.article > div,
+body.faq main .section.answer > div { max-width: 68ch; margin-inline: max(var(--gutter), calc((100% - var(--max-width)) / 2 + var(--gutter))) auto; }
+body.news-article main .section.article > div + div { margin-top: var(--spacing-xl); }
+body.news-article main .section.article .default-content-wrapper { gap: var(--spacing-md); }
+body.news-article main .section.article .default-content-wrapper h2 { margin-top: calc(var(--spacing-xl) - var(--spacing-md)); max-width: 24ch; }
+body.news-article main .section.article .default-content-wrapper h3 { margin-top: var(--spacing-sm); font-size: var(--title); }
+body.news-article main .section.article .default-content-wrapper h3 + p { margin-top: calc(var(--spacing-sm) - var(--spacing-md)); }
+body.news-article main .section.article .default-content-wrapper ol { list-style: decimal; }
+body.news-article main .section.article .default-content-wrapper p.button-wrapper { margin-top: var(--spacing-sm); }
+body.news-article main .section.article .default-content-wrapper p:has(> :is(picture, img):only-child) { margin-top: calc(var(--spacing-xl) - var(--spacing-md)); }
+body.news-article main .section.article .default-content-wrapper p:has(> :is(picture, img):only-child) + * { margin-top: calc(var(--spacing-xl) - var(--spacing-md)); }
+body.news-article main .section.article .default-content-wrapper p:has(> :is(picture, img):only-child) + p:has(> em:only-child) { margin-top: calc(var(--spacing-sm) - var(--spacing-md)); font-size: var(--body-sm); line-height: 1.43; color: var(--moerkgraa); }
+body.news-article main .section.article .default-content-wrapper p:has(> :is(picture, img):only-child) + p:has(> em:only-child) em { font-style: normal; }
+body.news-article main .section.article .default-content-wrapper p:has(> :is(picture, img):only-child) + p:has(> em:only-child) + * { margin-top: calc(var(--spacing-xl) - var(--spacing-md)); }
+body.news-article main .section.article .default-content-wrapper p > :is(picture, img):only-child,
+body.news-article main .section.article .default-content-wrapper p > picture > img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; object-position: 50% 25%; background: var(--frost-30); }
+body.news-article main .section.article .default-content-wrapper p > img[src*=".svg"],
+body.news-article main .section.article .default-content-wrapper p > picture:has(> img[src*=".svg"]),
+body.news-article main .section.article .default-content-wrapper p > picture > img[src*=".svg"] { width: min(100%, 320px); aspect-ratio: 1; object-fit: contain; background: transparent; margin-inline: auto; }
 
-@media (width <= 1023px) { main .section.question { padding-block: var(--spacing-lg) var(--spacing-xl); } }
+/* related articles + themes (badges) */
+body.news-article main .section.related .cards-wrapper + .default-content-wrapper { margin-top: var(--section-padding); gap: var(--spacing-md); }
+body.news-article main .section.related .cards-wrapper + .default-content-wrapper > h2 { font-family: var(--title-font-family); font-size: var(--t-title); line-height: 1.14; text-align: left; max-width: none; margin: 0; }
+body.news-article main .section.related .default-content-wrapper ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: var(--card-gap); }
+body.news-article main .section.related .default-content-wrapper ul li::marker { content: ""; }
+body.news-article main .section.related .default-content-wrapper ul li a:any-link { display: inline-flex; align-items: center; min-height: 28px; padding: 4px 10px; border-radius: var(--radius-sm); background: var(--frost-30); color: var(--fjell); font-family: var(--title-font-family); font-size: var(--label); line-height: 1.4; text-decoration: none; transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease); }
+body.news-article main .section.related .default-content-wrapper ul li a:hover { background: var(--vann); color: #fff; }
 
-@media (width <= 640px) {
-  main .section.question .default-content-wrapper > :not(h1, p.button-wrapper) { font-size: var(--body); line-height: var(--line-height-body); }
-  main .section.question .default-content-wrapper h1 { max-width: none; }
+/* ===== news-listing ===== */
+body.news-listing main .section.featured { padding-top: 24px; }
+body.news-listing main .section.featured .default-content-wrapper + .hero-wrapper { margin-top: var(--spacing-lg); }
+body.news-listing main .section.more-link { padding-top: var(--spacing-lg); }
+body.news-listing main .section.more-link .default-content-wrapper p.button-wrapper { display: flex; justify-content: center; width: 100%; }
+body.news-listing main .section.more-link .default-content-wrapper a.button { padding: 17px 20px; }
+
+/* frontend-template news pages: the prototype's footer carries margin-top 64 on top of the last movement's own padding — one extra section padding (om-oss pages differ: their last movement has none) */
+body.news-article main > .section:last-child,
+body.news-listing main > .section:last-child,
+body.campaign-landing main > .section:last-child { padding-bottom: calc(2 * var(--section-padding)); }
+
+/* ===== campaign-landing (film bento: video card 8 + Syrin-30 caption card 4) ===== */
+body.campaign-landing .video.film .video-fig { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: minmax(420px, auto); gap: var(--card-gap); }
+body.campaign-landing .video.film video { grid-column: 1 / span 8; height: 100%; aspect-ratio: auto; border-radius: var(--radius); }
+body.campaign-landing .video.film .video-cap { grid-column: 9 / -1; display: flex; flex-direction: column; justify-content: center; padding: var(--card-pad-y) var(--card-pad-x); background: var(--syrin-30); border-radius: var(--radius); }
+body.campaign-landing .video.film .video-cap p { display: flex; flex-direction: column; align-items: flex-start; margin: 0; }
+body.campaign-landing .video.film .video-cap picture { display: block; line-height: 0; }
+body.campaign-landing .video.film .video-cap img { width: 48px; height: 48px; }
+body.campaign-landing .video.film .video-cap em { display: block; margin-top: 16px; font: normal var(--t-title) / 1.14 var(--title-font-family); color: var(--fjell); }
+
+@media (width <= 1024px) {
+  body.campaign-landing .video.film .video-fig { grid-template-rows: auto; }
+  body.campaign-landing .video.film video { grid-column: 1 / -1; height: auto; aspect-ratio: 16 / 9; }
+  body.campaign-landing .video.film .video-cap { grid-column: 1 / -1; padding: 28px 32px; }
 }
 
-/* article-head (news): the hero section ends 24px above the body */
-main .section.article-head { padding-bottom: var(--spacing-lg); }
-
-/* article (news body): 68ch prose beside a sticky rail (cards.rail spans every body row); canon reading rhythm */
-main .section.article { display: grid; grid-template-columns: minmax(0, 68ch) minmax(0, 1fr); column-gap: var(--spacing-3xl); align-items: start; width: min(100% - 2 * var(--gutter), var(--max-width)); margin-inline: auto; padding-top: var(--spacing-lg); }
-main .section.article.no-rail { grid-template-columns: minmax(0, 68ch); }
-main .section.article > div { width: auto; margin: 0; grid-column: 1; }
-main .section.article > div + div { margin-top: var(--spacing-lg); }
-main .section.article > .cards-wrapper:has(.cards.rail) { grid-column: 2; grid-row: 1 / span 40; margin: 0; position: sticky; top: var(--spacing-lg); }
-main .section.article .default-content-wrapper { gap: var(--spacing-md); }
-main .section.article .default-content-wrapper h2 { max-width: 24ch; }
-main .section.article .default-content-wrapper * + h2 { margin-top: calc(var(--spacing-xl) - var(--spacing-md)); }
-main .section.article .default-content-wrapper h3 { font-size: var(--title); margin-top: var(--spacing-sm); }
-main .section.article .default-content-wrapper p:has(> img:only-child, > picture:only-child) { line-height: 0; }
-main .section.article .default-content-wrapper * + p:has(> img:only-child, > picture:only-child) { margin-top: calc(var(--spacing-xl) - var(--spacing-md)); }
-main .section.article .default-content-wrapper p:has(> img:only-child, > picture:only-child) + p:has(> em:only-child) { margin-top: calc(var(--spacing-sm) - var(--spacing-md)); font-size: var(--body-sm); line-height: 1.45; color: var(--moerkgraa); }
-main .section.article .default-content-wrapper p:has(> em:only-child) em { font-style: normal; }
-main .section.article .default-content-wrapper p:has(> img:only-child, > picture:only-child) + p:has(> em:only-child) + * { margin-top: calc(var(--spacing-xl) - var(--spacing-md)); }
-main .section.article .default-content-wrapper img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; object-position: 50% 25%; background: var(--frost-30); border-radius: var(--radius-img-sm) 0 var(--radius-img-sm) 0; }
-main .section.article .default-content-wrapper ul { list-style: disc; padding-left: 1.25em; }
-main .section.article .default-content-wrapper p.button-wrapper { margin-top: var(--spacing-sm); }
-main .section.article .callout-wrapper { margin-top: var(--spacing-xl); }
-main .section.article .columns-wrapper { margin-top: var(--spacing-xl); }
-main .section.article .video-wrapper { margin-top: var(--spacing-xl); }
-main .section.article .callout-wrapper + .default-content-wrapper,
-main .section.article .columns-wrapper + .default-content-wrapper { margin-top: var(--spacing-lg); }
-
-@media (width <= 1023px) {
-  main .section.article,
-  main .section.article.no-rail { grid-template-columns: minmax(0, 1fr); }
-  main .section.article > .cards-wrapper:has(.cards.rail) { grid-column: 1; grid-row: auto; position: static; margin-top: var(--spacing-2xl); }
+@media (width <= 767px) {
+  body.faq main .section.answer .default-content-wrapper { font-size: var(--body); }
+  body.news-article main .section.article .default-content-wrapper p:has(> :is(picture, img):only-child),
+  body.news-article main .section.article .default-content-wrapper p:has(> :is(picture, img):only-child) + *,
+  body.news-article main .section.article .default-content-wrapper p:has(> :is(picture, img):only-child) + p:has(> em:only-child) + * { margin-top: var(--spacing-sm); }
+  body.news-article main .section.article .default-content-wrapper p:has(> :is(picture, img):only-child) + h2,
+  body.news-article main .section.article .default-content-wrapper p:has(> :is(picture, img):only-child) + p:has(> em:only-child) + h2 { margin-top: calc(var(--spacing-xl) - var(--spacing-md)); }
+  body.news-listing main .section.featured .default-content-wrapper + .hero-wrapper { margin-top: var(--spacing-md); }
+  body.news-listing main .section.featured .default-content-wrapper h1 { line-height: 1.12; }
+  body.campaign-landing .video.film .video-cap { padding: 24px 20px; }
 }
-
-@media (width <= 640px) {
-  main .section.article .default-content-wrapper * + p:has(> img:only-child, > picture:only-child) { margin-top: var(--spacing-sm); }
-  main .section.article .default-content-wrapper p:has(> img:only-child, > picture:only-child) + p:has(> em:only-child) + * { margin-top: var(--spacing-sm); }
-  main .section.article .default-content-wrapper p:has(> img:only-child, > picture:only-child) + p:has(> em:only-child) + h2 { margin-top: calc(var(--spacing-xl) - var(--spacing-md)); } /* canon: h2 keeps 48 after a figure */
-}
-
-/* featured (news listing): h1 48px above the featured story; listing: 48/48 */
-main .section.featured { padding-bottom: var(--spacing-xl); }
-main .section.featured .default-content-wrapper + .cards-wrapper { margin-top: var(--spacing-xl); }
-main .section.listing { padding-block: var(--spacing-xl); }
-
-@media (width <= 640px) { main .section.featured .default-content-wrapper + .cards-wrapper { margin-top: var(--spacing-lg); } }
-
-/* more-link: the canon .btn-inline with chevron for a plain "Se flere artikler" link */
-main .section.more-link .default-content-wrapper a:any-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 8px 4px; color: var(--vann); text-decoration: none; font: var(--body) / 1.2 var(--body-font-family); }
-main .section.more-link .default-content-wrapper a:any-link::after { content: ""; width: 20px; height: 20px; background: currentcolor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 6 6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat; }
-main .section.more-link .default-content-wrapper a:hover { text-decoration: underline; color: var(--fjell); }
-
-/* video-hero (campaign landing): 48px top, the film left (7/5), display h1 right */
-main .section.video-hero { padding-top: var(--spacing-xl); }
-
-@media (width <= 640px) { main .section.video-hero { padding-top: var(--spacing-lg); } }
-
-/* chapter (campaign landing): h2 at headline size in the 5-column, the story in the 7-column; first paragraph as lead */
-main .section.chapter .default-content-wrapper { grid-template-columns: 5fr 7fr; gap: 0 var(--spacing-xl); align-items: start; }
-main .section.chapter .default-content-wrapper > h2 { grid-column: 1; grid-row: 1 / span 30; font-size: var(--t-headline); line-height: var(--line-height-heading); max-width: 16ch; }
-main .section.chapter .default-content-wrapper > :not(h2) { grid-column: 2; max-width: 68ch; }
-main .section.chapter .default-content-wrapper > :not(h2) + :not(h2) { margin-top: var(--spacing-md); }
-main .section.chapter.lead-first .default-content-wrapper > h2 + p { max-width: 68ch; } /* the canon chapter lead runs the full prose width */
-
-@media (width <= 1023px) {
-  main .section.chapter .default-content-wrapper { grid-template-columns: 1fr; gap: 0; }
-  main .section.chapter .default-content-wrapper > h2 { grid-row: auto; max-width: none; margin-bottom: var(--spacing-lg); }
-  main .section.chapter .default-content-wrapper > :not(h2) { grid-column: 1; }
-}
-
-/* film (campaign landing): the film in the 7-column, caption (icon + title) 8px under it */
-main .section.film .video .video-fig { width: calc(100% * 7 / 12); }
-main .section.film .video-wrapper + .default-content-wrapper { margin-top: var(--spacing-sm); }
-main .section.film .default-content-wrapper p:has(> em) { display: flex; align-items: center; gap: var(--spacing-sm); font-size: var(--body-sm); line-height: 1.45; color: var(--moerkgraa); }
-main .section.film .default-content-wrapper p em { font-style: normal; }
-main .section.film .default-content-wrapper img { width: 24px; height: 24px; border-radius: 0; }
-
-@media (width <= 1023px) { main .section.film .video .video-fig { width: 100%; } }

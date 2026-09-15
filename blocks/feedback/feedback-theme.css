@@ -1,1 +1,5 @@
-/* feedback — theme family group additions (additive variants only; imported by feedback.css) */
+/* feedback-theme.css — round 01: reset on 2026-09-15. The round-0 group variants conflicted with the bento card language now painted by the base block CSS; family variants are re-added here only when a re-crafted archetype needs them (additive, measured against its prototype). */
+
+/* ===== theme ===== */
+/* the canon .feedback h2 keeps the heading leading (1.05): a two-line question at 360 is 50 px, not 56 */
+body.theme .feedback .feedback-q :is(h2, h3, p) { line-height: 1.05; }

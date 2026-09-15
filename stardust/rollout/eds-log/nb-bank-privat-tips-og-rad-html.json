@@ -20,19 +20,20 @@
   {
    "module": "page-title",
    "blocks": [
-    "breadcrumbs"
+    "breadcrumbs",
+    "hero"
    ]
   },
   {
    "module": "split-media",
    "blocks": [
-    "columns"
+    "cards"
    ]
   },
   {
    "module": "split-media",
    "blocks": [
-    "columns"
+    "cards"
    ]
   },
   {
@@ -50,10 +51,13 @@
  ],
  "blocks": [
   "breadcrumbs",
+  "hero",
+  "cards",
   "columns",
   "feedback"
  ],
  "notes": [
+  "page-title: hero (hub text-only) — one text card across 12; h1, leads and CTAs are the text cell, the back link rides the breadcrumbs block (moved into the card by hero.js)",
   "media: tips-og-rad-hverdagen.svg is 61249 B of SVG (> 40000) — authored as DA media tips-og-rad-hverdagen.png",
   "media: tips-og-rad-mitt-hjem.svg is 86797 B of SVG (> 40000) — authored as DA media tips-og-rad-mitt-hjem.png",
   "media: tips-og-rad-familieliv.svg is 61914 B of SVG (> 40000) — authored as DA media tips-og-rad-familieliv.png",
@@ -69,5 +73,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-toffe-tider.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-ung.svg"
  ],
- "writtenAt": "2026-09-14T23:40:48.794Z"
+ "writtenAt": "2026-09-15T15:02:43.514Z"
 }

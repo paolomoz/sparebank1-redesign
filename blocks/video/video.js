@@ -4,6 +4,8 @@ import { el } from '../../scripts/sb1.js';
  * video — auto-blocked from a paragraph holding only an .mp4/.webm link (scripts.js buildMediaAutoBlocks, D1): one cell, the link.
  * The block renders the canon campaign film frame (<video controls muted loop preload="metadata">, 3:2, one-corner mask) from the
  * authored URL; the media stays on its source origin. The authored paragraph is MOVED into a hidden wrapper (EW1 — the URL stays editable).
+ * Story group (additive): `film` — a second authored cell (icon + <em>title</em>) is MOVED into a <figcaption class="video-cap"> (the Syrin-30
+ * caption card beside the video card; styles/styles-story.css).
  */
 export default function decorate(block) {
   const a = block.querySelector('a[href]'); if (!a) return;
@@ -11,5 +13,7 @@ export default function decorate(block) {
   const video = el('video', { controls: true, playsinline: true, muted: true, loop: true, preload: 'metadata' }, el('source', { src, type }));
   video.muted = true;
   const fig = el('figure', { class: 'video-fig' }, video, el('div', { class: 'video-src visually-hidden' }, a.closest('p') || a));
+  const capCell = [...block.querySelectorAll(':scope > div > div')].find((c) => !c.contains(a) && (c.textContent.trim() || c.querySelector('picture, img')));
+  if (capCell) fig.append(el('figcaption', { class: 'video-cap' }, ...capCell.childNodes));
   block.replaceChildren(fig);
 }

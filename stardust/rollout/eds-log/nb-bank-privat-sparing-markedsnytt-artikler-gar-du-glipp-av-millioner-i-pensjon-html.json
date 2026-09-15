@@ -19,7 +19,12 @@
   {
    "module": "article-body",
    "blocks": [
-    "callout",
+    "callout"
+   ]
+  },
+  {
+   "module": "card-rail",
+   "blocks": [
     "cards"
    ]
   }
@@ -31,10 +36,9 @@
  ],
  "notes": [
   "hero (article): the three share buttons are block chrome (captured JS handlers, no href; aria-labels @ew-exempt)",
-  "lint D1 callout (fact): the canon fact box (Sand-30 aside) is a designed module, not body prose",
-  "lint D3 cards (rail): one-cell rows are the two rail group headings (\"Relaterte artikler\", \"Relaterte tema\") and the tag list; two-cell rows are the stories — one block so the sticky rail stays one authored unit beside the body"
+  "lint D1 callout (fact): the canon fact box (Sand-70 sheet) is a designed module, not body prose"
  ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T23:40:48.759Z"
+ "writtenAt": "2026-09-15T15:02:43.464Z"
 }

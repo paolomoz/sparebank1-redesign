@@ -26,7 +26,7 @@ function style(root, ...extra) {
 }
 /** The movement's section-title h2 as default content. */
 function head(root, ctx) {
-  const h = q(root, ':scope > .container > h2.section-title, :scope > .container > h2, :scope > .container > .topics > h2, :scope > .container > .steps-wrap > h2');
+  const h = q(root, ':scope > .container > h2.section-title, :scope > .container > h2, :scope > .container > .topics > h2, :scope > .container > .steps-wrap > h2, :scope > .container > .bento > .card > .card-body > h2.section-title');
   return h ? `<h2>${inline(h, ctx)}</h2>` : '';
 }
 /** Add variant tokens to the first `<div class="<name>…">` of a section html (same trick as theme.mjs). */
@@ -94,7 +94,7 @@ function productCardRail(root, ctx) {
   for (const n of c.children) {
     const t = n.tagName.toLowerCase();
     if (t === 'ul' && q(n, ':scope > li')) { flush(); const b = cardsBlock(n, ctx, listVariant(n)); if (b) { parts.push(b); blocks.add('cards'); } continue; }
-    if (t === 'article' && cls(n).includes('promo')) { flush(); const img = q(n, 'img'); parts.push(block('columns', ['promo'], [[img ? pic(img, ctx) : '', prose(q(n, '.promo-text') || n, ctx)]])); blocks.add('columns'); continue; }
+    if ((t === 'article' && cls(n).includes('promo')) || cls(n).includes('promo-row')) { flush(); const art = t === 'article' ? n : (q(n, 'article.promo, .promo') || n); const img = q(art, 'img') || q(n, '.promo-art img') || (art.previousElementSibling && q(art.previousElementSibling, 'img')); parts.push(block('columns', ['promo'], [[img ? pic(img, ctx) : '', prose(q(art, '.promo-text, .card-body') || art, ctx)]])); blocks.add('columns'); continue; }
     if (/^h[1-6]$/.test(t)) { buf += `<h2>${inline(n, ctx)}</h2>`; continue; }
     buf += prose({ childNodes: [n] }, ctx);
   }

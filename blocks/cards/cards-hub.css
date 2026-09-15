@@ -1,105 +1,70 @@
-/* cards — hub family group additions (additive variants only; imported by cards.css) */
+/* cards-hub.css — hub group (category-hub · kundeservice-hub · tool · utility), round 01. Additive variants over the base card language;
+   the group file is @imported BEFORE the base rules, so every rule here carries one extra class of specificity. Measured against the
+   approved prototypes (stardust/scripts/proto/pages/nb-bank-privat-lan-html.mjs § HUB_CSS and the family CSS strings). */
+/* ===== category-hub ===== */
+/* doors (photo cards) + small doors (icon cards): body 28/28/32,
+48 px material icon 6 px above the title */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.doors li.card .card-body,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.icons li.card .card-body,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.tools li.card .card-body,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.tips li.card .card-body,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.directory li.card .card-body,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.address li.card .card-body { padding: 28px 28px 32px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.icons .card-media.card-illu,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.popular .card-media.card-illu { margin-bottom: 6px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.icons .card-media.card-illu img,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.popular .card-media.card-illu img,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.topics .card-media.card-illu img { width: 48px; height: 48px; }
+/* popular loans: compact icon cards */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.popular li.card .card-body { padding: 24px 24px 28px; }
+/* help columns: two photo cards 6 + 6,
+title at t-title,
+button as the card's action */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.help li.card .card-body { padding: 36px 40px 40px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.help .card-title :is(h2, h3) { font-size: var(--t-title); line-height: 1.14; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.help .card-text p { max-width: 60ch; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.help .card-text + .card-link,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.promo .card-text + .card-link { margin-top: 16px; }
+/* promo (banner): one card,
+spot illustration on the tint beside the teaser; promo-2 = two cards 6 + 6 */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.promo li.card { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; min-height: 240px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.promo li.card .card-media { display: flex; align-items: center; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.promo .card-media img.card-image { width: 180px; max-width: 100%; height: auto; aspect-ratio: revert-layer; object-fit: contain; margin: 24px 0 24px 40px; background: transparent; transition: transform 0.5s var(--spring); }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.promo li.card:hover .card-image,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.promo li.card:focus-within .card-image { transform: scale(1.06) rotate(-2deg); }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.promo li.card .card-body { justify-content: center; padding-inline: 40px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.promo .card-text p { max-width: 60ch; }
+/* ===== kundeservice-hub ===== */
+/* topic tiles: icon + title in a row */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.topics li.card .card-body { padding: 28px 28px 32px; flex-direction: row; align-items: center; gap: 16px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.topics li.card .card-body > * + * { margin-top: 0; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.topics .card-media.card-illu { margin: 0; flex: none; }
+/* ===== utility ===== */
+/* bank directory: name link + phone / channel arrow links */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.directory .card-links { margin-top: 14px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.directory .card-links a:any-link { overflow-wrap: anywhere; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.directory .card-title a::after { content: none; }/* partners: one Frost card across the bento,
+links in a row */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.partners li.card { grid-column: 1 / -1; background: var(--frost-30); }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.partners li.card .card-body { padding: 32px 40px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.partners .card-links { margin-top: 12px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.partners .card-links ul { display: flex; flex-wrap: wrap; gap: 8px 32px; }/* addresses: term + tabular lines */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.address .card-text { margin-top: 8px; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.address .card-text p { line-height: 1.5; font-variant-numeric: tabular-nums; }/* generic single card (note) */
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.note li.card { grid-column: 1 / -1; }
 
-/* the `small` variant token shares its name with the foundation utility .small (14px) — reset the block to body size */
-.cards.small { font-size: var(--body); line-height: var(--line-height-body); }
-
-/* ===== category-hub: doors (2×2 photo doors, h2 title-sm) · small (4 icon tiles, 40px icon) · popular (4-col icon + h3 tiles on Sand-30) ===== */
-.cards ul.cards-list.door-grid { grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); }
-.cards li.door { gap: 4px; }
-.cards li.door .card-media { margin-bottom: 8px; }
-.cards li.door .card-title :is(h2, h3) { text-wrap: pretty; }
-.cards ul.cards-list.small-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--spacing-lg); }
-.cards li.tile.small-door { gap: 8px; padding-top: var(--spacing-md); border-top: 1px solid var(--lysgraa); }
-.cards li.tile.small-door .card-media img { width: 40px; height: 40px; aspect-ratio: auto; object-fit: contain; border-radius: 0; background: transparent; }
-.cards li.tile.small-door .card-title :is(h2, h3) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; text-wrap: pretty; }
-main .section .cards-wrapper + .cards-wrapper:has(.cards.small) { margin-top: var(--spacing-xl); }
-.cards ul.cards-list.pop-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--spacing-lg); }
-.cards li.tile.pop-tile { grid-template-columns: 48px 1fr; align-items: start; gap: var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--lysgraa); }
-.cards li.tile.pop-tile .card-media img { width: 48px; height: 48px; aspect-ratio: auto; object-fit: contain; border-radius: 0; background: transparent; }
-.cards li.tile.pop-tile .card-title :is(h2, h3) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; text-wrap: balance; }
-
-/* ===== kundeservice-hub: tools (4 hairline tiles under the hero, h3 title-sm) · topics (3-col icon + link rows) ===== */
-.cards ul.cards-list.tools { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--spacing-lg); }
-.cards li.tool { gap: 6px; padding-top: var(--spacing-md); border-top: 1px solid var(--lysgraa); }
-.cards li.tool .card-title :is(h2, h3) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; text-wrap: balance; }
-.cards li.tool:hover .card-title a,
-.cards li.tool:focus-within .card-title a { text-underline-offset: 0.12em; }
-main .section .hero-wrapper + .cards-wrapper:has(.cards.tools) { margin-top: 40px; }
-.cards ul.cards-list.topics { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-md) var(--spacing-lg); }
-.cards li.topic { display: flex; align-items: center; gap: var(--spacing-md); padding: var(--spacing-sm) 0; border-top: 1px solid var(--lysgraa); min-height: 64px; }
-.cards li.topic .card-media { flex: 0 0 auto; }
-.cards li.topic .card-media img { width: 48px; height: 48px; aspect-ratio: auto; object-fit: contain; border-radius: 0; background: transparent; }
-.cards li.topic .card-link { flex: 1 1 auto; }
-.cards li.topic .card-link p { margin: 0; }
-.cards li.topic .card-link a:any-link { display: flex; align-items: center; min-height: 44px; font-family: var(--title-font-family); font-size: var(--lead); color: var(--fjell); text-decoration: none; }
-.cards li.topic .card-link a::after { content: ""; position: absolute; inset: 0; }
-.cards li.topic:hover .card-link a,
-.cards li.topic:focus-within .card-link a { color: var(--vann); text-decoration: underline; }
-
-@media (width >= 1024px) {
-  .cards li.tool .card-title :is(h2, h3) { min-height: 2.5em; }
-}
-
-@media (width <= 1023px) {
-  .cards ul.cards-list.small-grid,
-  .cards ul.cards-list.pop-grid,
-  .cards ul.cards-list.tools,
-  .cards ul.cards-list.topics { grid-template-columns: 1fr 1fr; }
-  main .section .hero-wrapper + .cards-wrapper:has(.cards.tools) { margin-top: var(--spacing-2xl); }
-}
-
-@media (width <= 640px) {
-  .cards ul.cards-list.door-grid { grid-template-columns: 1fr; gap: var(--spacing-lg); }
-  .cards ul.cards-list.small-grid { grid-template-columns: 1fr; gap: var(--spacing-md); }
-  main .section .cards-wrapper + .cards-wrapper:has(.cards.small) { margin-top: var(--spacing-lg); }
-  .cards li.tile.small-door { grid-template-columns: 40px 1fr; grid-template-areas: "icon title" "icon text"; gap: 2px var(--spacing-md); align-items: center; }
-  .cards li.tile.small-door .card-media { grid-area: icon; }
-  .cards li.tile.small-door .card-title { grid-area: title; }
-  .cards li.tile.small-door .card-text { grid-area: text; }
-  .cards ul.cards-list.pop-grid { grid-template-columns: 1fr; gap: var(--spacing-sm); }
-  .cards li.tile.pop-tile { grid-template-columns: 48px 1fr; grid-template-areas: none; gap: var(--spacing-md); padding-top: var(--spacing-sm); align-items: start; }
-  .cards li.tile.pop-tile .card-media,
-  .cards li.tile.pop-tile .card-title { grid-area: auto; }
-  .cards li.tile.pop-tile .card-media img { width: 48px; height: 48px; }
-  .cards ul.cards-list.tools { grid-template-columns: 1fr; gap: var(--spacing-md); }
-  main .section .hero-wrapper + .cards-wrapper:has(.cards.tools) { margin-top: var(--spacing-lg); }
-  .cards ul.cards-list.topics { grid-template-columns: 1fr; gap: 0; }
-  .cards li.topic { min-height: 56px; }
-}
-
-/* ===== hub siblings: photo-tiles (3 photo tiles: tag · h3 link · prose) · pop tiles without an icon · usp (icon · title-sm · line) ===== */
-.cards ul.cards-list.card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-lg); }
-.cards li.tile.card-tile { gap: 8px; }
-.cards li.tile.card-tile .card-media { margin-bottom: 8px; }
-.cards li.tile.card-tile .card-media img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius-img-sm) 0 var(--radius-img-sm) 0; background: var(--frost-30); }
-.cards li.tile.card-tile .card-title :is(h2, h3) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
-.cards li.tile.card-tile .card-title:has(a) a::after { content: ""; position: absolute; inset: 0; }
-.cards li.tile.card-tile .card-title + .card-title :is(h2, h3, h4) { font-size: var(--lead); line-height: 1.3; }
-.cards li.tile.card-tile .meta { order: -1; }
-.cards li.tile.card-tile .card-media + .meta { order: 0; }
-.cards li.tile.pop-tile:not(:has(.card-media)) { grid-template-columns: 1fr; gap: 8px; }
-.cards li.tile.pop-tile .card-text p { color: var(--koksgraa); }
-.cards ul.cards-list.usp-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-lg) var(--spacing-xl); }
-.cards li.usp-item { grid-template-columns: 72px minmax(0, 1fr); gap: var(--spacing-xs) var(--spacing-md); align-items: start; padding-top: var(--spacing-md); border-top: 1px solid var(--lysgraa); }
-.cards li.usp-item .card-media { grid-column: 1; grid-row: 1 / span 2; }
-.cards li.usp-item .card-media img { width: 72px; height: 72px; aspect-ratio: auto; object-fit: contain; border-radius: 0; background: transparent; }
-.cards li.usp-item .card-title,
-.cards li.usp-item .card-text { grid-column: 2; }
-.cards li.usp-item .card-title :is(h2, h3) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; }
-.cards li.usp-item .card-title a::after { content: none; }
-
-@media (width <= 1023px) {
-  .cards ul.cards-list.card-grid,
-  .cards ul.cards-list.usp-list { grid-template-columns: 1fr 1fr; }
-}
-
-@media (width <= 640px) {
-  .cards ul.cards-list.card-grid,
-  .cards ul.cards-list.usp-list { grid-template-columns: 1fr; }
-  .cards li.tile.card-tile { grid-template-columns: 1fr; grid-template-areas: none; }
-  .cards li.tile.card-tile .card-media,
-  .cards li.tile.card-tile .card-title,
-  .cards li.tile.card-tile .card-text { grid-area: auto; }
-  .cards li.tile.card-tile .card-media img { width: 100%; height: auto; }
-  .cards li.tile.pop-tile:not(:has(.card-media)) { grid-template-columns: 1fr; }
+@media (width <= 767px) {
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.popular li.card .card-body { flex-direction: row; align-items: center; gap: 16px; padding: 20px; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.popular li.card .card-body > * + * { margin-top: 0; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.popular .card-media.card-illu { margin: 0; flex: none; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.tools li.card .card-body,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.topics li.card .card-body { padding: 24px 20px; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.help li.card .card-body { padding: 28px 20px 32px; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.promo li.card { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.promo .card-media img.card-image { margin: 24px 20px 0; width: 120px; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.promo li.card .card-body { padding-inline: 20px; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.help .card-link a.button,
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.promo .card-link a.button { width: 100%; padding: 17px 20px; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.partners li.card .card-body { padding: 28px 20px; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .cards.partners .card-links ul { display: grid; gap: 8px; }
 }

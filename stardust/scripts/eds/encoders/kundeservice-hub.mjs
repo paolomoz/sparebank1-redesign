@@ -1,37 +1,37 @@
 /**
- * encoders/kundeservice-hub.mjs — hub group (worker E4): the kundeservice hub. New shared key: `hero-ask`.
- * Family overrides: `faq` (side-by-side head + wide answers with per-answer rating), `topic-tiles` (icon + link tiles), `promo-band`.
+ * encoders/kundeservice-hub.mjs — hub group (worker E4): the kundeservice hub, round 01. New shared key: `hero-ask`.
+ * Family overrides: `faq` (centred title, rated answers), `topic-tiles` (icon + title cards, 3-up), `promo-band` (full-bleed promo row).
  */
 import * as L from '../lib.mjs';
-import { cardRows } from '../encoders.mjs';
-import { hubStyle, head, hubPromo, cardVariant, hubFaq, hubTitle } from './category-hub.mjs';
+import { hubStyle, head, hubPromo, hubFaq, hubTitle, hubCards, bentoBlock, proseExcept , hubRichText } from './category-hub.mjs';
 
-const { q, qa, txt, inline, prose, pic, block, section, esc } = L;
+const { q, qa, txt, inline, block, section, pic } = L;
 
-/* ---- hero-ask: split hero (photo · h1 + title + lead + line) + the chat form row (label · button label · note) + the tool tiles ---- */
+/* ---- hero-ask: the ask card (h1 · sub-heading · lead · line · chat form) beside the photo card, then the tool cards 6 px below ----
+ *      hero (hub ask): row 1 [photo][h1, h2, leads]; row 2 [field label + note][button label] (dynamics #6 interim, hero.js builds the disabled form). */
 function heroAsk(root, ctx) {
-  const img = q(root, '.hero-media img, figure img'); const h1 = q(root, 'h1'); const text = q(root, '.hero-text');
-  let body = h1 ? `<h1>${inline(h1, ctx)}</h1>` : '';
-  for (const n of text ? [...text.children] : []) { if (n.tagName === 'FORM') continue; body += prose({ childNodes: [n] }, ctx); }
+  const card = q(root, '.hero-ask-card > .card-body, .hero-card > .card-body, .hero-text'); const img = q(root, '.hero-media img, figure img');
+  if (!card) return null;
   const form = q(root, 'form.ask, form');
-  const rows = [[img ? pic(img, ctx) : '', body]];
+  const rows = [img ? [pic(img, ctx), proseExcept(card, null, ctx)] : [proseExcept(card, null, ctx)]];
   if (form) {
     const label = q(form, 'label'); const btn = q(form, 'button'); const note = q(form, '.ask-note, p');
-    rows.push([`<p>${inline(label, ctx).trim()}</p><p>${inline(note, ctx).trim()}</p>`, `<p>${esc(txt(btn))}</p>`]);
+    rows.push([`<p>${inline(label, ctx).trim()}</p>${note ? `<p>${inline(note, ctx).trim()}</p>` : ''}`, `<p>${L.esc(txt(btn))}</p>`]);
     ctx.notes.push('hero-ask: chat form (dynamics #6 interim — controls disabled) authored as a second two-cell row [field label + note][button label]; the textarea placeholder repeats the label (@ew-exempt in hero.js)');
   }
-  const parts = [block('hero', ['ask'], rows)]; const blocks = ['hero'];
-  const tools = q(root, 'ul.tools, ul[data-slot="tools"]');
-  if (tools) { const rows = cardRows(qa(tools, ':scope > li'), ctx); parts.push(block('cards', ['tools'], rows.some((r) => r[0]) ? rows : rows.map((r) => [r[1]]))); blocks.push('cards'); }
-  for (const p of qa(root, '.hero-grid > p, .container > p')) if (!p.closest('.hero-text, form, ul')) parts.push(/class="btn|link-more/.test(p.innerHTML) ? L.ctas(p, ctx) : `<p>${inline(p, ctx).trim()}</p>`); // e.g. the bedrift hub's "Se priser …" link under the tool tiles
-  return { html: section(parts, { style: hubStyle(root) }), blocks };
+  const parts = [block('hero', ['hub', 'ask'], rows)]; const blocks = ['hero'];
+  const tools = q(root, 'ul.tools, ul[data-slot="cards"]');
+  if (tools) { const b = bentoBlock(tools, ctx, 'tools'); if (b) { parts.push(b); blocks.push('cards'); } }
+  for (const p of qa(root, ':scope > .container > p')) if (!p.closest('.hero-bento, form, ul')) parts.push(/class="btn|link-more/.test(p.innerHTML) ? L.ctas(p, ctx) : `<p>${inline(p, ctx).trim()}</p>`); // e.g. the bedrift hub's "Se priser …" link under the tool cards
+  return { html: section(parts, { style: hubStyle(root, tools ? 'stack' : null) }), blocks };
 }
 
-/* ---- topic-tiles: icon + single link per tile → cards (topics), one row [icon][link] ---- */
+/* ---- topic-tiles: icon + title cards → cards (topics cols-3); legacy [icon][link] tiles → the same block with h3 titles ---- */
 function topicTiles(root, ctx) {
-  const ul = q(root, 'ul.topics, ul[data-slot="tiles"], ul'); if (!ul) return null;
-  const rows = qa(ul, ':scope > li').map((li) => { const img = q(li, 'img'); const a = q(li, 'a'); return [img ? pic(img, ctx) : '', a ? `<p><a href="${esc(L.href(a.getAttribute('href') || '', ctx))}">${inline(a, ctx).trim()}</a></p>` : prose(li, ctx)]; });
-  return { html: section([head(root, ctx), block('cards', [cardVariant(ul) === 'flat' ? 'topics' : cardVariant(ul)], rows)], { style: hubStyle(root) }), blocks: ['cards'] };
+  if (q(root, 'ul[data-slot]')) return hubCards(root, ctx, { variantOf: () => 'topics' });
+  const ul = q(root, 'ul'); if (!ul) return null;
+  const rows = qa(ul, ':scope > li').map((li) => { const img = q(li, 'img'); const a = q(li, 'a'); return [img ? pic(img, ctx) : '', a ? `<h3><a href="${L.esc(L.href(a.getAttribute('href') || '', ctx))}">${inline(a, ctx).trim()}</a></h3>` : L.prose(li, ctx)]; });
+  return { html: section([head(root, ctx), block('cards', ['topics', 'cols-3'], rows)], { style: hubStyle(root) }), blocks: ['cards'] };
 }
 
 export default {
@@ -40,4 +40,5 @@ export default {
   faq: hubFaq,
   'topic-tiles': topicTiles,
   'promo-band': hubPromo,
+  'rich-text': hubRichText,
 };

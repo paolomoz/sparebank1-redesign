@@ -58,7 +58,7 @@
  ],
  "notes": [
   "media: illustrasjon-liten-penger.svg is 95992 B of SVG (> 40000) — authored as DA media illustrasjon-liten-penger.png",
-  "page-title (intro-media): text + photo intro → hero (intro) — photo right, h1 + leads + pills left",
+  "page-title: hero (hub tile) — text card 5 + media card 7; h1, leads and CTAs are the text cell, the back link rides the breadcrumbs block (moved into the card by hero.js)",
   "currency-converter: dynamics #9 interim — the captured selection/amount/result are authored [label][value] rows, controls disabled; the currency option lists are the live widget's data (not authored)",
   "faq: the \"Var dette nyttig?\" rating row is accordion `rate` chrome (@ew-exempt labels, dynamics #5 interim)",
   "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the row carries the question and the two labels"
@@ -67,5 +67,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-liten-penger.svg"
  ],
- "writtenAt": "2026-09-14T23:40:48.686Z"
+ "writtenAt": "2026-09-15T15:02:43.348Z"
 }

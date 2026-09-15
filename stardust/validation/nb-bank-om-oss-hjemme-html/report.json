@@ -1,7 +1,7 @@
 {
  "slug": "nb-bank-om-oss-hjemme-html",
  "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/prototypes/nb-bank-om-oss-hjemme-html-proposed.html",
- "at": "2026-09-14T23:08:04.680Z",
+ "at": "2026-09-15T14:39:00.973Z",
  "contract": {
   "rootFirst": true,
   "tokensMissing": [],
@@ -27,17 +27,19 @@
    "headingSkips": 0,
    "headings": 10,
    "sectionsNoAttr": [],
-   "btnSmall": 0,
-   "btnSmallList": [],
+   "btnSmall": 4,
+   "btnSmallList": [
+    "a.logo@30px \"\"",
+    "a.footer-logo@30px \"\"",
+    "a.with-icon@20px \"Linkedin\"",
+    "a.with-icon@20px \"YouTube\""
+   ],
    "lowContrast": [],
    "lowContrastCount": 0,
    "lazyLCP": null,
    "focusRing": true,
-   "docHeight": 5879,
+   "docHeight": 5945,
    "smoke": {
-    "navOpen": true,
-    "ariaExpanded": "true",
-    "navClosedByEsc": true,
     "ctaReachableByKeyboard": true,
     "hovered": true
    }
@@ -45,7 +47,7 @@
   "768": {
    "console": [],
    "failed": [],
-   "externalFulfilled": 7,
+   "externalFulfilled": 9,
    "exceptions": [],
    "overflowX": 0,
    "wide": [],
@@ -61,17 +63,19 @@
    "headingSkips": 0,
    "headings": 10,
    "sectionsNoAttr": [],
-   "btnSmall": 3,
+   "btnSmall": 5,
    "btnSmallList": [
-    "a.@36px \"Privat\"",
-    "a.@36px \"Bedrift\"",
-    "a.is-active@36px \"Om oss\""
+    "a.logo@30px \"\"",
+    "a.btn@34px \"Logg inn\"",
+    "a.footer-logo@30px \"\"",
+    "a.with-icon@20px \"Linkedin\"",
+    "a.with-icon@20px \"YouTube\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
    "lazyLCP": null,
    "focusRing": true,
-   "docHeight": 4767,
+   "docHeight": 4979,
    "smoke": {
     "ctaReachableByKeyboard": true,
     "hovered": true
@@ -80,7 +84,7 @@
   "1440": {
    "console": [],
    "failed": [],
-   "externalFulfilled": 7,
+   "externalFulfilled": 9,
    "exceptions": [],
    "overflowX": 0,
    "wide": [],
@@ -96,17 +100,20 @@
    "headingSkips": 0,
    "headings": 10,
    "sectionsNoAttr": [],
-   "btnSmall": 3,
+   "btnSmall": 10,
    "btnSmallList": [
-    "a.@36px \"Privat\"",
-    "a.@36px \"Bedrift\"",
-    "a.is-active@36px \"Om oss\""
+    "a.@32px \"Privat\"",
+    "a.@32px \"Bedrift\"",
+    "a.is-active@32px \"Om oss\"",
+    "a.logo@36px \"\"",
+    "a.tool-text@19px \"Bli kunde\"",
+    "a.tool-search@22px \"Søk\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
    "lazyLCP": null,
    "focusRing": true,
-   "docHeight": 5097,
+   "docHeight": 4068,
    "smoke": {
     "ctaReachableByKeyboard": true,
     "hovered": true
@@ -115,10 +122,16 @@
  },
  "mobileNav": {
   "over": 0,
-  "minFont": 14,
-  "minGap": 0,
+  "minFont": 12,
+  "minGap": null,
   "collapse": "hamburger"
  },
  "pass": true,
- "issues": []
+ "issues": [
+  {
+   "sev": "P2",
+   "where": "390",
+   "msg": "4 interactive elements < 40px tall: a.logo@30px \"\", a.footer-logo@30px \"\", a.with-icon@20px \"Linkedin\", a.with-icon@20px \"YouTube\""
+  }
+ ]
 }

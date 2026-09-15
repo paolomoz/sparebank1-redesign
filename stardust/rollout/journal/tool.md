@@ -13,3 +13,9 @@
 
 ## Open questions
 - Sparekalkulator has no captured content at all; the page ships without the widget until the owner supplies the shell (dynamics #8).
+
+## 2026-09-15 — round 01 (bento card language) EDS conversion — E4
+- Approved round-01 prototype re-migrated (Path A) and converted through the hub encoders rewritten for bento markup: `ul.bento[data-slot] > li.card` → `cards (<variant> cols-N)` via `bentoRows`/`hubCards` (one row per card, authored order), `div.bento.hero-bento` → `hero (hub …)`, `li.card.promo` → `cards (promo [promo-2])`, `full-bleed` from `data-layout="full-bleed-grid"`; section tokens `stack` (6 px between blocks), `bento-top`, `head-centered`, `shortcuts`, `prose-hub`, `figure` (styles-hub.css). All group CSS is scoped to the template body classes (coordinator note) and imported before the base, hence the extra specificity.
+- Round-0 group variants were reset; only what these archetypes needed was re-added (blocks/{cards,hero,columns,callout,feedback,accordion}/*-hub.css).
+- Traps met: an empty first hero cell makes hero.js drop the text cell (author one cell when there is no media); `display: grid` on a list item splits its inline `<strong>` runs (counter is now an absolute ::before); variant tokens `title`/`small` collide with the canon `.title`/`.small` compounds (renamed `text-only` / `icons spot`); `aspect-ratio: auto` on an authored image discards the UA attribute ratio (`revert-layer`); the base fills hero/split photo cells absolutely at ≤ 767 only — hub heroes fill on desktop too (prototype `.media-photo`), tiles/portraits opt out at ≤ 1024.
+- Results: see eds-progress/tool.json (1440 and 360 pixel/Δh pass; open chrome/gate-instrument items in eds-requests.md § hub — round 01).

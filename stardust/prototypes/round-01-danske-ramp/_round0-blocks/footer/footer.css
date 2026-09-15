@@ -1,0 +1,93 @@
+/* footer — canon chrome (stardust/canon/canon.css § footer), selectors adapted to the EDS DOM. */
+footer .footer > div { max-width: none; padding: 0; }
+footer .container { width: min(100% - 2 * var(--gutter), var(--max-width)); margin-inline: auto; }
+footer ul,
+footer ol { list-style: none; margin: 0; padding: 0; }
+footer li { margin: 0; }
+footer p { margin: 0; }
+
+/* contact row */
+footer .contact { padding-block: var(--section-padding); border-top: 1px solid var(--lysgraa); }
+footer .contact-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; margin-bottom: var(--spacing-lg); }
+footer .channels { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); grid-auto-flow: row dense; gap: 16px; }
+footer .channel details { border-radius: var(--radius); }
+
+footer .channel summary {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color var(--dur) var(--ease);
+}
+
+footer .channel summary::-webkit-details-marker { display: none; }
+footer .channel .ch-text { display: grid; grid-template-columns: auto 22px; column-gap: 6px; align-items: center; }
+footer .channel .ch-name { grid-column: 1; font-family: var(--title-font-family); color: var(--fjell); font-size: var(--lead); }
+footer .channel .ch-text > svg { grid-column: 2; width: 22px; height: 22px; fill: none; stroke: var(--vann); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform var(--dur) var(--ease); }
+footer .channel details[open] .ch-text > svg { transform: rotate(180deg); }
+footer .channel .ch-sub { grid-column: 1 / -1; font-size: var(--body-sm); color: var(--koksgraa); }
+footer .channel summary:hover { background: var(--frost-30); }
+footer .channel summary:hover .ch-name { text-decoration: underline; }
+
+footer .icon-circle { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: var(--vann); color: #fff; }
+footer .icon-circle svg { width: 26px; height: 26px; fill: none; stroke: currentcolor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+footer .channel .panel { grid-column: 1 / -1; padding: 16px 16px 8px; }
+footer .channel details[open] { grid-column: 1 / -1; background: var(--sand-30); }
+footer .channel details[open] summary { background: transparent; }
+footer .channel li:has(details[open]) { grid-column: 1 / -1; }
+footer .panel-title { font-family: var(--title-font-family); font-size: var(--lead); color: var(--fjell); }
+footer .panel-title .num { font-family: var(--body-font-family); }
+footer .panel .small { font-size: var(--body-sm); line-height: 1.45; margin-top: 8px; }
+footer .bank-numbers { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px 32px; margin-top: 16px; }
+footer .bank-numbers > li { border-top: 1px solid var(--lysgraa); padding-top: 12px; }
+footer .bank-name { font-family: var(--title-font-family); color: var(--fjell); text-decoration: none; }
+footer .bank-name:hover { text-decoration: underline; }
+footer .markets { margin: 8px 0 0; display: grid; gap: 6px; }
+footer .markets li { display: flex; flex-wrap: wrap; gap: 4px 8px; font-size: var(--body-sm); line-height: 1.45; }
+footer .markets li strong { font-family: var(--title-font-family); font-size: var(--body); }
+footer .markets li a.num { font-size: var(--body); }
+footer .bank-links { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px 24px; }
+footer .bank-links li { padding: 10px 0; border-top: 1px solid var(--lysgraa); }
+footer .office-search { display: grid; gap: 4px; max-width: 420px; margin-top: 12px; }
+footer .office-search label { font-size: var(--label); font-family: var(--title-font-family); letter-spacing: 0.01em; }
+footer .router-controls { display: flex; gap: 8px; flex-wrap: wrap; }
+footer .router-input { min-height: 44px; width: 9.5rem; padding: 10px 14px; border: 1px solid var(--lysgraa); border-radius: var(--radius-sm); font: var(--body) / 1.2 var(--body-font-family); color: var(--color-fg); background: #fff; }
+footer .router-input:focus-visible { outline: 2px solid var(--sol); outline-offset: 2px; border-color: var(--vann); }
+
+/* Fjell columns */
+footer .footer-main { background: var(--fjell); color: #fff; padding-block: var(--section-padding); }
+footer .footer-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+footer .footer-col h2 { color: #fff; font-family: var(--title-font-family); font-size: var(--title); line-height: 1.15; margin-bottom: 12px; }
+footer .footer-col a:any-link { display: inline-flex; align-items: center; min-height: 44px; color: #fff; text-decoration: none; }
+footer .footer-col a.with-icon { gap: 8px; }
+footer .footer-col a.with-icon picture,
+footer .footer-col a.with-icon img { width: 20px; height: 20px; display: block; border-radius: 0; }
+footer .footer-col a:hover { text-decoration: underline; color: #fff; }
+
+/* Natt legal band */
+footer .footer-legal { background: var(--natt); color: #fff; padding-block: 24px; font-size: var(--body-sm); }
+footer .footer-legal-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; }
+footer .small-links ul { display: flex; flex-wrap: wrap; gap: 0 24px; }
+footer .small-links a:any-link { display: inline-flex; align-items: center; min-height: 44px; color: #fff; text-decoration: none; }
+footer .small-links a:hover { text-decoration: underline; color: #fff; }
+footer .address { opacity: 0.9; display: flex; align-items: center; }
+
+@media (width <= 1023px) {
+  footer .channels { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  footer .footer-cols { grid-template-columns: 1fr 1fr; }
+}
+
+@media (width <= 640px) {
+  footer .channels { grid-template-columns: 1fr 1fr; }
+  footer .channel summary { padding: 12px; }
+  footer .icon-circle { width: 48px; height: 48px; }
+  footer .footer-cols { grid-template-columns: 1fr; }
+}
+
+@media (width <= 400px) {
+  footer .channels { grid-template-columns: 1fr; }
+}

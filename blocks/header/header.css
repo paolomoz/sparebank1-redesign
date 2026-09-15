@@ -1,11 +1,5 @@
-/* header — canon chrome (stardust/canon/canon.css § header), selectors adapted to the EDS DOM: the authored links keep their <p>/<ul>. */
-header .header {
-  background: #fff;
-  border-bottom: 1px solid var(--lysgraa);
-  position: relative;
-  z-index: 20;
-}
-
+/* header — round 01 chrome (stardust/canon/canon.css § header): 32 px Sand-70 settings bar + 80 px white main bar; sticky hide/reveal. */
+header .header { background: #fff; position: relative; z-index: 20; }
 header .header > div { max-width: none; padding: 0; }
 
 header .skip a {
@@ -21,153 +15,109 @@ header .skip a {
 
 header .skip a:focus { top: 8px; }
 
-header .container { width: min(100% - 2 * var(--gutter), var(--max-width)); margin-inline: auto; }
-header .hdr-utility { border-bottom: 1px solid var(--lysgraa); }
-header .hdr-utility-row { display: flex; align-items: center; justify-content: space-between; min-height: 44px; gap: 16px; }
-header .audience ul,
-header .audience-mobile ul { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
-header .audience li,
-header .audience-mobile li { margin: 0; }
+header .container { width: min(100% - 2 * var(--gutter), var(--max-width) - 2 * var(--gutter)); margin-inline: auto; }
+header p { margin: 0; }
+header ul { list-style: none; margin: 0; padding: 0; }
+header li { margin: 0; }
 
-header .audience a,
-header .audience-mobile a {
-  display: inline-flex;
+/* settings bar */
+header .settings-bar { background: var(--sand-70); height: var(--settings-h); }
+header .audience ul { display: flex; height: var(--settings-h); }
+
+header .audience a:any-link {
+  display: flex;
   align-items: center;
-  min-height: 36px;
-  padding: 0 12px;
-  color: var(--fjell);
-  text-decoration: none;
-  font-size: var(--body-sm);
-  border-radius: var(--radius-pill);
+  height: 100%;
+  padding: 0 20px;
   font-family: var(--title-font-family);
-}
-
-header .audience li.is-active a,
-header .audience-mobile li.is-active a { background: var(--frost-30); }
-header .audience a:hover,
-header .audience-mobile a:hover { color: var(--vann); }
-header .hdr-actions { display: flex; align-items: center; gap: 8px; }
-header .hdr-actions p,
-header .nav-extra-actions p { margin: 0; }
-
-/* Søk: canon .btn-icon */
-header .search-wrap a {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  min-height: 40px;
-  padding: 6px 10px;
+  font-size: 13px;
   color: var(--fjell);
   text-decoration: none;
-  border-radius: var(--radius-sm);
-  font-size: var(--body-sm);
 }
 
-header .search-wrap a svg { width: 22px; height: 22px; fill: none; stroke: currentcolor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
-header .search-wrap a:hover { background: var(--frost-30); color: var(--fjell); }
+header .audience a:hover { color: var(--vann); }
+header .audience li.is-active a { background: #fff; }
 
-/* Bli kunde (secondary) · Logg inn (accent): canon .btn-sm */
-header a.button:any-link { min-height: 40px; padding: 8px 18px; font-size: var(--body-sm); }
-header .hdr-main-row { position: relative; display: flex; align-items: center; gap: 32px; min-height: 64px; }
-header .logo { display: flex; align-items: center; flex: 0 0 auto; width: 140px; min-height: 44px; }
-header .logo p { margin: 0; line-height: 0; }
+/* main bar */
+header .main-bar { height: var(--mainbar-h); background: #fff; }
+header .main-row { display: flex; align-items: center; height: var(--mainbar-h); gap: 40px; }
+header .logo { flex: none; line-height: 0; }
 header .logo a { display: block; }
-header .logo picture,
-header .logo img { display: block; width: 140px; height: auto; border-radius: 0; }
-header .hdr-mobile-actions { display: none; margin-left: auto; }
-header .hdr-mobile-actions p { margin: 0; }
+header .logo picture { display: block; }
+header .logo img { display: block; height: 36px; width: auto; border-radius: 0; }
+header .primary { flex: 1 1 auto; min-width: 0; }
+header .primary .panel-top,
+header .primary .audience-m,
+header .primary .service { display: none; }
+header .primary .market ul { display: flex; gap: 20px; }
+header .primary .market a:any-link { font-size: 14px; line-height: 1; color: var(--svart); text-decoration: none; white-space: nowrap; transition: color 0.2s var(--ease); }
+header .primary .market a:hover,
+header .primary .market li.is-active a { color: var(--vann); }
+header .tools { display: flex; align-items: center; gap: 20px; margin-left: auto; flex: none; }
+header .tool-text a:any-link,
+header .tool-text a.button:any-link { display: inline; padding: 0; border: 0; background: none; font: 14px / 1 var(--body-font-family); color: var(--svart); text-decoration: none; border-radius: 0; }
+header .tool-text a:hover { color: var(--vann); }
+header .tool-search a:any-link { display: inline-flex; color: var(--svart); text-decoration: none; }
+header .tool-search a svg { width: 22px; height: 22px; fill: none; stroke: currentcolor; stroke-width: 1.8; stroke-linecap: round; }
+header .tool-search a:hover { color: var(--vann); }
+header .tool-login a.button:any-link { font-size: 14px; padding: 10px 16px; }
+header .menu-toggle { display: none; }
 
-header .ds-nav-toggle {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-  border: 0;
+@media (width <= 1320px) {
+  header .primary .market ul { gap: 16px; }
+  header .primary .market a:any-link { font-size: 13px; }
+  header .main-row { gap: 28px; }
 }
 
-header .ds-nav-burger { display: none; }
-header .ds-nav { display: flex; align-items: center; flex: 1 1 auto; gap: var(--spacing-md); }
-header .ds-nav .market ul { display: flex; flex-wrap: wrap; gap: 4px 20px; list-style: none; margin: 0; padding: 0; }
-header .ds-nav .market li { margin: 0; }
+@media (width <= 1140px) {
+  header .settings-bar { display: none; }
+  header .logo img { height: 30px; }
+  header .main-row { gap: 16px; }
+  header .tools .tool-text,
+  header .tools .tool-search { display: none; }
 
-header .ds-nav .market a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  color: var(--fjell);
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  padding: 0 2px;
-  transition: border-color var(--dur) var(--ease);
-}
-
-header .ds-nav .market a:hover,
-header .ds-nav .market li.is-active a { border-bottom-color: var(--vann); color: var(--fjell); }
-header .nav-extra { display: none; }
-
-@media (width <= 1023px) {
-  header .hdr-main-row { gap: 12px; min-height: 60px; }
-
-  header .ds-nav-burger {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    min-height: 40px;
-    margin-left: auto;
-    padding: 8px 12px;
-    font: var(--body-sm) / 1 var(--body-font-family);
-    color: var(--fjell);
-    background: transparent;
-    border: 1px solid var(--fjell);
-    border-radius: var(--radius-pill);
-    user-select: none;
-  }
-
-  header .ds-nav-burger-icon { width: 16px; height: 12px; position: relative; }
-  header .ds-nav-burger-icon::before,
-  header .ds-nav-burger-icon::after { content: ""; position: absolute; left: 0; right: 0; height: 2px; background: currentcolor; }
-  header .ds-nav-burger-icon::before { top: 0; }
-  header .ds-nav-burger-icon::after { bottom: 0; }
-
-  header .ds-nav {
-    position: absolute;
-    top: 100%;
-    left: calc(-1 * var(--gutter));
-    right: calc(-1 * var(--gutter));
+  header .menu-toggle {
+    display: flex;
     flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-    padding: 8px var(--gutter) 24px;
-    background: #fff;
-    border-top: 1px solid var(--lysgraa);
-    border-bottom: 1px solid var(--lysgraa);
-    transform: translateY(-8px);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: transform var(--dur) var(--ease), opacity var(--dur) var(--ease), visibility 0s linear var(--dur);
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 72px;
+    height: var(--mainbar-h);
+    margin-right: calc(-1 * var(--gutter) + 8px);
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--fjell);
+    cursor: pointer;
   }
 
-  header .ds-nav .market ul { display: block; }
-  header .ds-nav .market a { display: flex; min-height: 48px; border-bottom: 1px solid var(--lysgraa); font-size: var(--lead); }
-  header .ds-nav .market li.is-active a { border-bottom: 1px solid var(--lysgraa); color: var(--vann); }
-  header .nav-extra { display: none; }
-  header .audience-mobile ul { gap: 8px; }
-  header .nav-extra-actions { display: flex; flex-wrap: wrap; gap: 8px; }
-  header .ds-nav-toggle:checked ~ .ds-nav { transform: translateY(0); opacity: 1; visibility: visible; pointer-events: auto; transition: transform var(--dur) var(--ease), opacity var(--dur) var(--ease), visibility 0s linear 0s; }
-}
+  header .bars { display: block; width: 19px; height: 15px; position: relative; }
+  header .bars i { position: absolute; left: 0; width: 19px; height: 2px; background: var(--fjell); transition: transform 0.25s var(--ease), opacity 0.2s; }
+  header .bars i:nth-child(1) { top: 0; }
+  header .bars i:nth-child(2) { top: 6.5px; }
+  header .bars i:nth-child(3) { top: 13px; }
+  header .is-open .bars i:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+  header .is-open .bars i:nth-child(2) { opacity: 0; }
+  header .is-open .bars i:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+  header .menu-label { font-family: var(--title-font-family); font-size: 12px; line-height: 1; }
 
-@media (width <= 640px) {
-  header .hdr-utility { display: none; }
-  header .hdr-mobile-actions { display: flex; }
-  header .logo,
-  header .logo picture,
-  header .logo img { width: 118px; }
-  header .nav-extra { display: grid; gap: 12px; padding-top: 16px; }
+  /* the panel (Danske: fixed white panel, tinted top area with search, audience strip, 45 px rows with chevrons) */
+  header .primary { display: none; position: fixed; top: var(--mainbar-h); left: 0; right: 0; bottom: 0; background: #fff; overflow-y: auto; z-index: 60; }
+  header .is-open .primary { display: block; }
+  header .primary .panel-top { display: block; background: var(--sand-70); padding: 24px 16px; }
+  header .panel-search a:any-link { display: flex; align-items: center; gap: 12px; height: 48px; padding: 0 16px; border-radius: var(--radius-sm); background: #fff; color: var(--svart); text-decoration: none; font-size: 16px; }
+  header .panel-search a svg { width: 20px; height: 20px; fill: none; stroke: currentcolor; stroke-width: 1.8; stroke-linecap: round; margin-left: auto; }
+  header .primary .audience-m { display: block; background: var(--sand-70); padding: 0 16px; }
+  header .primary .audience-m ul { display: flex; overflow-x: auto; scrollbar-width: none; }
+  header .primary .audience-m a:any-link { display: flex; align-items: center; height: 40px; padding: 0 20px; font-family: var(--title-font-family); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--fjell); text-decoration: none; white-space: nowrap; }
+  header .primary .audience-m li.is-active a { background: #fff; }
+  header .primary .market { padding: 8px 0 8px 24px; }
+  header .primary .market ul { display: block; }
+  header .primary .market li { border-bottom: 1px solid rgb(0 39 118 / 10%); }
+  header .primary .market a:any-link { display: flex; align-items: center; justify-content: space-between; height: 45px; padding-right: 20px; font-family: var(--title-font-family); font-size: 15px; color: var(--svart); }
+  header .primary .market a::after { content: ""; width: 8px; height: 8px; border-top: 1.5px solid var(--fjell); border-right: 1.5px solid var(--fjell); transform: rotate(45deg); }
+  header .primary .service { display: block; background: var(--sand-30); padding: 8px 0 24px 24px; margin-top: 8px; }
+  header .primary .service a:any-link,
+  header .primary .service a.button:any-link { display: flex; align-items: center; height: 45px; padding: 0; border: 0; border-radius: 0; background: none; font: 15px / 1 var(--title-font-family); color: var(--svart); text-decoration: none; }
 }

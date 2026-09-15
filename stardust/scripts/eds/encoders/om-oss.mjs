@@ -20,9 +20,16 @@ function heroBlock(grid, ctx) {
   return block('hero', ['om-oss'], [img ? [pic(img, ctx), body] : [body]]);
 }
 function campaign(root, ctx) {
-  if (q(root, '.pr-grid')) { // presserom: text 5 / photo 7 on Sand
-    const text = q(root, '.pr-text'); const img = q(root, '.pr-media img');
+  if (q(root, '.pr-grid, .pr-bento')) { // presserom (round 01): Sand text card 5 + photo card 7
+    const text = q(root, '.pr-text, .pr-card > .card-body, .pr-card'); const img = q(root, '.pr-media img, .pr-photo img');
+    ctx.notes.push('campaign (presserom bento): columns (split text-first presserom) — one row [h2, paragraph, CTAs][photo]; the photo card takes its natural height');
     return { html: section([block('columns', ['split', 'text-first', 'presserom'], [[prose(text, ctx), pic(img, ctx)]])], { style: styleOf(paperOf(root)) }), blocks: ['columns'] };
+  }
+  const bento = q(root, '.hero-bento');
+  if (bento) { // round 01: photo card 7 (left) + Frost text card 5
+    const img = q(bento, '.hero-photo img, figure img'); const text = q(bento, '.hero-card > .card-body, .hero-card');
+    ctx.notes.push('campaign (hero bento): hero (om-oss) — [photo][h1, lead]; variant om-oss puts the photo card left (7) and the Frost text card right (5)');
+    return { html: section([block('hero', ['om-oss'], [[img ? pic(img, ctx) : '', prose(text, ctx)]])], { style: styleOf(paperOf(root), 'tight-top') }), blocks: ['hero'] };
   }
   const grid = q(root, '.hero-grid');
   if (!grid) return productHero(root, ctx);
@@ -31,11 +38,14 @@ function campaign(root, ctx) {
 function adviserList(root, ctx) {
   const c = q(root, ':scope > .container') || root; const parts = []; const blocks = [];
   for (const n of c.children) {
-    if (n.matches('ul.advisers')) { parts.push(block('cards', ['advisers'], cardRows(qa(n, ':scope > li'), ctx))); blocks.push('cards'); } else parts.push(one(n, ctx));
+    if (n.matches('ul.advisers')) { const items = qa(n, ':scope > li'); parts.push(block('cards', ['advisers', n.matches('.bento') && items.length >= 2 && items.length <= 4 ? `grid-${items.length}` : null], cardRows(items, ctx))); blocks.push('cards'); } else if (n.matches('.prose, .nat-text')) parts.push(prose(n, ctx)); else parts.push(one(n, ctx));
   }
+  ctx.notes.push('adviser-list (bento): prose head [h2, lead, note] + one cards (advisers grid-N) block per captured list — horizontal cards with round portraits; the section style contacts paints the h2-l / lead / small rhythm and the 6 px gap between the two rails');
   return { html: section(parts, { style: styleOf(paperOf(root), 'prose-narrow', 'contacts') }), blocks: [...new Set(blocks)] };
 }
 function promoBand(root, ctx) {
+  const art = q(root, '.promo-art img'); const card = q(root, '.promo > .card-body');
+  if (art && card) { ctx.notes.push('promo-band (lokale bento): columns (promo lokale) — [illustration tile (Syrin)][h2, paragraph, primary pill]'); return { html: section([block('columns', ['promo', 'lokale'], [[pic(art, ctx), prose(card, ctx)]])], { style: styleOf(paperOf(root)) }), blocks: ['columns'] }; }
   const img = q(root, '.lok-illu, .illu'); const text = q(root, '.lok-text');
   if (!img || !text) return corePromoBand(root, ctx);
   return { html: section([block('columns', ['promo', 'lokale'], [[pic(img, ctx), prose(text, ctx)]])], { style: styleOf(paperOf(root)) }), blocks: ['columns'] };

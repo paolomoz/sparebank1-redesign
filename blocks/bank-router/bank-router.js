@@ -1,10 +1,12 @@
 import { el, icon } from '../../scripts/sb1.js';
 
 /**
- * bank-router — the alliance router band (canon: stardust/canon/bank-router.html), authored once as /fragments/bank-router.
+ * bank-router — the alliance router as a Vann card (canon: stardust/canon/bank-router.html), authored once as /fragments/bank-router.
  * Rows (positional, template-slotted): 1 heading · 2 lede · 3 [postcode label | placeholder] · 4 position button label ·
- * 5 "all banks" label · 6..N one row per bank [name link | tagline]. Heading, lede and every bank row are MOVED into the band
+ * 5 "all banks" label · 6..N one row per bank [name link | tagline]. Heading, lede and every bank row are MOVED into the card
  * (EW1); the 12-bank list sits behind a native <details> (dynamics #1 interim — the postcode lookup is owner-bound).
+ * Two renderings: `router--tile` on the market landing (body.market-landing — the tall centred hero tile with the landscape behind)
+ * and `router--band` everywhere else (the compact contained card under the header).
  * @ew-exempt <p> postcode label / placeholder / button labels (rows 3–5) — form-control config copied into the controls
  * @ew-exempt img landscape illustration (fixed brand asset, /img root-relative)
  */
@@ -27,14 +29,17 @@ export default function decorate(block) {
     banks.append(li);
   });
   const form = el('form', { class: 'router-form', action: '#alle-banker', method: 'get' },
-    el('label', { class: 'router-label', for: 'postnummer-input' }, label),
-    el('div', { class: 'router-controls' },
-      el('input', { class: 'router-input', id: 'postnummer-input', name: 'postnummer', type: 'text', inputmode: 'numeric', pattern: '[0-9]{4}', maxlength: '4', autocomplete: 'postal-code', placeholder }),
-      el('button', { class: 'btn-router-secondary', type: 'submit' }, icon('pin'), el('span', {}, position))));
-  const details = el('details', { class: 'router-all', id: 'alle-banker' }, el('summary', { class: 'btn-inline btn-on-vann' }, all, icon('down')), banks);
+    el('label', { class: 'field-label', for: 'postnummer-input' }, label),
+    el('div', { class: 'field-row' },
+      el('input', { class: 'input', id: 'postnummer-input', name: 'postnummer', type: 'text', inputmode: 'numeric', pattern: '[0-9]{4}', maxlength: '4', autocomplete: 'postal-code', placeholder }),
+      el('button', { class: 'button on-dark', type: 'submit' }, icon('pin'), el('span', {}, position))));
+  const details = el('details', { class: 'router-all', id: 'alle-banker' }, el('summary', { class: 'arrow arrow--on-dark' }, all), banks);
   const art = el('img', { class: 'router-art', src: '/img/bankchoice_bg.png', alt: '', 'aria-hidden': 'true', width: '1250', height: '368', loading: 'eager', fetchpriority: 'high', decoding: 'async' });
-  const aside = el('aside', { class: 'router', 'aria-label': heading?.textContent.trim() || 'Vi er flere banker i hele Norge' },
-    el('div', { class: 'container router-grid' }, el('div', { class: 'router-text' }, heading, lede), form, details, art));
+  const tile = document.body.classList.contains('market-landing');
+  const body = el('div', { class: 'router-body' }, el('div', { class: 'router-text' }, heading, lede), form, details);
+  const aside = tile
+    ? el('aside', { class: 'card card--dark router router--tile', 'aria-label': heading?.textContent.trim() || 'Vi er flere banker i hele Norge' }, body, art)
+    : el('aside', { class: 'router router--band', 'aria-label': heading?.textContent.trim() || 'Vi er flere banker i hele Norge' }, el('div', { class: 'container' }, el('div', { class: 'card card--dark router-card' }, body, art)));
   block.replaceChildren(aside);
   // dynamics #1 interim: a 4-digit postcode opens the bank list (the lookup service is owner-bound)
   form.addEventListener('submit', (e) => { e.preventDefault(); details.open = true; details.scrollIntoView({ block: 'nearest' }); });

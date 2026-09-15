@@ -1,10 +1,11 @@
 /**
  * stardust/scripts/eds/encoders/theme.mjs — theme family (archetype nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html).
- * Overrides for THIS family: page-title (intro rhythm 16/64), content-columns (sheets | index | cols | rail), split-media (resident flush-top,
- * media-right → text-first, SVG media → illustration), card-rail (generic rail: every heading/CTA/meta of an item, lede, grid-N; rec-grid → papers),
- * callout (+ `offer` when it ends in a pill). New shared keys: cta-row (icon · line · pill → default content, `claim` section style), quick-links.
- * Group CSS: blocks/columns/columns-theme.css (sheets · index · resident · prevention · promo-2), blocks/cards/cards-theme.css (papers),
- * styles/styles-theme.css (claim · intro-backlink).
+ * Round 01 (bento card language): page-title with a `.hero-card` → breadcrumbs + hero `theme` (one Frost text card spanning 12; walker
+ * siblings keep the prose intro), content-columns (bento sheets → cards `sheets spot grid-2` | index | cols | rail), split-media (bento
+ * text card + media card → columns split text-first `resident` / `prevention`), card-rail (generic rail; bento rec-grid → cards `news grid-3`),
+ * callout (`.band-card` → callout `band`: icon · text · one action spanning 12). Shared keys: cta-row (claim band → default content with the
+ * `claim` section style), quick-links. Group CSS: blocks/hero/hero-theme.css · blocks/cards/cards-theme.css · blocks/columns/columns-theme.css ·
+ * blocks/callout/callout-theme.css · styles/styles-theme.css (claim · compare-link · intro-backlink).
  */
 import { parseHTML } from 'linkedom';
 import * as L from '../lib.mjs';
@@ -31,21 +32,26 @@ function keepNbsp(el) {
   walk(el);
 }
 
-/* ---- content-columns: sheets (two illustrated comparison sheets with link lists) ---- */
+/* ---- content-columns: sheets (two illustrated comparison sheets with arrow-link lists) ---- */
 export function sheets(root, ctx) {
   const wrap = q(root, '.sheets'); if (!wrap) return null;
   const items = qa(wrap, ':scope > article, :scope > .sheet'); if (!items.length) return null;
+  const bento = wrap.matches('ul.bento, ol.bento');
   const cells = items.map((s) => {
     keepNbsp(s); // the sheets' verbatim trailing non-breaking spaces wrap like the prototype's (lib.inline collapses \u00a0 as whitespace)
-    const img = q(s, ':scope > img, :scope > figure img, :scope > picture img');
-    let out = img ? pic(img, ctx) : '';
-    for (const n of s.children) { if (n === img || n.contains(img)) continue; out += prose({ childNodes: [n] }, ctx); }
-    return out;
+    const img = q(s, 'img');
+    let out = '';
+    for (const n of (q(s, ':scope > .card-body') || s).children) { if (n === img || n.contains(img)) continue; out += prose({ childNodes: [n] }, ctx); }
+    return [img ? pic(img, ctx) : '', out];
   });
-  const parts = [head(root, ctx), block('columns', ['sheets'], [cells])];
-  for (const p of qa(root, ':scope > .container > p')) { const s = inline(p, ctx).trim(); if (!s) continue; parts.push(/class="btn|class="link-more/.test(p.innerHTML) ? ctas(p, ctx) : `<p>${s}</p>`); }
+  const tail = [];
+  for (const p of qa(root, ':scope > .container > p')) { const t = inline(p, ctx).trim(); if (!t) continue; tail.push(/class="btn|class="link-more/.test(p.innerHTML) ? ctas(p, ctx) : `<p>${t}</p>`); }
+  if (bento) {
+    ctx.notes.push('content-columns (bento sheets): cards (sheets spot grid-2) — one row per sheet [illustration][h2, paragraphs, arrow-link list with descriptions]; the trailing compare link is default content (style compare-link)');
+    return { html: section([head(root, ctx), block('cards', ['sheets', 'spot', `grid-${Math.min(4, items.length)}`], cells), ...tail], { style: styleOf(paperOf(root), tail.length ? 'compare-link' : null) }), blocks: ['cards'] };
+  }
   ctx.notes.push('content-columns (sheets): columns (sheets) — one row, one cell per sheet [illustration, h2, paragraphs, link list]; the trailing compare link is default content');
-  return { html: section(parts, { style: styleOf(paperOf(root)) }), blocks: ['columns'] };
+  return { html: section([head(root, ctx), block('columns', ['sheets'], [cells.map((c) => c.join(''))]), ...tail], { style: styleOf(paperOf(root)) }), blocks: ['columns'] };
 }
 
 /* ---- content-columns: index (two link columns under a hairline — market landing) ---- */
@@ -89,8 +95,8 @@ export function itemBody(li, ctx, { skipImg } = {}) {
 }
 export function itemRows(items, ctx) { return items.map((li) => { const img = q(li, ':scope > img, :scope > picture img, :scope > figure img'); return [img ? pic(img, ctx) : '', itemBody(li, ctx, { skipImg: true })]; }); }
 
-const VARIANT = { 'choice-grid': 'choices', 'tips-grid': 'tips', 'news-grid': 'news', 'rec-grid': 'papers', 'link-cards': 'link-cards', tiles: 'tiles', 'price-grid': 'price', topics: 'topics', tools: 'tools', 'door-grid': 'doors', 'small-grid': 'small', 'pop-grid': 'popular', advisers: 'advisers', 'rail-list': 'rail', 'art-grid': 'articles', 'quick-links': 'quick-links' };
-const gridOf = (ul) => cls(ul).find((c) => /^grid-[1-4]$/.test(c)) || null;
+const VARIANT = { 'choice-grid': 'choices', 'tips-grid': 'tips', 'news-grid': 'news', 'rec-grid': 'news', 'link-cards': 'link-cards', tiles: 'tiles', 'price-grid': 'price', topics: 'topics', tools: 'tools', 'door-grid': 'doors', 'small-grid': 'small', 'pop-grid': 'popular', advisers: 'advisers', 'rail-list': 'rail', 'art-grid': 'articles', 'quick-links': 'quick-links' };
+const gridOf = (ul) => cls(ul).find((c) => /^grid-[1-4]$/.test(c)) || (cls(ul).includes('bento') && qa(ul, ':scope > li').length >= 2 && qa(ul, ':scope > li').length <= 4 ? `grid-${qa(ul, ':scope > li').length}` : null); // bento rails: the span comes from the item count
 /** Section lede between the title and the first list (canon .section-lede / a .prose paragraph) as default content. */
 function lede(root, ctx, before) {
   const c = q(root, ':scope > .container'); if (!c) return '';
@@ -163,19 +169,29 @@ export function ctaRow(root, ctx) {
   const c = q(root, ':scope > .container') || root;
   const html = prose(c, ctx); if (!html.trim()) return null;
   const claim = cls(c).includes('claim-row') || cls(root).includes('claim');
-  if (claim) ctx.notes.push('cta-row (claim): default content (icon, title line, primary pill) with the `claim` section style (styles-theme.css) — a prose composition, not a block (D1)');
-  return { html: section([html], { style: styleOf(paperOf(root), claim ? 'claim' : null, claim ? 'flush-top' : null) }), blocks: [] };
+  if (claim) ctx.notes.push('cta-row (claim): default content (icon, title line, primary pill) with the `claim` section style (styles-theme.css paints the Frost band card) — a prose composition, not a block (D1)');
+  return { html: section([html], { style: styleOf(paperOf(root), claim ? 'claim' : null) }), blocks: [] };
 }
 
 /* ---- overrides of core keys for the theme family ---- */
 function themePageTitle(root, ctx) {
+  const card = q(root, '.bento > .card.hero-card, .hero-card');
+  if (card) {
+    const back = q(card, 'a.backlink'); const parts = [];
+    if (back) parts.push(block('breadcrumbs', [], [[`<p><a href="${esc(L.href(back.getAttribute('href') || '', ctx))}">${inline(back, ctx).trim()}</a></p>`]]));
+    const body = q(card, ':scope > .card-body') || card; let text = '';
+    for (const n of body.children) { if (n === back || n.contains(back)) continue; text += prose({ childNodes: [n] }, ctx); }
+    parts.push(block('hero', ['theme'], [[text]]));
+    ctx.notes.push('page-title (bento hero card): breadcrumbs + hero (theme) — one text cell [h1, lead]; the block moves the back link into the Frost card spanning 12');
+    return { html: section(parts, { style: styleOf(paperOf(root), 'tight-top') }), blocks: ['hero', ...(back ? ['breadcrumbs'] : [])] };
+  }
   const r = pageTitle(root, ctx); if (!r) return null;
   r.html = restyle(r.html, styleOf(paperOf(root), 'intro', 'tight-top', 'intro-backlink')); // canon .intro: 16 top / 64 bottom; backlink row 20 above the h1
   return r;
 }
 export function themeSplit(root, ctx) {
+  keepNbsp(root); // the split cards' verbatim non-breaking spaces wrap like the prototype's at 360
   const r = splitMedia(root, ctx); if (!r) return null;
-  if (cls(root).includes('resident')) r.html = restyle(r.html, styleOf(paperOf(root), 'flush-top')); // canon .resident { padding-top: 0 } under the callout
   const right = cls(root).includes('media-right'); const illu = qa(root, 'figure img, .q-media img, .hero-media img').some((i) => /\.svg(\?|$)/i.test(i.getAttribute('src') || '') || cls(i).includes('illu'));
   if (right || illu) {
     const { document } = parseHTML(`<html><body>${r.html}</body></html>`); const b = document.querySelector('.columns');
@@ -190,6 +206,14 @@ export function themeSplit(root, ctx) {
 
 /** callout that ends in an action pill → adds the `offer` variant (canon p + p rhythm before the pill; the proto's intent "offer: adviser review"). */
 function themeCallout(root, ctx) {
+  const band = q(root, '.band-card');
+  if (band) {
+    const body = q(band, ':scope > .card-body') || band; let text = '';
+    for (const n of body.children) { if (n.matches('.band-icon') || n.matches('svg')) continue; text += prose({ childNodes: [n] }, ctx); }
+    const frost = cls(band).includes('card--frost');
+    ctx.notes.push('callout (band card): callout (band) — one cell [h2, paragraph, action pill]; the block paints icon · text · action in one row spanning 12 (the bulb is block chrome)');
+    return { html: section([block('callout', ['band', frost ? 'frost' : null], [[text]])], { style: styleOf(paperOf(root)) }), blocks: ['callout'] };
+  }
   const r = callout(root, ctx); if (!r) return null;
   if (q(root, '.callout a.btn, .callout .btn')) { r.html = r.html.replace(/<div class="callout( [a-z-]+)?">/, (m, v) => `<div class="callout${v || ''} offer">`); ctx.notes.push('callout (offer): variant `offer` = callout with a CTA pill (callout-theme.css restores the canon p + p 16 px before the pill)'); }
   return r;

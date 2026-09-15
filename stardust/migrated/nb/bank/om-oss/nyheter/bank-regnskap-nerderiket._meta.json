@@ -21,25 +21,23 @@
   "clientlib": "frontend"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "306d7b15a29ac5b3",
   "sourceProposedSha": null,
-  "archetypeSha": "39e8754190ab4f72",
+  "archetypeSha": "1cccd5bb5f833697",
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
- "deviations": [
-  ".badge (local pill; canon lacks DESIGN.md § Badges)"
- ],
+ "deviations": [],
  "migrationDecisions": [
   {
    "kind": "media-reuse",
@@ -58,7 +56,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 21,
+ "linksRewritten": 22,
  "metadata": {
   "title": "Regnskapet fikser jeg selv | SpareBank 1",
   "description": "Gro Katarina Andorsen er patentrådgiver av yrke, og glødende opptatt av å bidra til at kundene tar bedre vare på verdiene sine. Sine egne verdier får hun god hjelp av regnskapsfører Judith i SpareBank 1.&nbsp;\n&nbsp;\nTidlig i 2022 starter Gro for seg selv etter mange år som ansatt. Målet med selskapet som får navnet Nerderiket, er å bidra til at små og store teknologibedrifter tar godt vare på de immaterielle verdiene sine. Det vil si alt fra forretningshemmeligheter og interne prosedyrer til personavhengig know how eller fargekombinasjonen i selskapets logo, blant annet.\nMen, som Gro vet godt: Driver du din egen konsulentvirksomhet, går tiden gjerne med til mye annet enn akkurat det som er faget ditt.&nbsp;\n",
@@ -69,7 +67,7 @@
   "adapt": {
    "viewport": true,
    "media": 13,
-   "narrowest": 400
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -80,11 +78,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:17.409Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:11.580Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "306d7b15a29ac5b3",
  "sourceProposedSha": null,
- "archetypeSha": "39e8754190ab4f72",
+ "archetypeSha": "1cccd5bb5f833697",
  "assetsBundled": 3
 }

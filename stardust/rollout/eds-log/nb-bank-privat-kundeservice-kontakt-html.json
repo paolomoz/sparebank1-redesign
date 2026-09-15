@@ -19,7 +19,7 @@
   {
    "module": "bank-table",
    "blocks": [
-    "table"
+    "cards"
    ]
   },
   {
@@ -30,20 +30,23 @@
   },
   {
    "module": "address-block",
-   "blocks": []
+   "blocks": [
+    "cards"
+   ]
   }
  ],
  "blocks": [
   "hero",
-  "table",
+  "cards",
   "callout"
  ],
  "notes": [
-  "bank-table: Block Collection `table` (first row = header, variant `directory` = first column as row headers, phone numbers stay tel: links); the partners prose trails as default content",
-  "lint D1 callout: designed compound (canon icon + tinted paper), Block Collection-shaped single cell of prose — kept as a block like the product archetype",
-  "address-block: prose paragraphs <strong>Term</strong><br>value lines in an `address` section grid (D1 — no key/value block for displayed copy, D14)"
+  "page-title: hero (hub portrait) — text card 5 + media card 7; h1, leads and CTAs are the text cell",
+  "bank-table: cards (directory cols-4) — one row per bank [h3 name link][phone (tel:) and contact channel as a link list]; the \"Telefon\" / \"Kontakt oss\" head cells were visually-hidden prefixes in the prototype and are not authored (the tel:/mailto: links carry the meaning); the partner links close the bento as cards (partners)",
+  "lint D1 callout: designed compound (canon icon + Sand sheet), Block Collection-shaped single cell of prose — kept as a block like the product archetype",
+  "address-block: cards (address cols-4) — one row per term [h3][address lines with <br>]"
  ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T23:40:48.669Z"
+ "writtenAt": "2026-09-15T15:02:43.297Z"
 }

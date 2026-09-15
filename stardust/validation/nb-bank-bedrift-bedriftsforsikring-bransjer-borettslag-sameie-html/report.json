@@ -1,7 +1,7 @@
 {
  "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
  "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/prototypes/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html-proposed.html",
- "at": "2026-09-14T23:07:51.785Z",
+ "at": "2026-09-15T14:42:47.539Z",
  "contract": {
   "rootFirst": true,
   "tokensMissing": [],
@@ -27,9 +27,14 @@
    "headingSkips": 0,
    "headings": 17,
    "sectionsNoAttr": [],
-   "btnSmall": 1,
+   "btnSmall": 6,
    "btnSmallList": [
-    "label.@25px \"Søk etter et kontor\""
+    "a.logo@30px \"\"",
+    "a.arrow@23px \"Hva er forskjellen p\"",
+    "label.field-label@20px \"Søk etter et kontor\"",
+    "a.footer-logo@30px \"\"",
+    "a.with-icon@20px \"Linkedin\"",
+    "a.with-icon@20px \"YouTube\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
@@ -37,14 +42,11 @@
     "loading": "eager",
     "fp": "high",
     "src": "bygg-tilpasset.svg",
-    "area": 122500
+    "area": 90000
    },
    "focusRing": true,
-   "docHeight": 8130,
+   "docHeight": 7577,
    "smoke": {
-    "navOpen": true,
-    "ariaExpanded": "true",
-    "navClosedByEsc": true,
     "ctaReachableByKeyboard": true,
     "hovered": true
    }
@@ -52,16 +54,10 @@
   "768": {
    "console": [],
    "failed": [],
-   "externalFulfilled": 8,
+   "externalFulfilled": 10,
    "exceptions": [],
    "overflowX": 0,
-   "wide": [
-    "li@771",
-    "li@771",
-    "li@771",
-    "li@771",
-    "li@771"
-   ],
+   "wide": [],
    "lm": {
     "header": true,
     "main": true,
@@ -74,12 +70,14 @@
    "headingSkips": 0,
    "headings": 17,
    "sectionsNoAttr": [],
-   "btnSmall": 4,
+   "btnSmall": 7,
    "btnSmallList": [
-    "a.@36px \"Privat\"",
-    "a.is-active@36px \"Bedrift\"",
-    "a.@36px \"Om oss\"",
-    "label.@25px \"Søk etter et kontor\""
+    "a.logo@30px \"\"",
+    "a.btn@34px \"Logg inn\"",
+    "a.arrow@24px \"Hva er forskjellen p\"",
+    "label.field-label@20px \"Søk etter et kontor\"",
+    "a.footer-logo@30px \"\"",
+    "a.with-icon@20px \"Linkedin\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
@@ -87,10 +85,10 @@
     "loading": "eager",
     "fp": "high",
     "src": "bygg-tilpasset.svg",
-    "area": 112896
+    "area": 85849
    },
    "focusRing": true,
-   "docHeight": 5599,
+   "docHeight": 5149,
    "smoke": {
     "ctaReachableByKeyboard": true,
     "hovered": true
@@ -115,12 +113,14 @@
    "headingSkips": 0,
    "headings": 17,
    "sectionsNoAttr": [],
-   "btnSmall": 4,
+   "btnSmall": 12,
    "btnSmallList": [
-    "a.@36px \"Privat\"",
-    "a.is-active@36px \"Bedrift\"",
-    "a.@36px \"Om oss\"",
-    "label.@25px \"Søk etter et kontor\""
+    "a.@32px \"Privat\"",
+    "a.is-active@32px \"Bedrift\"",
+    "a.@32px \"Om oss\"",
+    "a.logo@36px \"\"",
+    "a.tool-text@19px \"Bli bedriftskunde\"",
+    "a.tool-search@22px \"Søk\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
@@ -128,10 +128,10 @@
     "loading": "eager",
     "fp": "high",
     "src": "bygg-tilpasset.svg",
-    "area": 129600
+    "area": 90000
    },
    "focusRing": true,
-   "docHeight": 4664,
+   "docHeight": 4562,
    "smoke": {
     "ctaReachableByKeyboard": true,
     "hovered": true
@@ -140,8 +140,8 @@
  },
  "mobileNav": {
   "over": 0,
-  "minFont": 14,
-  "minGap": 0,
+  "minFont": 12,
+  "minGap": null,
   "collapse": "hamburger"
  },
  "pass": true,
@@ -149,7 +149,7 @@
   {
    "sev": "P2",
    "where": "390",
-   "msg": "1 interactive elements < 40px tall: label.@25px \"Søk etter et kontor\""
+   "msg": "6 interactive elements < 40px tall: a.logo@30px \"\", a.arrow@23px \"Hva er forskjellen p\", label.field-label@20px \"Søk etter et kontor\", a.footer-logo@30px \"\", a.with-icon@20px \"Linkedin\", a.with-icon@20px \"YouTube\""
   }
  ]
 }

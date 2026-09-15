@@ -20,20 +20,23 @@
   {
    "module": "faq-question",
    "blocks": [
+    "hero",
     "breadcrumbs",
     "feedback"
    ]
   }
  ],
  "blocks": [
+  "hero",
   "breadcrumbs",
   "feedback"
  ],
  "notes": [
-  "lint D1 breadcrumbs: the canon back link is a designed navigation module (Block Collection name), not prose",
-  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); inline variant: question label + Ja/Nei beside the answer"
+  "lint D1 breadcrumbs: the canon back link is a designed navigation module (Block Collection name), not prose — hero.js moves it into the question card",
+  "lint D1 hero (question): the question is the designed hero module — a Frost-30 bento card spanning 12 columns (Block Collection name), not prose",
+  "lint D1 feedback: interactive widget (dynamics #5 interim — static thumbs); the Sand-70 sheet carries the question (h2) and the two labels"
  ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T23:40:48.342Z"
+ "writtenAt": "2026-09-15T15:02:42.667Z"
 }

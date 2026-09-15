@@ -19,12 +19,13 @@ function styleFor(root, ...extra) {
   if (c.includes('compare')) mods.push('flush-top');
   if (c.includes('hero') && !c.includes('campaign')) mods.push('tight-top');
   if (c.includes('intro')) mods.push('intro', 'tight-bottom');
+  if (root.getAttribute && root.getAttribute('data-layout') === 'full-bleed-grid') mods.push('full-bleed');
   return styleOf(paperOf(root), ...mods, ...extra);
 }
 
 /** The section heading (h2.section-title or the first h2 directly under .container) as default content. */
 function sectionHead(root, ctx, { skip = [] } = {}) {
-  const h = q(root, ':scope > .container > h2.section-title, :scope > .container > .section-title, :scope > .container > h2, :scope > .container > .title, :scope > .container > .reg-title');
+  const h = q(root, ':scope > .container > h2.section-title, :scope > .container > .section-title, :scope > .container > h2, :scope > .container > .title, :scope > .container > .reg-title, :scope > .container > .bento > .card > .card-body > h2.section-title, :scope > .container > .bento > .card > .card-body > .section-title');
   if (!h || skip.includes(h)) return '';
   return `<${h.tagName.toLowerCase() === 'h2' ? 'h2' : 'h2'}>${inline(h, ctx)}</h2>`;
 }
@@ -39,12 +40,12 @@ export function cardRows(items, ctx, { level = 'h3' } = {}) {
     let body = '';
     if (title) body += titleLink ? `<${lvl}><a href="${esc(L.href(titleLink.getAttribute('href') || '', ctx))}">${inline(titleLink, ctx)}</a></${lvl}>` : `<${lvl}>${inline(title, ctx)}</${lvl}>`;
     for (const p of qa(li, 'p')) { if (title && title.contains(p)) continue; const s = inline(p, ctx).trim(); if (!s) continue; body += cls(p).includes('meta') ? `<p><em>${s}</em></p>` : /class="btn/.test(p.innerHTML) || /class="link-more/.test(p.innerHTML) ? ctas(p, ctx) : `<p>${s}</p>`; }
-    for (const ul of qa(li, ':scope > ul, :scope > .tile-links, :scope > .link-list')) body += L.list(ul, ctx);
+    for (const ul of qa(li, ':scope > ul, :scope > .tile-links, :scope > .link-list, :scope > .card-body > ul, :scope > .card-body > .link-list')) body += L.list(ul, ctx);
     if (!title && !body) body = prose(li, ctx);
     return [img ? pic(img, ctx) : '', body];
   });
 }
-const VARIANT = { 'choice-grid': 'choices', 'tips-grid': 'tips', 'news-grid': 'news', 'price-grid': 'price', tiles: 'tiles', 'door-grid': 'doors', 'small-grid': 'small', 'pop-grid': 'popular', topics: 'topics', tools: 'tools', 'rec-grid': 'tips', 'art-grid': 'articles', advisers: 'advisers', 'rail-list': 'rail' };
+const VARIANT = { 'choice-grid': 'choices', 'tips-grid': 'tips', 'news-grid': 'news', 'price-grid': 'price', tiles: 'tiles', 'door-grid': 'doors', 'small-grid': 'small', 'pop-grid': 'popular', topics: 'topics', tools: 'tools', 'rec-grid': 'tips', 'art-grid': 'articles', advisers: 'advisers', 'rail-list': 'rail' , news: 'news', products: 'tiles', index: 'index' };
 export function cardRail(root, ctx) {
   const lists = qa(root, 'ul[data-slot="cards"], ul[data-slot="cards-small"], ul.tiles, ul.advisers, ul.topics, ul.tools, ol[data-slot="cards"]');
   if (!lists.length) return null;
@@ -62,21 +63,22 @@ export function cardRail(root, ctx) {
 
 /* ------------------------------------------------------------- columns (split-media · promo · help) ------------------------------------------------------------- */
 function textCell(el, ctx) { return prose(el, ctx); }
+const promoImg = (promo) => q(promo, 'img') || (promo.previousElementSibling && promo.previousElementSibling.matches('.promo-art') ? q(promo.previousElementSibling, 'img') : null);
 export function promoRow(promo, ctx) {
-  const img = q(promo, 'img'); const text = q(promo, '.promo-text') || promo;
+  const img = promoImg(promo); const text = q(promo, '.promo-text, .card-body') || promo;
   return block('columns', ['promo'], [[img ? pic(img, ctx) : '', textCell(text, ctx)]]);
 }
 export function promoBand(root, ctx) {
   const promos = qa(root, 'article.promo, .promo'); if (!promos.length) return null;
-  const parts = [sectionHead(root, ctx), block('columns', ['promo', promos.length > 1 ? `promo-${promos.length}` : null], promos.map((p) => { const img = q(p, 'img'); return [img ? pic(img, ctx) : '', textCell(q(p, '.promo-text') || p, ctx)]; }))];
+  const parts = [sectionHead(root, ctx), block('columns', ['promo', promos.length > 1 ? `promo-${promos.length}` : null], promos.map((p) => { const img = promoImg(p); return [img ? pic(img, ctx) : '', textCell(q(p, '.promo-text, .card-body') || p, ctx)]; }))];
   return { html: section(parts, { style: styleFor(root) }), blocks: ['columns'] };
 }
 /** Split media: figure + text in either order → columns (split) keeping the authored order; `reverse` when the text comes first. */
 export function splitMedia(root, ctx) {
-  const grids = qa(root, ':scope > .container, :scope > .container > .split-row, :scope > .container > .slide, :scope > .container > .help-col, :scope > .container > .rows > .split-row');
+  const grids = qa(root, ':scope > .container > .bento').length ? qa(root, ':scope > .container > .bento') : qa(root, ':scope > .container, :scope > .container > .split-row, :scope > .container > .slide, :scope > .container > .help-col, :scope > .container > .rows > .split-row');
   const rowsOf = (grid) => {
     const kids = [...grid.children].filter((k) => k.tagName !== 'H2' || !k.classList.contains('section-title'));
-    const media = kids.find((k) => k.matches('figure, img, .hero-media, .q-media, .res-media, .prev-media, .slide-media, .expert, .video-frame, .reopen-media, .steps-media') || (k.querySelector('img') && !k.querySelector('h1,h2,h3,p')));
+    const media = kids.find((k) => k.matches('figure, img, .hero-media, .q-media, .q-photo, .hero-photo, .res-media, .prev-media, .slide-media, .expert, .video-frame, .reopen-media, .steps-media') || (k.querySelector('img') && !k.querySelector('h1,h2,h3,p')));
     const text = kids.find((k) => k !== media && (k.querySelector('h1,h2,h3,p,ul') || k.matches('p')));
     if (!media && !text) return null;
     const mediaHtml = media ? (media.matches('a.video-frame') ? `<p><a href="${esc(media.getAttribute('href'))}">${esc(media.getAttribute('href'))}</a></p>` : pic(q(media, 'img') || media, ctx)) : '';
@@ -91,11 +93,12 @@ export function splitMedia(root, ctx) {
 
 /* ------------------------------------------------------------- hero ------------------------------------------------------------- */
 export function productHero(root, ctx) {
-  const back = q(root, 'a.backlink'); const media = q(root, '.hero-media img, figure img, .campaign-media img'); const text = q(root, '.hero-text, .campaign-text');
+  const back = q(root, 'a.backlink'); const media = q(root, '.hero-media img, figure img, .campaign-media img, .hero-photo img'); const text = q(root, '.hero-text, .campaign-text > .card-body, .campaign-text, .hero-card > .card-body, .hero-card');
   const parts = [];
   if (back) parts.push(block('breadcrumbs', [], [[`<p><a href="${esc(L.href(back.getAttribute('href') || '', ctx))}">${inline(back, ctx).trim()}</a></p>`]]));
   const variant = cls(root).includes('campaign') ? 'campaign' : 'product';
-  const body = ctx.hiddenH1 && !q(text, 'h1') ? `<h1>${inline(ctx.hiddenH1, ctx)}</h1>${textCell(text, ctx)}` : textCell(text, ctx);
+  let textNode = text; if (back && text && text.contains(back)) { textNode = text.cloneNode(true); const bl = q(textNode, 'a.backlink'); (bl.closest('p, .backlink-row') || bl).remove(); } // the back link is the breadcrumbs block, not hero prose
+  const body = ctx.hiddenH1 && !q(textNode, 'h1') ? `<h1>${inline(ctx.hiddenH1, ctx)}</h1>${textCell(textNode, ctx)}` : textCell(textNode, ctx);
   if (ctx.hiddenH1) { ctx.notes.push('market landing: the visually-hidden h1 is authored as the hero h1 (block hides it visually)'); ctx.hiddenH1 = null; }
   parts.push(block('hero', [variant], [[media ? pic(media, ctx) : '', body]]));
   return { html: section(parts, { style: styleFor(root) }), blocks: [...new Set(['hero', ...(back ? ['breadcrumbs'] : [])])] };
@@ -162,7 +165,11 @@ export function richText(root, ctx) {
   return { html: section([html], { style: styleFor(root, 'prose-narrow') }), blocks: [] };
 }
 
+/** hero-bento (market landing): the router tile is chrome (the /fragments/bank-router section precedes the hero); the campaign cells convert as the campaign hero. */
+export function heroBento(root, ctx) { const camp = q(root, '[data-module="campaign-carousel"], .campaign'); return camp ? productHero(camp, ctx) : null; }
+
 export const ENCODERS = {
+  'hero-bento': heroBento,
   'product-hero': productHero, 'campaign-carousel': productHero, campaign: productHero,
   'page-title': pageTitle,
   'card-rail': cardRail, 'price-cards': priceCards, 'related-products': cardRail, 'visual-nav': cardRail, 'topic-tiles': cardRail, 'content-columns': cardRail,

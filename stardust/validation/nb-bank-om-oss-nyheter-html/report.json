@@ -1,7 +1,7 @@
 {
  "slug": "nb-bank-om-oss-nyheter-html",
  "file": "/Users/paolo/stardust/2026-08/sparebank1-redesign/stardust/prototypes/nb-bank-om-oss-nyheter-html-proposed.html",
- "at": "2026-09-14T23:08:15.898Z",
+ "at": "2026-09-15T14:38:58.191Z",
  "contract": {
   "rootFirst": true,
   "tokensMissing": [],
@@ -11,7 +11,7 @@
   "390": {
    "console": [],
    "failed": [],
-   "externalFulfilled": 28,
+   "externalFulfilled": 10,
    "exceptions": [],
    "overflowX": 0,
    "wide": [],
@@ -27,22 +27,24 @@
    "headingSkips": 0,
    "headings": 35,
    "sectionsNoAttr": [],
-   "btnSmall": 0,
-   "btnSmallList": [],
+   "btnSmall": 4,
+   "btnSmallList": [
+    "a.logo@30px \"\"",
+    "a.footer-logo@30px \"\"",
+    "a.with-icon@20px \"Linkedin\"",
+    "a.with-icon@20px \"YouTube\""
+   ],
    "lowContrast": [],
    "lowContrastCount": 0,
    "lazyLCP": {
     "loading": "eager",
     "fp": "high",
     "src": "bm_startup_enk275.jpg.thumb.1280.2276.jpg",
-    "area": 81665
+    "area": 72092
    },
    "focusRing": true,
-   "docHeight": 5136,
+   "docHeight": 12224,
    "smoke": {
-    "navOpen": true,
-    "ariaExpanded": "true",
-    "navClosedByEsc": true,
     "ctaReachableByKeyboard": "no-primary-cta",
     "hovered": true
    }
@@ -66,11 +68,13 @@
    "headingSkips": 0,
    "headings": 35,
    "sectionsNoAttr": [],
-   "btnSmall": 3,
+   "btnSmall": 5,
    "btnSmallList": [
-    "a.@36px \"Privat\"",
-    "a.@36px \"Bedrift\"",
-    "a.is-active@36px \"Om oss\""
+    "a.logo@30px \"\"",
+    "a.btn@34px \"Logg inn\"",
+    "a.footer-logo@30px \"\"",
+    "a.with-icon@20px \"Linkedin\"",
+    "a.with-icon@20px \"YouTube\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
@@ -78,10 +82,10 @@
     "loading": "eager",
     "fp": "high",
     "src": "bm_startup_enk275.jpg.thumb.1280.2276.jpg",
-    "area": 345600
+    "area": 278784
    },
    "focusRing": true,
-   "docHeight": 7149,
+   "docHeight": 7145,
    "smoke": {
     "ctaReachableByKeyboard": "no-primary-cta",
     "hovered": true
@@ -90,7 +94,7 @@
   "1440": {
    "console": [],
    "failed": [],
-   "externalFulfilled": 25,
+   "externalFulfilled": 22,
    "exceptions": [],
    "overflowX": 0,
    "wide": [],
@@ -106,11 +110,14 @@
    "headingSkips": 0,
    "headings": 35,
    "sectionsNoAttr": [],
-   "btnSmall": 3,
+   "btnSmall": 10,
    "btnSmallList": [
-    "a.@36px \"Privat\"",
-    "a.@36px \"Bedrift\"",
-    "a.is-active@36px \"Om oss\""
+    "a.@32px \"Privat\"",
+    "a.@32px \"Bedrift\"",
+    "a.is-active@32px \"Om oss\"",
+    "a.logo@36px \"\"",
+    "a.tool-text@19px \"Bli kunde\"",
+    "a.tool-search@22px \"Søk\""
    ],
    "lowContrast": [],
    "lowContrastCount": 0,
@@ -118,10 +125,10 @@
     "loading": "eager",
     "fp": "high",
     "src": "bm_startup_enk275.jpg.thumb.1280.2276.jpg",
-    "area": 344304
+    "area": 387799
    },
    "focusRing": true,
-   "docHeight": 5286,
+   "docHeight": 5473,
    "smoke": {
     "ctaReachableByKeyboard": "no-primary-cta",
     "hovered": true
@@ -130,10 +137,16 @@
  },
  "mobileNav": {
   "over": 0,
-  "minFont": 14,
-  "minGap": 0,
+  "minFont": 12,
+  "minGap": null,
   "collapse": "hamburger"
  },
  "pass": true,
- "issues": []
+ "issues": [
+  {
+   "sev": "P2",
+   "where": "390",
+   "msg": "4 interactive elements < 40px tall: a.logo@30px \"\", a.footer-logo@30px \"\", a.with-icon@20px \"Linkedin\", a.with-icon@20px \"YouTube\""
+  }
+ ]
 }

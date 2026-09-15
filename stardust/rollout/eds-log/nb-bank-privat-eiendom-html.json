@@ -19,7 +19,9 @@
   },
   {
    "module": "page-title",
-   "blocks": []
+   "blocks": [
+    "hero"
+   ]
   },
   {
    "module": "visual-nav",
@@ -39,12 +41,15 @@
   }
  ],
  "blocks": [
+  "hero",
   "cards"
  ],
  "notes": [
-  "shortcut-row: prose h2 + ul of links (David's Model D5 simple list); section style `shortcuts` paints the hairline, the inline-link row and the chevrons"
+  "page-title: hero (hub text-only) — one text card across 12; h1, leads and CTAs are the text cell",
+  "visual-nav: cards (doors cols-4) + cards (small cols-4) — one row per door [photo | icon][h2 link, line]; section `bento-top, stack` keeps the 6 px bento gutters under the hero",
+  "shortcut-row: prose h2 + ul of links (David's Model D5 simple list); section style `shortcuts` paints the Syrin card, the four-column link grid and the chevrons"
  ],
  "gaps": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T23:40:48.577Z"
+ "writtenAt": "2026-09-15T15:02:43.153Z"
 }

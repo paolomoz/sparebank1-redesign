@@ -1,124 +1,87 @@
 {
-  "archetype": "nb-bank-privat-lan-html",
-  "document": "content/nb/bank/privat/lan.html",
-  "blocks": {
-    "new": [
-      "cobranding"
-    ],
-    "reused": [
-      "cards (doors · small · popular)",
-      "columns (split help · promo switch)",
-      "callout (tip cta)",
-      "feedback",
-      "breadcrumbs",
-      "fragment"
-    ]
+ "archetype": "nb-bank-privat-lan-html",
+ "document": "content/nb/bank/privat/lan.html",
+ "blocks": {
+  "new": [],
+  "reused": [
+   "hero (hub text-only)",
+   "cards (doors cols-4 · icons spot cols-4 · help cols-2 · promo cols-1 · popular cols-4)",
+   "cobranding",
+   "callout (tip hub cta)",
+   "feedback",
+   "fragment (bank-router)"
+  ]
+ },
+ "iterations": 9,
+ "breakpoints": {
+  "360": {
+   "pixelPct": 0.77,
+   "heightDelta": 0,
+   "header": 100,
+   "footer": 81.57,
+   "pass": true,
+   "footerAtTrueOffset": 100,
+   "note": "gate footer crop 81.57 % at 360 is the measure-pass race on the PROTO side (proto doc 8261 vs stitched 8377); the footers match 100 % at their true offsets (crop-compare --y 6841 --y-b 6841). See eds-requests.md."
   },
-  "iterations": 4,
-  "breakpoints": {
-    "360": {
-      "pixelPct": 0.63,
-      "heightDelta": 0,
-      "header": 99.66,
-      "footer": 100,
-      "pass": true
-    },
-    "1440": {
-      "pixelPct": 0.32,
-      "heightDelta": 0,
-      "header": 99.96,
-      "footer": 99.89,
-      "pass": true
-    }
-  },
-  "contentDiff": {
-    "red": 0,
-    "justified": []
-  },
-  "ew": {
-    "editable": 58,
-    "dead": 0,
-    "exempt": 1
-  },
-  "lint": {
-    "davidsModelRed": 0,
-    "deliveryP0": 0,
-    "deliveryP1": 0
-  },
-  "siblings": {
-    "converted": [
-      "nb-bank-bedrift-bedriftskort-html",
-      "nb-bank-bedrift-betaling-html",
-      "nb-bank-bedrift-daglig-drift-html",
-      "nb-bank-bedrift-konto-html",
-      "nb-bank-bedrift-lan-finansiering-html",
-      "nb-bank-bedrift-pensjon-html",
-      "nb-bank-bedrift-regnskap-html",
-      "nb-bank-bedrift-sparing-investering-html",
-      "nb-bank-bedrift-starte-bedrift-html",
-      "nb-bank-bedrift-tips-og-rad-html",
-      "nb-bank-privat-daglig-bruk-html",
-      "nb-bank-privat-eiendom-html",
-      "nb-bank-privat-forsikring-html",
-      "nb-bank-privat-lofavor-html",
-      "nb-bank-privat-pensjon-html",
-      "nb-bank-privat-private-banking-html",
-      "nb-bank-privat-sparing-html",
-      "nb-bank-privat-svindel-html",
-      "nb-bank-privat-tips-og-rad-html"
-    ],
-    "gaps": {
-      "nb-bank-bedrift-bedriftskort-html": 0,
-      "nb-bank-bedrift-betaling-html": 0,
-      "nb-bank-bedrift-daglig-drift-html": 0,
-      "nb-bank-bedrift-konto-html": 0,
-      "nb-bank-bedrift-lan-finansiering-html": 0,
-      "nb-bank-bedrift-pensjon-html": 0,
-      "nb-bank-bedrift-regnskap-html": 0,
-      "nb-bank-bedrift-sparing-investering-html": 0,
-      "nb-bank-bedrift-starte-bedrift-html": 0,
-      "nb-bank-bedrift-tips-og-rad-html": 0,
-      "nb-bank-privat-daglig-bruk-html": 0,
-      "nb-bank-privat-eiendom-html": 0,
-      "nb-bank-privat-forsikring-html": 0,
-      "nb-bank-privat-lofavor-html": 0,
-      "nb-bank-privat-pensjon-html": 0,
-      "nb-bank-privat-private-banking-html": 0,
-      "nb-bank-privat-sparing-html": 0,
-      "nb-bank-privat-svindel-html": 0,
-      "nb-bank-privat-tips-og-rad-html": 0
-    },
-    "lintRed": {
-      "nb-bank-bedrift-bedriftskort-html": 0,
-      "nb-bank-bedrift-betaling-html": 0,
-      "nb-bank-bedrift-daglig-drift-html": 0,
-      "nb-bank-bedrift-konto-html": 0,
-      "nb-bank-bedrift-lan-finansiering-html": 0,
-      "nb-bank-bedrift-pensjon-html": 0,
-      "nb-bank-bedrift-regnskap-html": 0,
-      "nb-bank-bedrift-sparing-investering-html": 0,
-      "nb-bank-bedrift-starte-bedrift-html": 0,
-      "nb-bank-bedrift-tips-og-rad-html": 0,
-      "nb-bank-privat-daglig-bruk-html": 0,
-      "nb-bank-privat-eiendom-html": 0,
-      "nb-bank-privat-forsikring-html": 0,
-      "nb-bank-privat-lofavor-html": 0,
-      "nb-bank-privat-pensjon-html": 0,
-      "nb-bank-privat-private-banking-html": 0,
-      "nb-bank-privat-sparing-html": 0,
-      "nb-bank-privat-svindel-html": 0,
-      "nb-bank-privat-tips-og-rad-html": 0
-    },
-    "contentDiffSampled": {
-      "slug": "nb-bank-privat-forsikring-html",
-      "red": 0
-    }
-  },
-  "productRegression": {
-    "slug": "nb-bank-privat-lan-boliglan-html",
-    "pixelPct1440": 0.74,
-    "heightDelta": -1,
-    "pass": true
-  },
-  "gatedAt": "2026-09-14T22:54:05.434Z"
+  "1440": {
+   "pixelPct": 0.26,
+   "heightDelta": 0,
+   "header": 99.84,
+   "footer": 100,
+   "pass": true
+  }
+ },
+ "contentDiff": {
+  "red": 0,
+  "justified": []
+ },
+ "ew": {
+  "editable": 58,
+  "dead": 0,
+  "exempt": 0
+ },
+ "lint": "davids 0 🔴 / 4 🟡 · delivery 0 P0 · 0 P1 · 8 P2",
+ "siblings": {
+  "converted": [
+   "nb-bank-bedrift-bedriftskort-html",
+   "nb-bank-bedrift-betaling-html",
+   "nb-bank-bedrift-daglig-drift-html",
+   "nb-bank-bedrift-konto-html",
+   "nb-bank-bedrift-lan-finansiering-html",
+   "nb-bank-bedrift-pensjon-html",
+   "nb-bank-bedrift-regnskap-html",
+   "nb-bank-bedrift-sparing-investering-html",
+   "nb-bank-bedrift-starte-bedrift-html",
+   "nb-bank-bedrift-tips-og-rad-html",
+   "nb-bank-privat-daglig-bruk-html",
+   "nb-bank-privat-eiendom-html",
+   "nb-bank-privat-forsikring-html",
+   "nb-bank-privat-lofavor-html",
+   "nb-bank-privat-pensjon-html",
+   "nb-bank-privat-private-banking-html",
+   "nb-bank-privat-sparing-html",
+   "nb-bank-privat-svindel-html",
+   "nb-bank-privat-tips-og-rad-html"
+  ],
+  "gaps": {},
+  "lintRed": {},
+  "sampled": "nb-bank-privat-sparing-html",
+  "contentDiffRed": 0,
+  "contentDiffSampled": {
+   "slug": "nb-bank-privat-sparing-html",
+   "red": 0
+  }
+ },
+ "requests": [
+  "gate measure pass vs lazy proto SVG (footer crop, lan 360)",
+  "/nav header 360 on kundeservice 97.1 % (chrome)",
+  "aspect-ratio: auto discards UA attribute ratio → revert-layer",
+  "variant tokens colliding with canon compounds (title, small)",
+  "group CSS import order",
+  "hero.js split-h1 opt-in (edited)",
+  "lib.inline nbsp (keepNbsp workaround)",
+  "FAQ summary lead size ≤767 scope"
+ ],
+ "roundOne": true,
+ "at": "2026-09-15T14:46:20.667Z"
 }

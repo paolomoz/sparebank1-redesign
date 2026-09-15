@@ -24,20 +24,20 @@
   "clientlib": "base"
  },
  "canonShas": {
-  "header": "7b575d4a8a06908b",
-  "footer": "a71bffa1aee4b031",
-  "css": "b128d5c2de6ce444"
+  "header": "71b072617ac2b28f",
+  "footer": "64df50828f31a507",
+  "css": "d4e05403e5a6ba6f"
  },
  "inputs": {
-  "designMdSha": "9eaced02fd2340e7",
-  "designJsonSha": "356d124b47aa82e7",
+  "designMdSha": "7e7a22e2a62ebf6e",
+  "designJsonSha": "a10c05f3e47d13fc",
   "sourceCurrentSha": "477d64c4857e6fc8",
-  "sourceProposedSha": "8d782417f3fe4665",
+  "sourceProposedSha": "e8381223edabe896",
   "archetypeSha": null,
   "canonShas": {
-   "header": "7b575d4a8a06908b",
-   "footer": "a71bffa1aee4b031",
-   "css": "b128d5c2de6ce444"
+   "header": "71b072617ac2b28f",
+   "footer": "64df50828f31a507",
+   "css": "d4e05403e5a6ba6f"
   }
  },
  "deviations": [],
@@ -90,7 +90,7 @@
   "/nb/bank/privat/innlogging.html",
   "/nb/bank/bedrift/innlogging.html"
  ],
- "linksRewritten": 33,
+ "linksRewritten": 34,
  "metadata": {
   "title": "Kundeservice | SpareBank 1",
   "description": "Sperre kort, bestille/fornye BankID på mobil, melde skade, bli kunde, finne IBAN-nummer, få hjelp her.",
@@ -100,8 +100,8 @@
  "audit": {
   "adapt": {
    "viewport": true,
-   "media": 11,
-   "narrowest": 400
+   "media": 13,
+   "narrowest": 640
   }
  },
  "gatesPassed": [
@@ -112,11 +112,11 @@
   "content-count"
  ],
  "contentCheck": "PASS",
- "migratedAt": "2026-09-14T23:09:25.184Z",
- "designMdSha": "9eaced02fd2340e7",
- "designJsonSha": "356d124b47aa82e7",
+ "migratedAt": "2026-09-15T15:00:19.926Z",
+ "designMdSha": "7e7a22e2a62ebf6e",
+ "designJsonSha": "a10c05f3e47d13fc",
  "sourceCurrentSha": "477d64c4857e6fc8",
- "sourceProposedSha": "8d782417f3fe4665",
+ "sourceProposedSha": "e8381223edabe896",
  "archetypeSha": null,
  "assetsBundled": 3
 }

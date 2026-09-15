@@ -3,7 +3,7 @@
 <head>
 <!-- stardust:migrate
   writtenBy:        stardust:migrate
-  writtenAt:        2026-09-14T23:09:27.195Z
+  writtenAt:        2026-09-15T15:00:22.167Z
   page:             nb-bank-privat-kundeservice-verktoy-sperre-kort-html
   slug:             nb-bank-privat-kundeservice-verktoy-sperre-kort-html
   pagePath:         migrated/nb/bank/privat/kundeservice/verktoy/sperre-kort.html
@@ -11,23 +11,23 @@
   renderBranch:     A
   template:         tool
   archetypePath:    stardust/prototypes/nb-bank-privat-kundeservice-verktoy-sperre-kort-html-proposed.html
-  archetypeSha:     631928db47f8f4c2
+  archetypeSha:     fb3c439df7b94880
   sourceProposed:   stardust/prototypes/nb-bank-privat-kundeservice-verktoy-sperre-kort-html-proposed.html
   sourceCurrent:    stardust/current/pages/nb-bank-privat-kundeservice-verktoy-sperre-kort-html.json
   againstDirection: stardust/direction.md (Active 2026-09-14T21:10:00Z)
-  designMd:         DESIGN.md (sha: 9eaced02fd2340e7)
-  designJson:       DESIGN.json (sha: 356d124b47aa82e7)
-  canonShas:        header:7b575d4a8a06908b footer:a71bffa1aee4b031 css:b128d5c2de6ce444
+  designMd:         DESIGN.md (sha: 7e7a22e2a62ebf6e)
+  designJson:       DESIGN.json (sha: a10c05f3e47d13fc)
+  canonShas:        header:71b072617ac2b28f footer:64df50828f31a507 css:d4e05403e5a6ba6f
   decisionTrace:    sperre-kort._meta.json
   brokenInternalLinks: 23
   stardustVersion:  0.20.0
 -->
 <!-- stardust:provenance
   writtenBy:         stardust:prototype (--prep; rendered through impeccable new-work against DESIGN.md; chrome = canon source stardust/scripts/proto/chrome.mjs)
-  writtenAt:         2026-09-14T23:08:45.480Z
+  writtenAt:         2026-09-15T14:36:25.377Z
   page:              nb-bank-privat-kundeservice-verktoy-sperre-kort-html
   pageUrl:           https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sperre-kort.html
-  againstDirection:  stardust/direction.md (Active 2026-09-14T21:10:00Z)
+  againstDirection:  stardust/direction.md (Active 2026-09-15T12:00:00Z — round 01 reference composition)
   readArtifacts:
     - stardust/current/pages/nb-bank-privat-kundeservice-verktoy-sperre-kort-html.json
     - stardust/current/pages/nb-bank-privat-kundeservice-verktoy-sperre-kort-html.html
@@ -39,7 +39,7 @@
   paletteSource:     inherited (_ffe-tokens.json), Mode A
   fidelity:          refined
   iaFidelity:        verbatim
-  surprise:          low
+  surprise:          medium
   reflexRejectAudit: { bypassed: true, reason: "Mode A pinned families" }
   copyCadenceBypass: { rules: [em-dash-overuse, marketing-buzzword, exclamation], basis: "all copy captured-verbatim" }
   shapeBrief: stardust/prototypes/nb-bank-privat-kundeservice-verktoy-sperre-kort-html-shape.md
@@ -48,14 +48,14 @@
   unsourcedContent: []
   signatureElements:
     - bankchoice_bg.svg in the router band
-    - flat spot illustration (mobilbruker-dame) beside the steps
-    - one-corner-pair photo mask 96px on the lommebok photo
+    - flat spot illustration (mobilbruker-dame) on its own Sand tile beside the Frost steps card
+    - lommebok photo bleeding in its own bento cell
   improvementsApplied:
-    - #1 compact router
-    - #3 1.25 scale
-    - #4 no card chrome: numbered ledger + callout on paper
-    - #6 photo at content scale
-    - #7 movements on paper, three captured <hr> dropped
+    - round 01: hero as one Sand card, steps in one Frost card 7 + illustration tile 5
+    - 2 px cards, 6 px gutters, no border, no shadow
+    - Ramp type scale
+    - 6 px borderless buttons
+    - photo 5 + text card 7 split, no type on the photo
   dynamicsInterim:
     - #5 feedback thumbs static (type=button)
     - #3 "Logg inn og sperr kortet" / "Åpne sperret kort" keep their nettbank hrefs (login dialog at rollout)
@@ -74,197 +74,354 @@
   --title-font-family:   "SpareBank1-medium", arial, sans-serif;
   --body-font-family:    "SpareBank1-regular", arial, sans-serif;
 
-  --heading-xxl: 61px;  --heading-xl: 49px;  --heading-lg: 39px;  --heading-md: 31px;
-  --title: 25px;  --lead: 20px;  --body: 16px;  --body-sm: 14px;  --label: 13px;
-  --t-display: clamp(2.5rem, 1.6rem + 2.4vw, 3.8125rem);
-  --t-headline: clamp(2.125rem, 1.5rem + 1.7vw, 3.0625rem);
-  --t-headline-sm: clamp(1.75rem, 1.4rem + 1vw, 2.4375rem);
-  --t-title: clamp(1.5rem, 1.3rem + .6vw, 1.9375rem);
-  --line-height-heading: 1.12;  --line-height-body: 1.55;
+  /* type scale (Ramp): 64 / 48 / 40 / 28 / 24 · 18 lead · 16 / 14 / 13 body · 10 eyebrow; one weight */
+  --heading-xxl: 64px;  --heading-xl: 48px;  --heading-lg: 40px;  --heading-md: 28px;
+  --title: 24px;  --lead: 18px;  --body: 16px;  --body-sm: 14px;  --label: 13px;
+  --t-display: clamp(2.5rem, 1.94rem + 2.29vw, 4rem);
+  --t-headline: clamp(2.125rem, 1.8rem + 1.34vw, 3rem);
+  --t-headline-sm: clamp(1.75rem, 1.47rem + 1.15vw, 2.5rem);
+  --t-title: clamp(1.375rem, 1.24rem + .58vw, 1.75rem);
+  --line-height-heading: 1.05;  --line-height-body: 1.375;
 
   /* Hvit */ --color-bg: #ffffff;  /* Svart */ --color-fg: #020a0a;  /* Vann */ --color-accent: #005aa4;
   --fjell: #002776; --vann: #005aa4; --natt: #001032; --skog: #00754e; --skog-hover: #095139;
-  --frost: #7eb5d2; --frost-30: #d8e9f2; --sand: #f8e9dd; --sand-70: #faf0e7; --sand-30: #fdf8f5; --syrin-30: #f2f2f9;
+  --frost: #7eb5d2; --frost-70: #a5cbe0; --frost-30: #d8e9f2; --sand: #f8e9dd; --sand-70: #faf0e7; --sand-30: #fdf8f5;
+  --syrin: #d3d3ea; --syrin-70: #e0e0f0; --syrin-30: #f2f2f9;
   --multe: #f8b181; --lyng: #873953; --baer: #e44244; --nordlys: #33af85; --sol: #dc8000;
-  --koksgraa: #323232; --moerkgraa: #676767; --graa: #adadad; --lysgraa: #d8d8d8;
+  --svart: #020a0a; --hvit: #ffffff; --koksgraa: #323232; --moerkgraa: #676767; --graa: #adadad; --lysgraa: #d8d8d8;
+  --card-tint: var(--sand-70);
 
-  --spacing-xs: 4px;  --spacing-sm: 8px;  --spacing-md: 16px;  --spacing-lg: 24px;  --spacing-xl: 48px;  --spacing-2xl: 64px;  --spacing-3xl: 96px;
-  --section-padding: 64px;  --max-width: 1280px;  --gutter: 80px;
-  --radius: 16px;  --radius-sm: 8px;  --radius-img: 96px;  --radius-img-sm: 48px;  --radius-pill: 6em;
-  --shadow-lift: 0 8px 24px -12px rgba(0, 39, 118, 0.25);
-  --dur: 160ms;  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --spacing-xs: 4px;  --spacing-sm: 8px;  --spacing-md: 16px;  --spacing-lg: 24px;  --spacing-xl: 48px;  --spacing-2xl: 64px;  --spacing-3xl: 128px;
+  --section-padding: 64px;  --max-width: 1440px;  --gutter: 64px;
+  --card-gap: 6px;  --card-pad-y: 48px;  --card-pad-x: 36px;
+  --radius: 2px;  --radius-sm: 6px;  --radius-img: 2px;  --radius-img-sm: 2px;  --radius-pill: 6px;
+  --shadow-lift: none;
+  --settings-h: 32px;  --mainbar-h: 80px;
+  --dur: 300ms;  --ease: cubic-bezier(0.4, 0, 0.2, 1);  --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-@media (max-width: 1439px) { :root { --gutter: 48px; } }
-@media (max-width: 1023px) { :root { --section-padding: 48px; --gutter: 24px; } }
-@media (max-width: 640px)  { :root { --section-padding: 32px; --gutter: 20px; } }
+@media (max-width: 1320px) { :root { --gutter: 32px; } }
+@media (max-width: 1140px) { :root { --mainbar-h: 68px; } }
+@media (max-width: 1024px) { :root { --section-padding: 48px; --card-pad-x: 28px; --card-pad-y: 40px; } }
+@media (max-width: 767px)  { :root { --section-padding: 48px; --gutter: 16px; --card-pad-x: 20px; --card-pad-y: 36px; --lead: 17px; --body: 15px; } }
 
 
 @font-face{font-family:"SpareBank1-title-medium";src:url("../../../../../assets/fonts/SpareBank1-Title-Medium-Web.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"SpareBank1-medium";src:url("../../../../../assets/fonts/SpareBank1-Medium-Web.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"SpareBank1-regular";src:url("../../../../../assets/fonts/SpareBank1-Regular-Web.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
 *,*::before,*::after{box-sizing:border-box}
-html{hanging-punctuation:first;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}html.no-scroll{overflow:hidden}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 body{margin:0;background:var(--color-bg);color:var(--color-fg);font:var(--body)/var(--line-height-body) var(--body-font-family);text-wrap:pretty;-webkit-font-smoothing:antialiased}
 ::selection{background:var(--frost-30);color:var(--fjell)}
-:focus-visible{outline:2px solid var(--sol);outline-offset:2px;border-radius:4px}
+:focus-visible{outline:2px solid var(--vann);outline-offset:2px}
 img,svg{display:block;max-width:100%}
-a{color:var(--vann);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.18em;transition:color var(--dur) var(--ease)}
-a:hover{color:var(--fjell)}a:visited{color:var(--lyng)}
-h1,h2,h3,h4{margin:0;font-family:var(--heading-font-family);font-weight:400;color:var(--fjell);text-wrap:balance;letter-spacing:-.005em}
-h1{font-size:var(--t-headline);line-height:var(--line-height-heading)}h2{font-size:var(--t-headline-sm);line-height:1.15}h3{font-size:var(--t-title);line-height:1.2}h4{font-family:var(--title-font-family);font-size:var(--title);line-height:1.25}
-.display{font-size:var(--t-display);line-height:1.1;letter-spacing:-.01em}
-.title{font-family:var(--heading-font-family);font-size:var(--t-title);line-height:1.2;color:var(--fjell)}
-.title-sm{font-family:var(--title-font-family);font-size:var(--title);line-height:1.25}
+a{color:var(--vann);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.14em;transition:color var(--dur) var(--ease)}
+a:hover{color:var(--fjell)}
+h1,h2,h3,h4{margin:0;font-family:var(--heading-font-family);font-weight:400;color:var(--fjell);text-wrap:balance;letter-spacing:0}
+h1{font-size:var(--t-headline);line-height:var(--line-height-heading)}h2{font-size:var(--t-headline-sm);line-height:1.05}h3{font-family:var(--title-font-family);font-size:var(--t-title);line-height:1.14}h4{font-family:var(--title-font-family);font-size:var(--title);line-height:1.17}
+/* type roles (Ramp scale on the brand faces; one weight, hierarchy by size, leading and two-tone) */
+.display,.h1{font-family:var(--heading-font-family);font-size:var(--t-display);line-height:1;letter-spacing:0}
+.h2-l{font-family:var(--heading-font-family);font-size:var(--t-headline);line-height:1.04}
+.h2-m{font-family:var(--heading-font-family);font-size:var(--t-headline-sm);line-height:1.05}
+.title,.h2-s{font-family:var(--title-font-family);font-size:var(--t-title);line-height:1.14;color:var(--fjell)}
+.title-sm,.h3{font-family:var(--title-font-family);font-size:var(--title);line-height:1.17;color:var(--fjell)}
+.hushed{opacity:.6}
 p{margin:0}p+p{margin-top:var(--spacing-md)}
-.lead{font-size:var(--lead);line-height:1.5;max-width:60ch}.small{font-size:var(--body-sm);line-height:1.45}.label{font-family:var(--title-font-family);font-size:var(--label);line-height:1.4;letter-spacing:.01em}
-.muted{color:var(--moerkgraa)}.paper .muted,.paper-sand .muted,.paper-frost .muted,.paper-syrin .muted{color:var(--koksgraa)}
+.lead{font-size:var(--lead);line-height:1.33;max-width:60ch}.small{font-size:var(--body-sm);line-height:1.43}.label{font-family:var(--title-font-family);font-size:var(--label);line-height:1.4}
+.eyebrow{font-family:var(--title-font-family);font-size:10px;line-height:1.5;letter-spacing:.05em;text-transform:uppercase}
+.muted{color:var(--moerkgraa)}.paper .muted,.paper-sand .muted,.paper-frost .muted,.paper-syrin .muted,.card .muted{color:var(--koksgraa)}
 .prose{max-width:68ch}.prose p+p,.prose ul,.prose ol{margin-top:var(--spacing-md)}.prose li+li{margin-top:var(--spacing-sm)}
 strong,b{font-family:var(--title-font-family);font-weight:400}
 .num,.tabular,td,.price{font-variant-numeric:tabular-nums}
 ul,ol{margin:0;padding:0;list-style:none}
-.container{width:min(100% - 2*var(--gutter),var(--max-width));margin-inline:auto}
-.movement{padding-block:var(--section-padding)}
-.paper-sand{background:var(--sand-30)}.paper-frost{background:var(--frost-30)}.paper-syrin{background:var(--syrin-30)}.paper-vann{background:var(--vann);color:#fff}
+.container{width:min(100% - 2*var(--gutter),var(--max-width) - 2*var(--gutter));margin-inline:auto}
+.full-bleed{padding-inline:var(--card-gap)}
+.movement{padding-block:var(--section-padding) 0}.movement:last-child{padding-bottom:var(--section-padding)}
+.paper-sand{background:var(--sand-70)}.paper-frost{background:var(--frost-30)}.paper-syrin{background:var(--syrin-30)}.paper-vann{background:var(--vann);color:#fff}
 .visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
 .skip a{position:absolute;left:8px;top:-100px;z-index:100;padding:10px 16px;background:var(--fjell);color:#fff;border-radius:var(--radius-sm)}.skip a:focus{top:8px}
-/* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 24px;border-radius:var(--radius-pill);border:2px solid transparent;font:var(--body)/1.2 var(--body-font-family);text-decoration:none;cursor:pointer;transition:background-color var(--dur) var(--ease),color var(--dur) var(--ease),border-color var(--dur) var(--ease)}
-.btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.section-title{text-align:center;margin:0 auto var(--spacing-lg);max-width:960px}
+/* buttons (Ramp geometry: 6 px radius, no border, padding-driven height, darken on hover) */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--title-font-family);font-size:16px;line-height:1;letter-spacing:0;padding:14px 16px;border:0;border-radius:var(--radius-sm);text-decoration:none;white-space:nowrap;cursor:pointer;transition:background-color var(--dur) var(--ease),color var(--dur) var(--ease)}
+.btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.btn-lg{padding:17px 20px}.btn-nav,.btn-sm{font-size:14px;padding:10px 16px}
 .btn-primary{background:var(--vann);color:#fff}.btn-primary:hover{background:var(--fjell);color:#fff}
 .btn-action{background:var(--skog);color:#fff}.btn-action:hover{background:var(--skog-hover);color:#fff}
-.btn-secondary{background:#fff;color:var(--vann);border-color:var(--vann)}.btn-secondary:hover{background:var(--frost-30);color:var(--fjell);border-color:var(--fjell)}
-.btn-secondary.btn-on-vann{background:transparent;color:#fff;border-color:#fff}.btn-secondary.btn-on-vann:hover{background:#fff;color:var(--fjell);border-color:#fff}
-.btn-inline{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:8px 4px;color:var(--vann);background:none;border:0;font:var(--body)/1.2 var(--body-font-family);cursor:pointer;text-decoration:none}.btn-inline:hover{text-decoration:underline;color:var(--fjell)}
-.btn-inline.btn-on-vann{color:#fff}.btn-inline.btn-on-vann:hover{color:#fff}
-.btn-inline svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
-.btn-sm{min-height:40px;padding:8px 18px;font-size:var(--body-sm)}
+.btn-secondary{background:var(--frost-30);color:var(--fjell)}.btn-secondary:hover{background:var(--frost-70);color:var(--fjell)}
+.btn-on-dark,.btn-secondary.btn-on-vann{background:#fff;color:var(--fjell)}.btn-on-dark:hover,.btn-secondary.btn-on-vann:hover{background:var(--frost-30);color:var(--fjell)}
+.btn-inline{display:inline-flex;align-items:center;gap:10px;min-height:40px;padding:8px 0;color:var(--vann);background:none;border:0;font:16px/1.5 var(--body-font-family);cursor:pointer;text-decoration:none}.btn-inline:hover{color:var(--fjell)}
+.btn-inline.btn-on-vann,.btn-inline.btn-on-vann:hover{color:#fff}
+.btn-inline svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;transition:transform var(--dur) var(--ease)}
 .btn:disabled,.btn[aria-disabled="true"],button:disabled,input:disabled,select:disabled,textarea:disabled,.is-disabled{background:var(--lysgraa);color:var(--koksgraa);border-color:var(--lysgraa);cursor:not-allowed;opacity:1}
 input:disabled::placeholder{color:var(--koksgraa)}
-.badge,a.badge{display:inline-flex;align-items:center;min-height:32px;padding:4px 12px;border-radius:var(--radius-pill);background:var(--frost-30);color:var(--fjell);font-family:var(--title-font-family);font-size:var(--label);letter-spacing:.01em;text-decoration:none;transition:background-color var(--dur) var(--ease),color var(--dur) var(--ease)}a.badge:hover{background:var(--vann);color:#fff}
+.badge,a.badge{display:inline-flex;align-items:center;min-height:28px;padding:4px 10px;border-radius:var(--radius-sm);background:var(--frost-30);color:var(--fjell);font-family:var(--title-font-family);font-size:var(--label);text-decoration:none;transition:background-color var(--dur) var(--ease),color var(--dur) var(--ease)}a.badge:hover{background:var(--vann);color:#fff}
 .video-frame{position:relative;display:grid;place-items:center;aspect-ratio:16/9;background:var(--frost-30);border-radius:var(--radius);overflow:hidden;color:var(--fjell);text-decoration:none}.video-frame svg{width:64px;height:64px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .btn-icon{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:6px 10px;color:var(--fjell);text-decoration:none;border-radius:var(--radius-sm);font-size:var(--body-sm)}.btn-icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}.btn-icon:hover{background:var(--frost-30);color:var(--fjell)}
-.link-more{display:inline-flex;align-items:center;gap:4px}.link-more svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform var(--dur) var(--ease)}.link-more:hover svg{transform:translateX(3px)}
-/* header */
-header[data-canon]{background:#fff;border-bottom:1px solid var(--lysgraa);position:relative;z-index:20}
-.hdr-utility{border-bottom:1px solid var(--lysgraa)}
-.hdr-utility-row{display:flex;align-items:center;justify-content:space-between;min-height:44px;gap:16px}
-.audience ul,.audience-mobile{display:flex;gap:4px}
-.audience a,.audience-mobile a{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;color:var(--fjell);text-decoration:none;font-size:var(--body-sm);border-radius:var(--radius-pill);font-family:var(--title-font-family)}
-.audience a.is-active,.audience-mobile a.is-active{background:var(--frost-30)}.audience a:hover,.audience-mobile a:hover{color:var(--vann)}
-.hdr-actions{display:flex;align-items:center;gap:8px}
-.hdr-main-row{position:relative;display:flex;align-items:center;gap:32px;min-height:64px}
-.logo{display:flex;align-items:center;flex:0 0 auto;width:140px;min-height:44px}.logo-svg{width:140px;height:auto}
-.hdr-mobile-actions{display:none;margin-left:auto}
-.ds-nav-toggle{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
-.ds-nav-burger{display:none}
-.ds-nav{display:flex;align-items:center;flex:1 1 auto;gap:var(--spacing-md)}
-.ds-nav .market{display:flex;flex-wrap:wrap;gap:4px 20px}
-.ds-nav .market a{display:inline-flex;align-items:center;min-height:44px;color:var(--fjell);text-decoration:none;border-bottom:2px solid transparent;padding:0 2px;transition:border-color var(--dur) var(--ease)}
-.ds-nav .market a:hover,.ds-nav .market a.is-active{border-bottom-color:var(--vann);color:var(--fjell)}
-.nav-extra{display:none}
-/* router */
-.router{background:var(--vann);color:#fff}
-.router-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) 38%;grid-template-areas:"text form art" "all form art";align-items:center;column-gap:32px;row-gap:0;min-height:150px;padding-block:8px}
-.router-text{align-self:end}.router-all{align-self:start}.router-form{align-self:center}
-.router-text{grid-area:text}.router-heading{font-family:var(--title-font-family);font-size:var(--title);line-height:1.2;margin:0}.router-lede{font-size:var(--body-sm);opacity:.92;margin:2px 0 0}
-.router-form{grid-area:form;display:grid;gap:4px}.router-label{font-size:var(--label);font-family:var(--title-font-family);letter-spacing:.01em}
-.router-controls{display:flex;gap:8px;flex-wrap:wrap}
-.router-input{min-height:44px;width:9.5rem;padding:10px 14px;border:1px solid var(--lysgraa);border-radius:var(--radius-sm);font:var(--body)/1.2 var(--body-font-family);color:var(--color-fg);background:#fff}
-.router-input:focus-visible{outline:2px solid var(--sol);outline-offset:2px;border-color:var(--vann)}
-.router-all{grid-area:all}.router-all summary{list-style:none;justify-self:start}.router-all summary::-webkit-details-marker{display:none}.router-all[open] summary svg{transform:rotate(180deg)}
-.bank-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px 24px;padding:8px 0 20px}
-.bank-list li{padding:10px 0;border-top:1px solid rgba(255,255,255,.35);min-width:0;overflow-wrap:anywhere}.bank-list a{color:#fff;text-decoration:none;font-family:var(--title-font-family)}.bank-list a:hover{text-decoration:underline}.bank-list strong{display:block;font-size:var(--lead)}.bank-tagline{display:block;font-size:var(--body-sm);opacity:.9}
-.router-art{grid-area:art;align-self:center;justify-self:end;width:100%;max-width:520px;height:auto;aspect-ratio:1250/368;max-height:150px;object-fit:contain;object-position:right center}
-/* back link */
-.backlink{display:inline-flex;align-items:center;gap:4px;font-size:var(--body-sm);text-decoration:none;min-height:44px}.backlink svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-/* cards */
-.card{position:relative;display:grid;gap:12px;padding:var(--spacing-lg);background:var(--sand-30);border-radius:var(--radius);transition:box-shadow var(--dur) var(--ease),transform var(--dur) var(--ease)}
-.card.frost{background:var(--frost-30)}.card.plain{background:#fff;border:1px solid var(--lysgraa)}
-.card:hover,.card:focus-within{box-shadow:var(--shadow-lift)}
-.card .card-title a{color:var(--fjell);text-decoration:none}.card .card-title a::after{content:"";position:absolute;inset:0;border-radius:inherit}.card:hover .card-title a{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.15em}
-.card .meta{display:flex;flex-wrap:wrap;gap:4px 12px;color:var(--koksgraa);font-size:var(--label);font-family:var(--title-font-family);letter-spacing:.01em}
-.photo{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;background:var(--frost-30);border-radius:var(--radius-img) 0 var(--radius-img) 0}
-.photo-sm{border-radius:var(--radius-img-sm) 0 var(--radius-img-sm) 0}
-.illu{width:72px;height:72px;object-fit:contain}
+.link-more{display:inline-flex;align-items:center;gap:4px}.link-more svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:transform var(--dur) var(--ease);display:inline-block}.link-more:hover svg{transform:translateX(3px)}
+/* arrow link (Danske: no underline, chevron slides on hover) */
+.arrow{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--vann);line-height:1.5}
+.arrow::after{content:"";width:7px;height:7px;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor;transform:rotate(45deg);transition:transform .2s var(--ease);flex:none}
+.arrow:hover{color:var(--fjell)}.arrow:hover::after{transform:translateX(4px) rotate(45deg)}
+.arrow--on-dark,.arrow--on-dark:hover{color:#fff}
+.link-list li+li{margin-top:8px}
+/* inputs */
+.input,.router-input{width:100%;height:48px;padding:0 16px;border:0;border-radius:var(--radius-sm);font:inherit;font-size:16px;color:var(--svart);background:#fff}
+.paper-sand .input,.card--tint .input,.card--white .input{background:var(--sand-30);box-shadow:inset 0 0 0 1px var(--lysgraa)}
+.field-label{display:block;font-family:var(--title-font-family);font-size:var(--body-sm);margin-bottom:8px}
+.field-row{display:flex;gap:8px;flex-wrap:wrap}.field-row .input{flex:1 1 140px}
+/* header (Danske: 32 px settings bar + 80 px main bar; sticky hide / reveal) */
+.site-header{position:sticky;top:0;z-index:50;background:#fff;transition:transform .35s var(--ease)}
+.settings-bar{background:var(--sand-70);height:var(--settings-h)}
+.audience ul{display:flex;height:var(--settings-h)}
+.audience a{display:flex;align-items:center;height:100%;padding:0 20px;font-family:var(--title-font-family);font-size:13px;color:var(--fjell);text-decoration:none}
+.audience a:hover{color:var(--vann)}.audience a.is-active{background:#fff}
+.main-bar{height:var(--mainbar-h);background:#fff}
+.main-row{display:flex;align-items:center;height:var(--mainbar-h);gap:40px}
+.logo{flex:none}.logo svg,.logo-svg{height:36px;width:auto}
+.primary{flex:1 1 auto;min-width:0}
+.primary .panel-top,.primary .audience-m,.primary .service{display:none}
+.primary .market{display:flex;gap:20px}
+.primary .market a{font-size:14px;line-height:1;color:var(--svart);text-decoration:none;white-space:nowrap;transition:color .2s var(--ease)}
+.primary .market a:hover,.primary .market a.is-active{color:var(--vann)}
+.tools{display:flex;align-items:center;gap:20px;margin-left:auto;flex:none}
+.tool-text{font-size:14px;color:var(--svart);text-decoration:none}.tool-text:hover{color:var(--vann)}
+.tool-search{color:var(--svart)}.tool-search svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}.tool-search:hover{color:var(--vann)}
+.menu-toggle{display:none}
+/* cards (Danske: fill only, 2 px corners, no border, no shadow, 6 px gutters, images bleed) */
+.bento{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--card-gap);align-items:stretch}
+.bento+.bento{margin-top:var(--card-gap)}
+.grid-1>*{grid-column:span 12}.grid-2>*{grid-column:span 6}.grid-3>*{grid-column:span 4}.grid-4>*{grid-column:span 3}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:var(--spacing-sm) var(--spacing-md)}
+.card{position:relative;display:flex;flex-direction:column;border-radius:var(--radius);overflow:hidden;background:var(--card-tint);min-width:0;transition:background-color .35s var(--ease)}
+.card--tint{background:var(--card-tint)}.card--dark{background:var(--fjell);color:#fff}.card.card--dark a,.card.card--dark h2,.card.card--dark h3,.card.card--dark p,.card.card--dark .router-heading,.card.card--dark .router-lede,.card.card--dark .field-label{color:#fff}
+.card--frost,.card.frost{background:var(--frost-30)}.card--syrin{background:var(--syrin-30)}.card--white,.card.plain{background:#fff}
+.card-body{padding:var(--card-pad-y) var(--card-pad-x);display:flex;flex-direction:column;flex:1 1 auto;min-width:0}
+.card-body>*+*{margin-top:10px}.card-body>p+p{margin-top:16px}
+.card-body h3 a,.card-body h2 a,.card .card-title a{color:inherit;text-decoration:none;background-image:linear-gradient(currentColor,currentColor);background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;-webkit-box-decoration-break:clone;box-decoration-break:clone;transition:background-size .4s var(--ease),color var(--dur) var(--ease)}
+.card:hover .card-body h3 a,.card:focus-within .card-body h3 a,.card:hover .card-title a,.card:focus-within .card-title a{background-size:100% 1px;color:var(--vann)}
+.card-image{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;transition:transform .7s var(--ease)}
+.card:hover .card-image,.card:focus-within .card-image{transform:scale(1.04)}
+.cover-link::after{content:"";position:absolute;inset:0;z-index:1}
+.card .link-list,.card .meta,.card .actions{position:relative;z-index:2}
+.card.is-link:hover,.card.is-link:focus-within{background:var(--sand)}
+.card--frost.is-link:hover,.card--frost.is-link:focus-within{background:#cbe1ee}
+.card--syrin.is-link:hover,.card--syrin.is-link:focus-within{background:var(--syrin-70)}
+.actions{margin-top:var(--spacing-lg);display:flex;gap:16px;flex-wrap:wrap}
+.card .meta{display:flex;flex-wrap:wrap;gap:6px 14px;color:var(--koksgraa);font-size:var(--body-sm)}
+.photo{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;background:var(--frost-30);border-radius:var(--radius)}
+.photo-sm{border-radius:var(--radius)}
+.illu{width:72px;height:72px;object-fit:contain;transition:transform .5s var(--spring);transform-origin:50% 100%}
+.card:hover .illu,.card:focus-within .illu{transform:translateY(-6px) rotate(-3deg)}
 .promo-illu{height:auto}
-/* footer */
-footer[data-canon]{margin-top:0}
-.contact{padding-block:var(--section-padding);border-top:1px solid var(--lysgraa)}
-.contact-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px;margin-bottom:var(--spacing-lg)}
-.channels{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
-.channel details{border-radius:var(--radius)}.channel summary{list-style:none;display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:16px;border-radius:var(--radius);cursor:pointer;transition:background-color var(--dur) var(--ease)}.channel summary::-webkit-details-marker{display:none}
-.channel summary{position:relative;padding-right:16px}.channel .ch-text{display:grid;grid-template-columns:auto 22px;column-gap:6px;align-items:center}.channel .ch-name{grid-column:1}.channel .ch-text>svg{grid-column:2;width:22px;height:22px;fill:none;stroke:var(--vann);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform var(--dur) var(--ease)}.channel details[open] .ch-text>svg{transform:rotate(180deg)}.channel .ch-sub{grid-column:1/-1}.channel summary:hover{background:var(--frost-30)}.channel summary:hover .ch-name{text-decoration:underline}.channel summary>svg{position:absolute;left:0;top:0;width:0;height:0;opacity:0;fill:none;stroke:var(--vann);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform var(--dur) var(--ease)}.channel details[open] summary>svg{transform:rotate(180deg)}
-.icon-circle{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:var(--vann);color:#fff}.icon-circle svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
-.ch-text{display:grid}.ch-name{font-family:var(--title-font-family);color:var(--fjell);font-size:var(--lead)}.ch-sub{font-size:var(--body-sm);color:var(--koksgraa)}
-.channel .panel{grid-column:1/-1;padding:16px 16px 8px}
-.channel details[open]{grid-column:1/-1;background:var(--sand-30)}.channel details[open] summary{background:transparent}
-.channels{grid-auto-flow:row dense}
-.panel-title{font-family:var(--title-font-family);font-size:var(--lead);color:var(--fjell)}.panel-title .num{font-family:var(--body-font-family)}
-.bank-numbers{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px 32px;margin-top:16px}
-.bank-numbers li{border-top:1px solid var(--lysgraa);padding-top:12px}.bank-name{font-family:var(--title-font-family);color:var(--fjell);text-decoration:none}.bank-name:hover{text-decoration:underline}
-.bank-numbers dl{margin:8px 0 0;display:grid;gap:6px}.bank-numbers dt{display:inline;font-family:var(--title-font-family)}.bank-numbers dd{display:inline;margin:0}.bank-numbers dl>div{display:flex;flex-wrap:wrap;gap:4px 8px}
-.bank-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px 24px}.bank-links li{padding:10px 0;border-top:1px solid var(--lysgraa)}
-.office-search{display:grid;gap:4px;max-width:420px}
-.footer-main{background:var(--fjell);color:#fff;padding-block:var(--section-padding)}
-.footer-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
-.footer-col h2{color:#fff;font-family:var(--title-font-family);font-size:var(--title);margin-bottom:12px}
-.footer-col li{padding:0}.footer-col a{display:inline-flex;align-items:center;min-height:44px}.footer-col a.with-icon{gap:8px}.footer-col a.with-icon img{width:20px;height:20px}.footer-col a{color:#fff;text-decoration:none}.footer-col a:hover{text-decoration:underline;color:#fff}.footer-col a:visited{color:#fff}
-.footer-legal{background:var(--natt);color:#fff;padding-block:24px;font-size:var(--body-sm)}
-.footer-legal-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px}
-.small-links{display:flex;flex-wrap:wrap;gap:0 24px}.small-links a{display:inline-flex;align-items:center;min-height:44px;color:#fff;text-decoration:none}.small-links a:hover{text-decoration:underline;color:#fff}.small-links a:visited{color:#fff}
-.address{opacity:.9}
+/* legacy card shell used by the page modules (choice / tips / price cards): tinted paper, 2 px corners, no shadow */
+.card:not(.card--dark):not(.card--white):not(.card--frost):not(.card--syrin){background:var(--card-tint)}
+li.card:not(.channel):not(:has(>.card-body)){padding:var(--spacing-lg)}.card.choice:not(:has(>.card-body)),.card.price-card:not(:has(>.card-body)){display:grid;gap:12px;align-content:start}
+.card .card-title a::after{content:"";position:absolute;inset:0}
+/* router — band (chrome under the header) and tile (home hero cell) */
+.router--band{padding-top:var(--card-gap)}
+.router-card{position:relative;overflow:hidden;background:var(--vann)}
+.router-body{position:relative;z-index:1}
+.router--band .router-body{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1.4fr) auto;align-items:center;gap:16px 32px;padding:20px 36px;min-height:104px}
+.router-heading{font-family:var(--title-font-family);font-size:var(--title);line-height:1.17;margin:0;color:#fff}.router-lede{font-size:var(--body-sm);opacity:.85;margin:2px 0 0;color:#fff}
+.router .field-label{color:#fff}
+.router--band .router-form{display:grid;gap:4px}.router--band .field-label{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0)}
+.router--band .field-row{flex-wrap:nowrap}.router--band .input{flex:0 1 180px;height:44px}.router--band .btn-on-dark{padding:12px 16px}
+.router summary{list-style:none;cursor:pointer;padding:8px 0;min-height:40px}.router summary::-webkit-details-marker{display:none}.router-all[open]>summary::after{transform:rotate(135deg)}
+.router--band .router-all{justify-self:end}.router--band .router-all[open]{grid-column:1/-1}
+.bank-list{margin-top:12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:0 32px}
+.bank-list li{padding:10px 0;border-top:1px solid rgba(255,255,255,.18);font-size:var(--body-sm);line-height:1.43;min-width:0}.bank-list a{color:#fff;text-decoration:none}.bank-list a:hover{text-decoration:underline}.bank-list strong{font-family:var(--title-font-family)}.bank-tagline{display:block;color:rgba(255,255,255,.7)}
+.router-art{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;opacity:.95;pointer-events:none;transition:transform .9s cubic-bezier(.22,1,.36,1),opacity .5s}
+.router--band .router-art{left:auto;right:-3%;bottom:-46%;width:56%;opacity:.5}
+.router:hover .router-art{transform:translateX(-12px);opacity:1}
+.router--tile{background:var(--vann)}
+.router--tile .router-body{display:flex;flex-direction:column;align-items:center;text-align:center;padding:56px 36px 64px}
+.router--tile .router-body>*{max-width:520px}
+.router--tile .router-heading{font-family:var(--heading-font-family);font-size:var(--t-headline-sm);line-height:1.05}.router--tile .router-lede{font-size:var(--lead);line-height:1.33;opacity:.75;margin-top:12px}
+.router--tile .router-form{margin-top:24px;width:100%}.router--tile .field-label{font-size:var(--body)}
+.router--tile .field-row{flex-direction:column;align-items:center;gap:12px}.router--tile .field-row .input{flex:none;width:220px;text-align:center}
+.router--tile .router-all{margin-top:20px;width:100%}.router--tile summary{justify-content:center}.router--tile .bank-list{grid-template-columns:1fr;max-width:520px;margin:16px auto 0;text-align:left}
+.router .input:focus{outline:2px solid var(--frost);outline-offset:2px}
+/* back link */
+.backlink{display:inline-flex;align-items:center;gap:4px;font-size:var(--body-sm);text-decoration:none;min-height:40px}.backlink svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+/* contact band (Danske pre-footer band + white cards) */
+footer[data-canon]{margin-top:var(--section-padding)}
+.contact{background:var(--sand-70);padding:var(--section-padding) 0}
+.contact-head{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:var(--spacing-lg)}
+.channels{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--card-gap);align-items:start}
+.channel details{display:block}
+.channel summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:28px 24px;min-height:120px}.channel summary::-webkit-details-marker{display:none}
+.icon-circle{flex:none;width:48px;height:48px;border-radius:50%;background:var(--frost-30);color:var(--vann);display:grid;place-items:center;transition:background-color var(--dur) var(--ease),color var(--dur) var(--ease),transform .4s var(--spring)}
+.icon-circle svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ch-text{display:flex;flex-direction:column;gap:2px;min-width:0}.ch-name{font-family:var(--title-font-family);font-size:18px;line-height:1.2;color:var(--fjell);transition:color var(--dur) var(--ease)}
+.chev{margin-left:auto;width:8px;height:8px;border-right:1.5px solid var(--vann);border-bottom:1.5px solid var(--vann);transform:rotate(45deg);transition:transform .2s var(--ease);flex:none}
+.channel details[open] .chev{transform:rotate(-135deg)}
+.channel summary:hover .icon-circle,.channel details[open] .icon-circle{background:var(--vann);color:#fff}.channel summary:hover .icon-circle{transform:scale(1.08)}
+.channel summary:hover .chev{transform:translateY(3px) rotate(45deg)}.channel details[open] summary:hover .chev{transform:translateY(-3px) rotate(-135deg)}.channel summary:hover .ch-name{color:var(--vann)}
+.channel .panel{padding:0 24px 28px;font-size:var(--body-sm);line-height:1.43}
+.channel .panel-title{font-family:var(--title-font-family);font-size:16px;margin-bottom:8px;color:var(--fjell)}.channel .panel-title .num{font-family:var(--body-font-family)}.channel .panel-top{margin-bottom:16px}
+.channel .bank-numbers li,.channel .bank-links li{padding:10px 0;border-top:1px solid rgba(0,39,118,.1)}
+.channel .bank-name{font-family:var(--title-font-family);text-decoration:none}
+.channel dl{margin:6px 0 0}.channel dl div{margin-top:6px}.channel dt{display:inline;font-family:var(--title-font-family)}.channel dt::after{content:": "}.channel dd{display:inline;margin:0}
+.channel .office-search .input{height:44px}
+/* footer (Danske: dark, 64 px padding, 230 px logo column + link columns, legal in the same grid) */
+.site-footer{background:var(--fjell);color:#fff;padding:var(--section-padding) 0}
+.footer-grid{display:grid;grid-template-columns:230px 1fr;column-gap:20px;row-gap:var(--section-padding)}
+.footer-logo{grid-column:1;grid-row:1;align-self:start}.footer-logo svg{height:30px;width:auto}.footer-logo svg path[fill="#002776"]{fill:#fff}
+.footer-cols{grid-column:2;grid-row:1;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px}
+.footer-col h2{font-family:var(--title-font-family);font-size:16px;line-height:1.5;color:#fff}
+.footer-col ul{margin-top:22px}.footer-col li{font-size:var(--body-sm);line-height:1.43}.footer-col li+li{margin-top:8px}
+.footer-col a{color:#fff;text-decoration:none;background-image:linear-gradient(currentColor,currentColor);background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .3s var(--ease)}.footer-col a:hover{background-size:100% 1px;color:#fff}.footer-col a:visited{color:#fff}
+.footer-col .with-icon{display:inline-flex;align-items:center;gap:8px}.footer-col .with-icon img{width:20px;height:20px}
+.footer-legal{grid-column:2;grid-row:2;font-size:12px;line-height:1.34;color:rgba(255,255,255,.85)}
+.legal-links{display:flex;flex-wrap:wrap;gap:6px 20px}.legal-links a{color:#fff;text-decoration:underline}.footer-legal .address{margin-top:20px}
 /* generic modules */
-.faq details{border-top:1px solid var(--lysgraa)}.faq details:last-of-type{border-bottom:1px solid var(--lysgraa)}
-.faq summary{list-style:none;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:20px 0;cursor:pointer;font-family:var(--title-font-family);font-size:var(--title);line-height:1.25;color:var(--fjell)}.faq summary::-webkit-details-marker{display:none}
-.faq summary svg{flex:0 0 auto;width:24px;height:24px;margin-top:4px;fill:none;stroke:var(--vann);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform var(--dur) var(--ease)}.faq details[open] summary svg{transform:rotate(180deg)}
+.faq details{border-top:1px solid rgba(0,39,118,.12)}.faq details:last-of-type{border-bottom:1px solid rgba(0,39,118,.12)}
+.faq summary{list-style:none;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:20px 0;cursor:pointer;font-family:var(--title-font-family);font-size:var(--title);line-height:1.2;color:var(--fjell)}.faq summary::-webkit-details-marker{display:none}
+.faq summary svg{flex:0 0 auto;width:24px;height:24px;margin-top:2px;fill:none;stroke:var(--vann);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform var(--dur) var(--ease)}.faq details[open] summary svg{transform:rotate(180deg)}
 .faq .answer{padding:0 0 24px;max-width:68ch}
-.feedback{border-top:1px solid var(--lysgraa);padding-block:var(--spacing-xl)}.feedback-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px}.feedback h2{font-family:var(--title-font-family);font-size:var(--title)}
+.feedback{padding-block:var(--spacing-xl)}.feedback-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px;padding:32px 36px;background:var(--sand-70);border-radius:var(--radius)}.feedback h2{font-family:var(--title-font-family);font-size:var(--title)}
 .feedback .btn svg{width:22px;height:22px}
-.callout{display:flex;gap:16px;padding:20px 24px;background:var(--sand-30);border-radius:var(--radius);max-width:68ch}.callout svg{flex:0 0 auto;width:28px;height:28px;fill:none;stroke:var(--sol);stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}.callout.info{background:var(--frost-30)}.callout.info svg{stroke:var(--vann)}
+.callout{display:flex;gap:16px;padding:24px 28px;background:var(--sand-70);border-radius:var(--radius);max-width:68ch}.callout svg{flex:0 0 auto;width:28px;height:28px;fill:none;stroke:var(--sol);stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}.callout.info{background:var(--frost-30)}.callout.info svg{stroke:var(--vann)}
 .cta-band{display:grid;gap:12px;max-width:68ch}
-@media (max-width:1279px){.router-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 32%}}
-@media (max-width:1023px){
-  .ds-nav-burger{margin-left:auto}
-  .router-grid{grid-template-columns:1fr 1fr;grid-template-areas:"text all" "form form" "art art";row-gap:8px;padding-block:16px 0;min-height:0}.router-all{justify-self:end;align-self:center}.router-all[open]{grid-column:1/-1;justify-self:stretch}.router-all[open] summary{width:max-content;margin-left:auto}.router-art{max-width:none;max-height:none;aspect-ratio:auto;justify-self:stretch;height:56px;width:100%;object-fit:cover;object-position:50% 60%;margin-top:8px}
-  .channels{grid-template-columns:repeat(3,minmax(0,1fr))}.footer-cols{grid-template-columns:1fr 1fr}
+/* responsive */
+@media (max-width:1320px){.primary .market{gap:16px}.primary .market a{font-size:13px}.main-row{gap:28px}}
+@media (max-width:1140px){
+  .settings-bar{display:none}.logo svg,.logo-svg{height:30px}.main-row{gap:16px}
+  .tools .tool-text,.tools .tool-search{display:none}
+  .menu-toggle{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:72px;height:var(--mainbar-h);margin-right:calc(-1*var(--gutter) + 8px);padding:0;border:0;background:transparent;color:var(--fjell);cursor:pointer}
+  .bars{display:block;width:19px;height:15px;position:relative}.bars i{position:absolute;left:0;width:19px;height:2px;background:var(--fjell);transition:transform .25s var(--ease),opacity .2s}
+  .bars i:nth-child(1){top:0}.bars i:nth-child(2){top:6.5px}.bars i:nth-child(3){top:13px}
+  .is-open .bars i:nth-child(1){transform:translateY(6.5px) rotate(45deg)}.is-open .bars i:nth-child(2){opacity:0}.is-open .bars i:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+  .menu-label{font-family:var(--title-font-family);font-size:12px;line-height:1}
+  .primary{display:none;position:fixed;top:var(--mainbar-h);left:0;right:0;bottom:0;background:#fff;overflow-y:auto;z-index:60}
+  .is-open .primary{display:block}
+  .primary .panel-top{display:block;background:var(--sand-70);padding:24px 16px}
+  .panel-search{display:flex;align-items:center;gap:12px;height:48px;padding:0 16px;border-radius:var(--radius-sm);background:#fff;color:var(--svart);text-decoration:none;font-size:16px}
+  .panel-search svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;margin-left:auto;order:2}
+  .primary .audience-m{display:flex;overflow-x:auto;background:var(--sand-70);padding:0 16px;scrollbar-width:none}
+  .primary .audience-m a{display:flex;align-items:center;height:40px;padding:0 20px;font-family:var(--title-font-family);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--fjell);text-decoration:none;white-space:nowrap}
+  .primary .audience-m a.is-active{background:#fff}
+  .primary .market{display:block;padding:8px 0 8px 24px}.primary .market li{border-bottom:1px solid rgba(0,39,118,.1)}
+  .primary .market a{display:flex;align-items:center;justify-content:space-between;height:45px;padding-right:20px;font-family:var(--title-font-family);font-size:15px;color:var(--svart)}
+  .primary .market a::after{content:"";width:8px;height:8px;border-top:1.5px solid var(--fjell);border-right:1.5px solid var(--fjell);transform:rotate(45deg)}
+  .primary .service{display:block;background:var(--sand-30);padding:8px 0 24px 24px;margin-top:8px}
+  .primary .service a{display:flex;align-items:center;height:45px;font-family:var(--title-font-family);font-size:15px;color:var(--svart);text-decoration:none}
 }
-@media (max-width:1023px){
-  .hdr-main-row{gap:12px;min-height:60px}
-  .ds-nav-burger{display:inline-flex;align-items:center;gap:8px;cursor:pointer;min-height:40px;padding:8px 12px;font:var(--body-sm)/1 var(--body-font-family);color:var(--fjell);background:transparent;border:1px solid var(--fjell);border-radius:var(--radius-pill);user-select:none}
-  .ds-nav-burger-icon{width:16px;height:12px;position:relative}.ds-nav-burger-icon::before,.ds-nav-burger-icon::after{content:"";position:absolute;left:0;right:0;height:2px;background:currentColor}.ds-nav-burger-icon::before{top:0}.ds-nav-burger-icon::after{bottom:0}
-  .ds-nav{position:absolute;top:100%;left:calc(-1*var(--gutter));right:calc(-1*var(--gutter));flex-direction:column;align-items:stretch;gap:0;padding:8px var(--gutter) 24px;background:#fff;border-top:1px solid var(--lysgraa);border-bottom:1px solid var(--lysgraa);transform:translateY(-8px);opacity:0;visibility:hidden;pointer-events:none;transition:transform var(--dur) var(--ease),opacity var(--dur) var(--ease),visibility 0s linear var(--dur)}
-  .ds-nav .market{display:block}.ds-nav .market a{display:flex;min-height:48px;border-bottom:1px solid var(--lysgraa);font-size:var(--lead)}.ds-nav .market a.is-active{border-bottom:1px solid var(--lysgraa);color:var(--vann)}
-  .nav-extra{display:none}
-  @media (max-width:640px){.nav-extra{display:grid;gap:12px;padding-top:16px}}.audience-mobile{gap:8px}.nav-extra-actions{display:flex;flex-wrap:wrap;gap:8px}
-  .ds-nav-toggle:checked ~ .ds-nav{transform:translateY(0);opacity:1;visibility:visible;pointer-events:auto;transition:transform var(--dur) var(--ease),opacity var(--dur) var(--ease),visibility 0s linear 0s}
+@media (max-width:1024px){
+  .grid-3>*,.grid-4>*{grid-column:span 6}
+  .router--band .router-body{grid-template-columns:1fr auto;gap:12px 24px;padding:20px 28px}.router--band .router-form{grid-column:1/-1}.router--band .router-art{display:none}
+  .channels{grid-template-columns:repeat(3,minmax(0,1fr))}.footer-cols{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
-@media (max-width:640px){
-  .hdr-utility{display:none}.hdr-mobile-actions{display:flex}.logo,.logo-svg{width:118px}
-  .router-grid{grid-template-columns:1fr;grid-template-areas:"text" "all" "form" "art";row-gap:0;padding-top:10px}.router-all{justify-self:start;align-self:auto}.router-all summary{min-height:38px;padding-block:4px}.router-text{align-self:auto}.router-lede{margin-top:0}.router-label{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%)}.router-form{position:relative}.router-input{width:9rem}.router-art{height:32px;margin-top:6px}.router-heading{font-size:var(--lead)}
-  .channels{grid-template-columns:1fr 1fr}.channel summary{padding:12px}.icon-circle{width:48px;height:48px}
-  .footer-cols{grid-template-columns:1fr}
+@media (max-width:767px){
+  .h1,.display{line-height:1.05}.h2-l{line-height:1.12}.h2-m{line-height:1.14}
+  .bento>.card,.bento>.campaign>.card{grid-column:1/-1}
+  .btn-lg{width:100%}
+  .router--band .router-body{grid-template-columns:1fr;padding:20px}.router--band .router-all{justify-self:start}.router--band .field-row{flex-wrap:wrap}.router--band .input{flex:1 1 140px}
+  .router--tile .router-body{padding:40px 20px 140px}.router--tile .field-row .input{width:100%}.router--tile .router-art{opacity:.9}
+  .channels{grid-template-columns:1fr}.channel summary{min-height:0;padding:20px}.contact-head .btn{width:100%}
+  .site-footer{padding:48px 0 60px}.footer-grid{grid-template-columns:1fr;row-gap:40px}.footer-logo,.footer-cols,.footer-legal{grid-column:1;grid-row:auto}.footer-cols{grid-template-columns:1fr;gap:32px}
+  .feedback-row{padding:24px 20px}
 }
-@media (max-width:400px){.channels{grid-template-columns:1fr}}
+@media (max-width:640px){.btn-nav{min-height:40px}.field-row .btn{width:100%}}
 
 
-.intro{padding-bottom:var(--spacing-xl)}.back{margin-bottom:var(--spacing-md)}
-.intro h1{max-width:20ch}.intro .lead{margin-top:var(--spacing-md);max-width:52ch}
-.steps-grid{display:grid;grid-template-columns:minmax(0,8fr) minmax(0,4fr);grid-template-areas:"h2 media" "text media";gap:var(--spacing-md) var(--spacing-xl);align-items:start}
-.steps-h{grid-area:h2}.steps-text{grid-area:text}
-.steps-text ol{list-style:none;counter-reset:step;padding:0;margin-top:var(--spacing-sm);display:grid;gap:0}
-.steps-text ol li{counter-increment:step;display:grid;grid-template-columns:36px minmax(0,1fr);gap:var(--spacing-md);align-items:start;padding:12px 0;border-top:1px solid var(--frost);margin:0}.step-text{padding-top:6px}
+/* ── round 01 card language (shared by the category-hub, kundeservice-hub, tool and utility families) ── */
+/* hero bento: text card 5 + media card 7; text-only hero = one card across 12 */
+.hero{padding-top:24px}.hero-bento:has(.hero-media){grid-template-rows:minmax(440px,auto)}
+.hero-card{grid-column:1/span 5}.hero-card--wide{grid-column:1/-1}.hero-card .card-body{justify-content:center;padding:56px 48px}
+.hero-card .back{margin:0 0 20px}.hero-card .backlink{color:var(--vann)}.hero-card h1,.hero-card .prose h2{font-family:var(--heading-font-family);font-size:var(--t-headline);line-height:1.04;max-width:20ch}.hero-card--wide h1{max-width:26ch}.hero-card--wide .card-body{padding:48px}
+/* secondary button on a Frost card: white fill so it keeps its shape (request for chrome) */
+.card--frost .btn-secondary{background:#fff}.card--frost .btn-secondary:hover{background:var(--frost-70)}
+.hero-card .lead{margin-top:20px}.hero-card .lead+.lead,.hero-card .lead+p{margin-top:12px}.hero-card .cta-row{margin-top:28px}.hero-card .prose{max-width:none}
+.hero-bento:has(.hero-card:hover) .media-photo img{transform:scale(1.03)}
+.media-photo{grid-column:span 7;margin:0;background:var(--frost-30);min-height:0;position:relative}.media-photo .img-link,.media-photo .media-img{position:absolute;inset:0;display:block;width:100%;height:100%}.media-photo .media-img{object-fit:cover;transition:transform .7s var(--ease)}
+.media-illu{grid-column:span 7;margin:0;align-items:center;justify-content:center;padding:32px;gap:16px}.media-illu .illu{width:min(70%,360px);height:auto;max-height:360px;object-fit:contain;transform:none}.media-illu .illu-lg{width:112px;height:112px}
+/* doors (visual-nav): photo cards, then icon cards, as one bento under the hero */
+.hero+.doors{padding-top:var(--card-gap)}.hero+.doors .section-title{margin-top:var(--section-padding)}
+.door .card-body{padding:28px 28px 32px}.door p{color:var(--koksgraa)}.small-door .card-body{padding:28px 28px 32px}.tile-icon{width:48px;height:48px;margin-bottom:6px}
+.card .card-title a{color:inherit;text-decoration:none}
+/* shortcuts: one Syrin card with the links in columns */
+.shortcuts-card{grid-column:1/-1}.shortcuts-card .card-body{padding:36px 48px 40px}
+.shortcut-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 24px;margin-top:20px}.shortcut-list li+li{margin-top:0}
+/* membership (cobranding) in one Sand card */
+.cobrand-card{grid-column:1/-1}.cobrand-card .card-body{padding:36px 48px}
+.cobrand summary{list-style:none;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--spacing-sm) var(--spacing-lg);cursor:pointer;min-height:44px}.cobrand summary::-webkit-details-marker{display:none}
+.cobrand-q{color:var(--fjell)}.cobrand-toggle{pointer-events:none}.cobrand[open] .cobrand-toggle svg{transform:rotate(180deg)}
+.cobrand-panel{display:grid;grid-template-columns:7fr 5fr;gap:var(--spacing-xl);align-items:start;margin-top:var(--spacing-xl)}
+.cobrand-main{display:grid;gap:var(--spacing-md)}.cobrand-name{font-size:var(--t-title);line-height:1.2}.cobrand-logo{width:120px;height:auto}
+.cobrand-side{display:grid;gap:var(--spacing-md);justify-items:start;align-self:start;max-width:28rem}.cobrand-illu{width:140px;height:auto}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:var(--spacing-sm) var(--spacing-md)}
+/* help columns: one card per captured column (photo bleeds) */
+.help-col .card-body{padding:36px 40px 40px}.help-col h2{font-family:var(--title-font-family);font-size:var(--t-title);line-height:1.14}.help-col p{max-width:60ch}.help-col .illu-lg{width:112px;height:112px}.help-col .prose{max-width:none}.help-col .btn-inline{padding-inline:0}
+/* split: media card 5 + text card 7 */
+.split-bento .media-photo,.split-bento .media-illu{grid-column:span 5}.split-bento .media-photo{min-height:380px}
+.split-card{grid-column:span 7}.split-card .card-body{justify-content:center;padding:56px 48px}.split-card h2,.split-card .prose h2{font-family:var(--heading-font-family);font-size:var(--t-headline-sm);line-height:1.05;margin:0}.split-card .prose{max-width:60ch}.split-card .prose h2+p{margin-top:16px}
+.split-bento:not(.media-first) .media-photo,.split-bento:not(.media-first) .media-illu{order:2}
+.split-bento:has(.split-card:hover) .media-photo img{transform:scale(1.03)}
+/* promo (banner): illustration on the tint beside the teaser */
+.promo{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;min-height:240px}.promo--noart{grid-template-columns:minmax(0,1fr)}
+.promo .promo-illu{width:180px;max-width:100%;height:auto;margin:24px 0 24px 40px;transition:transform .5s var(--spring)}.promo:hover .promo-illu,.promo:focus-within .promo-illu{transform:scale(1.06) rotate(-2deg)}
+.promo .card-body{justify-content:center;padding-inline:40px}.promo p{max-width:60ch}
+/* card rails (popular / tips / related): photo cards and icon cards */
+.card-tile .card-body{padding:28px 28px 32px}.pop-tile .card-body{padding:24px 24px 28px}.pop-tile .tile-icon{width:48px;height:48px}.card-tile .prose,.pop-tile .prose{max-width:none}.card-tile .prose h2,.card-tile .prose h3,.card-tile .prose h4,.pop-tile .prose h2{margin-top:0;font-size:var(--lead)}.card p,.tile p{color:var(--koksgraa)}
+.meta{display:flex;flex-wrap:wrap;gap:4px 12px;color:var(--koksgraa);font-size:var(--label);font-family:var(--title-font-family)}
+.section-lead{margin:-8px auto var(--spacing-lg);text-align:center}.cards-note{margin-top:var(--spacing-lg)}.cards-ctas{margin-top:var(--spacing-lg);justify-content:center}
+/* compare: Frost card, half width */
+.compare-card{grid-column:1/span 6}.compare-card p{margin-top:12px;max-width:52ch}.compare-card--wide{grid-column:1/-1}
+.link-more svg{width:16px;height:16px;margin-left:2px;vertical-align:-2px;display:inline-block}
+/* faq: centred title, questions in the container at ≤ 52rem */
+.faq-wrap .faq{max-width:52rem;margin-inline:auto}.faq-wrap .section-lead{max-width:52rem}
+.faq-q{font:inherit;color:inherit;margin:0;flex:1 1 auto;letter-spacing:inherit}
+/* steps: one Frost card */
+.steps-card{grid-column:1/-1}.steps-card .card-body{padding:48px}.steps-h{margin-bottom:8px}
+.step-list{list-style:none;counter-reset:step;padding:0;margin:0;display:grid;gap:0;max-width:68ch}
+.step{counter-increment:step;display:grid;grid-template-columns:36px minmax(0,1fr);grid-template-areas:"n title" ". body";gap:var(--spacing-sm) var(--spacing-md);align-items:start;padding:var(--spacing-md) 0;border-top:1px solid rgba(0,39,118,.12)}.step:last-child{border-bottom:1px solid rgba(0,39,118,.12)}
+.step::before{content:counter(step);grid-area:n;display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--vann);color:#fff;font-family:var(--title-font-family);font-size:var(--body);font-variant-numeric:tabular-nums}
+.step-title{grid-area:title;padding-top:6px}.step-title a{color:var(--fjell);text-decoration:none}.step-title a:hover{text-decoration:underline}.step-body{grid-area:body;display:grid;gap:var(--spacing-md)}.step-body:empty{display:none}
+/* usp: benefit cards */
+.usp-item .card-body{padding:28px}.usp-item .illu{width:64px;height:64px;margin-bottom:6px}.usp-item .prose h2,.usp-item .prose h3{margin:0}.usp-item .prose h2+p,.usp-item .prose h3+p{margin-top:var(--spacing-xs)}
+/* chat field (kundeservice ask) inside a Frost card */
+.ask{display:grid;gap:6px;margin-top:var(--spacing-lg);max-width:36rem}.ask-row{display:flex;gap:8px;flex-wrap:wrap}
+.ask-input{flex:1 1 14rem;min-height:48px;padding:12px 16px;border:0;border-radius:var(--radius-sm);font:var(--body)/1.35 var(--body-font-family);color:var(--color-fg);background:#fff;resize:none}
+.ask-input:disabled{color:var(--koksgraa);background:#fff;box-shadow:inset 0 0 0 1px var(--lysgraa);cursor:not-allowed}.ask-input:disabled::placeholder{color:var(--koksgraa)}.ask-note{margin-top:2px}
+.ask-input:focus-visible{outline:2px solid var(--vann);outline-offset:2px}
+/* callout, feedback */
+.callout{align-items:flex-start}.callout-text{display:grid;gap:var(--spacing-sm)}.callout-text .btn{margin-top:var(--spacing-xs)}
+.callout-rich{display:grid;grid-template-columns:28px minmax(0,1fr);align-items:start;gap:var(--spacing-md);padding:var(--spacing-lg) var(--spacing-lg) var(--spacing-lg) var(--spacing-md);max-width:calc(68ch + 84px)}.callout-body{max-width:68ch}.callout-body h2{font-family:var(--title-font-family);font-size:var(--title);line-height:1.25;margin-top:0}.callout-body h3,.callout-body h4{font-family:var(--title-font-family);font-size:var(--lead);line-height:1.3;margin-top:var(--spacing-md)}.callout-body h2+p,.callout-body h3+p,.callout-body h4+p{margin-top:var(--spacing-sm)}.callout-body .cta-row{margin-top:var(--spacing-md)}
+.feedback-btns{display:flex;gap:8px}.feedback .btn{min-width:56px;padding-inline:14px}
+.switch,.compare{padding-top:var(--section-padding)}
+@media (max-width:1024px){
+  .hero-bento,.hero-bento:has(.hero-media){grid-template-rows:auto}.hero-card{grid-column:1/-1}.hero-bento .media-photo,.hero-bento .media-illu{grid-column:1/-1;order:-1}.hero-bento .media-photo{aspect-ratio:16/9}
+  .hero-card .card-body{padding:40px 32px}
+  .shortcut-list{grid-template-columns:1fr 1fr}
+  .cobrand-panel{grid-template-columns:1fr}
+  .split-bento .media-photo,.split-bento .media-illu,.split-card{grid-column:1/-1}.split-bento .media-photo{min-height:0;aspect-ratio:16/9}.split-bento:not(.media-first) .media-photo,.split-bento:not(.media-first) .media-illu{order:-1}
+  .split-card .card-body{padding:40px 32px}
+  .compare-card{grid-column:1/-1}
+  .steps-card .card-body{padding:40px 32px}
+}
+@media (max-width:767px){
+  .hero-card .card-body,.hero-card--wide .card-body,.split-card .card-body,.steps-card .card-body{padding:36px 20px}.hero-card .cta-row{margin-top:24px}
+  .shortcut-list{grid-template-columns:1fr}.shortcuts-card .card-body,.cobrand-card .card-body{padding:32px 20px}
+  .promo{grid-template-columns:1fr;min-height:0}.promo .promo-illu{margin:24px 20px 0;width:120px}.promo .card-body{padding-inline:20px}
+  .help-col .card-body{padding:28px 20px 32px}
+  .pop-tile .card-body{flex-direction:row;align-items:center;gap:16px;padding:20px}.pop-tile .tile-icon{margin:0;flex:none}.pop-tile .card-body>*+*{margin-top:0}
+  .hero-card .btn,.split-card .btn,.promo .btn,.help-col .btn,.steps-card .btn,.ask-row .btn,.cards-ctas .btn{width:100%;padding:17px 20px}
+  .media-illu{padding:24px}.media-illu .illu{width:min(60%,240px);max-height:240px}
+  .callout{flex-direction:column}
+}
+
+/* tool page — steps card 7 + illustration tile 5 */
+.steps-bento .steps-card{grid-column:1/span 7}.steps-bento .steps-media{grid-column:8/-1}
+.steps-text ol{list-style:none;counter-reset:step;padding:0;margin-top:var(--spacing-md);display:grid;gap:0}
+.steps-text ol li{counter-increment:step;display:grid;grid-template-columns:36px minmax(0,1fr);gap:var(--spacing-md);align-items:start;padding:12px 0;border-top:1px solid rgba(0,39,118,.12);margin:0}.step-text{padding-top:6px}
 .steps-text ol li::before{content:counter(step);display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--vann);color:#fff;font-family:var(--title-font-family);font-size:var(--body);font-variant-numeric:tabular-nums}
-.steps-text ol li:last-child{border-bottom:1px solid var(--frost)}
-.steps-cta{margin-top:var(--spacing-lg)}.steps-note{margin-top:var(--spacing-md);color:var(--koksgraa);max-width:48ch}
-.steps-media{grid-area:media;margin:0;align-self:start;display:flex;justify-content:center}.illu-hero{width:320px;max-width:100%;height:auto;aspect-ratio:1}
-.callout-rich{display:grid;grid-template-columns:28px minmax(0,1fr);align-items:start;gap:var(--spacing-md) var(--spacing-md);padding:var(--spacing-lg) var(--spacing-lg) var(--spacing-lg) var(--spacing-md);max-width:calc(68ch + 84px)}
-.callout-body{max-width:68ch}.callout-body h2{font-family:var(--title-font-family);font-size:var(--title);line-height:1.25}.callout-body h3{font-family:var(--title-font-family);font-size:var(--lead);line-height:1.3;margin-top:var(--spacing-lg)}.callout-body h2+p,.callout-body h3+p{margin-top:var(--spacing-sm)}
-.reopen-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--spacing-xl);align-items:center}
-.reopen-media{margin:0}.reopen-text h2{margin-bottom:var(--spacing-md)}.reopen-cta{margin-top:var(--spacing-lg)}
-.feedback-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px}.feedback-btns{display:flex;gap:8px}
-@media (max-width:1023px){.steps-grid{grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:var(--spacing-md) var(--spacing-lg)}.illu-hero{width:240px}.reopen-grid{grid-template-columns:1fr;gap:var(--spacing-lg)}.reopen-media .photo{aspect-ratio:2/1}}
-@media (max-width:640px){.intro{padding-bottom:var(--spacing-md)}.steps-grid{grid-template-columns:minmax(0,1fr) 120px;grid-template-areas:"h2 media" "text text";gap:var(--spacing-sm) var(--spacing-md);align-items:center}.steps-media{align-self:center}.illu-hero{width:120px}.steps-text{margin-top:var(--spacing-sm)}.callout-rich{grid-template-columns:24px 1fr;padding:var(--spacing-md)}.callout-rich svg{width:24px;height:24px}.reopen-media .photo{aspect-ratio:3/2;border-radius:var(--radius-img-sm) 0 var(--radius-img-sm) 0}}
+.steps-text ol li:last-child{border-bottom:1px solid rgba(0,39,118,.12)}
+.steps-text{max-width:none}.steps-text>p{max-width:60ch}.steps-cta{margin-top:var(--spacing-lg)}.steps-note{margin-top:var(--spacing-md);color:var(--koksgraa);max-width:52ch}
+.steps-media .illu-hero{width:min(70%,320px);max-height:320px;aspect-ratio:1}
+.feedback-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px}
+@media (max-width:1024px){.steps-bento .steps-card,.steps-bento .steps-media{grid-column:1/-1}.steps-bento .steps-media{order:-1;padding:24px}.steps-media .illu-hero{width:min(50%,200px);max-height:200px}}
+@media (max-width:767px){.steps-text ol li{grid-template-columns:32px minmax(0,1fr)}.steps-text ol li::before{width:32px;height:32px}.steps-media .illu-hero{width:min(45%,160px);max-height:160px}}
 
 </style>
 <link rel="canonical" href="https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sperre-kort.html">
@@ -280,19 +437,12 @@ footer[data-canon]{margin-top:0}
 </head>
 <body data-template="form">
 <nav class="skip" aria-label="Hurtiglenker"><a href="#main-menu">Til hovedmeny</a><a href="#main-content">Til hovedinnhold</a></nav>
-<header data-section="header" data-intent="site navigation, audience switch, one action" data-layout="contained" data-canon data-nav-collapse="hamburger">
-  <div class="hdr-utility">
-    <div class="container hdr-utility-row">
-      <nav class="audience" aria-label="Målgruppe"><ul><li><a href="../../../privat.html" aria-current="page" class="is-active">Privat</a></li><li><a href="../../../bedrift.html">Bedrift</a></li><li><a href="../../../om-oss.html">Om oss</a></li></ul></nav>
-      <div class="hdr-actions">
-        <a class="btn-icon" href="https://www.sparebank1.no/nb/bank/privat/kundeservice.html?search="><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg><span>Søk</span></a>
-        <a class="btn btn-secondary btn-sm" href="../bestill/bli-kunde.html">Bli kunde</a>
-        <a class="btn btn-action btn-sm" href="https://login.sparebank1.no/" data-slot="login">Logg inn</a>
-      </div>
-    </div>
+<header class="site-header" data-section="header" data-intent="site navigation, audience switch, one action" data-layout="contained" data-canon data-nav-collapse="hamburger">
+  <div class="settings-bar">
+    <div class="container"><nav class="audience" aria-label="Målgruppe"><ul><li><a href="../../../privat.html" aria-current="page" class="is-active">Privat</a></li><li><a href="../../../bedrift.html">Bedrift</a></li><li><a href="../../../om-oss.html">Om oss</a></li></ul></nav></div>
   </div>
-  <div class="hdr-main">
-    <div class="container hdr-main-row">
+  <div class="main-bar">
+    <div class="container main-row">
       <a class="logo" href="../../../privat.html"><svg version="1.1" id="SpareBank_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 viewBox="0 0 281.633 78.197"
 	 class="logo-svg" role="img" aria-label="Tilbake til forsiden for privat for - SpareBank 1" focusable="false">
@@ -367,60 +517,62 @@ footer[data-canon]{margin-top:0}
 	</g>
 </g>
 </svg></a>
-      <div class="hdr-mobile-actions"><a class="btn btn-action btn-sm" href="https://login.sparebank1.no/">Logg inn</a></div>
-      <input type="checkbox" id="ds-nav-toggle" class="ds-nav-toggle" tabindex="-1" aria-hidden="true">
-      <label class="ds-nav-burger" for="ds-nav-toggle" role="button" tabindex="0" aria-controls="main-menu" aria-expanded="false"><span class="ds-nav-burger-icon" aria-hidden="true"></span><span class="ds-nav-burger-label">Meny</span></label>
-      <nav id="main-menu" class="ds-nav" aria-label="Hovedmeny">
+      <nav id="main-menu" class="primary" aria-label="Hovedmeny">
+        <div class="panel-top"><a class="panel-search" href="https://www.sparebank1.no/nb/bank/privat/kundeservice.html?search="><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg><span>Søk</span></a></div>
+        <ul class="audience-m" aria-label="Målgruppe"><li><a href="../../../privat.html" aria-current="page" class="is-active">Privat</a></li><li><a href="../../../bedrift.html">Bedrift</a></li><li><a href="../../../om-oss.html">Om oss</a></li></ul>
         <ul class="market"><li><a href="../../daglig-bruk.html">Daglig bruk</a></li><li><a href="../../lan.html">Låne</a></li><li><a href="../../sparing.html">Spare</a></li><li><a href="../../pensjon.html">Pensjon</a></li><li><a href="../../forsikring.html">Forsikring</a></li><li><a href="../../eiendom.html">Eiendom</a></li><li><a href="../../tips-og-rad.html">Tips og råd</a></li><li><a href="../../kundeservice.html" aria-current="page" class="is-active">Kundeservice</a></li><li><a href="../../lofavor.html">LOfavør-fordeler</a></li></ul>
-        <div class="nav-extra">
-          <ul class="audience-mobile" aria-label="Målgruppe"><li><a href="../../../privat.html" aria-current="page" class="is-active">Privat</a></li><li><a href="../../../bedrift.html">Bedrift</a></li><li><a href="../../../om-oss.html">Om oss</a></li></ul>
-          <div class="nav-extra-actions"><a class="btn-icon" href="https://www.sparebank1.no/nb/bank/privat/kundeservice.html?search="><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg><span>Søk</span></a><a class="btn btn-secondary btn-sm" href="../bestill/bli-kunde.html">Bli kunde</a></div>
-        </div>
+        <ul class="service"><li><a href="../bestill/bli-kunde.html">Bli kunde</a></li></ul>
       </nav>
+      <div class="tools">
+        <a class="tool-text" href="../bestill/bli-kunde.html">Bli kunde</a>
+        <a class="tool-search" href="https://www.sparebank1.no/nb/bank/privat/kundeservice.html?search=" aria-label="Søk"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg><span class="visually-hidden">Søk</span></a>
+        <a class="btn btn-action btn-nav" href="https://login.sparebank1.no/" data-slot="login">Logg inn</a>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span><span class="menu-label">Meny</span></button>
     </div>
   </div>
 </header>
-<aside class="router" data-section="bank-router" data-intent="route the visitor to a regional bank" data-layout="contained" data-module="bank-router" data-canon aria-label="Vi er flere banker i hele Norge">
-  <div class="container router-grid">
-    <div class="router-text">
-      <p class="router-heading" data-slot="heading">Vi er flere banker i hele Norge</p>
-      <p class="router-lede" data-slot="lede">Velg en bank for å se betingelser</p>
-    </div>
-    <form class="router-form" action="#alle-banker" method="get">
-      <label class="router-label" for="postnummer-input" data-slot="postcode-label">Ditt postnummer</label>
-      <div class="router-controls">
-        <input class="router-input" id="postnummer-input" name="postnummer" type="text" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="postal-code" placeholder="Postnummer">
-        <button class="btn btn-secondary btn-on-vann" type="submit" data-slot="cta-location"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-6-5.4-6-11a6 6 0 1 1 12 0c0 5.6-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg><span>Bruk min posisjon</span></button>
+<aside class="router router--band" data-section="bank-router" data-intent="route the visitor to a regional bank" data-layout="contained" data-module="bank-router" data-canon aria-label="Vi er flere banker i hele Norge">
+  <div class="container"><div class="card card--dark router-card">
+    <div class="router-body">
+      <div class="router-text">
+        <p class="router-heading" data-slot="heading">Vi er flere banker i hele Norge</p>
+        <p class="router-lede" data-slot="lede">Velg en bank for å se betingelser</p>
       </div>
-    </form>
-    <details class="router-all" id="alle-banker">
-      <summary class="btn-inline btn-on-vann" data-slot="cta-all-banks">Se alle banker<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
-      <ol class="bank-list" data-slot="banks"><li><a href="https://www.sparebank1.no/nb/gudbrandsdal/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Gudbrandsdal</strong></a><span class="bank-tagline">Skaper verdier for kunder og lokalsamfunn.</span></li><li><a href="https://www.sparebank1.no/nb/hallingdal/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Hallingdal Valdres</strong></a><span class="bank-tagline">Fjellstøtt gjennom livet.</span></li><li><a href="https://www.sparebank1.no/nb/helgeland/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Helgeland</strong></a><span class="bank-tagline">En drivkraft for vekst på Helgeland.</span></li><li><a href="https://www.sparebank1.no/nb/lom-skjaak/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Lom og Skjåk</strong></a><span class="bank-tagline">Lokalbanken din – der du er.</span></li><li><a href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Nord-Norge</strong></a><span class="bank-tagline">For Nord-Norge.</span></li><li><a href="https://www.sparebank1.no/nb/nordmore/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Nordmøre</strong></a><span class="bank-tagline">Tett på kundenes behov.</span></li><li><a href="https://www.sparebank1.no/nb/ringerike-hadeland/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Ringerike Hadeland</strong></a><span class="bank-tagline">Stolt støttespiller til lokalsamfunnet.</span></li><li><a href="https://www.sparebank1.no/nb/smn/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>SMN</strong></a><span class="bank-tagline">Sammen får vi ting til å skje.</span></li><li><a href="https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Sogn og Fjordane</strong></a><span class="bank-tagline">Vi er med heile vegen.</span></li><li><a href="https://www.sparebank1.no/nb/sor-norge/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Sør-Norge</strong></a><span class="bank-tagline">Hjelper driftige folk og bedrifter dit de vil.</span></li><li><a href="https://www.sparebank1.no/nb/ostfold-akershus/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Østfold Akershus</strong></a><span class="bank-tagline">Sammen får vi ting til å skje.</span></li><li><a href="https://www.sparebank1.no/nb/ostlandet/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Østlandet</strong></a><span class="bank-tagline">Banken med kundeutbytte.</span></li></ol>
-    </details>
+      <form class="router-form" action="#alle-banker" method="get">
+        <label class="field-label" for="postnummer-input" data-slot="postcode-label">Ditt postnummer</label>
+        <div class="field-row">
+          <input class="input" id="postnummer-input" name="postnummer" type="text" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="postal-code" placeholder="Postnummer">
+          <button class="btn btn-on-dark" type="submit" data-slot="cta-location"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-6-5.4-6-11a6 6 0 1 1 12 0c0 5.6-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg><span>Bruk min posisjon</span></button>
+        </div>
+      </form>
+      <details class="router-all" id="alle-banker">
+        <summary class="arrow arrow--on-dark" data-slot="cta-all-banks">Se alle banker</summary>
+        <ol class="bank-list" data-slot="banks"><li><a href="https://www.sparebank1.no/nb/gudbrandsdal/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Gudbrandsdal</strong></a><span class="bank-tagline">Skaper verdier for kunder og lokalsamfunn.</span></li><li><a href="https://www.sparebank1.no/nb/hallingdal/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Hallingdal Valdres</strong></a><span class="bank-tagline">Fjellstøtt gjennom livet.</span></li><li><a href="https://www.sparebank1.no/nb/helgeland/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Helgeland</strong></a><span class="bank-tagline">En drivkraft for vekst på Helgeland.</span></li><li><a href="https://www.sparebank1.no/nb/lom-skjaak/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Lom og Skjåk</strong></a><span class="bank-tagline">Lokalbanken din – der du er.</span></li><li><a href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Nord-Norge</strong></a><span class="bank-tagline">For Nord-Norge.</span></li><li><a href="https://www.sparebank1.no/nb/nordmore/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Nordmøre</strong></a><span class="bank-tagline">Tett på kundenes behov.</span></li><li><a href="https://www.sparebank1.no/nb/ringerike-hadeland/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Ringerike Hadeland</strong></a><span class="bank-tagline">Stolt støttespiller til lokalsamfunnet.</span></li><li><a href="https://www.sparebank1.no/nb/smn/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>SMN</strong></a><span class="bank-tagline">Sammen får vi ting til å skje.</span></li><li><a href="https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Sogn og Fjordane</strong></a><span class="bank-tagline">Vi er med heile vegen.</span></li><li><a href="https://www.sparebank1.no/nb/sor-norge/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Sør-Norge</strong></a><span class="bank-tagline">Hjelper driftige folk og bedrifter dit de vil.</span></li><li><a href="https://www.sparebank1.no/nb/ostfold-akershus/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Østfold Akershus</strong></a><span class="bank-tagline">Sammen får vi ting til å skje.</span></li><li><a href="https://www.sparebank1.no/nb/ostlandet/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true" translate="no">SpareBank 1 <strong>Østlandet</strong></a><span class="bank-tagline">Banken med kundeutbytte.</span></li></ol>
+      </details>
+    </div>
     <img class="router-art" src="https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/bankchoice_bg.svg" alt="" aria-hidden="true" width="1250" height="368" loading="eager" fetchpriority="high" decoding="async">
-  </div>
+  </div></div>
 </aside>
 <main id="main-content" tabindex="-1">
 
-<section class="movement intro" data-section="intro" data-intent="name the task" data-layout="contained" data-module="page-title">
-  <div class="container">
-    <p class="back"><a class="backlink" href="https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy.html" data-broken-link="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 6-6 6 6 6"/></svg><span>Verktøy</span></a></p>
-    <h1 data-slot="heading">Sperre kort</h1>
-    <p class="lead" data-slot="text">Har du mistet kortet eller tror andre kan ha fått tak i koden? Da sperrer du kortet raskt og enkelt i mobilbanken eller nettbanken din.</p>
-  </div>
+<section class="movement hero" data-section="intro" data-intent="name the task" data-layout="bento-cell" data-module="page-title">
+  <div class="container"><div class="bento hero-bento"><div class="card card--tint hero-card hero-card--wide"><div class="card-body"><p class="back"><a class="backlink" href="https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy.html" data-broken-link="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 6-6 6 6 6"/></svg><span>Verktøy</span></a></p><h1 data-slot="heading">Sperre kort</h1><p class="lead" data-slot="text">Har du mistet kortet eller tror andre kan ha fått tak i koden? Da sperrer du kortet raskt og enkelt i mobilbanken eller nettbanken din.</p></div></div></div></div>
 </section>
-<section class="movement paper-frost steps" data-section="steps" data-intent="do the task: block the card in the bank app, one action" data-layout="split-media" data-media="illustration" data-module="steps" data-items="4">
-  <div class="container steps-grid">
-    <h2 class="steps-h" data-slot="heading">Slik sperrer du bankkort og kredittkort</h2>
-    <div class="steps-text prose">
-      
+<section class="movement steps" data-section="steps" data-intent="do the task: block the card in the bank app, one action" data-layout="bento-cells" data-media="illustration" data-module="steps" data-items="4">
+  <div class="container"><div class="bento steps-bento">
+    <div class="card card--frost steps-card"><div class="card-body">
+      <h2 class="h2-m steps-h" data-slot="heading">Slik sperrer du bankkort og kredittkort</h2>
+      <div class="steps-text prose">
+        
 <ol><li><span class="step-text">Logg inn i mobilbanken eller nettbanken</span></li><li><span class="step-text">I mobilbanken trykker du på <strong>Mer </strong>og&#160;deretter <strong>Kort</strong>. I nettbanken trykker du på <strong>Kort </strong>øverst i skjermbildet</span></li><li><span class="step-text">Velg kortet du vil sperre</span></li><li><span class="step-text">Trykk på&#160;<strong>Sperr kort</strong></span></li></ol>
 <p>Har du barn som har <strong>Bankkort for barn</strong> eller <strong>Bankkort for ungdom</strong>, sperrer du også disse kortene i din mobilbank eller nettbank.</p>
-      <p class="steps-cta"><a class="btn btn-action" data-cta="primary" data-slot="cta" href="https://www.sparebank1.no/bank/nettbank-privat/kort/" data-broken-link="true">Logg inn og sperr kortet</a></p>
-      <p class="small steps-note">Kommer du ikke inn i nettbank eller mobilbank for å sperre kortet, kan du kontakte oss på telefon for hjelp.</p>
-    </div>
-    <figure class="steps-media" data-slot="illustration"><img class="illu illu-hero" src="https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2025/mobilbruker-dame-lys-bakgrunn-mobil.svg" alt="" aria-hidden="true" width="280" height="280" loading="eager" fetchpriority="high" decoding="async"></figure>
-  </div>
+        <p class="steps-cta actions"><a class="btn btn-action" data-cta="primary" data-slot="cta" href="https://www.sparebank1.no/bank/nettbank-privat/kort/" data-broken-link="true">Logg inn og sperr kortet</a></p>
+        <p class="small steps-note">Kommer du ikke inn i nettbank eller mobilbank for å sperre kortet, kan du kontakte oss på telefon for hjelp.</p>
+      </div>
+    </div></div>
+    <figure class="card card--tint media-illu steps-media" data-slot="illustration"><img class="illu illu-hero" src="https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2025/mobilbruker-dame-lys-bakgrunn-mobil.svg" alt="" aria-hidden="true" width="280" height="280" loading="eager" fetchpriority="high" decoding="async"></figure>
+  </div></div>
 </section>
 <section class="movement misuse" data-section="misuse" data-intent="if the card or account was misused: what to do" data-layout="contained" data-module="callout">
   <div class="container">
@@ -434,36 +586,116 @@ footer[data-canon]{margin-top:0}
 <p><a href="https://www.sparebank1.no/nb/bank/privat/daglig-bruk/bankkort/reklamasjon.html#kontoreklamasjon" data-broken-link="true">Les mer om reklamasjon på konto</a></p></div></div>
   </div>
 </section>
-<section class="movement reopen" data-section="reopen" data-intent="found the card: lift the block" data-layout="split-media" data-media="image" data-module="split-media">
-  <div class="container reopen-grid">
-    <figure class="reopen-media" data-slot="image"><img class="photo" src="https://www.sparebank1.no/content/dam/SB1/foto/bilder-produkt-kategorier/Kort/bankkort-kredittkort-lommebok-hender.jpg.thumb.1280.1280.jpg" alt="" width="1280" height="853" loading="lazy" decoding="async"></figure>
-    <div class="reopen-text prose"><h2>Funnet igjen et sperret kort?</h2><p><strong>Bankkort:</strong> Hvis du ikke bestilte nytt kort da du sperret det, kan du selv fjerne sperren i nett- og mobilbanken.</p>
-<p><strong>Kredittkort:</strong> Du har mulighet til å fjerne sperren innenfor 48 timer etter at det ble sperret. Etter dette vil vi automatisk sende deg et nytt kort i posten.</p><p class="reopen-cta"><a class="btn btn-primary" data-slot="cta" href="https://www.sparebank1.no/bank/nettbank-privat/kort/" data-broken-link="true">Åpne sperret kort</a></p></div>
-  </div>
+<section class="movement reopen" data-section="reopen" data-intent="found the card: lift the block" data-layout="bento-cells" data-media="image" data-module="split-media">
+  <div class="container"><div class="bento split-bento media-first">
+    <figure class="card media-photo split-media" data-slot="image"><img class="media-img" src="https://www.sparebank1.no/content/dam/SB1/foto/bilder-produkt-kategorier/Kort/bankkort-kredittkort-lommebok-hender.jpg.thumb.1280.1280.jpg" alt="" width="1280" height="853" loading="lazy" decoding="async"></figure>
+    <div class="card card--frost split-card is-link"><div class="card-body"><div class="prose"><h2>Funnet igjen et sperret kort?</h2><p><strong>Bankkort:</strong> Hvis du ikke bestilte nytt kort da du sperret det, kan du selv fjerne sperren i nett- og mobilbanken.</p>
+<p><strong>Kredittkort:</strong> Du har mulighet til å fjerne sperren innenfor 48 timer etter at det ble sperret. Etter dette vil vi automatisk sende deg et nytt kort i posten.</p></div><p class="actions"><a class="btn btn-primary cover-link" data-slot="cta" href="https://www.sparebank1.no/bank/nettbank-privat/kort/" data-broken-link="true">Åpne sperret kort</a></p></div></div>
+  </div></div>
 </section>
 <section class="feedback" data-section="feedback" data-intent="page feedback" data-layout="contained" data-module="feedback" data-dynamics="5 (static thumbs, interim)">
   <div class="container feedback-row"><h2 id="fb-q">Hva synes du om denne siden?</h2><div class="feedback-btns" role="group" aria-labelledby="fb-q"><button class="btn btn-secondary" type="button" aria-label="Ja"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 11v9H4v-9h3zm0 0 4-7.5a2 2 0 0 1 2 2V10h5.5a1.5 1.5 0 0 1 1.5 1.7l-1.2 6.6A2 2 0 0 1 16.8 20H7"/></svg><span>Ja</span></button><button class="btn btn-secondary" type="button" aria-label="Nei"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17 13V4h3v9h-3zm0 0-4 7.5a2 2 0 0 1-2-2V14H5.5A1.5 1.5 0 0 1 4 12.3l1.2-6.6A2 2 0 0 1 7.2 4H17"/></svg><span>Nei</span></button></div></div>
 </section>
 </main>
 <footer data-section="footer" data-intent="contact and site map" data-layout="contained" data-canon>
-  <section class="contact" id="kontakt" data-section="contact-row" data-intent="five contact channels" data-layout="contained" data-module="contact-row" data-items="5">
+  <section class="contact" id="kontakt" data-section="contact-row" data-intent="five contact channels" data-layout="band" data-module="contact-row" data-items="5">
     <div class="container">
-      <div class="contact-head"><h2 data-slot="heading">Kontakt oss</h2><p><a href="../../kundeservice.html">Gå til kundeservice</a></p></div>
-      <ul class="channels" data-slot="channels"><li class="channel"><details><summary><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.5 3.5h3l1.6 4-2 1.4a10 10 0 0 0 5.9 5.9l1.4-2 4 1.6v3a2 2 0 0 1-2 2A15.5 15.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/></svg></span><span class="ch-text"><span class="ch-name">Ring oss</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg> <span class="ch-sub">7-22 (10-18)</span></span></summary><div class="panel"><div class="panel-top"><h3 class="panel-title">Melde skade <a href="tel:(+47)91502300" class="num">(+47) 915 02300</a></h3><p class="small">Meld skade forsikring (Fremtind)<br>Hverdager 08 - 16</p></div><ul class="bank-numbers"><li><a class="bank-name" href="https://www.sparebank1.no/nb/gudbrandsdal/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Gudbrandsdal</a><dl><div><dt>Privat</dt> <dd><a href="tel:02095" class="num">02095</a> <span class="small">Fra utland: <a href="tel:+47 915 02095">+47 915 02095</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:02095" class="num">02095</a> <span class="small">Fra utland: <a href="tel:+47 91 50 20 95">+47 91 50 20 95</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/hallingdal/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Hallingdal Valdres</a><dl><div><dt>Privat</dt> <dd><a href="tel:03202" class="num">03202</a> <span class="small">Fra utland: <a href="tel:+47 915 03 202">+47 915 03 202</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:03202" class="num">03202</a> <span class="small">Fra utland: <a href="tel:+47 915 03202">+47 915 03202</a> · 7 - 18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/helgeland/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Helgeland</a><dl><div><dt>Privat</dt> <dd><a href="tel:+47 75 11 90 00" class="num">+47 75 11 90 00</a> <span class="small">Fra utland: <a href="tel:+47 75 11 90 00">+47 75 11 90 00</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:+47 75 11 90 00" class="num">+47 75 11 90 00</a> <span class="small">Fra utland: <a href="tel:+47 75 11 90 00">+47 75 11 90 00</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/lom-skjaak/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Lom og Skjåk</a><dl><div><dt>Privat</dt> <dd><a href="tel:61 21 90 00" class="num">61 21 90 00</a> <span class="small">Fra utland: <a href="tel:+47 61 21 90 00">+47 61 21 90 00</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:61 21 90 00" class="num">61 21 90 00</a> <span class="small">Fra utland: <a href="tel:+47 61 21 90 00">+47 61 21 90 00</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Nord-Norge</a><dl><div><dt>Privat</dt> <dd><a href="tel:915 02244" class="num">915 02244</a> <span class="small">Fra utland: <a href="tel:+47 915 02244">+47 915 02244</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:915 02244" class="num">915 02244</a> <span class="small">Fra utland: <a href="tel:+47 915 02244">+47 915 02244</a> · 8-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/nordmore/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Nordmøre</a><dl><div><dt>Privat</dt> <dd><a href="tel:+47 915 03900" class="num">+47 915 03900</a> <span class="small">Fra utland: <a href="tel:+47 915 03900">+47 915 03900</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:+47 915 03900" class="num">+47 915 03900</a> <span class="small">Fra utland: <a href="tel:+47 915 03900">+47 915 03900</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/ringerike-hadeland/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Ringerike Hadeland</a><dl><div><dt>Privat</dt> <dd><a href="tel:915 02130" class="num">915 02130</a> <span class="small">Fra utland: <a href="tel:+47 915 02130">+47 915 02130</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:915 02130" class="num">915 02130</a> <span class="small">Fra utland: <a href="tel:+47 915 02130">+47 915 02130</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/smn/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 SMN</a><dl><div><dt>Privat</dt> <dd><a href="tel:(+47) 915 07300" class="num">(+47) 915 07300</a> <span class="small">Fra utland: <a href="tel:+47 91507300">+47 91507300</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:(+47) 915 07303" class="num">(+47) 915 07303</a> <span class="small">Fra utland: <a href="tel:+47 91507303">+47 91507303</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Sogn og Fjordane</a><dl><div><dt>Privat</dt> <dd><a href="tel:+47 57 82 97 00" class="num">+47 57 82 97 00</a> <span class="small">Fra utland: <a href="tel:+47 57 82 97 00">+47 57 82 97 00</a> · 7 - 22 (10 - 18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:+47 57 82 97 00" class="num">+47 57 82 97 00</a> <span class="small">Fra utland: <a href="tel:+47 57 82 97 00">+47 57 82 97 00</a> · 7 - 18 (stengt)</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/sor-norge/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Sør-Norge</a><dl><div><dt>Privat</dt> <dd><a href="tel:915 02002" class="num">915 02002</a> <span class="small">Fra utland: <a href="tel:+47 915 02002">+47 915 02002</a> · 7-22 hverdager (10-18 helg og helligdager)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:915 02002" class="num">915 02002</a> <span class="small">Fra utland: <a href="tel:+47 915 02002">+47 915 02002</a> · hverdager 08-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/ostfold-akershus/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Østfold Akershus</a><dl><div><dt>Privat</dt> <dd><a href="tel:05700" class="num">05700</a> <span class="small">Fra utland: <a href="tel:(+47) 915 05700">(+47) 915 05700</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:05700" class="num">05700</a> <span class="small">Fra utland: <a href="tel:+47 915 05700">+47 915 05700</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/ostlandet/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Østlandet</a><dl><div><dt>Privat</dt> <dd><a href="tel:915 07040" class="num">915 07040</a> <span class="small">Fra utland: <a href="tel:+47 915 07040">+47 915 07040</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:915 07050" class="num">915 07050</a> <span class="small">Fra utland: <a href="tel:+47 915 07050">+47 915 07050</a> · 7-18</span></dd></div></dl></li></ul></div></details></li><li class="channel"><details><summary><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span><span class="ch-text"><span class="ch-name">Avtal møte</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg> <span class="ch-sub">med en rådgiver</span></span></summary><div class="panel"><ul class="bank-links"><li><a href="https://www.sparebank1.no/nb/gudbrandsdal/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Gudbrandsdal</a></li><li><a href="https://www.sparebank1.no/nb/hallingdal/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Hallingdal Valdres</a></li><li><a href="https://www.sparebank1.no/nb/helgeland/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Helgeland</a></li><li><a href="https://www.sparebank1.no/nb/lom-skjaak/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Lom og Skjåk</a></li><li><a href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html" data-broken-link="true">SpareBank 1 Nord-Norge</a></li><li><a href="https://www.sparebank1.no/nb/nordmore/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Nordmøre</a></li><li><a href="https://www.sparebank1.no/nb/ringerike-hadeland/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Ringerike Hadeland</a></li><li><a href="https://www.sparebank1.no/nb/smn/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 SMN</a></li><li><a href="https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Sogn og Fjordane</a></li><li><a href="https://www.sparebank1.no/nb/sor-norge/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Sør-Norge</a></li><li><a href="https://www.sparebank1.no/nb/ostfold-akershus/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Østfold Akershus</a></li><li><a href="https://www.sparebank1.no/nb/ostlandet/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Østlandet</a></li></ul></div></details></li><li class="channel"><details><summary><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><span class="ch-text"><span class="ch-name">Skriv til oss</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></span></summary><div class="panel"><ul class="bank-links"><li><a href="https://www.sparebank1.no/nb/gudbrandsdal/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Gudbrandsdal</a></li><li><a href="https://www.sparebank1.no/nb/hallingdal/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Hallingdal Valdres</a></li><li><a href="https://www.sparebank1.no/nb/helgeland/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Helgeland</a></li><li><a href="https://www.sparebank1.no/nb/lom-skjaak/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Lom og Skjåk</a></li><li><a href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/kontakt.html" data-broken-link="true">SpareBank 1 Nord-Norge</a></li><li><a href="https://www.sparebank1.no/nb/nordmore/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Nordmøre</a></li><li><a href="https://www.sparebank1.no/nb/ringerike-hadeland/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Ringerike Hadeland</a></li><li><a href="https://www.sparebank1.no/nb/smn/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 SMN</a></li><li><a href="https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Sogn og Fjordane</a></li><li><a href="https://www.sparebank1.no/nb/sor-norge/privat/kundeservice.html" data-broken-link="true">SpareBank 1 Sør-Norge</a></li><li><a href="https://www.sparebank1.no/nb/ostfold-akershus/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Østfold Akershus</a></li><li><a href="https://www.sparebank1.no/nb/ostlandet/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Østlandet</a></li></ul></div></details></li><li class="channel"><details><summary><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20.5V8.5l8-4.5 8 4.5v12M4 20.5h16M9.5 20.5v-5h5v5"/></svg></span><span class="ch-text"><span class="ch-name">Finn kontor</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></span></summary><div class="panel"><form class="office-search" action="?search=" method="get"><label for="office-q">Søk etter et kontor</label><div class="router-controls"><input id="office-q" name="search" type="search" class="router-input"><button class="btn btn-primary" type="submit">Søk</button></div></form></div></details></li><li class="channel"><details><summary><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5.5h16v10H9l-4.5 3.5v-3.5H4z"/></svg></span><span class="ch-text"><span class="ch-name">Chat</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg> <span class="ch-sub">7-22 (10-18)</span></span></summary><div class="panel"><h3 class="panel-title">Chat med oss</h3><ul class="bank-links"><li><a href="https://www.sparebank1.no/nb/gudbrandsdal/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Gudbrandsdal</a></li><li><a href="https://www.sparebank1.no/nb/hallingdal/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Hallingdal Valdres</a></li><li><a href="https://www.sparebank1.no/nb/helgeland/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Helgeland</a></li><li><a href="https://www.sparebank1.no/nb/lom-skjaak/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Lom og Skjåk</a></li><li><a href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Nord-Norge</a></li><li><a href="https://www.sparebank1.no/nb/nordmore/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Nordmøre</a></li><li><a href="https://www.sparebank1.no/nb/ringerike-hadeland/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Ringerike Hadeland</a></li><li><a href="https://www.sparebank1.no/nb/smn/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 SMN</a></li><li><a href="https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Sogn og Fjordane</a></li><li><a href="https://www.sparebank1.no/nb/sor-norge/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Sør-Norge</a></li><li><a href="https://www.sparebank1.no/nb/ostfold-akershus/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Østfold Akershus</a></li><li><a href="https://www.sparebank1.no/nb/ostlandet/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Østlandet</a></li></ul></div></details></li></ul>
+      <div class="contact-head"><h2 class="h2-m" data-slot="heading">Kontakt oss</h2><a class="btn btn-primary btn-lg" href="../../kundeservice.html">Gå til kundeservice</a></div>
+      <ul class="channels" data-slot="channels"><li class="card card--white channel"><details><summary><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.5 3.5h3l1.6 4-2 1.4a10 10 0 0 0 5.9 5.9l1.4-2 4 1.6v3a2 2 0 0 1-2 2A15.5 15.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/></svg></span><span class="ch-text"><span class="ch-name">Ring oss</span> <span class="ch-sub small muted">7-22 (10-18)</span></span><span class="chev" aria-hidden="true"></span></summary><div class="panel"><div class="panel-top"><h3 class="panel-title">Melde skade <a href="tel:(+47)91502300" class="num">(+47) 915 02300</a></h3><p class="small">Meld skade forsikring (Fremtind)<br>Hverdager 08 - 16</p></div><ul class="bank-numbers"><li><a class="bank-name" href="https://www.sparebank1.no/nb/gudbrandsdal/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Gudbrandsdal</a><dl><div><dt>Privat</dt> <dd><a href="tel:02095" class="num">02095</a> <span class="small">Fra utland: <a href="tel:+47 915 02095">+47 915 02095</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:02095" class="num">02095</a> <span class="small">Fra utland: <a href="tel:+47 91 50 20 95">+47 91 50 20 95</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/hallingdal/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Hallingdal Valdres</a><dl><div><dt>Privat</dt> <dd><a href="tel:03202" class="num">03202</a> <span class="small">Fra utland: <a href="tel:+47 915 03 202">+47 915 03 202</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:03202" class="num">03202</a> <span class="small">Fra utland: <a href="tel:+47 915 03202">+47 915 03202</a> · 7 - 18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/helgeland/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Helgeland</a><dl><div><dt>Privat</dt> <dd><a href="tel:+47 75 11 90 00" class="num">+47 75 11 90 00</a> <span class="small">Fra utland: <a href="tel:+47 75 11 90 00">+47 75 11 90 00</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:+47 75 11 90 00" class="num">+47 75 11 90 00</a> <span class="small">Fra utland: <a href="tel:+47 75 11 90 00">+47 75 11 90 00</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/lom-skjaak/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Lom og Skjåk</a><dl><div><dt>Privat</dt> <dd><a href="tel:61 21 90 00" class="num">61 21 90 00</a> <span class="small">Fra utland: <a href="tel:+47 61 21 90 00">+47 61 21 90 00</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:61 21 90 00" class="num">61 21 90 00</a> <span class="small">Fra utland: <a href="tel:+47 61 21 90 00">+47 61 21 90 00</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Nord-Norge</a><dl><div><dt>Privat</dt> <dd><a href="tel:915 02244" class="num">915 02244</a> <span class="small">Fra utland: <a href="tel:+47 915 02244">+47 915 02244</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:915 02244" class="num">915 02244</a> <span class="small">Fra utland: <a href="tel:+47 915 02244">+47 915 02244</a> · 8-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/nordmore/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Nordmøre</a><dl><div><dt>Privat</dt> <dd><a href="tel:+47 915 03900" class="num">+47 915 03900</a> <span class="small">Fra utland: <a href="tel:+47 915 03900">+47 915 03900</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:+47 915 03900" class="num">+47 915 03900</a> <span class="small">Fra utland: <a href="tel:+47 915 03900">+47 915 03900</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/ringerike-hadeland/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Ringerike Hadeland</a><dl><div><dt>Privat</dt> <dd><a href="tel:915 02130" class="num">915 02130</a> <span class="small">Fra utland: <a href="tel:+47 915 02130">+47 915 02130</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:915 02130" class="num">915 02130</a> <span class="small">Fra utland: <a href="tel:+47 915 02130">+47 915 02130</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/smn/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 SMN</a><dl><div><dt>Privat</dt> <dd><a href="tel:(+47) 915 07300" class="num">(+47) 915 07300</a> <span class="small">Fra utland: <a href="tel:+47 91507300">+47 91507300</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:(+47) 915 07303" class="num">(+47) 915 07303</a> <span class="small">Fra utland: <a href="tel:+47 91507303">+47 91507303</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Sogn og Fjordane</a><dl><div><dt>Privat</dt> <dd><a href="tel:+47 57 82 97 00" class="num">+47 57 82 97 00</a> <span class="small">Fra utland: <a href="tel:+47 57 82 97 00">+47 57 82 97 00</a> · 7 - 22 (10 - 18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:+47 57 82 97 00" class="num">+47 57 82 97 00</a> <span class="small">Fra utland: <a href="tel:+47 57 82 97 00">+47 57 82 97 00</a> · 7 - 18 (stengt)</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/sor-norge/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Sør-Norge</a><dl><div><dt>Privat</dt> <dd><a href="tel:915 02002" class="num">915 02002</a> <span class="small">Fra utland: <a href="tel:+47 915 02002">+47 915 02002</a> · 7-22 hverdager (10-18 helg og helligdager)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:915 02002" class="num">915 02002</a> <span class="small">Fra utland: <a href="tel:+47 915 02002">+47 915 02002</a> · hverdager 08-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/ostfold-akershus/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Østfold Akershus</a><dl><div><dt>Privat</dt> <dd><a href="tel:05700" class="num">05700</a> <span class="small">Fra utland: <a href="tel:(+47) 915 05700">(+47) 915 05700</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:05700" class="num">05700</a> <span class="small">Fra utland: <a href="tel:+47 915 05700">+47 915 05700</a> · 7-18</span></dd></div></dl></li><li><a class="bank-name" href="https://www.sparebank1.no/nb/ostlandet/privat/kundeservice/verktoy/sperre-kort.html" data-broken-link="true">SpareBank 1 Østlandet</a><dl><div><dt>Privat</dt> <dd><a href="tel:915 07040" class="num">915 07040</a> <span class="small">Fra utland: <a href="tel:+47 915 07040">+47 915 07040</a> · 7-22 (10-18)</span></dd></div><div><dt>Bedrift</dt> <dd><a href="tel:915 07050" class="num">915 07050</a> <span class="small">Fra utland: <a href="tel:+47 915 07050">+47 915 07050</a> · 7-18</span></dd></div></dl></li></ul></div></details></li><li class="card card--white channel"><details><summary><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span><span class="ch-text"><span class="ch-name">Avtal møte</span> <span class="ch-sub small muted">med en rådgiver</span></span><span class="chev" aria-hidden="true"></span></summary><div class="panel"><ul class="bank-links"><li><a href="https://www.sparebank1.no/nb/gudbrandsdal/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Gudbrandsdal</a></li><li><a href="https://www.sparebank1.no/nb/hallingdal/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Hallingdal Valdres</a></li><li><a href="https://www.sparebank1.no/nb/helgeland/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Helgeland</a></li><li><a href="https://www.sparebank1.no/nb/lom-skjaak/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Lom og Skjåk</a></li><li><a href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html" data-broken-link="true">SpareBank 1 Nord-Norge</a></li><li><a href="https://www.sparebank1.no/nb/nordmore/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Nordmøre</a></li><li><a href="https://www.sparebank1.no/nb/ringerike-hadeland/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Ringerike Hadeland</a></li><li><a href="https://www.sparebank1.no/nb/smn/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 SMN</a></li><li><a href="https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Sogn og Fjordane</a></li><li><a href="https://www.sparebank1.no/nb/sor-norge/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Sør-Norge</a></li><li><a href="https://www.sparebank1.no/nb/ostfold-akershus/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Østfold Akershus</a></li><li><a href="https://www.sparebank1.no/nb/ostlandet/privat/kundeservice/verktoy/sperre-kort.html#meeting" data-broken-link="true">SpareBank 1 Østlandet</a></li></ul></div></details></li><li class="card card--white channel"><details><summary><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><span class="ch-text"><span class="ch-name">Skriv til oss</span> </span><span class="chev" aria-hidden="true"></span></summary><div class="panel"><ul class="bank-links"><li><a href="https://www.sparebank1.no/nb/gudbrandsdal/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Gudbrandsdal</a></li><li><a href="https://www.sparebank1.no/nb/hallingdal/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Hallingdal Valdres</a></li><li><a href="https://www.sparebank1.no/nb/helgeland/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Helgeland</a></li><li><a href="https://www.sparebank1.no/nb/lom-skjaak/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Lom og Skjåk</a></li><li><a href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/kontakt.html" data-broken-link="true">SpareBank 1 Nord-Norge</a></li><li><a href="https://www.sparebank1.no/nb/nordmore/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Nordmøre</a></li><li><a href="https://www.sparebank1.no/nb/ringerike-hadeland/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Ringerike Hadeland</a></li><li><a href="https://www.sparebank1.no/nb/smn/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 SMN</a></li><li><a href="https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Sogn og Fjordane</a></li><li><a href="https://www.sparebank1.no/nb/sor-norge/privat/kundeservice.html" data-broken-link="true">SpareBank 1 Sør-Norge</a></li><li><a href="https://www.sparebank1.no/nb/ostfold-akershus/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Østfold Akershus</a></li><li><a href="https://www.sparebank1.no/nb/ostlandet/privat/kundeservice/verktoy/sperre-kort.html#message" data-broken-link="true">SpareBank 1 Østlandet</a></li></ul></div></details></li><li class="card card--white channel"><details><summary><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20.5V8.5l8-4.5 8 4.5v12M4 20.5h16M9.5 20.5v-5h5v5"/></svg></span><span class="ch-text"><span class="ch-name">Finn kontor</span> </span><span class="chev" aria-hidden="true"></span></summary><div class="panel"><form class="office-search" action="?search=" method="get"><label class="field-label" for="office-q">Søk etter et kontor</label><div class="field-row"><input id="office-q" name="search" type="search" class="input"><button class="btn btn-primary" type="submit">Søk</button></div></form></div></details></li><li class="card card--white channel"><details><summary><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5.5h16v10H9l-4.5 3.5v-3.5H4z"/></svg></span><span class="ch-text"><span class="ch-name">Chat</span> <span class="ch-sub small muted">7-22 (10-18)</span></span><span class="chev" aria-hidden="true"></span></summary><div class="panel"><h3 class="panel-title">Chat med oss</h3><ul class="bank-links"><li><a href="https://www.sparebank1.no/nb/gudbrandsdal/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Gudbrandsdal</a></li><li><a href="https://www.sparebank1.no/nb/hallingdal/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Hallingdal Valdres</a></li><li><a href="https://www.sparebank1.no/nb/helgeland/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Helgeland</a></li><li><a href="https://www.sparebank1.no/nb/lom-skjaak/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Lom og Skjåk</a></li><li><a href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Nord-Norge</a></li><li><a href="https://www.sparebank1.no/nb/nordmore/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Nordmøre</a></li><li><a href="https://www.sparebank1.no/nb/ringerike-hadeland/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Ringerike Hadeland</a></li><li><a href="https://www.sparebank1.no/nb/smn/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 SMN</a></li><li><a href="https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Sogn og Fjordane</a></li><li><a href="https://www.sparebank1.no/nb/sor-norge/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Sør-Norge</a></li><li><a href="https://www.sparebank1.no/nb/ostfold-akershus/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Østfold Akershus</a></li><li><a href="https://www.sparebank1.no/nb/ostlandet/privat/kundeservice/verktoy/sperre-kort.html#sb1openchat" data-broken-link="true">SpareBank 1 Østlandet</a></li></ul></div></details></li></ul>
     </div>
   </section>
-  <div class="footer-main"><div class="container footer-cols"><div class="footer-col"><h2>Privat</h2><ul><li><a href="../bestill/bli-kunde.html">Bli kunde</a></li><li><a href="./sperre-kort.html">Sperre kort</a></li><li><a href="../../forsikring/meld-skade.html">Meld skade</a></li><li><a href="../bestill/prisliste.html">Prisliste</a></li><li><a href="../../kundeservice.html">Kundeservice</a></li><li><a href="./klager.html">Klage</a></li><li><a href="../../svindel.html">Svindel</a></li></ul></div><div class="footer-col"><h2>Logg inn</h2><ul><li><a href="https://www.sparebank1.no/nb/bank/privat/innlogging.html" data-broken-link="true">Nettbank privat</a></li><li><a href="https://www.sparebank1.no/nb/bank/bedrift/innlogging.html" data-broken-link="true">Nettbank bedrift</a></li><li><a href="https://kundeforsikring.sparebank1.no">Forsikring</a></li><li><a href="https://kundeforsikring.sparebank1.no/privat/sparing">Pensjon</a></li></ul></div><div class="footer-col"><h2>Sosiale medier</h2><ul><li><a href="https://no.linkedin.com/company/sparebank-1" class="with-icon"><img src="https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy">Linkedin</a></li><li><a href="https://www.youtube.com/channel/UCdfZfi4HC6bK0-OfRcDJSzg" class="with-icon"><img src="https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy">YouTube</a></li></ul></div></div></div>
-  <div class="footer-legal"><div class="container footer-legal-row"><ul class="small-links"><li><a href="../../../om-oss/om-banken/selskapsinformasjon.html">Selskapsinformasjon</a></li><li><a href="../../../om-oss/personvern/generelle-vilkar.html">Vilkår for bruk av nettsiden</a></li><li><a href="../../../om-oss/personvern.html">Personvern</a></li><li><a href="../../../om-oss/personvern.html#cookies">Informasjonskapsler</a></li><li><a href="../../../bedrift/open-api.html">For utviklere</a></li></ul><p class="address">SpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo</p></div></div>
+  <div class="site-footer"><div class="container footer-grid">
+    <a class="footer-logo" href="../../../privat.html" aria-label="SpareBank 1"><svg version="1.1" id="SpareBank_1_footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 viewBox="0 0 281.633 78.197"
+	 class="logo-svg" aria-hidden="true" aria-label="" focusable="false">
+<g>
+	<rect x="0.009" y="0.011" fill="none" width="281.633" height="78.208"/>
+	<g>
+		<g>
+			<path fill="#002776" d="M27.867,54.834c-5.129,0-9.193-1.184-9.943-1.42c-0.395-0.158-0.592-0.474-0.592-0.828v-0.197
+				l0.513-2.605c0.079-0.394,0.355-0.513,0.67-0.513c0.079,0,0.158,0,0.276,0.039c0.829,0.158,4.853,1.303,8.641,1.303
+				c3.235,0,6.116-0.947,6.116-4.301c0-3.393-2.959-3.748-6.786-4.301c-4.261-0.632-9.746-1.775-9.746-8.483
+				c0-6.904,5.129-8.72,11.205-8.72c4.617,0,8.444,1.105,9.311,1.342c0.474,0.118,0.711,0.434,0.711,0.829v0.197l-0.552,2.564
+				c-0.04,0.276-0.316,0.552-0.631,0.552c-0.04,0-0.079-0.039-0.119-0.039c-1.894-0.395-4.814-1.184-8.286-1.184
+				c-2.919,0-5.997,0.553-5.997,3.867c0,3.275,3.314,3.749,6.826,4.261c4.616,0.71,9.864,1.381,9.864,8.72
+				C39.348,52.822,33.746,54.834,27.867,54.834z"/>
+			<path fill="#002776" d="M77.998,54.361c-1.381,0.315-3.275,0.552-5.484,0.552c-4.261,0-9.509-0.434-9.509-6.707
+				c0-5.09,3.196-5.642,6.352-6.155l7.023-1.144v-1.262c0-1.105-0.119-1.894-1.105-2.328c-0.631-0.276-1.578-0.395-2.998-0.395
+				c-2.683,0-5.603,0.789-6.786,1.104c-0.119,0-0.197,0.04-0.276,0.04c-0.197,0-0.395-0.079-0.434-0.355l-0.552-2.446v-0.158
+				c0-0.355,0.276-0.513,0.474-0.592c0.947-0.355,4.577-1.341,8.601-1.341c2.801,0,4.695,0.395,5.958,1.105
+				c2.012,1.104,2.407,2.959,2.407,5.089v10.89C81.668,53.217,80.681,53.73,77.998,54.361z M76.381,44.34l-4.893,0.789
+				c-1.618,0.236-3.117,0.473-3.117,3.037c0,3.078,2.486,3.314,4.38,3.314c1.539,0,2.801-0.275,3.63-0.553V44.34z"/>
+			<path fill="#002776" d="M95.744,37.237c-2.407,0-4.459,0.237-5.563,0.513v16.059c0,0.355-0.237,0.592-0.592,0.592h-4.024
+				c-0.237,0-0.671-0.236-0.671-0.592V36.764c0-1.539,0.907-2.012,2.801-2.564c1.736-0.552,4.538-0.947,6.786-0.986h0.671
+				c0.552,0,0.552,0,0.829,0.118c0.158,0.079,0.355,0.237,0.355,0.631v2.564C96.336,36.922,96.297,37.237,95.744,37.237z"/>
+			<path fill="#002776" d="M116.395,45.563c0,0.434-0.237,0.907-0.829,0.907h-13.217c0,1.815,0.513,2.802,1.578,3.63
+				c1.026,0.828,2.525,1.184,4.656,1.184c2.446,0,4.3-0.592,5.523-0.947c0.079-0.039,0.119-0.039,0.197-0.039
+				c0.237,0,0.434,0.158,0.553,0.553l0.513,2.012c0,0.039,0.04,0.119,0.04,0.197c0,0.316-0.197,0.474-0.474,0.592
+				c-1.341,0.553-4.025,1.263-7.141,1.263c-7.733,0-10.771-3.038-10.771-10.771c0-7.418,2.052-10.969,9.746-10.969
+				c3.985,0,6.431,1.026,7.851,2.92c1.341,1.775,1.775,4.3,1.775,7.575V45.563z M110.832,39.684c-0.513-2.17-1.697-2.88-4.024-2.88
+				c-2.644,0-3.749,0.789-4.183,2.762c-0.276,1.105-0.276,2.249-0.315,3.551l8.838-0.04
+				C111.148,41.815,111.108,40.749,110.832,39.684z"/>
+			<path fill="#002776" d="M161.279,54.361c-1.381,0.315-3.275,0.552-5.484,0.552c-4.262,0-9.509-0.434-9.509-6.707
+				c0-5.09,3.196-5.642,6.353-6.155l7.023-1.144v-1.262c0-1.105-0.119-1.894-1.105-2.328c-0.631-0.276-1.578-0.395-2.998-0.395
+				c-2.684,0-5.604,0.789-6.787,1.104c-0.118,0-0.197,0.04-0.275,0.04c-0.197,0-0.395-0.079-0.435-0.355l-0.552-2.446v-0.158
+				c0-0.355,0.275-0.513,0.473-0.592c0.947-0.355,4.577-1.341,8.602-1.341c2.801,0,4.695,0.395,5.958,1.105
+				c2.013,1.104,2.407,2.959,2.407,5.089v10.89C164.949,53.217,163.962,53.73,161.279,54.361z M159.662,44.34l-4.893,0.789
+				c-1.618,0.236-3.117,0.473-3.117,3.037c0,3.078,2.485,3.314,4.379,3.314c1.539,0,2.802-0.275,3.631-0.553V44.34z"/>
+			<path fill="#002776" d="M186.049,54.401h-4.064c-0.355,0-0.631-0.236-0.631-0.592V39.881c0-2.289-0.868-3.078-2.959-3.078
+				c-2.367,0-4.932,0.671-4.932,0.671v16.334c0,0.355-0.237,0.592-0.592,0.592h-4.025c-0.395,0-0.67-0.236-0.67-0.592V36.803
+				c0-1.499,0.749-2.012,2.959-2.604c2.012-0.552,5.326-1.026,7.852-1.026c4.932,0,7.654,1.263,7.654,5.997v14.638
+				C186.641,54.164,186.404,54.401,186.049,54.401z"/>
+			<path fill="#002776" d="M208.928,54.045c0,0.158-0.157,0.355-0.395,0.355h-5.287c-0.197,0-0.395,0-0.592-0.236l-6.115-8.326
+				h-1.342v7.971c0,0.355-0.197,0.592-0.592,0.592h-4.064c-0.354,0-0.632-0.236-0.632-0.592v-27.58c0-0.473,0.197-0.71,0.672-0.828
+				l3.865-0.671h0.158c0.355,0,0.592,0.237,0.592,0.671v16.886h1.342l6.234-8.325c0.157-0.237,0.316-0.276,0.513-0.276l4.814,0.118
+				c0.276,0,0.395,0.197,0.395,0.355c0,0.079-0.039,0.119-0.079,0.197l-7.457,9.391l7.892,10.1
+				C208.889,53.888,208.928,53.967,208.928,54.045z"/>
+			<path fill="#002776" d="M47.492,50.811"/>
+			<path fill="#002776" d="M52.739,33.174c-2.644,0-5.682,0.434-8.049,1.263c-1.776,0.552-2.486,1.144-2.486,3.196v24.423
+				c0,0.395,0.309,0.717,0.878,0.615c0.569-0.103,3.738-0.688,3.738-0.688c0.474-0.079,0.671-0.315,0.671-0.789v-6.879
+				c1.401,0.341,3.166,0.6,5.129,0.6c7.339,0,8.72-4.616,8.72-10.851C61.34,37.79,60.354,33.174,52.739,33.174z M51.24,51.283
+				c-2.13,0-3.748-0.473-3.748-0.473V37.514c0,0,2.328-0.631,4.143-0.631c2.999,0,4.301,0.67,4.301,7.063
+				C55.935,49.942,54.83,51.283,51.24,51.283z"/>
+			<path fill="#002776" d="M133.736,54.401h-13.139c-0.355,0-0.671-0.276-0.671-0.631V25.874c0-0.355,0.315-0.631,0.671-0.631
+				h13.178c6.671,0,9.39,2.616,9.39,7.354c0,4.182-2.323,5.679-5.918,6.708c3.991,0.658,6.905,2.825,6.905,7.48
+				C144.152,52.072,140.443,54.401,133.736,54.401z M133.222,29.307h-7.615v8.443l7.339-0.315c2.999-0.118,4.537-1.184,4.537-4.182
+				C137.484,30.49,136.142,29.307,133.222,29.307z M133.025,41.577l-7.417-0.236v8.995h7.417c3.985,0,5.287-1.735,5.287-4.143
+				C138.312,42.959,137.247,41.695,133.025,41.577z"/>
+		</g>
+		<g>
+			<path fill="#E60000" d="M242.543,11.35c-2.933,0-5.757,0.458-8.411,1.301c11.169-2.423,22.239,2.178,26.227,11.601
+				c4.609,10.892-1.989,24.096-14.737,29.491c-11.436,4.839-23.931,1.747-29.711-6.802c3.381,11.517,14.021,19.929,26.632,19.929
+				c15.331,0,27.76-12.428,27.76-27.76S257.874,11.35,242.543,11.35z"/>
+			<path fill="#AF0000" d="M245.622,53.743c12.749-5.395,19.347-18.598,14.737-29.491c-3.988-9.424-15.059-14.024-26.227-11.601
+				c-11.219,3.563-19.349,14.06-19.349,26.459c0,2.72,0.398,5.347,1.128,7.831C221.691,55.49,234.186,58.582,245.622,53.743z"/>
+			<g>
+				<path fill="#FFFFFF" d="M249.659,51.655V23.152c0-0.566-0.462-1.027-1.029-1.027h-6.454c-0.461,0-0.72,0.102-1.132,0.257
+					l-8.328,4.287c-0.513,0.207-0.719,0.514-0.719,1.029v4.671c0,0.549,0.445,0.992,0.993,0.992h5.33v22.409
+					c2.433-0.338,4.891-1.006,7.302-2.027C247.047,53.14,248.395,52.439,249.659,51.655z"/>
+				<path fill="none" d="M239.347,60.319h9.283c0.567,0,1.029-0.465,1.029-1.029v-7.635c-1.264,0.784-2.612,1.485-4.037,2.087
+					c-2.411,1.02-4.87,1.688-7.302,2.027v3.521C238.32,59.855,238.784,60.319,239.347,60.319z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg></a>
+    <div class="footer-cols"><div class="footer-col"><h2>Privat</h2><ul><li><a href="../bestill/bli-kunde.html">Bli kunde</a></li><li><a href="./sperre-kort.html">Sperre kort</a></li><li><a href="../../forsikring/meld-skade.html">Meld skade</a></li><li><a href="../bestill/prisliste.html">Prisliste</a></li><li><a href="../../kundeservice.html">Kundeservice</a></li><li><a href="./klager.html">Klage</a></li><li><a href="../../svindel.html">Svindel</a></li></ul></div><div class="footer-col"><h2>Logg inn</h2><ul><li><a href="https://www.sparebank1.no/nb/bank/privat/innlogging.html" data-broken-link="true">Nettbank privat</a></li><li><a href="https://www.sparebank1.no/nb/bank/bedrift/innlogging.html" data-broken-link="true">Nettbank bedrift</a></li><li><a href="https://kundeforsikring.sparebank1.no">Forsikring</a></li><li><a href="https://kundeforsikring.sparebank1.no/privat/sparing">Pensjon</a></li></ul></div><div class="footer-col"><h2>Sosiale medier</h2><ul><li><a href="https://no.linkedin.com/company/sparebank-1" class="with-icon"><img src="https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy">Linkedin</a></li><li><a href="https://www.youtube.com/channel/UCdfZfi4HC6bK0-OfRcDJSzg" class="with-icon"><img src="https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy">YouTube</a></li></ul></div></div>
+    <div class="footer-legal"><ul class="legal-links"><li><a href="../../../om-oss/om-banken/selskapsinformasjon.html">Selskapsinformasjon</a></li><li><a href="../../../om-oss/personvern/generelle-vilkar.html">Vilkår for bruk av nettsiden</a></li><li><a href="../../../om-oss/personvern.html">Personvern</a></li><li><a href="../../../om-oss/personvern.html#cookies">Informasjonskapsler</a></li><li><a href="../../../bedrift/open-api.html">For utviklere</a></li></ul><p class="address">SpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo</p></div>
+  </div></div>
 </footer>
 <script>
 (() => {
-  const t = document.getElementById('ds-nav-toggle');
-  const b = document.querySelector('.ds-nav-burger');
-  if (!t || !b) return;
-  const sync = () => b.setAttribute('aria-expanded', t.checked);
-  t.addEventListener('change', sync); sync();
-  b.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); t.checked = !t.checked; sync(); } });
-  addEventListener('keydown', e => { if (e.key === 'Escape' && t.checked) { t.checked = false; sync(); b.focus(); } });
+  const hdr = document.querySelector('.site-header'); if (!hdr) return;
+  const btn = hdr.querySelector('.menu-toggle'); const nav = document.getElementById('main-menu');
+  const setOpen = (o) => { hdr.classList.toggle('is-open', o); btn.setAttribute('aria-expanded', String(o)); document.documentElement.classList.toggle('no-scroll', o); };
+  btn.addEventListener('click', () => setOpen(!hdr.classList.contains('is-open')));
+  addEventListener('keydown', (ev) => { if (ev.key === 'Escape' && hdr.classList.contains('is-open')) { setOpen(false); btn.focus(); } });
+  nav.addEventListener('click', (ev) => { if (ev.target.closest('a') && hdr.classList.contains('is-open')) setOpen(false); });
+  // Sticky: hide on scroll-down, reveal only the main bar on scroll-up (settings bar stays hidden until the top).
+  let last = scrollY; const settings = () => hdr.querySelector('.settings-bar').getBoundingClientRect().height;
+  addEventListener('scroll', () => { const y = scrollY; if (hdr.classList.contains('is-open')) return;
+    if (y <= 0) hdr.style.transform = ''; else if (y > last && y > hdr.offsetHeight) hdr.style.transform = 'translateY(-100%)'; else if (y < last) hdr.style.transform = 'translateY(-' + settings() + 'px)';
+    last = y; }, { passive: true });
 })();
 </script>
 </body>
