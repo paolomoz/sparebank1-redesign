@@ -20,7 +20,7 @@
 :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .hero.hub.tile .hero-media,
 :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .hero.hub.portrait .hero-media { background: var(--card-tint); display: flex; align-items: center; justify-content: center; padding: 32px; }
 :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .hero.hub.tile .hero-media picture,
-:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .hero.hub.portrait .hero-media picture { height: auto; width: auto; display: flex; justify-content: center; }
+:is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .hero.hub.portrait .hero-media picture { height: auto; width: 100%; display: flex; justify-content: center; }
 :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .hero.hub.tile .hero-media img { width: min(70%, 360px); height: auto; max-height: 360px; aspect-ratio: auto; object-fit: contain; background: transparent; }
 :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .hero.hub.portrait .hero-media img { width: min(56%, 340px); height: auto; aspect-ratio: 1; border-radius: 50%; object-fit: cover; background: transparent; }
 :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .hero.hub.tile .hero-grid:has(.hero-text:hover) .hero-media img,
@@ -63,7 +63,7 @@
 /* tile / portrait at tablet and phone: the base fills the media cell with an absolute photo there — the illustration stays in flow on its tile */
 @media (width <= 1024px) {
   :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .hero.hub.tile .hero-media picture,
-  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .hero.hub.portrait .hero-media picture { position: static; inset: auto; width: auto; height: auto; }
+  :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .hero.hub.portrait .hero-media picture { position: static; inset: auto; width: 100%; height: auto; }
   :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .hero.hub.tile .hero-media img { position: static; inset: auto; width: min(70%, 360px); height: auto; }
   :is(body.category-hub, body.kundeservice-hub, body.tool, body.utility) .hero.hub.portrait .hero-media img { position: static; inset: auto; width: min(56%, 340px); height: auto; }
 }

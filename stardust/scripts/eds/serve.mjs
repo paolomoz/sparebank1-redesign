@@ -40,8 +40,10 @@ function mainOf(file) {
       [...li.childNodes].forEach((n) => { if (n.nodeType === 1 && /^(P|UL|OL|DIV|TABLE|H[1-6])$/.test(n.tagName)) { flush(); } else run.push(n); }); flush(); });
   });
   // like the pipeline: <img> gets intrinsic width/height (and a <picture> wrapper) from the media
-  [...document.querySelectorAll('img[src^="/__media/"]')].forEach((img) => {
-    try { const f = path.join(ROOT, 'stardust/rollout/raster', path.basename(img.getAttribute('src'))); const d = imageSize(fs.readFileSync(f)); if (d.width) { img.setAttribute('width', d.width); img.setAttribute('height', d.height); } } catch {}
+  // parity with the live pipeline: EVERY authored image is ingested into media and wrapped in <picture> (external CDN photos included)
+  [...document.querySelectorAll('img')].forEach((img) => {
+    if (img.closest('picture')) return;
+    if ((img.getAttribute('src') || '').startsWith('/__media/')) { try { const f = path.join(ROOT, 'stardust/rollout/raster', path.basename(img.getAttribute('src'))); const d = imageSize(fs.readFileSync(f)); if (d.width) { img.setAttribute('width', d.width); img.setAttribute('height', d.height); } } catch {} }
     img.setAttribute('loading', 'lazy');
     const pic = document.createElement('picture'); img.replaceWith(pic); pic.append(img);
   });

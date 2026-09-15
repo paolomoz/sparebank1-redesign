@@ -58,7 +58,7 @@ body.markedsnytt-listing .columns.split.expert .col-text.card a.button[href^="ht
 /* expert: Syrin tile 3 (160 px round portrait, or a 150 px illustration, + caption) + text card 9 */
 body.markedsnytt-listing .columns.split.expert .col-media.card { grid-column: 1 / span 3; min-height: 0; background: var(--syrin-30); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--spacing-md); padding: 32px 24px; text-align: center; }
 body.markedsnytt-listing .columns.split.expert .col-text.card { grid-column: 4 / -1; }
-body.markedsnytt-listing .columns.split.expert .col-media.card picture { width: auto; height: auto; }
+body.markedsnytt-listing .columns.split.expert .col-media.card picture { width: 100%; height: auto; display: flex; justify-content: center; }
 body.markedsnytt-listing .columns.split.expert .col-media.card img.photo { width: 160px; height: 160px; aspect-ratio: 1; border-radius: 50%; object-fit: cover; background: var(--frost-30); transition: transform 0.5s var(--spring); }
 body.markedsnytt-listing .columns.split.expert .col-media.card img.photo:not([src$=".jpg"]):not([src$=".jpeg"]) { width: 150px; height: 150px; border-radius: 0; object-fit: contain; background: transparent; }
 body.markedsnytt-listing .columns.split.expert .split-row:has(.col-text:hover) .col-media img { transform: scale(1.04); }

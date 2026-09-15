@@ -64,8 +64,8 @@ main .section .cards-wrapper + .columns-wrapper:has(.columns.promo) { margin-top
   .columns.split.text-first .col-text.card,
   .columns.split.text-first .col-media.card { grid-column: 1 / -1; grid-row: auto; }
   .columns.split .col-media.card { min-height: 0; aspect-ratio: 16 / 9; }
-  .columns.split .col-media.card picture,
-  .columns.split .col-media.card img.photo { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .columns.split .col-media.card picture { position: static; display: block; width: 100%; height: 100%; }
+  .columns.split .col-media.card img.photo { position: static; width: 100%; height: 100%; min-height: 100%; object-fit: cover; }
   .columns.split .col-text.card .card-body { padding: 40px 32px; }
   .columns.promo .col-media.card { grid-column: span 4; }
   .columns.promo .col-text.card { grid-column: span 8; }
