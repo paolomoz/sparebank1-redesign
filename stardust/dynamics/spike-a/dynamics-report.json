@@ -1,0 +1,202 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics check",
+  "writtenAt": "2026-10-15T15:35:47.539Z",
+  "origin": "https://spike-a--sparebank1-redesign--paolomoz.aem.page",
+  "parity": "stardust/dynamics/parity.json"
+ },
+ "results": [
+  {
+   "feature": "bank-choice router — postcode → bank",
+   "id": 1,
+   "class": "F+D",
+   "status": "done",
+   "type": "fetch-json",
+   "pass": true,
+   "detail": "200 · 5 rows · keys snapshotAt,source,rule,banks,pages",
+   "thirdParty": "",
+   "ms": 2153,
+   "environmentLimit": null
+  },
+  {
+   "feature": "bank-choice router — postcode → bank",
+   "id": 1,
+   "class": "F+D",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "13 × .bank-router[data-snapshot] .bank-list li (min 12)",
+   "thirdParty": "",
+   "ms": 1963,
+   "environmentLimit": null
+  },
+  {
+   "feature": "bank-choice router — postcode → bank",
+   "id": 1,
+   "class": "F+D",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × .bank-router a[href='https://www.sparebank1.no/nb/gudbrandsdal/privat/lan/boliglan.html'] (min 1)",
+   "thirdParty": "",
+   "ms": 1783,
+   "environmentLimit": null
+  },
+  {
+   "feature": "bank-choice router — postcode → bank",
+   "id": 1,
+   "class": "F+D",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × .bank-router a[href='https://www.sparebank1.no/nb/hallingdal/privat.html'] (min 1)",
+   "thirdParty": "",
+   "ms": 1840,
+   "environmentLimit": null
+  },
+  {
+   "feature": "bank-choice router — postcode → bank",
+   "id": 1,
+   "class": "F+D",
+   "status": "done",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 3 page(s)",
+   "thirdParty": "",
+   "ms": 5366,
+   "environmentLimit": null
+  },
+  {
+   "feature": "loan calculator — 'Hvor mye koster lånet?', price example, payment plan",
+   "id": 7,
+   "class": "F",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "2 × .calculator .calc-tab[role=tab] (min 2)",
+   "thirdParty": "",
+   "ms": 1840,
+   "environmentLimit": null
+  },
+  {
+   "feature": "loan calculator — 'Hvor mye koster lånet?', price example, payment plan",
+   "id": 7,
+   "class": "F",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × .calculator .calc-panel .field--rente input[type=range] (min 1)",
+   "thirdParty": "",
+   "ms": 1785,
+   "environmentLimit": null
+  },
+  {
+   "feature": "loan calculator — 'Hvor mye koster lånet?', price example, payment plan",
+   "id": 7,
+   "class": "F",
+   "status": "done",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 3 page(s)",
+   "thirdParty": "",
+   "ms": 5412,
+   "environmentLimit": null
+  },
+  {
+   "feature": "loan calculator — 'Hvor mye kan jeg låne?' (lending capacity)",
+   "id": "7a",
+   "class": "A",
+   "status": "scaffolded-awaiting-owner",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × .calculator[data-economy] (min 1)",
+   "thirdParty": "",
+   "ms": 1789,
+   "environmentLimit": null
+  },
+  {
+   "feature": "savings calculator (sparekalkulator)",
+   "id": 8,
+   "class": "CR+A",
+   "status": "done",
+   "type": "fetch-json",
+   "pass": true,
+   "detail": "200 · 6 rows · keys snapshotAt,source,years,expectedReturn,product,products",
+   "thirdParty": "",
+   "ms": 1803,
+   "environmentLimit": null
+  },
+  {
+   "feature": "savings calculator (sparekalkulator)",
+   "id": 8,
+   "class": "CR+A",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "4 × .savings-calculator[data-snapshot] .sc-compare-row (min 4)",
+   "thirdParty": "",
+   "ms": 1833,
+   "environmentLimit": null
+  },
+  {
+   "feature": "savings calculator (sparekalkulator)",
+   "id": 8,
+   "class": "CR+A",
+   "status": "done",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 1 page(s)",
+   "thirdParty": "",
+   "ms": 1782,
+   "environmentLimit": null
+  },
+  {
+   "feature": "currency converter + rate list (valutakalkulator)",
+   "id": 9,
+   "class": "CR+A",
+   "status": "interim",
+   "type": "fetch-json",
+   "pass": true,
+   "detail": "200 · 4 rows · keys snapshotAt,ratesUpdatedAt,source,rates",
+   "thirdParty": "",
+   "ms": 1806,
+   "environmentLimit": null
+  },
+  {
+   "feature": "currency converter + rate list (valutakalkulator)",
+   "id": 9,
+   "class": "CR+A",
+   "status": "interim",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "31 × .converter[data-snapshot] #conv-from option (min 31)",
+   "thirdParty": "",
+   "ms": 1844,
+   "environmentLimit": null
+  },
+  {
+   "feature": "currency converter + rate list (valutakalkulator)",
+   "id": 9,
+   "class": "CR+A",
+   "status": "interim",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "30 × .table.rates[data-snapshot] tbody tr (min 30)",
+   "thirdParty": "",
+   "ms": 1802,
+   "environmentLimit": null
+  },
+  {
+   "feature": "currency converter + rate list (valutakalkulator)",
+   "id": 9,
+   "class": "CR+A",
+   "status": "interim",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 2 page(s)",
+   "thirdParty": "",
+   "ms": 3599,
+   "environmentLimit": null
+  }
+ ]
+}
