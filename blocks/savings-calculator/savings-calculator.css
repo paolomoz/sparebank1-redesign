@@ -1,0 +1,52 @@
+/* savings-calculator — Sparekalkulator (dynamics #8): the calculator movement's Frost-30 card (canon .calc), inputs left, result card right. */
+.savings-calculator .sv { display: grid; gap: var(--spacing-lg); padding: 56px 48px; background: var(--frost-30); border-radius: var(--radius); }
+.savings-calculator [hidden] { display: none !important; }
+.savings-calculator p { margin: 0; }
+.savings-calculator .sv-tabs { display: inline-flex; justify-self: center; padding: 4px; background: #fff; border-radius: var(--radius-pill); }
+.savings-calculator .sv-tab { min-height: 40px; padding: 8px 20px; border: 0; border-radius: var(--radius-pill); background: transparent; color: var(--moerkgraa); font: var(--body) / 1.2 var(--body-font-family); cursor: pointer; }
+.savings-calculator .sv-tab.is-on { background: var(--fjell); color: #fff; }
+.savings-calculator .sv-tab:focus-visible { outline: 2px solid var(--fjell); outline-offset: 2px; }
+.savings-calculator .sv-panel { display: grid; gap: var(--spacing-md); }
+.savings-calculator .sv-heading { margin: 0; color: var(--fjell); }
+.savings-calculator .sv-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: var(--spacing-lg); align-items: start; }
+.savings-calculator .sv-inputs { display: grid; gap: var(--spacing-md); }
+.savings-calculator .sv-field { display: grid; gap: 6px; }
+.savings-calculator .label { font-family: var(--title-font-family); font-size: var(--label); line-height: 1.4; color: var(--fjell); }
+.savings-calculator .sv-row { display: grid; grid-template-columns: minmax(0, 1fr) 11rem; gap: var(--spacing-md); align-items: center; }
+.savings-calculator .sv-range { width: 100%; margin: 0; accent-color: var(--fjell); cursor: pointer; }
+.savings-calculator .input-wrap { position: relative; display: flex; align-items: center; }
+.savings-calculator .input { width: 100%; min-height: 44px; padding: 10px 44px 10px 14px; border: 1px solid var(--graa); border-radius: var(--radius-sm); background: #fff; color: var(--koksgraa); font: var(--body) / 1.2 var(--body-font-family); font-variant-numeric: tabular-nums; }
+.savings-calculator .input:focus { outline: 2px solid var(--fjell); outline-offset: 2px; }
+.savings-calculator .sv-select { padding-right: 14px; cursor: pointer; }
+.savings-calculator .suffix { position: absolute; right: 14px; color: var(--koksgraa); pointer-events: none; }
+.savings-calculator .sv-profile { padding: var(--spacing-md); border-radius: var(--radius-sm); background: #fff; border-left: 4px solid var(--fjell); }
+.savings-calculator .sv-profile h3 { margin: 0 0 4px; font-size: var(--body); color: var(--fjell); }
+.savings-calculator .sv-card { display: grid; gap: var(--spacing-md); padding: var(--spacing-lg); background: #fff; border-radius: var(--radius); }
+.savings-calculator .sv-rec { font-size: var(--body-sm); }
+.savings-calculator .sv-results { display: grid; gap: 6px; margin: 0; }
+.savings-calculator .sv-res { display: flex; justify-content: space-between; gap: 12px; }
+.savings-calculator .sv-res dt, .savings-calculator .sv-res dd { margin: 0; color: var(--fjell); }
+.savings-calculator .sv-res dd { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.savings-calculator .sv-res--main dt, .savings-calculator .sv-res--main dd { font-family: var(--title-font-family); color: var(--koksgraa); }
+.savings-calculator .sv-ctas { display: grid; gap: var(--spacing-sm); justify-items: center; }
+.savings-calculator .sv-ctas p { margin: 0; }
+.savings-calculator .sv-cmp-toggle { justify-self: center; border: 0; background: none; color: var(--fjell); font: var(--body) / 1.2 var(--body-font-family); cursor: pointer; }
+.savings-calculator .sv-cmp-toggle::after { content: ""; display: inline-block; width: 7px; height: 7px; margin-left: 10px; border-right: 1.5px solid currentcolor; border-bottom: 1.5px solid currentcolor; transform: translateY(-3px) rotate(45deg); }
+.savings-calculator .sv-cmp-toggle[aria-expanded="true"]::after { transform: translateY(1px) rotate(225deg); }
+.savings-calculator .sv-cmp { display: grid; gap: var(--spacing-sm); }
+.savings-calculator .sv-cmp-row { display: grid; gap: 4px; }
+.savings-calculator .sv-bar { height: 22px; border-radius: var(--radius-pill); background: var(--frost-30); overflow: hidden; }
+.savings-calculator .sv-bar span { display: flex; justify-content: flex-end; align-items: center; height: 100%; padding: 0 8px; background: var(--fjell); color: #fff; font-size: var(--body-sm); font-variant-numeric: tabular-nums; border-radius: var(--radius-pill); }
+.savings-calculator .sv-error { color: var(--koksgraa); }
+.savings-calculator .sv-disclaimer p { color: var(--fjell); max-width: 90ch; }
+
+@media (width <= 1023px) {
+  .savings-calculator .sv-grid { grid-template-columns: 1fr; }
+  .savings-calculator .sv-range { display: none; }
+  .savings-calculator .sv-row { grid-template-columns: 1fr; }
+}
+
+@media (width <= 767px) {
+  .savings-calculator .sv { padding: 36px 20px; }
+  .savings-calculator .sv-tabs { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
+}
