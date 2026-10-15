@@ -195,3 +195,15 @@ markedsnytt expert portraits detected by `[src$=".jpg"]` failed on `?width=` URL
 lazy images eager. A parallel regression sweep was killed by memory pressure (26 Chromium processes) — gates now run sequentially.
 
 **Ledgers:** `stardust/rollout/gates/<slug>-pub/`, `deploy-ledger.json`, `eds-progress/*.json`, `journal/<family>.md`, `eds-requests.md` (open requests from the workers, mostly base-scoping and gate-instrument items). Round record: `stardust/prototypes/round-01-danske-ramp/README.md`.
+
+## 2026-10-15 — spike-c: dynamics Phases 1–5 on rows #1, #7, #8, #9 (hands-off)
+
+**Branch:** `spike-c` · **origin:** https://spike-c--sparebank1-redesign--paolomoz.aem.page · **content:** copies under `/spike-c/` (the shared DA documents are untouched).
+
+- **Detect / classify:** `client-logic.mjs capture` on the four source widgets, then `cors` probes from the spike-c origin. All five first-party endpoints are CORS-closed: geolocation, loan economy + annuity, savings expected-performance + suggested product, currency rates.
+- **#1 bank-choice → self, done.** The postcode lookup was never a backend call: `bankPickerlist[].postalRange` is inline on every page and filtered client-side. The block was rebuilt with the ranges authored in the fragment (`/spike-c/fragments/bank-router`, 3rd cell per bank) and matches the source 35/35. Only "Bruk min posisjon" stays owner-bound; it is behind `siteConfig.bankChoiceGeolocation`, and its path was verified with a route mock.
+- **#9 currency → interim, working.** The formula was recovered from clientlib_base and the rates are a dated code-bus snapshot with a sync step. Vectors match the source 26/26 on the same day's rates.
+- **#7 loan → scaffolded-awaiting-owner.** The locus is the server. The "approve a client formula" option is withdrawn, because there is no client formula. A 22-row oracle was recorded.
+- **#8 savings → scaffolded-awaiting-owner (correction).** It was `self` on a formula fitted to outputs. The locus is the server, and the return assumptions are per years × risk. The page now shows the static shell (before: no widget). A 22-row oracle was recorded.
+- **Phase 5:** `dynamics-check` 15/15 PASS on the spike-c origin (`stardust/dynamics/dynamics-report.spike-c.md`).
+- **Instrument gaps:** capture misses shadow-DOM outputs (it reported "client (with calls)" on two server-locus widgets). `vectors` cannot clear fields under the source's consent overlay, so `stardust/scripts/dyn-vectors.mjs` stands in.

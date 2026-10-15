@@ -16,3 +16,19 @@ degradation with live behaviour. Verification per phase: flow works on the publi
 | later iterations | #18 regional-bank + nynorsk trees | 12 more `/nb/<bank>/` trees (6,697 pages) reusing the same blocks; bank-choice routes internally | — | owner: scope order of banks | iterations 2+ |
 
 Phase 5 parity: `stardust/dynamics/parity.json` replayable checks per row (dialog open, accordion toggle, listing count ≥ 6, calculator example values, links to auth apps 200 on source host).
+
+---
+
+## spike-c — rows #1, #7, #8, #9 (2026-10-15, hands-off)
+
+<!-- _provenance: writtenBy stardust:dynamics Phases 3–5 (hands-off); supersedes the D2-b #8 and D2-c #1/#7/#9 lines above for these rows only; branch spike-c -->
+
+| phase | feature | deliverable | authoring contract | verification (published spike-c origin, 1440 + 360) | owner decision | status |
+|---|---|---|---|---|---|---|
+| S1 client-compute | #1 bank-choice postcode → bank | `blocks/bank-router` filter (`parseRanges` / `banksFor`, pure) and the source's states (several matches + "Se resten av bankene", one → "Fortsett til …", none → all banks open, invalid → message). Bank links follow the page path. `?postnummer=` lands on the result | fragment rows: 3 `[label \| placeholder \| invalid message]` · 4 `[position label \| position failed]` · 5 `[all \| hide \| rest \| continue-to]` · banks `[name link \| tagline \| ranges "0050–1295, 2607–2658"]`. Missing cells fall back to the interim | vectors 35/35 exact · 3 `search-query` checks (count + top titles vs source) · hrefs 12/12 vs source on 4 pages | none | done |
+| S1 scaffold | #1 "Bruk min posisjon" | `siteConfig.bankChoiceGeolocation` (disabled). Enabled, the button calls the endpoint and fills the postcode | — | route-mocked flip: 63.43,10.39 → 7010 → 5 banks; flag off → no button | SB1: CORS / proxy for the geolocation endpoint | scaffolded-awaiting-owner |
+| S2 snapshot + client-compute | #9 currency converter | `blocks/converter` (recovered formula), `data/currency-converter/valutakurser.json` + `_provenance.json`, `stardust/scripts/sync-currency-rates.mjs`, `siteConfig.currencyRates` (disabled) | block rows: `[from label \| default currency]` · `[amount label \| default]` · `[to label \| default]` · `[result label \| captured]` · optional `[date label \| –]` · rate line · notes. Static shell first, then hydrated | vectors 26/26 exact · fetch-json 31 rows · 31 options · date line | SB1: CORS / proxy for the rate feed (or keep re-running the sync step) | interim |
+| S3 interim shell | #8 savings calculator | the calculator block's static shell on sparekalkulator (bold result rows = breakdown) | same calculator contract as #7 | dom-count fields 4 / breakdown 2 / CTAs 2 · oracle table recorded on source | SB1: CORS / proxy for the savings API | scaffolded-awaiting-owner |
+| — | #7 loan calculator | unchanged interim shell. Owner ask narrowed to CORS / proxy. Oracle table recorded on source | — | dom-count tabs 2 / CTAs 2 | SB1: CORS / proxy for the loan API | scaffolded-awaiting-owner |
+
+**When the owner unblocks #7 or #8:** build the block wiring against `siteConfig.loanCalculator` / `siteConfig.savingsCalculator`. Replay `vectors.source.json` with target selectors through `stardust/scripts/dyn-vectors.mjs`, then run `client-logic.mjs diff` against `table.source.json`. Re-record the source table on the same day, because the rate and return assumptions move.
