@@ -1,0 +1,10 @@
+{
+ "writtenBy": "stardust:dynamics sync-snapshots.mjs savings",
+ "fetchedAt": "2026-10-15T14:46:40.584Z",
+ "sources": [
+  "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/expected-performance",
+  "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/suggested-savings-product",
+  "https://www.sparebank1.no/openapi/personal/banking/fund/products/available?fid=fid-ostlandet"
+ ],
+ "grid": "4 risks × 51 years"
+}

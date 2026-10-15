@@ -1,0 +1,11 @@
+{
+ "writtenBy": "stardust:dynamics sync-snapshots.mjs bank",
+ "fetchedAt": "2026-10-15T14:51:37.640Z",
+ "sources": [
+  "https://www.sparebank1.no/nb/bank/privat.html",
+  "100 roster pages (stardust/state.json)"
+ ],
+ "banks": 12,
+ "pagesWithPicker": 70,
+ "exceptionPages": 5
+}

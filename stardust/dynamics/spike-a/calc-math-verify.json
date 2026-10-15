@@ -1,0 +1,2038 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics Phase 4 verify-calc-math.mjs",
+  "writtenAt": "2026-10-15T14:44:38.136Z",
+  "source": "https://www.sparebank1.no"
+ },
+ "summary": {
+  "annuity": "90/90",
+  "savings": "8/8",
+  "required": "6/6",
+  "currency": "0/0"
+ },
+ "results": {
+  "annuity": [
+   {
+    "input": {
+     "purchasePrice": 3000000,
+     "equity": 300000,
+     "interestRate": 5.33,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 16357.372834225063,
+     "effectiveAnnualRate": 5.506441198403711
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 3000000,
+     "equity": 300000,
+     "interestRate": 5.33,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 16357.372834225063,
+     "effectiveAnnualRate": 5.500897108354241
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 3000000,
+     "equity": 300000,
+     "interestRate": 5.33,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 16307.372834225063,
+     "effectiveAnnualRate": 5.462154655608775
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 3000000,
+     "equity": 300000,
+     "interestRate": 0.01,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 7561.286874883119,
+     "effectiveAnnualRate": 0.061362315321855654
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 3000000,
+     "equity": 300000,
+     "interestRate": 0.01,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 7561.286874883119,
+     "effectiveAnnualRate": 0.05790012864101968
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 3000000,
+     "equity": 300000,
+     "interestRate": 0.01,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 7511.286874883119,
+     "effectiveAnnualRate": 0.010000458295222892
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 3000000,
+     "equity": 300000,
+     "interestRate": 10,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 237422.89552102663,
+     "effectiveAnnualRate": 10.735963640342439
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 3000000,
+     "equity": 300000,
+     "interestRate": 10,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 237422.89552102663,
+     "effectiveAnnualRate": 10.629176205421187
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 3000000,
+     "equity": 300000,
+     "interestRate": 10,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 237372.89552102663,
+     "effectiveAnnualRate": 10.47130674413057
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 3000000,
+     "equity": 300000,
+     "interestRate": 3.9,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 27258.050947301646,
+     "effectiveAnnualRate": 4.034591314677738
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 3000000,
+     "equity": 300000,
+     "interestRate": 3.9,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 27258.050947301646,
+     "effectiveAnnualRate": 4.023175627563114
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 3000000,
+     "equity": 300000,
+     "interestRate": 3.9,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 27208.050947301646,
+     "effectiveAnnualRate": 3.9704732701134615
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 3000000,
+     "equity": 300000,
+     "interestRate": 7.25,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 21390.151592777176,
+     "effectiveAnnualRate": 7.54338880525296
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 3000000,
+     "equity": 300000,
+     "interestRate": 7.25,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 21390.151592777176,
+     "effectiveAnnualRate": 7.536184994236383
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 3000000,
+     "equity": 300000,
+     "interestRate": 7.25,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 21340.151592777176,
+     "effectiveAnnualRate": 7.4958297421328535
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 1096100,
+     "equity": 0,
+     "interestRate": 5.33,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 6670.189393923739,
+     "effectiveAnnualRate": 5.571281114652171
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 1096100,
+     "equity": 0,
+     "interestRate": 5.33,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 6670.189393923739,
+     "effectiveAnnualRate": 5.5575628536535415
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 1096100,
+     "equity": 0,
+     "interestRate": 5.33,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 6620.189393923739,
+     "effectiveAnnualRate": 5.462154655608775
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 1096100,
+     "equity": 0,
+     "interestRate": 0.01,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 3099.3042753923655,
+     "effectiveAnnualRate": 0.13629110512141107
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 1096100,
+     "equity": 0,
+     "interestRate": 0.01,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 3099.3042753923655,
+     "effectiveAnnualRate": 0.12771597654401834
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 1096100,
+     "equity": 0,
+     "interestRate": 0.01,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 3049.3042753923655,
+     "effectiveAnnualRate": 0.010000458295222892
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 1096100,
+     "equity": 0,
+     "interestRate": 10,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 96414.6039928138,
+     "effectiveAnnualRate": 11.124801990249345
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 1096100,
+     "equity": 0,
+     "interestRate": 10,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 96414.6039928138,
+     "effectiveAnnualRate": 10.860701185654387
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 1096100,
+     "equity": 0,
+     "interestRate": 10,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 96364.6039928138,
+     "effectiveAnnualRate": 10.47130674413057
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 1096100,
+     "equity": 0,
+     "interestRate": 3.9,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 11095.460979013826,
+     "effectiveAnnualRate": 4.128517792633346
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 1096100,
+     "equity": 0,
+     "interestRate": 3.9,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 11095.460979013826,
+     "effectiveAnnualRate": 4.100302998898275
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 1096100,
+     "equity": 0,
+     "interestRate": 3.9,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 11045.460979013826,
+     "effectiveAnnualRate": 3.9704732701134615
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 1096100,
+     "equity": 0,
+     "interestRate": 7.25,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 8713.311170682615,
+     "effectiveAnnualRate": 7.613056486083014
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 1096100,
+     "equity": 0,
+     "interestRate": 7.25,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 8713.311170682615,
+     "effectiveAnnualRate": 7.5952392851522665
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 1096100,
+     "equity": 0,
+     "interestRate": 7.25,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 8663.311170682615,
+     "effectiveAnnualRate": 7.4958297421328535
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 2484500,
+     "equity": 0,
+     "interestRate": 5.33,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 15055.802891345249,
+     "effectiveAnnualRate": 5.5102834536539635
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 2484500,
+     "equity": 0,
+     "interestRate": 5.33,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 15055.802891345249,
+     "effectiveAnnualRate": 5.504256873928948
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 2484500,
+     "equity": 0,
+     "interestRate": 5.33,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 15005.802891345249,
+     "effectiveAnnualRate": 5.462154655608775
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 2484500,
+     "equity": 0,
+     "interestRate": 0.01,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 6961.774903943375,
+     "effectiveAnnualRate": 0.0658113144371919
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 2484500,
+     "equity": 0,
+     "interestRate": 0.01,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 6961.774903943375,
+     "effectiveAnnualRate": 0.0620476040578577
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 2484500,
+     "equity": 0,
+     "interestRate": 0.01,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 6911.774903943375,
+     "effectiveAnnualRate": 0.010000458295222892
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 2484500,
+     "equity": 0,
+     "interestRate": 10,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 218477.02182295953,
+     "effectiveAnnualRate": 10.75896040888673
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 2484500,
+     "equity": 0,
+     "interestRate": 10,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 218477.02182295953,
+     "effectiveAnnualRate": 10.642882981661582
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 2484500,
+     "equity": 0,
+     "interestRate": 10,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 218427.02182295953,
+     "effectiveAnnualRate": 10.47130674413026
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 2484500,
+     "equity": 0,
+     "interestRate": 3.9,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 25086.44539947072,
+     "effectiveAnnualRate": 4.040155479135543
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 2484500,
+     "equity": 0,
+     "interestRate": 3.9,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 25086.44539947072,
+     "effectiveAnnualRate": 4.027747147183058
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 2484500,
+     "equity": 0,
+     "interestRate": 3.9,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 25036.44539947072,
+     "effectiveAnnualRate": 3.9704732701134615
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 2484500,
+     "equity": 0,
+     "interestRate": 7.25,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 19686.89134527959,
+     "effectiveAnnualRate": 7.5475159378035395
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 2484500,
+     "equity": 0,
+     "interestRate": 7.25,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 19686.89134527959,
+     "effectiveAnnualRate": 7.539685400318241
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 2484500,
+     "equity": 0,
+     "interestRate": 7.25,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 19636.89134527959,
+     "effectiveAnnualRate": 7.4958297421328535
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 4500000,
+     "equity": 1200000,
+     "interestRate": 5.33,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 19981.233464052857,
+     "effectiveAnnualRate": 5.498387621216438
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 4500000,
+     "equity": 1200000,
+     "interestRate": 5.33,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 19981.233464052857,
+     "effectiveAnnualRate": 5.493854083504468
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 4500000,
+     "equity": 1200000,
+     "interestRate": 5.33,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 19931.233464052857,
+     "effectiveAnnualRate": 5.462154655608775
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 4500000,
+     "equity": 1200000,
+     "interestRate": 0.01,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 9230.461735968256,
+     "effectiveAnnualRate": 0.05203330359031533
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 4500000,
+     "equity": 1200000,
+     "interestRate": 0.01,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 9230.461735968256,
+     "effectiveAnnualRate": 0.04920253210987102
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 4500000,
+     "equity": 1200000,
+     "interestRate": 0.01,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 9180.461735968256,
+     "effectiveAnnualRate": 0.010000458295222892
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 4500000,
+     "equity": 1200000,
+     "interestRate": 10,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 290172.4278590326,
+     "effectiveAnnualRate": 10.68777949457731
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 4500000,
+     "equity": 1200000,
+     "interestRate": 10,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 290172.4278590326,
+     "effectiveAnnualRate": 10.600451317760108
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 4500000,
+     "equity": 1200000,
+     "interestRate": 10,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 290122.4278590326,
+     "effectiveAnnualRate": 10.47130674413026
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 4500000,
+     "equity": 1200000,
+     "interestRate": 3.9,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 33304.284491146456,
+     "effectiveAnnualRate": 4.022929217506022
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 4500000,
+     "equity": 1200000,
+     "interestRate": 3.9,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 33304.284491146456,
+     "effectiveAnnualRate": 4.013593012049865
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 4500000,
+     "equity": 1200000,
+     "interestRate": 3.9,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 33254.284491146456,
+     "effectiveAnnualRate": 3.9704732701134615
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 4500000,
+     "equity": 1200000,
+     "interestRate": 7.25,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 26132.407502283215,
+     "effectiveAnnualRate": 7.534738604204927
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 4500000,
+     "equity": 1200000,
+     "interestRate": 7.25,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 26132.407502283215,
+     "effectiveAnnualRate": 7.528847548854856
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 4500000,
+     "equity": 1200000,
+     "interestRate": 7.25,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 26082.407502283215,
+     "effectiveAnnualRate": 7.4958297421328535
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 800000,
+     "equity": 790000,
+     "interestRate": 5.33,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 110.39767716379653,
+     "effectiveAnnualRate": 19.97383501931602
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 800000,
+     "equity": 790000,
+     "interestRate": 5.33,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 110.39767716379653,
+     "effectiveAnnualRate": 16.298577571662044
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 800000,
+     "equity": 790000,
+     "interestRate": 5.33,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 60.39767716379653,
+     "effectiveAnnualRate": 5.462154655608775
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 800000,
+     "equity": 790000,
+     "interestRate": 0.01,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 77.81958101808563,
+     "effectiveAnnualRate": 13.58914795000108
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 800000,
+     "equity": 790000,
+     "interestRate": 0.01,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 77.81958101808563,
+     "effectiveAnnualRate": 11.011320624735287
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 800000,
+     "equity": 790000,
+     "interestRate": 0.01,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 27.81958101808563,
+     "effectiveAnnualRate": 0.010000458295222892
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 800000,
+     "equity": 790000,
+     "interestRate": 10,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 929.1588723000987,
+     "effectiveAnnualRate": 130.7750913155933
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 800000,
+     "equity": 790000,
+     "interestRate": 10,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 929.1588723000987,
+     "effectiveAnnualRate": 66.05582104851102
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 800000,
+     "equity": 790000,
+     "interestRate": 10,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 879.1588723000987,
+     "effectiveAnnualRate": 10.47130674413026
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 800000,
+     "equity": 790000,
+     "interestRate": 3.9,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 150.77055906408015,
+     "effectiveAnnualRate": 25.088023654668625
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 800000,
+     "equity": 790000,
+     "interestRate": 3.9,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 150.77055906408015,
+     "effectiveAnnualRate": 18.964951249800556
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 800000,
+     "equity": 790000,
+     "interestRate": 3.9,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 100.77055906408016,
+     "effectiveAnnualRate": 3.9704732701134615
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 800000,
+     "equity": 790000,
+     "interestRate": 7.25,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 129.0375984917673,
+     "effectiveAnnualRate": 23.55561142800664
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 800000,
+     "equity": 790000,
+     "interestRate": 7.25,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 129.0375984917673,
+     "effectiveAnnualRate": 19.116373119504225
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 800000,
+     "equity": 790000,
+     "interestRate": 7.25,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 79.03759849176731,
+     "effectiveAnnualRate": 7.4958297421328535
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 10000000,
+     "equity": 2500000,
+     "interestRate": 5.33,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 45348.257872847396,
+     "effectiveAnnualRate": 5.47809553054126
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 10000000,
+     "equity": 2500000,
+     "interestRate": 5.33,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 45348.257872847396,
+     "effectiveAnnualRate": 5.476103582729497
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 10000000,
+     "equity": 2500000,
+     "interestRate": 5.33,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 25,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 45298.257872847396,
+     "effectiveAnnualRate": 5.462154655608775
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 10000000,
+     "equity": 2500000,
+     "interestRate": 0.01,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 20914.68576356422,
+     "effectiveAnnualRate": 0.028505496236674865
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 10000000,
+     "equity": 2500000,
+     "interestRate": 0.01,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 20914.68576356422,
+     "effectiveAnnualRate": 0.02726209112575706
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 10000000,
+     "equity": 2500000,
+     "interestRate": 0.01,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 30,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 20864.68576356422,
+     "effectiveAnnualRate": 0.010000458295222892
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 10000000,
+     "equity": 2500000,
+     "interestRate": 10,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 659419.154225074,
+     "effectiveAnnualRate": 10.566483067214927
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 10000000,
+     "equity": 2500000,
+     "interestRate": 10,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 659419.154225074,
+     "effectiveAnnualRate": 10.52810669580091
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 10000000,
+     "equity": 2500000,
+     "interestRate": 10,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 1,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 659369.154225074,
+     "effectiveAnnualRate": 10.47130674413026
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 10000000,
+     "equity": 2500000,
+     "interestRate": 3.9,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 75627.91929806012,
+     "effectiveAnnualRate": 3.9935491587463234
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 10000000,
+     "equity": 2500000,
+     "interestRate": 3.9,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 75627.91929806012,
+     "effectiveAnnualRate": 3.989445551134496
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 10000000,
+     "equity": 2500000,
+     "interestRate": 3.9,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 10,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 75577.91929806012,
+     "effectiveAnnualRate": 3.9704732701134615
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 10000000,
+     "equity": 2500000,
+     "interestRate": 7.25,
+     "feeEstablishment": 2900,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 59328.19886882549,
+     "effectiveAnnualRate": 7.512946213241034
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 10000000,
+     "equity": 2500000,
+     "interestRate": 7.25,
+     "feeEstablishment": 1500,
+     "feeMonthly": 50,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 59328.19886882549,
+     "effectiveAnnualRate": 7.51035744056503
+    }
+   },
+   {
+    "input": {
+     "purchasePrice": 10000000,
+     "equity": 2500000,
+     "interestRate": 7.25,
+     "feeEstablishment": 0,
+     "feeMonthly": 0,
+     "taxDeductionRate": 0.22,
+     "loanTermYears": 20,
+     "interestOnlyYears": 0,
+     "loanRaisingYear": 2026,
+     "loanRaisingMonth": 10
+    },
+    "pass": true,
+    "diffs": [],
+    "api": {
+     "monthlyPayment": 59278.19886882549,
+     "effectiveAnnualRate": 7.4958297421328535
+    }
+   }
+  ],
+  "savings": [
+   {
+    "input": {
+     "initialValue": 6000,
+     "periodicInvestment": 500,
+     "years": 5,
+     "risk": "medium"
+    },
+    "annualReturn": 5.33,
+    "ours": 42107.69167503309,
+    "api": 42107.69167503309,
+    "pass": true
+   },
+   {
+    "input": {
+     "initialValue": 0,
+     "periodicInvestment": 20000,
+     "years": 50,
+     "risk": "high"
+    },
+    "annualReturn": 6.5,
+    "ours": 85235091.29333405,
+    "api": 85235091.29333405,
+    "pass": true
+   },
+   {
+    "input": {
+     "initialValue": 1000000,
+     "periodicInvestment": 0,
+     "years": 1,
+     "risk": "low"
+    },
+    "annualReturn": 3,
+    "ours": 1030000.0000000012,
+    "api": 1030000.0000000012,
+    "pass": true
+   },
+   {
+    "input": {
+     "initialValue": 0,
+     "periodicInvestment": 100,
+     "years": 0,
+     "risk": "none"
+    },
+    "annualReturn": 3,
+    "ours": 0,
+    "api": 0,
+    "pass": true
+   },
+   {
+    "input": {
+     "initialValue": 250000,
+     "periodicInvestment": 3500,
+     "years": 17,
+     "risk": "high"
+    },
+    "annualReturn": 6.5,
+    "ours": 2011161.7012619325,
+    "api": 2011161.7012619327,
+    "pass": true
+   },
+   {
+    "input": {
+     "initialValue": 12345,
+     "periodicInvestment": 1234,
+     "years": 33,
+     "risk": "medium"
+    },
+    "annualReturn": 6.03,
+    "ours": 1582224.5150165034,
+    "api": 1582224.5150165034,
+    "pass": true
+   },
+   {
+    "input": {
+     "initialValue": 0,
+     "periodicInvestment": 0,
+     "years": 10,
+     "risk": "low"
+    },
+    "annualReturn": 5.33,
+    "ours": 0,
+    "api": 0,
+    "pass": true
+   },
+   {
+    "input": {
+     "initialValue": 500000,
+     "periodicInvestment": 20000,
+     "years": 30,
+     "risk": "none"
+    },
+    "annualReturn": 3,
+    "ours": 12816437.234738365,
+    "api": 12816437.234738369,
+    "pass": true
+   }
+  ],
+  "required": [
+   {
+    "input": {
+     "savingsGoal": 200000,
+     "initialInvestment": 20000,
+     "years": 20,
+     "risk": "high"
+    },
+    "api": {
+     "requiredSavingsSum": 268.64504863772567,
+     "futureValueOfInitialAmount": 70472.90127035615,
+     "futureValueOfRequiredSavings": 129527.09872964385
+    },
+    "ours": {
+     "requiredSavingsSum": 268.64504863772567,
+     "futureValueOfInitialAmount": 70472.90127035615,
+     "futureValueOfRequiredSavings": 129527.09872964385
+    },
+    "pass": true,
+    "diffs": []
+   },
+   {
+    "input": {
+     "savingsGoal": 1000,
+     "initialInvestment": 0,
+     "years": 1,
+     "risk": "none"
+    },
+    "api": {
+     "requiredSavingsSum": 82.00674166203356,
+     "futureValueOfInitialAmount": 0,
+     "futureValueOfRequiredSavings": 1000
+    },
+    "ours": {
+     "requiredSavingsSum": 82.00674166203356,
+     "futureValueOfInitialAmount": 0,
+     "futureValueOfRequiredSavings": 1000
+    },
+    "pass": true,
+    "diffs": []
+   },
+   {
+    "input": {
+     "savingsGoal": 5000000,
+     "initialInvestment": 1000000,
+     "years": 50,
+     "risk": "medium"
+    },
+    "api": {
+     "requiredSavingsSum": 0,
+     "futureValueOfInitialAmount": 18682632.471697673,
+     "futureValueOfRequiredSavings": -13682632.471697673
+    },
+    "ours": {
+     "requiredSavingsSum": 0,
+     "futureValueOfInitialAmount": 18682632.471697673,
+     "futureValueOfRequiredSavings": -13682632.471697673
+    },
+    "pass": true,
+    "diffs": []
+   },
+   {
+    "input": {
+     "savingsGoal": 300000,
+     "initialInvestment": 290000,
+     "years": 3,
+     "risk": "low"
+    },
+    "api": {
+     "requiredSavingsSum": 0,
+     "futureValueOfInitialAmount": 316890.83000000095,
+     "futureValueOfRequiredSavings": -16890.830000000948
+    },
+    "ours": {
+     "requiredSavingsSum": 0,
+     "futureValueOfInitialAmount": 316890.83000000095,
+     "futureValueOfRequiredSavings": -16890.830000000948
+    },
+    "pass": true,
+    "diffs": []
+   },
+   {
+    "input": {
+     "savingsGoal": 100000,
+     "initialInvestment": 200000,
+     "years": 10,
+     "risk": "high"
+    },
+    "api": {
+     "requiredSavingsSum": 0,
+     "futureValueOfInitialAmount": 375427.49305386824,
+     "futureValueOfRequiredSavings": -275427.49305386824
+    },
+    "ours": {
+     "requiredSavingsSum": 0,
+     "futureValueOfInitialAmount": 375427.49305386824,
+     "futureValueOfRequiredSavings": -275427.49305386824
+    },
+    "pass": true,
+    "diffs": []
+   },
+   {
+    "input": {
+     "savingsGoal": 750000,
+     "initialInvestment": 0,
+     "years": 12,
+     "risk": "medium"
+    },
+    "api": {
+     "requiredSavingsSum": 3582.3676692589615,
+     "futureValueOfInitialAmount": 0,
+     "futureValueOfRequiredSavings": 750000
+    },
+    "ours": {
+     "requiredSavingsSum": 3582.3676692589615,
+     "futureValueOfInitialAmount": 0,
+     "futureValueOfRequiredSavings": 750000
+    },
+    "pass": true,
+    "diffs": []
+   }
+  ],
+  "currency": []
+ }
+}

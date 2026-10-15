@@ -1,0 +1,307 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics plan",
+  "writtenAt": "2026-10-15T14:40:53.085Z",
+  "input": "/Users/paolo/stardust/spike-rea/sparebank1/a/stardust/dynamics/spike-a/detect/_dynamics.json",
+  "target": "https://main--sparebank1-redesign--paolomoz.aem.page",
+  "migrated": "/Users/paolo/stardust/spike-rea/sparebank1/a/stardust/migrated",
+  "knowledge": null,
+  "chrome": null
+ },
+ "rows": [
+  {
+   "id": "a-cms-app-settings-object-digitaldata",
+   "class": "A",
+   "feature": "CMS / app settings object digitalData",
+   "pages": 6,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "read-settings",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "— (keys name endpoints, ids, vendors)"
+  },
+  {
+   "id": "a-first-party-api-post-api-personal-banking-boliglan-kalkula",
+   "class": "A",
+   "feature": "first-party API POST /api/personal/banking/boliglan-kalkulator/economy",
+   "pages": 2,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "POST /api/personal/banking/boliglan-kalkulator/economy → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "a-first-party-api-post-api-personal-banking-boliglan-kalkula",
+   "class": "A",
+   "feature": "first-party API POST /api/personal/banking/boliglan-kalkulator/annuity-loan",
+   "pages": 2,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "POST /api/personal/banking/boliglan-kalkulator/annuity-loan → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "cr-client-rendered-slot-main-js-productpage-productpage",
+   "class": "CR",
+   "feature": "client-rendered slot main js-productpage productpage",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "Låne Boliglån Skal du kjøpe ny bolig? Eller kanskje du drømm"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-js-faq-toggle-faq-button-more-ffe-bu",
+   "class": "CR",
+   "feature": "client-rendered slot js-faq-toggle faq-button--more ffe-button",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "Se flere spørsmål og svar"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "delivered-by-capture",
+   "phase": "capture",
+   "decision": "inspect the consumer",
+   "alreadyDelivered": "output already carries \"Se flere spørsmål og svar\""
+  },
+  {
+   "id": "cr-client-rendered-slot-tab-js-tab-content-default",
+   "class": "CR",
+   "feature": "client-rendered slot tab js-tab-content default",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "ValutaKunde selgerKunden kjøperPerUSD Amerikanske dollar9.47"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "d-first-party-data-file-get-nb-bank-privat-sparing-markedsny",
+   "class": "D",
+   "feature": "first-party data file GET /nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+   "pages": 2,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "GET /nb/bank/privat/sparing/markedsnytt/artikler.export.json?limit,offset,temaFilter → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "i18n-locale-variants-nn-nn-nn-nn-nn",
+   "class": "I18N",
+   "feature": "locale variants nn,nn,nn,nn,nn",
+   "pages": 6,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "https://www.sparebank1.no/nn/sogn-fjordane/privat.html",
+    "https://www.sparebank1.no/nn/sogn-fjordane/privat.html#meeting",
+    "https://www.sparebank1.no/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "https://www.sparebank1.no/nn/sogn-fjordane/privat/lan/boliglan.html#meeting"
+   ],
+   "pattern": "locale-tree",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-business-decision",
+   "status": "delivered-by-capture",
+   "phase": "locale wave",
+   "decision": "scope of the locale trees",
+   "alreadyDelivered": "output already carries \"https://www.sparebank1.no/nn/sogn-fjorda\""
+  },
+  {
+   "id": "l-listing-candidate-card-list-card-list-price-10-cards",
+   "class": "L",
+   "feature": "listing candidate card-list card-list__price (10 cards)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "l-listing-candidate-ffe-accordion-15-cards",
+   "class": "L",
+   "feature": "listing candidate ffe-accordion (15 cards)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "l-listing-candidate-ffe-accordion-11-cards",
+   "class": "L",
+   "feature": "listing candidate ffe-accordion (11 cards)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "l-listing-candidate-text-wrapper-6-cards",
+   "class": "L",
+   "feature": "listing candidate text-wrapper  (6 cards)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "m-modal-trigger-overlay-btn-chrome-only-target-outside-dom-a",
+   "class": "M",
+   "feature": "modal trigger overlay-btn (chrome only) → target outside DOM at capture",
+   "pages": 3,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat"
+   ],
+   "pattern": "chrome-interaction",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none (the header contract is the spec)"
+  },
+  {
+   "id": "m-modal-trigger-overlay-btn-target-outside-dom-at-capture",
+   "class": "M",
+   "feature": "modal trigger overlay-btn → target outside DOM at capture",
+   "pages": 3,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat",
+    "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start",
+    "https://lenker.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start",
+    "https://www.sparebank1.no/nb/bank/privat/lan/boliglan.html#"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "delivered-by-capture",
+   "phase": "interactive",
+   "decision": "none",
+   "alreadyDelivered": "output already carries \"https://www.sparebank1.no/bank/nettbank-\""
+  },
+  {
+   "id": "m-modal-trigger-loginmodal-target-outside-dom-at-capture",
+   "class": "M",
+   "feature": "modal trigger loginModal → target outside DOM at capture",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "https://www.sparebank1.no/bank/nettbank-privat/min-sparing",
+    "https://lenker.sparebank1.no/bank/nettbank-privat/min-sparing"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "delivered-by-capture",
+   "phase": "interactive",
+   "decision": "none",
+   "alreadyDelivered": "output already carries \"https://www.sparebank1.no/bank/nettbank-\""
+  },
+  {
+   "id": "s-first-party-api-get-openapi-personal-banking-savingscalcul",
+   "class": "S",
+   "feature": "first-party API GET /openapi/personal/banking/savingscalculator/suggested-savings-product",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "GET /openapi/personal/banking/savingscalculator/suggested-savings-product?risk,years → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "datasource ownership / same-origin routing on production",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "t-analytics-adobe-analytics-experience-cloud-id",
+   "class": "T",
+   "feature": "analytics: Adobe Analytics / Experience Cloud ID",
+   "pages": 2,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "adobedc.demdex.net"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  }
+ ]
+}

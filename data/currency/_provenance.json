@@ -1,0 +1,8 @@
+{
+ "writtenBy": "stardust:dynamics sync-snapshots.mjs currency",
+ "fetchedAt": "2026-10-15T14:45:19.330Z",
+ "sources": [
+  "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/valutakurser"
+ ],
+ "currencies": 31
+}

@@ -1,0 +1,688 @@
+{
+ "snapshotAt": "2026-10-15T14:51:37.640Z",
+ "source": "https://www.sparebank1.no/nb/bank/privat.html (window.bankPickerlist)",
+ "rule": "link = <bank prefix> + <page path after /nb/bank/>.html",
+ "banks": [
+  {
+   "shortName": "gudbrandsdal",
+   "name": "SpareBank 1 Gudbrandsdal",
+   "prefix": "/nb/gudbrandsdal/",
+   "logo": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1gudbrandsdal.svg",
+   "postalRange": [
+    {
+     "from": "0050",
+     "to": "1295"
+    },
+    {
+     "from": "2607",
+     "to": "2658"
+    },
+    {
+     "from": "2670",
+     "to": "2677"
+    }
+   ]
+  },
+  {
+   "shortName": "hallingdal",
+   "name": "SpareBank 1 Hallingdal Valdres",
+   "prefix": "/nb/hallingdal/",
+   "logo": "https://www.sparebank1.no/content/dam/SB1/bank/hallingdal-valdres/foto/sb1hv_kort.jpg",
+   "postalRange": [
+    {
+     "from": "0050",
+     "to": "1397"
+    },
+    {
+     "from": "2550",
+     "to": "2555"
+    },
+    {
+     "from": "2860",
+     "to": "2985"
+    },
+    {
+     "from": "3528",
+     "to": "3528"
+    },
+    {
+     "from": "3535",
+     "to": "3536"
+    },
+    {
+     "from": "3539",
+     "to": "3588"
+    },
+    {
+     "from": "3629",
+     "to": "3632"
+    },
+    {
+     "from": "5003",
+     "to": "5499"
+    },
+    {
+     "from": "5550",
+     "to": "5555"
+    },
+    {
+     "from": "5590",
+     "to": "5598"
+    },
+    {
+     "from": "5626",
+     "to": "5628"
+    },
+    {
+     "from": "5632",
+     "to": "5636"
+    },
+    {
+     "from": "5650",
+     "to": "5718"
+    },
+    {
+     "from": "5723",
+     "to": "5723"
+    },
+    {
+     "from": "5730",
+     "to": "5736"
+    },
+    {
+     "from": "5748",
+     "to": "5785"
+    },
+    {
+     "from": "6700",
+     "to": "6710"
+    },
+    {
+     "from": "6713",
+     "to": "6714"
+    },
+    {
+     "from": "6716",
+     "to": "6716"
+    },
+    {
+     "from": "6718",
+     "to": "6718"
+    },
+    {
+     "from": "6900",
+     "to": "6919"
+    },
+    {
+     "from": "6940",
+     "to": "6944"
+    }
+   ]
+  },
+  {
+   "shortName": "helgeland",
+   "name": "SpareBank 1 Helgeland",
+   "prefix": "/nb/helgeland/",
+   "logo": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/HSB.svg",
+   "postalRange": [
+    {
+     "from": "7979",
+     "to": "7983"
+    },
+    {
+     "from": "8110",
+     "to": "8118"
+    },
+    {
+     "from": "8128",
+     "to": "8128"
+    },
+    {
+     "from": "8181",
+     "to": "8183"
+    },
+    {
+     "from": "8185",
+     "to": "8198"
+    },
+    {
+     "from": "8600",
+     "to": "8986"
+    }
+   ]
+  },
+  {
+   "shortName": "lom-skjaak",
+   "name": "SpareBank 1 Lom og Skjåk",
+   "prefix": "/nb/lom-skjaak/",
+   "logo": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo_sparebank1lomsjak.svg",
+   "postalRange": [
+    {
+     "from": "0050",
+     "to": "1369"
+    },
+    {
+     "from": "1450",
+     "to": "1454"
+    },
+    {
+     "from": "1456",
+     "to": "1479"
+    },
+    {
+     "from": "1900",
+     "to": "1910"
+    },
+    {
+     "from": "1920",
+     "to": "1925"
+    },
+    {
+     "from": "2000",
+     "to": "2004"
+    },
+    {
+     "from": "2007",
+     "to": "2007"
+    },
+    {
+     "from": "2010",
+     "to": "2013"
+    },
+    {
+     "from": "2015",
+     "to": "2020"
+    },
+    {
+     "from": "2660",
+     "to": "2669"
+    },
+    {
+     "from": "2680",
+     "to": "2695"
+    },
+    {
+     "from": "3011",
+     "to": "3060"
+    },
+    {
+     "from": "3075",
+     "to": "3075"
+    },
+    {
+     "from": "3430",
+     "to": "3490"
+    }
+   ]
+  },
+  {
+   "shortName": "nord-norge",
+   "name": "SpareBank 1 Nord-Norge",
+   "prefix": "/nb/nord-norge/",
+   "logo": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-snn.svg",
+   "postalRange": [
+    {
+     "from": "0050",
+     "to": "1406"
+    },
+    {
+     "from": "1408",
+     "to": "1425"
+    },
+    {
+     "from": "1450",
+     "to": "1454"
+    },
+    {
+     "from": "1456",
+     "to": "1488"
+    },
+    {
+     "from": "1870",
+     "to": "1875"
+    },
+    {
+     "from": "1900",
+     "to": "1910"
+    },
+    {
+     "from": "1920",
+     "to": "1925"
+    },
+    {
+     "from": "1930",
+     "to": "2020"
+    },
+    {
+     "from": "2030",
+     "to": "2069"
+    },
+    {
+     "from": "3011",
+     "to": "3060"
+    },
+    {
+     "from": "3075",
+     "to": "3075"
+    },
+    {
+     "from": "3402",
+     "to": "3490"
+    },
+    {
+     "from": "4005",
+     "to": "4085"
+    },
+    {
+     "from": "4110",
+     "to": "4110"
+    },
+    {
+     "from": "4128",
+     "to": "4129"
+    },
+    {
+     "from": "4150",
+     "to": "4164"
+    },
+    {
+     "from": "4168",
+     "to": "4173"
+    },
+    {
+     "from": "4187",
+     "to": "4187"
+    },
+    {
+     "from": "4306",
+     "to": "4329"
+    },
+    {
+     "from": "4332",
+     "to": "4332"
+    },
+    {
+     "from": "4336",
+     "to": "4340"
+    },
+    {
+     "from": "4342",
+     "to": "4342"
+    },
+    {
+     "from": "4344",
+     "to": "4347"
+    },
+    {
+     "from": "4355",
+     "to": "4355"
+    },
+    {
+     "from": "4608",
+     "to": "4658"
+    },
+    {
+     "from": "5003",
+     "to": "5176"
+    },
+    {
+     "from": "5178",
+     "to": "5184"
+    },
+    {
+     "from": "5221",
+     "to": "5268"
+    },
+    {
+     "from": "5561",
+     "to": "5561"
+    },
+    {
+     "from": "7010",
+     "to": "7099"
+    },
+    {
+     "from": "7212",
+     "to": "7236"
+    },
+    {
+     "from": "7540",
+     "to": "7563"
+    },
+    {
+     "from": "8003",
+     "to": "8830"
+    },
+    {
+     "from": "8854",
+     "to": "9990"
+    }
+   ]
+  },
+  {
+   "shortName": "nordmore",
+   "name": "SpareBank 1 Nordmøre",
+   "prefix": "/nb/nordmore/",
+   "logo": "https://www.sparebank1.no/content/dam/SB1/bank/nordmore/OmOss/logo/Skjerm/rgb_SB1_Nordmore_verti_pos.svg",
+   "postalRange": [
+    {
+     "from": "6002",
+     "to": "7800"
+    }
+   ]
+  },
+  {
+   "shortName": "ringerike-hadeland",
+   "name": "SpareBank 1 Ringerike Hadeland",
+   "prefix": "/nb/ringerike-hadeland/",
+   "logo": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1ringerikehadeland.svg",
+   "postalRange": [
+    {
+     "from": "1461",
+     "to": "1488"
+    },
+    {
+     "from": "1900",
+     "to": "2069"
+    },
+    {
+     "from": "2720",
+     "to": "2770"
+    },
+    {
+     "from": "3510",
+     "to": "3525"
+    },
+    {
+     "from": "3530",
+     "to": "3538"
+    }
+   ]
+  },
+  {
+   "shortName": "smn",
+   "name": "SpareBank 1 SMN",
+   "prefix": "/nb/smn/",
+   "logo": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1smn.svg",
+   "postalRange": [
+    {
+     "from": "0050",
+     "to": "2093"
+    },
+    {
+     "from": "2500",
+     "to": "2695"
+    },
+    {
+     "from": "3011",
+     "to": "3060"
+    },
+    {
+     "from": "3075",
+     "to": "3075"
+    },
+    {
+     "from": "3402",
+     "to": "3490"
+    },
+    {
+     "from": "5003",
+     "to": "5417"
+    },
+    {
+     "from": "5962",
+     "to": "5962"
+    },
+    {
+     "from": "6002",
+     "to": "7994"
+    }
+   ]
+  },
+  {
+   "shortName": "sogn-fjordane",
+   "name": "SpareBank 1 Sogn og Fjordane",
+   "prefix": "/nn/sogn-fjordane/",
+   "logo": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1sogn-fjordane.svg",
+   "postalRange": [
+    {
+     "from": "0050",
+     "to": "7973"
+    },
+    {
+     "from": "7985",
+     "to": "7994"
+    }
+   ]
+  },
+  {
+   "shortName": "sor-norge",
+   "name": "SpareBank 1 Sør-Norge",
+   "prefix": "/nb/sor-norge/",
+   "logo": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1-sor-norge.svg",
+   "postalRange": [
+    {
+     "from": "0050",
+     "to": "5994"
+    },
+    {
+     "from": "6700",
+     "to": "6750"
+    },
+    {
+     "from": "6770",
+     "to": "6996"
+    }
+   ]
+  },
+  {
+   "shortName": "ostfold-akershus",
+   "name": "SpareBank 1 Østfold Akershus",
+   "prefix": "/nb/ostfold-akershus/",
+   "logo": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1osloakershus.svg",
+   "postalRange": [
+    {
+     "from": "0050",
+     "to": "1295"
+    },
+    {
+     "from": "1400",
+     "to": "1459"
+    },
+    {
+     "from": "1511",
+     "to": "1894"
+    },
+    {
+     "from": "1911",
+     "to": "1914"
+    },
+    {
+     "from": "1930",
+     "to": "1970"
+    }
+   ]
+  },
+  {
+   "shortName": "ostlandet",
+   "name": "SpareBank 1 Østlandet",
+   "prefix": "/nb/ostlandet/",
+   "logo": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1_ostlandet.svg",
+   "postalRange": [
+    {
+     "from": "0050",
+     "to": "8098"
+    },
+    {
+     "from": "8100",
+     "to": "8103"
+    },
+    {
+     "from": "9006",
+     "to": "9034"
+    },
+    {
+     "from": "9043",
+     "to": "9043"
+    },
+    {
+     "from": "9057",
+     "to": "9057"
+    },
+    {
+     "from": "9100",
+     "to": "9128"
+    },
+    {
+     "from": "9131",
+     "to": "9131"
+    },
+    {
+     "from": "9141",
+     "to": "9141"
+    },
+    {
+     "from": "9402",
+     "to": "9430"
+    }
+   ]
+  }
+ ],
+ "pages": {
+  "/nb/bank/bedrift/bedriftskort": "same-path",
+  "/nb/bank/bedrift/bedriftskort/kredittkort": "same-path",
+  "/nb/bank/bedrift/betaling": "same-path",
+  "/nb/bank/bedrift/betaling/utenlandsbetaling": "same-path",
+  "/nb/bank/bedrift/daglig-drift": "same-path",
+  "/nb/bank/bedrift": "same-path",
+  "/nb/bank/bedrift/konto/bedriftskonto": "same-path",
+  "/nb/bank/bedrift/konto": "same-path",
+  "/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler": {
+   "gudbrandsdal": "/nb/gudbrandsdal/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+   "hallingdal": "/nb/hallingdal/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+   "helgeland": "/nb/helgeland/bedrift/kundeservice.html",
+   "lom-skjaak": "/nb/lom-skjaak/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+   "nord-norge": "/nb/nord-norge/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+   "nordmore": "/nb/nordmore/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+   "ringerike-hadeland": "/nb/ringerike-hadeland/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+   "smn": "/nb/smn/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+   "sogn-fjordane": "/nn/sogn-fjordane/bedrift/kundeservice.html",
+   "sor-norge": "/nb/sor-norge/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+   "ostfold-akershus": "/nb/ostfold-akershus/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+   "ostlandet": "/nb/ostlandet/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html"
+  },
+  "/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf": {
+   "gudbrandsdal": "/nb/gudbrandsdal/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+   "hallingdal": "/nb/hallingdal/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+   "helgeland": "/nb/helgeland/bedrift/kundeservice.html",
+   "lom-skjaak": "/nb/lom-skjaak/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+   "nord-norge": "/nb/nord-norge/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+   "nordmore": "/nb/nordmore/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+   "ringerike-hadeland": "/nb/ringerike-hadeland/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+   "smn": "/nb/smn/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+   "sogn-fjordane": "/nn/sogn-fjordane/bedrift/kundeservice.html",
+   "sor-norge": "/nb/sor-norge/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+   "ostfold-akershus": "/nb/ostfold-akershus/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+   "ostlandet": "/nb/ostlandet/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html"
+  },
+  "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-blir-jeg-bedriftskunde": "same-path",
+  "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf": {
+   "gudbrandsdal": "/nb/gudbrandsdal/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
+   "hallingdal": "/nb/hallingdal/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
+   "helgeland": "/nb/helgeland/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
+   "lom-skjaak": "/nb/lom-skjaak/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
+   "nord-norge": "/nb/nord-norge/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
+   "nordmore": "/nb/nordmore/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
+   "ringerike-hadeland": "/nb/ringerike-hadeland/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
+   "smn": "/nb/smn/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
+   "sogn-fjordane": "/nn/sogn-fjordane/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
+   "sor-norge": "/nb/sor-norge/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
+   "ostfold-akershus": "/nb/ostfold-akershus/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
+   "ostlandet": "/nb/ostlandet/bedrift/kundeservice/bm-andre-sporsmal.html"
+  },
+  "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankaxept": "same-path",
+  "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode": "same-path",
+  "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan": "same-path",
+  "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd": "same-path",
+  "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift": "same-path",
+  "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura": "same-path",
+  "/nb/bank/bedrift/kundeservice": "same-path",
+  "/nb/bank/bedrift/lan-finansiering/bedriftslan": "same-path",
+  "/nb/bank/bedrift/lan-finansiering": "same-path",
+  "/nb/bank/bedrift/lan-finansiering/kassekreditt": "same-path",
+  "/nb/bank/bedrift/lan-finansiering/leasing": "same-path",
+  "/nb/bank/bedrift/open-api": "same-path",
+  "/nb/bank/bedrift/pensjon": "same-path",
+  "/nb/bank/bedrift/regnskap": {
+   "gudbrandsdal": "/nb/gudbrandsdal/bedrift/regnskap.html",
+   "hallingdal": "/nb/hallingdal/bedrift/regnskap.html",
+   "helgeland": "/nb/helgeland/bedrift/regnskap.html",
+   "lom-skjaak": "/nb/lom-skjaak/bedrift/regnskap.html",
+   "nord-norge": "/nb/nord-norge/bedrift/regnskap.html",
+   "nordmore": "/nb/nordmore/bedrift/regnskap.html",
+   "ringerike-hadeland": "/nb/ringerike-hadeland/bedrift/regnskap.html",
+   "smn": "/nb/smn/bedrift/regnskap.html",
+   "sogn-fjordane": "/nn/sogn-fjordane/bedrift.html",
+   "sor-norge": "/nb/sor-norge/bedrift/regnskap.html",
+   "ostfold-akershus": "/nb/ostfold-akershus/bedrift/regnskap.html",
+   "ostlandet": "/nb/ostlandet/bedrift/regnskap.html"
+  },
+  "/nb/bank/bedrift/sparing-investering": "same-path",
+  "/nb/bank/bedrift/starte-bedrift": "same-path",
+  "/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk": "same-path",
+  "/nb/bank/bedrift/tips-og-rad": "same-path",
+  "/nb/bank/om-oss": "same-path",
+  "/nb/bank/om-oss/om-banken/selskapsinformasjon": "same-path",
+  "/nb/bank/om-oss/personvern/generelle-vilkar": "same-path",
+  "/nb/bank/om-oss/personvern": "same-path",
+  "/nb/bank/om-oss/selskaper": "same-path",
+  "/nb/bank/om-oss/vare-eksperter": "same-path",
+  "/nb/bank/privat/daglig-bruk/bankid": "same-path",
+  "/nb/bank/privat/daglig-bruk/bankkonto": "same-path",
+  "/nb/bank/privat/daglig-bruk/bankkort": "same-path",
+  "/nb/bank/privat/daglig-bruk": "same-path",
+  "/nb/bank/privat/daglig-bruk/kredittkort": "same-path",
+  "/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort": "same-path",
+  "/nb/bank/privat/daglig-bruk/mobilbank": "same-path",
+  "/nb/bank/privat/eiendom": "same-path",
+  "/nb/bank/privat": "same-path",
+  "/nb/bank/privat/kundeservice/bestill/bli-kunde": "same-path",
+  "/nb/bank/privat/kundeservice": "same-path",
+  "/nb/bank/privat/kundeservice/verktoy/iban-og-swift": "same-path",
+  "/nb/bank/privat/kundeservice/verktoy/klager": "same-path",
+  "/nb/bank/privat/kundeservice/verktoy/sparekalkulator": "same-path",
+  "/nb/bank/privat/kundeservice/verktoy/sperre-kort": "same-path",
+  "/nb/bank/privat/kundeservice/verktoy/valutakalkulator": "same-path",
+  "/nb/bank/privat/lan/billan": "same-path",
+  "/nb/bank/privat/lan/boliglan": "same-path",
+  "/nb/bank/privat/lan/forbrukslan": "same-path",
+  "/nb/bank/privat/lan/gronne-lan": "same-path",
+  "/nb/bank/privat/lan": "same-path",
+  "/nb/bank/privat/lan/lanekalkulator": "same-path",
+  "/nb/bank/privat/lan/refinansiering": "same-path",
+  "/nb/bank/privat/lofavor": "same-path",
+  "/nb/bank/privat/pensjon/egen-pensjonskonto": "same-path",
+  "/nb/bank/privat/pensjon": "same-path",
+  "/nb/bank/privat/private-banking": {
+   "gudbrandsdal": "/nb/gudbrandsdal/privat/private-banking.html",
+   "hallingdal": "/nb/hallingdal/privat.html",
+   "helgeland": "/nb/helgeland/privat.html",
+   "lom-skjaak": "/nb/lom-skjaak/privat.html",
+   "nord-norge": "/nb/nord-norge/privat/private-banking.html",
+   "nordmore": "/nb/nordmore/privat.html",
+   "ringerike-hadeland": "/nb/ringerike-hadeland/privat.html",
+   "smn": "/nb/smn/privat/private-banking.html",
+   "sogn-fjordane": "/nn/sogn-fjordane/privat.html",
+   "sor-norge": "/nb/sor-norge/privat/private-banking.html",
+   "ostfold-akershus": "/nb/ostfold-akershus/privat/private-banking.html",
+   "ostlandet": "/nb/ostlandet/privat/private-banking.html"
+  },
+  "/nb/bank/privat/sparing": "same-path",
+  "/nb/bank/privat/sparing/markedsnytt": "same-path",
+  "/nb/bank/privat/sparing/spare-i-fond": "same-path",
+  "/nb/bank/privat/sparing/spare-pa-konto": "same-path",
+  "/nb/bank/privat/sparing/spare-til-barn": "same-path",
+  "/nb/bank/privat/svindel": "same-path",
+  "/nb/bank/privat/tips-og-rad": "same-path"
+ }
+}
