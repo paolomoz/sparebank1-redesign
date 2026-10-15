@@ -16,3 +16,11 @@ degradation with live behaviour. Verification per phase: flow works on the publi
 | later iterations | #18 regional-bank + nynorsk trees | 12 more `/nb/<bank>/` trees (6,697 pages) reusing the same blocks; bank-choice routes internally | — | owner: scope order of banks | iterations 2+ |
 
 Phase 5 parity: `stardust/dynamics/parity.json` replayable checks per row (dialog open, accordion toggle, listing count ≥ 6, calculator example values, links to auth apps 200 on source host).
+
+## spike-b (2026-10-15) — rows 1, 7, 8, 9
+
+| phase | features | deliverable | verification | owner decision |
+|---|---|---|---|---|
+| D2-b′ client compute | #1 postcode lookup, #7 cost tab, #8 savings calculator, #9 conversion | `bank-router` lookup over `data/bank-choice/banks.json`; `calculator` cost tab (`loan-math.js`); `savings-calculator` block over `data/savings-calculator/model.json`; `converter` over the authored rate table | recorded source API responses replayed (`test-calculators.mjs`); `parity.json` rows 1/7/8/9 → 22/22 on the branch origin; 1440 + 360 | none to ship |
+| D2-c′ scaffolds | #1 geolocation, #7 economy tab, #9 live rates | `scripts/site-config.js` flags (disabled), endpoints = the source's same-origin paths | economy wiring replayed against recorded responses with the flag forced on | SB1: same-origin routing on the production host (or, for #7, approval of the reconstructed client model) |
+| sync | #1, #8 snapshots | `stardust/scripts/dynamics/sync-bank-choice.mjs`, `sync-savings-model.mjs` | `_provenance.json` dates; blocks expose `data-snapshot` (#8) | run on change of postal coverage / expected-return table |

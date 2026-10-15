@@ -1,25 +1,451 @@
 {
- "_provenance": { "writtenBy": "stardust:dynamics Phase D2 (rollout, Flow B lead, hands-off)", "writtenAt": "2026-09-15T01:30:00Z", "inventory": "stardust/dynamic-features.md (20 rows)", "origin": "https://main--sparebank1-redesign--paolomoz.aem.live" },
+ "_provenance": {
+  "writtenBy": "stardust:dynamics Phase D2 (rollout, Flow B lead, hands-off)",
+  "writtenAt": "2026-09-15T01:30:00Z",
+  "inventory": "stardust/dynamic-features.md (20 rows)",
+  "origin": "https://main--sparebank1-redesign--paolomoz.aem.live",
+  "spikeB": {
+   "writtenBy": "stardust:dynamics Phases 1–5 on rows 1, 7, 8, 9 (branch spike-b, hands-off)",
+   "writtenAt": "2026-10-15T15:30:00Z",
+   "origin": "https://spike-b--sparebank1-redesign--paolomoz.aem.page",
+   "note": "rows 1/7/8/9 carry checks[] (replayed by dynamics-check.mjs against the origin above); the other rows are unchanged"
+  }
+ },
  "features": [
-  { "id": 1, "feature": "bank-choice router", "class": "F+A", "reach": "70/100", "status": "interim", "pattern": "fragment + native details", "check": "GET /nb/bank/privat → .bank-router .bank-list li count == 12; submit 4-digit postcode → details[open]", "owner": "SB1: postcode→bank service (CORS) or static postcode table" },
-  { "id": 2, "feature": "overlay-btn bank-choice dialog", "class": "M", "reach": "66/100", "status": "interim", "pattern": "href kept (#)", "check": "CTAs keep captured href; dialog not shipped (D2 pattern modal-loader deferred)", "owner": "none — iteration 2" },
-  { "id": 3, "feature": "login dialog", "class": "M+X", "reach": "100/100", "status": "interim", "pattern": "link to login.sparebank1.no", "check": "header a.button.accent href == https://login.sparebank1.no/", "owner": "none" },
-  { "id": 4, "feature": "FAQ accordion", "class": "M", "reach": "27/100", "status": "delivered", "pattern": "accordion block (button toggle, hidden answers)", "check": "click .faq-head → aria-expanded true, .answer visible", "owner": "none" },
-  { "id": 5, "feature": "page feedback", "class": "F", "reach": "74/100", "status": "interim", "pattern": "feedback block, static thumbs", "check": "click .thumb → .is-on; no network", "owner": "SB1: LogServlet endpoint on the new host" },
-  { "id": 6, "feature": "contact tabs", "class": "M+F+T", "reach": "100/100", "status": "interim", "pattern": "footer details disclosures with verbatim panels; chat → live", "check": "footer .channels details count == 5; Ring oss panel .bank-numbers li == 12", "owner": "SB1: boost.ai chat on the new host" },
-  { "id": 7, "feature": "loan calculator", "class": "CR+A", "reach": "2/100", "status": "scaffolded-awaiting-owner", "pattern": "calculator block, static shell, controls disabled", "check": ".calculator .calc[aria-disabled=true]; strings verbatim", "owner": "SB1: calculator API cross-origin or approve client formula" },
-  { "id": 8, "feature": "savings calculator", "class": "CR", "reach": "2/100", "status": "interim", "pattern": "static shell / empty mount omitted with note", "check": "sparekalkulator page renders intro + notes; no mount", "owner": "none (client compute possible in iteration 2)" },
-  { "id": 9, "feature": "currency converter", "class": "CR+A", "reach": "1/100", "status": "interim", "pattern": "converter block, captured rates, disabled controls", "check": ".converter select[disabled] options == 62", "owner": "SB1: rate feed" },
-  { "id": 10, "feature": "price cards / rate examples", "class": "D", "reach": "10+", "status": "delivered-by-capture", "pattern": "cards (price) + default content", "check": "RAW HTML of /nb/bank/privat/lan/boliglan contains 'Priseksempel: Nominell rente' (key fact, server-rendered)", "owner": "none" },
-  { "id": 11, "feature": "news / markedsnytt listings", "class": "D+L", "reach": "12/100", "status": "interim (authored cards) + index published", "pattern": "cards (featured|listing) authored; helix-query.yaml indexes news + markedsnytt with title/description/image/published-time/category/template", "check": "GET /nb/bank/om-oss/nyheter/query-index.json → data[] rows for the 10 roster articles", "owner": "none — listing block switches to the index in iteration 2" },
-  { "id": 12, "feature": "footer JSON", "class": "A", "reach": "12/100", "status": "delivered-by-capture", "pattern": "footer documents", "check": "/footer-frontend* live", "owner": "none" },
-  { "id": 13, "feature": "digitalData / SB1.config", "class": "A", "reach": "100/100", "status": "delivered", "pattern": "metadata block (template, market, source)", "check": "<meta name=template>, <meta name=market> on every page", "owner": "none" },
-  { "id": 14, "feature": "client-rendered main (frontend clientlib)", "class": "CR", "reach": "12/100", "status": "delivered-by-capture", "pattern": "settled DOM migrated", "check": "news pages carry full body text", "owner": "none" },
-  { "id": 15, "feature": "Adobe Analytics / Target / consent", "class": "T", "reach": "100/100", "status": "decided (none on pilot)", "pattern": "—", "check": "no adobedc requests on any page", "owner": "SB1/Adobe: Launch/Web SDK property + CMP" },
-  { "id": 16, "feature": "YouTube / mp4 media", "class": "V", "reach": "8/100", "status": "delivered", "pattern": "embed block (click-to-load iframe) + video block (mp4 on source origin)", "check": ".embed .video-frame present; click → iframe src youtube-nocookie", "owner": "none (one runtime-injected podcast src stays a linked frame)" },
-  { "id": 17, "feature": "glossary modal", "class": "M", "reach": "~20/100", "status": "interim", "pattern": "term kept as text", "check": "no dead glossary buttons", "owner": "none — iteration 2 (modal-loader)" },
-  { "id": 18, "feature": "locale / regional trees", "class": "I18N", "reach": "100/100", "status": "decided out (iteration 1)", "pattern": "links to live regional pages", "check": "router + footer bank links → www.sparebank1.no/<lang>/<bank>/<market>.html", "owner": "later iterations" },
-  { "id": 19, "feature": "sign-in / account links", "class": "X", "reach": "100/100", "status": "decided-out", "pattern": "links preserved to source host", "check": "nettbank links absolute", "owner": "none" },
-  { "id": 20, "feature": "site search", "class": "S", "reach": "100/100", "status": "interim", "pattern": "header Søk → live search page", "check": "header .search-wrap a href == https://www.sparebank1.no/nb/bank/privat/kundeservice.html?search=", "owner": "decide index-backed EDS search vs Solr passthrough" }
- ]
+  {
+   "id": 1,
+   "feature": "bank-choice router",
+   "class": "F",
+   "reach": "70/100",
+   "disposition": "rebuild-native",
+   "reproducibility": "self (postcode lookup) · needs-backend (Bruk min posisjon)",
+   "status": "done (postcode) · scaffolded-awaiting-owner (geolocation)",
+   "pattern": "client-only filter over data/bank-choice/banks.json (the source's server-rendered bankPickerlist.postalRange, synced) + authored bank rows; links → same page under the bank",
+   "verifiedBy": "source live widget vs branch at 1440+360, 7 inputs: 0150 → 9 banks, 7010 → 5 (Nord-Norge, Nordmøre, SMN, Sogn og Fjordane, Østlandet), 8900 → 2, 9008 → 2, 9999 → no match → full list open + 'Skjul bankene', 'ab' / '12'+Enter → 'Skriv inn et gyldig postnummer (4 siffer).'; 0 API calls on both sides; links /nb/<bank>/privat/lan/boliglan.html on the boliglan page",
+   "owner": "SB1: 'Bruk min posisjon' needs /openapi/nettsider/ressurser/bank/postnummer/geolocation/<lat>/<long> same-origin (production host) — flip scripts/site-config.js bankChoiceGeolocation; until then the button is not rendered",
+   "snapshot": "2026-10-15 (data/bank-choice/_provenance.json)",
+   "origin": "https://spike-b--sparebank1-redesign--paolomoz.aem.page",
+   "checks": [
+    {
+     "type": "search-query",
+     "path": "/nb/bank/privat/lan/boliglan",
+     "param": "postnummer",
+     "term": "7010",
+     "resultSelector": ".bank-router .bank-matches li",
+     "titleSelector": "a",
+     "expectCount": 5,
+     "expectTitles": [
+      "SpareBank 1 Nord-Norge",
+      "SpareBank 1 Nordmøre",
+      "SpareBank 1 SMN"
+     ],
+     "expectIncludes": "/nb/nord-norge/privat/lan/boliglan.html"
+    },
+    {
+     "type": "search-query",
+     "path": "/nb/bank/privat",
+     "param": "postnummer",
+     "term": "8900",
+     "resultSelector": ".bank-router .bank-matches li",
+     "titleSelector": "a",
+     "expectCount": 2,
+     "expectTitles": [
+      "SpareBank 1 Helgeland",
+      "SpareBank 1 Nord-Norge"
+     ],
+     "expectIncludes": "/nb/helgeland/privat.html"
+    },
+    {
+     "type": "search-query",
+     "path": "/nb/bank/privat/lan/boliglan",
+     "param": "postnummer",
+     "term": "0150",
+     "resultSelector": ".bank-router .bank-matches li",
+     "titleSelector": "a",
+     "expectCount": 9,
+     "expectTitles": [
+      "SpareBank 1 Gudbrandsdal",
+      "SpareBank 1 Hallingdal Valdres",
+      "SpareBank 1 Lom og Skjåk"
+     ]
+    },
+    {
+     "type": "dom-count",
+     "path": "/nb/bank/privat/lan/boliglan?postnummer=9999",
+     "selector": ".bank-router details.router-all[open] .bank-list li",
+     "min": 12
+    },
+    {
+     "type": "dom-count",
+     "path": "/nb/bank/privat/lan/boliglan?postnummer=ab",
+     "selector": ".bank-router .router-error:not([hidden])",
+     "min": 1
+    },
+    {
+     "type": "fetch-json",
+     "url": "/data/bank-choice/banks.json",
+     "minRows": 12
+    },
+    {
+     "type": "no-page-errors",
+     "paths": [
+      "/nb/bank/privat",
+      "/nb/bank/privat/lan/boliglan",
+      "/nb/bank/bedrift"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "feature": "overlay-btn bank-choice dialog",
+   "class": "M",
+   "reach": "66/100",
+   "status": "interim",
+   "pattern": "href kept (#)",
+   "check": "CTAs keep captured href; dialog not shipped (D2 pattern modal-loader deferred)",
+   "owner": "none — iteration 2"
+  },
+  {
+   "id": 3,
+   "feature": "login dialog",
+   "class": "M+X",
+   "reach": "100/100",
+   "status": "interim",
+   "pattern": "link to login.sparebank1.no",
+   "check": "header a.button.accent href == https://login.sparebank1.no/",
+   "owner": "none"
+  },
+  {
+   "id": 4,
+   "feature": "FAQ accordion",
+   "class": "M",
+   "reach": "27/100",
+   "status": "delivered",
+   "pattern": "accordion block (button toggle, hidden answers)",
+   "check": "click .faq-head → aria-expanded true, .answer visible",
+   "owner": "none"
+  },
+  {
+   "id": 5,
+   "feature": "page feedback",
+   "class": "F",
+   "reach": "74/100",
+   "status": "interim",
+   "pattern": "feedback block, static thumbs",
+   "check": "click .thumb → .is-on; no network",
+   "owner": "SB1: LogServlet endpoint on the new host"
+  },
+  {
+   "id": 6,
+   "feature": "contact tabs",
+   "class": "M+F+T",
+   "reach": "100/100",
+   "status": "interim",
+   "pattern": "footer details disclosures with verbatim panels; chat → live",
+   "check": "footer .channels details count == 5; Ring oss panel .bank-numbers li == 12",
+   "owner": "SB1: boost.ai chat on the new host"
+  },
+  {
+   "id": 7,
+   "feature": "loan calculator (#boliglan-kalkulator)",
+   "class": "CR+A",
+   "reach": "2/100 (boliglan, lanekalkulator)",
+   "disposition": "client-only (Hvor mye koster lånet?) · data-fed, scaffolded (Hvor mye kan jeg låne?)",
+   "reproducibility": "self (cost tab: statutory annuity + IRR effective rate over authored rate/fees) · needs-business-decision (economy tab: SB1's lending model behind /economy)",
+   "status": "done (cost tab) · scaffolded-awaiting-owner (economy tab)",
+   "pattern": "calculator block, tabs; blocks/calculator/loan-math.js; authored sentences with numbers substituted; economy → POST /api/personal/banking/boliglan-kalkulator/economy when site-config loanCalculator.enabled",
+   "verifiedBy": "loan-math vs 20 recorded source annuity-loan responses: max 1.3e-5 kr, effective rate 3.2e-10 pp, schedule rows < 1e-7 (stardust/scripts/dynamics/test-calculators.mjs); branch UI vs source UI: defaults 16 357 kr / 13 723 kr / 10,00 % / 5,51 % / price example 2 210 112 + 4 910 112, 4M-1.5M-4,50 %-30 år → 12 717 / 10 657 / 37,50 % / 62,50 % / 4,64 % / plan year 2026 41 051 · 9 913 · 31 138 · 2 490 087, total 4 581 068 — all equal; CTA query byte-identical; economy wiring replayed against 4 recorded /economy responses with the flag forced on (2 800 000 / 3 000 000 / 2 310 200 / 446 000 kr)",
+   "owner": "SB1: (a) route /api/personal/banking/boliglan-kalkulator/* same-origin on the production host and flip loanCalculator.enabled — the economy tab goes live as on the source; or (b) approve a client-side port of the reconstructed lending model (2024 tax parameters, SIFO table, 5× income cap: 23/23 displayed values in stardust/dynamics/evidence/loan-analysis.md, ±100 kr flips near rounding boundaries) — not shipped without that approval",
+   "origin": "https://spike-b--sparebank1-redesign--paolomoz.aem.page",
+   "checks": [
+    {
+     "type": "search-query",
+     "path": "/spike-b/nb/bank/privat/lan/boliglan?fane=1&kjopesum=4000000&egenkapital=1500000&nedbetalingstid=30",
+     "param": "nominell-rente",
+     "term": "4.5",
+     "resultSelector": ".calc-panel--cost .calc-result-value",
+     "expectCount": 2,
+     "expectTitles": [
+      "12 717 kr",
+      "37,50 %"
+     ]
+    },
+    {
+     "type": "search-query",
+     "path": "/spike-b/nb/bank/privat/lan/boliglan?fane=1&kjopesum=4000000&egenkapital=1500000&nedbetalingstid=30",
+     "param": "nominell-rente",
+     "term": "4.5",
+     "resultSelector": ".calc-panel--cost .calc-example",
+     "expectCount": 1,
+     "expectTitles": [
+      "Priseksempel: Nominell rente 4,50 %. Effektiv rente 4,64 %. Låner du 2 500 000 over 30 år koster lånet 2 081 068 og du betaler totalt 4 581 068 kroner."
+     ]
+    },
+    {
+     "type": "search-query",
+     "path": "/spike-b/nb/bank/privat/lan/lanekalkulator?fane=1",
+     "param": "kjopesum",
+     "term": "3000000",
+     "resultSelector": ".calc-panel--cost .calc-result-sub",
+     "expectCount": 2,
+     "expectTitles": [
+      "Kostnad etter skattefradrag 13 723 kr",
+      "Lånet er 90,00 % av boligens verdi"
+     ]
+    },
+    {
+     "type": "dom-count",
+     "path": "/spike-b/nb/bank/privat/lan/boliglan",
+     "selector": ".calc-panel--economy[data-state=\"captured-example\"]",
+     "min": 1
+    },
+    {
+     "type": "dom-count",
+     "path": "/nb/bank/privat/lan/boliglan",
+     "selector": ".calculator .calc-panel--economy",
+     "min": 1
+    },
+    {
+     "type": "no-page-errors",
+     "paths": [
+      "/spike-b/nb/bank/privat/lan/boliglan",
+      "/spike-b/nb/bank/privat/lan/lanekalkulator",
+      "/nb/bank/privat/lan/boliglan"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "feature": "savings calculator (sparekalkulator.js)",
+   "class": "CR+A",
+   "reach": "1/100 (sparekalkulator; spare-i-fond carries no mount on the source today)",
+   "disposition": "client-only over a data-fed snapshot",
+   "reproducibility": "self",
+   "status": "done",
+   "pattern": "savings-calculator block (new); blocks/savings-calculator/savings-math.js over data/savings-calculator/model.json — the (risk × horizon) product ladder and expected rates OBSERVED from the source API (sync-savings-model.mjs, every bucket edge × every risk)",
+   "verifiedBy": "savings-math vs 36 recorded source API responses: max 1.5e-10 kr, rate and product 0 mismatches; 25/25 displayed widget values exact; branch UI vs source UI: 6000/500/5/Moderat → 42 107 / 6 107 / 36 000 (Alt-i-ett 50 N), 50000/2000/20/Høy → 1 140 481 / 610 481 / 530 000, comparison bars 745 626 / 986 627 / 1 075 644 / 1 140 481, goal 1 000 000/20000/5/Moderat → 14 187 / 871 220 / 128 780, goal 0/15/Lav → 3 662 / 659 160 / 340 840 — all equal at 1440 and 360",
+   "owner": "none to ship. Notes for SB1: the model is SB1's configured expected-return table (not live fund data) — re-run sync-savings-model.mjs when it changes (the block exposes data-snapshot); the fund-detail sheet (fund/products/details, time-series — host-bound) is not rebuilt: the fund name renders as text next to the fondsoversikt link; the goal-tab CTA sends the required monthly amount (the source sends the monthly tab's amount — a source defect, not copied)",
+   "snapshot": "2026-10-15 (data/savings-calculator/_provenance.json)",
+   "origin": "https://spike-b--sparebank1-redesign--paolomoz.aem.page",
+   "checks": [
+    {
+     "type": "search-query",
+     "path": "/spike-b/nb/bank/privat/kundeservice/verktoy/sparekalkulator?maanedsbelop=2000&startbelop=50000&ar=20",
+     "param": "risiko",
+     "term": "high",
+     "resultSelector": ".savings-calculator .sv-results:not([hidden]) dd",
+     "expectCount": 3,
+     "expectTitles": [
+      "1 140 481 kr *",
+      "610 481 kr",
+      "530 000 kr"
+     ]
+    },
+    {
+     "type": "search-query",
+     "path": "/spike-b/nb/bank/privat/kundeservice/verktoy/sparekalkulator?fane=1&sparemal=1000000&startbelop=20000&ar=5",
+     "param": "risiko",
+     "term": "medium",
+     "resultSelector": ".savings-calculator .sv-results:not([hidden]) dd",
+     "expectCount": 4,
+     "expectTitles": [
+      "14 187 kr *",
+      "1 000 000 kr",
+      "871 220 kr"
+     ]
+    },
+    {
+     "type": "search-query",
+     "path": "/spike-b/nb/bank/privat/kundeservice/verktoy/sparekalkulator",
+     "param": "ar",
+     "term": "5",
+     "resultSelector": ".savings-calculator .sv-rec strong",
+     "expectCount": 1,
+     "expectTitles": [
+      "SpareBank 1 Alt-i-ett 50 N"
+     ]
+    },
+    {
+     "type": "fetch-json",
+     "url": "/data/savings-calculator/model.json",
+     "expectKeys": [
+      "buckets",
+      "ladder",
+      "packages"
+     ]
+    },
+    {
+     "type": "no-page-errors",
+     "paths": [
+      "/spike-b/nb/bank/privat/kundeservice/verktoy/sparekalkulator"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "feature": "currency converter",
+   "class": "CR+A",
+   "reach": "1/100",
+   "disposition": "client-only over the authored rate table (static-snapshot of the rate feed)",
+   "reproducibility": "self (conversion) · needs-backend (live rates)",
+   "status": "interim",
+   "pattern": "converter block computes with the source formula (transfer rates, unit-normalised) from the page's Valutakursliste table; live feed behind site-config currencyRates",
+   "verifiedBy": "branch copy vs live source widget on identical rates (2026-10-15 15:47): NOK→EUR 100 = 9.33 + '1 EUR = 10.63 NOK', USD→SEK 100 = 985.72, JPY→NOK 1000 = 60.04 + '1 NOK = 16.49 JPY' — equal; 31 currencies on both; original document (September rates) converts with the same formula",
+   "owner": "SB1: live rates — route /openapi/nettsider/ressurser/<bank>/valutakurser same-origin on the production host and flip currencyRates.enabled, or keep the rate table authored/synced. Interim: the /spike-b/ copy carries rates fetched 2026-10-15 and says so ('Kursene er hentet 15. oktober 2026 og oppdateres ikke automatisk.')",
+   "snapshot": "2026-10-15 (stardust/dynamics/snapshots/valutakurser-2026-10-15.json)",
+   "origin": "https://spike-b--sparebank1-redesign--paolomoz.aem.page",
+   "checks": [
+    {
+     "type": "search-query",
+     "path": "/spike-b/nb/bank/privat/kundeservice/verktoy/valutakalkulator?fra=USD&til=SEK",
+     "param": "belop",
+     "term": "100",
+     "resultSelector": ".converter output",
+     "expectCount": 1,
+     "expectTitles": [
+      "985.72"
+     ]
+    },
+    {
+     "type": "search-query",
+     "path": "/spike-b/nb/bank/privat/kundeservice/verktoy/valutakalkulator?fra=JPY&til=NOK",
+     "param": "belop",
+     "term": "1000",
+     "resultSelector": ".converter .conv-rate, .converter output",
+     "expectCount": 2,
+     "expectTitles": [
+      "1 NOK = 16.49 JPY",
+      "60.04"
+     ]
+    },
+    {
+     "type": "dom-count",
+     "path": "/nb/bank/privat/kundeservice/verktoy/valutakalkulator",
+     "selector": ".converter[data-rates=\"document\"][data-currencies=\"31\"] select#conv-from option",
+     "min": 31
+    },
+    {
+     "type": "no-page-errors",
+     "paths": [
+      "/spike-b/nb/bank/privat/kundeservice/verktoy/valutakalkulator",
+      "/nb/bank/privat/kundeservice/verktoy/valutakalkulator"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "feature": "price cards / rate examples",
+   "class": "D",
+   "reach": "10+",
+   "status": "delivered-by-capture",
+   "pattern": "cards (price) + default content",
+   "check": "RAW HTML of /nb/bank/privat/lan/boliglan contains 'Priseksempel: Nominell rente' (key fact, server-rendered)",
+   "owner": "none"
+  },
+  {
+   "id": 11,
+   "feature": "news / markedsnytt listings",
+   "class": "D+L",
+   "reach": "12/100",
+   "status": "interim (authored cards) + index published",
+   "pattern": "cards (featured|listing) authored; helix-query.yaml indexes news + markedsnytt with title/description/image/published-time/category/template",
+   "check": "GET /nb/bank/om-oss/nyheter/query-index.json → data[] rows for the 10 roster articles",
+   "owner": "none — listing block switches to the index in iteration 2"
+  },
+  {
+   "id": 12,
+   "feature": "footer JSON",
+   "class": "A",
+   "reach": "12/100",
+   "status": "delivered-by-capture",
+   "pattern": "footer documents",
+   "check": "/footer-frontend* live",
+   "owner": "none"
+  },
+  {
+   "id": 13,
+   "feature": "digitalData / SB1.config",
+   "class": "A",
+   "reach": "100/100",
+   "status": "delivered",
+   "pattern": "metadata block (template, market, source)",
+   "check": "<meta name=template>, <meta name=market> on every page",
+   "owner": "none"
+  },
+  {
+   "id": 14,
+   "feature": "client-rendered main (frontend clientlib)",
+   "class": "CR",
+   "reach": "12/100",
+   "status": "delivered-by-capture",
+   "pattern": "settled DOM migrated",
+   "check": "news pages carry full body text",
+   "owner": "none"
+  },
+  {
+   "id": 15,
+   "feature": "Adobe Analytics / Target / consent",
+   "class": "T",
+   "reach": "100/100",
+   "status": "decided (none on pilot)",
+   "pattern": "—",
+   "check": "no adobedc requests on any page",
+   "owner": "SB1/Adobe: Launch/Web SDK property + CMP"
+  },
+  {
+   "id": 16,
+   "feature": "YouTube / mp4 media",
+   "class": "V",
+   "reach": "8/100",
+   "status": "delivered",
+   "pattern": "embed block (click-to-load iframe) + video block (mp4 on source origin)",
+   "check": ".embed .video-frame present; click → iframe src youtube-nocookie",
+   "owner": "none (one runtime-injected podcast src stays a linked frame)"
+  },
+  {
+   "id": 17,
+   "feature": "glossary modal",
+   "class": "M",
+   "reach": "~20/100",
+   "status": "interim",
+   "pattern": "term kept as text",
+   "check": "no dead glossary buttons",
+   "owner": "none — iteration 2 (modal-loader)"
+  },
+  {
+   "id": 18,
+   "feature": "locale / regional trees",
+   "class": "I18N",
+   "reach": "100/100",
+   "status": "decided out (iteration 1)",
+   "pattern": "links to live regional pages",
+   "check": "router + footer bank links → www.sparebank1.no/<lang>/<bank>/<market>.html",
+   "owner": "later iterations"
+  },
+  {
+   "id": 19,
+   "feature": "sign-in / account links",
+   "class": "X",
+   "reach": "100/100",
+   "status": "decided-out",
+   "pattern": "links preserved to source host",
+   "check": "nettbank links absolute",
+   "owner": "none"
+  },
+  {
+   "id": 20,
+   "feature": "site search",
+   "class": "S",
+   "reach": "100/100",
+   "status": "interim",
+   "pattern": "header Søk → live search page",
+   "check": "header .search-wrap a href == https://www.sparebank1.no/nb/bank/privat/kundeservice.html?search=",
+   "owner": "decide index-backed EDS search vs Solr passthrough"
+  }
+ ],
+ "method": "rows 1/7/8/9: client-side reproductions of the source widgets, verified against recorded source API responses and the live source UI"
 }

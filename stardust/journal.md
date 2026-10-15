@@ -195,3 +195,23 @@ markedsnytt expert portraits detected by `[src$=".jpg"]` failed on `?width=` URL
 lazy images eager. A parallel regression sweep was killed by memory pressure (26 Chromium processes) — gates now run sequentially.
 
 **Ledgers:** `stardust/rollout/gates/<slug>-pub/`, `deploy-ledger.json`, `eds-progress/*.json`, `journal/<family>.md`, `eds-requests.md` (open requests from the workers, mostly base-scoping and gate-instrument items). Round record: `stardust/prototypes/round-01-danske-ramp/README.md`.
+
+## 2026-10-15 — spike-b: dynamics Phases 1–5 on #1 bank-choice, #7 loan calculator, #8 savings calculator, #9 currency converter
+
+Branch `spike-b` (preview https://spike-b--sparebank1-redesign--paolomoz.aem.page). Hands-off; register rows other than 1/7/8/9 untouched.
+
+- **Evidence over the September assumptions.** Read the three widget bundles, probed the live widgets and replayed their APIs (≈ 140 sequential
+  requests in total, ≥ 1 s apart). #1's postcode lookup never calls an API (client filter over server-rendered postal ranges); #8 is API-backed but
+  the API returns its own rate/product and is an exact closed formula; #7 splits into a statutory annuity over authored constants (cost tab) and a
+  proprietary lending model (economy tab); #9's conversion is a formula over the rate list the page already authors.
+- **Shipped live:** #1 lookup, #7 cost tab (incl. repayment plan, price example, CTA deep links byte-identical to the source), #8 full widget,
+  #9 conversion. **Scaffolded behind `scripts/site-config.js` (disabled):** #1 geolocation, #7 economy tab (wired, replayed on recorded responses),
+  #9 live rates. The reconstructed lending model for #7 economy fits 23/23 displayed values but is SB1 credit policy inferred from samples — recorded
+  as an owner option, not shipped.
+- **Verification:** `test-calculators.mjs` (20 + 36 recorded responses, 25 displayed values) PASS; `dynamics-check.mjs` 22/22 PASS on the branch
+  origin; 1440 + 360 suites equal the source; 0 page errors.
+- **Content:** four `/spike-b/` copies authored and previewed; no existing DA document modified or published. The valutakalkulator copy's note
+  ("Kursene er hentet 15. oktober 2026 …") is interim copy written by this run.
+- **Gotchas:** the local dev server on :3000 was taken over by a sibling workspace (`sparebank1/c`) mid-run — served another branch's
+  `calculator.js`; ran mine on :3107. Node ESM resolves `playwright` relative to the script file — probe scripts outside the repo need the absolute
+  module path. The fund list endpoint answers 406 unless asked for `application/vnd.sparebank1.v3+json`.

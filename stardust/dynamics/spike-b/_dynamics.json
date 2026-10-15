@@ -1,0 +1,918 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-10-15T14:35:35.919Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://www.sparebank1.no/nb/bank/privat.html",
+   "https://www.sparebank1.no/nb/bank/privat/lan/boliglan.html",
+   "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html",
+   "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/valutakalkulator.html"
+  ]
+ },
+ "pages": {
+  "/nb/bank/privat.html": {
+   "url": "https://www.sparebank1.no/nb/bank/privat.html",
+   "status": 200,
+   "host": "www.sparebank1.no",
+   "title": "Privat | SpareBank 1",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Bli kunde",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat",
+     "marker": "overlay-btn",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 3,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "nb",
+    "hreflang": [],
+    "switcher": [
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat.html",
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat.html",
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat.html#meeting",
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat.html#meeting",
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat.html#message"
+    ]
+   },
+   "cms": {
+    "digitalData": [
+     "content"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "_satellite"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "ffe-grid__row columns-grid__row",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    },
+    {
+     "cls": "text-wrapper ",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": false
+    },
+    {
+     "cls": "text-wrapper ",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": false
+    },
+    {
+     "cls": "text-wrapper ",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": false
+    },
+    {
+     "cls": "ffe-grid__row columns-grid__row",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    },
+    {
+     "cls": "text-wrapper ",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": false
+    },
+    {
+     "cls": "text-wrapper ",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": false
+    },
+    {
+     "cls": "text-wrapper ",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": false
+    },
+    {
+     "cls": "text-wrapper ",
+     "cards": 5,
+     "sameSite": 5,
+     "hasDate": false
+    },
+    {
+     "cls": "text-wrapper ",
+     "cards": 5,
+     "sameSite": 5,
+     "hasDate": false
+    }
+   ],
+   "inlineScripts": 22,
+   "inlineFetch": true,
+   "mainText": 1327,
+   "domAddedAfterLoad": 32,
+   "hosts": {
+    "www.sparebank1.no": 35,
+    "adobedc.demdex.net": 1
+   },
+   "thirdPartyHosts": [
+    "adobedc.demdex.net"
+   ],
+   "scripts": [
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/vendors_bundle.1156934419.js",
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+    "https://www.sparebank1.no/sb1-nettsider-optin/bank/static/opt-in.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+     "query": [
+      "limit",
+      "offset",
+      "temaFilter"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler.export.json"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/ressurser/bank/user",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/personal/banking/consent/cookies/identity",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity"
+    },
+    {
+     "method": "POST",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/opt-in",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/opt-in"
+    }
+   ],
+   "thirdPartyXhr": [
+    "POST adobedc.demdex.net/ee/v1/interact"
+   ],
+   "postBodies": [
+    {
+     "url": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+     "body": "{\"optinTypes\":[\"F\",\"S\",\"M\"]}"
+    },
+    {
+     "url": "https://adobedc.demdex.net/ee/v1/interact?configId=c9ffe15c-d455-425b-877f-81f1a83db1c3&requestId=126ff3a3-5562-4d57-88f2-085793adb849",
+     "body": "{\"events\":[{\"xdm\":{\"web\":{\"webPageDetails\":{\"URL\":\"https://www.sparebank1.no/nb/bank/privat.html\"},\"webReferrer\":{\"URL\":\"\"}},\"device\":{\"screenHeight\":900,\"screenWidth\":1440,\"screenOrientation\":\"landscape\"},\"environment\":{\"type\":\"browser\",\"browserDetails\":{\"viewportWidth\":1440,\"viewportHeight\":900}},\"placeContext\":{\"localTimezoneOffset\":-120,\"localTime\":\"2026-10-15T16:35:36.543+02:00\",\"ianaTimezone"
+    }
+   ],
+   "textAtLoad": 1181,
+   "mainEmptyAtLoad": false
+  },
+  "/nb/bank/privat/lan/boliglan.html": {
+   "url": "https://www.sparebank1.no/nb/bank/privat/lan/boliglan.html",
+   "status": 200,
+   "host": "www.sparebank1.no",
+   "title": "Boliglån | Få tilbud på boliglån | SpareBank 1",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Bli kunde",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat",
+     "marker": "overlay-btn",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Søk boliglån",
+     "href": "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start",
+     "marker": "overlay-btn",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Søk boliglån",
+     "href": "https://lenker.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start",
+     "marker": "overlay-btn",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Søk finansieringsbevis",
+     "href": "https://www.sparebank1.no/nb/bank/privat/lan/boliglan.html#",
+     "marker": "overlay-btn",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Søk finansieringsbevis",
+     "href": "https://lenker.sparebank1.no/",
+     "marker": "overlay-btn",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Avtal tid med rådgiver",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+     "marker": "overlay-btn",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Se alle priser og betingelser",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/prisliste.html",
+     "marker": "overlay-btn",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Søk om å øke lånet ditt",
+     "href": "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start?sb1-inngang=oke-lan",
+     "marker": "overlay-btn",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Søk om avdragsfrihet",
+     "href": "https://www.sparebank1.no/nb/bank/privat/lan/boliglan.html#",
+     "marker": "overlay-btn",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Søk om avdragsfrihet",
+     "href": "https://lenker.sparebank1.no/",
+     "marker": "overlay-btn",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 8,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "nb",
+    "hreflang": [],
+    "switcher": [
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat/lan/boliglan.html",
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat/lan/boliglan.html",
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat/lan/boliglan.html#meeting",
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat/lan/boliglan.html#meeting",
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat/lan/boliglan.html#message"
+    ]
+   },
+   "cms": {
+    "digitalData": [
+     "content"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "_satellite"
+   ],
+   "clientRendered": [
+    {
+     "cls": "main js-productpage productpage",
+     "attrs": [],
+     "text": "Låne Boliglån Skal du kjøpe ny bolig? Eller kanskje du drømm"
+    },
+    {
+     "cls": "js-faq-toggle faq-button--more ffe-button",
+     "attrs": [],
+     "text": "Se flere spørsmål og svar"
+    }
+   ],
+   "listingCandidates": [
+    {
+     "cls": "ffe-grid__row columns-grid__row",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": false
+    },
+    {
+     "cls": "card-list card-list__price",
+     "cards": 10,
+     "sameSite": 10,
+     "hasDate": false
+    },
+    {
+     "cls": "ffe-accordion",
+     "cards": 15,
+     "sameSite": 14,
+     "hasDate": true
+    },
+    {
+     "cls": "newsfeed-wrap newsfeed-wrap--full",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": false
+    }
+   ],
+   "inlineScripts": 22,
+   "inlineFetch": true,
+   "mainText": 2173,
+   "domAddedAfterLoad": 50,
+   "hosts": {
+    "www.sparebank1.no": 39,
+    "adobedc.demdex.net": 1
+   },
+   "thirdPartyHosts": [
+    "adobedc.demdex.net"
+   ],
+   "scripts": [
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/vendors_bundle.1156934419.js",
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+    "https://www.sparebank1.no/bank/nettbank-privat/boliglan-kalkulator/static/sb1-lanekalkulator.js",
+    "https://www.sparebank1.no/sb1-nettsider-optin/bank/static/opt-in.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/ressurser/bank/user",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/personal/banking/consent/cookies/identity",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity"
+    },
+    {
+     "method": "POST",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/opt-in",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/opt-in"
+    },
+    {
+     "method": "POST",
+     "host": "www.sparebank1.no",
+     "path": "/api/personal/banking/boliglan-kalkulator/economy",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/economy"
+    },
+    {
+     "method": "POST",
+     "host": "www.sparebank1.no",
+     "path": "/api/personal/banking/boliglan-kalkulator/annuity-loan",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/annuity-loan"
+    }
+   ],
+   "thirdPartyXhr": [
+    "POST adobedc.demdex.net/ee/v1/interact"
+   ],
+   "postBodies": [
+    {
+     "url": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+     "body": "{\"optinTypes\":[\"F\",\"S\",\"M\"]}"
+    },
+    {
+     "url": "https://adobedc.demdex.net/ee/v1/interact?configId=c9ffe15c-d455-425b-877f-81f1a83db1c3&requestId=79448bbc-3af0-4717-acb2-8a2038cb42b5",
+     "body": "{\"events\":[{\"xdm\":{\"web\":{\"webPageDetails\":{\"URL\":\"https://www.sparebank1.no/nb/bank/privat/lan/boliglan.html\"},\"webReferrer\":{\"URL\":\"\"}},\"device\":{\"screenHeight\":900,\"screenWidth\":1440,\"screenOrientation\":\"landscape\"},\"environment\":{\"type\":\"browser\",\"browserDetails\":{\"viewportWidth\":1440,\"viewportHeight\":900}},\"placeContext\":{\"localTimezoneOffset\":-120,\"localTime\":\"2026-10-15T16:35:44.369+02:00\","
+    },
+    {
+     "url": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/economy",
+     "body": "{\"calculationDataset\":\"Loke\",\"adults\":[{\"age\":35,\"gender\":\"Male\",\"grossSalary\":400000,\"employmentStatus\":\"Employed\"}],\"numberOfPetrolCars\":0,\"numberOfElectricCars\":0,\"existingMortgage\":200000,\"interestRate\":5.33,\"feeMonthly\":50,\"loanTermYears\":25,\"feeEstablishment\":1500}"
+    },
+    {
+     "url": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/annuity-loan",
+     "body": "{\"loanRaisingYear\":2026,\"loanRaisingMonth\":10,\"purchasePrice\":1096100,\"equity\":0,\"interestRate\":5.33,\"feeEstablishment\":1500,\"feeMonthly\":50,\"taxDeductionRate\":0.22,\"loanTermYears\":25,\"interestOnlyYears\":0}"
+    }
+   ],
+   "textAtLoad": 2173,
+   "mainEmptyAtLoad": false
+  },
+  "/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html": {
+   "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html",
+   "status": 200,
+   "host": "www.sparebank1.no",
+   "title": "Sparekalkulator | Hvor mye bør du spare? | SpareBank 1",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Bli kunde",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat",
+     "marker": "overlay-btn",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 3,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "nb",
+    "hreflang": [],
+    "switcher": [
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sparekalkulator.html",
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sparekalkulator.html",
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sparekalkulator.html#meeting",
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sparekalkulator.html#meeting",
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sparekalkulator.html#message"
+    ]
+   },
+   "cms": {
+    "digitalData": [
+     "content"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "_satellite"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "card-list card-list__small",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": false
+    }
+   ],
+   "inlineScripts": 22,
+   "inlineFetch": true,
+   "mainText": 339,
+   "domAddedAfterLoad": 30,
+   "hosts": {
+    "www.sparebank1.no": 30
+   },
+   "thirdPartyHosts": [],
+   "scripts": [
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/vendors_bundle.1156934419.js",
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+    "https://www.sparebank1.no/sb1-nettsider-optin/bank/static/opt-in.js",
+    "https://www.sparebank1.no/bank/nettsider-privat/fond/static/sparekalkulator.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/ressurser/bank/user",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/bank/nettsider-privat/fond/toggles",
+     "query": [
+      "bankShortName"
+     ],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/bank/nettsider-privat/fond/toggles"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/personal/banking/consent/cookies/identity",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity"
+    },
+    {
+     "method": "POST",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/opt-in",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/opt-in"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/personal/banking/savingscalculator/suggested-savings-product",
+     "query": [
+      "risk",
+      "years"
+     ],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/suggested-savings-product"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/personal/banking/savingscalculator/expected-performance",
+     "query": [
+      "initialValue",
+      "periodicInvestment",
+      "risk",
+      "years"
+     ],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/expected-performance"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/personal/banking/fund/products/available",
+     "query": [
+      "fid"
+     ],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v3+json",
+     "example": "https://www.sparebank1.no/openapi/personal/banking/fund/products/available"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [
+    {
+     "url": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+     "body": "{\"optinTypes\":[\"F\",\"S\",\"M\"]}"
+    }
+   ],
+   "textAtLoad": 339,
+   "mainEmptyAtLoad": false
+  },
+  "/nb/bank/privat/kundeservice/verktoy/valutakalkulator.html": {
+   "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/valutakalkulator.html",
+   "status": 200,
+   "host": "www.sparebank1.no",
+   "title": "Valutakalkulator og valutakurser | SpareBank 1",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Bli kunde",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat",
+     "marker": "overlay-btn",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 2,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "nb",
+    "hreflang": [],
+    "switcher": [
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/valutakalkulator.html",
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/valutakalkulator.html",
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/valutakalkulator.html#meeting",
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/valutakalkulator.html#meeting",
+     "https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/valutakalkulator.html#message"
+    ]
+   },
+   "cms": {
+    "digitalData": [
+     "content"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "_satellite"
+   ],
+   "clientRendered": [
+    {
+     "cls": "tab js-tab-content default",
+     "attrs": [],
+     "text": "ValutaKunde selgerKunden kjøperPerUSD Amerikanske dollar9.47"
+    }
+   ],
+   "listingCandidates": [],
+   "inlineScripts": 21,
+   "inlineFetch": true,
+   "mainText": 485,
+   "domAddedAfterLoad": 10,
+   "hosts": {
+    "www.sparebank1.no": 25
+   },
+   "thirdPartyHosts": [],
+   "scripts": [
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/vendors_bundle.1156934419.js",
+    "https://www.sparebank1.no/sb1-nettsider-optin/bank/static/opt-in.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/ressurser/bank/user",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/ressurser/bank/valutakurser",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/valutakurser"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/personal/banking/consent/cookies/identity",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity"
+    },
+    {
+     "method": "POST",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/opt-in",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/opt-in"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [
+    {
+     "url": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+     "body": "{\"optinTypes\":[\"F\",\"S\",\"M\"]}"
+    }
+   ],
+   "textAtLoad": 466,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [
+  {
+   "id": "a-cms-app-settings-object-digitaldata",
+   "class": "A",
+   "feature": "CMS / app settings object digitalData",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/nb/bank/privat.html",
+    "/nb/bank/privat/lan/boliglan.html",
+    "/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html",
+    "/nb/bank/privat/kundeservice/verktoy/valutakalkulator.html"
+   ]
+  },
+  {
+   "id": "a-first-party-api-post-api-personal-banking-boliglan-kalkula",
+   "class": "A",
+   "feature": "first-party API POST /api/personal/banking/boliglan-kalkulator/economy",
+   "api": {
+    "method": "POST",
+    "path": "/api/personal/banking/boliglan-kalkulator/economy"
+   },
+   "hint": "api",
+   "evidence": [
+    "POST /api/personal/banking/boliglan-kalkulator/economy → 200"
+   ],
+   "pages": [
+    "/nb/bank/privat/lan/boliglan.html"
+   ]
+  },
+  {
+   "id": "a-first-party-api-post-api-personal-banking-boliglan-kalkula",
+   "class": "A",
+   "feature": "first-party API POST /api/personal/banking/boliglan-kalkulator/annuity-loan",
+   "api": {
+    "method": "POST",
+    "path": "/api/personal/banking/boliglan-kalkulator/annuity-loan"
+   },
+   "hint": "api",
+   "evidence": [
+    "POST /api/personal/banking/boliglan-kalkulator/annuity-loan → 200"
+   ],
+   "pages": [
+    "/nb/bank/privat/lan/boliglan.html"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-main-js-productpage-productpage",
+   "class": "CR",
+   "feature": "client-rendered slot main js-productpage productpage",
+   "hint": "client-rendered",
+   "evidence": [
+    "Låne Boliglån Skal du kjøpe ny bolig? Eller kanskje du drømm"
+   ],
+   "pages": [
+    "/nb/bank/privat/lan/boliglan.html"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-js-faq-toggle-faq-button-more-ffe-bu",
+   "class": "CR",
+   "feature": "client-rendered slot js-faq-toggle faq-button--more ffe-button",
+   "hint": "client-rendered",
+   "evidence": [
+    "Se flere spørsmål og svar"
+   ],
+   "pages": [
+    "/nb/bank/privat/lan/boliglan.html"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-tab-js-tab-content-default",
+   "class": "CR",
+   "feature": "client-rendered slot tab js-tab-content default",
+   "hint": "client-rendered",
+   "evidence": [
+    "ValutaKunde selgerKunden kjøperPerUSD Amerikanske dollar9.47"
+   ],
+   "pages": [
+    "/nb/bank/privat/kundeservice/verktoy/valutakalkulator.html"
+   ]
+  },
+  {
+   "id": "d-first-party-data-file-get-nb-bank-privat-sparing-markedsny",
+   "class": "D",
+   "feature": "first-party data file GET /nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+   "api": {
+    "method": "GET",
+    "path": "/nb/bank/privat/sparing/markedsnytt/artikler.export.json"
+   },
+   "hint": "data",
+   "evidence": [
+    "GET /nb/bank/privat/sparing/markedsnytt/artikler.export.json?limit,offset,temaFilter → 200"
+   ],
+   "pages": [
+    "/nb/bank/privat.html"
+   ]
+  },
+  {
+   "id": "i18n-locale-variants-nn-nn-nn-nn-nn",
+   "class": "I18N",
+   "feature": "locale variants nn,nn,nn,nn,nn",
+   "hint": "locale",
+   "evidence": [
+    "https://www.sparebank1.no/nn/sogn-fjordane/privat.html",
+    "https://www.sparebank1.no/nn/sogn-fjordane/privat.html#meeting",
+    "https://www.sparebank1.no/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "https://www.sparebank1.no/nn/sogn-fjordane/privat/lan/boliglan.html#meeting",
+    "https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sparekalkulator.html",
+    "https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/sparekalkulator.html#meeting",
+    "https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/valutakalkulator.html",
+    "https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/verktoy/valutakalkulator.html#meeting"
+   ],
+   "pages": [
+    "/nb/bank/privat.html",
+    "/nb/bank/privat/lan/boliglan.html",
+    "/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html",
+    "/nb/bank/privat/kundeservice/verktoy/valutakalkulator.html"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-card-list-card-list-price-10-cards",
+   "class": "L",
+   "feature": "listing candidate card-list card-list__price (10 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/nb/bank/privat/lan/boliglan.html"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-ffe-accordion-15-cards",
+   "class": "L",
+   "feature": "listing candidate ffe-accordion (15 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/nb/bank/privat/lan/boliglan.html"
+   ]
+  },
+  {
+   "id": "m-modal-trigger-overlay-btn-chrome-only-target-outside-dom-a",
+   "class": "M",
+   "feature": "modal trigger overlay-btn (chrome only) → target outside DOM at capture",
+   "hint": "chrome-interaction",
+   "evidence": [
+    "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat"
+   ],
+   "pages": [
+    "/nb/bank/privat.html",
+    "/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html",
+    "/nb/bank/privat/kundeservice/verktoy/valutakalkulator.html"
+   ]
+  },
+  {
+   "id": "m-modal-trigger-overlay-btn-target-outside-dom-at-capture",
+   "class": "M",
+   "feature": "modal trigger overlay-btn → target outside DOM at capture",
+   "hint": "modal",
+   "evidence": [
+    "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat",
+    "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start",
+    "https://lenker.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start",
+    "https://www.sparebank1.no/nb/bank/privat/lan/boliglan.html#"
+   ],
+   "pages": [
+    "/nb/bank/privat/lan/boliglan.html"
+   ]
+  },
+  {
+   "id": "s-first-party-api-get-openapi-personal-banking-savingscalcul",
+   "class": "S",
+   "feature": "first-party API GET /openapi/personal/banking/savingscalculator/suggested-savings-product",
+   "api": {
+    "method": "GET",
+    "path": "/openapi/personal/banking/savingscalculator/suggested-savings-product"
+   },
+   "hint": "search",
+   "evidence": [
+    "GET /openapi/personal/banking/savingscalculator/suggested-savings-product?risk,years → 200"
+   ],
+   "pages": [
+    "/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html"
+   ]
+  },
+  {
+   "id": "t-analytics-adobe-analytics-experience-cloud-id",
+   "class": "T",
+   "feature": "analytics: Adobe Analytics / Experience Cloud ID",
+   "role": "analytics: Adobe Analytics / Experience Cloud ID",
+   "hint": "tags",
+   "evidence": [
+    "adobedc.demdex.net"
+   ],
+   "pages": [
+    "/nb/bank/privat.html",
+    "/nb/bank/privat/lan/boliglan.html"
+   ]
+  }
+ ]
+}
