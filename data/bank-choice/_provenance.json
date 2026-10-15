@@ -1,0 +1,7 @@
+{
+ "writtenBy": "stardust:dynamics #1 bank-choice (stardust/scripts/dynamics/sync-bank-choice.mjs)",
+ "writtenAt": "2026-10-15T14:30:33.229Z",
+ "source": "https://www.sparebank1.no/nb/bank/privat.html",
+ "sourceField": "window.bankPickerlist[].{bankShortName, url (language tree), postalRange}",
+ "note": "Identical on every source page (checked boliglan + valutakalkulator 2026-10-15). Re-run when SpareBank 1 changes a bank's postal coverage."
+}

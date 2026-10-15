@@ -68,3 +68,15 @@ main .section.router > div { width: 100%; }
   .bank-router .router--tile .field-row .input { width: 100%; }
   .bank-router .router--tile .router-art { opacity: 0.9; }
 }
+
+/* dynamics #1 — postcode lookup states (matches first, the rest behind the summary; validation message) */
+.bank-router .router-error { margin-top: 6px; font-size: var(--body-sm); color: #fff; }
+.bank-router .router-error::before { content: "! "; font-family: var(--title-font-family); }
+.bank-router .router-results[hidden] { display: none; }
+.bank-router .bank-matches { margin-top: 0; }
+.bank-router .bank-list li.is-featured { display: grid; gap: 4px; }
+.bank-router .bank-continue { justify-self: start; margin-top: 6px; color: #fff; font-family: var(--title-font-family); text-decoration: none; }
+.bank-router .router--band .router-results { grid-column: 1 / -1; }
+.bank-router .router--band .router-results:not([hidden]) ~ .router-all { grid-column: 1 / -1; justify-self: start; }
+.bank-router .router--tile .router-results { margin-top: 20px; width: 100%; }
+.bank-router .router--tile .bank-matches { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; text-align: left; }
