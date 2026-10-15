@@ -73,14 +73,16 @@ export default async function decorate(block) {
 
   const options = [...rates.values()];
   const select = (id, code) => {
-    const s = el('select', { class: 'conv-select', id }, ...options.map((r) => el('option', { value: r.code }, `${r.code} - ${r.name}`)));
+    const s = el('select', { class: 'conv-select', id, name: id === 'conv-from' ? 'fra' : 'til' }, ...options.map((r) => el('option', { value: r.code }, `${r.code} - ${r.name}`)));
     s.value = rates.has(code) ? code : options[0].code;
     return s;
   };
-  const fromSel = select('conv-from', splitCurrency(text(fromCell))?.code || 'NOK');
-  const toSel = select('conv-to', splitCurrency(text(toCell))?.code || 'EUR');
+  // linked state (?fra=USD&til=SEK&belop=100 — the controls' own names) overrides the authored defaults
+  const linked = new URLSearchParams(window.location.search);
+  const fromSel = select('conv-from', linked.get('fra')?.toUpperCase() || splitCurrency(text(fromCell))?.code || 'NOK');
+  const toSel = select('conv-to', linked.get('til')?.toUpperCase() || splitCurrency(text(toCell))?.code || 'EUR');
   const amountLbl = el('label', { class: 'label', for: 'conv-amount' }, moved(amountLabel));
-  const amount = el('input', { class: 'conv-in num', id: 'conv-amount', type: 'text', inputmode: 'decimal', maxlength: '12', value: text(amountCell) || '100', autocomplete: 'off' });
+  const amount = el('input', { class: 'conv-in num', id: 'conv-amount', name: 'belop', type: 'text', inputmode: 'decimal', maxlength: '12', value: linked.get('belop') || text(amountCell) || '100', autocomplete: 'off' });
   const resultLbl = el('div', { class: 'label', id: 'conv-result-label' }, moved(resultLabel));
   const result = el('output', { class: 'conv-out num', for: 'conv-amount conv-from conv-to', 'aria-labelledby': 'conv-result-label', 'aria-live': 'polite' });
   const rate = el('div', { class: 'conv-rate num' }, moved(rateCell) || el('p'));

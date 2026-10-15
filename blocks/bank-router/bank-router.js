@@ -135,6 +135,9 @@ export default function decorate(block) {
     if (/^\d{4}$/.test(v)) lookup(v); else if (v) showError(true); else { details.open = true; syncSummary(); }
   });
   input.addEventListener('focus', loadRanges, { once: true });
+  // the form is a GET form (name=postnummer): a submitted / linked ?postnummer= renders its lookup on load
+  const linked = new URLSearchParams(window.location.search).get('postnummer');
+  if (linked) { input.value = linked.slice(0, 4); onValue(); }
 
   posBtn?.addEventListener('click', () => {
     posBtn.disabled = true; error.hidden = true;
