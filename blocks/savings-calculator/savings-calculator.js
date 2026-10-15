@@ -31,6 +31,7 @@ const DEFAULTS = {
   monthly: 500, initial: 6000, goal: 200000, 'goal-initial': 20000, years: 5, risk: 'medium',
 };
 const kr = (n) => `${formatNumber(Math.round(n))} kr`;
+const krDown = (n) => `${formatNumber(Math.floor(n))} kr`; // the source truncates projected amounts
 const pct = (n) => `${formatNumber(n, 2)} %`;
 
 let uid = 0;
@@ -197,7 +198,7 @@ export default async function decorate(block) {
         initialValue: state.initial, periodicInvestment: state.monthly, years: y, annualReturn: rate(state.risk),
       });
       const saved = state.initial + state.monthly * 12 * y;
-      vals.expected.textContent = `${kr(v)} *`; vals.ret.textContent = kr(v - saved); vals.saved.textContent = kr(saved);
+      vals.expected.textContent = `${krDown(v)} *`; vals.ret.textContent = krDown(v - saved); vals.saved.textContent = kr(saved);
     } else {
       const req = requiredSavings({
         savingsGoal: state.goal, initialInvestment: state['goal-initial'], years: y, annualReturn: rate(state.risk),
@@ -227,7 +228,7 @@ export default async function decorate(block) {
       return el('div', { class: 'sc-compare-row' },
         el('dt', {}, `${str('compare-labels', i)} `, el('span', { translate: 'no' }, p.displayName)),
         el('dd', {}, el('span', { class: 'sc-bar' }, el('span', { class: 'sc-bar-fill', style: `width:${(rate(r) / maxRate) * 100}%` })), el('span', { class: 'sc-rate num' }, pct(rate(r))),
-          el('span', { class: 'sc-compare-amount' }, `${monthlyTab ? str('result-expected') : str('result-must')} ${kr(amount)}`)));
+          el('span', { class: 'sc-compare-amount' }, `${monthlyTab ? str('result-expected') : str('result-must')} ${monthlyTab ? krDown(amount) : kr(amount)}`)));
     }));
   }
 
