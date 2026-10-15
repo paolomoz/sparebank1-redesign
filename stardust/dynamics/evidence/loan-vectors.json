@@ -1,0 +1,6035 @@
+{
+ "meta": {
+  "captured": "2026-10-15",
+  "page": "https://www.sparebank1.no/nb/bank/privat/lan/boliglan.html",
+  "bank": "bank (SpareBank 1 Bank)",
+  "apiBase": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator",
+  "totalCalculatorApiCalls": 49,
+  "note": "request/response pairs deduplicated by request body; \"model\" = client-side reproduction from loan-analysis.md; UI steps carry displayed strings (NBSP thousands separators).",
+  "sampleResponseHeaders": {
+   "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+   "content-length": "576",
+   "content-type": "application/vnd.sparebank1.v1+json;charset=utf-8",
+   "date": "Thu, 15 Oct 2026 14:29:39 GMT",
+   "expires": "0",
+   "pragma": "no-cache",
+   "server": "CloudFront",
+   "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+   "via": "1.1 a8b33ff40e244f67d922fbfab23360e6.cloudfront.net (CloudFront)",
+   "x-amz-cf-id": "CNJf9rNlT9ykIUY_Xgp-OdwFGWajinqFL9s2gANDUHr7vgb6DYIdTA==",
+   "x-amz-cf-pop": "ZRH52-P1",
+   "x-cache": "Miss from cloudfront",
+   "x-content-type-options": "nosniff",
+   "x-envoy-upstream-service-time": "5",
+   "x-frame-options": "DENY",
+   "x-xss-protection": "0"
+  },
+  "corsCheck": {
+   "preflightOPTIONS": "401, no access-control-* headers",
+   "crossOriginPOSTwithoutCookies": "200, no access-control-allow-origin (server-to-server works, browser cross-origin blocked)"
+  }
+ },
+ "pageConfig_bank": {
+  "costOfLoan": {
+   "annualNominalInterestRate": 5.33,
+   "establishmentFee": 2900,
+   "paymentFee": 50,
+   "housingPrice": 3000000,
+   "equity": 300000,
+   "repaymentPeriod": 25,
+   "fixedInterestRate": 2.8,
+   "fixedInterestRateBindingPeriod": 5
+  },
+  "howMuchLoan": {
+   "arrangementFee": 1500,
+   "grossAnnualIncome": 400000,
+   "existingLoan": 200000,
+   "annualNominalInterestRate": 5.33,
+   "paymentFee": 50,
+   "repaymentPeriod": 25
+  },
+  "text": {
+   "loanApply": "Søk lån",
+   "loanContact": "Kontakt meg om lån"
+  },
+  "initialTabIndex": "0"
+ },
+ "pairs": [
+  {
+   "source": "explore-ui",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 400000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "numberOfPetrolCars": 0,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 200000,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 400000,
+    "tax": 80192.0908665818,
+    "netSalary": 319807.90913341823,
+    "assets": 0,
+    "sifoExpenses": 143484,
+    "propertyExpenses": 81183.95999999999,
+    "existingMortgageExpenses": 15095.44251931117,
+    "totalExpenses": 239763.40251931117,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 80044.50661410706,
+    "liquidity": 1.8351540692594952,
+    "loanToValueRatio": 100,
+    "debtRatio": 0.5,
+    "maxDebtRatioAmount": 2000000,
+    "maxLoanAmount": 1096130.821922397,
+    "adjustedMaxLoanAmount": 1096130.821922397,
+    "displayedAdjustedMaxLoanAmount": 1096100
+   },
+   "id": 1,
+   "model": {
+    "tax": 80192.1478665818,
+    "netSalary": 319807.8521334182,
+    "sifoExpenses": 143484,
+    "propertyExpenses": 81183.96,
+    "existingMortgageExpenses": 15095.44251931117,
+    "disposableSalary": 80044.44961410703,
+    "maxDebtRatioAmount": 2000000,
+    "maxLoanAmount": 1096130.0354683104,
+    "adjustedMaxLoanAmount": 1096130.0354683104,
+    "displayedAdjustedMaxLoanAmount": 1096100
+   }
+  },
+  {
+   "source": "explore-ui",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 1096100,
+    "equity": 0,
+    "interestRate": 5.33,
+    "feeEstablishment": 1500,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 25,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 1096100,
+    "equity": 0,
+    "debtRatio": 100,
+    "loanAmount": 1096100,
+    "monthlyPayment": 6670.189393923739,
+    "monthlyNetPayment": 5600.82869249053,
+    "totalInterest": 889956.8181771252,
+    "totalPrincipal": 1096099.9999999965,
+    "totalFees": 16500,
+    "totalTaxDeduction": 195790.49999896745,
+    "totalAmountPaid": 2002556.818177137,
+    "effectiveAnnualRate": 5.5575628536535415,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 4868.510833333334,
+      "principal": 1751.6785605904051,
+      "fee": 1550,
+      "taxDeduction": 1071.0723833333334,
+      "payment": 8170.189393923739,
+      "netPayment": 7099.117010590406,
+      "balance": 1094348.3214394096
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 4860.730461060044,
+      "principal": 1759.4589328636948,
+      "fee": 50,
+      "taxDeduction": 1069.3607014332097,
+      "payment": 6670.189393923739,
+      "netPayment": 5600.82869249053,
+      "balance": 1092588.8625065458
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 4852.915530966575,
+      "principal": 1767.273862957164,
+      "fee": 50,
+      "taxDeduction": 1067.6414168126464,
+      "payment": 6670.189393923739,
+      "netPayment": 5602.547977111092,
+      "balance": 1090821.5886435886
+     },
+     {
+      "index": 300,
+      "year": 2051,
+      "month": 9,
+      "interest": 29.274646337209468,
+      "principal": 6590.914747586529,
+      "fee": 50,
+      "taxDeduction": 6.440422194186083,
+      "payment": 6670.189393923739,
+      "netPayment": 6663.748971729553,
+      "balance": 2.8439899324439466e-09
+     }
+    ],
+    "amortizationScheduleLength": 300,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "id": 2,
+   "model": {
+    "loanAmount": 1096100,
+    "monthlyPayment": 6670.189393923739,
+    "monthlyNetPayment": 5600.82869249053,
+    "totalInterest": 889956.8181771217,
+    "totalFees": 16500,
+    "totalAmountPaid": 2002556.8181771217,
+    "totalTaxDeduction": 195790.49999896678,
+    "effectiveAnnualRate": 5.557562853653808
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 600000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "numberOfPetrolCars": 0,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 200000,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 600000,
+    "tax": 147792.0908665818,
+    "netSalary": 452207.90913341823,
+    "assets": 0,
+    "sifoExpenses": 143484,
+    "propertyExpenses": 81183.95999999999,
+    "existingMortgageExpenses": 15095.44251931117,
+    "totalExpenses": 239763.40251931117,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 212444.50661410706,
+    "liquidity": 3.2165655295491327,
+    "loanToValueRatio": 100,
+    "debtRatio": 0.3333333333333333,
+    "maxDebtRatioAmount": 3000000,
+    "maxLoanAmount": 2922911.892229338,
+    "adjustedMaxLoanAmount": 2800000,
+    "displayedAdjustedMaxLoanAmount": 2800000
+   },
+   "id": 6,
+   "model": {
+    "tax": 147792.1478665818,
+    "netSalary": 452207.8521334182,
+    "sifoExpenses": 143484,
+    "propertyExpenses": 81183.96,
+    "existingMortgageExpenses": 15095.44251931117,
+    "disposableSalary": 212444.449614107,
+    "maxDebtRatioAmount": 3000000,
+    "maxLoanAmount": 2922911.105775251,
+    "adjustedMaxLoanAmount": 2800000,
+    "displayedAdjustedMaxLoanAmount": 2800000
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 2800000,
+    "equity": 0,
+    "interestRate": 5.33,
+    "feeEstablishment": 1500,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 25,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 2800000,
+    "equity": 0,
+    "debtRatio": 100,
+    "loanAmount": 2800000,
+    "monthlyPayment": 16961.34960586303,
+    "monthlyNetPayment": 14229.655450208447,
+    "totalInterest": 2273404.881758925,
+    "totalPrincipal": 2799999.9999999865,
+    "totalFees": 16500,
+    "totalTaxDeduction": 500149.0739869632,
+    "totalAmountPaid": 5089904.881758897,
+    "effectiveAnnualRate": 5.499513693835434,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 12436.666666666666,
+      "principal": 4474.682939196364,
+      "fee": 1550,
+      "taxDeduction": 2736.0666666666666,
+      "payment": 18461.34960586303,
+      "netPayment": 15725.282939196364,
+      "balance": 2795525.3170608035
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 12416.791616611736,
+      "principal": 4494.557989251294,
+      "fee": 50,
+      "taxDeduction": 2731.6941556545817,
+      "payment": 16961.34960586303,
+      "netPayment": 14229.655450208447,
+      "balance": 2791030.759071552
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 12396.828288209477,
+      "principal": 4514.521317653553,
+      "fee": 50,
+      "taxDeduction": 2727.302223406085,
+      "payment": 16961.34960586303,
+      "netPayment": 14234.047382456945,
+      "balance": 2786516.237753899
+     },
+     {
+      "index": 300,
+      "year": 2051,
+      "month": 9,
+      "interest": 74.78241925391686,
+      "principal": 16836.567186609114,
+      "fee": 50,
+      "taxDeduction": 16.452132235861708,
+      "payment": 16961.34960586303,
+      "netPayment": 16944.897473627167,
+      "balance": 1.3817043509334326e-08
+     }
+    ],
+    "amortizationScheduleLength": 300,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "id": 7,
+   "model": {
+    "loanAmount": 2800000,
+    "monthlyPayment": 16961.34960586303,
+    "monthlyNetPayment": 14229.655450208447,
+    "totalInterest": 2273404.8817589087,
+    "totalFees": 16500,
+    "totalAmountPaid": 5089904.881758909,
+    "totalTaxDeduction": 500149.07398695993,
+    "effectiveAnnualRate": 5.499513693835434
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 600000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "numberOfPetrolCars": 0,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 600000,
+    "tax": 150133.543,
+    "netSalary": 449866.457,
+    "assets": 0,
+    "sifoExpenses": 143484,
+    "propertyExpenses": 81183.95999999999,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 224667.96,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 225198.497,
+    "liquidity": 3.349635835315721,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 3000000,
+    "maxLoanAmount": 3098884.3107174495,
+    "adjustedMaxLoanAmount": 3000000,
+    "displayedAdjustedMaxLoanAmount": 3000000
+   },
+   "id": 8,
+   "model": {
+    "tax": 150133.6,
+    "netSalary": 449866.4,
+    "sifoExpenses": 143484,
+    "propertyExpenses": 81183.96,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 225198.44,
+    "maxDebtRatioAmount": 3000000,
+    "maxLoanAmount": 3098883.5242633633,
+    "adjustedMaxLoanAmount": 3000000,
+    "displayedAdjustedMaxLoanAmount": 3000000
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 3000000,
+    "equity": 0,
+    "interestRate": 5.33,
+    "feeEstablishment": 1500,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 25,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 3000000,
+    "equity": 0,
+    "debtRatio": 100,
+    "loanAmount": 3000000,
+    "monthlyPayment": 18169.30314913896,
+    "monthlyNetPayment": 15242.487982366194,
+    "totalInterest": 2435790.9447417003,
+    "totalPrincipal": 2999999.9999999884,
+    "totalFees": 16500,
+    "totalTaxDeduction": 535874.0078431742,
+    "totalAmountPaid": 5452290.944741675,
+    "effectiveAnnualRate": 5.497023502406728,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 13325,
+      "principal": 4794.303149138959,
+      "fee": 1550,
+      "taxDeduction": 2931.5,
+      "payment": 19669.30314913896,
+      "netPayment": 16737.80314913896,
+      "balance": 2995205.696850861
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 13303.705303512574,
+      "principal": 4815.597845626386,
+      "fee": 50,
+      "taxDeduction": 2926.815166772766,
+      "payment": 18169.30314913896,
+      "netPayment": 15242.487982366194,
+      "balance": 2990390.0990052344
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 13282.316023081583,
+      "principal": 4836.987126057376,
+      "fee": 50,
+      "taxDeduction": 2922.109525077948,
+      "payment": 18169.30314913896,
+      "netPayment": 15247.193624061012,
+      "balance": 2985553.111879177
+     },
+     {
+      "index": 300,
+      "year": 2051,
+      "month": 9,
+      "interest": 80.12402062918798,
+      "principal": 18039.17912850977,
+      "fee": 50,
+      "taxDeduction": 17.627284538421357,
+      "payment": 18169.30314913896,
+      "netPayment": 18151.675864600536,
+      "balance": 1.284934114664793e-08
+     }
+    ],
+    "amortizationScheduleLength": 300,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "id": 9,
+   "model": {
+    "loanAmount": 3000000,
+    "monthlyPayment": 18169.30314913896,
+    "monthlyNetPayment": 15242.487982366194,
+    "totalInterest": 2435790.9447416877,
+    "totalFees": 16500,
+    "totalAmountPaid": 5452290.944741688,
+    "totalTaxDeduction": 535874.0078431714,
+    "effectiveAnnualRate": 5.497023502406728
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 300000,
+      "employmentStatus": "Employed"
+     },
+     {
+      "age": 35,
+      "gender": "Female",
+      "grossSalary": 300000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "numberOfPetrolCars": 0,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 600000,
+    "tax": 97467.08600000001,
+    "netSalary": 502532.914,
+    "assets": 0,
+    "sifoExpenses": 241848,
+    "propertyExpenses": 92650.92,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 334498.92,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 168033.994,
+    "liquidity": 1.8766015295688827,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 3000000,
+    "maxLoanAmount": 2310160.5042680213,
+    "adjustedMaxLoanAmount": 2310160.5042680213,
+    "displayedAdjustedMaxLoanAmount": 2310200
+   },
+   "id": 10,
+   "model": {
+    "tax": 97467.2,
+    "netSalary": 502532.8,
+    "sifoExpenses": 241848,
+    "propertyExpenses": 92650.92,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 168033.88,
+    "maxDebtRatioAmount": 3000000,
+    "maxLoanAmount": 2310158.9313598485,
+    "adjustedMaxLoanAmount": 2310158.9313598485,
+    "displayedAdjustedMaxLoanAmount": 2310200
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 2310200,
+    "equity": 0,
+    "interestRate": 5.33,
+    "feeEstablishment": 1500,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 25,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 2310200,
+    "equity": 0,
+    "debtRatio": 100,
+    "loanAmount": 2310200,
+    "monthlyPayment": 14003.071378380277,
+    "monthlyNetPayment": 11749.228578954127,
+    "totalInterest": 1875721.4135140942,
+    "totalPrincipal": 2310199.9999999874,
+    "totalFees": 16500,
+    "totalTaxDeduction": 412658.7109731012,
+    "totalAmountPaid": 4202421.4135140525,
+    "effectiveAnnualRate": 5.507432723971073,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 10261.138333333334,
+      "principal": 3691.9330450469424,
+      "fee": 1550,
+      "taxDeduction": 2257.4504333333334,
+      "payment": 15503.071378380277,
+      "netPayment": 13245.620945046943,
+      "balance": 2306508.066954953
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 10244.739997391584,
+      "principal": 3708.331380988693,
+      "fee": 50,
+      "taxDeduction": 2253.8427994261483,
+      "payment": 14003.071378380277,
+      "netPayment": 11749.228578954127,
+      "balance": 2302799.7355739647
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 10228.268825507694,
+      "principal": 3724.802552872583,
+      "fee": 50,
+      "taxDeduction": 2250.2191416116925,
+      "payment": 14003.071378380277,
+      "netPayment": 11752.852236768584,
+      "balance": 2299074.933021092
+     },
+     {
+      "index": 300,
+      "year": 2051,
+      "month": 9,
+      "interest": 61.70083748587115,
+      "principal": 13891.370540894406,
+      "fee": 50,
+      "taxDeduction": 13.574184246891653,
+      "payment": 14003.071378380277,
+      "netPayment": 13989.497194133384,
+      "balance": 1.4670149539597332e-08
+     }
+    ],
+    "amortizationScheduleLength": 300,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "id": 11,
+   "model": {
+    "loanAmount": 2310200,
+    "monthlyPayment": 14003.071378380277,
+    "monthlyNetPayment": 11749.228578954127,
+    "totalInterest": 1875721.4135140828,
+    "totalFees": 16500,
+    "totalAmountPaid": 4202421.413514083,
+    "totalTaxDeduction": 412658.71097309823,
+    "effectiveAnnualRate": 5.507432723970784
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 300000,
+      "employmentStatus": "Employed"
+     },
+     {
+      "age": 35,
+      "gender": "Female",
+      "grossSalary": 300000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "children": [
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Male",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     }
+    ],
+    "numberOfPetrolCars": 0,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 600000,
+    "tax": 88667.08600000001,
+    "netSalary": 536628.914,
+    "assets": 0,
+    "sifoExpenses": 405624,
+    "propertyExpenses": 98077.92,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 503701.92,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 32926.994000000006,
+    "liquidity": 1.104721630664326,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 3000000,
+    "maxLoanAmount": 446029.7635885656,
+    "adjustedMaxLoanAmount": 446029.7635885656,
+    "displayedAdjustedMaxLoanAmount": 446000
+   },
+   "id": 12,
+   "model": {
+    "tax": 88667.2,
+    "netSalary": 536628.8,
+    "sifoExpenses": 405624,
+    "propertyExpenses": 98077.92,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 32926.88000000005,
+    "maxDebtRatioAmount": 3000000,
+    "maxLoanAmount": 446028.1906803938,
+    "adjustedMaxLoanAmount": 446028.1906803938,
+    "displayedAdjustedMaxLoanAmount": 446000
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 446000,
+    "equity": 0,
+    "interestRate": 5.33,
+    "feeEstablishment": 1500,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 25,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 446000,
+    "equity": 0,
+    "debtRatio": 100,
+    "loanAmount": 446000,
+    "monthlyPayment": 2743.7364015053254,
+    "monthlyNetPayment": 2308.616546711774,
+    "totalInterest": 362120.92045159993,
+    "totalPrincipal": 445999.99999999796,
+    "totalFees": 16500,
+    "totalTaxDeduction": 79666.60249935191,
+    "totalAmountPaid": 824620.9204515934,
+    "effectiveAnnualRate": 5.696486198291173,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 1980.9833333333333,
+      "principal": 712.753068171992,
+      "fee": 1550,
+      "taxDeduction": 435.8163333333333,
+      "payment": 4243.736401505325,
+      "netPayment": 3807.920068171992,
+      "balance": 445287.24693182803
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 1977.8175217888695,
+      "principal": 715.9188797164559,
+      "fee": 50,
+      "taxDeduction": 435.11985479355127,
+      "payment": 2743.7364015053254,
+      "netPayment": 2308.616546711774,
+      "balance": 444571.32805211155
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 1974.6376487647956,
+      "principal": 719.0987527405298,
+      "fee": 50,
+      "taxDeduction": 434.420282728255,
+      "payment": 2743.7364015053254,
+      "netPayment": 2309.31611877707,
+      "balance": 443852.229299371
+     },
+     {
+      "index": 300,
+      "year": 2051,
+      "month": 9,
+      "interest": 11.911771066873676,
+      "principal": 2681.8246304384515,
+      "fee": 50,
+      "taxDeduction": 2.620589634712209,
+      "payment": 2743.7364015053254,
+      "netPayment": 2741.115811870613,
+      "balance": 2.1509549696929753e-09
+     }
+    ],
+    "amortizationScheduleLength": 300,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "id": 13,
+   "model": {
+    "loanAmount": 446000,
+    "monthlyPayment": 2743.7364015053254,
+    "monthlyNetPayment": 2308.616546711774,
+    "totalInterest": 362120.92045159766,
+    "totalFees": 16500,
+    "totalAmountPaid": 824620.9204515977,
+    "totalTaxDeduction": 79666.60249935149,
+    "effectiveAnnualRate": 5.696486198291173
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 300000,
+      "employmentStatus": "Employed"
+     },
+     {
+      "age": 35,
+      "gender": "Female",
+      "grossSalary": 300000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "children": [
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Male",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     }
+    ],
+    "numberOfPetrolCars": 1,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 600000,
+    "tax": 88667.08600000001,
+    "netSalary": 536628.914,
+    "assets": 0,
+    "sifoExpenses": 443724,
+    "propertyExpenses": 98077.92,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 541801.92,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": -5173.006000000052,
+    "liquidity": 0.983547674477775,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 3000000,
+    "maxLoanAmount": 0,
+    "adjustedMaxLoanAmount": 0,
+    "displayedAdjustedMaxLoanAmount": 0
+   },
+   "id": 14,
+   "model": {
+    "tax": 88667.2,
+    "netSalary": 536628.8,
+    "sifoExpenses": 443724,
+    "propertyExpenses": 98077.92,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": -5173.119999999952,
+    "maxDebtRatioAmount": 3000000,
+    "maxLoanAmount": 0,
+    "adjustedMaxLoanAmount": 0,
+    "displayedAdjustedMaxLoanAmount": 0
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 600000,
+      "employmentStatus": "Employed"
+     },
+     {
+      "age": 35,
+      "gender": "Female",
+      "grossSalary": 600000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "children": [
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Male",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     }
+    ],
+    "numberOfPetrolCars": 1,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 1200000,
+    "tax": 291467.086,
+    "netSalary": 933828.914,
+    "assets": 0,
+    "sifoExpenses": 443724,
+    "propertyExpenses": 98077.92,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 541801.92,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 392026.99399999995,
+    "liquidity": 2.2468100208635473,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 5400690.506392361,
+    "adjustedMaxLoanAmount": 5400690.506392361,
+    "displayedAdjustedMaxLoanAmount": 5400700
+   },
+   "id": 15,
+   "model": {
+    "tax": 291467.2,
+    "netSalary": 933828.8,
+    "sifoExpenses": 443724,
+    "propertyExpenses": 98077.92,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 392026.88000000006,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 5400688.933484189,
+    "adjustedMaxLoanAmount": 5400688.933484189,
+    "displayedAdjustedMaxLoanAmount": 5400700
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 5400700,
+    "equity": 0,
+    "interestRate": 5.33,
+    "feeEstablishment": 1500,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 25,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 5400700,
+    "equity": 0,
+    "debtRatio": 100,
+    "loanAmount": 5400700,
+    "monthlyPayment": 32668.97350585159,
+    "monthlyNetPayment": 27400.0232821217,
+    "totalInterest": 4384992.051755496,
+    "totalPrincipal": 5400699.999999982,
+    "totalFees": 16500,
+    "totalTaxDeduction": 964698.2513862092,
+    "totalAmountPaid": 9802192.051755488,
+    "effectiveAnnualRate": 5.481525153122302,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 23988.109166666665,
+      "principal": 8630.864339184925,
+      "fee": 1550,
+      "taxDeduction": 5277.384016666666,
+      "payment": 34168.973505851594,
+      "netPayment": 28891.589489184928,
+      "balance": 5392069.135660815
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 23949.773744226786,
+      "principal": 8669.199761624805,
+      "fee": 50,
+      "taxDeduction": 5268.950223729893,
+      "payment": 32668.97350585159,
+      "netPayment": 27400.0232821217,
+      "balance": 5383399.935899191
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 23911.268048618906,
+      "principal": 8707.705457232685,
+      "fee": 50,
+      "taxDeduction": 5260.478970696159,
+      "payment": 32668.97350585159,
+      "netPayment": 27408.49453515543,
+      "balance": 5374692.230441958
+     },
+     {
+      "index": 300,
+      "year": 2051,
+      "month": 9,
+      "interest": 144.2419327373226,
+      "principal": 32474.73157311427,
+      "fee": 50,
+      "taxDeduction": 31.73322520221097,
+      "payment": 32668.97350585159,
+      "netPayment": 32637.24028064938,
+      "balance": 1.652006176300347e-08
+     }
+    ],
+    "amortizationScheduleLength": 300,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "id": 16,
+   "model": {
+    "loanAmount": 5400700,
+    "monthlyPayment": 32668.97350585159,
+    "monthlyNetPayment": 27400.0232821217,
+    "totalInterest": 4384992.051755477,
+    "totalFees": 16500,
+    "totalAmountPaid": 9802192.051755477,
+    "totalTaxDeduction": 964698.2513862049,
+    "effectiveAnnualRate": 5.481525153122013
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 3000000,
+    "equity": 300000,
+    "interestRate": 5.33,
+    "feeEstablishment": 2900,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 25,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 3000000,
+    "equity": 300000,
+    "debtRatio": 90,
+    "loanAmount": 2700000,
+    "monthlyPayment": 16357.372834225063,
+    "monthlyNetPayment": 13723.239184129574,
+    "totalInterest": 2192211.850267527,
+    "totalPrincipal": 2699999.9999999916,
+    "totalFees": 17900,
+    "totalTaxDeduction": 482286.6070588562,
+    "totalAmountPaid": 4910111.850267532,
+    "effectiveAnnualRate": 5.506441198403711,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 11992.5,
+      "principal": 4314.872834225063,
+      "fee": 2950,
+      "taxDeduction": 2638.35,
+      "payment": 19257.37283422506,
+      "netPayment": 16619.022834225063,
+      "balance": 2695685.127165775
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 11973.334773161316,
+      "principal": 4334.038061063748,
+      "fee": 50,
+      "taxDeduction": 2634.1336500954894,
+      "payment": 16357.372834225063,
+      "netPayment": 13723.239184129574,
+      "balance": 2691351.089104711
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 11954.084420773424,
+      "principal": 4353.288413451639,
+      "fee": 50,
+      "taxDeduction": 2629.898572570153,
+      "payment": 16357.372834225063,
+      "netPayment": 13727.47426165491,
+      "balance": 2686997.8006912596
+     },
+     {
+      "index": 300,
+      "year": 2051,
+      "month": 9,
+      "interest": 72.11161856625331,
+      "principal": 16235.26121565881,
+      "fee": 50,
+      "taxDeduction": 15.864556084575728,
+      "payment": 16357.372834225063,
+      "netPayment": 16341.508278140487,
+      "balance": 7.978087523952127e-09
+     }
+    ],
+    "amortizationScheduleLength": 300,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "id": 17,
+   "model": {
+    "loanAmount": 2700000,
+    "monthlyPayment": 16357.372834225063,
+    "monthlyNetPayment": 13723.239184129574,
+    "totalInterest": 2192211.8502675192,
+    "totalFees": 17900,
+    "totalAmountPaid": 4910111.850267519,
+    "totalTaxDeduction": 482286.60705885425,
+    "effectiveAnnualRate": 5.506441198403711
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 4000000,
+    "equity": 300000,
+    "interestRate": 5.33,
+    "feeEstablishment": 2900,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 25,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 4000000,
+    "equity": 300000,
+    "debtRatio": 92.5,
+    "loanAmount": 3700000,
+    "monthlyPayment": 22397.14055060472,
+    "monthlyNetPayment": 18787.401844918306,
+    "totalInterest": 3004142.165181424,
+    "totalPrincipal": 3699999.999999989,
+    "totalFees": 17900,
+    "totalTaxDeduction": 660911.2763399137,
+    "totalAmountPaid": 6722042.165181437,
+    "effectiveAnnualRate": 5.494469903900279,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 16434.166666666668,
+      "principal": 5912.973883938052,
+      "fee": 2950,
+      "taxDeduction": 3615.516666666667,
+      "payment": 25297.14055060472,
+      "netPayment": 21681.623883938053,
+      "balance": 3694087.026116062
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 16407.90320766551,
+      "principal": 5939.23734293921,
+      "fee": 50,
+      "taxDeduction": 3609.7387056864122,
+      "payment": 22397.14055060472,
+      "netPayment": 18787.401844918306,
+      "balance": 3688147.7887731227
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 16381.523095133953,
+      "principal": 5965.617455470767,
+      "fee": 50,
+      "taxDeduction": 3603.9350809294697,
+      "payment": 22397.14055060472,
+      "netPayment": 18793.20546967525,
+      "balance": 3682182.171317652
+     },
+     {
+      "index": 300,
+      "year": 2051,
+      "month": 9,
+      "interest": 98.81962544263344,
+      "principal": 22248.320925162086,
+      "fee": 50,
+      "taxDeduction": 21.740317597379356,
+      "payment": 22397.14055060472,
+      "netPayment": 22375.40023300734,
+      "balance": 8.669303497299552e-09
+     }
+    ],
+    "amortizationScheduleLength": 300,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "id": 18,
+   "model": {
+    "loanAmount": 3700000,
+    "monthlyPayment": 22397.14055060472,
+    "monthlyNetPayment": 18787.401844918306,
+    "totalInterest": 3004142.165181416,
+    "totalFees": 17900,
+    "totalAmountPaid": 6722042.165181416,
+    "totalTaxDeduction": 660911.2763399115,
+    "effectiveAnnualRate": 5.49446990389999
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 4000000,
+    "equity": 800000,
+    "interestRate": 5.33,
+    "feeEstablishment": 2900,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 25,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 4000000,
+    "equity": 800000,
+    "debtRatio": 80,
+    "loanAmount": 3200000,
+    "monthlyPayment": 19377.256692414892,
+    "monthlyNetPayment": 16255.32051452394,
+    "totalInterest": 2598177.007724482,
+    "totalPrincipal": 3199999.9999999837,
+    "totalFees": 17900,
+    "totalTaxDeduction": 571598.9416993861,
+    "totalAmountPaid": 5816077.007724506,
+    "effectiveAnnualRate": 5.4995201155017215,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 14213.333333333334,
+      "principal": 5113.923359081558,
+      "fee": 2950,
+      "taxDeduction": 3126.9333333333334,
+      "payment": 22277.256692414892,
+      "netPayment": 19150.323359081558,
+      "balance": 3194886.0766409184
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 14190.618990413412,
+      "principal": 5136.637702001481,
+      "fee": 50,
+      "taxDeduction": 3121.9361778909506,
+      "payment": 19377.256692414892,
+      "netPayment": 16255.32051452394,
+      "balance": 3189749.438938917
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 14167.80375795369,
+      "principal": 5159.452934461202,
+      "fee": 50,
+      "taxDeduction": 3116.916826749812,
+      "payment": 19377.256692414892,
+      "netPayment": 16260.33986566508,
+      "balance": 3184589.986004456
+     },
+     {
+      "index": 300,
+      "year": 2051,
+      "month": 9,
+      "interest": 85.46562200448108,
+      "principal": 19241.79107041041,
+      "fee": 50,
+      "taxDeduction": 18.802436840985838,
+      "payment": 19377.256692414892,
+      "netPayment": 19358.454255573906,
+      "balance": 1.6847479855641723e-08
+     }
+    ],
+    "amortizationScheduleLength": 300,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "id": 19,
+   "model": {
+    "loanAmount": 3200000,
+    "monthlyPayment": 19377.256692414892,
+    "monthlyNetPayment": 16255.32051452394,
+    "totalInterest": 2598177.0077244677,
+    "totalFees": 17900,
+    "totalAmountPaid": 5816077.007724468,
+    "totalTaxDeduction": 571598.9416993828,
+    "effectiveAnnualRate": 5.499520115501988
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 4000000,
+    "equity": 1500000,
+    "interestRate": 5.33,
+    "feeEstablishment": 2900,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 25,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 4000000,
+    "equity": 1500000,
+    "debtRatio": 62.5,
+    "loanAmount": 2500000,
+    "monthlyPayment": 15149.419290949132,
+    "monthlyNetPayment": 12710.406651971827,
+    "totalInterest": 2029825.7872847475,
+    "totalPrincipal": 2499999.9999999935,
+    "totalFees": 17900,
+    "totalTaxDeduction": 446561.67320264434,
+    "totalAmountPaid": 4547725.787284749,
+    "effectiveAnnualRate": 5.509984982557081,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 11104.166666666666,
+      "principal": 3995.252624282466,
+      "fee": 2950,
+      "taxDeduction": 2442.9166666666665,
+      "payment": 18049.419290949132,
+      "netPayment": 15606.502624282466,
+      "balance": 2496004.7473757174
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 11086.421086260478,
+      "principal": 4012.9982046886544,
+      "fee": 50,
+      "taxDeduction": 2439.012638977305,
+      "payment": 15149.419290949132,
+      "netPayment": 12710.406651971827,
+      "balance": 2491991.749171029
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 11068.59668590132,
+      "principal": 4030.8226050478115,
+      "fee": 50,
+      "taxDeduction": 2435.0912708982905,
+      "payment": 15149.419290949132,
+      "netPayment": 12714.328020050842,
+      "balance": 2487960.926565981
+     },
+     {
+      "index": 300,
+      "year": 2051,
+      "month": 9,
+      "interest": 66.77001719096693,
+      "principal": 15032.649273758165,
+      "fee": 50,
+      "taxDeduction": 14.689403782012723,
+      "payment": 15149.419290949132,
+      "netPayment": 15134.72988716712,
+      "balance": 5.495166988112032e-09
+     }
+    ],
+    "amortizationScheduleLength": 300,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "id": 20,
+   "model": {
+    "loanAmount": 2500000,
+    "monthlyPayment": 15149.419290949132,
+    "monthlyNetPayment": 12710.406651971827,
+    "totalInterest": 2029825.7872847393,
+    "totalFees": 17900,
+    "totalAmountPaid": 4547725.787284739,
+    "totalTaxDeduction": 446561.67320264265,
+    "effectiveAnnualRate": 5.509984982557081
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 4000000,
+    "equity": 1500000,
+    "interestRate": 4.5,
+    "feeEstablishment": 2900,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 25,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 4000000,
+    "equity": 1500000,
+    "debtRatio": 62.5,
+    "loanAmount": 2500000,
+    "monthlyPayment": 13945.811949049885,
+    "monthlyNetPayment": 11887.041618907851,
+    "totalInterest": 1668743.584714879,
+    "totalPrincipal": 2500000.000000086,
+    "totalFees": 17900,
+    "totalTaxDeduction": 367123.5886372735,
+    "totalAmountPaid": 4186643.584714988,
+    "effectiveAnnualRate": 4.642497539077373,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 9375,
+      "principal": 4520.811949049885,
+      "fee": 2950,
+      "taxDeduction": 2062.5,
+      "payment": 16845.811949049887,
+      "netPayment": 14783.311949049887,
+      "balance": 2495479.18805095
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 9358.046955191063,
+      "principal": 4537.764993858822,
+      "fee": 50,
+      "taxDeduction": 2058.770330142034,
+      "payment": 13945.811949049885,
+      "netPayment": 11887.041618907851,
+      "balance": 2490941.423057091
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 9341.030336464091,
+      "principal": 4554.7816125857935,
+      "fee": 50,
+      "taxDeduction": 2055.0266740221,
+      "payment": 13945.811949049885,
+      "netPayment": 11890.785275027785,
+      "balance": 2486386.641444505
+     },
+     {
+      "index": 300,
+      "year": 2051,
+      "month": 9,
+      "interest": 51.91461500235759,
+      "principal": 13843.897334047528,
+      "fee": 50,
+      "taxDeduction": 11.42121530051867,
+      "payment": 13945.811949049885,
+      "netPayment": 13934.390733749366,
+      "balance": 0
+     }
+    ],
+    "amortizationScheduleLength": 300,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "id": 21,
+   "model": {
+    "loanAmount": 2500000,
+    "monthlyPayment": 13945.811949049885,
+    "monthlyNetPayment": 11887.041618907851,
+    "totalInterest": 1668743.5847149654,
+    "totalFees": 17900,
+    "totalAmountPaid": 4186643.5847149654,
+    "totalTaxDeduction": 367123.5886372924,
+    "effectiveAnnualRate": 4.642497539077661
+   }
+  },
+  {
+   "source": "main-ui",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 4000000,
+    "equity": 1500000,
+    "interestRate": 4.5,
+    "feeEstablishment": 2900,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 30,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 4000000,
+    "equity": 1500000,
+    "debtRatio": 62.5,
+    "loanAmount": 2500000,
+    "monthlyPayment": 12717.132745647144,
+    "monthlyNetPayment": 10657.348755162304,
+    "totalInterest": 2060167.7884328794,
+    "totalPrincipal": 2500000.0000000936,
+    "totalFees": 20900,
+    "totalTaxDeduction": 453236.9134552334,
+    "totalAmountPaid": 4581067.788432991,
+    "effectiveAnnualRate": 4.639330092889171,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 9375,
+      "principal": 3292.1327456471445,
+      "fee": 2950,
+      "taxDeduction": 2062.5,
+      "payment": 15617.132745647144,
+      "netPayment": 13554.632745647144,
+      "balance": 2496707.8672543527
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 9362.654502203823,
+      "principal": 3304.478243443322,
+      "fee": 50,
+      "taxDeduction": 2059.783990484841,
+      "payment": 12717.132745647144,
+      "netPayment": 10657.348755162304,
+      "balance": 2493403.3890109095
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 9350.26270879091,
+      "principal": 3316.870036856235,
+      "fee": 50,
+      "taxDeduction": 2057.0577959340003,
+      "payment": 12717.132745647144,
+      "netPayment": 10660.074949713144,
+      "balance": 2490086.518974053
+     },
+     {
+      "index": 360,
+      "year": 2056,
+      "month": 9,
+      "interest": 47.32428173930832,
+      "principal": 12619.808463907837,
+      "fee": 50,
+      "taxDeduction": 10.41134198264783,
+      "payment": 12717.132745647144,
+      "netPayment": 12706.721403664496,
+      "balance": 0
+     }
+    ],
+    "amortizationScheduleLength": 360,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "id": 22,
+   "model": {
+    "loanAmount": 2500000,
+    "monthlyPayment": 12717.132745647144,
+    "monthlyNetPayment": 10657.348755162304,
+    "totalInterest": 2060167.7884329716,
+    "totalFees": 20900,
+    "totalAmountPaid": 4581067.788432972,
+    "totalTaxDeduction": 453236.91345525376,
+    "effectiveAnnualRate": 4.639330093208871
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 1200000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "children": [
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     }
+    ],
+    "numberOfPetrolCars": 0,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 1200000,
+    "tax": 406176.241,
+    "netSalary": 806471.7590000001,
+    "assets": 0,
+    "sifoExpenses": 221232,
+    "propertyExpenses": 84086.88,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 305318.88,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 501152.8790000001,
+    "liquidity": 4.187752073633057,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 6906348.368918738,
+    "adjustedMaxLoanAmount": 6000000,
+    "displayedAdjustedMaxLoanAmount": 6000000
+   },
+   "ui": {
+    "borrowers": 1,
+    "children": 1,
+    "cars": 0,
+    "income": 1200000,
+    "debt": 0
+   },
+   "model": {
+    "tax": 406176.6,
+    "netSalary": 806471.4,
+    "sifoExpenses": 221232,
+    "propertyExpenses": 84086.88,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 501152.52,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 6906343.415637738,
+    "adjustedMaxLoanAmount": 6000000,
+    "displayedAdjustedMaxLoanAmount": 6000000
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 1200000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "children": [
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Male",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     }
+    ],
+    "numberOfPetrolCars": 0,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 1200000,
+    "tax": 402876.241,
+    "netSalary": 822419.7590000001,
+    "assets": 0,
+    "sifoExpenses": 302340,
+    "propertyExpenses": 84086.88,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 386426.88,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 435992.8790000001,
+    "liquidity": 2.99466044011346,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 6007307.171477649,
+    "adjustedMaxLoanAmount": 6000000,
+    "displayedAdjustedMaxLoanAmount": 6000000
+   },
+   "ui": {
+    "borrowers": 1,
+    "children": 2,
+    "cars": 0,
+    "income": 1200000,
+    "debt": 0
+   },
+   "model": {
+    "tax": 402876.6,
+    "netSalary": 822419.4,
+    "sifoExpenses": 302340,
+    "propertyExpenses": 84086.88,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 435992.52,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 6007302.218196649,
+    "adjustedMaxLoanAmount": 6000000,
+    "displayedAdjustedMaxLoanAmount": 6000000
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 600000,
+      "employmentStatus": "Employed"
+     },
+     {
+      "age": 35,
+      "gender": "Female",
+      "grossSalary": 600000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "children": [
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     }
+    ],
+    "numberOfPetrolCars": 0,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 1200000,
+    "tax": 294767.086,
+    "netSalary": 917880.914,
+    "assets": 0,
+    "sifoExpenses": 322956,
+    "propertyExpenses": 98077.92,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 421033.92,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 496846.994,
+    "liquidity": 2.9633875268715224,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 6846938.178519051,
+    "adjustedMaxLoanAmount": 6000000,
+    "displayedAdjustedMaxLoanAmount": 6000000
+   },
+   "ui": {
+    "borrowers": 2,
+    "children": 1,
+    "cars": 0,
+    "income": 1200000,
+    "debt": 0
+   },
+   "model": {
+    "tax": 294767.2,
+    "netSalary": 917880.8,
+    "sifoExpenses": 322956,
+    "propertyExpenses": 98077.92,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 496846.88000000006,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 6846936.605610878,
+    "adjustedMaxLoanAmount": 6000000,
+    "displayedAdjustedMaxLoanAmount": 6000000
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 600000,
+      "employmentStatus": "Employed"
+     },
+     {
+      "age": 35,
+      "gender": "Female",
+      "grossSalary": 600000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "children": [
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Male",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     }
+    ],
+    "numberOfPetrolCars": 0,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 1200000,
+    "tax": 288167.086,
+    "netSalary": 949776.914,
+    "assets": 0,
+    "sifoExpenses": 485292,
+    "propertyExpenses": 98077.92,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 583369.92,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 366406.99399999995,
+    "liquidity": 1.9750260622897773,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 5047200.090823903,
+    "adjustedMaxLoanAmount": 5047200.090823903,
+    "displayedAdjustedMaxLoanAmount": 5047200
+   },
+   "ui": {
+    "borrowers": 2,
+    "children": 3,
+    "cars": 0,
+    "income": 1200000,
+    "debt": 0
+   },
+   "model": {
+    "tax": 288167.2,
+    "netSalary": 949776.8,
+    "sifoExpenses": 485292,
+    "propertyExpenses": 98077.92,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 366406.88000000006,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 5047198.517915731,
+    "adjustedMaxLoanAmount": 5047198.517915731,
+    "displayedAdjustedMaxLoanAmount": 5047200
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 600000,
+      "employmentStatus": "Employed"
+     },
+     {
+      "age": 35,
+      "gender": "Female",
+      "grossSalary": 600000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "children": [
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Male",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Male",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     }
+    ],
+    "numberOfPetrolCars": 0,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 1200000,
+    "tax": 284867.086,
+    "netSalary": 965724.914,
+    "assets": 0,
+    "sifoExpenses": 565800,
+    "propertyExpenses": 98077.92,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 663877.92,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 301846.99399999995,
+    "liquidity": 1.6904725821209625,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 4156437.3574476484,
+    "adjustedMaxLoanAmount": 4156437.3574476484,
+    "displayedAdjustedMaxLoanAmount": 4156400
+   },
+   "ui": {
+    "borrowers": 2,
+    "children": 4,
+    "cars": 0,
+    "income": 1200000,
+    "debt": 0
+   },
+   "model": {
+    "tax": 284867.2,
+    "netSalary": 965724.8,
+    "sifoExpenses": 565800,
+    "propertyExpenses": 98077.92,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 301846.88000000006,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 4156435.784539477,
+    "adjustedMaxLoanAmount": 4156435.784539477,
+    "displayedAdjustedMaxLoanAmount": 4156400
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 600000,
+      "employmentStatus": "Employed"
+     },
+     {
+      "age": 35,
+      "gender": "Female",
+      "grossSalary": 600000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "children": [
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Male",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Male",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     }
+    ],
+    "numberOfPetrolCars": 0,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 1200000,
+    "tax": 281567.086,
+    "netSalary": 981672.914,
+    "assets": 0,
+    "sifoExpenses": 644988,
+    "propertyExpenses": 98077.92,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 743065.92,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 238606.99399999995,
+    "liquidity": 1.478623054271776,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 3283887.2450140305,
+    "adjustedMaxLoanAmount": 3283887.2450140305,
+    "displayedAdjustedMaxLoanAmount": 3283900
+   },
+   "ui": {
+    "borrowers": 2,
+    "children": 5,
+    "cars": 0,
+    "income": 1200000,
+    "debt": 0
+   },
+   "model": {
+    "tax": 281567.2,
+    "netSalary": 981672.8,
+    "sifoExpenses": 644988,
+    "propertyExpenses": 98077.92,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 238606.88000000006,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 3283885.6721058595,
+    "adjustedMaxLoanAmount": 3283885.6721058595,
+    "displayedAdjustedMaxLoanAmount": 3283900
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 1200000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "numberOfPetrolCars": 1,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 1200000,
+    "tax": 411676.241,
+    "netSalary": 788323.7590000001,
+    "assets": 0,
+    "sifoExpenses": 181584,
+    "propertyExpenses": 81183.95999999999,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 262767.95999999996,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 525555.7990000001,
+    "liquidity": 6.483450179458288,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 7243046.196080481,
+    "adjustedMaxLoanAmount": 6000000,
+    "displayedAdjustedMaxLoanAmount": 6000000
+   },
+   "ui": {
+    "borrowers": 1,
+    "children": 0,
+    "cars": 1,
+    "income": 1200000,
+    "debt": 0
+   },
+   "model": {
+    "tax": 411676.6,
+    "netSalary": 788323.4,
+    "sifoExpenses": 181584,
+    "propertyExpenses": 81183.96,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 525555.4400000001,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 7243041.242799481,
+    "adjustedMaxLoanAmount": 6000000,
+    "displayedAdjustedMaxLoanAmount": 6000000
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 1200000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "numberOfPetrolCars": 2,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 1200000,
+    "tax": 411676.241,
+    "netSalary": 788323.7590000001,
+    "assets": 0,
+    "sifoExpenses": 201084,
+    "propertyExpenses": 81183.95999999999,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 282267.95999999996,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 506055.7990000001,
+    "liquidity": 6.279994564083303,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 6973996.113973341,
+    "adjustedMaxLoanAmount": 6000000,
+    "displayedAdjustedMaxLoanAmount": 6000000
+   },
+   "ui": {
+    "borrowers": 1,
+    "children": 0,
+    "cars": 2,
+    "income": 1200000,
+    "debt": 0
+   },
+   "model": {
+    "tax": 411676.6,
+    "netSalary": 788323.4,
+    "sifoExpenses": 201084,
+    "propertyExpenses": 81183.96,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 506055.44,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 6973991.16069234,
+    "adjustedMaxLoanAmount": 6000000,
+    "displayedAdjustedMaxLoanAmount": 6000000
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 600000,
+      "employmentStatus": "Employed"
+     },
+     {
+      "age": 35,
+      "gender": "Female",
+      "grossSalary": 600000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "numberOfPetrolCars": 2,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 1200000,
+    "tax": 300267.086,
+    "netSalary": 899732.914,
+    "assets": 0,
+    "sifoExpenses": 299448,
+    "propertyExpenses": 92650.92,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 392098.92,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 507633.994,
+    "liquidity": 3.6482304265264385,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 6995771.164964677,
+    "adjustedMaxLoanAmount": 6000000,
+    "displayedAdjustedMaxLoanAmount": 6000000
+   },
+   "ui": {
+    "borrowers": 2,
+    "children": 0,
+    "cars": 2,
+    "income": 1200000,
+    "debt": 0
+   },
+   "model": {
+    "tax": 300267.2,
+    "netSalary": 899732.8,
+    "sifoExpenses": 299448,
+    "propertyExpenses": 92650.92,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 507633.88000000006,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 6995769.592056504,
+    "adjustedMaxLoanAmount": 6000000,
+    "displayedAdjustedMaxLoanAmount": 6000000
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 1500000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "numberOfPetrolCars": 0,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 500000,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 1500000,
+    "tax": 546522.4346664544,
+    "netSalary": 953477.5653335456,
+    "assets": 0,
+    "sifoExpenses": 143484,
+    "propertyExpenses": 81183.95999999999,
+    "existingMortgageExpenses": 36838.60629827792,
+    "totalExpenses": 261506.5662982779,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 691970.9990352676,
+    "liquidity": 8.219763355403234,
+    "loanToValueRatio": 100,
+    "debtRatio": 0.3333333333333333,
+    "maxDebtRatioAmount": 7500000,
+    "maxLoanAmount": 9539149.951637654,
+    "adjustedMaxLoanAmount": 7000000,
+    "displayedAdjustedMaxLoanAmount": 7000000
+   },
+   "ui": {
+    "borrowers": 1,
+    "children": 0,
+    "cars": 0,
+    "income": 1500000,
+    "debt": 500000
+   },
+   "model": {
+    "tax": 546522.9696664545,
+    "netSalary": 953477.0303335455,
+    "sifoExpenses": 143484,
+    "propertyExpenses": 81183.96,
+    "existingMortgageExpenses": 36838.60629827792,
+    "disposableSalary": 691970.4640352676,
+    "maxDebtRatioAmount": 7500000,
+    "maxLoanAmount": 9539142.570007196,
+    "adjustedMaxLoanAmount": 7000000,
+    "displayedAdjustedMaxLoanAmount": 7000000
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 200000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "numberOfPetrolCars": 0,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 200000,
+    "tax": 19945,
+    "netSalary": 180055,
+    "assets": 0,
+    "sifoExpenses": 143484,
+    "propertyExpenses": 81183.95999999999,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 224667.96,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": -44612.95999999999,
+    "liquidity": 0.5345252702307918,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 1000000,
+    "maxLoanAmount": 0,
+    "adjustedMaxLoanAmount": 0,
+    "displayedAdjustedMaxLoanAmount": 0
+   },
+   "ui": {
+    "borrowers": 1,
+    "children": 0,
+    "cars": 0,
+    "income": 200000,
+    "debt": 0
+   },
+   "model": {
+    "tax": 19945.0,
+    "netSalary": 180055.0,
+    "sifoExpenses": 143484,
+    "propertyExpenses": 81183.96,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": -44612.96000000001,
+    "maxDebtRatioAmount": 1000000,
+    "maxLoanAmount": 0,
+    "adjustedMaxLoanAmount": 0,
+    "displayedAdjustedMaxLoanAmount": 0
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 1000000,
+      "employmentStatus": "Employed"
+     },
+     {
+      "age": 35,
+      "gender": "Female",
+      "grossSalary": 1000000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "numberOfPetrolCars": 0,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 300000,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 2000000,
+    "tax": 634240.3037998726,
+    "netSalary": 1365759.6962001272,
+    "assets": 0,
+    "sifoExpenses": 241848,
+    "propertyExpenses": 92650.92,
+    "existingMortgageExpenses": 22343.16377896675,
+    "totalExpenses": 356842.08377896674,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 1008917.6124211606,
+    "liquidity": 6.26333214609762,
+    "loanToValueRatio": 100,
+    "debtRatio": 0.15,
+    "maxDebtRatioAmount": 10000000,
+    "maxLoanAmount": 13912201.867281474,
+    "adjustedMaxLoanAmount": 9700000,
+    "displayedAdjustedMaxLoanAmount": 9700000
+   },
+   "ui": {
+    "borrowers": 2,
+    "children": 0,
+    "cars": 0,
+    "income": 2000000,
+    "debt": 300000
+   },
+   "model": {
+    "tax": 634241.0217998726,
+    "netSalary": 1365758.9782001274,
+    "sifoExpenses": 241848,
+    "propertyExpenses": 92650.92,
+    "existingMortgageExpenses": 22343.16377896675,
+    "disposableSalary": 1008916.8944211606,
+    "maxDebtRatioAmount": 10000000,
+    "maxLoanAmount": 13912191.960719476,
+    "adjustedMaxLoanAmount": 9700000,
+    "displayedAdjustedMaxLoanAmount": 9700000
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 1500000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "children": [
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Male",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Male",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     }
+    ],
+    "numberOfPetrolCars": 2,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 1500000,
+    "tax": 533676.065,
+    "netSalary": 1029563.935,
+    "assets": 0,
+    "sifoExpenses": 602784,
+    "propertyExpenses": 84086.88,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 686870.88,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 342693.05500000005,
+    "liquidity": 1.8510222780145227,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 7500000,
+    "maxLoanAmount": 4720008.437745253,
+    "adjustedMaxLoanAmount": 4720008.437745253,
+    "displayedAdjustedMaxLoanAmount": 4720000
+   },
+   "ui": {
+    "borrowers": 1,
+    "children": 5,
+    "cars": 2,
+    "income": 1500000,
+    "debt": 0
+   },
+   "model": {
+    "tax": 533676.6,
+    "netSalary": 1029563.4,
+    "sifoExpenses": 602784,
+    "propertyExpenses": 84086.88,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 342692.52,
+    "maxDebtRatioAmount": 7500000,
+    "maxLoanAmount": 4720001.056114794,
+    "adjustedMaxLoanAmount": 4720001.056114794,
+    "displayedAdjustedMaxLoanAmount": 4720000
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 600000,
+      "employmentStatus": "Employed"
+     },
+     {
+      "age": 35,
+      "gender": "Female",
+      "grossSalary": 600000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "children": [
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Male",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     }
+    ],
+    "numberOfPetrolCars": 2,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 1200000,
+    "tax": 291467.086,
+    "netSalary": 933828.914,
+    "assets": 0,
+    "sifoExpenses": 463224,
+    "propertyExpenses": 98077.92,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 561301.92,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 372526.99399999995,
+    "liquidity": 2.1847918543113756,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 5131640.424285221,
+    "adjustedMaxLoanAmount": 5131640.424285221,
+    "displayedAdjustedMaxLoanAmount": 5131600
+   },
+   "ui": {
+    "borrowers": 2,
+    "children": 2,
+    "cars": 2,
+    "income": 1200000,
+    "debt": 0
+   },
+   "model": {
+    "tax": 291467.2,
+    "netSalary": 933828.8,
+    "sifoExpenses": 463224,
+    "propertyExpenses": 98077.92,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 372526.88000000006,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 5131638.851377049,
+    "adjustedMaxLoanAmount": 5131638.851377049,
+    "displayedAdjustedMaxLoanAmount": 5131600
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 1000000,
+    "equity": 0,
+    "interestRate": 5.33,
+    "feeEstablishment": 2900,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 1,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 1000000,
+    "equity": 0,
+    "debtRatio": 100,
+    "loanAmount": 1000000,
+    "monthlyPayment": 85808.78320246043,
+    "monthlyNetPayment": 84911.076911502,
+    "totalInterest": 29105.398429527333,
+    "totalPrincipal": 999999.9999999979,
+    "totalFees": 3500,
+    "totalTaxDeduction": 6403.187654496013,
+    "totalAmountPaid": 1032605.398429525,
+    "effectiveAnnualRate": 6.146365752340466,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 4441.666666666667,
+      "principal": 81317.11653579376,
+      "fee": 2950,
+      "taxDeduction": 977.1666666666667,
+      "payment": 88708.78320246043,
+      "netPayment": 87731.61653579376,
+      "balance": 918682.8834642062
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 4080.4831407201827,
+      "principal": 81678.30006174024,
+      "fee": 50,
+      "taxDeduction": 897.7062909584403,
+      "payment": 85808.78320246043,
+      "netPayment": 84911.076911502,
+      "balance": 837004.583402466
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 3717.695357945953,
+      "principal": 82041.08784451448,
+      "fee": 50,
+      "taxDeduction": 817.8929787481097,
+      "payment": 85808.78320246043,
+      "netPayment": 84990.89022371233,
+      "balance": 754963.4955579515
+     },
+     {
+      "index": 12,
+      "year": 2027,
+      "month": 9,
+      "interest": 379.2275264609076,
+      "principal": 85379.55567599952,
+      "fee": 50,
+      "taxDeduction": 83.43005582139968,
+      "payment": 85808.78320246043,
+      "netPayment": 85725.35314663903,
+      "balance": 2.1827872842550278e-09
+     }
+    ],
+    "amortizationScheduleLength": 12,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "label": "1y",
+   "model": {
+    "loanAmount": 1000000,
+    "monthlyPayment": 85808.78320246043,
+    "monthlyNetPayment": 84911.076911502,
+    "totalInterest": 29105.398429525085,
+    "totalFees": 3500,
+    "totalAmountPaid": 1032605.3984295251,
+    "totalTaxDeduction": 6403.1876544955185,
+    "effectiveAnnualRate": 6.1463657523641135
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 1000000,
+    "equity": 0,
+    "interestRate": 5.33,
+    "feeEstablishment": 2900,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 5,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 1000000,
+    "equity": 0,
+    "debtRatio": 100,
+    "loanAmount": 1000000,
+    "monthlyPayment": 19072.794347841333,
+    "monthlyNetPayment": 18109.87587310712,
+    "totalInterest": 141367.66087048216,
+    "totalPrincipal": 999999.9999999973,
+    "totalFees": 5900,
+    "totalTaxDeduction": 31100.885391506104,
+    "totalAmountPaid": 1147267.660870479,
+    "effectiveAnnualRate": 5.7019426612484825,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 4441.666666666667,
+      "principal": 14581.127681174665,
+      "fee": 2950,
+      "taxDeduction": 977.1666666666667,
+      "payment": 21972.794347841333,
+      "netPayment": 20995.627681174665,
+      "balance": 985418.8723188253
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 4376.902157882782,
+      "principal": 14645.892189958551,
+      "fee": 50,
+      "taxDeduction": 962.9184747342122,
+      "payment": 19072.794347841333,
+      "netPayment": 18109.87587310712,
+      "balance": 970772.9801288667
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 4311.84998673905,
+      "principal": 14710.944361102283,
+      "fee": 50,
+      "taxDeduction": 948.6069970825911,
+      "payment": 19072.794347841333,
+      "netPayment": 18124.18735075874,
+      "balance": 956062.0357677644
+     },
+     {
+      "index": 60,
+      "year": 2031,
+      "month": 9,
+      "interest": 84.11928175188974,
+      "principal": 18938.675066089443,
+      "fee": 50,
+      "taxDeduction": 18.506241985415745,
+      "payment": 19072.794347841333,
+      "netPayment": 19054.288105855918,
+      "balance": 2.055458026006818e-09
+     }
+    ],
+    "amortizationScheduleLength": 60,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "label": "5y",
+   "model": {
+    "loanAmount": 1000000,
+    "monthlyPayment": 19072.794347841333,
+    "monthlyNetPayment": 18109.87587310712,
+    "totalInterest": 141367.6608704799,
+    "totalFees": 5900,
+    "totalAmountPaid": 1147267.66087048,
+    "totalTaxDeduction": 31100.885391505573,
+    "effectiveAnnualRate": 5.701942661248771
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 500000,
+    "equity": 0,
+    "interestRate": 5.33,
+    "feeEstablishment": 2900,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 10,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 500000,
+    "equity": 0,
+    "debtRatio": 100,
+    "loanAmount": 500000,
+    "monthlyPayment": 5434.292709758743,
+    "monthlyNetPayment": 4948.800603479406,
+    "totalInterest": 146115.12517105046,
+    "totalPrincipal": 499999.9999999984,
+    "totalFees": 8900,
+    "totalTaxDeduction": 32145.32753763109,
+    "totalAmountPaid": 655015.1251710487,
+    "effectiveAnnualRate": 5.808341363078795,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 2220.8333333333335,
+      "principal": 3163.459376425409,
+      "fee": 2950,
+      "taxDeduction": 488.58333333333337,
+      "payment": 8334.292709758742,
+      "netPayment": 7845.709376425409,
+      "balance": 496836.5406235746
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 2206.7823012697104,
+      "principal": 3177.510408489032,
+      "fee": 50,
+      "taxDeduction": 485.49210627933627,
+      "payment": 5434.292709758743,
+      "netPayment": 4948.800603479406,
+      "balance": 493659.03021508554
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 2192.6688592053383,
+      "principal": 3191.6238505534043,
+      "fee": 50,
+      "taxDeduction": 482.38714902517444,
+      "payment": 5434.292709758743,
+      "netPayment": 4951.905560733569,
+      "balance": 490467.40636453213
+     },
+     {
+      "index": 120,
+      "year": 2036,
+      "month": 9,
+      "interest": 23.809479680270652,
+      "principal": 5360.483230078472,
+      "fee": 50,
+      "taxDeduction": 5.238085529659544,
+      "payment": 5434.292709758743,
+      "netPayment": 5429.054624229083,
+      "balance": 1.2241798685863614e-09
+     }
+    ],
+    "amortizationScheduleLength": 120,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "label": "10y-500k",
+   "model": {
+    "loanAmount": 500000,
+    "monthlyPayment": 5434.292709758743,
+    "monthlyNetPayment": 4948.800603479406,
+    "totalInterest": 146115.12517104915,
+    "totalFees": 8900,
+    "totalAmountPaid": 655015.1251710491,
+    "totalTaxDeduction": 32145.327537630812,
+    "effectiveAnnualRate": 5.808341363078795
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 6000000,
+    "equity": 0,
+    "interestRate": 5.33,
+    "feeEstablishment": 2900,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 15,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 6000000,
+    "equity": 0,
+    "debtRatio": 100,
+    "loanAmount": 6000000,
+    "monthlyPayment": 48535.42112621793,
+    "monthlyNetPayment": 42693.7579718951,
+    "totalInterest": 2727375.802719251,
+    "totalPrincipal": 5999999.999999982,
+    "totalFees": 11900,
+    "totalTaxDeduction": 600022.6765982347,
+    "totalAmountPaid": 8739275.80271921,
+    "effectiveAnnualRate": 5.48649184273462,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 26650,
+      "principal": 21835.42112621793,
+      "fee": 2950,
+      "taxDeduction": 5863,
+      "payment": 51435.42112621793,
+      "netPayment": 45572.42112621793,
+      "balance": 5978164.578873782
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 26553.01433783105,
+      "principal": 21932.40678838688,
+      "fee": 50,
+      "taxDeduction": 5841.663154322831,
+      "payment": 48535.42112621793,
+      "netPayment": 42693.7579718951,
+      "balance": 5956232.172085395
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 26455.597897679298,
+      "principal": 22029.823228538633,
+      "fee": 50,
+      "taxDeduction": 5820.231537489445,
+      "payment": 48535.42112621793,
+      "netPayment": 42715.189588728485,
+      "balance": 5934202.348856856
+     },
+     {
+      "index": 180,
+      "year": 2041,
+      "month": 9,
+      "interest": 214.40376876280055,
+      "principal": 48271.01735745513,
+      "fee": 50,
+      "taxDeduction": 47.168829127816124,
+      "payment": 48535.42112621793,
+      "netPayment": 48488.25229709011,
+      "balance": 2.3421307560056448e-08
+     }
+    ],
+    "amortizationScheduleLength": 180,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "label": "15y-6M",
+   "model": {
+    "loanAmount": 6000000,
+    "monthlyPayment": 48535.42112621793,
+    "monthlyNetPayment": 42693.7579718951,
+    "totalInterest": 2727375.802719228,
+    "totalFees": 11900,
+    "totalAmountPaid": 8739275.802719228,
+    "totalTaxDeduction": 600022.6765982301,
+    "effectiveAnnualRate": 5.48649184273462
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 2000000,
+    "equity": 0,
+    "interestRate": 0.01,
+    "feeEstablishment": 2900,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 30,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 2000000,
+    "equity": 0,
+    "debtRatio": 100,
+    "loanAmount": 2000000,
+    "monthlyPayment": 5613.916203617126,
+    "monthlyNetPayment": 5610.259706907943,
+    "totalInterest": 3009.8333153039885,
+    "totalPrincipal": 1999999.9999868607,
+    "totalFees": 20900,
+    "totalTaxDeduction": 662.1633293668772,
+    "totalAmountPaid": 2023909.8333021628,
+    "effectiveAnnualRate": 0.0793088702786493,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 16.666666666666668,
+      "principal": 5547.249536950459,
+      "fee": 2950,
+      "taxDeduction": 3.666666666666667,
+      "payment": 8513.916203617126,
+      "netPayment": 8510.24953695046,
+      "balance": 1994452.7504630496
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 16.62043958719208,
+      "principal": 5547.295764029934,
+      "fee": 50,
+      "taxDeduction": 3.656496709182258,
+      "payment": 5613.916203617126,
+      "netPayment": 5610.259706907943,
+      "balance": 1988905.4546990197
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 16.574212122491833,
+      "principal": 5547.3419914946335,
+      "fee": 50,
+      "taxDeduction": 3.646326666948203,
+      "payment": 5613.916203617126,
+      "netPayment": 5610.269876950178,
+      "balance": 1983358.112707525
+     },
+     {
+      "index": 360,
+      "year": 2056,
+      "month": 9,
+      "interest": 0.04636558209310455,
+      "principal": 5563.869838035032,
+      "fee": 50,
+      "taxDeduction": 0.010200428060483,
+      "payment": 5613.916203617126,
+      "netPayment": 5613.906003189065,
+      "balance": 1.3137512723915279e-05
+     }
+    ],
+    "amortizationScheduleLength": 360,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "label": "rate0.01-30y",
+   "model": {
+    "loanAmount": 2000000,
+    "monthlyPayment": 5613.916203617126,
+    "monthlyNetPayment": 5610.259706907943,
+    "totalInterest": 3009.833302165149,
+    "totalFees": 20900,
+    "totalAmountPaid": 2023909.8333021651,
+    "totalTaxDeduction": 662.1633264763327,
+    "effectiveAnnualRate": 0.07930887027918221
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 2000000,
+    "equity": 0,
+    "interestRate": 10,
+    "feeEstablishment": 2900,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 20,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 2000000,
+    "equity": 0,
+    "debtRatio": 100,
+    "loanAmount": 2000000,
+    "monthlyPayment": 19350.43290148018,
+    "monthlyNetPayment": 15688.594806244006,
+    "totalInterest": 2632103.8963552304,
+    "totalPrincipal": 2000000.000000015,
+    "totalFees": 14900,
+    "totalTaxDeduction": 579062.8571981504,
+    "totalAmountPaid": 4647003.896355255,
+    "effectiveAnnualRate": 10.535649308749706,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 16666.666666666668,
+      "principal": 2633.7662348135127,
+      "fee": 2950,
+      "taxDeduction": 3666.666666666667,
+      "payment": 22250.43290148018,
+      "netPayment": 18583.766234813513,
+      "balance": 1997366.2337651865
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 16644.718614709887,
+      "principal": 2655.7142867702933,
+      "fee": 50,
+      "taxDeduction": 3661.8380952361754,
+      "payment": 19350.43290148018,
+      "netPayment": 15688.594806244006,
+      "balance": 1994710.5194784163
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 16622.587662320137,
+      "principal": 2677.845239160044,
+      "fee": 50,
+      "taxDeduction": 3656.96928571043,
+      "payment": 19350.43290148018,
+      "netPayment": 15693.46361576975,
+      "balance": 1992032.6742392562
+     },
+     {
+      "index": 240,
+      "year": 2046,
+      "month": 9,
+      "interest": 159.50770992948205,
+      "principal": 19140.925191550697,
+      "fee": 50,
+      "taxDeduction": 35.091696184486054,
+      "payment": 19350.43290148018,
+      "netPayment": 19315.341205295696,
+      "balance": 0
+     }
+    ],
+    "amortizationScheduleLength": 240,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "label": "rate10-20y",
+   "model": {
+    "loanAmount": 2000000,
+    "monthlyPayment": 19350.43290148018,
+    "monthlyNetPayment": 15688.594806244006,
+    "totalInterest": 2632103.8963552434,
+    "totalFees": 14900,
+    "totalAmountPaid": 4647003.896355243,
+    "totalTaxDeduction": 579062.8571981535,
+    "effectiveAnnualRate": 10.535649308749395
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 2000000,
+    "equity": 0,
+    "interestRate": 5.33,
+    "feeEstablishment": 0,
+    "feeMonthly": 0,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 25,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 2000000,
+    "equity": 0,
+    "debtRatio": 100,
+    "loanAmount": 2000000,
+    "monthlyPayment": 12079.535432759307,
+    "monthlyNetPayment": 10128.325321577462,
+    "totalInterest": 1623860.6298278002,
+    "totalPrincipal": 1999999.9999999923,
+    "totalFees": 0,
+    "totalTaxDeduction": 357249.3385621162,
+    "totalAmountPaid": 3623860.629827772,
+    "effectiveAnnualRate": 5.462154655608775,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 8883.333333333334,
+      "principal": 3196.202099425973,
+      "fee": 0,
+      "taxDeduction": 1954.3333333333335,
+      "payment": 12079.535432759307,
+      "netPayment": 10125.202099425973,
+      "balance": 1996803.797900574
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 8869.136869008384,
+      "principal": 3210.398563750923,
+      "fee": 0,
+      "taxDeduction": 1951.2101111818445,
+      "payment": 12079.535432759307,
+      "netPayment": 10128.325321577462,
+      "balance": 1993593.399336823
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 8854.877348721056,
+      "principal": 3224.6580840382503,
+      "fee": 0,
+      "taxDeduction": 1948.0730167186325,
+      "payment": 12079.535432759307,
+      "netPayment": 10131.462416040675,
+      "balance": 1990368.7412527849
+     },
+     {
+      "index": 300,
+      "year": 2051,
+      "month": 9,
+      "interest": 53.416013752787016,
+      "principal": 12026.11941900652,
+      "fee": 0,
+      "taxDeduction": 11.751523025613144,
+      "payment": 12079.535432759307,
+      "netPayment": 12067.783909733693,
+      "balance": 7.443304639309645e-09
+     }
+    ],
+    "amortizationScheduleLength": 300,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "label": "nofees",
+   "model": {
+    "loanAmount": 2000000,
+    "monthlyPayment": 12079.535432759307,
+    "monthlyNetPayment": 10128.325321577462,
+    "totalInterest": 1623860.6298277918,
+    "totalFees": 0,
+    "totalAmountPaid": 3623860.629827792,
+    "totalTaxDeduction": 357249.3385621142,
+    "effectiveAnnualRate": 5.462154655608775
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "annuity-loan",
+   "request": {
+    "loanRaisingYear": 2026,
+    "loanRaisingMonth": 10,
+    "purchasePrice": 10000,
+    "equity": 0,
+    "interestRate": 5.33,
+    "feeEstablishment": 2900,
+    "feeMonthly": 50,
+    "taxDeductionRate": 0.22,
+    "loanTermYears": 25,
+    "interestOnlyYears": 0
+   },
+   "response": {
+    "purchasePrice": 10000,
+    "equity": 0,
+    "debtRatio": 100,
+    "loanAmount": 10000,
+    "monthlyPayment": 110.39767716379653,
+    "monthlyNetPayment": 100.6416266078873,
+    "totalInterest": 8119.3031491390075,
+    "totalPrincipal": 9999.999999999958,
+    "totalFees": 17900,
+    "totalTaxDeduction": 1786.2466928105819,
+    "totalAmountPaid": 36019.303149139116,
+    "effectiveAnnualRate": 19.97383501931602,
+    "amortizationSchedule": [
+     {
+      "index": 1,
+      "year": 2026,
+      "month": 10,
+      "interest": 44.416666666666664,
+      "principal": 15.981010497129866,
+      "fee": 2950,
+      "taxDeduction": 9.771666666666667,
+      "payment": 3010.3976771637967,
+      "netPayment": 3000.62601049713,
+      "balance": 9984.01898950287
+     },
+     {
+      "index": 2,
+      "year": 2026,
+      "month": 11,
+      "interest": 44.34568434504192,
+      "principal": 16.051992818754613,
+      "fee": 50,
+      "taxDeduction": 9.756050555909221,
+      "payment": 110.39767716379653,
+      "netPayment": 100.6416266078873,
+      "balance": 9967.966996684116
+     },
+     {
+      "index": 3,
+      "year": 2026,
+      "month": 12,
+      "interest": 44.274386743605284,
+      "principal": 16.123290420191246,
+      "fee": 50,
+      "taxDeduction": 9.740365083593163,
+      "payment": 110.39767716379653,
+      "netPayment": 100.65731208020337,
+      "balance": 9951.843706263924
+     },
+     {
+      "index": 300,
+      "year": 2051,
+      "month": 9,
+      "interest": 0.26708006876397045,
+      "principal": 60.13059709503256,
+      "fee": 50,
+      "taxDeduction": 0.058757615128073495,
+      "payment": 110.39767716379653,
+      "netPayment": 110.33891954866846,
+      "balance": 4.5211834276415175e-11
+     }
+    ],
+    "amortizationScheduleLength": 300,
+    "amortizationScheduleTruncated": "first 3 + last row kept"
+   },
+   "label": "min10000",
+   "model": {
+    "loanAmount": 10000,
+    "monthlyPayment": 110.39767716379653,
+    "monthlyNetPayment": 100.6416266078873,
+    "totalInterest": 8119.303149138959,
+    "totalFees": 17900,
+    "totalAmountPaid": 36019.303149138956,
+    "totalTaxDeduction": 1786.246692810571,
+    "effectiveAnnualRate": 19.973835019316333
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 1200000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "children": [
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Male",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     }
+    ],
+    "numberOfPetrolCars": 0,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 1200000,
+    "tax": 399576.241,
+    "netSalary": 838367.7590000001,
+    "assets": 0,
+    "sifoExpenses": 385008,
+    "propertyExpenses": 84086.88,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 469094.88,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 369272.8790000001,
+    "liquidity": 2.319076682098104,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 5086741.967467988,
+    "adjustedMaxLoanAmount": 5086741.967467988,
+    "displayedAdjustedMaxLoanAmount": 5086700
+   },
+   "ui": {
+    "borrowers": 1,
+    "children": 3,
+    "cars": 0,
+    "income": 1200000,
+    "debt": 0
+   },
+   "model": {
+    "tax": 399576.6,
+    "netSalary": 838367.4,
+    "sifoExpenses": 385008,
+    "propertyExpenses": 84086.88,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 369272.52,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 5086737.014186988,
+    "adjustedMaxLoanAmount": 5086737.014186988,
+    "displayedAdjustedMaxLoanAmount": 5086700
+   }
+  },
+  {
+   "source": "direct-fetch",
+   "endpoint": "economy",
+   "request": {
+    "calculationDataset": "Loke",
+    "adults": [
+     {
+      "age": 35,
+      "gender": "Male",
+      "grossSalary": 1200000,
+      "employmentStatus": "Employed"
+     }
+    ],
+    "children": [
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Male",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Female",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     },
+     {
+      "age": 9,
+      "gender": "Male",
+      "kindergarden": false,
+      "afterSchoolCareFullTime": false,
+      "afterSchoolCarePartTime": true
+     }
+    ],
+    "numberOfPetrolCars": 0,
+    "numberOfElectricCars": 0,
+    "existingMortgage": 0,
+    "interestRate": 5.33,
+    "feeMonthly": 50,
+    "loanTermYears": 25,
+    "feeEstablishment": 1500
+   },
+   "response": {
+    "calculationDataset": "Loke",
+    "grossSalary": 1200000,
+    "tax": 396276.241,
+    "netSalary": 854315.7590000001,
+    "assets": 0,
+    "sifoExpenses": 464676,
+    "propertyExpenses": 84086.88,
+    "existingMortgageExpenses": 0,
+    "totalExpenses": 548762.88,
+    "stressTestInterestRate": 8.33,
+    "stressTestRiskAmount": 0,
+    "disposableSalary": 305552.8790000001,
+    "liquidity": 1.895219910581397,
+    "loanToValueRatio": 100,
+    "debtRatio": 0,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 4207569.083782502,
+    "adjustedMaxLoanAmount": 4207569.083782502,
+    "displayedAdjustedMaxLoanAmount": 4207600
+   },
+   "ui": {
+    "borrowers": 1,
+    "children": 4,
+    "cars": 0,
+    "income": 1200000,
+    "debt": 0
+   },
+   "model": {
+    "tax": 396276.6,
+    "netSalary": 854315.4,
+    "sifoExpenses": 464676,
+    "propertyExpenses": 84086.88,
+    "existingMortgageExpenses": 0,
+    "disposableSalary": 305552.52,
+    "maxDebtRatioAmount": 6000000,
+    "maxLoanAmount": 4207564.130501502,
+    "adjustedMaxLoanAmount": 4207564.130501502,
+    "displayedAdjustedMaxLoanAmount": 4207600
+   }
+  }
+ ],
+ "uiSteps": [
+  {
+   "step": "initial-laneevne",
+   "panel": "panel-laneevne",
+   "apiCallIds": [
+    1,
+    2
+   ],
+   "displayedText": "Antall låntakere\n1\n2\nAntall barn under 18 år\n0\n1\n2\n3\n4\n5+\nAntall biler\n0\n1\n2\nSamlet inntekt før skatt\nkr\nSamlet lån og gjeld\nkr\nVi tror du kan låne\n1 096 100 kr\nSøk lån\nKontakt meg om lån\nVed å søke kan vi gi deg et tilbud med svar på nøyaktig hvor mye du kan låne, og hva det vil koste. Det er helt uforpliktende å søke lån hos oss.\nPriseksempel: Nominell rente 5,33 %. Effektiv rente 5,56 %. Låner du 1 096 100 over 25 år koster lånet 906 457 og du betaler totalt 2 002 557 kroner.",
+   "ctaLinks": [
+    {
+     "text": "Søk lån",
+     "href": "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start?numberOfBorrowers=1&numberOfChildren=0&numberOfCars=0&grossAnnualIncome=400000&existingLoan=200000&source=kalkulator",
+     "chooser": "apply-for-loan"
+    },
+    {
+     "text": "Kontakt meg om lån",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lan.html?numberOfBorrowers=1&numberOfChildren=0&numberOfCars=0&grossAnnualIncome=400000&existingLoan=200000&source=kalkulator",
+     "chooser": "contact-for-loan"
+    }
+   ],
+   "controls": [
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall låntakere"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "false"
+    },
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall barn under 18 år"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "0",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "3",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "4",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "5+",
+     "pressed": "false"
+    },
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall biler"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "0",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "false"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "samlet-inntekt-før-skatt",
+     "name": "samlet-inntekt-før-skatt",
+     "label": "Samlet inntekt før skatt",
+     "value": "400 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "samlet-lån-og-gjeld",
+     "name": "samlet-lån-og-gjeld",
+     "label": "Samlet lån og gjeld",
+     "value": "200 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    }
+   ]
+  },
+  {
+   "step": "income-600000",
+   "panel": "panel-laneevne",
+   "apiCallIds": [
+    6,
+    7
+   ],
+   "displayedText": "Antall låntakere\n1\n2\nAntall barn under 18 år\n0\n1\n2\n3\n4\n5+\nAntall biler\n0\n1\n2\nSamlet inntekt før skatt\nkr\nSamlet lån og gjeld\nkr\nVi tror du kan låne\n2 800 000 kr\nSøk lån\nKontakt meg om lån\nVed å søke kan vi gi deg et tilbud med svar på nøyaktig hvor mye du kan låne, og hva det vil koste. Det er helt uforpliktende å søke lån hos oss.\nPriseksempel: Nominell rente 5,33 %. Effektiv rente 5,50 %. Låner du 2 800 000 over 25 år koster lånet 2 289 905 og du betaler totalt 5 089 905 kroner.",
+   "ctaLinks": [
+    {
+     "text": "Søk lån",
+     "href": "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start?numberOfBorrowers=1&numberOfChildren=0&numberOfCars=0&grossAnnualIncome=600000&existingLoan=200000&source=kalkulator",
+     "chooser": "apply-for-loan"
+    },
+    {
+     "text": "Kontakt meg om lån",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lan.html?numberOfBorrowers=1&numberOfChildren=0&numberOfCars=0&grossAnnualIncome=600000&existingLoan=200000&source=kalkulator",
+     "chooser": "contact-for-loan"
+    }
+   ],
+   "controls": [
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall låntakere"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "false"
+    },
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall barn under 18 år"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "0",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "3",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "4",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "5+",
+     "pressed": "false"
+    },
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall biler"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "0",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "false"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "samlet-inntekt-før-skatt",
+     "name": "samlet-inntekt-før-skatt",
+     "label": "Samlet inntekt før skatt",
+     "value": "600 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "samlet-lån-og-gjeld",
+     "name": "samlet-lån-og-gjeld",
+     "label": "Samlet lån og gjeld",
+     "value": "200 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    }
+   ]
+  },
+  {
+   "step": "debt-0",
+   "panel": "panel-laneevne",
+   "apiCallIds": [
+    8,
+    9
+   ],
+   "displayedText": "Antall låntakere\n1\n2\nAntall barn under 18 år\n0\n1\n2\n3\n4\n5+\nAntall biler\n0\n1\n2\nSamlet inntekt før skatt\nkr\nSamlet lån og gjeld\nkr\nVi tror du kan låne\n3 000 000 kr\nSøk lån\nKontakt meg om lån\nVed å søke kan vi gi deg et tilbud med svar på nøyaktig hvor mye du kan låne, og hva det vil koste. Det er helt uforpliktende å søke lån hos oss.\nPriseksempel: Nominell rente 5,33 %. Effektiv rente 5,50 %. Låner du 3 000 000 over 25 år koster lånet 2 452 291 og du betaler totalt 5 452 291 kroner.",
+   "ctaLinks": [
+    {
+     "text": "Søk lån",
+     "href": "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start?numberOfBorrowers=1&numberOfChildren=0&numberOfCars=0&grossAnnualIncome=600000&existingLoan=0&source=kalkulator",
+     "chooser": "apply-for-loan"
+    },
+    {
+     "text": "Kontakt meg om lån",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lan.html?numberOfBorrowers=1&numberOfChildren=0&numberOfCars=0&grossAnnualIncome=600000&existingLoan=0&source=kalkulator",
+     "chooser": "contact-for-loan"
+    }
+   ],
+   "controls": [
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall låntakere"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "false"
+    },
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall barn under 18 år"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "0",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "3",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "4",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "5+",
+     "pressed": "false"
+    },
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall biler"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "0",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "false"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "samlet-inntekt-før-skatt",
+     "name": "samlet-inntekt-før-skatt",
+     "label": "Samlet inntekt før skatt",
+     "value": "600 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "samlet-lån-og-gjeld",
+     "name": "samlet-lån-og-gjeld",
+     "label": "Samlet lån og gjeld",
+     "value": "0",
+     "inputmode": "numeric",
+     "maxLength": 11
+    }
+   ]
+  },
+  {
+   "step": "borrowers-2",
+   "panel": "panel-laneevne",
+   "apiCallIds": [
+    10,
+    11
+   ],
+   "displayedText": "Antall låntakere\n1\n2\nAntall barn under 18 år\n0\n1\n2\n3\n4\n5+\nAntall biler\n0\n1\n2\nSamlet inntekt før skatt\nkr\nSamlet lån og gjeld\nkr\nVi tror du kan låne\n2 310 200 kr\nSøk lån\nKontakt meg om lån\nVed å søke kan vi gi deg et tilbud med svar på nøyaktig hvor mye du kan låne, og hva det vil koste. Det er helt uforpliktende å søke lån hos oss.\nPriseksempel: Nominell rente 5,33 %. Effektiv rente 5,51 %. Låner du 2 310 200 over 25 år koster lånet 1 892 221 og du betaler totalt 4 202 421 kroner.",
+   "ctaLinks": [
+    {
+     "text": "Søk lån",
+     "href": "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start?numberOfBorrowers=2&numberOfChildren=0&numberOfCars=0&grossAnnualIncome=600000&existingLoan=0&source=kalkulator",
+     "chooser": "apply-for-loan"
+    },
+    {
+     "text": "Kontakt meg om lån",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lan.html?numberOfBorrowers=2&numberOfChildren=0&numberOfCars=0&grossAnnualIncome=600000&existingLoan=0&source=kalkulator",
+     "chooser": "contact-for-loan"
+    }
+   ],
+   "controls": [
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall låntakere"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "true"
+    },
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall barn under 18 år"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "0",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "3",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "4",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "5+",
+     "pressed": "false"
+    },
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall biler"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "0",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "false"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "samlet-inntekt-før-skatt",
+     "name": "samlet-inntekt-før-skatt",
+     "label": "Samlet inntekt før skatt",
+     "value": "600 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "samlet-lån-og-gjeld",
+     "name": "samlet-lån-og-gjeld",
+     "label": "Samlet lån og gjeld",
+     "value": "0",
+     "inputmode": "numeric",
+     "maxLength": 11
+    }
+   ]
+  },
+  {
+   "step": "children-2",
+   "panel": "panel-laneevne",
+   "apiCallIds": [
+    12,
+    13
+   ],
+   "displayedText": "Antall låntakere\n1\n2\nAntall barn under 18 år\n0\n1\n2\n3\n4\n5+\nAntall biler\n0\n1\n2\nSamlet inntekt før skatt\nkr\nSamlet lån og gjeld\nkr\nVi tror du kan låne\n446 000 kr\nSøk lån\nKontakt meg om lån\nVed å søke kan vi gi deg et tilbud med svar på nøyaktig hvor mye du kan låne, og hva det vil koste. Det er helt uforpliktende å søke lån hos oss.\nPriseksempel: Nominell rente 5,33 %. Effektiv rente 5,70 %. Låner du 446 000 over 25 år koster lånet 378 621 og du betaler totalt 824 621 kroner.",
+   "ctaLinks": [
+    {
+     "text": "Søk lån",
+     "href": "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start?numberOfBorrowers=2&numberOfChildren=2&numberOfCars=0&grossAnnualIncome=600000&existingLoan=0&source=kalkulator",
+     "chooser": "apply-for-loan"
+    },
+    {
+     "text": "Kontakt meg om lån",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lan.html?numberOfBorrowers=2&numberOfChildren=2&numberOfCars=0&grossAnnualIncome=600000&existingLoan=0&source=kalkulator",
+     "chooser": "contact-for-loan"
+    }
+   ],
+   "controls": [
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall låntakere"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "true"
+    },
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall barn under 18 år"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "0",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "3",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "4",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "5+",
+     "pressed": "false"
+    },
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall biler"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "0",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "false"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "samlet-inntekt-før-skatt",
+     "name": "samlet-inntekt-før-skatt",
+     "label": "Samlet inntekt før skatt",
+     "value": "600 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "samlet-lån-og-gjeld",
+     "name": "samlet-lån-og-gjeld",
+     "label": "Samlet lån og gjeld",
+     "value": "0",
+     "inputmode": "numeric",
+     "maxLength": 11
+    }
+   ]
+  },
+  {
+   "step": "cars-1",
+   "panel": "panel-laneevne",
+   "apiCallIds": [
+    14
+   ],
+   "displayedText": "Antall låntakere\n1\n2\nAntall barn under 18 år\n0\n1\n2\n3\n4\n5+\nAntall biler\n0\n1\n2\nSamlet inntekt før skatt\nkr\nSamlet lån og gjeld\nkr\nVi tror du kan låne\n0 kr\nSøk lån\nKontakt meg om lån\nVed å søke kan vi gi deg et tilbud med svar på nøyaktig hvor mye du kan låne, og hva det vil koste. Det er helt uforpliktende å søke lån hos oss.",
+   "ctaLinks": [
+    {
+     "text": "Søk lån",
+     "href": "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start?numberOfBorrowers=2&numberOfChildren=2&numberOfCars=1&grossAnnualIncome=600000&existingLoan=0&source=kalkulator",
+     "chooser": "apply-for-loan"
+    },
+    {
+     "text": "Kontakt meg om lån",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lan.html?numberOfBorrowers=2&numberOfChildren=2&numberOfCars=1&grossAnnualIncome=600000&existingLoan=0&source=kalkulator",
+     "chooser": "contact-for-loan"
+    }
+   ],
+   "controls": [
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall låntakere"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "true"
+    },
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall barn under 18 år"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "0",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "3",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "4",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "5+",
+     "pressed": "false"
+    },
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall biler"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "0",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "false"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "samlet-inntekt-før-skatt",
+     "name": "samlet-inntekt-før-skatt",
+     "label": "Samlet inntekt før skatt",
+     "value": "600 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "samlet-lån-og-gjeld",
+     "name": "samlet-lån-og-gjeld",
+     "label": "Samlet lån og gjeld",
+     "value": "0",
+     "inputmode": "numeric",
+     "maxLength": 11
+    }
+   ]
+  },
+  {
+   "step": "income-1200000",
+   "panel": "panel-laneevne",
+   "apiCallIds": [
+    15,
+    16
+   ],
+   "displayedText": "Antall låntakere\n1\n2\nAntall barn under 18 år\n0\n1\n2\n3\n4\n5+\nAntall biler\n0\n1\n2\nSamlet inntekt før skatt\nkr\nSamlet lån og gjeld\nkr\nVi tror du kan låne\n5 400 700 kr\nSøk lån\nKontakt meg om lån\nVed å søke kan vi gi deg et tilbud med svar på nøyaktig hvor mye du kan låne, og hva det vil koste. Det er helt uforpliktende å søke lån hos oss.\nPriseksempel: Nominell rente 5,33 %. Effektiv rente 5,48 %. Låner du 5 400 700 over 25 år koster lånet 4 401 492 og du betaler totalt 9 802 192 kroner.",
+   "ctaLinks": [
+    {
+     "text": "Søk lån",
+     "href": "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start?numberOfBorrowers=2&numberOfChildren=2&numberOfCars=1&grossAnnualIncome=1200000&existingLoan=0&source=kalkulator",
+     "chooser": "apply-for-loan"
+    },
+    {
+     "text": "Kontakt meg om lån",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lan.html?numberOfBorrowers=2&numberOfChildren=2&numberOfCars=1&grossAnnualIncome=1200000&existingLoan=0&source=kalkulator",
+     "chooser": "contact-for-loan"
+    }
+   ],
+   "controls": [
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall låntakere"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "true"
+    },
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall barn under 18 år"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "0",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "3",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "4",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "5+",
+     "pressed": "false"
+    },
+    {
+     "tag": "div",
+     "role": "group",
+     "label": "Antall biler"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "0",
+     "pressed": "false"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "1",
+     "pressed": "true"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "2",
+     "pressed": "false"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "samlet-inntekt-før-skatt",
+     "name": "samlet-inntekt-før-skatt",
+     "label": "Samlet inntekt før skatt",
+     "value": "1 200 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "samlet-lån-og-gjeld",
+     "name": "samlet-lån-og-gjeld",
+     "label": "Samlet lån og gjeld",
+     "value": "0",
+     "inputmode": "numeric",
+     "maxLength": 11
+    }
+   ]
+  },
+  {
+   "step": "tab-lanekostnad",
+   "panel": "panel-lanekostnad",
+   "apiCallIds": [
+    17
+   ],
+   "displayedText": "Kjøpesum\nkr\nEgenkapital\nkr\nØnsket lånebeløp\nkr\nNominell rente\n0,01 %\n10,00 %\n%\nTilsvarer 5,51 % effektiv rente\nNedbetalingstid\n1 år\n30 år\når\nMånedlig beløp\n16 357 kr\nKostnad etter skattefradrag 13 723 kr\nEgenkapital\n10,00 %\nLånet er 90,00 % av boligens verdi\nSøk lån\nKontakt meg om lån\nVed å søke kan vi gi deg et tilbud med svar på nøyaktig hvor mye du kan låne, og hva det vil koste. Det er helt uforpliktende å søke lån hos oss.\nVis nedbetalingsplan\nPriseksempel: Nominell rente 5,33 %. Effektiv rente 5,51 %. Låner du 2 700 000 over 25 år koster lånet 2 210 112 og du betaler totalt 4 910 112 kroner.",
+   "ctaLinks": [
+    {
+     "text": "Søk lån",
+     "href": "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start?borrowingAmount=2700000&purchasePrice=3000000&repaymentTerm=25&effectiveInterestRate=5.506441198403711&monthlyPrice=16357.372834225063&source=kalkulator",
+     "chooser": "apply-for-loan"
+    },
+    {
+     "text": "Kontakt meg om lån",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lan.html?borrowingAmount=2700000&purchasePrice=3000000&repaymentTerm=25&effectiveInterestRate=5.506441198403711&monthlyPrice=16357.372834225063&source=kalkulator",
+     "chooser": "contact-for-loan"
+    }
+   ],
+   "controls": [
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "kjøpesum",
+     "name": "kjøpesum",
+     "label": "Kjøpesum",
+     "value": "3 000 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "egenkapital",
+     "name": "egenkapital",
+     "label": "Egenkapital",
+     "value": "300 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "ønsket-lånebeløp",
+     "name": "ønsket-lånebeløp",
+     "label": "Ønsket lånebeløp",
+     "value": "2 700 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "label": "Vis hjelpetekst"
+    },
+    {
+     "tag": "input",
+     "type": "range",
+     "label": "Nominell rente",
+     "value": "5.33",
+     "min": "0.01",
+     "max": "10",
+     "step": "0.01"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "name": "nominell-rente",
+     "label": "Nominell rente verdi",
+     "value": "5,33"
+    },
+    {
+     "tag": "input",
+     "type": "range",
+     "label": "Nedbetalingstid",
+     "value": "25",
+     "min": "1",
+     "max": "30",
+     "step": "1"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "name": "nedbetalingstid",
+     "label": "Nedbetalingstid verdi",
+     "value": "25"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "Vis nedbetalingsplan"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2026"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2027"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2028"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2029"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2030"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2031"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2032"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2033"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2034"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2035"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2036"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2037"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2038"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2039"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2040"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2041"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2042"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2043"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2044"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2045"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2046"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2047"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2048"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2049"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2050"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2051"
+    }
+   ]
+  },
+  {
+   "step": "kjopesum-4000000",
+   "panel": "panel-lanekostnad",
+   "apiCallIds": [
+    18
+   ],
+   "displayedText": "Kjøpesum\nkr\nEgenkapital\nkr\nØnsket lånebeløp\nkr\nNominell rente\n0,01 %\n10,00 %\n%\nTilsvarer 5,49 % effektiv rente\nNedbetalingstid\n1 år\n30 år\når\nMånedlig beløp\n22 397 kr\nKostnad etter skattefradrag 18 787 kr\nEgenkapital\n7,50 %\nLånet er 92,50 % av boligens verdi\nSøk lån\nKontakt meg om lån\nVed å søke kan vi gi deg et tilbud med svar på nøyaktig hvor mye du kan låne, og hva det vil koste. Det er helt uforpliktende å søke lån hos oss.\nVis nedbetalingsplan\nPriseksempel: Nominell rente 5,33 %. Effektiv rente 5,49 %. Låner du 3 700 000 over 25 år koster lånet 3 022 042 og du betaler totalt 6 722 042 kroner.",
+   "ctaLinks": [
+    {
+     "text": "Søk lån",
+     "href": "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start?borrowingAmount=3700000&purchasePrice=4000000&repaymentTerm=25&effectiveInterestRate=5.494469903900279&monthlyPrice=22397.14055060472&source=kalkulator",
+     "chooser": "apply-for-loan"
+    },
+    {
+     "text": "Kontakt meg om lån",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lan.html?borrowingAmount=3700000&purchasePrice=4000000&repaymentTerm=25&effectiveInterestRate=5.494469903900279&monthlyPrice=22397.14055060472&source=kalkulator",
+     "chooser": "contact-for-loan"
+    }
+   ],
+   "controls": [
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "kjøpesum",
+     "name": "kjøpesum",
+     "label": "Kjøpesum",
+     "value": "4 000 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "egenkapital",
+     "name": "egenkapital",
+     "label": "Egenkapital",
+     "value": "300 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "ønsket-lånebeløp",
+     "name": "ønsket-lånebeløp",
+     "label": "Ønsket lånebeløp",
+     "value": "3 700 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "label": "Vis hjelpetekst"
+    },
+    {
+     "tag": "input",
+     "type": "range",
+     "label": "Nominell rente",
+     "value": "5.33",
+     "min": "0.01",
+     "max": "10",
+     "step": "0.01"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "name": "nominell-rente",
+     "label": "Nominell rente verdi",
+     "value": "5,33"
+    },
+    {
+     "tag": "input",
+     "type": "range",
+     "label": "Nedbetalingstid",
+     "value": "25",
+     "min": "1",
+     "max": "30",
+     "step": "1"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "name": "nedbetalingstid",
+     "label": "Nedbetalingstid verdi",
+     "value": "25"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "Vis nedbetalingsplan"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2026"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2027"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2028"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2029"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2030"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2031"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2032"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2033"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2034"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2035"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2036"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2037"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2038"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2039"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2040"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2041"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2042"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2043"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2044"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2045"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2046"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2047"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2048"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2049"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2050"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2051"
+    }
+   ]
+  },
+  {
+   "step": "egenkapital-800000",
+   "panel": "panel-lanekostnad",
+   "apiCallIds": [
+    19
+   ],
+   "displayedText": "Kjøpesum\nkr\nEgenkapital\nkr\nØnsket lånebeløp\nkr\nNominell rente\n0,01 %\n10,00 %\n%\nTilsvarer 5,50 % effektiv rente\nNedbetalingstid\n1 år\n30 år\når\nMånedlig beløp\n19 377 kr\nKostnad etter skattefradrag 16 255 kr\nEgenkapital\n20,00 %\nLånet er 80,00 % av boligens verdi\nSøk lån\nKontakt meg om lån\nVed å søke kan vi gi deg et tilbud med svar på nøyaktig hvor mye du kan låne, og hva det vil koste. Det er helt uforpliktende å søke lån hos oss.\nVis nedbetalingsplan\nPriseksempel: Nominell rente 5,33 %. Effektiv rente 5,50 %. Låner du 3 200 000 over 25 år koster lånet 2 616 077 og du betaler totalt 5 816 077 kroner.",
+   "ctaLinks": [
+    {
+     "text": "Søk lån",
+     "href": "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start?borrowingAmount=3200000&purchasePrice=4000000&repaymentTerm=25&effectiveInterestRate=5.4995201155017215&monthlyPrice=19377.256692414892&source=kalkulator",
+     "chooser": "apply-for-loan"
+    },
+    {
+     "text": "Kontakt meg om lån",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lan.html?borrowingAmount=3200000&purchasePrice=4000000&repaymentTerm=25&effectiveInterestRate=5.4995201155017215&monthlyPrice=19377.256692414892&source=kalkulator",
+     "chooser": "contact-for-loan"
+    }
+   ],
+   "controls": [
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "kjøpesum",
+     "name": "kjøpesum",
+     "label": "Kjøpesum",
+     "value": "4 000 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "egenkapital",
+     "name": "egenkapital",
+     "label": "Egenkapital",
+     "value": "800 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "ønsket-lånebeløp",
+     "name": "ønsket-lånebeløp",
+     "label": "Ønsket lånebeløp",
+     "value": "3 200 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "label": "Vis hjelpetekst"
+    },
+    {
+     "tag": "input",
+     "type": "range",
+     "label": "Nominell rente",
+     "value": "5.33",
+     "min": "0.01",
+     "max": "10",
+     "step": "0.01"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "name": "nominell-rente",
+     "label": "Nominell rente verdi",
+     "value": "5,33"
+    },
+    {
+     "tag": "input",
+     "type": "range",
+     "label": "Nedbetalingstid",
+     "value": "25",
+     "min": "1",
+     "max": "30",
+     "step": "1"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "name": "nedbetalingstid",
+     "label": "Nedbetalingstid verdi",
+     "value": "25"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "Vis nedbetalingsplan"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2026"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2027"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2028"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2029"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2030"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2031"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2032"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2033"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2034"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2035"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2036"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2037"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2038"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2039"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2040"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2041"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2042"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2043"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2044"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2045"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2046"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2047"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2048"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2049"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2050"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2051"
+    }
+   ]
+  },
+  {
+   "step": "onsket-2500000",
+   "panel": "panel-lanekostnad",
+   "apiCallIds": [
+    20
+   ],
+   "displayedText": "Kjøpesum\nkr\nEgenkapital\nkr\nØnsket lånebeløp\nkr\nNominell rente\n0,01 %\n10,00 %\n%\nTilsvarer 5,51 % effektiv rente\nNedbetalingstid\n1 år\n30 år\når\nMånedlig beløp\n15 149 kr\nKostnad etter skattefradrag 12 710 kr\nEgenkapital\n37,50 %\nLånet er 62,50 % av boligens verdi\nSøk lån\nKontakt meg om lån\nVed å søke kan vi gi deg et tilbud med svar på nøyaktig hvor mye du kan låne, og hva det vil koste. Det er helt uforpliktende å søke lån hos oss.\nVis nedbetalingsplan\nPriseksempel: Nominell rente 5,33 %. Effektiv rente 5,51 %. Låner du 2 500 000 over 25 år koster lånet 2 047 726 og du betaler totalt 4 547 726 kroner.",
+   "ctaLinks": [
+    {
+     "text": "Søk lån",
+     "href": "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start?borrowingAmount=2500000&purchasePrice=4000000&repaymentTerm=25&effectiveInterestRate=5.509984982557081&monthlyPrice=15149.419290949132&source=kalkulator",
+     "chooser": "apply-for-loan"
+    },
+    {
+     "text": "Kontakt meg om lån",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lan.html?borrowingAmount=2500000&purchasePrice=4000000&repaymentTerm=25&effectiveInterestRate=5.509984982557081&monthlyPrice=15149.419290949132&source=kalkulator",
+     "chooser": "contact-for-loan"
+    }
+   ],
+   "controls": [
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "kjøpesum",
+     "name": "kjøpesum",
+     "label": "Kjøpesum",
+     "value": "4 000 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "egenkapital",
+     "name": "egenkapital",
+     "label": "Egenkapital",
+     "value": "1 500 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "ønsket-lånebeløp",
+     "name": "ønsket-lånebeløp",
+     "label": "Ønsket lånebeløp",
+     "value": "2 500 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "label": "Vis hjelpetekst"
+    },
+    {
+     "tag": "input",
+     "type": "range",
+     "label": "Nominell rente",
+     "value": "5.33",
+     "min": "0.01",
+     "max": "10",
+     "step": "0.01"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "name": "nominell-rente",
+     "label": "Nominell rente verdi",
+     "value": "5,33"
+    },
+    {
+     "tag": "input",
+     "type": "range",
+     "label": "Nedbetalingstid",
+     "value": "25",
+     "min": "1",
+     "max": "30",
+     "step": "1"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "name": "nedbetalingstid",
+     "label": "Nedbetalingstid verdi",
+     "value": "25"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "Vis nedbetalingsplan"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2026"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2027"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2028"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2029"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2030"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2031"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2032"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2033"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2034"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2035"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2036"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2037"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2038"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2039"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2040"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2041"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2042"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2043"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2044"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2045"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2046"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2047"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2048"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2049"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2050"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2051"
+    }
+   ]
+  },
+  {
+   "step": "rente-4.5",
+   "panel": "panel-lanekostnad",
+   "apiCallIds": [
+    21
+   ],
+   "displayedText": "Kjøpesum\nkr\nEgenkapital\nkr\nØnsket lånebeløp\nkr\nNominell rente\n0,01 %\n10,00 %\n%\nTilsvarer 4,64 % effektiv rente\nNedbetalingstid\n1 år\n30 år\når\nMånedlig beløp\n13 946 kr\nKostnad etter skattefradrag 11 887 kr\nEgenkapital\n37,50 %\nLånet er 62,50 % av boligens verdi\nSøk lån\nKontakt meg om lån\nVed å søke kan vi gi deg et tilbud med svar på nøyaktig hvor mye du kan låne, og hva det vil koste. Det er helt uforpliktende å søke lån hos oss.\nVis nedbetalingsplan\nPriseksempel: Nominell rente 4,50 %. Effektiv rente 4,64 %. Låner du 2 500 000 over 25 år koster lånet 1 686 644 og du betaler totalt 4 186 644 kroner.",
+   "ctaLinks": [
+    {
+     "text": "Søk lån",
+     "href": "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start?borrowingAmount=2500000&purchasePrice=4000000&repaymentTerm=25&effectiveInterestRate=4.642497539077373&monthlyPrice=13945.811949049885&source=kalkulator",
+     "chooser": "apply-for-loan"
+    },
+    {
+     "text": "Kontakt meg om lån",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lan.html?borrowingAmount=2500000&purchasePrice=4000000&repaymentTerm=25&effectiveInterestRate=4.642497539077373&monthlyPrice=13945.811949049885&source=kalkulator",
+     "chooser": "contact-for-loan"
+    }
+   ],
+   "controls": [
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "kjøpesum",
+     "name": "kjøpesum",
+     "label": "Kjøpesum",
+     "value": "4 000 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "egenkapital",
+     "name": "egenkapital",
+     "label": "Egenkapital",
+     "value": "1 500 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "ønsket-lånebeløp",
+     "name": "ønsket-lånebeløp",
+     "label": "Ønsket lånebeløp",
+     "value": "2 500 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "label": "Vis hjelpetekst"
+    },
+    {
+     "tag": "input",
+     "type": "range",
+     "label": "Nominell rente",
+     "value": "4.5",
+     "min": "0.01",
+     "max": "10",
+     "step": "0.01"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "name": "nominell-rente",
+     "label": "Nominell rente verdi",
+     "value": "4,50"
+    },
+    {
+     "tag": "input",
+     "type": "range",
+     "label": "Nedbetalingstid",
+     "value": "25",
+     "min": "1",
+     "max": "30",
+     "step": "1"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "name": "nedbetalingstid",
+     "label": "Nedbetalingstid verdi",
+     "value": "25"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "Vis nedbetalingsplan"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2026"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2027"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2028"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2029"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2030"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2031"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2032"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2033"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2034"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2035"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2036"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2037"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2038"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2039"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2040"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2041"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2042"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2043"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2044"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2045"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2046"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2047"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2048"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2049"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2050"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2051"
+    }
+   ]
+  },
+  {
+   "step": "nedbetalingstid-30",
+   "panel": "panel-lanekostnad",
+   "apiCallIds": [
+    22
+   ],
+   "displayedText": "Kjøpesum\nkr\nEgenkapital\nkr\nØnsket lånebeløp\nkr\nNominell rente\n0,01 %\n10,00 %\n%\nTilsvarer 4,64 % effektiv rente\nNedbetalingstid\n1 år\n30 år\når\nMånedlig beløp\n12 717 kr\nKostnad etter skattefradrag 10 657 kr\nEgenkapital\n37,50 %\nLånet er 62,50 % av boligens verdi\nSøk lån\nKontakt meg om lån\nVed å søke kan vi gi deg et tilbud med svar på nøyaktig hvor mye du kan låne, og hva det vil koste. Det er helt uforpliktende å søke lån hos oss.\nVis nedbetalingsplan\nPriseksempel: Nominell rente 4,50 %. Effektiv rente 4,64 %. Låner du 2 500 000 over 30 år koster lånet 2 081 068 og du betaler totalt 4 581 068 kroner.",
+   "ctaLinks": [
+    {
+     "text": "Søk lån",
+     "href": "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start?borrowingAmount=2500000&purchasePrice=4000000&repaymentTerm=30&effectiveInterestRate=4.639330092889171&monthlyPrice=12717.132745647144&source=kalkulator",
+     "chooser": "apply-for-loan"
+    },
+    {
+     "text": "Kontakt meg om lån",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lan.html?borrowingAmount=2500000&purchasePrice=4000000&repaymentTerm=30&effectiveInterestRate=4.639330092889171&monthlyPrice=12717.132745647144&source=kalkulator",
+     "chooser": "contact-for-loan"
+    }
+   ],
+   "controls": [
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "kjøpesum",
+     "name": "kjøpesum",
+     "label": "Kjøpesum",
+     "value": "4 000 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "egenkapital",
+     "name": "egenkapital",
+     "label": "Egenkapital",
+     "value": "1 500 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "id": "ønsket-lånebeløp",
+     "name": "ønsket-lånebeløp",
+     "label": "Ønsket lånebeløp",
+     "value": "2 500 000",
+     "inputmode": "numeric",
+     "maxLength": 11
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "label": "Vis hjelpetekst"
+    },
+    {
+     "tag": "input",
+     "type": "range",
+     "label": "Nominell rente",
+     "value": "4.5",
+     "min": "0.01",
+     "max": "10",
+     "step": "0.01"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "name": "nominell-rente",
+     "label": "Nominell rente verdi",
+     "value": "4,50"
+    },
+    {
+     "tag": "input",
+     "type": "range",
+     "label": "Nedbetalingstid",
+     "value": "30",
+     "min": "1",
+     "max": "30",
+     "step": "1"
+    },
+    {
+     "tag": "input",
+     "type": "text",
+     "name": "nedbetalingstid",
+     "label": "Nedbetalingstid verdi",
+     "value": "30"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "Vis nedbetalingsplan"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2026"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2027"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2028"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2029"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2030"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2031"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2032"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2033"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2034"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2035"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2036"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2037"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2038"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2039"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2040"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2041"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2042"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2043"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2044"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2045"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2046"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2047"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2048"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2049"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2050"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2051"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2052"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2053"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2054"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2055"
+    },
+    {
+     "tag": "button",
+     "type": "button",
+     "text": "›2056"
+    }
+   ]
+  }
+ ],
+ "amortizationPlanDisplayed": [
+  [
+   "Dato",
+   "Å betale",
+   "Avdrag",
+   "Renter + Gebyrer",
+   "Restgjeld"
+  ],
+  [
+   "›2026",
+   "41 051",
+   "9 913",
+   "31 138",
+   "2 490 087"
+  ],
+  [
+   "2026-10",
+   "15 617",
+   "3 292",
+   "12 325",
+   "2 496 708"
+  ],
+  [
+   "2026-11",
+   "12 717",
+   "3 304",
+   "9 413",
+   "2 493 403"
+  ],
+  [
+   "2026-12",
+   "12 717",
+   "3 317",
+   "9 400",
+   "2 490 087"
+  ],
+  [
+   "›2027",
+   "152 606",
+   "40 786",
+   "111 820",
+   "2 449 300"
+  ],
+  [
+   "›2028",
+   "152 606",
+   "42 660",
+   "109 946",
+   "2 406 641"
+  ],
+  [
+   "›2029",
+   "152 606",
+   "44 620",
+   "107 986",
+   "2 362 021"
+  ],
+  [
+   "›2030",
+   "152 606",
+   "46 669",
+   "105 936",
+   "2 315 352"
+  ],
+  [
+   "›2031",
+   "152 606",
+   "48 813",
+   "103 792",
+   "2 266 538"
+  ],
+  [
+   "›2032",
+   "152 606",
+   "51 056",
+   "101 550",
+   "2 215 482"
+  ],
+  [
+   "›2033",
+   "152 606",
+   "53 401",
+   "99 204",
+   "2 162 081"
+  ],
+  [
+   "›2034",
+   "152 606",
+   "55 855",
+   "96 751",
+   "2 106 226"
+  ],
+  [
+   "›2035",
+   "152 606",
+   "58 421",
+   "94 185",
+   "2 047 806"
+  ],
+  [
+   "›2036",
+   "152 606",
+   "61 104",
+   "91 501",
+   "1 986 702"
+  ],
+  [
+   "›2037",
+   "152 606",
+   "63 912",
+   "88 694",
+   "1 922 790"
+  ],
+  [
+   "›2038",
+   "152 606",
+   "66 848",
+   "85 758",
+   "1 855 942"
+  ],
+  [
+   "›2039",
+   "152 606",
+   "69 919",
+   "82 687",
+   "1 786 024"
+  ],
+  [
+   "›2040",
+   "152 606",
+   "73 131",
+   "79 475",
+   "1 712 893"
+  ],
+  [
+   "›2041",
+   "152 606",
+   "76 490",
+   "76 115",
+   "1 636 403"
+  ],
+  [
+   "Total",
+   "4 581 068",
+   "2 500 000",
+   "2 081 068",
+   "0"
+  ]
+ ],
+ "tooltip": "Nominell rente er den løpende renten du får. Den effektive renten viser i tillegg alle gebyrer og andre utgifter i forbindelse med lånet."
+}

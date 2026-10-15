@@ -1,0 +1,1498 @@
+{
+ "generated": "2026-10-15T14:35:31.282Z",
+ "page": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html",
+ "model": {
+  "rateTablePercent": {
+   "sparekonto": {
+    "id": 0,
+    "name": "Sparekonto",
+    "isin": null,
+    "rate": 3
+   },
+   "aie20": {
+    "id": 9,
+    "name": "Alt-i-ett 20",
+    "isin": "NO0010841000",
+    "rate": 4.62
+   },
+   "aie50": {
+    "id": 6,
+    "name": "Alt-i-ett 50",
+    "isin": "NO0010841042",
+    "rate": 5.33
+   },
+   "aie80": {
+    "id": 7,
+    "name": "Alt-i-ett 80",
+    "isin": "NO0010841075",
+    "rate": 6.03
+   },
+   "aie100": {
+    "id": 10,
+    "name": "Alt-i-ett 100",
+    "isin": "NO0012619024",
+    "rate": 6.5
+   }
+  },
+  "horizonBuckets": {
+   "0-1": 0,
+   "2-4": 1,
+   "5-9": 2,
+   "10+": 3
+  },
+  "packageByRiskAndBucket": {
+   "none": [
+    "sparekonto",
+    "sparekonto",
+    "sparekonto",
+    "sparekonto"
+   ],
+   "low": [
+    "sparekonto",
+    "sparekonto",
+    "aie20",
+    "aie50"
+   ],
+   "medium": [
+    "sparekonto",
+    "aie20",
+    "aie50",
+    "aie80"
+   ],
+   "high": [
+    "sparekonto",
+    "aie50",
+    "aie80",
+    "aie100"
+   ]
+  },
+  "expectedPerformance": "FV = P*(1+r)^n + m*(((1+i)^(12n)-1)/i)*(1+i), i=(1+r)^(1/12)-1 (annual-effective r, monthly deposits at START of month)",
+  "requiredSavings": "requiredSavingsSum = (G - P*(1+r)^n) / ((((1+i)^(12n)-1)/i)*(1+i)); futureValueOfInitialAmount = P*(1+r)^n; futureValueOfRequiredSavings = G - futureValueOfInitialAmount",
+  "display": {
+   "monthly": {
+    "Forventet beløp:": "floor(FV)",
+    "Avkastning før skatt": "floor(FV - (12*m*n + P))",
+    "Du har spart": "12*m*n + P"
+   },
+   "savingsGoal": {
+    "Hver måned må du spare:": "max(round(requiredSavingsSum),0)",
+    "Totalt beløp": "G",
+    "Du har spart": "12*n*req + P",
+    "Avkastning før skatt": "floor(G - spart)"
+   }
+  }
+ },
+ "summary": {
+  "apiPairsUnique": 36,
+  "byEndpoint": {
+   "expected-performance": 20,
+   "suggested-savings-product": 7,
+   "required-savings": 9
+  },
+  "maxAbsDev_expectedPerformance_NOK": 1.4551915228366852e-10,
+  "maxAbsDev_requiredSavingsSum_NOK": 3.637978807091713e-12,
+  "maxAbsDev_futureValueOfInitialAmount_NOK": 9.38598532229662e-10,
+  "rateMismatches": 0,
+  "productMismatches": 0,
+  "widgetVectors": 25,
+  "widgetExactMatches": 25
+ },
+ "apiPairs": [
+  {
+   "source": "playwright-run1",
+   "step": "load",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "6000",
+    "periodicInvestment": "500",
+    "years": "5",
+    "risk": "medium"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 42107.69167503309
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 42107.69167503311
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "absDeviation": 1.4551915228366852e-11
+  },
+  {
+   "source": "playwright-run1",
+   "step": "load",
+   "endpoint": "suggested-savings-product",
+   "query": {
+    "years": "5",
+    "risk": "medium"
+   },
+   "status": 200,
+   "response": {
+    "recommendedProductPackages": [
+     {
+      "id": 6,
+      "name": "Alt-i-ett 50",
+      "description": "Kombinasjonsfond med ca. 50 % aksjer og 50 % renter. Passer for deg som ønsker middels risiko."
+     }
+    ]
+   },
+   "formula": {
+    "id": 6,
+    "name": "Alt-i-ett 50"
+   }
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G0 default",
+   "endpoint": "required-savings",
+   "query": {
+    "savingsGoal": "200000",
+    "initialInvestment": "20000",
+    "years": "5",
+    "risk": "medium"
+   },
+   "status": 200,
+   "response": {
+    "requiredSavingsSum": 2535.3372786304303,
+    "futureValueOfInitialAmount": 25929.277556318415,
+    "futureValueOfRequiredSavings": 174070.7224436816
+   },
+   "formula": {
+    "requiredSavingsSum": 2535.337278630429,
+    "futureValueOfInitialAmount": 25929.277556318488,
+    "futureValueOfRequiredSavings": 174070.7224436815
+   },
+   "absDeviation": 1.3642420526593924e-12
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G1",
+   "endpoint": "required-savings",
+   "query": {
+    "savingsGoal": "200000",
+    "initialInvestment": "20000",
+    "years": "10",
+    "risk": "high"
+   },
+   "status": 200,
+   "response": {
+    "requiredSavingsSum": 969.4332567309116,
+    "futureValueOfInitialAmount": 37542.749305386824,
+    "futureValueOfRequiredSavings": 162457.25069461318
+   },
+   "formula": {
+    "requiredSavingsSum": 969.4332567309095,
+    "futureValueOfInitialAmount": 37542.74930538718,
+    "futureValueOfRequiredSavings": 162457.25069461283
+   },
+   "absDeviation": 2.0463630789890885e-12
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G1",
+   "endpoint": "suggested-savings-product",
+   "query": {
+    "years": "10",
+    "risk": "high"
+   },
+   "status": 200,
+   "response": {
+    "recommendedProductPackages": [
+     {
+      "id": 10,
+      "name": "Alt-i-ett 100",
+      "description": "Aksjefond med ca. 100 % aksjer. Passer for deg som ønsker høyest mulig forventet avkastning og tåler svingninger."
+     }
+    ]
+   },
+   "formula": {
+    "id": 10,
+    "name": "Alt-i-ett 100"
+   }
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G2",
+   "endpoint": "required-savings",
+   "query": {
+    "savingsGoal": "1000000",
+    "initialInvestment": "20000",
+    "years": "5",
+    "risk": "medium"
+   },
+   "status": 200,
+   "response": {
+    "requiredSavingsSum": 14187.32443896732,
+    "futureValueOfInitialAmount": 25929.277556318415,
+    "futureValueOfRequiredSavings": 974070.7224436816
+   },
+   "formula": {
+    "requiredSavingsSum": 14187.32443896732,
+    "futureValueOfInitialAmount": 25929.277556318488,
+    "futureValueOfRequiredSavings": 974070.7224436816
+   },
+   "absDeviation": 0
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G3",
+   "endpoint": "required-savings",
+   "query": {
+    "savingsGoal": "1000000",
+    "initialInvestment": "20000",
+    "years": "15",
+    "risk": "medium"
+   },
+   "status": 200,
+   "response": {
+    "requiredSavingsSum": 3293.504088186698,
+    "futureValueOfInitialAmount": 48135.04883627052,
+    "futureValueOfRequiredSavings": 951864.9511637294
+   },
+   "formula": {
+    "requiredSavingsSum": 3293.5040881867017,
+    "futureValueOfInitialAmount": 48135.04883626958,
+    "futureValueOfRequiredSavings": 951864.9511637305
+   },
+   "absDeviation": 3.637978807091713e-12
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G3",
+   "endpoint": "suggested-savings-product",
+   "query": {
+    "years": "15",
+    "risk": "medium"
+   },
+   "status": 200,
+   "response": {
+    "recommendedProductPackages": [
+     {
+      "id": 7,
+      "name": "Alt-i-ett 80",
+      "description": "Kombinasjonsfond med ca. 80 % aksjer og 20 % renter. Passer for deg som ønsker høy risiko."
+     }
+    ]
+   },
+   "formula": {
+    "id": 7,
+    "name": "Alt-i-ett 80"
+   }
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G4",
+   "endpoint": "suggested-savings-product",
+   "query": {
+    "years": "15",
+    "risk": "none"
+   },
+   "status": 200,
+   "response": {
+    "recommendedProductPackages": [
+     {
+      "id": 0,
+      "name": "Sparekonto",
+      "description": "Bankinnskudd med fast rente og innskuddsgaranti."
+     }
+    ]
+   },
+   "formula": {
+    "id": 0,
+    "name": "Sparekonto"
+   }
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G4",
+   "endpoint": "required-savings",
+   "query": {
+    "savingsGoal": "1000000",
+    "initialInvestment": "20000",
+    "years": "15",
+    "risk": "none"
+   },
+   "status": 200,
+   "response": {
+    "requiredSavingsSum": 4271.833587544115,
+    "futureValueOfInitialAmount": 31159.348332015776,
+    "futureValueOfRequiredSavings": 968840.6516679842
+   },
+   "formula": {
+    "requiredSavingsSum": 4271.833587544117,
+    "futureValueOfInitialAmount": 31159.348332015303,
+    "futureValueOfRequiredSavings": 968840.6516679847
+   },
+   "absDeviation": 1.8189894035458565e-12
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G5",
+   "endpoint": "suggested-savings-product",
+   "query": {
+    "years": "15",
+    "risk": "low"
+   },
+   "status": 200,
+   "response": {
+    "recommendedProductPackages": [
+     {
+      "id": 6,
+      "name": "Alt-i-ett 50",
+      "description": "Kombinasjonsfond med ca. 50 % aksjer og 50 % renter. Passer for deg som ønsker middels risiko."
+     }
+    ]
+   },
+   "formula": {
+    "id": 6,
+    "name": "Alt-i-ett 50"
+   }
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G5",
+   "endpoint": "required-savings",
+   "query": {
+    "savingsGoal": "1000000",
+    "initialInvestment": "0",
+    "years": "15",
+    "risk": "low"
+   },
+   "status": 200,
+   "response": {
+    "requiredSavingsSum": 3662.044142241731,
+    "futureValueOfInitialAmount": 0,
+    "futureValueOfRequiredSavings": 1000000
+   },
+   "formula": {
+    "requiredSavingsSum": 3662.044142241731,
+    "futureValueOfInitialAmount": 0,
+    "futureValueOfRequiredSavings": 1000000
+   },
+   "absDeviation": 0
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G6 expand",
+   "endpoint": "required-savings",
+   "query": {
+    "savingsGoal": "1000000",
+    "initialInvestment": "0",
+    "years": "15",
+    "risk": "none"
+   },
+   "status": 200,
+   "response": {
+    "requiredSavingsSum": 4409.222074021773,
+    "futureValueOfInitialAmount": 0,
+    "futureValueOfRequiredSavings": 1000000
+   },
+   "formula": {
+    "requiredSavingsSum": 4409.222074021773,
+    "futureValueOfInitialAmount": 0,
+    "futureValueOfRequiredSavings": 1000000
+   },
+   "absDeviation": 0
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G6 expand",
+   "endpoint": "required-savings",
+   "query": {
+    "savingsGoal": "1000000",
+    "initialInvestment": "0",
+    "years": "15",
+    "risk": "medium"
+   },
+   "status": 200,
+   "response": {
+    "requiredSavingsSum": 3460.053954250686,
+    "futureValueOfInitialAmount": 0,
+    "futureValueOfRequiredSavings": 1000000
+   },
+   "formula": {
+    "requiredSavingsSum": 3460.053954250686,
+    "futureValueOfInitialAmount": 0,
+    "futureValueOfRequiredSavings": 1000000
+   },
+   "absDeviation": 0
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G6 expand",
+   "endpoint": "suggested-savings-product",
+   "query": {
+    "years": "15",
+    "risk": "high"
+   },
+   "status": 200,
+   "response": {
+    "recommendedProductPackages": [
+     {
+      "id": 10,
+      "name": "Alt-i-ett 100",
+      "description": "Aksjefond med ca. 100 % aksjer. Passer for deg som ønsker høyest mulig forventet avkastning og tåler svingninger."
+     }
+    ]
+   },
+   "formula": {
+    "id": 10,
+    "name": "Alt-i-ett 100"
+   }
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G6 expand",
+   "endpoint": "required-savings",
+   "query": {
+    "savingsGoal": "1000000",
+    "initialInvestment": "0",
+    "years": "15",
+    "risk": "high"
+   },
+   "status": 200,
+   "response": {
+    "requiredSavingsSum": 3329.951145255315,
+    "futureValueOfInitialAmount": 0,
+    "futureValueOfRequiredSavings": 1000000
+   },
+   "formula": {
+    "requiredSavingsSum": 3329.951145255315,
+    "futureValueOfInitialAmount": 0,
+    "futureValueOfRequiredSavings": 1000000
+   },
+   "absDeviation": 0
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G6 expand",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "0",
+    "periodicInvestment": "4409.222074021773",
+    "years": "15",
+    "risk": "none"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 1000000.0000000001
+    },
+    "nominalExpectedAnnualReturn": 3
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 1000000
+    },
+    "nominalExpectedAnnualReturn": 3
+   },
+   "absDeviation": 1.1641532182693481e-10
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G6 expand",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "0",
+    "periodicInvestment": "3460.053954250686",
+    "years": "15",
+    "risk": "medium"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 999999.9999999999
+    },
+    "nominalExpectedAnnualReturn": 6.03
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 1000000
+    },
+    "nominalExpectedAnnualReturn": 6.03
+   },
+   "absDeviation": 1.1641532182693481e-10
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G6 expand",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "0",
+    "periodicInvestment": "3329.951145255315",
+    "years": "15",
+    "risk": "high"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 1000000
+    },
+    "nominalExpectedAnnualReturn": 6.5
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 1000000
+    },
+    "nominalExpectedAnnualReturn": 6.5
+   },
+   "absDeviation": 0
+  },
+  {
+   "source": "playwright-run2",
+   "step": "G6 expand",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "0",
+    "periodicInvestment": "3662.044142241731",
+    "years": "15",
+    "risk": "low"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 999999.9999999999
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 1000000
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "absDeviation": 1.1641532182693481e-10
+  },
+  {
+   "source": "playwright-run2",
+   "step": "M12 back to monthly",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "6000",
+    "periodicInvestment": "500",
+    "years": "15",
+    "risk": "low"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 149610.4889253669
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 149610.48892536704
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "absDeviation": 1.4551915228366852e-10
+  },
+  {
+   "source": "direct-GET(no cookies)",
+   "step": "direct",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "10000",
+    "periodicInvestment": "1000",
+    "years": "1",
+    "risk": "low"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 22494.11940692881
+    },
+    "nominalExpectedAnnualReturn": 3
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 22494.1194069288
+    },
+    "nominalExpectedAnnualReturn": 3
+   },
+   "absDeviation": 1.0913936421275139e-11
+  },
+  {
+   "source": "direct-GET(no cookies)",
+   "step": "direct",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "10000",
+    "periodicInvestment": "1000",
+    "years": "3",
+    "risk": "low"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 48618.073674876185
+    },
+    "nominalExpectedAnnualReturn": 3
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 48618.073674876156
+    },
+    "nominalExpectedAnnualReturn": 3
+   },
+   "absDeviation": 2.9103830456733704e-11
+  },
+  {
+   "source": "direct-GET(no cookies)",
+   "step": "direct",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "10000",
+    "periodicInvestment": "1000",
+    "years": "5",
+    "risk": "low"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 79975.07415714172
+    },
+    "nominalExpectedAnnualReturn": 4.62
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 79975.0741571417
+    },
+    "nominalExpectedAnnualReturn": 4.62
+   },
+   "absDeviation": 1.4551915228366852e-11
+  },
+  {
+   "source": "direct-GET(no cookies)",
+   "step": "direct",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "10000",
+    "periodicInvestment": "1000",
+    "years": "1",
+    "risk": "medium"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 22494.11940692881
+    },
+    "nominalExpectedAnnualReturn": 3
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 22494.1194069288
+    },
+    "nominalExpectedAnnualReturn": 3
+   },
+   "absDeviation": 1.0913936421275139e-11
+  },
+  {
+   "source": "direct-GET(no cookies)",
+   "step": "direct",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "10000",
+    "periodicInvestment": "1000",
+    "years": "3",
+    "risk": "medium"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 50076.48741284791
+    },
+    "nominalExpectedAnnualReturn": 4.62
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 50076.4874128479
+    },
+    "nominalExpectedAnnualReturn": 4.62
+   },
+   "absDeviation": 1.4551915228366852e-11
+  },
+  {
+   "source": "direct-GET(no cookies)",
+   "step": "direct",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "10000",
+    "periodicInvestment": "1000",
+    "years": "7",
+    "risk": "medium"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 115900.61222802731
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 115900.61222802737
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "absDeviation": 5.820766091346741e-11
+  },
+  {
+   "source": "direct-GET(no cookies)",
+   "step": "direct",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "10000",
+    "periodicInvestment": "1000",
+    "years": "1",
+    "risk": "high"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 22494.11940692881
+    },
+    "nominalExpectedAnnualReturn": 3
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 22494.1194069288
+    },
+    "nominalExpectedAnnualReturn": 3
+   },
+   "absDeviation": 1.0913936421275139e-11
+  },
+  {
+   "source": "direct-GET(no cookies)",
+   "step": "direct",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "10000",
+    "periodicInvestment": "1000",
+    "years": "3",
+    "risk": "high"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 50725.67060790565
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 50725.670607905675
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "absDeviation": 2.1827872842550278e-11
+  },
+  {
+   "source": "direct-GET(no cookies)",
+   "step": "direct",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "10000",
+    "periodicInvestment": "1000",
+    "years": "5",
+    "risk": "high"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 83277.85559920908
+    },
+    "nominalExpectedAnnualReturn": 6.03
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 83277.855599209
+    },
+    "nominalExpectedAnnualReturn": 6.03
+   },
+   "absDeviation": 8.731149137020111e-11
+  },
+  {
+   "source": "direct-GET(no cookies)",
+   "step": "direct",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "10000",
+    "periodicInvestment": "1000",
+    "years": "2",
+    "risk": "high"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 36439.7313493527
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 36439.73134935272
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "absDeviation": 1.4551915228366852e-11
+  },
+  {
+   "source": "direct-GET(no cookies)",
+   "step": "direct",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "10000",
+    "periodicInvestment": "1000",
+    "years": "4",
+    "risk": "high"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 65773.05042893943
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 65773.05042893946
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "absDeviation": 2.9103830456733704e-11
+  },
+  {
+   "source": "direct-GET(no cookies)",
+   "step": "direct",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "10000",
+    "periodicInvestment": "1000",
+    "years": "8",
+    "risk": "medium"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 134421.8164374136
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 134421.81643741365
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "absDeviation": 5.820766091346741e-11
+  },
+  {
+   "source": "direct-GET(no cookies)",
+   "step": "direct",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "10000",
+    "periodicInvestment": "1000",
+    "years": "9",
+    "risk": "medium"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 153930.20083116012
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 153930.20083116018
+    },
+    "nominalExpectedAnnualReturn": 5.33
+   },
+   "absDeviation": 5.820766091346741e-11
+  },
+  {
+   "source": "direct-GET(no cookies)",
+   "step": "direct",
+   "endpoint": "expected-performance",
+   "query": {
+    "initialValue": "10000",
+    "periodicInvestment": "1000",
+    "years": "0",
+    "risk": "high"
+   },
+   "status": 200,
+   "response": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 10000
+    },
+    "nominalExpectedAnnualReturn": 3
+   },
+   "formula": {
+    "expectedPerformanceBeforeTax": {
+     "nominell": 10000
+    },
+    "nominalExpectedAnnualReturn": 3
+   },
+   "absDeviation": 0
+  },
+  {
+   "source": "direct-GET(no cookies)",
+   "step": "direct",
+   "endpoint": "suggested-savings-product",
+   "query": {
+    "years": "5",
+    "risk": "low"
+   },
+   "status": 200,
+   "response": {
+    "recommendedProductPackages": [
+     {
+      "id": 9,
+      "name": "Alt-i-ett 20",
+      "description": "Kombinasjonsfond med ca. 20 % aksjer og 80 % renter. Passer for deg som ønsker lav risiko."
+     }
+    ]
+   },
+   "formula": {
+    "id": 9,
+    "name": "Alt-i-ett 20"
+   }
+  }
+ ],
+ "widgetVectors": [
+  {
+   "step": "M0",
+   "mode": "monthly",
+   "inputs": {
+    "monthly": 500,
+    "start": 6000,
+    "years": 5,
+    "risk": "medium"
+   },
+   "displayed": {
+    "Forventet beløp:": 42107,
+    "Avkastning før skatt": 6107,
+    "Du har spart": 36000
+   },
+   "formula": {
+    "Forventet beløp:": 42107,
+    "Avkastning før skatt": 6107,
+    "Du har spart": 36000
+   },
+   "match": true,
+   "suggestedProduct": "Alt-i-ett 50"
+  },
+  {
+   "step": "M1",
+   "mode": "monthly",
+   "inputs": {
+    "monthly": 2000,
+    "start": 6000,
+    "years": 5,
+    "risk": "medium"
+   },
+   "displayed": {
+    "Forventet beløp:": 145094,
+    "Avkastning før skatt": 19094,
+    "Du har spart": 126000
+   },
+   "formula": {
+    "Forventet beløp:": 145094,
+    "Avkastning før skatt": 19094,
+    "Du har spart": 126000
+   },
+   "match": true,
+   "suggestedProduct": "Alt-i-ett 50"
+  },
+  {
+   "step": "M2",
+   "mode": "monthly",
+   "inputs": {
+    "monthly": 2000,
+    "start": 0,
+    "years": 5,
+    "risk": "medium"
+   },
+   "displayed": {
+    "Forventet beløp:": 137315,
+    "Avkastning før skatt": 17315,
+    "Du har spart": 120000
+   },
+   "formula": {
+    "Forventet beløp:": 137315,
+    "Avkastning før skatt": 17315,
+    "Du har spart": 120000
+   },
+   "match": true,
+   "suggestedProduct": "Alt-i-ett 50"
+  },
+  {
+   "step": "M3",
+   "mode": "monthly",
+   "inputs": {
+    "monthly": 2000,
+    "start": 0,
+    "years": 10,
+    "risk": "medium"
+   },
+   "displayed": {
+    "Forventet beløp:": 327039,
+    "Avkastning før skatt": 87039,
+    "Du har spart": 240000
+   },
+   "formula": {
+    "Forventet beløp:": 327039,
+    "Avkastning før skatt": 87039,
+    "Du har spart": 240000
+   },
+   "match": true,
+   "suggestedProduct": "Alt-i-ett 80"
+  },
+  {
+   "step": "M4",
+   "mode": "monthly",
+   "inputs": {
+    "monthly": 2000,
+    "start": 0,
+    "years": 10,
+    "risk": "high"
+   },
+   "displayed": {
+    "Forventet beløp:": 335159,
+    "Avkastning før skatt": 95159,
+    "Du har spart": 240000
+   },
+   "formula": {
+    "Forventet beløp:": 335159,
+    "Avkastning før skatt": 95159,
+    "Du har spart": 240000
+   },
+   "match": true,
+   "suggestedProduct": "Alt-i-ett 100"
+  },
+  {
+   "step": "M5",
+   "mode": "monthly",
+   "inputs": {
+    "monthly": 2000,
+    "start": 0,
+    "years": 10,
+    "risk": "none"
+   },
+   "displayed": {
+    "Forventet beløp:": 279583,
+    "Avkastning før skatt": 39583,
+    "Du har spart": 240000
+   },
+   "formula": {
+    "Forventet beløp:": 279583,
+    "Avkastning før skatt": 39583,
+    "Du har spart": 240000
+   },
+   "match": true,
+   "suggestedProduct": "Sparekonto"
+  },
+  {
+   "step": "M6",
+   "mode": "monthly",
+   "inputs": {
+    "monthly": 2000,
+    "start": 0,
+    "years": 10,
+    "risk": "low"
+   },
+   "displayed": {
+    "Forventet beløp:": 315340,
+    "Avkastning før skatt": 75340,
+    "Du har spart": 240000
+   },
+   "formula": {
+    "Forventet beløp:": 315340,
+    "Avkastning før skatt": 75340,
+    "Du har spart": 240000
+   },
+   "match": true,
+   "suggestedProduct": "Alt-i-ett 50"
+  },
+  {
+   "step": "M7",
+   "mode": "monthly",
+   "inputs": {
+    "monthly": 2000,
+    "start": 50000,
+    "years": 10,
+    "risk": "low"
+   },
+   "displayed": {
+    "Forventet beløp:": 399381,
+    "Avkastning før skatt": 109381,
+    "Du har spart": 290000
+   },
+   "formula": {
+    "Forventet beløp:": 399381,
+    "Avkastning før skatt": 109381,
+    "Du har spart": 290000
+   },
+   "match": true,
+   "suggestedProduct": "Alt-i-ett 50"
+  },
+  {
+   "step": "M8",
+   "mode": "monthly",
+   "inputs": {
+    "monthly": 2000,
+    "start": 50000,
+    "years": 20,
+    "risk": "low"
+   },
+   "displayed": {
+    "Forventet beløp:": 986627,
+    "Avkastning før skatt": 456627,
+    "Du har spart": 530000
+   },
+   "formula": {
+    "Forventet beløp:": 986627,
+    "Avkastning før skatt": 456627,
+    "Du har spart": 530000
+   },
+   "match": true,
+   "suggestedProduct": "Alt-i-ett 50"
+  },
+  {
+   "step": "M9",
+   "mode": "monthly",
+   "inputs": {
+    "monthly": 2000,
+    "start": 50000,
+    "years": 20,
+    "risk": "high"
+   },
+   "displayed": {
+    "Forventet beløp:": 1140481,
+    "Avkastning før skatt": 610481,
+    "Du har spart": 530000
+   },
+   "formula": {
+    "Forventet beløp:": 1140481,
+    "Avkastning før skatt": 610481,
+    "Du har spart": 530000
+   },
+   "match": true,
+   "suggestedProduct": "Alt-i-ett 100"
+  },
+  {
+   "step": "M12",
+   "mode": "monthly",
+   "inputs": {
+    "monthly": 500,
+    "start": 6000,
+    "years": 15,
+    "risk": "low"
+   },
+   "displayed": {
+    "Forventet beløp:": 149610,
+    "Avkastning før skatt": 53610,
+    "Du har spart": 96000
+   },
+   "formula": {
+    "Forventet beløp:": 149610,
+    "Avkastning før skatt": 53610,
+    "Du har spart": 96000
+   },
+   "match": true,
+   "suggestedProduct": "Alt-i-ett 50"
+  },
+  {
+   "step": "M10 expanded",
+   "mode": "monthly",
+   "inputs": {
+    "monthly": 2000,
+    "start": 50000,
+    "years": 20,
+    "risk": "none"
+   },
+   "displayed": {
+    "Forventet beløp: (bar detail)": 745626,
+    "rateLabel": "3,00 %"
+   },
+   "formula": {
+    "Forventet beløp:": 745626
+   },
+   "match": true
+  },
+  {
+   "step": "M10 expanded",
+   "mode": "monthly",
+   "inputs": {
+    "monthly": 2000,
+    "start": 50000,
+    "years": 20,
+    "risk": "low"
+   },
+   "displayed": {
+    "Forventet beløp: (bar detail)": 986627,
+    "rateLabel": "5,33 %"
+   },
+   "formula": {
+    "Forventet beløp:": 986627
+   },
+   "match": true
+  },
+  {
+   "step": "M10 expanded",
+   "mode": "monthly",
+   "inputs": {
+    "monthly": 2000,
+    "start": 50000,
+    "years": 20,
+    "risk": "medium"
+   },
+   "displayed": {
+    "Forventet beløp: (bar detail)": 1075644,
+    "rateLabel": "6,03 %"
+   },
+   "formula": {
+    "Forventet beløp:": 1075644
+   },
+   "match": true
+  },
+  {
+   "step": "M10 expanded",
+   "mode": "monthly",
+   "inputs": {
+    "monthly": 2000,
+    "start": 50000,
+    "years": 20,
+    "risk": "high"
+   },
+   "displayed": {
+    "Forventet beløp: (bar detail)": 1140481,
+    "rateLabel": "6,50 %"
+   },
+   "formula": {
+    "Forventet beløp:": 1140481
+   },
+   "match": true
+  },
+  {
+   "step": "G0",
+   "mode": "savingsGoal",
+   "inputs": {
+    "goal": 200000,
+    "start": 20000,
+    "years": 5,
+    "risk": "medium"
+   },
+   "displayed": {
+    "Hver måned må du spare:": 2535,
+    "Totalt beløp": 200000,
+    "Du har spart": 172100,
+    "Avkastning før skatt": 27900
+   },
+   "formula": {
+    "Hver måned må du spare:": 2535,
+    "Totalt beløp": 200000,
+    "Du har spart": 172100,
+    "Avkastning før skatt": 27900
+   },
+   "match": true,
+   "suggestedProduct": "Alt-i-ett 50"
+  },
+  {
+   "step": "G1",
+   "mode": "savingsGoal",
+   "inputs": {
+    "goal": 200000,
+    "start": 20000,
+    "years": 10,
+    "risk": "high"
+   },
+   "displayed": {
+    "Hver måned må du spare:": 969,
+    "Totalt beløp": 200000,
+    "Du har spart": 136280,
+    "Avkastning før skatt": 63720
+   },
+   "formula": {
+    "Hver måned må du spare:": 969,
+    "Totalt beløp": 200000,
+    "Du har spart": 136280,
+    "Avkastning før skatt": 63720
+   },
+   "match": true,
+   "suggestedProduct": "Alt-i-ett 100"
+  },
+  {
+   "step": "G2",
+   "mode": "savingsGoal",
+   "inputs": {
+    "goal": 1000000,
+    "start": 20000,
+    "years": 5,
+    "risk": "medium"
+   },
+   "displayed": {
+    "Hver måned må du spare:": 14187,
+    "Totalt beløp": 1000000,
+    "Du har spart": 871220,
+    "Avkastning før skatt": 128780
+   },
+   "formula": {
+    "Hver måned må du spare:": 14187,
+    "Totalt beløp": 1000000,
+    "Du har spart": 871220,
+    "Avkastning før skatt": 128780
+   },
+   "match": true,
+   "suggestedProduct": "Alt-i-ett 50"
+  },
+  {
+   "step": "G3",
+   "mode": "savingsGoal",
+   "inputs": {
+    "goal": 1000000,
+    "start": 20000,
+    "years": 15,
+    "risk": "medium"
+   },
+   "displayed": {
+    "Hver måned må du spare:": 3294,
+    "Totalt beløp": 1000000,
+    "Du har spart": 612920,
+    "Avkastning før skatt": 387080
+   },
+   "formula": {
+    "Hver måned må du spare:": 3294,
+    "Totalt beløp": 1000000,
+    "Du har spart": 612920,
+    "Avkastning før skatt": 387080
+   },
+   "match": true,
+   "suggestedProduct": "Alt-i-ett 80"
+  },
+  {
+   "step": "G4",
+   "mode": "savingsGoal",
+   "inputs": {
+    "goal": 1000000,
+    "start": 20000,
+    "years": 15,
+    "risk": "none"
+   },
+   "displayed": {
+    "Hver måned må du spare:": 4272,
+    "Totalt beløp": 1000000,
+    "Du har spart": 788960,
+    "Avkastning før skatt": 211040
+   },
+   "formula": {
+    "Hver måned må du spare:": 4272,
+    "Totalt beløp": 1000000,
+    "Du har spart": 788960,
+    "Avkastning før skatt": 211040
+   },
+   "match": true,
+   "suggestedProduct": "Sparekonto"
+  },
+  {
+   "step": "G5",
+   "mode": "savingsGoal",
+   "inputs": {
+    "goal": 1000000,
+    "start": 0,
+    "years": 15,
+    "risk": "low"
+   },
+   "displayed": {
+    "Hver måned må du spare:": 3662,
+    "Totalt beløp": 1000000,
+    "Du har spart": 659160,
+    "Avkastning før skatt": 340840
+   },
+   "formula": {
+    "Hver måned må du spare:": 3662,
+    "Totalt beløp": 1000000,
+    "Du har spart": 659160,
+    "Avkastning før skatt": 340840
+   },
+   "match": true,
+   "suggestedProduct": "Alt-i-ett 50"
+  },
+  {
+   "step": "G6 expanded",
+   "mode": "savingsGoal",
+   "inputs": {
+    "goal": 1000000,
+    "start": 0,
+    "years": 15,
+    "risk": "none"
+   },
+   "displayed": {
+    "Hver måned må du spare: (bar detail)": 4409
+   },
+   "formula": {
+    "Hver måned må du spare:": 4409
+   },
+   "match": true
+  },
+  {
+   "step": "G6 expanded",
+   "mode": "savingsGoal",
+   "inputs": {
+    "goal": 1000000,
+    "start": 0,
+    "years": 15,
+    "risk": "low"
+   },
+   "displayed": {
+    "Hver måned må du spare: (bar detail)": 3662
+   },
+   "formula": {
+    "Hver måned må du spare:": 3662
+   },
+   "match": true
+  },
+  {
+   "step": "G6 expanded",
+   "mode": "savingsGoal",
+   "inputs": {
+    "goal": 1000000,
+    "start": 0,
+    "years": 15,
+    "risk": "medium"
+   },
+   "displayed": {
+    "Hver måned må du spare: (bar detail)": 3460
+   },
+   "formula": {
+    "Hver måned må du spare:": 3460
+   },
+   "match": true
+  },
+  {
+   "step": "G6 expanded",
+   "mode": "savingsGoal",
+   "inputs": {
+    "goal": 1000000,
+    "start": 0,
+    "years": 15,
+    "risk": "high"
+   },
+   "displayed": {
+    "Hver måned må du spare: (bar detail)": 3330
+   },
+   "formula": {
+    "Hver måned må du spare:": 3330
+   },
+   "match": true
+  }
+ ]
+}

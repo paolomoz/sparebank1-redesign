@@ -1,0 +1,70 @@
+{
+ "buckets": [
+  1,
+  4,
+  9,
+  null
+ ],
+ "ladder": {
+  "none": [
+   "Sparekonto",
+   "Sparekonto",
+   "Sparekonto",
+   "Sparekonto"
+  ],
+  "low": [
+   "Sparekonto",
+   "Sparekonto",
+   "Alt-i-ett 20",
+   "Alt-i-ett 50"
+  ],
+  "medium": [
+   "Sparekonto",
+   "Alt-i-ett 20",
+   "Alt-i-ett 50",
+   "Alt-i-ett 80"
+  ],
+  "high": [
+   "Sparekonto",
+   "Alt-i-ett 50",
+   "Alt-i-ett 80",
+   "Alt-i-ett 100"
+  ]
+ },
+ "packages": {
+  "Sparekonto": {
+   "id": 0,
+   "rate": 3,
+   "description": "Bankinnskudd med fast rente og innskuddsgaranti.",
+   "isin": null
+  },
+  "Alt-i-ett 20": {
+   "id": 9,
+   "rate": 4.62,
+   "description": "Kombinasjonsfond med ca. 20 % aksjer og 80 % renter. Passer for deg som ønsker lav risiko.",
+   "isin": "NO0010841000",
+   "fund": "SpareBank 1 Alt-i-ett 20 N"
+  },
+  "Alt-i-ett 50": {
+   "id": 6,
+   "rate": 5.33,
+   "description": "Kombinasjonsfond med ca. 50 % aksjer og 50 % renter. Passer for deg som ønsker middels risiko.",
+   "isin": "NO0010841042",
+   "fund": "SpareBank 1 Alt-i-ett 50 N"
+  },
+  "Alt-i-ett 80": {
+   "id": 7,
+   "rate": 6.03,
+   "description": "Kombinasjonsfond med ca. 80 % aksjer og 20 % renter. Passer for deg som ønsker høy risiko.",
+   "isin": "NO0010841075",
+   "fund": "SpareBank 1 Alt-i-ett 80 N"
+  },
+  "Alt-i-ett 100": {
+   "id": 10,
+   "rate": 6.5,
+   "description": "Aksjefond med ca. 100 % aksjer. Passer for deg som ønsker høyest mulig forventet avkastning og tåler svingninger.",
+   "isin": "NO0012619024",
+   "fund": "SpareBank 1 Alt-i-ett 100 N"
+  }
+ }
+}
