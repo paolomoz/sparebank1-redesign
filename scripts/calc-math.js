@@ -124,12 +124,12 @@ export function requiredSavings({
 
 /**
  * valutakalkulator: the from-currency goes to NOK at the bank's buy rate, NOK goes to the to-currency at its sell rate;
- * the rate line reads "1 <to> = <buy(to) / buy(from)> <from>". Rates are per `unitNumber` (1 or 100) NOK.
+ * the rate line reads "1 <to> = <buy(to) / sell(from)> <from>". Rates are per `unitNumber` (1 or 100) NOK.
  */
 export function convertCurrency(amount, from, to, rates) {
   const r = (code, k) => (code === 'NOK' ? 1 : rates[code][k] / rates[code].unitNumber);
   const nok = amount * r(from, 'buyCashRate');
-  return { result: nok / r(to, 'sellCashRate'), rate: r(to, 'buyCashRate') / r(from, 'buyCashRate') };
+  return { result: nok / r(to, 'sellCashRate'), rate: r(to, 'buyCashRate') / r(from, 'sellCashRate') };
 }
 
 /* ------------------------------------------------------------ formatting */

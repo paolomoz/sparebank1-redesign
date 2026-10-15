@@ -5,8 +5,29 @@ import { el, icon } from '../../scripts/sb1.js';
  * Variant `directory` (kontakt): the first column holds row headers (<th scope="row">) — the bank directory.
  * Variant `disclose` (iban, valutakurser): the FIRST row is the toggle label (secondary pill, chevron-only <button> — EW7), an optional
  * single-cell heading row follows, then the header + data rows sit in a hidden panel until opened (the canon <details> starts closed).
+ * Variant `rates` (valutakurser, dynamics #9): rows are [<CODE> <name> | customer sells | customer buys | per]; the numbers are
+ * topped up from the bank's rate list (the converter's snapshot, scripts/site-config.js `currencyRates`) by currency code — the
+ * authored numbers stay as the fallback, the currency text stays authored.
  * Authored cell content is MOVED into <th>/<td> (EW1); phone numbers stay the authored tel: links.
  */
+async function topUpRates(block) {
+  const { loadFeatureData } = await import('../../scripts/site-config.js');
+  const res = await loadFeatureData('currencyRates');
+  const list = res && (Array.isArray(res.data) ? res.data : res.data.rates);
+  if (!list?.length) return;
+  const rates = Object.fromEntries(list.map((r) => [r.currencyCode, r]));
+  block.querySelectorAll('tbody tr').forEach((tr) => {
+    const cells = [...tr.children];
+    const r = rates[(cells[0]?.textContent.match(/[A-Z]{3}/) || [])[0]];
+    if (!r || cells.length < 4) return;
+    [r.buyCashRate, r.sellCashRate, r.unitNumber].forEach((v, i) => {
+      const target = cells[i + 1].querySelector('p') || cells[i + 1];
+      target.textContent = String(v);
+    });
+  });
+  block.dataset.snapshot = res.live ? 'live' : res.data.snapshotAt;
+}
+
 function buildTable(rows, { header, rowHeaders }) {
   const table = el('table'); const thead = el('thead'); const tbody = el('tbody');
   rows.forEach((row, i) => {
@@ -38,7 +59,9 @@ export default function decorate(block) {
     const toggle = () => { const open = btn.getAttribute('aria-expanded') === 'true'; btn.setAttribute('aria-expanded', String(!open)); panel.hidden = open; block.classList.toggle('is-open', !open); };
     head.addEventListener('click', toggle);
     block.replaceChildren(el('div', { class: 'disclose' }, head, panel));
+    if (block.classList.contains('rates')) topUpRates(block);
     return;
   }
   block.replaceChildren(buildTable(rows, opts));
+  if (block.classList.contains('rates')) topUpRates(block);
 }

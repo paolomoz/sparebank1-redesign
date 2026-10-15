@@ -1,9 +1,18 @@
-/* converter — canon .conv (frost paper, two fields per row, read-only values). Lifted from the tool sibling renderer. */
+/* converter — canon .conv (frost paper, two fields per row). Lifted from the tool sibling renderer; live controls (dynamics #9). */
 .converter .conv { display: grid; gap: var(--spacing-md); max-width: 36rem; padding: var(--spacing-lg); background: var(--frost-30); border-radius: var(--radius); }
 .converter .conv-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--spacing-md); }
 .converter .conv-field { display: grid; gap: 4px; }
 .converter .conv-field .label p { margin: 0; }
 .converter .conv-out { display: flex; align-items: center; min-height: 44px; padding: 10px 14px; border: 1px dashed var(--lysgraa); border-radius: var(--radius-sm); font: var(--body) / 1.2 var(--body-font-family); color: var(--koksgraa); background: #fff; width: 100%; }
+.converter .conv-select,
+.converter .conv-in { min-height: 44px; width: 100%; padding: 10px 14px; border: 1px solid var(--graa); border-radius: var(--radius-sm); background: #fff; color: var(--koksgraa); font: var(--body) / 1.2 var(--body-font-family); }
+.converter .conv-in { text-align: right; font-variant-numeric: tabular-nums; }
+.converter .conv-select:focus-visible,
+.converter .conv-in:focus-visible { outline: 2px solid var(--vann); outline-offset: 2px; }
+.converter .conv-select:disabled,
+.converter .conv-in:disabled { background: var(--lysgraa); cursor: not-allowed; }
+.converter label.label { font-family: var(--title-font-family); color: var(--fjell); }
+.converter .conv-stamp:empty { display: none; }
 .converter .conv-out p { margin: 0; }
 .converter .conv-rate p { margin: 0; font-family: var(--title-font-family); }
 .converter .conv-msg p { margin: 0; }

@@ -25,10 +25,9 @@ const CONFIG = {
   },
   /** #8 savings calculator: expected return + suggested product per (risk × years) (snapshot; the maths is client-side). */
   savingsAssumptions: {
-    enabled: false,
-    url: `${SOURCE}/openapi/personal/banking/savingscalculator`,
     snapshot: '/data/savings-calculator/assumptions.json',
-    owner: 'SB1: confirm the snapshot sync cadence or expose savingscalculator/* cross-origin',
+    source: `${SOURCE}/openapi/personal/banking/savingscalculator/{expected-performance,suggested-savings-product}`,
+    owner: 'SB1: own the assumption table (sync-snapshots.mjs savings) — the fund factsheet (#8a) needs the fund data feed',
   },
   /** #9 currency converter + rate list: the bank's daily rates (snapshot, dated). */
   currencyRates: {
