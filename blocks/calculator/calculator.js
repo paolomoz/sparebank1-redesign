@@ -28,7 +28,12 @@ const parseNum = (s) => {
 const textOf = (n) => (n ? n.textContent.replace(/\s+/g, ' ').trim() : '');
 const para = (cell) => cell?.querySelector('p') || cell;
 /** Replace the numbers of an authored sentence, in order. */
-const fill = (node, values) => { if (!node) return; let i = 0; node.dataset.template ||= node.textContent; node.textContent = node.dataset.template.replace(NUM, (m) => (i < values.length ? values[i++] : m)); };
+const fill = (node, values) => {
+  if (!node) return;
+  const queue = [...values];
+  node.dataset.template ||= node.textContent;
+  node.textContent = node.dataset.template.replace(NUM, (m) => (queue.length ? queue.shift() : m));
+};
 const isPriceExample = (n) => (textOf(n).match(NUM) || []).length >= 5;
 
 /** Split the block rows into tabs. */
@@ -100,31 +105,18 @@ function economyPanel(rows, { costDefaults }) {
   panel.dataset.state = 'api';
   const state = { borrowers: 1, children: 0, cars: 0, income: parseNum(textOf(inputs[0].value)), debt: parseNum(textOf(inputs[1].value)) };
   const keys = ['borrowers', 'children', 'cars'];
-  pills.forEach(({ items }, g) => items.forEach((li) => {
-    const btn = el('button', { type: 'button', class: 'pill', 'aria-pressed': String(li.classList.contains('is-on')) }, ...li.childNodes);
-    li.replaceWith(btn);
-    btn.addEventListener('click', () => {
-      btn.parentElement.querySelectorAll('.pill').forEach((p) => { p.classList.toggle('is-on', p === btn); p.setAttribute('aria-pressed', String(p === btn)); });
-      state[keys[g]] = parseNum(btn.textContent); run();
-    });
-  }));
-  inputs.forEach(({ value }, i) => {
-    const inp = el('input', { type: 'text', inputmode: 'numeric', class: 'input is-live', value: nb.format(parseNum(textOf(value))), 'aria-label': textOf(value.closest('.field')?.querySelector('.label')) });
-    value.closest('.input').replaceWith(inp);
-    inp.addEventListener('input', () => { state[i ? 'debt' : 'income'] = parseNum(inp.value); run(); });
-  });
   let seq = 0; let timer;
   function run() {
     clearTimeout(timer);
     timer = setTimeout(async () => {
-      const my = ++seq; // eslint-disable-line no-plusplus
+      seq += 1; const my = seq;
       if (state.income <= 0) return;
       const adults = [{ age: 35, gender: 'Male', grossSalary: state.income / state.borrowers, employmentStatus: 'Employed' }];
       if (state.borrowers === 2) adults.push({ age: 35, gender: 'Female', grossSalary: state.income / 2, employmentStatus: 'Employed' });
       const children = Array.from({ length: Math.min(state.children, 5) }, (_, i) => ({ age: 9, gender: i % 2 === 0 ? 'Female' : 'Male', kindergarden: false, afterSchoolCareFullTime: false, afterSchoolCarePartTime: true }));
-      const body = { calculationDataset: 'Loke', adults, children: children.length ? children : undefined, numberOfPetrolCars: state.cars, numberOfElectricCars: 0, existingMortgage: state.debt, interestRate: costDefaults.rate, feeMonthly: fees?.monthly ?? 0, loanTermYears: costDefaults.years, feeEstablishment: fees?.establishment ?? 0 };
+      const req = { calculationDataset: 'Loke', adults, children: children.length ? children : undefined, numberOfPetrolCars: state.cars, numberOfElectricCars: 0, existingMortgage: state.debt, interestRate: costDefaults.rate, feeMonthly: fees?.monthly ?? 0, loanTermYears: costDefaults.years, feeEstablishment: fees?.establishment ?? 0 };
       try {
-        const res = await fetch(`${cfg.endpoint}economy`, { method: 'POST', credentials: 'same-origin', headers: { 'Content-Type': 'application/json', Accept: 'application/vnd.sparebank1.v1+json' }, body: JSON.stringify(body) });
+        const res = await fetch(`${cfg.endpoint}economy`, { method: 'POST', credentials: 'same-origin', headers: { 'Content-Type': 'application/json', Accept: 'application/vnd.sparebank1.v1+json' }, body: JSON.stringify(req) });
         if (!res.ok || my !== seq) return;
         const { displayedAdjustedMaxLoanAmount: max = 0 } = await res.json();
         resultValue.textContent = `${kr(max)} kr`;
@@ -140,6 +132,19 @@ function economyPanel(rows, { costDefaults }) {
       } catch { /* keep the last shown value */ }
     }, 500);
   }
+  pills.forEach(({ items }, g) => items.forEach((li) => {
+    const btn = el('button', { type: 'button', class: 'pill', 'aria-pressed': String(li.classList.contains('is-on')) }, ...li.childNodes);
+    li.replaceWith(btn);
+    btn.addEventListener('click', () => {
+      btn.parentElement.querySelectorAll('.pill').forEach((p) => { p.classList.toggle('is-on', p === btn); p.setAttribute('aria-pressed', String(p === btn)); });
+      state[keys[g]] = parseNum(btn.textContent); run();
+    });
+  }));
+  inputs.forEach(({ value }, i) => {
+    const inp = el('input', { type: 'text', inputmode: 'numeric', class: 'input is-live', value: nb.format(parseNum(textOf(value))), 'aria-label': textOf(value.closest('.field')?.querySelector('.label')) });
+    value.closest('.input').replaceWith(inp);
+    inp.addEventListener('input', () => { state[i ? 'debt' : 'income'] = parseNum(inp.value); run(); });
+  });
   return panel;
 }
 
@@ -254,7 +259,10 @@ export default function decorate(block) {
   const costTab = tabs.find(isCost);
   const cost = costTab ? costPanel(costTab.rows) : null;
   const costDefaults = cost?.defaults || { rate: 0, years: 25 };
-  const panels = tabs.map((t) => (t === costTab ? cost?.panel : (t.rows.length ? economyPanel(t.rows, { costDefaults }) : null)));
+  const panels = tabs.map((t) => {
+    if (t === costTab) return cost?.panel;
+    return t.rows.length ? economyPanel(t.rows, { costDefaults }) : null;
+  });
 
   if (tabsRow) {
     const label = para(tabsRow.children[0]); label.classList.add('visually-hidden');
