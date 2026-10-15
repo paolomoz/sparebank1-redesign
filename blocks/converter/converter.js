@@ -59,7 +59,8 @@ export default async function decorate(block) {
   const list = res && (Array.isArray(res.data) ? res.data : res.data.rates);
   if (!list?.length) return;
   const rates = Object.fromEntries(list.map((r) => [r.currencyCode, r]));
-  const options = [['NOK', 'Norske kroner'], ...list.map((r) => [r.currencyCode, r.currencyName.trim()])];
+  // the feed lists NOK itself (100/100); the source offers it once, first
+  const options = [['NOK', 'Norske kroner'], ...list.filter((r) => r.currencyCode !== 'NOK').map((r) => [r.currencyCode, r.currencyName.trim()])];
   [fromSel, toSel].forEach((sel, i) => {
     sel.replaceChildren(...options.map(([c, name]) => el('option', { value: c }, `${c} ${name}`)));
     sel.value = i ? toDefault : fromDefault;
