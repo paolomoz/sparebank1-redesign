@@ -125,6 +125,9 @@ export default function decorate(block) {
   };
 
   input.addEventListener('input', () => render(input.value));
+  // the form's native GET (?postnummer=7010) lands on the result too — shareable, and what a no-JS submit produces
+  const asked = new URLSearchParams(window.location.search).get('postnummer');
+  if (asked) { input.value = asked.slice(0, 4); render(input.value); }
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const v = input.value.trim();
