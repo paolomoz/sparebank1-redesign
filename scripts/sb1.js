@@ -41,6 +41,7 @@ const ICONS = {
   'thumb-down': '<path d="M17 13V4h3v9h-3zm0 0-4 7.5a2 2 0 0 1-2-2V14H5.5A1.5 1.5 0 0 1 4 12.3l1.2-6.6A2 2 0 0 1 7.2 4H17"/>',
   info: '<circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8v.5"/>',
   play: '<circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/>',
+  swap: '<path d="M8 4v15M4.5 15.5 8 19l3.5-3.5M16 20V5M12.5 8.5 16 5l3.5 3.5"/>',
   external: '<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
 };
 

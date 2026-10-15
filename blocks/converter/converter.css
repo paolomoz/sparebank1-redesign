@@ -1,12 +1,23 @@
-/* converter — canon .conv (frost paper, two fields per row, read-only values). Lifted from the tool sibling renderer. */
+/* converter — canon .conv (frost paper, two fields per row). Lifted from the tool sibling renderer; live controls (dynamics #9). */
 .converter .conv { display: grid; gap: var(--spacing-md); max-width: 36rem; padding: var(--spacing-lg); background: var(--frost-30); border-radius: var(--radius); }
 .converter .conv-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--spacing-md); }
-.converter .conv-field { display: grid; gap: 4px; }
-.converter .conv-field .label p { margin: 0; }
-.converter .conv-out { display: flex; align-items: center; min-height: 44px; padding: 10px 14px; border: 1px dashed var(--lysgraa); border-radius: var(--radius-sm); font: var(--body) / 1.2 var(--body-font-family); color: var(--koksgraa); background: #fff; width: 100%; }
+.converter .conv-field { display: grid; gap: 4px; align-content: start; }
+.converter .conv-field .label p, .converter .conv-field .label div { margin: 0; }
+.converter .label { font-family: var(--title-font-family); font-size: var(--label); line-height: 1.4; color: var(--fjell); }
+.converter .conv-out, .converter .conv-in, .converter .conv-select { display: flex; align-items: center; min-height: 44px; padding: 10px 14px; border: 1px solid var(--graa); border-radius: var(--radius-sm); font: var(--body) / 1.2 var(--body-font-family); color: var(--koksgraa); background: #fff; width: 100%; }
+.converter .conv-in { text-align: right; font-variant-numeric: tabular-nums; }
+.converter .conv-in:focus, .converter .conv-select:focus { outline: 2px solid var(--fjell); outline-offset: 2px; }
+.converter .conv-select { appearance: none; padding-right: 36px; background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23002776' stroke-width='1.6'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 10px center / 20px; cursor: pointer; }
+.converter output.conv-out { justify-content: flex-end; border-style: dashed; border-color: var(--lysgraa); font-variant-numeric: tabular-nums; }
 .converter .conv-out p { margin: 0; }
-.converter .conv-rate p { margin: 0; font-family: var(--title-font-family); }
+.converter .conv-swap-row { display: flex; justify-content: flex-start; margin: -8px 0; }
+.converter .conv-swap { display: inline-flex; align-items: center; justify-content: center; gap: 0; width: 44px; height: 44px; border: 1px solid var(--graa); border-radius: 50%; background: #fff; color: var(--fjell); cursor: pointer; }
+.converter .conv-swap:hover { background: var(--frost-30); }
+.converter .conv-swap:focus-visible { outline: 2px solid var(--fjell); outline-offset: 2px; }
+.converter .conv-swap svg { width: 20px; height: 20px; fill: none; stroke: currentcolor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.converter .conv-rate p, .converter .conv-rate { margin: 0; font-family: var(--title-font-family); }
 .converter .conv-msg p { margin: 0; }
+.converter .conv-error { margin: 0; color: var(--koksgraa); }
 
 @media (width <= 640px) {
   .converter .conv-row { grid-template-columns: 1fr; }
