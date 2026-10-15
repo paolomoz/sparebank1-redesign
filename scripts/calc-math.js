@@ -78,12 +78,17 @@ export function economyRequest({
       age: 9, gender: i % 2 === 0 ? 'Female' : 'Male', kindergarden: false, afterSchoolCareFullTime: false, afterSchoolCarePartTime: true,
     });
   }
-  const body = {
-    calculationDataset: 'Loke', adults, numberOfPetrolCars: cars, numberOfElectricCars: 0, existingMortgage: debt,
-  };
-  if (kids.length) body.children = kids;
   return {
-    ...body, interestRate, feeMonthly, loanTermYears, feeEstablishment,
+    calculationDataset: 'Loke',
+    adults,
+    ...(kids.length ? { children: kids } : {}),
+    numberOfPetrolCars: cars,
+    numberOfElectricCars: 0,
+    existingMortgage: debt,
+    interestRate,
+    feeMonthly,
+    loanTermYears,
+    feeEstablishment,
   };
 }
 

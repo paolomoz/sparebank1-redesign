@@ -1,0 +1,57 @@
+/* savings-calculator — the sparekalkulator (dynamics #8) in the calculator canon: one Frost-30 card, tab pills, inputs left, results right */
+.savings-calculator .container { width: 100%; }
+.savings-calculator .sc { display: grid; gap: var(--spacing-lg); padding: 48px; background: var(--frost-30); border-radius: var(--radius); }
+.savings-calculator p { margin: 0; }
+.savings-calculator .sc-tabs { display: inline-flex; justify-self: start; gap: 4px; padding: 4px; background: #fff; border-radius: var(--radius-pill); }
+.savings-calculator .sc-tab { min-height: 40px; padding: 8px 20px; border: 0; border-radius: var(--radius-pill); background: transparent; color: var(--moerkgraa); font: var(--body) / 1.2 var(--body-font-family); cursor: pointer; }
+.savings-calculator .sc-tab[aria-selected="true"] { background: var(--fjell); color: #fff; }
+.savings-calculator .sc-tab:focus-visible { outline: 2px solid var(--vann); outline-offset: 2px; }
+.savings-calculator .sc-heading :is(h2, h3, p) { font-family: var(--title-font-family); font-size: var(--title); line-height: 1.25; color: var(--fjell); }
+.savings-calculator .sc-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--spacing-xl); margin-top: var(--spacing-md); }
+.savings-calculator .sc-col { display: grid; gap: var(--spacing-md); align-content: start; }
+.savings-calculator .sc-inputs { display: grid; gap: var(--spacing-md); }
+.savings-calculator .sc-field { display: grid; gap: 8px; }
+.savings-calculator .label,
+.savings-calculator .label p { font-family: var(--title-font-family); font-size: var(--label); line-height: 1.4; color: var(--fjell); }
+.savings-calculator .sc-control { display: grid; grid-template-columns: minmax(0, 1fr) 11rem; align-items: center; gap: var(--spacing-sm); }
+.savings-calculator .sc-range { width: 100%; accent-color: var(--vann); }
+.savings-calculator .sc-input-wrap { position: relative; }
+.savings-calculator .sc-input,
+.savings-calculator .sc-select { width: 100%; min-height: 44px; padding: 10px 14px; border: 1px solid var(--graa); border-radius: var(--radius-sm); background: #fff; color: var(--koksgraa); font: var(--body) / 1.2 var(--body-font-family); }
+.savings-calculator .sc-input { padding-right: 44px; text-align: right; font-variant-numeric: tabular-nums; }
+.savings-calculator .sc-unit { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); color: var(--moerkgraa); font-size: var(--body-sm); }
+.savings-calculator .sc-input:focus-visible,
+.savings-calculator .sc-select:focus-visible { outline: 2px solid var(--vann); outline-offset: 2px; }
+.savings-calculator .sc-profile { display: grid; gap: 4px; padding: var(--spacing-sm) var(--spacing-md); background: #fff; border-radius: var(--radius-sm); }
+.savings-calculator .sc-profile-title { font-family: var(--title-font-family); color: var(--fjell); }
+.savings-calculator .sc-profile-text,
+.savings-calculator .sc-reco { font-size: var(--body-sm); color: var(--koksgraa); }
+.savings-calculator .sc-results { display: grid; gap: var(--spacing-sm); margin: 0; }
+.savings-calculator .sc-result { display: flex; justify-content: space-between; align-items: baseline; gap: var(--spacing-sm); padding-bottom: 8px; border-bottom: 1px solid var(--lysgraa); }
+.savings-calculator .sc-result:first-child { display: grid; justify-content: start; border: 0; }
+.savings-calculator .sc-results dt p { display: inline; }
+.savings-calculator .sc-value { margin: 0; font-variant-numeric: tabular-nums; color: var(--koksgraa); }
+.savings-calculator .sc-value.sc-big { font-family: var(--heading-font-family); font-size: var(--t-display); line-height: 1; color: var(--fjell); }
+.savings-calculator .sc-ctas { display: flex; flex-wrap: wrap; gap: var(--spacing-sm); }
+.savings-calculator .sc-ctas p { margin: 0; }
+.savings-calculator .sc-compare-toggle { justify-self: start; padding: 8px 0; border: 0; background: none; font: inherit; cursor: pointer; }
+.savings-calculator .sc-compare-toggle[aria-expanded="true"]::after { transform: rotate(135deg); }
+.savings-calculator .sc-compare-panel { display: grid; gap: var(--spacing-sm); }
+.savings-calculator .sc-compare-panel[hidden] { display: none; }
+.savings-calculator .sc-compare-list { display: grid; gap: var(--spacing-sm); margin: 0; }
+.savings-calculator .sc-compare-row dt { font-family: var(--title-font-family); color: var(--fjell); font-size: var(--body-sm); }
+.savings-calculator .sc-compare-row dd { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; margin: 4px 0 0; align-items: center; font-size: var(--body-sm); }
+.savings-calculator .sc-bar { display: block; height: 8px; border-radius: var(--radius-pill); background: #fff; overflow: hidden; }
+.savings-calculator .sc-bar-fill { display: block; height: 100%; background: var(--vann); border-radius: inherit; }
+.savings-calculator .sc-compare-amount { grid-column: 1 / -1; color: var(--koksgraa); }
+.savings-calculator .sc-compare-panel > p { font-size: var(--body-sm); color: var(--moerkgraa); }
+.savings-calculator .sc-footnote p { max-width: 70ch; font-size: var(--body-sm); color: var(--moerkgraa); }
+
+@media (width <= 900px) {
+  .savings-calculator .sc { padding: 36px 20px; }
+  .savings-calculator .sc-grid { grid-template-columns: 1fr; }
+  .savings-calculator .sc-tabs { display: grid; grid-template-columns: 1fr 1fr; justify-self: stretch; }
+  .savings-calculator .sc-control { grid-template-columns: 1fr; }
+  .savings-calculator .sc-ctas p,
+  .savings-calculator .sc-ctas a.button { flex: 1 1 100%; width: 100%; text-align: center; }
+}

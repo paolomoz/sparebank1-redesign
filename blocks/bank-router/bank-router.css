@@ -16,7 +16,7 @@ main .section.router > div { width: 100%; }
 .bank-router .router-toggle[aria-expanded="true"]::after { transform: rotate(135deg); }
 .bank-router .field-msg { min-height: 0; font-size: var(--body-sm); color: #fff; }
 .bank-router .field-msg:empty { display: none; }
-.bank-router .input[aria-invalid="true"] { outline: 2px solid var(--villblomst); outline-offset: 2px; }
+.bank-router .input[aria-invalid="true"] { outline: 2px solid var(--sol); outline-offset: 2px; }
 .bank-router .bank-list[hidden], .bank-router .bank-list li[hidden] { display: none; }
 .bank-router .bank-list { margin-top: 12px; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0 32px; list-style: none; padding: 0; }
 .bank-router .bank-list li { padding: 10px 0; border-top: 1px solid rgb(255 255 255 / 18%); font-size: var(--body-sm); line-height: 1.43; min-width: 0; margin: 0; }

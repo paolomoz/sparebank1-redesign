@@ -3,25 +3,52 @@
 @import url("calculator-hub.css");
 @import url("calculator-story.css");
 @import url("calculator-omoss.css");
-/* calculator — static shell of the captured widget (dynamics #7 interim), canon .calc on Frost-30 */
+/* calculator — the boliglånskalkulator (dynamics #7): canon .calc on Frost-30, live tabs, pills and inputs */
 .calculator .container { width: 100%; }
-.calculator .calc { display: grid; gap: var(--spacing-lg); width: min(100%, 44rem); justify-items: start; text-align: left; }
+.calculator .calc { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--spacing-lg); width: min(100%, 44rem); justify-items: start; text-align: left; }
+.calculator .calc > *, .calculator .calc-panel > * { min-width: 0; max-width: 100%; }
 .calculator .calc p { margin: 0; }
 .calculator .calc ul { list-style: none; margin: 0; padding: 0; }
-.calculator .calc-tabs-wrap { display: inline-flex; padding: 4px; background: #fff; border: 0; border-radius: var(--radius-sm); }
-.calculator .calc-tabs { display: inline-flex; }
-.calculator .calc-tab { min-height: 40px; display: inline-flex; align-items: center; padding: 8px 20px; border-radius: var(--radius-pill); background: transparent; color: var(--moerkgraa); font: var(--body) / 1.2 var(--body-font-family); cursor: not-allowed; margin: 0; }
-.calculator .calc-tab.is-on { background: var(--lysgraa); color: var(--koksgraa); }
+.calculator .calc-tabs { display: inline-flex; gap: 4px; padding: 4px; background: #fff; border: 0; border-radius: var(--radius-pill); }
+.calculator .calc-tab { min-height: 40px; display: inline-flex; align-items: center; padding: 8px 20px; border-radius: var(--radius-pill); background: transparent; color: var(--moerkgraa); font: var(--body) / 1.2 var(--body-font-family); cursor: pointer; margin: 0; border: 0; }
+.calculator .calc-tab[aria-selected="true"] { background: var(--fjell); color: #fff; }
+.calculator .calc-tab:focus-visible, .calculator .pill:focus-visible, .calculator .calc-input:focus-visible { outline: 2px solid var(--vann); outline-offset: 2px; }
+.calculator .calc-panel { display: grid; gap: var(--spacing-lg); width: 100%; }
+.calculator .calc-panel[hidden] { display: none; }
 .calculator .calc-groups { display: flex; flex-wrap: wrap; gap: var(--spacing-md) var(--spacing-xl); }
 .calculator .calc-pills { display: grid; gap: 8px; justify-items: start; }
 .calculator .label p { font-family: var(--title-font-family); font-size: var(--label); line-height: 1.4; letter-spacing: 0.01em; color: var(--fjell); }
 .calculator .pill-row { display: flex; flex-wrap: wrap; gap: 8px; }
-.calculator .pill { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 0 12px; border: 1px solid var(--graa); border-radius: var(--radius-pill); background: #fff; color: var(--moerkgraa); font-family: var(--title-font-family); cursor: not-allowed; margin: 0; }
-.calculator .pill.is-on { background: var(--lysgraa); border-color: var(--graa); color: var(--koksgraa); }
+.calculator .pill { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 0 12px; border: 1px solid var(--graa); border-radius: var(--radius-pill); background: #fff; color: var(--moerkgraa); font-family: var(--title-font-family); cursor: pointer; margin: 0; }
+.calculator .pill:hover { border-color: var(--fjell); }
+.calculator .pill[aria-pressed="true"] { background: var(--fjell); border-color: var(--fjell); color: #fff; }
 .calculator .calc-fields { display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); width: min(100%, 32rem); }
 .calculator .field { display: grid; gap: 6px; text-align: left; }
-.calculator .input { min-height: 44px; width: 100%; padding: 10px 14px; border: 1px solid var(--graa); border-radius: var(--radius-sm); background: var(--lysgraa); color: var(--koksgraa); text-align: right; display: flex; align-items: center; justify-content: flex-end; cursor: not-allowed; }
-.calculator .input p { font: var(--body) / 1.2 var(--body-font-family); font-variant-numeric: tabular-nums; }
+.calculator .input-wrap { position: relative; }
+.calculator .calc-input { min-height: 44px; width: 100%; padding: 10px 44px 10px 14px; border: 1px solid var(--graa); border-radius: var(--radius-sm); background: #fff; color: var(--koksgraa); text-align: right; font: var(--body) / 1.2 var(--body-font-family); font-variant-numeric: tabular-nums; }
+.calculator .unit { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); color: var(--moerkgraa); font-size: var(--body-sm); }
+.calculator .range-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 8px; font-size: var(--body-sm); color: var(--moerkgraa); }
+.calculator .calc-range { width: 100%; accent-color: var(--vann); }
+.calculator .calc-fields--cost { grid-template-columns: 1fr 1fr 1fr; width: 100%; }
+.calculator .field--rente, .calculator .field--nedbetalingstid { grid-column: span 3; }
+.calculator :is(.field--rente, .field--nedbetalingstid) .input-wrap { width: 11rem; }
+.calculator .calc-info { grid-column: span 3; max-width: 60ch; color: var(--moerkgraa); }
+.calculator .calc-eff, .calculator .calc-sub { color: var(--koksgraa); }
+.calculator .calc-equity { display: grid; gap: 2px; margin-top: var(--spacing-sm); }
+.calculator .calc-equity-label { font-family: var(--title-font-family); color: var(--fjell); }
+.calculator .calc-not-connected { max-width: 52ch; padding: 12px 16px; background: #fff; border-left: 4px solid var(--sol); border-radius: var(--radius-sm); color: var(--koksgraa); }
+.calculator .calc-plan-wrap { display: grid; gap: var(--spacing-sm); width: 100%; }
+.calculator .calc-plan-toggle { justify-self: start; padding: 8px 0; border: 0; background: none; font: inherit; cursor: pointer; }
+.calculator .calc-plan-toggle[aria-expanded="true"]::after { transform: rotate(135deg); }
+.calculator .calc-plan-scroll { max-height: 28rem; overflow: auto; background: #fff; border-radius: var(--radius-sm); }
+.calculator .calc-plan table { width: 100%; border-collapse: collapse; font-size: var(--body-sm); font-variant-numeric: tabular-nums; }
+.calculator .calc-plan :is(th, td) { padding: 8px 12px; text-align: right; border-bottom: 1px solid var(--lysgraa); white-space: nowrap; }
+.calculator .calc-plan :is(th, td):first-child { text-align: left; }
+.calculator .calc-plan thead th { position: sticky; top: 0; background: #fff; font-family: var(--title-font-family); color: var(--fjell); }
+.calculator .calc-year { padding: 0; border: 0; background: none; font: inherit; color: var(--vann); cursor: pointer; }
+.calculator .calc-year::before { content: "›"; display: inline-block; margin-right: 6px; transition: transform 0.2s; }
+.calculator .calc-year[aria-expanded="true"]::before { transform: rotate(90deg); }
+.calculator .calc-month { color: var(--moerkgraa); }
 .calculator .calc-result { display: grid; gap: 4px; padding-top: var(--spacing-sm); }
 .calculator .calc-result-label p { color: var(--koksgraa); }
 .calculator .calc-result-value { margin-top: var(--spacing-md); }
@@ -34,9 +61,9 @@
 
 @media (width <= 640px) {
   .calculator .calc { justify-items: stretch; }
-  .calculator .calc-tabs-wrap,
-  .calculator .calc-tabs { display: grid; grid-template-columns: 1fr 1fr; }
-  .calculator .calc-tabs-wrap { grid-template-columns: 1fr; }
+  .calculator .calc-tabs { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
+  .calculator .calc-fields--cost { grid-template-columns: 1fr; }
+  .calculator .field--rente, .calculator .field--nedbetalingstid, .calculator .calc-info { grid-column: auto; }
   .calculator .calc-tab { justify-content: center; }
   .calculator .calc-fields { grid-template-columns: 1fr; }
   .calculator .calc-ctas p.button-wrapper,
@@ -48,3 +75,6 @@ main .section:has(> .calculator-wrapper) > .default-content-wrapper + .calculato
 main .section:has(> .calculator-wrapper) > .calculator-wrapper:first-child { background: var(--frost-30); border-radius: var(--radius); padding: 56px 48px; }
 main .section:has(> .calculator-wrapper) .calculator { max-width: 44rem; margin-inline: auto; }
 @media (width <= 767px) { main .section:has(> .calculator-wrapper) > .default-content-wrapper { padding: 36px 20px 0; } main .section:has(> .calculator-wrapper) > .default-content-wrapper + .calculator-wrapper { padding: 39px 20px 36px; } }
+
+/* hidden wins over every display rule above */
+.calculator .calc [hidden] { display: none; }
