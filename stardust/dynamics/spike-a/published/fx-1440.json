@@ -1,0 +1,150 @@
+{
+ "sameRates": true,
+ "stamp": "Kurs per 15.10.2026 kl. 17:06",
+ "cases": 10,
+ "diffs": [],
+ "src": [
+  {
+   "amt": 100,
+   "from": "NOK",
+   "to": "EUR",
+   "result": "9.37",
+   "rate": "1 EUR = 10.58"
+  },
+  {
+   "amt": 100,
+   "from": "NOK",
+   "to": "DKK",
+   "result": "70.01",
+   "rate": "1 DKK = 1.41"
+  },
+  {
+   "amt": 100,
+   "from": "EUR",
+   "to": "DKK",
+   "result": "740.69",
+   "rate": "1 DKK = 0.13"
+  },
+  {
+   "amt": 250,
+   "from": "EUR",
+   "to": "NOK",
+   "result": "2644.82",
+   "rate": "1 NOK = 0.09"
+  },
+  {
+   "amt": 1234.5,
+   "from": "USD",
+   "to": "SEK",
+   "result": "12137.71",
+   "rate": "1 SEK = 0.10"
+  },
+  {
+   "amt": 10000,
+   "from": "JPY",
+   "to": "NOK",
+   "result": "596.91",
+   "rate": "1 NOK = 16.59"
+  },
+  {
+   "amt": 500,
+   "from": "NOK",
+   "to": "ISK",
+   "result": "6329.11",
+   "rate": "1 ISK = 0.08"
+  },
+  {
+   "amt": 75,
+   "from": "GBP",
+   "to": "CHF",
+   "result": "81.97",
+   "rate": "1 CHF = 0.90"
+  },
+  {
+   "amt": 1,
+   "from": "HUF",
+   "to": "NOK",
+   "result": "0.03",
+   "rate": "1 NOK = 33.80"
+  },
+  {
+   "amt": 99999,
+   "from": "NOK",
+   "to": "VND",
+   "result": "265319713.45",
+   "rate": "1 VND = 0.00"
+  }
+ ],
+ "tgt": [
+  {
+   "amt": 100,
+   "from": "NOK",
+   "to": "EUR",
+   "result": "9.37",
+   "rate": "1 EUR = 10.58"
+  },
+  {
+   "amt": 100,
+   "from": "NOK",
+   "to": "DKK",
+   "result": "70.01",
+   "rate": "1 DKK = 1.41"
+  },
+  {
+   "amt": 100,
+   "from": "EUR",
+   "to": "DKK",
+   "result": "740.69",
+   "rate": "1 DKK = 0.13"
+  },
+  {
+   "amt": 250,
+   "from": "EUR",
+   "to": "NOK",
+   "result": "2644.82",
+   "rate": "1 NOK = 0.09"
+  },
+  {
+   "amt": 1234.5,
+   "from": "USD",
+   "to": "SEK",
+   "result": "12137.71",
+   "rate": "1 SEK = 0.10"
+  },
+  {
+   "amt": 10000,
+   "from": "JPY",
+   "to": "NOK",
+   "result": "596.91",
+   "rate": "1 NOK = 16.59"
+  },
+  {
+   "amt": 500,
+   "from": "NOK",
+   "to": "ISK",
+   "result": "6329.11",
+   "rate": "1 ISK = 0.08"
+  },
+  {
+   "amt": 75,
+   "from": "GBP",
+   "to": "CHF",
+   "result": "81.97",
+   "rate": "1 CHF = 0.90"
+  },
+  {
+   "amt": 1,
+   "from": "HUF",
+   "to": "NOK",
+   "result": "0.03",
+   "rate": "1 NOK = 33.80"
+  },
+  {
+   "amt": 99999,
+   "from": "NOK",
+   "to": "VND",
+   "result": "265319713.45",
+   "rate": "1 VND = 0.00"
+  }
+ ]
+}

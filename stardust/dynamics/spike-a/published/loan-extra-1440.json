@@ -1,0 +1,25 @@
+{
+ "plan": {
+  "rows": 28,
+  "identical": 28,
+  "diff": []
+ },
+ "notConnected": {
+  "noteVisible": true,
+  "text": "Beregningen av lånebeløp er ikke koblet til på denne siden ennå. Prøv lånekalkulatoren på sparebank1.no",
+  "resultEmpty": true
+ },
+ "economyWired": {
+  "source": {
+   "result": "2 484 500 kr",
+   "pris": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,50 %. Låner du 2 484 500 over 25 år koster lånet 2 033 741 og du betaler totalt 4 518 241 kroner."
+  },
+  "target": {
+   "result": "2 484 500 kr",
+   "pris": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,50 %. Låner du 2 484 500 over 25 år koster lånet 2 033 741 og du betaler totalt 4 518 241 kroner."
+  },
+  "sameRequestBody": true,
+  "srcBody": "{\"calculationDataset\":\"Loke\",\"adults\":[{\"age\":35,\"gender\":\"Male\",\"grossSalary\":450000,\"employmentStatus\":\"Employed\"},{\"age\":35,\"gender\":\"Female\",\"grossSalary\":450000,\"employmentStatus\":\"Employed\"}],\"children\":[{\"age\":9,\"gender\":\"Female\",\"kindergarden\":false,\"afterSchoolCareFullTime\":false,\"afterSchoolCarePartTime\":true},{\"age\":9,\"gender\":\"Male\",\"kindergarden\":false,\"afterSchoolCareFullTime\":false,\"afterSchoolCarePartTime\":true}],\"numberOfPetrolCars\":1,\"numberOfElectricCars\":0,\"existingMortgage\":200000,\"interestRate\":5.33,\"feeMonthly\":50,\"loanTermYears\":25,\"feeEstablishment\":1500}",
+  "tgtBody": "{\"calculationDataset\":\"Loke\",\"adults\":[{\"age\":35,\"gender\":\"Male\",\"grossSalary\":450000,\"employmentStatus\":\"Employed\"},{\"age\":35,\"gender\":\"Female\",\"grossSalary\":450000,\"employmentStatus\":\"Employed\"}],\"children\":[{\"age\":9,\"gender\":\"Female\",\"kindergarden\":false,\"afterSchoolCareFullTime\":false,\"afterSchoolCarePartTime\":true},{\"age\":9,\"gender\":\"Male\",\"kindergarden\":false,\"afterSchoolCareFullTime\":false,\"afterSchoolCarePartTime\":true}],\"numberOfPetrolCars\":1,\"numberOfElectricCars\":0,\"existingMortgage\":200000,\"interestRate\":5.33,\"feeMonthly\":50,\"loanTermYears\":25,\"feeEstablishment\":1500}"
+ }
+}

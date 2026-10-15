@@ -1,0 +1,459 @@
+{
+ "rows": [
+  {
+   "tab": "monthly",
+   "input": [
+    500,
+    6000,
+    5,
+    "medium"
+   ],
+   "source": {
+    "big": "42 107 kr",
+    "ret": "6 107 kr",
+    "saved": "36 000 kr",
+    "product": "SpareBank 1 Alt-i-ett 50 N",
+    "profile": "Moderat profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|39 325 kr",
+     "Lav|SpareBank 1 Alt-i-ett 20 N|4,62 %|41 240 kr",
+     "Medium|SpareBank 1 Alt-i-ett 50 N|5,33 %|42 107 kr",
+     "Høy|SpareBank 1 Alt-i-ett 80 N|6,03 %|42 979 kr"
+    ],
+    "inputsReadBack": "500/6000/5"
+   },
+   "target": {
+    "big": "42 107 kr",
+    "ret": "6 107 kr",
+    "saved": "36 000 kr",
+    "product": "SpareBank 1 Alt-i-ett 50 N",
+    "profile": "Moderat profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|39 325 kr",
+     "Lav|SpareBank 1 Alt-i-ett 20 N|4,62 %|41 240 kr",
+     "Medium|SpareBank 1 Alt-i-ett 50 N|5,33 %|42 107 kr",
+     "Høy|SpareBank 1 Alt-i-ett 80 N|6,03 %|42 979 kr"
+    ],
+    "inputsReadBack": "500/6000/5"
+   }
+  },
+  {
+   "tab": "monthly",
+   "input": [
+    2000,
+    0,
+    20,
+    "high"
+   ],
+   "source": {
+    "big": "964 299 kr",
+    "ret": "484 299 kr",
+    "saved": "480 000 kr",
+    "product": "SpareBank 1 Alt-i-ett 100 N",
+    "profile": "Offensiv profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|655 321 kr",
+     "Lav|SpareBank 1 Alt-i-ett 50 N|5,33 %|845 370 kr",
+     "Medium|SpareBank 1 Alt-i-ett 80 N|6,03 %|914 377 kr",
+     "Høy|SpareBank 1 Alt-i-ett 100 N|6,50 %|964 299 kr"
+    ],
+    "inputsReadBack": "2000/0/20"
+   },
+   "target": {
+    "big": "964 299 kr",
+    "ret": "484 299 kr",
+    "saved": "480 000 kr",
+    "product": "SpareBank 1 Alt-i-ett 100 N",
+    "profile": "Offensiv profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|655 321 kr",
+     "Lav|SpareBank 1 Alt-i-ett 50 N|5,33 %|845 370 kr",
+     "Medium|SpareBank 1 Alt-i-ett 80 N|6,03 %|914 377 kr",
+     "Høy|SpareBank 1 Alt-i-ett 100 N|6,50 %|964 299 kr"
+    ],
+    "inputsReadBack": "2000/0/20"
+   }
+  },
+  {
+   "tab": "monthly",
+   "input": [
+    100,
+    1000000,
+    1,
+    "low"
+   ],
+   "source": {
+    "big": "1 031 219 kr",
+    "ret": "30 019 kr",
+    "saved": "1 001 200 kr",
+    "product": "Sparekonto",
+    "profile": "Forsiktig profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|1 031 219 kr",
+     "Lav|Sparekonto|3,00 %|1 031 219 kr",
+     "Medium|Sparekonto|3,00 %|1 031 219 kr",
+     "Høy|Sparekonto|3,00 %|1 031 219 kr"
+    ],
+    "inputsReadBack": "100/1000000/1"
+   },
+   "target": {
+    "big": "1 031 219 kr",
+    "ret": "30 019 kr",
+    "saved": "1 001 200 kr",
+    "product": "Sparekonto",
+    "profile": "Forsiktig profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|1 031 219 kr",
+     "Lav|Sparekonto|3,00 %|1 031 219 kr",
+     "Medium|Sparekonto|3,00 %|1 031 219 kr",
+     "Høy|Sparekonto|3,00 %|1 031 219 kr"
+    ],
+    "inputsReadBack": "100/1000000/1"
+   }
+  },
+  {
+   "tab": "monthly",
+   "input": [
+    20000,
+    50000,
+    50,
+    "none"
+   ],
+   "source": {
+    "big": "27 728 364 kr",
+    "ret": "15 678 364 kr",
+    "saved": "12 050 000 kr",
+    "product": "Sparekonto",
+    "profile": "Ingen",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|27 728 364 kr",
+     "Lav|SpareBank 1 Alt-i-ett 50 N|5,33 %|58 176 292 kr",
+     "Medium|SpareBank 1 Alt-i-ett 80 N|6,03 %|73 590 948 kr",
+     "Høy|SpareBank 1 Alt-i-ett 100 N|6,50 %|86 400 425 kr"
+    ],
+    "inputsReadBack": "20000/50000/50"
+   },
+   "target": {
+    "big": "27 728 364 kr",
+    "ret": "15 678 364 kr",
+    "saved": "12 050 000 kr",
+    "product": "Sparekonto",
+    "profile": "Ingen",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|27 728 364 kr",
+     "Lav|SpareBank 1 Alt-i-ett 50 N|5,33 %|58 176 292 kr",
+     "Medium|SpareBank 1 Alt-i-ett 80 N|6,03 %|73 590 948 kr",
+     "Høy|SpareBank 1 Alt-i-ett 100 N|6,50 %|86 400 425 kr"
+    ],
+    "inputsReadBack": "20000/50000/50"
+   }
+  },
+  {
+   "tab": "monthly",
+   "input": [
+    3500,
+    250000,
+    12,
+    "high"
+   ],
+   "source": {
+    "big": "1 287 283 kr",
+    "ret": "533 283 kr",
+    "saved": "754 000 kr",
+    "product": "SpareBank 1 Alt-i-ett 100 N",
+    "profile": "Offensiv profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|962 147 kr",
+     "Lav|SpareBank 1 Alt-i-ett 50 N|5,33 %|1 167 141 kr",
+     "Medium|SpareBank 1 Alt-i-ett 80 N|6,03 %|1 237 515 kr",
+     "Høy|SpareBank 1 Alt-i-ett 100 N|6,50 %|1 287 283 kr"
+    ],
+    "inputsReadBack": "3500/250000/12"
+   },
+   "target": {
+    "big": "1 287 283 kr",
+    "ret": "533 283 kr",
+    "saved": "754 000 kr",
+    "product": "SpareBank 1 Alt-i-ett 100 N",
+    "profile": "Offensiv profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|962 147 kr",
+     "Lav|SpareBank 1 Alt-i-ett 50 N|5,33 %|1 167 141 kr",
+     "Medium|SpareBank 1 Alt-i-ett 80 N|6,03 %|1 237 515 kr",
+     "Høy|SpareBank 1 Alt-i-ett 100 N|6,50 %|1 287 283 kr"
+    ],
+    "inputsReadBack": "3500/250000/12"
+   }
+  },
+  {
+   "tab": "monthly",
+   "input": [
+    0,
+    10000,
+    0,
+    "medium"
+   ],
+   "source": {
+    "big": "10 000 kr",
+    "ret": "0 kr",
+    "saved": "10 000 kr",
+    "product": "Sparekonto",
+    "profile": "Moderat profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|10 000 kr",
+     "Lav|Sparekonto|3,00 %|10 000 kr",
+     "Medium|Sparekonto|3,00 %|10 000 kr",
+     "Høy|Sparekonto|3,00 %|10 000 kr"
+    ],
+    "inputsReadBack": "0/10000/0"
+   },
+   "target": {
+    "big": "10 000 kr",
+    "ret": "0 kr",
+    "saved": "10 000 kr",
+    "product": "Sparekonto",
+    "profile": "Moderat profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|10 000 kr",
+     "Lav|Sparekonto|3,00 %|10 000 kr",
+     "Medium|Sparekonto|3,00 %|10 000 kr",
+     "Høy|Sparekonto|3,00 %|10 000 kr"
+    ],
+    "inputsReadBack": "0/10000/0"
+   }
+  },
+  {
+   "tab": "monthly",
+   "input": [
+    1500,
+    30000,
+    7,
+    "low"
+   ],
+   "source": {
+    "big": "189 627 kr",
+    "ret": "33 627 kr",
+    "saved": "156 000 kr",
+    "product": "SpareBank 1 Alt-i-ett 20 N",
+    "profile": "Forsiktig profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|177 051 kr",
+     "Lav|SpareBank 1 Alt-i-ett 20 N|4,62 %|189 627 kr",
+     "Medium|SpareBank 1 Alt-i-ett 50 N|5,33 %|195 426 kr",
+     "Høy|SpareBank 1 Alt-i-ett 80 N|6,03 %|201 320 kr"
+    ],
+    "inputsReadBack": "1500/30000/7"
+   },
+   "target": {
+    "big": "189 627 kr",
+    "ret": "33 627 kr",
+    "saved": "156 000 kr",
+    "product": "SpareBank 1 Alt-i-ett 20 N",
+    "profile": "Forsiktig profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|177 051 kr",
+     "Lav|SpareBank 1 Alt-i-ett 20 N|4,62 %|189 627 kr",
+     "Medium|SpareBank 1 Alt-i-ett 50 N|5,33 %|195 426 kr",
+     "Høy|SpareBank 1 Alt-i-ett 80 N|6,03 %|201 320 kr"
+    ],
+    "inputsReadBack": "1500/30000/7"
+   }
+  },
+  {
+   "tab": "goal",
+   "input": [
+    200000,
+    20000,
+    20,
+    "high"
+   ],
+   "source": {
+    "big": "269 kr",
+    "ret": "115 440 kr",
+    "saved": "84 560 kr",
+    "total": "200 000 kr",
+    "product": "SpareBank 1 Alt-i-ett 100 N",
+    "profile": "Offensiv profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|500 kr",
+     "Lav|SpareBank 1 Alt-i-ett 50 N|5,33 %|339 kr",
+     "Medium|SpareBank 1 Alt-i-ett 80 N|6,03 %|296 kr",
+     "Høy|SpareBank 1 Alt-i-ett 100 N|6,50 %|269 kr"
+    ],
+    "inputsReadBack": "200000/20000/20"
+   },
+   "target": {
+    "big": "269 kr",
+    "ret": "115 440 kr",
+    "saved": "84 560 kr",
+    "total": "200 000 kr",
+    "product": "SpareBank 1 Alt-i-ett 100 N",
+    "profile": "Offensiv profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|500 kr",
+     "Lav|SpareBank 1 Alt-i-ett 50 N|5,33 %|339 kr",
+     "Medium|SpareBank 1 Alt-i-ett 80 N|6,03 %|296 kr",
+     "Høy|SpareBank 1 Alt-i-ett 100 N|6,50 %|269 kr"
+    ],
+    "inputsReadBack": "200000/20000/20"
+   }
+  },
+  {
+   "tab": "goal",
+   "input": [
+    1000000,
+    0,
+    10,
+    "medium"
+   ],
+   "source": {
+    "big": "6 115 kr",
+    "ret": "266 200 kr",
+    "saved": "733 800 kr",
+    "total": "1 000 000 kr",
+    "product": "SpareBank 1 Alt-i-ett 80 N",
+    "profile": "Moderat profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|7 153 kr",
+     "Lav|SpareBank 1 Alt-i-ett 50 N|5,33 %|6 342 kr",
+     "Medium|SpareBank 1 Alt-i-ett 80 N|6,03 %|6 115 kr",
+     "Høy|SpareBank 1 Alt-i-ett 100 N|6,50 %|5 967 kr"
+    ],
+    "inputsReadBack": "1000000/0/10"
+   },
+   "target": {
+    "big": "6 115 kr",
+    "ret": "266 200 kr",
+    "saved": "733 800 kr",
+    "total": "1 000 000 kr",
+    "product": "SpareBank 1 Alt-i-ett 80 N",
+    "profile": "Moderat profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|7 153 kr",
+     "Lav|SpareBank 1 Alt-i-ett 50 N|5,33 %|6 342 kr",
+     "Medium|SpareBank 1 Alt-i-ett 80 N|6,03 %|6 115 kr",
+     "Høy|SpareBank 1 Alt-i-ett 100 N|6,50 %|5 967 kr"
+    ],
+    "inputsReadBack": "1000000/0/10"
+   }
+  },
+  {
+   "tab": "goal",
+   "input": [
+    50000,
+    60000,
+    3,
+    "low"
+   ],
+   "source": {
+    "big": "0 kr",
+    "ret": "−10 000 kr",
+    "saved": "60 000 kr",
+    "total": "50 000 kr",
+    "product": "Sparekonto",
+    "profile": "Forsiktig profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|0 kr",
+     "Lav|Sparekonto|3,00 %|0 kr",
+     "Medium|SpareBank 1 Alt-i-ett 20 N|4,62 %|0 kr",
+     "Høy|SpareBank 1 Alt-i-ett 50 N|5,33 %|0 kr"
+    ],
+    "inputsReadBack": "50000/60000/3"
+   },
+   "target": {
+    "big": "0 kr",
+    "ret": "−10 000 kr",
+    "saved": "60 000 kr",
+    "total": "50 000 kr",
+    "product": "Sparekonto",
+    "profile": "Forsiktig profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|0 kr",
+     "Lav|Sparekonto|3,00 %|0 kr",
+     "Medium|SpareBank 1 Alt-i-ett 20 N|4,62 %|0 kr",
+     "Høy|SpareBank 1 Alt-i-ett 50 N|5,33 %|0 kr"
+    ],
+    "inputsReadBack": "50000/60000/3"
+   }
+  },
+  {
+   "tab": "goal",
+   "input": [
+    5000000,
+    1000000,
+    50,
+    "none"
+   ],
+   "source": {
+    "big": "448 kr",
+    "ret": "3 731 200 kr",
+    "saved": "1 268 800 kr",
+    "total": "5 000 000 kr",
+    "product": "Sparekonto",
+    "profile": "Ingen",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|448 kr",
+     "Lav|SpareBank 1 Alt-i-ett 50 N|5,33 %|0 kr",
+     "Medium|SpareBank 1 Alt-i-ett 80 N|6,03 %|0 kr",
+     "Høy|SpareBank 1 Alt-i-ett 100 N|6,50 %|0 kr"
+    ],
+    "inputsReadBack": "5000000/1000000/50"
+   },
+   "target": {
+    "big": "448 kr",
+    "ret": "3 731 200 kr",
+    "saved": "1 268 800 kr",
+    "total": "5 000 000 kr",
+    "product": "Sparekonto",
+    "profile": "Ingen",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|448 kr",
+     "Lav|SpareBank 1 Alt-i-ett 50 N|5,33 %|0 kr",
+     "Medium|SpareBank 1 Alt-i-ett 80 N|6,03 %|0 kr",
+     "Høy|SpareBank 1 Alt-i-ett 100 N|6,50 %|0 kr"
+    ],
+    "inputsReadBack": "5000000/1000000/50"
+   }
+  },
+  {
+   "tab": "goal",
+   "input": [
+    300000,
+    25000,
+    4,
+    "medium"
+   ],
+   "source": {
+    "big": "5 123 kr",
+    "ret": "29 096 kr",
+    "saved": "270 904 kr",
+    "total": "300 000 kr",
+    "product": "SpareBank 1 Alt-i-ett 20 N",
+    "profile": "Moderat profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|5 329 kr",
+     "Lav|Sparekonto|3,00 %|5 329 kr",
+     "Medium|SpareBank 1 Alt-i-ett 20 N|4,62 %|5 123 kr",
+     "Høy|SpareBank 1 Alt-i-ett 50 N|5,33 %|5 036 kr"
+    ],
+    "inputsReadBack": "300000/25000/4"
+   },
+   "target": {
+    "big": "5 123 kr",
+    "ret": "29 096 kr",
+    "saved": "270 904 kr",
+    "total": "300 000 kr",
+    "product": "SpareBank 1 Alt-i-ett 20 N",
+    "profile": "Moderat profil",
+    "compare": [
+     "Ingen|Sparekonto|3,00 %|5 329 kr",
+     "Lav|Sparekonto|3,00 %|5 329 kr",
+     "Medium|SpareBank 1 Alt-i-ett 20 N|4,62 %|5 123 kr",
+     "Høy|SpareBank 1 Alt-i-ett 50 N|5,33 %|5 036 kr"
+    ],
+    "inputsReadBack": "300000/25000/4"
+   }
+  }
+ ],
+ "diffs": []
+}

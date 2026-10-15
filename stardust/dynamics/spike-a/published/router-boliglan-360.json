@@ -1,0 +1,1104 @@
+{
+ "target": "https://spike-a--sparebank1-redesign--paolomoz.aem.page",
+ "pagePath": "/nb/bank/privat/lan/boliglan",
+ "steps": 34,
+ "diffs": [],
+ "src": {
+  "1295": {
+   "names": [
+    "SpareBank 1 Gudbrandsdal",
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Lom og Skjåk",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østfold Akershus",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Gudbrandsdal": "/nb/gudbrandsdal/privat/lan/boliglan.html",
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østfold Akershus": "/nb/ostfold-akershus/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "1450": {
+   "names": [
+    "SpareBank 1 Lom og Skjåk",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østfold Akershus",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østfold Akershus": "/nb/ostfold-akershus/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "1530": {
+   "names": [
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østfold Akershus",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østfold Akershus": "/nb/ostfold-akershus/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "1920": {
+   "names": [
+    "SpareBank 1 Lom og Skjåk",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 Ringerike Hadeland",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Ringerike Hadeland": "/nb/ringerike-hadeland/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "2000": {
+   "names": [
+    "SpareBank 1 Lom og Skjåk",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 Ringerike Hadeland",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Ringerike Hadeland": "/nb/ringerike-hadeland/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "2610": {
+   "names": [
+    "SpareBank 1 Gudbrandsdal",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Gudbrandsdal": "/nb/gudbrandsdal/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "2985": {
+   "names": [
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "3000": {
+   "names": [
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "3530": {
+   "names": [
+    "SpareBank 1 Ringerike Hadeland",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Ringerike Hadeland": "/nb/ringerike-hadeland/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "3710": {
+   "names": [
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "4010": {
+   "names": [
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "4626": {
+   "names": [
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "5003": {
+   "names": [
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "5265": {
+   "names": [
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "5500": {
+   "names": [
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "6413": {
+   "names": [
+    "SpareBank 1 Nordmøre",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Nordmøre": "/nb/nordmore/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "6719": {
+   "names": [
+    "SpareBank 1 Nordmøre",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Nordmøre": "/nb/nordmore/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "6900": {
+   "names": [
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Nordmøre",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Nordmøre": "/nb/nordmore/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "7010": {
+   "names": [
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 Nordmøre",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Nordmøre": "/nb/nordmore/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "7500": {
+   "names": [
+    "SpareBank 1 Nordmøre",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Nordmøre": "/nb/nordmore/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "7980": {
+   "names": [
+    "SpareBank 1 Helgeland",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Helgeland": "/nb/helgeland/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "8000": {
+   "names": [
+    "→ SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "Fortsett til SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "8622": {
+   "names": [
+    "SpareBank 1 Helgeland",
+    "SpareBank 1 Nord-Norge"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Helgeland": "/nb/helgeland/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html"
+   }
+  },
+  "8986": {
+   "names": [
+    "SpareBank 1 Helgeland",
+    "SpareBank 1 Nord-Norge"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Helgeland": "/nb/helgeland/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html"
+   }
+  },
+  "9008": {
+   "names": [
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "9170": {
+   "names": [
+    "→ SpareBank 1 Nord-Norge"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "Fortsett til SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html"
+   }
+  },
+  "9990": {
+   "names": [
+    "→ SpareBank 1 Nord-Norge"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "Fortsett til SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html"
+   }
+  },
+  "links": {
+   "SpareBank 1 Gudbrandsdal": "/nb/gudbrandsdal/privat/lan/boliglan.html",
+   "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+   "SpareBank 1 Helgeland": "/nb/helgeland/privat/lan/boliglan.html",
+   "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+   "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+   "SpareBank 1 Nordmøre": "/nb/nordmore/privat/lan/boliglan.html",
+   "SpareBank 1 Ringerike Hadeland": "/nb/ringerike-hadeland/privat/lan/boliglan.html",
+   "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+   "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+   "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+   "SpareBank 1 Østfold Akershus": "/nb/ostfold-akershus/privat/lan/boliglan.html",
+   "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+  },
+  "initial": {
+   "names": [],
+   "btn": "Se alle banker",
+   "links": {}
+  },
+  "0150": {
+   "names": [
+    "SpareBank 1 Gudbrandsdal",
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Lom og Skjåk",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østfold Akershus",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Gudbrandsdal": "/nb/gudbrandsdal/privat/lan/boliglan.html",
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østfold Akershus": "/nb/ostfold-akershus/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "0000": {
+   "names": [
+    "SpareBank 1 Gudbrandsdal",
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Helgeland",
+    "SpareBank 1 Lom og Skjåk",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 Nordmøre",
+    "SpareBank 1 Ringerike Hadeland",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østfold Akershus",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Skjul bankene",
+   "links": {
+    "SpareBank 1 Gudbrandsdal": "/nb/gudbrandsdal/privat/lan/boliglan.html",
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Helgeland": "/nb/helgeland/privat/lan/boliglan.html",
+    "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Nordmøre": "/nb/nordmore/privat/lan/boliglan.html",
+    "SpareBank 1 Ringerike Hadeland": "/nb/ringerike-hadeland/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østfold Akershus": "/nb/ostfold-akershus/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "0050": {
+   "names": [
+    "SpareBank 1 Gudbrandsdal",
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Lom og Skjåk",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østfold Akershus",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Gudbrandsdal": "/nb/gudbrandsdal/privat/lan/boliglan.html",
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østfold Akershus": "/nb/ostfold-akershus/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "9008+rest": {
+   "names": [
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 Østlandet",
+    "SpareBank 1 Gudbrandsdal",
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Helgeland",
+    "SpareBank 1 Lom og Skjåk",
+    "SpareBank 1 Nordmøre",
+    "SpareBank 1 Ringerike Hadeland",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østfold Akershus"
+   ],
+   "btn": "Skjul bankene",
+   "links": {
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html",
+    "SpareBank 1 Gudbrandsdal": "/nb/gudbrandsdal/privat/lan/boliglan.html",
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Helgeland": "/nb/helgeland/privat/lan/boliglan.html",
+    "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+    "SpareBank 1 Nordmøre": "/nb/nordmore/privat/lan/boliglan.html",
+    "SpareBank 1 Ringerike Hadeland": "/nb/ringerike-hadeland/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østfold Akershus": "/nb/ostfold-akershus/privat/lan/boliglan.html"
+   }
+  },
+  "invalid": true
+ },
+ "tgt": {
+  "1295": {
+   "names": [
+    "SpareBank 1 Gudbrandsdal",
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Lom og Skjåk",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østfold Akershus",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Gudbrandsdal": "/nb/gudbrandsdal/privat/lan/boliglan.html",
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østfold Akershus": "/nb/ostfold-akershus/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "1450": {
+   "names": [
+    "SpareBank 1 Lom og Skjåk",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østfold Akershus",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østfold Akershus": "/nb/ostfold-akershus/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "1530": {
+   "names": [
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østfold Akershus",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østfold Akershus": "/nb/ostfold-akershus/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "1920": {
+   "names": [
+    "SpareBank 1 Lom og Skjåk",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 Ringerike Hadeland",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Ringerike Hadeland": "/nb/ringerike-hadeland/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "2000": {
+   "names": [
+    "SpareBank 1 Lom og Skjåk",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 Ringerike Hadeland",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Ringerike Hadeland": "/nb/ringerike-hadeland/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "2610": {
+   "names": [
+    "SpareBank 1 Gudbrandsdal",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Gudbrandsdal": "/nb/gudbrandsdal/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "2985": {
+   "names": [
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "3000": {
+   "names": [
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "3530": {
+   "names": [
+    "SpareBank 1 Ringerike Hadeland",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Ringerike Hadeland": "/nb/ringerike-hadeland/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "3710": {
+   "names": [
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "4010": {
+   "names": [
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "4626": {
+   "names": [
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "5003": {
+   "names": [
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "5265": {
+   "names": [
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "5500": {
+   "names": [
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "6413": {
+   "names": [
+    "SpareBank 1 Nordmøre",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Nordmøre": "/nb/nordmore/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "6719": {
+   "names": [
+    "SpareBank 1 Nordmøre",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Nordmøre": "/nb/nordmore/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "6900": {
+   "names": [
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Nordmøre",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Nordmøre": "/nb/nordmore/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "7010": {
+   "names": [
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 Nordmøre",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Nordmøre": "/nb/nordmore/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "7500": {
+   "names": [
+    "SpareBank 1 Nordmøre",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Nordmøre": "/nb/nordmore/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "7980": {
+   "names": [
+    "SpareBank 1 Helgeland",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Helgeland": "/nb/helgeland/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "8000": {
+   "names": [
+    "→ SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "Fortsett til SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "8622": {
+   "names": [
+    "SpareBank 1 Helgeland",
+    "SpareBank 1 Nord-Norge"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Helgeland": "/nb/helgeland/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html"
+   }
+  },
+  "8986": {
+   "names": [
+    "SpareBank 1 Helgeland",
+    "SpareBank 1 Nord-Norge"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Helgeland": "/nb/helgeland/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html"
+   }
+  },
+  "9008": {
+   "names": [
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "9170": {
+   "names": [
+    "→ SpareBank 1 Nord-Norge"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "Fortsett til SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html"
+   }
+  },
+  "9990": {
+   "names": [
+    "→ SpareBank 1 Nord-Norge"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "Fortsett til SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html"
+   }
+  },
+  "links": {
+   "SpareBank 1 Gudbrandsdal": "/nb/gudbrandsdal/privat/lan/boliglan.html",
+   "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+   "SpareBank 1 Helgeland": "/nb/helgeland/privat/lan/boliglan.html",
+   "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+   "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+   "SpareBank 1 Nordmøre": "/nb/nordmore/privat/lan/boliglan.html",
+   "SpareBank 1 Ringerike Hadeland": "/nb/ringerike-hadeland/privat/lan/boliglan.html",
+   "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+   "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+   "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+   "SpareBank 1 Østfold Akershus": "/nb/ostfold-akershus/privat/lan/boliglan.html",
+   "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+  },
+  "initial": {
+   "names": [],
+   "btn": "Se alle banker",
+   "links": {}
+  },
+  "0150": {
+   "names": [
+    "SpareBank 1 Gudbrandsdal",
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Lom og Skjåk",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østfold Akershus",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Gudbrandsdal": "/nb/gudbrandsdal/privat/lan/boliglan.html",
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østfold Akershus": "/nb/ostfold-akershus/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "0000": {
+   "names": [
+    "SpareBank 1 Gudbrandsdal",
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Helgeland",
+    "SpareBank 1 Lom og Skjåk",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 Nordmøre",
+    "SpareBank 1 Ringerike Hadeland",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østfold Akershus",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Skjul bankene",
+   "links": {
+    "SpareBank 1 Gudbrandsdal": "/nb/gudbrandsdal/privat/lan/boliglan.html",
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Helgeland": "/nb/helgeland/privat/lan/boliglan.html",
+    "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Nordmøre": "/nb/nordmore/privat/lan/boliglan.html",
+    "SpareBank 1 Ringerike Hadeland": "/nb/ringerike-hadeland/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østfold Akershus": "/nb/ostfold-akershus/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "0050": {
+   "names": [
+    "SpareBank 1 Gudbrandsdal",
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Lom og Skjåk",
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østfold Akershus",
+    "SpareBank 1 Østlandet"
+   ],
+   "btn": "Se resten av bankene",
+   "links": {
+    "SpareBank 1 Gudbrandsdal": "/nb/gudbrandsdal/privat/lan/boliglan.html",
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østfold Akershus": "/nb/ostfold-akershus/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html"
+   }
+  },
+  "9008+rest": {
+   "names": [
+    "SpareBank 1 Nord-Norge",
+    "SpareBank 1 Østlandet",
+    "SpareBank 1 Gudbrandsdal",
+    "SpareBank 1 Hallingdal Valdres",
+    "SpareBank 1 Helgeland",
+    "SpareBank 1 Lom og Skjåk",
+    "SpareBank 1 Nordmøre",
+    "SpareBank 1 Ringerike Hadeland",
+    "SpareBank 1 SMN",
+    "SpareBank 1 Sogn og Fjordane",
+    "SpareBank 1 Sør-Norge",
+    "SpareBank 1 Østfold Akershus"
+   ],
+   "btn": "Skjul bankene",
+   "links": {
+    "SpareBank 1 Nord-Norge": "/nb/nord-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østlandet": "/nb/ostlandet/privat/lan/boliglan.html",
+    "SpareBank 1 Gudbrandsdal": "/nb/gudbrandsdal/privat/lan/boliglan.html",
+    "SpareBank 1 Hallingdal Valdres": "/nb/hallingdal/privat/lan/boliglan.html",
+    "SpareBank 1 Helgeland": "/nb/helgeland/privat/lan/boliglan.html",
+    "SpareBank 1 Lom og Skjåk": "/nb/lom-skjaak/privat/lan/boliglan.html",
+    "SpareBank 1 Nordmøre": "/nb/nordmore/privat/lan/boliglan.html",
+    "SpareBank 1 Ringerike Hadeland": "/nb/ringerike-hadeland/privat/lan/boliglan.html",
+    "SpareBank 1 SMN": "/nb/smn/privat/lan/boliglan.html",
+    "SpareBank 1 Sogn og Fjordane": "/nn/sogn-fjordane/privat/lan/boliglan.html",
+    "SpareBank 1 Sør-Norge": "/nb/sor-norge/privat/lan/boliglan.html",
+    "SpareBank 1 Østfold Akershus": "/nb/ostfold-akershus/privat/lan/boliglan.html"
+   }
+  },
+  "invalid": true
+ }
+}

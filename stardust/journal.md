@@ -195,3 +195,13 @@ markedsnytt expert portraits detected by `[src$=".jpg"]` failed on `?width=` URL
 lazy images eager. A parallel regression sweep was killed by memory pressure (26 Chromium processes) — gates now run sequentially.
 
 **Ledgers:** `stardust/rollout/gates/<slug>-pub/`, `deploy-ledger.json`, `eds-progress/*.json`, `journal/<family>.md`, `eds-requests.md` (open requests from the workers, mostly base-scoping and gate-instrument items). Round record: `stardust/prototypes/round-01-danske-ramp/README.md`.
+
+## 2026-10-15 — spike-a: dynamics Phases 1–5 on register rows #1, #7, #8, #9
+
+Branch `spike-a`, preview https://spike-a--sparebank1-redesign--paolomoz.aem.page. Content copies under `/spike-a/…` only (4 new DA docs, previewed); no existing DA document touched.
+
+- **Detect** (scoped re-run + driven flow probes) corrected three readings of the register: the bank picker filters client-side over `window.bankPickerlist` (only geolocation is a service) and links each bank to the same page under that bank; the savings calculator is API-backed; the loan calculator is two services, of which only `annuity-loan` is liftable. All four services are host-bound (no CORS).
+- **Ships (self):** postcode → bank with the source's states and per-page links (#1), loan cost tab + payment plan + price example (#7), savings calculator on the service's own assumption table (#8), currency conversion on a dated rate snapshot (#9, interim).
+- **Owner batch (named, not decided-out):** #1a geolocation service · #1b functional cookies/CMP · #7a economy API · #8a fund data feed · #9 rate feed. Each is one switch in `scripts/site-config.js`; the #7a switch was replayed enabled (proxied) — byte-identical request and result.
+- **Verify:** flow harnesses source ↔ published preview at 1440 + 360 all identical (router 34/34 ×4, loan 6/6 ×2 + plan 28/28, savings 12/12, currency 10/10); `dynamics-check.mjs` 16/16 PASS. Five defects found by the replay and fixed (rate-line rule, plan total label, economy body order, truncation of projections, duplicate NOK).
+- **Traps:** React-controlled inputs on the source ignore Playwright `fill` (appends) — drive them through the native value setter + input event; the rate snapshot aged within ~80 minutes (rates moved 15:47 → 17:06 Oslo), so a parity run must re-sync first; `curl` on aem.page needs `--compressed` to read code-bus files.
