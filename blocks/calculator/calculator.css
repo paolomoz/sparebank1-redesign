@@ -48,3 +48,50 @@ main .section:has(> .calculator-wrapper) > .default-content-wrapper + .calculato
 main .section:has(> .calculator-wrapper) > .calculator-wrapper:first-child { background: var(--frost-30); border-radius: var(--radius); padding: 56px 48px; }
 main .section:has(> .calculator-wrapper) .calculator { max-width: 44rem; margin-inline: auto; }
 @media (width <= 767px) { main .section:has(> .calculator-wrapper) > .default-content-wrapper { padding: 36px 20px 0; } main .section:has(> .calculator-wrapper) > .default-content-wrapper + .calculator-wrapper { padding: 39px 20px 36px; } }
+
+/* dynamics #7 — live controls (tabs, inputs, sliders, results, repayment plan). The economy tab keeps the captured, inert look until the owner enables its API. */
+.calculator .calc-tabs { gap: 0; }
+.calculator button.calc-tab { border: 0; cursor: pointer; }
+.calculator button.calc-tab:disabled { cursor: not-allowed; opacity: 0.6; }
+.calculator button.calc-tab:focus-visible { outline: 2px solid var(--fjell); outline-offset: 2px; }
+.calculator .calc-panel { display: grid; gap: var(--spacing-lg); width: 100%; justify-items: start; }
+.calculator .calc-panel[hidden] { display: none; }
+.calculator .calc-panel[aria-disabled="true"] .pill, .calculator .calc-panel[aria-disabled="true"] .input { cursor: not-allowed; }
+.calculator .input.is-live { background: #fff; cursor: text; color: var(--koksgraa); font: var(--body) / 1.2 var(--body-font-family); font-variant-numeric: tabular-nums; text-align: right; }
+.calculator .input.is-live:focus { outline: 2px solid var(--fjell); outline-offset: 2px; }
+.calculator .input-wrap { position: relative; display: flex; align-items: center; width: 100%; }
+.calculator .input-wrap .input { padding-right: 44px; }
+.calculator .input-wrap .suffix { position: absolute; right: 14px; color: var(--koksgraa); pointer-events: none; }
+.calculator .calc-fields--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; }
+.calculator .field--slider { width: 100%; }
+.calculator .slider-row { display: grid; grid-template-columns: minmax(0, 1fr) 11rem; gap: var(--spacing-md); align-items: start; }
+.calculator .calc-range { width: 100%; height: 44px; margin: 0; accent-color: var(--fjell); cursor: pointer; }
+.calculator .range-labels { display: flex; justify-content: space-between; color: var(--koksgraa); margin-top: -6px; }
+.calculator .calc-hint { justify-self: end; font-family: var(--title-font-family); color: var(--fjell); }
+.calculator .calc-hint[hidden] { display: none; }
+.calculator .calc-results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--spacing-lg); width: 100%; }
+.calculator .calc-results .calc-result-value { margin-top: 4px; }
+.calculator .calc-results .calc-result-value p { font-size: var(--t-headline-sm, 2.5rem); }
+.calculator .calc-result-sub p { color: var(--koksgraa); }
+.calculator button.pill { font: inherit; cursor: pointer; }
+.calculator .calc-example[hidden], .calculator .calc-plan[hidden], .calculator .calc-plan-toggle[hidden] { display: none; }
+.calculator .calc-plan-toggle { display: inline-flex; align-items: center; gap: 8px; }
+.calculator .calc-plan-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+.calculator .calc-plan { width: 100%; }
+.calculator .calc-plan .table-wrap { overflow-x: auto; background: #fff; border-radius: var(--radius-sm); }
+.calculator .calc-plan table { width: 100%; border-collapse: collapse; font-size: var(--body-sm); font-variant-numeric: tabular-nums; }
+.calculator .calc-plan th, .calculator .calc-plan td { padding: 8px 12px; text-align: right; border-bottom: 1px solid var(--lysgraa); white-space: nowrap; }
+.calculator .calc-plan th:first-child, .calculator .calc-plan td:first-child { text-align: left; }
+.calculator .calc-plan thead th { font-family: var(--title-font-family); color: var(--fjell); background: var(--frost-30); }
+.calculator .calc-plan .plan-month td { color: var(--koksgraa); background: var(--frost-30); }
+.calculator .calc-plan tfoot th, .calculator .calc-plan tfoot td { font-family: var(--title-font-family); border-top: 2px solid var(--fjell); }
+.calculator .plan-year-toggle { display: inline-flex; align-items: center; gap: 4px; border: 0; background: none; padding: 0; font: inherit; color: var(--fjell); cursor: pointer; }
+.calculator .plan-year-toggle svg { width: 14px; height: 14px; fill: none; stroke: currentcolor; stroke-width: 2; transition: transform 0.2s; }
+.calculator .plan-year-toggle[aria-expanded="true"] svg { transform: rotate(90deg); }
+
+@media (width <= 640px) {
+  .calculator .calc-fields--3, .calculator .calc-results { grid-template-columns: 1fr; }
+  .calculator .slider-row { grid-template-columns: 1fr; }
+  .calculator .calc-range, .calculator .range-labels { display: none; }
+  .calculator .calc-tabs { display: grid; grid-template-columns: 1fr 1fr; }
+}
