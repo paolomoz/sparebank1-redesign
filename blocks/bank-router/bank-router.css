@@ -80,3 +80,4 @@ main .section.router > div { width: 100%; }
 .bank-router .router--band .router-results:not([hidden]) ~ .router-all { grid-column: 1 / -1; justify-self: start; }
 .bank-router .router--tile .router-results { margin-top: 20px; width: 100%; }
 .bank-router .router--tile .bank-matches { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; text-align: left; }
+.bank-router .router--tile .bank-matches, .bank-router .router--tile .router-all .bank-list { background: var(--vann); border-radius: var(--radius-sm); padding: 0 12px; }
