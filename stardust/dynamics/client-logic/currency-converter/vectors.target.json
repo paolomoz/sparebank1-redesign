@@ -1,0 +1,144 @@
+{
+ "settleMs": 500,
+ "rows": [
+  {
+   "from": "NOK",
+   "to": "EUR",
+   "amount": "100"
+  },
+  {
+   "from": "NOK",
+   "to": "USD",
+   "amount": "100"
+  },
+  {
+   "from": "EUR",
+   "to": "NOK",
+   "amount": "100"
+  },
+  {
+   "from": "USD",
+   "to": "NOK",
+   "amount": "2500"
+  },
+  {
+   "from": "NOK",
+   "to": "SEK",
+   "amount": "1000"
+  },
+  {
+   "from": "SEK",
+   "to": "NOK",
+   "amount": "1000"
+  },
+  {
+   "from": "NOK",
+   "to": "DKK",
+   "amount": "750"
+  },
+  {
+   "from": "DKK",
+   "to": "EUR",
+   "amount": "100"
+  },
+  {
+   "from": "EUR",
+   "to": "USD",
+   "amount": "1"
+  },
+  {
+   "from": "GBP",
+   "to": "EUR",
+   "amount": "50"
+  },
+  {
+   "from": "NOK",
+   "to": "JPY",
+   "amount": "1000"
+  },
+  {
+   "from": "JPY",
+   "to": "NOK",
+   "amount": "10000"
+  },
+  {
+   "from": "CHF",
+   "to": "NOK",
+   "amount": "100"
+  },
+  {
+   "from": "NOK",
+   "to": "CHF",
+   "amount": "100"
+  },
+  {
+   "from": "NOK",
+   "to": "THB",
+   "amount": "5000"
+  },
+  {
+   "from": "PLN",
+   "to": "SEK",
+   "amount": "300"
+  },
+  {
+   "from": "NOK",
+   "to": "HUF",
+   "amount": "100"
+  },
+  {
+   "from": "ISK",
+   "to": "NOK",
+   "amount": "12000"
+  },
+  {
+   "from": "NOK",
+   "to": "EUR",
+   "amount": "1 000,50"
+  },
+  {
+   "from": "NOK",
+   "to": "EUR",
+   "amount": "0"
+  },
+  {
+   "from": "NOK",
+   "to": "EUR",
+   "amount": "abc"
+  },
+  {
+   "from": "NOK",
+   "to": "EUR",
+   "amount": ""
+  },
+  {
+   "from": "USD",
+   "to": "USD",
+   "amount": "100"
+  },
+  {
+   "from": "NOK",
+   "to": "NOK",
+   "amount": "42"
+  },
+  {
+   "from": "AUD",
+   "to": "NZD",
+   "amount": "999999"
+  },
+  {
+   "from": "CNY",
+   "to": "INR",
+   "amount": "123.45"
+  }
+ ],
+ "inputs": {
+  "from": "#conv-from",
+  "to": "#conv-to",
+  "amount": "#conv-amount"
+ },
+ "outputs": {
+  "result": "#conv-result",
+  "rate": ".converter .conv-rate"
+ }
+}

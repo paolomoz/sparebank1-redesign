@@ -1,0 +1,191 @@
+[
+ {
+  "tag": "div",
+  "cls": "bank-choice__myposition",
+  "id": null,
+  "before": null,
+  "after": ""
+ },
+ {
+  "tag": "div",
+  "cls": "bank-choice-wrap__search",
+  "id": null,
+  "before": null,
+  "after": "Ditt postnummerSpareBank 1 GudbrandsdalSkaper verdier for kunder og lokalsamfunn.SpareBank 1 Hallingdal ValdresFjellstøtt gjennom livet.SpareBank 1 Lom og SkjåkLokalbanken din – der du er.SpareBank 1 "
+ },
+ {
+  "tag": "ol",
+  "cls": "bank-choice__all-list",
+  "id": null,
+  "before": null,
+  "after": "SpareBank 1 HelgelandEn drivkraft for vekst på Helgeland.SpareBank 1 NordmøreNær deg. Hele veien.SpareBank 1 Ringerike HadelandStolt støttespiller til lokalsamfunnet."
+ },
+ {
+  "tag": "strong",
+  "cls": "",
+  "id": null,
+  "before": "Gudbrandsdal",
+  "after": "Helgeland"
+ },
+ {
+  "tag": "span",
+  "cls": "ffe-micro-text",
+  "id": null,
+  "before": "Skaper verdier for kunder og lokalsamfunn.",
+  "after": "En drivkraft for vekst på Helgeland."
+ },
+ {
+  "tag": "strong",
+  "cls": "",
+  "id": null,
+  "before": "Hallingdal Valdres",
+  "after": "Nordmøre"
+ },
+ {
+  "tag": "span",
+  "cls": "ffe-micro-text",
+  "id": null,
+  "before": "Fjellstøtt gjennom livet.",
+  "after": "Nær deg. Hele veien."
+ },
+ {
+  "tag": "strong",
+  "cls": "",
+  "id": null,
+  "before": "Helgeland",
+  "after": "Ringerike Hadeland"
+ },
+ {
+  "tag": "span",
+  "cls": "ffe-micro-text",
+  "id": null,
+  "before": "En drivkraft for vekst på Helgeland.",
+  "after": "Stolt støttespiller til lokalsamfunnet."
+ },
+ {
+  "tag": "div",
+  "cls": "bank-choice__result",
+  "id": null,
+  "before": null,
+  "after": "SpareBank 1 GudbrandsdalSkaper verdier for kunder og lokalsamfunn.SpareBank 1 Hallingdal ValdresFjellstøtt gjennom livet.SpareBank 1 Lom og SkjåkLokalbanken din – der du er.SpareBank 1 Nord-NorgeFor N"
+ },
+ {
+  "tag": "span",
+  "cls": "ffe-inline-button__label",
+  "id": null,
+  "before": "Se alle banker",
+  "after": "Se resten av bankene"
+ },
+ {
+  "tag": "div",
+  "cls": "bank-choice__myposition",
+  "id": null,
+  "before": null,
+  "after": "PinBruk min posisjon"
+ },
+ {
+  "tag": "div",
+  "cls": "bank-choice-wrap__search",
+  "id": null,
+  "before": null,
+  "after": "Ditt postnummerPinBruk min posisjonSe alle bankerSpareBank 1 GudbrandsdalSkaper verdier for kunder og lokalsamfunn.SpareBank 1 Hallingdal ValdresFjellstøtt gjennom livet.SpareBank 1 HelgelandEn drivkr"
+ },
+ {
+  "tag": "ol",
+  "cls": "bank-choice__all-list",
+  "id": null,
+  "before": null,
+  "after": "SpareBank 1 GudbrandsdalSkaper verdier for kunder og lokalsamfunn.SpareBank 1 Hallingdal ValdresFjellstøtt gjennom livet.SpareBank 1 HelgelandEn drivkraft for vekst på Helgeland.SpareBank 1 Lom og Skj"
+ },
+ {
+  "tag": "div",
+  "cls": "bank-choice-wrap__search",
+  "id": null,
+  "before": null,
+  "after": "Ditt postnummerSpareBank 1 Nord-NorgeFor Nord-Norge.SpareBank 1 NordmøreNær deg. Hele veien.SpareBank 1 SMNSammen får vi ting til å skje.SpareBank 1 Sogn og FjordaneVi er med heile vegen.SpareBank 1 Ø"
+ },
+ {
+  "tag": "strong",
+  "cls": "",
+  "id": null,
+  "before": null,
+  "after": "Sør-Norge"
+ },
+ {
+  "tag": "span",
+  "cls": "ffe-micro-text",
+  "id": null,
+  "before": null,
+  "after": "Hjelper driftige folk og bedrifter dit de vil."
+ },
+ {
+  "tag": "strong",
+  "cls": "",
+  "id": null,
+  "before": null,
+  "after": "Østfold Akershus"
+ },
+ {
+  "tag": "span",
+  "cls": "ffe-micro-text",
+  "id": null,
+  "before": null,
+  "after": "Sammen får vi ting til å skje."
+ },
+ {
+  "tag": "div",
+  "cls": "bank-choice__result",
+  "id": null,
+  "before": null,
+  "after": "SpareBank 1 Nord-NorgeFor Nord-Norge.SpareBank 1 NordmøreNær deg. Hele veien.SpareBank 1 SMNSammen får vi ting til å skje.SpareBank 1 Sogn og FjordaneVi er med heile vegen.SpareBank 1 ØstlandetBanken "
+ },
+ {
+  "tag": "strong",
+  "cls": "",
+  "id": null,
+  "before": null,
+  "after": "Nord-Norge"
+ },
+ {
+  "tag": "span",
+  "cls": "ffe-micro-text",
+  "id": null,
+  "before": null,
+  "after": "For Nord-Norge."
+ },
+ {
+  "tag": "div",
+  "cls": "bank-choice-wrap__search",
+  "id": null,
+  "before": null,
+  "after": "Ditt postnummerSpareBank 1 Nord-NorgeFor Nord-Norge.SpareBank 1 ØstlandetBanken med kundeutbytte.Se resten av bankeneSpareBank 1 GudbrandsdalSkaper verdier for kunder og lokalsamfunn.SpareBank 1 Halli"
+ },
+ {
+  "tag": "strong",
+  "cls": "",
+  "id": null,
+  "before": null,
+  "after": "SMN"
+ },
+ {
+  "tag": "strong",
+  "cls": "",
+  "id": null,
+  "before": null,
+  "after": "Sogn og Fjordane"
+ },
+ {
+  "tag": "span",
+  "cls": "ffe-micro-text",
+  "id": null,
+  "before": null,
+  "after": "Vi er med heile vegen."
+ },
+ {
+  "tag": "div",
+  "cls": "bank-choice__result",
+  "id": null,
+  "before": null,
+  "after": "SpareBank 1 Nord-NorgeFor Nord-Norge.SpareBank 1 ØstlandetBanken med kundeutbytte."
+ }
+]

@@ -1,0 +1,251 @@
+{
+ "writtenBy": "stardust/scripts/dyn-vectors.mjs",
+ "writtenAt": "2026-10-15T14:46:44.347Z",
+ "url": "https://www.sparebank1.no/nb/bank/privat/lan/lanekalkulator.html",
+ "label": "source",
+ "width": 1440,
+ "rows": [
+  {
+   "i": 0,
+   "input": {
+    "income": "300000",
+    "debt": "0"
+   },
+   "output": {
+    "maxLoan": "358 700 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,75 %. Låner du 358 700 over 25 år koster lånet 307 739 og du betaler totalt 666 439 kroner."
+   }
+  },
+  {
+   "i": 1,
+   "input": {
+    "income": "300000",
+    "debt": "200000"
+   },
+   "output": {
+    "maxLoan": "182 700 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 6,03 %. Låner du 182 700 over 25 år koster lånet 164 840 og du betaler totalt 347 540 kroner."
+   }
+  },
+  {
+   "i": 2,
+   "input": {
+    "income": "400000",
+    "debt": "0"
+   },
+   "output": {
+    "maxLoan": "1 272 100 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,54 %. Låner du 1 272 100 over 25 år koster lånet 1 049 357 og du betaler totalt 2 321 457 kroner."
+   }
+  },
+  {
+   "i": 3,
+   "input": {
+    "income": "400000",
+    "debt": "200000"
+   },
+   "output": {
+    "maxLoan": "1 096 100 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,56 %. Låner du 1 096 100 over 25 år koster lånet 906 457 og du betaler totalt 2 002 557 kroner."
+   }
+  },
+  {
+   "i": 4,
+   "input": {
+    "income": "500000",
+    "debt": "0"
+   },
+   "output": {
+    "maxLoan": "2 185 500 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,51 %. Låner du 2 185 500 over 25 år koster lånet 1 790 974 og du betaler totalt 3 976 474 kroner."
+   }
+  },
+  {
+   "i": 5,
+   "input": {
+    "income": "500000",
+    "debt": "200000"
+   },
+   "output": {
+    "maxLoan": "2 009 500 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,51 %. Låner du 2 009 500 over 25 år koster lånet 1 648 074 og du betaler totalt 3 657 574 kroner."
+   }
+  },
+  {
+   "i": 6,
+   "input": {
+    "income": "650000",
+    "debt": "0"
+   },
+   "output": {
+    "maxLoan": "3 250 000 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,49 %. Låner du 3 250 000 over 25 år koster lånet 2 655 274 og du betaler totalt 5 905 274 kroner."
+   }
+  },
+  {
+   "i": 7,
+   "input": {
+    "income": "650000",
+    "debt": "200000"
+   },
+   "output": {
+    "maxLoan": "3 050 000 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,50 %. Låner du 3 050 000 over 25 år koster lånet 2 492 887 og du betaler totalt 5 542 887 kroner."
+   }
+  },
+  {
+   "i": 8,
+   "input": {
+    "income": "800000",
+    "debt": "0"
+   },
+   "output": {
+    "maxLoan": "4 000 000 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,49 %. Låner du 4 000 000 over 25 år koster lånet 3 264 221 og du betaler totalt 7 264 221 kroner."
+   }
+  },
+  {
+   "i": 9,
+   "input": {
+    "income": "800000",
+    "debt": "200000"
+   },
+   "output": {
+    "maxLoan": "3 800 000 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,49 %. Låner du 3 800 000 over 25 år koster lånet 3 101 835 og du betaler totalt 6 901 835 kroner."
+   }
+  },
+  {
+   "i": 10,
+   "input": {
+    "income": "1000000",
+    "debt": "0"
+   },
+   "output": {
+    "maxLoan": "5 000 000 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,48 %. Låner du 5 000 000 over 25 år koster lånet 4 076 152 og du betaler totalt 9 076 152 kroner."
+   }
+  },
+  {
+   "i": 11,
+   "input": {
+    "income": "1000000",
+    "debt": "200000"
+   },
+   "output": {
+    "maxLoan": "4 800 000 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,48 %. Låner du 4 800 000 over 25 år koster lånet 3 913 766 og du betaler totalt 8 713 766 kroner."
+   }
+  },
+  {
+   "i": 12,
+   "input": {
+    "income": "1200000",
+    "debt": "0"
+   },
+   "output": {
+    "maxLoan": "6 000 000 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,48 %. Låner du 6 000 000 over 25 år koster lånet 4 888 082 og du betaler totalt 10 888 082 kroner."
+   }
+  },
+  {
+   "i": 13,
+   "input": {
+    "income": "1200000",
+    "debt": "200000"
+   },
+   "output": {
+    "maxLoan": "5 800 000 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,48 %. Låner du 5 800 000 over 25 år koster lånet 4 725 696 og du betaler totalt 10 525 696 kroner."
+   }
+  },
+  {
+   "i": 14,
+   "input": {
+    "income": "1500000",
+    "debt": "0"
+   },
+   "output": {
+    "maxLoan": "7 500 000 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,48 %. Låner du 7 500 000 over 25 år koster lånet 6 105 977 og du betaler totalt 13 605 977 kroner."
+   }
+  },
+  {
+   "i": 15,
+   "input": {
+    "income": "1500000",
+    "debt": "200000"
+   },
+   "output": {
+    "maxLoan": "7 300 000 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,48 %. Låner du 7 300 000 over 25 år koster lånet 5 943 591 og du betaler totalt 13 243 591 kroner."
+   }
+  },
+  {
+   "i": 16,
+   "input": {
+    "income": "2000000",
+    "debt": "0"
+   },
+   "output": {
+    "maxLoan": "10 000 000 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,47 %. Låner du 10 000 000 over 25 år koster lånet 8 135 803 og du betaler totalt 18 135 803 kroner."
+   }
+  },
+  {
+   "i": 17,
+   "input": {
+    "income": "2000000",
+    "debt": "200000"
+   },
+   "output": {
+    "maxLoan": "9 800 000 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,47 %. Låner du 9 800 000 over 25 år koster lånet 7 973 417 og du betaler totalt 17 773 417 kroner."
+   }
+  },
+  {
+   "i": 18,
+   "input": {
+    "income": "250000",
+    "debt": "0"
+   },
+   "output": {
+    "maxLoan": "0 kr",
+    "priceExample": ""
+   }
+  },
+  {
+   "i": 19,
+   "input": {
+    "income": "250000",
+    "debt": "200000"
+   },
+   "output": {
+    "maxLoan": "0 kr",
+    "priceExample": ""
+   }
+  },
+  {
+   "i": 20,
+   "input": {
+    "income": "350000",
+    "debt": "0"
+   },
+   "output": {
+    "maxLoan": "815 400 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,59 %. Låner du 815 400 over 25 år koster lånet 678 548 og du betaler totalt 1 493 948 kroner."
+   }
+  },
+  {
+   "i": 21,
+   "input": {
+    "income": "350000",
+    "debt": "200000"
+   },
+   "output": {
+    "maxLoan": "639 400 kr",
+    "priceExample": "Priseksempel: Nominell rente 5,33 %. Effektiv rente 5,63 %. Låner du 639 400 over 25 år koster lånet 535 648 og du betaler totalt 1 175 048 kroner."
+   }
+  }
+ ]
+}

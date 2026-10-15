@@ -1,0 +1,248 @@
+{
+ "writtenBy": "stardust:dynamics client-logic capture",
+ "writtenAt": "2026-10-15T14:28:41.236Z",
+ "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html",
+ "mount": "#sparekalkulator",
+ "locus": "client (with calls)",
+ "thirdPartyRequestsDuringInteraction": 0,
+ "thirdPartyScriptHosts": [],
+ "controls": 0,
+ "outputsChanged": 0,
+ "interactionRequests": [
+  {
+   "phase": "interaction",
+   "method": "GET",
+   "url": "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/expected-performance?initialValue=6000&periodicInvestment=1000&years=5&risk=medium",
+   "requestBody": null,
+   "status": 200,
+   "contentType": "application/vnd.sparebank1.v1+json"
+  },
+  {
+   "phase": "interaction",
+   "method": "GET",
+   "url": "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/expected-performance?initialValue=6000&periodicInvestment=1000&years=10&risk=medium",
+   "requestBody": null,
+   "status": 200,
+   "contentType": "application/vnd.sparebank1.v1+json"
+  },
+  {
+   "phase": "interaction",
+   "method": "GET",
+   "url": "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/suggested-savings-product?years=10&risk=medium",
+   "requestBody": null,
+   "status": 200,
+   "contentType": "application/vnd.sparebank1.v1+json"
+  },
+  {
+   "phase": "interaction",
+   "method": "GET",
+   "url": "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/expected-performance?initialValue=6000&periodicInvestment=1000&years=10&risk=high",
+   "requestBody": null,
+   "status": 200,
+   "contentType": "application/vnd.sparebank1.v1+json"
+  },
+  {
+   "phase": "interaction",
+   "method": "GET",
+   "url": "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/suggested-savings-product?years=10&risk=high",
+   "requestBody": null,
+   "status": 200,
+   "contentType": "application/vnd.sparebank1.v1+json"
+  }
+ ],
+ "sourceMaps": [],
+ "candidates": [
+  {
+   "framework": false,
+   "script": "(inline)",
+   "file": "scripts/028-inline.js",
+   "function": "oneLine",
+   "calls": 2,
+   "bytes": 85,
+   "mathOps": 4,
+   "matchedLabels": [],
+   "score": -2.4,
+   "generated": {
+    "line": 8428,
+    "column": 0
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+   "file": "scripts/021-clientlib-base-1156934419-js.js",
+   "function": "(anonymous)",
+   "calls": 34,
+   "bytes": 27,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -4.8,
+   "generated": {
+    "line": 1,
+    "column": 348267
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+   "file": "scripts/021-clientlib-base-1156934419-js.js",
+   "function": "(anonymous)",
+   "calls": 34,
+   "bytes": 27,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -4.8,
+   "generated": {
+    "line": 1,
+    "column": 351520
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "(inline)",
+   "file": "scripts/028-inline.js",
+   "function": "(anonymous)",
+   "calls": 15,
+   "bytes": 29,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -4.9,
+   "generated": {
+    "line": 8002,
+    "column": 15
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "https://www.sparebank1.no/sb1-nettsider-optin/bank/static/opt-in.js",
+   "file": "scripts/025-opt-in-js.js",
+   "function": "Ed",
+   "calls": 7,
+   "bytes": 34,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -5.1,
+   "generated": {
+    "line": 2,
+    "column": 285955
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "(inline)",
+   "file": "scripts/026-inline.js",
+   "function": "(anonymous)",
+   "calls": 8,
+   "bytes": 37,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -5.2,
+   "generated": {
+    "line": 384,
+    "column": 42
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+   "file": "scripts/021-clientlib-base-1156934419-js.js",
+   "function": "(anonymous)",
+   "calls": 6,
+   "bytes": 38,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -5.3,
+   "generated": {
+    "line": 1,
+    "column": 351573
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+   "file": "scripts/021-clientlib-base-1156934419-js.js",
+   "function": "(anonymous)",
+   "calls": 1,
+   "bytes": 38,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -5.3,
+   "generated": {
+    "line": 1,
+    "column": 378199
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+   "file": "scripts/021-clientlib-base-1156934419-js.js",
+   "function": "n",
+   "calls": 14,
+   "bytes": 68,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -6.1,
+   "generated": {
+    "line": 1,
+    "column": 368746
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+   "file": "scripts/021-clientlib-base-1156934419-js.js",
+   "function": "a",
+   "calls": 1,
+   "bytes": 147,
+   "mathOps": 1,
+   "matchedLabels": [],
+   "score": -6.2,
+   "generated": {
+    "line": 1,
+    "column": 407688
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "(inline)",
+   "file": "scripts/028-inline.js",
+   "function": "trimStringWithEllipsis",
+   "calls": 2,
+   "bytes": 90,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -6.5,
+   "generated": {
+    "line": 498,
+    "column": 0
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+   "file": "scripts/021-clientlib-base-1156934419-js.js",
+   "function": "toggleVisibilityLanguage",
+   "calls": 6,
+   "bytes": 94,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -6.6,
+   "generated": {
+    "line": 1,
+    "column": 354017
+   },
+   "original": null
+  }
+ ]
+}

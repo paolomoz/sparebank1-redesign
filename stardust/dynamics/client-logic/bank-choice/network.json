@@ -1,0 +1,47 @@
+[
+ {
+  "phase": "load",
+  "method": "GET",
+  "url": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user",
+  "requestBody": null,
+  "status": 200,
+  "contentType": "application/vnd.sparebank1.v1+json",
+  "responseBody": "{\"authenticated\":false,\"realms\":[],\"bank\":\"bank\"}"
+ },
+ {
+  "phase": "load",
+  "method": "GET",
+  "url": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler.export.json?limit=2&temaFilter=sb1:nyheter/fondssparing&offset=0",
+  "requestBody": null,
+  "status": 200,
+  "contentType": "application/json",
+  "responseBody": "{\"sling:resourceType\":\"sb1/nettsider-frontend/pages/basepage\",\"jcr:title\":\"Artikler \",\":items\":{\"header\":{\"disableAuthorEditing\":true,\":type\":\"sb1/nettsider-frontend/components/header\",\"newCustomer\":{\"enableOverlay\":\"true\",\"bankPickerPostalText\":null,\"url\":\"/content/sites/sb1/nb/bank/privat/kundeservice/bestill/bli-kunde?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat.html\",\"bankPickerBankText\":null},\"logo\":{\"alt\":\"Tilbake til forsiden for privat for - SpareBank 1\",\"logoFileReference\":\"/content/dam/SB1/nettsider/logo.svg\",\"url\":\"/content/sites/sb1/nb/bank/privat.html\"},\"bottomLinks\":[{\"path\":\"/nb/bank/privat/daglig-bruk.html\",\"text\":\"Daglig bruk\"},{\"path\":\"/nb/bank/privat/lan.html\",\"text\":\"Låne\"},{\"path\":\"/nb/bank/privat/sparing.html\",\"currentMarketChild\":true,\"text\":\"Spare\"},{\"path\":\"/nb/bank/privat/pensjon.html\",\"text\":\"Pensjon\"},{\"path\":\"/nb/bank/privat/forsikring.html\",\"text\":\"Forsikring\"},{\"path\":\"/nb/bank/privat/eiendom.html\",\"text\":\"Eiendom\"},{\"path\":\"/nb/bank/privat/tips-og-rad.html\",\"text\":\"Tips og råd\"},{\"path\":\"/nb/bank/privat/kundeservice.html\",\"text\":\"Kundeservice\"},{\"path\":\"/nb/bank/privat/lofavor.html\",\"text\":\"LOfavør-fordeler\"}],\"topLinks\":[{\"path\":\"/nb/bank/privat.html\",\"currentMarket\":true,\"text\":\"Privat\"},{\"path\":\"/nb/bank/bedrift.html\",\"text\":\"Bedrift\"},{\"path\":\"/nb/bank/om-oss.html\",\"text\":\"Om oss\"},{\"path\":\"/nb/bank/kampanjebanner.html\",\"text\":null}]},\"content\":{\":items\":{\"title\":{\":type\":\"sb1/nettsider-frontend/components/title\"},\"article_list\":{\":type\":\"sb1/nettsider-frontend/components/article-list\",\"additionalInfo\":{\"total\":2},\":articleList\":{\"/content/sites/sb1/nb/bank/privat/sparing/markedsnytt/artikler/vil-gjore-aksjesparekontoen-enda-bedre\":{\"article\":{\"title\":\"Vil gjøre aksjesparekontoen enda bedre\",\"tags\":[{\"key\":\"sb1:nyheter/fondssparing\",\"value\":\"Fondssparing\"},{\"key\":\"sb1:markedsnytt/markedsnytt-1\",\"value\":\"Markedsnytt\"}],\"lastEdited\":1791557220000,\"image\":{\"url\":\"/content/dam/SB1/foto/Nyhetssenter/mann-pa-telefon-markedsnytt.jpg\",\"cssClassNames\":\"sb1-article__header-image image--hero\"},\"cssClassNames\":\"sb1-article__layout1\",\"hideInNav\":false},\":itemIndex\":\"0\"},\"/content/sites/sb1/nb/bank/privat/sparing/markedsnytt/artikler/topp-10-fond\":{\"article\":{\"title\":\"Dette kjøper fondssparerne nå: – Tre ting du bør merke deg \",\"tags\":[{\"key\":\"sb1:nyheter/fondssparing\",\"value\":\"Fondssparing\"},{\"key\":\"sb1:markedsnytt/markedsnytt-1\",\"value\":\"Markedsnytt\"}],\"lastEdited\":1790871540000,\"image\":{\"url\":\"/content/dam/SB1/foto/Nyhetssenter/sondre-kverneng-nordnes-graf-markedsnytt.jpg\",\"cssClassNames\":\"sb1-article__header-image image--hero sb1-article__header-image--center-crop\"},\"cssClassNames\":\"sb1-article__layout1\",\"hideInNav\":false},\":itemIndex\":\"1\"}}}},\"cssClassNames\":\"sb1-articles__content\",\"disableAuthorEditing\":true,\":type\":\"wcm/foundation/components/responsivegrid\",\":itemsOrder\":[\"title\",\"article_list\"]},\"footer\":{\"disableAuthorEditing\":true,\":type\":\"sb1/nettsider-frontend/components/footer\"}},\":parentPath\":\"/content/sites/sb1/nb/bank/privat/sparing/markedsnytt\",\"cssClassNames\":\"sb1-articles\",\":title\":\"Artikler \",\":type\":\"sb1/nettsider-frontend/pages/basepage\",\":itemsOrder\":[\"header\",\"content\",\"footer\"],\":tags\":[{\"key\":\"search-facet-tags:not-indexed\",\"value\":\"Not indexed\"}],\"hideInNav\":true,\":parentTitle\":\"Markedsnytt\",\":hierarchyType\":\"page\",\":path\":\"/content/sites/sb1/nb/bank/privat/sparing/markedsnytt/artikler\",\"lastModified\":1743514499948,\"noIndex\":true}"
+ },
+ {
+  "phase": "load",
+  "method": "GET",
+  "url": "https://www.sparebank1.no/personal/banking/consent/cookies/identity",
+  "requestBody": null,
+  "status": 200,
+  "contentType": "application/vnd.sparebank1.v1+json",
+  "responseBody": "{\"FPID\":\"083c32b7-a640-4504-bd6d-c4d6c09e5d38\"}"
+ },
+ {
+  "phase": "load",
+  "method": "POST",
+  "url": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+  "requestBody": "{\"optinTypes\":[\"F\",\"S\",\"M\"]}",
+  "status": 200,
+  "contentType": "application/vnd.sparebank1.v1+json",
+  "responseBody": "{\"optinTypes\":[\"F\",\"S\",\"M\"]}"
+ },
+ {
+  "phase": "load",
+  "method": "POST",
+  "url": "https://adobedc.demdex.net/ee/v1/interact?configId=c9ffe15c-d455-425b-877f-81f1a83db1c3&requestId=4d8e5ce2-75b7-4198-9c4a-7718af401a7d",
+  "requestBody": "{\"events\":[{\"xdm\":{\"web\":{\"webPageDetails\":{\"URL\":\"https://www.sparebank1.no/nb/bank/privat.html\"},\"webReferrer\":{\"URL\":\"\"}},\"device\":{\"screenHeight\":1000,\"screenWidth\":1440,\"screenOrientation\":\"landscape\"},\"environment\":{\"type\":\"browser\",\"browserDetails\":{\"viewportWidth\":1440,\"viewportHeight\":1000}},\"placeContext\":{\"localTimezoneOffset\":-120,\"localTime\":\"2026-10-15T16:30:33.902+02:00\",\"ianaTimezone\":\"Europe/Rome\"},\"timestamp\":\"2026-10-15T14:30:33.918Z\",\"implementationDetails\":{\"name\":\"https://ns.adobe.com/experience/alloy\",\"version\":\"__VERSION__\",\"environment\":\"browser\"},\"eventType\":\"decisioning.propositionFetch\",\"identityMap\":{\"FPID\":[{\"authenticatedState\":\"ambiguous\",\"id\":\"083c32b7-a640-4504-bd6d-c4d6c09e5d38\",\"primary\":true}]}},\"query\":{\"personalization\":{\"schemas\":[\"https://ns.adobe.com/personalization/default-content-item\",\"https://ns.adobe.com/personalization/html-content-item\",\"https://ns.adobe.com/personalization/json-content-item\",\"https://ns.adobe.com/personalization/redirect-item\",\"https://ns.adobe.com/personalization/ruleset-item\",\"https://ns.adobe.com/personalization/message/in-app\",\"https://ns.adobe.com/personalization/message/content-card\",\"https://ns.adobe.com/personalization/dom-action\"],\"decisionScopes\":[\"__view__\"],\"surfaces\":[\"web://www.sparebank1.no/nb/bank/privat.html\"]}},\"data\":{\"__adobe\":{\"target\":{}}}}],\"query\":{\"identity\":{\"fetch\":[\"ECID\",\"CORE\"]}},\"meta\":{\"queueTimeMillis\":17,\"state\":{\"domain\":\"sparebank1.no\",\"cookiesEnabled\":true}}}",
+  "status": 200,
+  "contentType": "application/json",
+  "responseBody": "{\"requestId\":\"4d8e5ce2-75b7-4198-9c4a-7718af401a7d-53ae0d01e0e84b9a\",\"handle\":[{\"payload\":[{\"id\":\"91326594127340008693578125981246171160\",\"namespace\":{\"code\":\"ECID\"}},{\"id\":\"91308663366586068823576681949046955487\",\"namespace\":{\"code\":\"CORE\"}}],\"type\":\"identity:result\"},{\"payload\":[],\"type\":\"activation:pull\",\"eventIndex\":0},{\"payload\":[],\"type\":\"personalization:decisions\",\"eventIndex\":0},{\"payload\":[{\"scope\":\"Target\",\"hint\":\"37\",\"ttlSeconds\":1800},{\"scope\":\"AAM\",\"hint\":\"6\",\"ttlSeconds\":1800},{\"scope\":\"EdgeNetwork\",\"hint\":\"irl1\",\"ttlSeconds\":1800}],\"type\":\"locationHint:result\"},{\"payload\":[{\"key\":\"kndctr_34D5E37A5447B2650A4C98C6_AdobeOrg_cluster\",\"value\":\"irl1\",\"maxAge\":1800,\"attrs\":{\"SameSite\":\"None\"}},{\"key\":\"kndctr_34D5E37A5447B2650A4C98C6_AdobeOrg_identity\",\"value\":\"CiY5MTMyNjU5NDEyNzM0MDAwODY5MzU3ODEyNTk4MTI0NjE3MTE2MFIRCLGm4_-TNBgBKgRJUkwxMALwAbGm4_-TNA==\",\"maxAge\":34128000,\"attrs\":{\"SameSite\":\"None\"}}],\"type\":\"state:store\"}]}"
+ }
+]

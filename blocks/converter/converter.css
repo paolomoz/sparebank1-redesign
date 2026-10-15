@@ -11,3 +11,15 @@
 @media (width <= 640px) {
   .converter .conv-row { grid-template-columns: 1fr; }
 }
+
+/* dynamics #9: the working converter (selects, amount, swap, computed result) */
+.converter .conv .label p { margin: 0; }
+.converter .conv-select { width: 100%; height: 48px; padding: 0 12px; border: 1px solid var(--lysgraa); border-radius: var(--radius-sm); background: #fff; color: var(--svart); font-size: 16px; }
+.converter .conv-amount { border: 1px solid var(--lysgraa); align-self: end; }
+.converter .conv-select:focus-visible, .converter .conv-amount:focus-visible, .converter .conv-swap:focus-visible { outline: 2px solid var(--vann); outline-offset: 2px; }
+.converter .conv-result { border-style: solid; height: 48px; align-self: end; font-family: var(--title-font-family); color: var(--svart); }
+.converter .conv-row > .conv-field:last-child { align-content: end; }
+.converter .conv-swap-row { display: flex; justify-content: center; margin-block: calc(-1 * var(--spacing-sm)); }
+.converter .conv-swap { width: 40px; height: 40px; border: 1px solid var(--lysgraa); border-radius: 50%; background: #fff; color: var(--vann); font-size: 20px; line-height: 1; cursor: pointer; }
+.converter .conv-swap:hover { background: var(--frost-30); border-color: var(--vann); }
+.converter .conv-date p { margin: 0; }

@@ -1,0 +1,121 @@
+{
+ "settleMs": 700,
+ "rows": [
+  {
+   "zip": "0150"
+  },
+  {
+   "zip": "0001"
+  },
+  {
+   "zip": "9999"
+  },
+  {
+   "zip": "7010"
+  },
+  {
+   "zip": "9010"
+  },
+  {
+   "zip": "2615"
+  },
+  {
+   "zip": "2650"
+  },
+  {
+   "zip": "2680"
+  },
+  {
+   "zip": "3500"
+  },
+  {
+   "zip": "3530"
+  },
+  {
+   "zip": "3540"
+  },
+  {
+   "zip": "5003"
+  },
+  {
+   "zip": "5020"
+  },
+  {
+   "zip": "5550"
+  },
+  {
+   "zip": "5600"
+  },
+  {
+   "zip": "6700"
+  },
+  {
+   "zip": "6900"
+  },
+  {
+   "zip": "6800"
+  },
+  {
+   "zip": "8000"
+  },
+  {
+   "zip": "8800"
+  },
+  {
+   "zip": "6400"
+  },
+  {
+   "zip": "6500"
+  },
+  {
+   "zip": "7500"
+  },
+  {
+   "zip": "4000"
+  },
+  {
+   "zip": "4600"
+  },
+  {
+   "zip": "1600"
+  },
+  {
+   "zip": "2000"
+  },
+  {
+   "zip": "2300"
+  },
+  {
+   "zip": "3000"
+  },
+  {
+   "zip": "1300"
+  },
+  {
+   "zip": "1396"
+  },
+  {
+   "zip": "12"
+  },
+  {
+   "zip": "ab"
+  },
+  {
+   "zip": "12x"
+  },
+  {
+   "zip": ""
+  }
+ ],
+ "inputs": {
+  "zip": ".bank-choice-wrap #postnummer-input"
+ },
+ "outputs": {
+  "matched": {
+   "css": ".bank-choice-wrap .bank-choice__result a",
+   "all": true
+  },
+  "toggle": ".bank-choice-wrap .bank-choice__expand",
+  "error": ".bank-choice-wrap .bank-choice--error"
+ }
+}

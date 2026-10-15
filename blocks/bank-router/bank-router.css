@@ -22,6 +22,16 @@ main .section.router > div { width: 100%; }
 .bank-router .bank-list strong { font-family: var(--title-font-family); }
 .bank-router .bank-tagline { display: block; color: rgb(255 255 255 / 70%); }
 .bank-router .bank-tagline p { display: inline; }
+/* dynamics #1: postcode → bank result, invalid-postcode message, single-bank "Fortsett til" */
+.bank-router .router-error { margin: 8px 0 0; padding: 6px 12px; border-radius: var(--radius-sm); background: var(--hvit); color: var(--natt); font-size: var(--body-sm); line-height: 1.43; }
+.bank-router .router-error[hidden], .bank-router .router-result[hidden], .bank-router li[hidden] { display: none; }
+.bank-router .router-result { margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0 32px; list-style: none; padding: 0; }
+.bank-router .router-result li { padding: 10px 0; border-top: 1px solid rgb(255 255 255 / 18%); font-size: var(--body-sm); line-height: 1.43; min-width: 0; margin: 0; }
+.bank-router .router-result a:any-link { color: #fff; text-decoration: none; }
+.bank-router .router-result a:hover { text-decoration: underline; }
+.bank-router .router-result strong { font-family: var(--title-font-family); }
+.bank-router .router-featured { display: flex; flex-direction: column; gap: 4px; }
+.bank-router .router-result .router-continue:any-link { font-family: var(--title-font-family); text-decoration: underline; text-underline-offset: 3px; }
 .bank-router .router-art { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: auto; opacity: 0.95; pointer-events: none; border-radius: 0; transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.5s; }
 .bank-router .router:hover .router-art { transform: translateX(-12px); opacity: 1; }
 
@@ -33,7 +43,8 @@ main .section.router > div { width: 100%; }
 .bank-router .router--band .input { flex: 0 1 180px; height: 44px; }
 .bank-router .router--band button.button { padding: 12px 16px; }
 .bank-router .router--band .router-all { justify-self: end; }
-.bank-router .router--band .router-all[open] { grid-column: 1 / -1; }
+.bank-router .router--band .router-all[open], .bank-router .router--band .router-result { grid-column: 1 / -1; }
+.bank-router .router--band .router-result { grid-row: 2; }
 .bank-router .router--band .router-art { left: auto; right: -3%; bottom: -46%; width: 56%; opacity: 0.5; }
 
 /* tile (market landing: the first bento row of the hero) */
@@ -49,8 +60,9 @@ main .section.router > div { width: 100%; }
 .bank-router .router--tile .field-row { flex-direction: column; align-items: center; gap: 12px; }
 .bank-router .router--tile .field-row .input { flex: none; width: 220px; text-align: center; }
 .bank-router .router--tile .router-all { margin-top: 20px; width: 100%; }
+.bank-router .router--tile .router-body:has(.router-result:not([hidden]), .router-all[open]) { padding-bottom: 260px; }
 .bank-router .router--tile summary { justify-content: center; display: inline-flex; }
-.bank-router .router--tile .bank-list { grid-template-columns: 1fr; max-width: 520px; margin: 16px auto 0; text-align: left; }
+.bank-router .router--tile .bank-list, .bank-router .router--tile .router-result { grid-template-columns: 1fr; max-width: 520px; margin: 16px auto 0; text-align: left; width: 100%; }
 
 @media (width <= 1024px) {
   .bank-router .router--band .router-body { grid-template-columns: 1fr auto; gap: 12px 24px; padding: 20px 28px; }

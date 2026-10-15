@@ -1,0 +1,102 @@
+{
+ "settleMs": 3000,
+ "rows": [
+  {
+   "income": "300000",
+   "debt": "0"
+  },
+  {
+   "income": "300000",
+   "debt": "200000"
+  },
+  {
+   "income": "400000",
+   "debt": "0"
+  },
+  {
+   "income": "400000",
+   "debt": "200000"
+  },
+  {
+   "income": "500000",
+   "debt": "0"
+  },
+  {
+   "income": "500000",
+   "debt": "200000"
+  },
+  {
+   "income": "650000",
+   "debt": "0"
+  },
+  {
+   "income": "650000",
+   "debt": "200000"
+  },
+  {
+   "income": "800000",
+   "debt": "0"
+  },
+  {
+   "income": "800000",
+   "debt": "200000"
+  },
+  {
+   "income": "1000000",
+   "debt": "0"
+  },
+  {
+   "income": "1000000",
+   "debt": "200000"
+  },
+  {
+   "income": "1200000",
+   "debt": "0"
+  },
+  {
+   "income": "1200000",
+   "debt": "200000"
+  },
+  {
+   "income": "1500000",
+   "debt": "0"
+  },
+  {
+   "income": "1500000",
+   "debt": "200000"
+  },
+  {
+   "income": "2000000",
+   "debt": "0"
+  },
+  {
+   "income": "2000000",
+   "debt": "200000"
+  },
+  {
+   "income": "250000",
+   "debt": "0"
+  },
+  {
+   "income": "250000",
+   "debt": "200000"
+  },
+  {
+   "income": "350000",
+   "debt": "0"
+  },
+  {
+   "income": "350000",
+   "debt": "200000"
+  }
+ ],
+ "inputs": {
+  "income": "#boliglan-kalkulator #samlet-inntekt-før-skatt",
+  "debt": "#boliglan-kalkulator #samlet-lån-og-gjeld"
+ },
+ "outputs": {
+  "maxLoan": "#boliglan-kalkulator [aria-live=polite] h2",
+  "priceExample": "#boliglan-kalkulator div.ffe-body-text:has-text(\"Priseksempel\")"
+ },
+ "_note": "oracle for #7 once the owner unblocks the API (CORS/proxy): replay these rows on the rebuilt block and diff. Pills (borrowers/children/cars) are buttons and not driven here; their effect is visible in network.json (adults[], children[], numberOfPetrolCars)."
+}

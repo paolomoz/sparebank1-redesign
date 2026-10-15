@@ -1,0 +1,321 @@
+{
+ "writtenBy": "stardust/scripts/dyn-vectors.mjs",
+ "writtenAt": "2026-10-15T14:44:47.360Z",
+ "url": "http://localhost:3000/spike-c/nb/bank/privat/kundeservice/verktoy/valutakalkulator",
+ "label": "target",
+ "width": 1440,
+ "rows": [
+  {
+   "i": 0,
+   "input": {
+    "from": "NOK",
+    "to": "EUR",
+    "amount": "100"
+   },
+   "output": {
+    "result": "9.33",
+    "rate": "1 EUR = 10.63 NOK"
+   }
+  },
+  {
+   "i": 1,
+   "input": {
+    "from": "NOK",
+    "to": "USD",
+    "amount": "100"
+   },
+   "output": {
+    "result": "10.45",
+    "rate": "1 USD = 9.47 NOK"
+   }
+  },
+  {
+   "i": 2,
+   "input": {
+    "from": "EUR",
+    "to": "NOK",
+    "amount": "100"
+   },
+   "output": {
+    "result": "1062.68",
+    "rate": "1 NOK = 0.09 EUR"
+   }
+  },
+  {
+   "i": 3,
+   "input": {
+    "from": "USD",
+    "to": "NOK",
+    "amount": "2500"
+   },
+   "output": {
+    "result": "23686.75",
+    "rate": "1 NOK = 0.10 USD"
+   }
+  },
+  {
+   "i": 4,
+   "input": {
+    "from": "NOK",
+    "to": "SEK",
+    "amount": "1000"
+   },
+   "output": {
+    "result": "1040.37",
+    "rate": "1 SEK = 0.95 NOK"
+   }
+  },
+  {
+   "i": 5,
+   "input": {
+    "from": "SEK",
+    "to": "NOK",
+    "amount": "1000"
+   },
+   "output": {
+    "result": "947.20",
+    "rate": "1 NOK = 1.04 SEK"
+   }
+  },
+  {
+   "i": 6,
+   "input": {
+    "from": "NOK",
+    "to": "DKK",
+    "amount": "750"
+   },
+   "output": {
+    "result": "522.76",
+    "rate": "1 DKK = 1.42 NOK"
+   }
+  },
+  {
+   "i": 7,
+   "input": {
+    "from": "DKK",
+    "to": "EUR",
+    "amount": "100"
+   },
+   "output": {
+    "result": "13.25",
+    "rate": "1 EUR = 7.41 DKK"
+   }
+  },
+  {
+   "i": 8,
+   "input": {
+    "from": "EUR",
+    "to": "USD",
+    "amount": "1"
+   },
+   "output": {
+    "result": "1.11",
+    "rate": "1 USD = 0.88 EUR"
+   }
+  },
+  {
+   "i": 9,
+   "input": {
+    "from": "GBP",
+    "to": "EUR",
+    "amount": "50"
+   },
+   "output": {
+    "result": "58.65",
+    "rate": "1 EUR = 0.84 GBP"
+   }
+  },
+  {
+   "i": 10,
+   "input": {
+    "from": "NOK",
+    "to": "JPY",
+    "amount": "1000"
+   },
+   "output": {
+    "result": "16490.22",
+    "rate": "1 JPY = 0.06 NOK"
+   }
+  },
+  {
+   "i": 11,
+   "input": {
+    "from": "JPY",
+    "to": "NOK",
+    "amount": "10000"
+   },
+   "output": {
+    "result": "600.42",
+    "rate": "1 NOK = 16.49 JPY"
+   }
+  },
+  {
+   "i": 12,
+   "input": {
+    "from": "CHF",
+    "to": "NOK",
+    "amount": "100"
+   },
+   "output": {
+    "result": "1144.18",
+    "rate": "1 NOK = 0.09 CHF"
+   }
+  },
+  {
+   "i": 13,
+   "input": {
+    "from": "NOK",
+    "to": "CHF",
+    "amount": "100"
+   },
+   "output": {
+    "result": "8.70",
+    "rate": "1 CHF = 11.44 NOK"
+   }
+  },
+  {
+   "i": 14,
+   "input": {
+    "from": "NOK",
+    "to": "THB",
+    "amount": "5000"
+   },
+   "output": {
+    "result": "17439.83",
+    "rate": "1 THB = 0.28 NOK"
+   }
+  },
+  {
+   "i": 15,
+   "input": {
+    "from": "PLN",
+    "to": "SEK",
+    "amount": "300"
+   },
+   "output": {
+    "result": "756.46",
+    "rate": "1 SEK = 0.38 PLN"
+   }
+  },
+  {
+   "i": 16,
+   "input": {
+    "from": "NOK",
+    "to": "HUF",
+    "amount": "100"
+   },
+   "output": {
+    "result": "3379.52",
+    "rate": "1 HUF = 0.03 NOK"
+   }
+  },
+  {
+   "i": 17,
+   "input": {
+    "from": "ISK",
+    "to": "NOK",
+    "amount": "12000"
+   },
+   "output": {
+    "result": "927.60",
+    "rate": "1 NOK = 12.61 ISK"
+   }
+  },
+  {
+   "i": 18,
+   "input": {
+    "from": "NOK",
+    "to": "EUR",
+    "amount": "1 000,50"
+   },
+   "output": {
+    "result": "93.34",
+    "rate": "1 EUR = 10.63 NOK"
+   }
+  },
+  {
+   "i": 19,
+   "input": {
+    "from": "NOK",
+    "to": "EUR",
+    "amount": "0"
+   },
+   "output": {
+    "result": "0.00",
+    "rate": "1 EUR = 10.63 NOK"
+   }
+  },
+  {
+   "i": 20,
+   "input": {
+    "from": "NOK",
+    "to": "EUR",
+    "amount": "abc"
+   },
+   "output": {
+    "result": "0.00",
+    "rate": "1 EUR = 10.63 NOK"
+   }
+  },
+  {
+   "i": 21,
+   "input": {
+    "from": "NOK",
+    "to": "EUR",
+    "amount": ""
+   },
+   "output": {
+    "result": "0.00",
+    "rate": "1 EUR = 10.63 NOK"
+   }
+  },
+  {
+   "i": 22,
+   "input": {
+    "from": "USD",
+    "to": "USD",
+    "amount": "100"
+   },
+   "output": {
+    "result": "99.04",
+    "rate": "1 USD = 0.99 USD"
+   }
+  },
+  {
+   "i": 23,
+   "input": {
+    "from": "NOK",
+    "to": "NOK",
+    "amount": "42"
+   },
+   "output": {
+    "result": "42.00",
+    "rate": "1 NOK = 1.00 NOK"
+   }
+  },
+  {
+   "i": 24,
+   "input": {
+    "from": "AUD",
+    "to": "NZD",
+    "amount": "999999"
+   },
+   "output": {
+    "result": "1224690.82",
+    "rate": "1 NZD = 0.80 AUD"
+   }
+  },
+  {
+   "i": 25,
+   "input": {
+    "from": "CNY",
+    "to": "INR",
+    "amount": "123.45"
+   },
+   "output": {
+    "result": "1691.10",
+    "rate": "1 INR = 0.07 CNY"
+   }
+  }
+ ]
+}

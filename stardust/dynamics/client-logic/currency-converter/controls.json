@@ -1,0 +1,14 @@
+[
+ {
+  "selector": "div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > input",
+  "tag": "input",
+  "type": "tel",
+  "name": "exchange-amount",
+  "id": null,
+  "label": "",
+  "value": "100",
+  "min": "0",
+  "max": null,
+  "step": null
+ }
+]

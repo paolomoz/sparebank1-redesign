@@ -1,0 +1,317 @@
+{
+ "writtenBy": "stardust/scripts/dyn-vectors.mjs",
+ "writtenAt": "2026-10-15T14:46:37.294Z",
+ "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html",
+ "label": "source",
+ "width": 1440,
+ "rows": [
+  {
+   "i": 0,
+   "input": {
+    "monthly": "500",
+    "saved": "6000",
+    "years": "5",
+    "risk": "medium"
+   },
+   "output": {
+    "expected": "42 107 kr *",
+    "returnBeforeTax": "6 107 kr",
+    "saved": "36 000 kr"
+   }
+  },
+  {
+   "i": 1,
+   "input": {
+    "monthly": "1000",
+    "saved": "6000",
+    "years": "5",
+    "risk": "medium"
+   },
+   "output": {
+    "expected": "76 436 kr *",
+    "returnBeforeTax": "10 436 kr",
+    "saved": "66 000 kr"
+   }
+  },
+  {
+   "i": 2,
+   "input": {
+    "monthly": "1000",
+    "saved": "6000",
+    "years": "10",
+    "risk": "medium"
+   },
+   "output": {
+    "expected": "174 295 kr *",
+    "returnBeforeTax": "48 295 kr",
+    "saved": "126 000 kr"
+   }
+  },
+  {
+   "i": 3,
+   "input": {
+    "monthly": "1000",
+    "saved": "6000",
+    "years": "10",
+    "risk": "high"
+   },
+   "output": {
+    "expected": "178 842 kr *",
+    "returnBeforeTax": "52 842 kr",
+    "saved": "126 000 kr"
+   }
+  },
+  {
+   "i": 4,
+   "input": {
+    "monthly": "1000",
+    "saved": "0",
+    "years": "10",
+    "risk": "none"
+   },
+   "output": {
+    "expected": "139 791 kr *",
+    "returnBeforeTax": "19 791 kr",
+    "saved": "120 000 kr"
+   }
+  },
+  {
+   "i": 5,
+   "input": {
+    "monthly": "1000",
+    "saved": "0",
+    "years": "10",
+    "risk": "low"
+   },
+   "output": {
+    "expected": "157 670 kr *",
+    "returnBeforeTax": "37 670 kr",
+    "saved": "120 000 kr"
+   }
+  },
+  {
+   "i": 6,
+   "input": {
+    "monthly": "2000",
+    "saved": "50000",
+    "years": "20",
+    "risk": "high"
+   },
+   "output": {
+    "expected": "1 140 481 kr *",
+    "returnBeforeTax": "610 481 kr",
+    "saved": "530 000 kr"
+   }
+  },
+  {
+   "i": 7,
+   "input": {
+    "monthly": "300",
+    "saved": "0",
+    "years": "3",
+    "risk": "low"
+   },
+   "output": {
+    "expected": "11 307 kr *",
+    "returnBeforeTax": "507 kr",
+    "saved": "10 800 kr"
+   }
+  },
+  {
+   "i": 8,
+   "input": {
+    "monthly": "5000",
+    "saved": "100000",
+    "years": "30",
+    "risk": "medium"
+   },
+   "output": {
+    "expected": "5 502 221 kr *",
+    "returnBeforeTax": "3 602 221 kr",
+    "saved": "1 900 000 kr"
+   }
+  },
+  {
+   "i": 9,
+   "input": {
+    "monthly": "1500",
+    "saved": "10000",
+    "years": "15",
+    "risk": "none"
+   },
+   "output": {
+    "expected": "355 775 kr *",
+    "returnBeforeTax": "75 775 kr",
+    "saved": "280 000 kr"
+   }
+  },
+  {
+   "i": 10,
+   "input": {
+    "monthly": "250",
+    "saved": "0",
+    "years": "1",
+    "risk": "medium"
+   },
+   "output": {
+    "expected": "3 048 kr *",
+    "returnBeforeTax": "48 kr",
+    "saved": "3 000 kr"
+   }
+  },
+  {
+   "i": 11,
+   "input": {
+    "monthly": "750",
+    "saved": "25000",
+    "years": "8",
+    "risk": "high"
+   },
+   "output": {
+    "expected": "131 996 kr *",
+    "returnBeforeTax": "34 996 kr",
+    "saved": "97 000 kr"
+   }
+  },
+  {
+   "i": 12,
+   "input": {
+    "monthly": "3000",
+    "saved": "0",
+    "years": "25",
+    "risk": "low"
+   },
+   "output": {
+    "expected": "1 849 961 kr *",
+    "returnBeforeTax": "949 961 kr",
+    "saved": "900 000 kr"
+   }
+  },
+  {
+   "i": 13,
+   "input": {
+    "monthly": "1000",
+    "saved": "1000",
+    "years": "40",
+    "risk": "high"
+   },
+   "output": {
+    "expected": "2 193 489 kr *",
+    "returnBeforeTax": "1 712 489 kr",
+    "saved": "481 000 kr"
+   }
+  },
+  {
+   "i": 14,
+   "input": {
+    "monthly": "100",
+    "saved": "0",
+    "years": "2",
+    "risk": "none"
+   },
+   "output": {
+    "expected": "2 475 kr *",
+    "returnBeforeTax": "75 kr",
+    "saved": "2 400 kr"
+   }
+  },
+  {
+   "i": 15,
+   "input": {
+    "monthly": "10000",
+    "saved": "500000",
+    "years": "12",
+    "risk": "medium"
+   },
+   "output": {
+    "expected": "3 103 107 kr *",
+    "returnBeforeTax": "1 163 107 kr",
+    "saved": "1 940 000 kr"
+   }
+  },
+  {
+   "i": 16,
+   "input": {
+    "monthly": "500",
+    "saved": "6000",
+    "years": "5",
+    "risk": "low"
+   },
+   "output": {
+    "expected": "41 240 kr *",
+    "returnBeforeTax": "5 240 kr",
+    "saved": "36 000 kr"
+   }
+  },
+  {
+   "i": 17,
+   "input": {
+    "monthly": "500",
+    "saved": "6000",
+    "years": "5",
+    "risk": "high"
+   },
+   "output": {
+    "expected": "42 979 kr *",
+    "returnBeforeTax": "6 979 kr",
+    "saved": "36 000 kr"
+   }
+  },
+  {
+   "i": 18,
+   "input": {
+    "monthly": "500",
+    "saved": "6000",
+    "years": "5",
+    "risk": "none"
+   },
+   "output": {
+    "expected": "39 325 kr *",
+    "returnBeforeTax": "3 325 kr",
+    "saved": "36 000 kr"
+   }
+  },
+  {
+   "i": 19,
+   "input": {
+    "monthly": "2500",
+    "saved": "20000",
+    "years": "18",
+    "risk": "medium"
+   },
+   "output": {
+    "expected": "1 017 285 kr *",
+    "returnBeforeTax": "457 285 kr",
+    "saved": "560 000 kr"
+   }
+  },
+  {
+   "i": 20,
+   "input": {
+    "monthly": "1200",
+    "saved": "0",
+    "years": "7",
+    "risk": "high"
+   },
+   "output": {
+    "expected": "124 898 kr *",
+    "returnBeforeTax": "24 098 kr",
+    "saved": "100 800 kr"
+   }
+  },
+  {
+   "i": 21,
+   "input": {
+    "monthly": "800",
+    "saved": "8000",
+    "years": "4",
+    "risk": "low"
+   },
+   "output": {
+    "expected": "49 816 kr *",
+    "returnBeforeTax": "3 416 kr",
+    "saved": "46 400 kr"
+   }
+  }
+ ]
+}

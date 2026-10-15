@@ -1,0 +1,264 @@
+{
+ "writtenBy": "stardust:dynamics client-logic capture",
+ "writtenAt": "2026-10-15T14:28:44.696Z",
+ "url": "https://www.sparebank1.no/nb/bank/privat/lan/lanekalkulator.html",
+ "mount": "#boliglan-kalkulator",
+ "locus": "client (with calls)",
+ "thirdPartyRequestsDuringInteraction": 0,
+ "thirdPartyScriptHosts": [],
+ "controls": 0,
+ "outputsChanged": 0,
+ "interactionRequests": [
+  {
+   "phase": "interaction",
+   "method": "POST",
+   "url": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/economy",
+   "requestBody": "{\"calculationDataset\":\"Loke\",\"adults\":[{\"age\":35,\"gender\":\"Male\",\"grossSalary\":6500000,\"employmentStatus\":\"Employed\"}],\"numberOfPetrolCars\":0,\"numberOfElectricCars\":0,\"existingMortgage\":200000,\"interestRate\":5.33,\"feeMonthly\":50,\"loanTermYears\":25,\"feeEstablishment\":1500}",
+   "status": 200,
+   "contentType": "application/vnd.sparebank1.v1+json"
+  },
+  {
+   "phase": "interaction",
+   "method": "POST",
+   "url": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/annuity-loan",
+   "requestBody": "{\"loanRaisingYear\":2026,\"loanRaisingMonth\":10,\"purchasePrice\":32300000,\"equity\":0,\"interestRate\":5.33,\"feeEstablishment\":1500,\"feeMonthly\":50,\"taxDeductionRate\":0.22,\"loanTermYears\":25,\"interestOnlyYears\":0}",
+   "status": 200,
+   "contentType": "application/vnd.sparebank1.v1+json"
+  },
+  {
+   "phase": "interaction",
+   "method": "POST",
+   "url": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/economy",
+   "requestBody": "{\"calculationDataset\":\"Loke\",\"adults\":[{\"age\":35,\"gender\":\"Male\",\"grossSalary\":3250000,\"employmentStatus\":\"Employed\"},{\"age\":35,\"gender\":\"Female\",\"grossSalary\":3250000,\"employmentStatus\":\"Employed\"}],\"numberOfPetrolCars\":0,\"numberOfElectricCars\":0,\"existingMortgage\":200000,\"interestRate\":5.33,\"feeMonthly\":50,\"loanTermYears\":25,\"feeEstablishment\":1500}",
+   "status": 200,
+   "contentType": "application/vnd.sparebank1.v1+json"
+  },
+  {
+   "phase": "interaction",
+   "method": "POST",
+   "url": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/annuity-loan",
+   "requestBody": "{\"loanRaisingYear\":2026,\"loanRaisingMonth\":10,\"purchasePrice\":32300000,\"equity\":0,\"interestRate\":5.33,\"feeEstablishment\":1500,\"feeMonthly\":50,\"taxDeductionRate\":0.22,\"loanTermYears\":25,\"interestOnlyYears\":0}",
+   "status": 200,
+   "contentType": "application/vnd.sparebank1.v1+json"
+  },
+  {
+   "phase": "interaction",
+   "method": "POST",
+   "url": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/economy",
+   "requestBody": "{\"calculationDataset\":\"Loke\",\"adults\":[{\"age\":35,\"gender\":\"Male\",\"grossSalary\":3250000,\"employmentStatus\":\"Employed\"},{\"age\":35,\"gender\":\"Female\",\"grossSalary\":3250000,\"employmentStatus\":\"Employed\"}],\"numberOfPetrolCars\":0,\"numberOfElectricCars\":0,\"existingMortgage\":1000000,\"interestRate\":5.33,\"feeMonthly\":50,\"loanTermYears\":25,\"feeEstablishment\":1500}",
+   "status": 200,
+   "contentType": "application/vnd.sparebank1.v1+json"
+  },
+  {
+   "phase": "interaction",
+   "method": "POST",
+   "url": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/annuity-loan",
+   "requestBody": "{\"loanRaisingYear\":2026,\"loanRaisingMonth\":10,\"purchasePrice\":31500000,\"equity\":0,\"interestRate\":5.33,\"feeEstablishment\":1500,\"feeMonthly\":50,\"taxDeductionRate\":0.22,\"loanTermYears\":25,\"interestOnlyYears\":0}",
+   "status": 200,
+   "contentType": "application/vnd.sparebank1.v1+json"
+  },
+  {
+   "phase": "interaction",
+   "method": "POST",
+   "url": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/annuity-loan",
+   "requestBody": "{\"loanRaisingYear\":2026,\"loanRaisingMonth\":10,\"purchasePrice\":3000000,\"equity\":300000,\"interestRate\":5.33,\"feeEstablishment\":2900,\"feeMonthly\":50,\"taxDeductionRate\":0.22,\"loanTermYears\":25,\"interestOnlyYears\":0}",
+   "status": 200,
+   "contentType": "application/vnd.sparebank1.v1+json"
+  }
+ ],
+ "sourceMaps": [],
+ "candidates": [
+  {
+   "framework": false,
+   "script": "(inline)",
+   "file": "scripts/028-inline.js",
+   "function": "oneLine",
+   "calls": 2,
+   "bytes": 85,
+   "mathOps": 4,
+   "matchedLabels": [],
+   "score": -2.4,
+   "generated": {
+    "line": 8428,
+    "column": 0
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+   "file": "scripts/021-clientlib-base-1156934419-js.js",
+   "function": "(anonymous)",
+   "calls": 52,
+   "bytes": 27,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -4.8,
+   "generated": {
+    "line": 1,
+    "column": 348267
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+   "file": "scripts/021-clientlib-base-1156934419-js.js",
+   "function": "(anonymous)",
+   "calls": 52,
+   "bytes": 27,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -4.8,
+   "generated": {
+    "line": 1,
+    "column": 351520
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "(inline)",
+   "file": "scripts/028-inline.js",
+   "function": "(anonymous)",
+   "calls": 24,
+   "bytes": 29,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -4.9,
+   "generated": {
+    "line": 8002,
+    "column": 15
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "https://www.sparebank1.no/sb1-nettsider-optin/bank/static/opt-in.js",
+   "file": "scripts/025-opt-in-js.js",
+   "function": "Ed",
+   "calls": 14,
+   "bytes": 34,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -5.1,
+   "generated": {
+    "line": 2,
+    "column": 285955
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "(inline)",
+   "file": "scripts/026-inline.js",
+   "function": "(anonymous)",
+   "calls": 8,
+   "bytes": 37,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -5.2,
+   "generated": {
+    "line": 384,
+    "column": 42
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+   "file": "scripts/021-clientlib-base-1156934419-js.js",
+   "function": "(anonymous)",
+   "calls": 8,
+   "bytes": 38,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -5.3,
+   "generated": {
+    "line": 1,
+    "column": 351573
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+   "file": "scripts/021-clientlib-base-1156934419-js.js",
+   "function": "(anonymous)",
+   "calls": 1,
+   "bytes": 38,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -5.3,
+   "generated": {
+    "line": 1,
+    "column": 378199
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+   "file": "scripts/021-clientlib-base-1156934419-js.js",
+   "function": "n",
+   "calls": 20,
+   "bytes": 68,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -6.1,
+   "generated": {
+    "line": 1,
+    "column": 368746
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+   "file": "scripts/021-clientlib-base-1156934419-js.js",
+   "function": "a",
+   "calls": 1,
+   "bytes": 147,
+   "mathOps": 1,
+   "matchedLabels": [],
+   "score": -6.2,
+   "generated": {
+    "line": 1,
+    "column": 407688
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "(inline)",
+   "file": "scripts/028-inline.js",
+   "function": "trimStringWithEllipsis",
+   "calls": 2,
+   "bytes": 90,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -6.5,
+   "generated": {
+    "line": 498,
+    "column": 0
+   },
+   "original": null
+  },
+  {
+   "framework": false,
+   "script": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156934419.js",
+   "file": "scripts/021-clientlib-base-1156934419-js.js",
+   "function": "toggleVisibilityLanguage",
+   "calls": 8,
+   "bytes": 94,
+   "mathOps": 0,
+   "matchedLabels": [],
+   "score": -6.6,
+   "generated": {
+    "line": 1,
+    "column": 354017
+   },
+   "original": null
+  }
+ ]
+}

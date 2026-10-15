@@ -1,0 +1,149 @@
+{
+ "settleMs": 2500,
+ "rows": [
+  {
+   "monthly": "500",
+   "saved": "6000",
+   "years": "5",
+   "risk": "medium"
+  },
+  {
+   "monthly": "1000",
+   "saved": "6000",
+   "years": "5",
+   "risk": "medium"
+  },
+  {
+   "monthly": "1000",
+   "saved": "6000",
+   "years": "10",
+   "risk": "medium"
+  },
+  {
+   "monthly": "1000",
+   "saved": "6000",
+   "years": "10",
+   "risk": "high"
+  },
+  {
+   "monthly": "1000",
+   "saved": "0",
+   "years": "10",
+   "risk": "none"
+  },
+  {
+   "monthly": "1000",
+   "saved": "0",
+   "years": "10",
+   "risk": "low"
+  },
+  {
+   "monthly": "2000",
+   "saved": "50000",
+   "years": "20",
+   "risk": "high"
+  },
+  {
+   "monthly": "300",
+   "saved": "0",
+   "years": "3",
+   "risk": "low"
+  },
+  {
+   "monthly": "5000",
+   "saved": "100000",
+   "years": "30",
+   "risk": "medium"
+  },
+  {
+   "monthly": "1500",
+   "saved": "10000",
+   "years": "15",
+   "risk": "none"
+  },
+  {
+   "monthly": "250",
+   "saved": "0",
+   "years": "1",
+   "risk": "medium"
+  },
+  {
+   "monthly": "750",
+   "saved": "25000",
+   "years": "8",
+   "risk": "high"
+  },
+  {
+   "monthly": "3000",
+   "saved": "0",
+   "years": "25",
+   "risk": "low"
+  },
+  {
+   "monthly": "1000",
+   "saved": "1000",
+   "years": "40",
+   "risk": "high"
+  },
+  {
+   "monthly": "100",
+   "saved": "0",
+   "years": "2",
+   "risk": "none"
+  },
+  {
+   "monthly": "10000",
+   "saved": "500000",
+   "years": "12",
+   "risk": "medium"
+  },
+  {
+   "monthly": "500",
+   "saved": "6000",
+   "years": "5",
+   "risk": "low"
+  },
+  {
+   "monthly": "500",
+   "saved": "6000",
+   "years": "5",
+   "risk": "high"
+  },
+  {
+   "monthly": "500",
+   "saved": "6000",
+   "years": "5",
+   "risk": "none"
+  },
+  {
+   "monthly": "2500",
+   "saved": "20000",
+   "years": "18",
+   "risk": "medium"
+  },
+  {
+   "monthly": "1200",
+   "saved": "0",
+   "years": "7",
+   "risk": "high"
+  },
+  {
+   "monthly": "800",
+   "saved": "8000",
+   "years": "4",
+   "risk": "low"
+  }
+ ],
+ "inputs": {
+  "risk": "#sparekalkulator select",
+  "monthly": "#sparekalkulator #_r_0_",
+  "saved": "#sparekalkulator #_r_2_",
+  "years": "#sparekalkulator #_r_4_"
+ },
+ "outputs": {
+  "expected": ":nth-match(#sparekalkulator dl dd, 1)",
+  "returnBeforeTax": ":nth-match(#sparekalkulator dl dd, 2)",
+  "saved": ":nth-match(#sparekalkulator dl dd, 3)"
+ },
+ "_note": "oracle for #8 once the owner unblocks the savings API: replay on the rebuilt block and diff."
+}

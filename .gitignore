@@ -21,3 +21,8 @@ helix-importer-ui
 # Ensure these files are tracked
 !CLAUDE.md
 !AGENTS.md
+
+# dynamics client-logic captures: the source site's own bundles and HAR stay local (evidence of record = logic.md, network.json, vectors, tables)
+stardust/dynamics/client-logic/*/scripts/
+stardust/dynamics/client-logic/*/pretty/
+stardust/dynamics/client-logic/*/session.har

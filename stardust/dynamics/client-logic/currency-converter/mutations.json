@@ -1,0 +1,23 @@
+[
+ {
+  "tag": "span",
+  "cls": "to-exchanged-amount",
+  "id": null,
+  "before": "9.33",
+  "after": "0.09"
+ },
+ {
+  "tag": "span",
+  "cls": "to-exchanged-amount",
+  "id": null,
+  "before": "9.33",
+  "after": "0.93"
+ },
+ {
+  "tag": "span",
+  "cls": "to-exchanged-amount",
+  "id": null,
+  "before": "9.33",
+  "after": "9.42"
+ }
+]

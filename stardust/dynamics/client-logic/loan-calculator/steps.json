@@ -1,0 +1,1 @@
+[{"wait":1500},{"fill":["#boliglan-kalkulator #samlet-inntekt-før-skatt","650000"]},{"wait":1500},{"click":"#boliglan-kalkulator ._button_36iba_13 >> nth=1"},{"wait":1500},{"fill":["#boliglan-kalkulator #samlet-lån-og-gjeld","100000"]},{"wait":1500},{"click":"#boliglan-kalkulator #tab-lanekostnad"},{"wait":2500}]

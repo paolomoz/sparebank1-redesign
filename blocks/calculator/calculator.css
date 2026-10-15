@@ -48,3 +48,7 @@ main .section:has(> .calculator-wrapper) > .default-content-wrapper + .calculato
 main .section:has(> .calculator-wrapper) > .calculator-wrapper:first-child { background: var(--frost-30); border-radius: var(--radius); padding: 56px 48px; }
 main .section:has(> .calculator-wrapper) .calculator { max-width: 44rem; margin-inline: auto; }
 @media (width <= 767px) { main .section:has(> .calculator-wrapper) > .default-content-wrapper { padding: 36px 20px 0; } main .section:has(> .calculator-wrapper) > .default-content-wrapper + .calculator-wrapper { padding: 39px 20px 36px; } }
+.calculator .calc-breakdown { display: flex; flex-wrap: wrap; gap: var(--spacing-sm) var(--spacing-xl); margin: var(--spacing-md) 0 0; }
+.calculator .calc-breakdown dt p { color: var(--koksgraa); }
+.calculator .calc-breakdown dd { margin: 0; }
+.calculator .calc-breakdown dd p { font-family: var(--title-font-family); color: var(--fjell); font-variant-numeric: tabular-nums; }

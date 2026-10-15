@@ -1,0 +1,394 @@
+{
+ "writtenBy": "stardust/scripts/dyn-vectors.mjs",
+ "writtenAt": "2026-10-15T14:44:12.176Z",
+ "url": "https://www.sparebank1.no/nb/bank/privat.html",
+ "label": "source",
+ "width": 1440,
+ "rows": [
+  {
+   "i": 0,
+   "input": {
+    "zip": "0150"
+   },
+   "output": {
+    "matched": "SpareBank 1 Gudbrandsdal · SpareBank 1 Hallingdal Valdres · SpareBank 1 Lom og Skjåk · SpareBank 1 Nord-Norge · SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østfold Akershus · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 1,
+   "input": {
+    "zip": "0001"
+   },
+   "output": {
+    "matched": "",
+    "toggle": "Skjul bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 2,
+   "input": {
+    "zip": "9999"
+   },
+   "output": {
+    "matched": "",
+    "toggle": "Skjul bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 3,
+   "input": {
+    "zip": "7010"
+   },
+   "output": {
+    "matched": "SpareBank 1 Nord-Norge · SpareBank 1 Nordmøre · SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 4,
+   "input": {
+    "zip": "9010"
+   },
+   "output": {
+    "matched": "SpareBank 1 Nord-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 5,
+   "input": {
+    "zip": "2615"
+   },
+   "output": {
+    "matched": "SpareBank 1 Gudbrandsdal · SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 6,
+   "input": {
+    "zip": "2650"
+   },
+   "output": {
+    "matched": "SpareBank 1 Gudbrandsdal · SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 7,
+   "input": {
+    "zip": "2680"
+   },
+   "output": {
+    "matched": "SpareBank 1 Lom og Skjåk · SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 8,
+   "input": {
+    "zip": "3500"
+   },
+   "output": {
+    "matched": "SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 9,
+   "input": {
+    "zip": "3530"
+   },
+   "output": {
+    "matched": "SpareBank 1 Ringerike Hadeland · SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 10,
+   "input": {
+    "zip": "3540"
+   },
+   "output": {
+    "matched": "SpareBank 1 Hallingdal Valdres · SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 11,
+   "input": {
+    "zip": "5003"
+   },
+   "output": {
+    "matched": "SpareBank 1 Hallingdal Valdres · SpareBank 1 Nord-Norge · SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 12,
+   "input": {
+    "zip": "5020"
+   },
+   "output": {
+    "matched": "SpareBank 1 Hallingdal Valdres · SpareBank 1 Nord-Norge · SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 13,
+   "input": {
+    "zip": "5550"
+   },
+   "output": {
+    "matched": "SpareBank 1 Hallingdal Valdres · SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 14,
+   "input": {
+    "zip": "5600"
+   },
+   "output": {
+    "matched": "SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 15,
+   "input": {
+    "zip": "6700"
+   },
+   "output": {
+    "matched": "SpareBank 1 Hallingdal Valdres · SpareBank 1 Nordmøre · SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 16,
+   "input": {
+    "zip": "6900"
+   },
+   "output": {
+    "matched": "SpareBank 1 Hallingdal Valdres · SpareBank 1 Nordmøre · SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 17,
+   "input": {
+    "zip": "6800"
+   },
+   "output": {
+    "matched": "SpareBank 1 Nordmøre · SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 18,
+   "input": {
+    "zip": "8000"
+   },
+   "output": {
+    "matched": "Fortsett til SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 19,
+   "input": {
+    "zip": "8800"
+   },
+   "output": {
+    "matched": "SpareBank 1 Helgeland · SpareBank 1 Nord-Norge",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 20,
+   "input": {
+    "zip": "6400"
+   },
+   "output": {
+    "matched": "SpareBank 1 Nordmøre · SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 21,
+   "input": {
+    "zip": "6500"
+   },
+   "output": {
+    "matched": "SpareBank 1 Nordmøre · SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 22,
+   "input": {
+    "zip": "7500"
+   },
+   "output": {
+    "matched": "SpareBank 1 Nordmøre · SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 23,
+   "input": {
+    "zip": "4000"
+   },
+   "output": {
+    "matched": "SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 24,
+   "input": {
+    "zip": "4600"
+   },
+   "output": {
+    "matched": "SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 25,
+   "input": {
+    "zip": "1600"
+   },
+   "output": {
+    "matched": "SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østfold Akershus · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 26,
+   "input": {
+    "zip": "2000"
+   },
+   "output": {
+    "matched": "SpareBank 1 Lom og Skjåk · SpareBank 1 Nord-Norge · SpareBank 1 Ringerike Hadeland · SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 27,
+   "input": {
+    "zip": "2300"
+   },
+   "output": {
+    "matched": "SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 28,
+   "input": {
+    "zip": "3000"
+   },
+   "output": {
+    "matched": "SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 29,
+   "input": {
+    "zip": "1300"
+   },
+   "output": {
+    "matched": "SpareBank 1 Hallingdal Valdres · SpareBank 1 Lom og Skjåk · SpareBank 1 Nord-Norge · SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 30,
+   "input": {
+    "zip": "1396"
+   },
+   "output": {
+    "matched": "SpareBank 1 Hallingdal Valdres · SpareBank 1 Nord-Norge · SpareBank 1 SMN · SpareBank 1 Sogn og Fjordane · SpareBank 1 Sør-Norge · SpareBank 1 Østlandet",
+    "toggle": "Se resten av bankene",
+    "error": ""
+   }
+  },
+  {
+   "i": 31,
+   "input": {
+    "zip": "12"
+   },
+   "output": {
+    "matched": "",
+    "toggle": "Se alle banker",
+    "error": ""
+   }
+  },
+  {
+   "i": 32,
+   "input": {
+    "zip": "ab"
+   },
+   "output": {
+    "matched": "",
+    "toggle": "Se alle banker",
+    "error": "Skriv inn et gyldig postnummer (4 siffer)."
+   }
+  },
+  {
+   "i": 33,
+   "input": {
+    "zip": "12x"
+   },
+   "output": {
+    "matched": "",
+    "toggle": "Se alle banker",
+    "error": "Skriv inn et gyldig postnummer (4 siffer)."
+   }
+  },
+  {
+   "i": 34,
+   "input": {
+    "zip": ""
+   },
+   "output": {
+    "matched": "",
+    "toggle": "Se alle banker",
+    "error": ""
+   }
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+[
+ {
+  "selector": "#postnummer-input",
+  "tag": "input",
+  "type": "tel",
+  "name": null,
+  "id": "postnummer-input",
+  "label": "Ditt postnummer",
+  "value": "",
+  "min": null,
+  "max": null,
+  "step": null
+ }
+]

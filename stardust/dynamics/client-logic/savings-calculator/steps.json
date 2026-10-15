@@ -1,0 +1,1 @@
+[{"wait":1500},{"fill":["#sparekalkulator #_r_0_","1000"]},{"wait":1000},{"fill":["#sparekalkulator #_r_4_","10"]},{"wait":1000},{"select":["#sparekalkulator select","high"]},{"wait":1500}]

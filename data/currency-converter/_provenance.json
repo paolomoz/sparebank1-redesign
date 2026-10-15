@@ -1,0 +1,16 @@
+{
+ "writtenBy": "stardust/scripts/sync-currency-rates.mjs (dynamics #9 sync step)",
+ "writtenAt": "2026-10-15T14:34:12.391Z",
+ "origin": "https://www.sparebank1.no",
+ "entry": "/nb/bank/privat/kundeservice/verktoy/valutakalkulator.html",
+ "call": {
+  "method": "GET",
+  "path": "/openapi/nettsider/ressurser/bank/valutakurser",
+  "status": 200,
+  "contentType": "application/vnd.sparebank1.v1+json;charset=utf-8",
+  "bytes": 7397,
+  "rows": 31
+ },
+ "ratesUpdatedAt": "2026-10-15T13:47:06.000Z",
+ "unfreeze": "SB1 exposes the rate feed cross-origin (or a same-origin proxy on the EDS host) → set siteConfig.currencyRates.endpoint and enabled: true in scripts/site-config.js"
+}
